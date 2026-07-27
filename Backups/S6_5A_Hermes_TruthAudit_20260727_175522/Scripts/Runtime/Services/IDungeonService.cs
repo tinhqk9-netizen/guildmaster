@@ -1,0 +1,25 @@
+using System.Collections.Generic;
+using GuildMaster.Runtime.Models;
+
+namespace GuildMaster.Runtime.Services
+{
+    public interface IDungeonService
+    {
+        void StartDungeon(string dungeonId, List<string> adventurerIds);
+        void StopDungeon();
+        void SaveDungeonState();
+        void LoadDungeonState();
+        bool IsDungeonActive();
+        void AdvanceProgressOneStep();
+        void Tick();
+        DungeonRuntime GetActiveDungeon();
+
+        /// <summary>
+        /// Moves everything in the area chest into the player's storage, following
+        /// <c>Utils.collectDrops</c>. Enemies never drop straight into the inventory — the run
+        /// fills a temporary chest first and this is the only way out of it.
+        /// </summary>
+        /// <returns>Number of item stacks transferred.</returns>
+        int CollectDrops();
+    }
+}

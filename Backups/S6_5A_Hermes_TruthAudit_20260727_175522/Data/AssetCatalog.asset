@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ab25c34eee3ed45a5455c7570e51dc, type: 3}
+  m_Name: AssetCatalog
+  m_EditorClassIdentifier: GuildMaster.Runtime::GuildMaster.Runtime.Assets.AssetCatalog
+  coinIcon: {fileID: 21300000, guid: 0701aecc3ef8d2e4cb83e309aa9ae313, type: 3}
+  gemIcon: {fileID: 21300000, guid: 3e69b7566904aa644b8c9d41c20a84b8, type: 3}
+  navIcons:
+  - key: Inventory
+    sprite: {fileID: 21300000, guid: 1d6ad741121ce0d46a5742d167aecf8e, type: 3}
+  - key: Character
+    sprite: {fileID: 21300000, guid: 96b9687478d16584c9d9c81bb4d37606, type: 3}
+  - key: Dungeon
+    sprite: {fileID: 21300000, guid: c2a3e0984829c304fbf07e87a193843d, type: 3}
+  - key: Craft
+    sprite: {fileID: 21300000, guid: 94ce1ea04dfc1ef48ac56af67d8dc9ff, type: 3}
+  - key: Merchant
+    sprite: {fileID: 21300000, guid: 0701aecc3ef8d2e4cb83e309aa9ae313, type: 3}
+  - key: Settings
+    sprite: {fileID: 21300000, guid: 3e69b7566904aa644b8c9d41c20a84b8, type: 3}
+  categoryIcons:
+  - key: Weapon
+    sprite: {fileID: 21300000, guid: c2a3e0984829c304fbf07e87a193843d, type: 3}
+  - key: Armor
+    sprite: {fileID: 21300000, guid: 96b9687478d16584c9d9c81bb4d37606, type: 3}
+  - key: Accessory
+    sprite: {fileID: 21300000, guid: f6c7d3c32bb5f934aa381462866c4c04, type: 3}
+  - key: Consumable
+    sprite: {fileID: 21300000, guid: 1d6ad741121ce0d46a5742d167aecf8e, type: 3}
+  - key: Material
+    sprite: {fileID: 21300000, guid: 3e69b7566904aa644b8c9d41c20a84b8, type: 3}
+  enemyIcons:
+  - key: undead
+    sprite: {fileID: 5784451199371939717, guid: a68247c1ff406504f805d8137ee1ed43, type: 3}
+  - key: goblin
+    sprite: {fileID: 7619597305093781232, guid: 6f4869e481f8b6440886b3466b114221, type: 3}
+  - key: slime
+    sprite: {fileID: 5843558407114964200, guid: e7df83349637d4c4f904ba931dee1943, type: 3}
+  - key: bat
+    sprite: {fileID: 604030797178647844, guid: 390d6292d32575a4ea3ea2338c401dd6, type: 3}
+  - key: orc
+    sprite: {fileID: 8964475222714281737, guid: d38eb21ca67f8a94498eadb0fb36bed0, type: 3}
+  - key: boss
+    sprite: {fileID: 4026195552802127696, guid: 3179c2e6a7a27854393d287352c94b89, type: 3}
+  portraits:
+  - key: hero
+    sprite: {fileID: 21300000, guid: bfeb467250140934a90fc5d429391806, type: 3}
+  - key: boss
+    sprite: {fileID: 21300000, guid: 59a24d2909096e54891fd7d20b8bda0a, type: 3}
+  - key: goblin
+    sprite: {fileID: 21300000, guid: db1ff56f99748b54a91b929719e6bd22, type: 3}
+  - key: skeleton
+    sprite: {fileID: 21300000, guid: d2fbff32f6370d74782abfb4ccde4ddb, type: 3}
+  - key: orc
+    sprite: {fileID: 21300000, guid: cee432434dadcc34aa116f59faedb8b7, type: 3}
+  - key: slime
+    sprite: {fileID: 21300000, guid: 06beb8aeabc6e0d4087e79a4a87ba23f, type: 3}
+  - key: merchant
+    sprite: {fileID: 21300000, guid: c98def293b00610438ef9947211065d7, type: 3}
+  - key: villager
+    sprite: {fileID: 21300000, guid: 78e65f12a8b7058428a0b17c3681bec0, type: 3}
