@@ -1,0 +1,1372 @@
+{
+  "data": [
+    {
+      "className": "ACTIVE_NONE",
+      "id": "active_none",
+      "rawArgs": "R.string.active_none_name, R.string.active_none_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_MIGHTY_STRIKE",
+      "id": "active_mighty_strike",
+      "rawArgs": "R.string.active_mighty_strike_name, R.string.active_mighty_strike_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_CRUSHING_STRIKE",
+      "id": "active_crushing_strike",
+      "rawArgs": "R.string.active_crushing_strike_name, R.string.active_crushing_strike_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_TAUNT_I",
+      "id": "active_taunt_i",
+      "rawArgs": "R.string.active_taunt_i_name, R.string.active_taunt_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_TAUNT_II",
+      "id": "active_taunt_ii",
+      "rawArgs": "R.string.active_taunt_ii_name, R.string.active_taunt_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_TAUNT_III",
+      "id": "active_taunt_iii",
+      "rawArgs": "R.string.active_taunt_iii_name, R.string.active_taunt_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_TAUNT_IV",
+      "id": "active_taunt_iv",
+      "rawArgs": "R.string.active_taunt_iv_name, R.string.active_taunt_iv_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_EN_GARDE",
+      "id": "active_en_garde",
+      "rawArgs": "R.string.active_en_garde_name, R.string.active_en_garde_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_OVERWHELM",
+      "id": "active_overwhelm",
+      "rawArgs": "R.string.active_overwhelm_name, R.string.active_overwhelm_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_DECIMATE_I",
+      "id": "active_decimate_i",
+      "rawArgs": "R.string.active_decimate_i_name, R.string.active_decimate_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_DECIMATE_II",
+      "id": "active_decimate_ii",
+      "rawArgs": "R.string.active_decimate_ii_name, R.string.active_decimate_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_DECIMATE_III",
+      "id": "active_decimate_iii",
+      "rawArgs": "R.string.active_decimate_iii_name, R.string.active_decimate_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_CONDEMN",
+      "id": "active_condemn",
+      "rawArgs": "R.string.active_condemn_name, R.string.active_condemn_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_CONDEMN_ALL_I",
+      "id": "active_condemn_all_i",
+      "rawArgs": "R.string.active_condemn_all_i_name, R.string.active_condemn_all_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_CONDEMN_ALL_II",
+      "id": "active_condemn_all_ii",
+      "rawArgs": "R.string.active_condemn_all_ii_name, R.string.active_condemn_all_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_BARRAGE_I",
+      "id": "active_barrage_i",
+      "rawArgs": "R.string.active_barrage_i_name, R.string.active_barrage_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_BARRAGE_II",
+      "id": "active_barrage_ii",
+      "rawArgs": "R.string.active_barrage_ii_name, R.string.active_barrage_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_BARRAGE_III",
+      "id": "active_barrage_iii",
+      "rawArgs": "R.string.active_barrage_iii_name, R.string.active_barrage_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_FOCUSED_BARRAGE",
+      "id": "active_focused_barrage",
+      "rawArgs": "R.string.active_focused_barrage_name, R.string.active_focused_barrage_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_BARRAGE_IV",
+      "id": "active_barrage_iv",
+      "rawArgs": "R.string.active_barrage_iv_name, R.string.active_barrage_iv_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_BARRAGE_V",
+      "id": "active_barrage_v",
+      "rawArgs": "R.string.active_barrage_v_name, R.string.active_barrage_v_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_BARRAGE_VI",
+      "id": "active_barrage_vi",
+      "rawArgs": "R.string.active_barrage_vi_name, R.string.active_barrage_vi_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_BARRAGE_VII",
+      "id": "active_barrage_vii",
+      "rawArgs": "R.string.active_barrage_vii_name, R.string.active_barrage_vii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_BARRAGE_VIII",
+      "id": "active_barrage_viii",
+      "rawArgs": "R.string.active_barrage_viii_name, R.string.active_barrage_viii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_INCINERATE",
+      "id": "active_incinerate",
+      "rawArgs": "R.string.active_incinerate_name, R.string.active_incinerate_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_INCINERATE_II",
+      "id": "active_incinerate_ii",
+      "rawArgs": "R.string.active_incinerate_ii_name, R.string.active_incinerate_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_SUBLIMATE",
+      "id": "active_sublimate",
+      "rawArgs": "R.string.active_sublimate_name, R.string.active_sublimate_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_BACKSTAB_I",
+      "id": "active_backstab_i",
+      "rawArgs": "R.string.active_backstab_i_name, R.string.active_backstab_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_BACKSTAB_II",
+      "id": "active_backstab_ii",
+      "rawArgs": "R.string.active_backstab_ii_name, R.string.active_backstab_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_BACKSTAB_III",
+      "id": "active_backstab_iii",
+      "rawArgs": "R.string.active_backstab_iii_name, R.string.active_backstab_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_UMBRAL_STRIKE_I",
+      "id": "active_umbral_strike_i",
+      "rawArgs": "R.string.active_umbral_strike_i_name, R.string.active_umbral_strike_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_UMBRAL_STRIKE_II",
+      "id": "active_umbral_strike_ii",
+      "rawArgs": "R.string.active_umbral_strike_ii_name, R.string.active_umbral_strike_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_UMBRAL_STRIKE_III",
+      "id": "active_umbral_strike_iii",
+      "rawArgs": "R.string.active_umbral_strike_iii_name, R.string.active_umbral_strike_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_ECLIPSE_I",
+      "id": "active_eclipse_i",
+      "rawArgs": "R.string.active_eclipse_i_name, R.string.active_eclipse_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_ECLIPSE_II",
+      "id": "active_eclipse_ii",
+      "rawArgs": "R.string.active_eclipse_ii_name, R.string.active_eclipse_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_ECLIPSE_III",
+      "id": "active_eclipse_iii",
+      "rawArgs": "R.string.active_eclipse_iii_name, R.string.active_eclipse_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_ECLIPSE_IV",
+      "id": "active_eclipse_iv",
+      "rawArgs": "R.string.active_eclipse_iv_name, R.string.active_eclipse_iv_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_FEINT",
+      "id": "active_feint",
+      "rawArgs": "R.string.active_feint_name, R.string.active_feint_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_PETRIFYING_MELODY",
+      "id": "active_petrifying_melody",
+      "rawArgs": "R.string.active_petrifying_melody_name, R.string.active_petrifying_melody_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_THOUSAND_CUTS",
+      "id": "active_thousand_cuts",
+      "rawArgs": "R.string.active_thousand_cuts_name, R.string.active_thousand_cuts_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_THOUSAND_CUTS_II",
+      "id": "active_thousand_cuts_ii",
+      "rawArgs": "R.string.active_thousand_cuts_ii_name, R.string.active_thousand_cuts_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_ENERGY_BURST_I",
+      "id": "active_energy_burst_i",
+      "rawArgs": "R.string.active_energy_burst_i_name, R.string.active_energy_burst_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_ENERGY_BURST_II",
+      "id": "active_energy_burst_ii",
+      "rawArgs": "R.string.active_energy_burst_ii_name, R.string.active_energy_burst_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_FIRE_BURST",
+      "id": "active_fire_burst",
+      "rawArgs": "R.string.active_fire_burst_name, R.string.active_fire_burst_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_FIREBALL",
+      "id": "active_fireball",
+      "rawArgs": "R.string.active_fireball_name, R.string.active_fireball_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_METEOR_I",
+      "id": "active_meteor_i",
+      "rawArgs": "R.string.active_meteor_i_name, R.string.active_meteor_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_METEOR_II",
+      "id": "active_meteor_ii",
+      "rawArgs": "R.string.active_meteor_ii_name, R.string.active_meteor_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_HEAL",
+      "id": "active_heal",
+      "rawArgs": "R.string.active_heal_name, R.string.active_heal_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_MASS_HEAL_I",
+      "id": "active_mass_heal_i",
+      "rawArgs": "R.string.active_mass_heal_i_name, R.string.active_mass_heal_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_MASS_HEAL_II",
+      "id": "active_mass_heal_ii",
+      "rawArgs": "R.string.active_mass_heal_ii_name, R.string.active_mass_heal_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_MASS_HEAL_III",
+      "id": "active_mass_heal_iii",
+      "rawArgs": "R.string.active_mass_heal_iii_name, R.string.active_mass_heal_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_RESTORATION_I",
+      "id": "active_restoration_i",
+      "rawArgs": "R.string.active_restoration_i_name, R.string.active_restoration_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_RESTORATION_II",
+      "id": "active_restoration_ii",
+      "rawArgs": "R.string.active_restoration_ii_name, R.string.active_restoration_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_CURSE_I",
+      "id": "active_curse_i",
+      "rawArgs": "R.string.active_curse_i_name, R.string.active_curse_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_CURSE_II",
+      "id": "active_curse_ii",
+      "rawArgs": "R.string.active_curse_ii_name, R.string.active_curse_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_CURSE_III",
+      "id": "active_curse_iii",
+      "rawArgs": "R.string.active_curse_iii_name, R.string.active_curse_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_CURSE_IV",
+      "id": "active_curse_iv",
+      "rawArgs": "R.string.active_curse_iv_name, R.string.active_curse_iv_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_CURSE_V",
+      "id": "active_curse_v",
+      "rawArgs": "R.string.active_curse_v_name, R.string.active_curse_v_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_FLAY",
+      "id": "active_flay",
+      "rawArgs": "R.string.active_flay_name, R.string.active_flay_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_ANNIHILATE",
+      "id": "active_annihilate",
+      "rawArgs": "R.string.active_annihilate_name, R.string.active_annihilate_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_OBLITERATE",
+      "id": "active_obliterate",
+      "rawArgs": "R.string.active_obliterate_name, R.string.active_obliterate_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_EXTIRPATE",
+      "id": "active_extirpate",
+      "rawArgs": "R.string.active_extirpate_name, R.string.active_extirpate_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_WHIP_AND_TEAR",
+      "id": "active_whip_and_tear",
+      "rawArgs": "R.string.active_whip_and_tear_name, R.string.active_whip_and_tear_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_STOMP",
+      "id": "active_stomp",
+      "rawArgs": "R.string.active_stomp_name, R.string.active_stomp_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_ESCAPE",
+      "id": "active_escape",
+      "rawArgs": "R.string.active_escape_name, R.string.active_escape_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_SOOTHING_WINDS",
+      "id": "active_soothing_winds",
+      "rawArgs": "R.string.active_soothing_winds_name, R.string.active_soothing_winds_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_QUICKSAND_GRASP",
+      "id": "active_quicksand_grasp",
+      "rawArgs": "R.string.active_quicksand_grasp_name, R.string.active_quicksand_grasp_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_SANDSTORM",
+      "id": "active_sandstorm",
+      "rawArgs": "R.string.active_sandstorm_name, R.string.active_sandstorm_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_RESTORE_ORDER",
+      "id": "active_restore_order",
+      "rawArgs": "R.string.active_restore_order_name, R.string.active_restore_order_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_PROTECT_THE_WEAK",
+      "id": "active_protect_the_weak",
+      "rawArgs": "R.string.active_protect_the_weak_name, R.string.active_protect_the_weak_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_STATIC_SURGE",
+      "id": "active_static_surge",
+      "rawArgs": "R.string.active_static_surge_name, R.string.active_static_surge_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_ARCANE_STRIKE",
+      "id": "active_arcane_strike",
+      "rawArgs": "R.string.active_arcane_strike_name, R.string.active_arcane_strike_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_FLINTLOCK_SHOT",
+      "id": "active_flintlock_shot",
+      "rawArgs": "R.string.active_flintlock_shot_name, R.string.active_flintlock_shot_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_ICE_TOMB",
+      "id": "active_ice_tomb",
+      "rawArgs": "R.string.active_ice_tomb_name, R.string.active_ice_tomb_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_FROZEN_BREATH",
+      "id": "active_frozen_breath",
+      "rawArgs": "R.string.active_frozen_breath_name, R.string.active_frozen_breath_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_ARCANE_BARRAGE",
+      "id": "active_arcane_barrage",
+      "rawArgs": "R.string.active_arcane_barrage_name, R.string.active_arcane_barrage_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_DESERT_JUDGEMENT",
+      "id": "active_desert_judgement",
+      "rawArgs": "R.string.active_desert_judgement_name, R.string.active_desert_judgement_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_DISEMBODY",
+      "id": "active_disembody",
+      "rawArgs": "R.string.active_disembody_name, R.string.active_disembody_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_PANDEMONIUM",
+      "id": "active_pandemonium",
+      "rawArgs": "R.string.active_pandemonium_name, R.string.active_pandemonium_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_ARCANE_DIFFUSION",
+      "id": "active_arcane_diffusion",
+      "rawArgs": "R.string.active_arcane_diffusion_name, R.string.active_arcane_diffusion_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_FRAGMENTATION",
+      "id": "active_fragmentation",
+      "rawArgs": "R.string.active_fragmentation_name, R.string.active_fragmentation_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_SACRIFICE",
+      "id": "active_sacrifice",
+      "rawArgs": "R.string.active_sacrifice_name, R.string.active_sacrifice_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_BOTCHED_SACRIFICE",
+      "id": "active_botched_sacrifice",
+      "rawArgs": "R.string.active_sacrifice_name, R.string.active_sacrifice_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_CHOKING_POWDER",
+      "id": "active_choking_powder",
+      "rawArgs": "R.string.active_choking_powder_name, R.string.active_choking_powder_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_DAZE",
+      "id": "active_daze",
+      "rawArgs": "R.string.active_daze_name, R.string.active_daze_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_FLEECE",
+      "id": "active_fleece",
+      "rawArgs": "R.string.active_fleece_name, R.string.active_fleece_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_DISASSEMBLE",
+      "id": "active_disassemble",
+      "rawArgs": "R.string.active_disassemble_name, R.string.active_disassemble_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_OVERDRIVE",
+      "id": "active_overdrive",
+      "rawArgs": "R.string.active_overdrive_name, R.string.active_overdrive_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_RAYS_OF_DESTRUCTION",
+      "id": "active_rays_of_destruction",
+      "rawArgs": "R.string.active_rays_of_destruction_name, R.string.active_rays_of_destruction_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_THE_TEN_HELLS",
+      "id": "active_the_ten_hells",
+      "rawArgs": "R.string.active_the_ten_hells_name, R.string.active_the_ten_hells_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_INSTILL_TERROR",
+      "id": "active_instill_terror",
+      "rawArgs": "R.string.active_instill_terror_name, R.string.active_instill_terror_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_FIRE_DANCE",
+      "id": "active_fire_dance",
+      "rawArgs": "R.string.active_fire_dance_name, R.string.active_fire_dance_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_DREAM_FORGE",
+      "id": "active_dream_forge",
+      "rawArgs": "R.string.active_dream_forge_name, R.string.active_dream_forge_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_GRAVITY_SHIFT",
+      "id": "active_gravity_shift",
+      "rawArgs": "R.string.active_gravity_shift_name, R.string.active_gravity_shift_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_SMASH",
+      "id": "active_smash",
+      "rawArgs": "R.string.active_smash_name, R.string.active_smash_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_LIGHTS_OUT",
+      "id": "active_lights_out",
+      "rawArgs": "R.string.active_lights_out_name, R.string.active_lights_out_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_LIVE_TEST",
+      "id": "active_live_test",
+      "rawArgs": "R.string.active_live_test_name, R.string.active_live_test_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_AT_THE_STAKE",
+      "id": "active_at_the_stake",
+      "rawArgs": "R.string.active_at_the_stake_name, R.string.active_at_the_stake_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_TABULA_RASA",
+      "id": "active_tabula_rasa",
+      "rawArgs": "R.string.active_tabula_rasa_name, R.string.active_tabula_rasa_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_BOUNCE",
+      "id": "active_bounce",
+      "rawArgs": "R.string.active_bounce_name, R.string.active_bounce_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "ACTIVE_DEVOUR_SPIRIT",
+      "id": "active_devour_spirit",
+      "rawArgs": "R.string.active_devour_spirit_name, R.string.active_devour_spirit_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_NONE",
+      "id": "passive_none",
+      "rawArgs": "R.string.passive_none_name, R.string.passive_none_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_THREATENING_I",
+      "id": "passive_threatening_i",
+      "rawArgs": "R.string.passive_threatening_i_name, R.string.passive_threatening_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_THREATENING_II",
+      "id": "passive_threatening_ii",
+      "rawArgs": "R.string.passive_threatening_ii_name, R.string.passive_threatening_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_THREATENING_III",
+      "id": "passive_threatening_iii",
+      "rawArgs": "R.string.passive_threatening_iii_name, R.string.passive_threatening_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_THREATENING_IV",
+      "id": "passive_threatening_iv",
+      "rawArgs": "R.string.passive_threatening_iv_name, R.string.passive_threatening_iv_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_SUBJUGATE_I",
+      "id": "passive_subjugate_i",
+      "rawArgs": "R.string.passive_subjugate_i_name, R.string.passive_subjugate_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_SUBJUGATE_II",
+      "id": "passive_subjugate_ii",
+      "rawArgs": "R.string.passive_subjugate_ii_name, R.string.passive_subjugate_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_SWORD_MASTERY_I",
+      "id": "passive_sword_mastery_i",
+      "rawArgs": "R.string.passive_sword_mastery_i_name, R.string.passive_sword_mastery_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_SWORD_MASTERY_II",
+      "id": "passive_sword_mastery_ii",
+      "rawArgs": "R.string.passive_sword_mastery_ii_name, R.string.passive_sword_mastery_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_SWORD_MASTERY_III",
+      "id": "passive_sword_mastery_iii",
+      "rawArgs": "R.string.passive_sword_mastery_iii_name, R.string.passive_sword_mastery_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_SWORD_EXPERTISE_I",
+      "id": "passive_sword_expertise_i",
+      "rawArgs": "R.string.passive_sword_expertise_i_name, R.string.passive_sword_expertise_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_SWORD_EXPERTISE_II",
+      "id": "passive_sword_expertise_ii",
+      "rawArgs": "R.string.passive_sword_expertise_ii_name, R.string.passive_sword_expertise_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_BLINDING_I",
+      "id": "passive_blinding_i",
+      "rawArgs": "R.string.passive_blinding_i_name, R.string.passive_blinding_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_BLINDING_II",
+      "id": "passive_blinding_ii",
+      "rawArgs": "R.string.passive_blinding_ii_name, R.string.passive_blinding_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_BLINDING_III",
+      "id": "passive_blinding_iii",
+      "rawArgs": "R.string.passive_blinding_iii_name, R.string.passive_blinding_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_BLINDING_IV",
+      "id": "passive_blinding_iv",
+      "rawArgs": "R.string.passive_blinding_iv_name, R.string.passive_blinding_iv_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_BLINDING_V",
+      "id": "passive_blinding_v",
+      "rawArgs": "R.string.passive_blinding_v_name, R.string.passive_blinding_v_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_SEARING",
+      "id": "passive_searing",
+      "rawArgs": "R.string.passive_searing_name, R.string.passive_searing_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_RIDER_I",
+      "id": "passive_rider_i",
+      "rawArgs": "R.string.passive_rider_i_name, R.string.passive_rider_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_RIDER_II",
+      "id": "passive_rider_ii",
+      "rawArgs": "R.string.passive_rider_ii_name, R.string.passive_rider_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_RIDER_III",
+      "id": "passive_rider_iii",
+      "rawArgs": "R.string.passive_rider_iii_name, R.string.passive_rider_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_RIDER_IV",
+      "id": "passive_rider_iv",
+      "rawArgs": "R.string.passive_rider_iv_name, R.string.passive_rider_iv_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_RIDER_V",
+      "id": "passive_rider_v",
+      "rawArgs": "R.string.passive_rider_v_name, R.string.passive_rider_v_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_RIDER_VI",
+      "id": "passive_rider_vi",
+      "rawArgs": "R.string.passive_rider_vi_name, R.string.passive_rider_vi_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_RIDER_VII",
+      "id": "passive_rider_vii",
+      "rawArgs": "R.string.passive_rider_vii_name, R.string.passive_rider_vii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_KEEN_VISION",
+      "id": "passive_keen_vision",
+      "rawArgs": "R.string.passive_keen_vision_name, R.string.passive_keen_vision_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_POISONOUS_ARROWS_I",
+      "id": "passive_poisonous_arrows_i",
+      "rawArgs": "R.string.passive_poisonous_arrows_i_name, R.string.passive_poisonous_arrows_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_POISONOUS_ARROWS_II",
+      "id": "passive_poisonous_arrows_ii",
+      "rawArgs": "R.string.passive_poisonous_arrows_ii_name, R.string.passive_poisonous_arrows_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_POISONOUS_ARROWS_III",
+      "id": "passive_poisonous_arrows_iii",
+      "rawArgs": "R.string.passive_poisonous_arrows_iii_name, R.string.passive_poisonous_arrows_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_THAUMATURGY_I",
+      "id": "passive_thaumaturgy_i",
+      "rawArgs": "R.string.passive_thaumaturgy_i_name, R.string.passive_thaumaturgy_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_THAUMATURGY_II",
+      "id": "passive_thaumaturgy_ii",
+      "rawArgs": "R.string.passive_thaumaturgy_ii_name, R.string.passive_thaumaturgy_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_THAUMATURGY_III",
+      "id": "passive_thaumaturgy_iii",
+      "rawArgs": "R.string.passive_thaumaturgy_iii_name, R.string.passive_thaumaturgy_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_THAUMATURGY_IV",
+      "id": "passive_thaumaturgy_iv",
+      "rawArgs": "R.string.passive_thaumaturgy_iv_name, R.string.passive_thaumaturgy_iv_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_POISONOUS_BLOOD",
+      "id": "passive_poisonous_blood",
+      "rawArgs": "R.string.passive_poisonous_blood_name, R.string.passive_poisonous_blood_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_CORROSIVE_BLOOD",
+      "id": "passive_corrosive_blood",
+      "rawArgs": "R.string.passive_corrosive_blood_name, R.string.passive_corrosive_blood_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_SABOTEUR",
+      "id": "passive_saboteur",
+      "rawArgs": "R.string.passive_saboteur_name, R.string.passive_saboteur_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_INFILTRATOR",
+      "id": "passive_infiltrator",
+      "rawArgs": "R.string.passive_infiltrator_name, R.string.passive_infiltrator_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_DESPISE_WEAKNESS",
+      "id": "passive_despise_weakness",
+      "rawArgs": "R.string.passive_despise_weakness_name, R.string.passive_despise_weakness_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_NIGHT_VISION_I",
+      "id": "passive_night_vision_i",
+      "rawArgs": "R.string.passive_night_vision_i_name, R.string.passive_night_vision_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_NIGHT_VISION_II",
+      "id": "passive_night_vision_ii",
+      "rawArgs": "R.string.passive_night_vision_ii_name, R.string.passive_night_vision_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_NIGHT_VISION_III",
+      "id": "passive_night_vision_iii",
+      "rawArgs": "R.string.passive_night_vision_iii_name, R.string.passive_night_vision_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_NIGHT_VISION_IV",
+      "id": "passive_night_vision_iv",
+      "rawArgs": "R.string.passive_night_vision_iv_name, R.string.passive_night_vision_iv_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_DEADLY_FINESSE_I",
+      "id": "passive_deadly_finesse_i",
+      "rawArgs": "R.string.passive_deadly_finesse_i_name, R.string.passive_deadly_finesse_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_DEADLY_FINESSE_II",
+      "id": "passive_deadly_finesse_ii",
+      "rawArgs": "R.string.passive_deadly_finesse_ii_name, R.string.passive_deadly_finesse_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_DEADLY_FINESSE_III",
+      "id": "passive_deadly_finesse_iii",
+      "rawArgs": "R.string.passive_deadly_finesse_iii_name, R.string.passive_deadly_finesse_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_INSPIRING_I",
+      "id": "passive_inspiring_i",
+      "rawArgs": "R.string.passive_inspiring_i_name, R.string.passive_inspiring_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_INSPIRING_II",
+      "id": "passive_inspiring_ii",
+      "rawArgs": "R.string.passive_inspiring_ii_name, R.string.passive_inspiring_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_INSPIRING_III",
+      "id": "passive_inspiring_iii",
+      "rawArgs": "R.string.passive_inspiring_iii_name, R.string.passive_inspiring_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_EXALTING_I",
+      "id": "passive_exalting_i",
+      "rawArgs": "R.string.passive_exalting_i_name, R.string.passive_exalting_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_EXALTING_II",
+      "id": "passive_exalting_ii",
+      "rawArgs": "R.string.passive_exalting_ii_name, R.string.passive_exalting_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_HEALER_I",
+      "id": "passive_healer_i",
+      "rawArgs": "R.string.passive_healer_i_name, R.string.passive_healer_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_HEALER_II",
+      "id": "passive_healer_ii",
+      "rawArgs": "R.string.passive_healer_ii_name, R.string.passive_healer_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_FIRE_MAGIC_I",
+      "id": "passive_fire_magic_i",
+      "rawArgs": "R.string.passive_fire_magic_i_name, R.string.passive_fire_magic_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_FIRE_MAGIC_II",
+      "id": "passive_fire_magic_ii",
+      "rawArgs": "R.string.passive_fire_magic_ii_name, R.string.passive_fire_magic_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_PYROMANCY_I",
+      "id": "passive_pyromancy_i",
+      "rawArgs": "R.string.passive_pyromancy_i_name, R.string.passive_pyromancy_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_PYROMANCY_II",
+      "id": "passive_pyromancy_ii",
+      "rawArgs": "R.string.passive_pyromancy_ii_name, R.string.passive_pyromancy_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_WITHERING_TOUCH",
+      "id": "passive_withering_touch",
+      "rawArgs": "R.string.passive_withering_touch_name, R.string.passive_withering_touch_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_WITHERING_LINK",
+      "id": "passive_withering_link",
+      "rawArgs": "R.string.passive_withering_link_name, R.string.passive_withering_link_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_CHAOTIC",
+      "id": "passive_chaotic",
+      "rawArgs": "R.string.passive_chaotic_name, R.string.passive_chaotic_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_LEECH",
+      "id": "passive_leech",
+      "rawArgs": "R.string.passive_leech_name, R.string.passive_leech_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_FLYING_LEECH",
+      "id": "passive_flying_leech",
+      "rawArgs": "R.string.passive_flying_leech_name, R.string.passive_flying_leech_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_RED_HOT",
+      "id": "passive_red_hot",
+      "rawArgs": "R.string.passive_red_hot_name, R.string.passive_red_hot_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_POSITIVE_CHARGE",
+      "id": "passive_positive_charge",
+      "rawArgs": "R.string.passive_positive_charge_name, R.string.passive_positive_charge_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_SUB_ZERO",
+      "id": "passive_sub_zero",
+      "rawArgs": "R.string.passive_sub_zero_name, R.string.passive_sub_zero_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_VOID_PULL",
+      "id": "passive_void_pull",
+      "rawArgs": "R.string.passive_void_pull_name, R.string.passive_void_pull_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_DISSOLVE_BY_DECREE",
+      "id": "passive_dissolve_by_decree",
+      "rawArgs": "R.string.passive_dissolve_by_decree_name, R.string.passive_dissolve_by_decree_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_IMMUNITY",
+      "id": "passive_immunity",
+      "rawArgs": "R.string.passive_immunity_name, R.string.passive_immunity_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_ENHANCED_IMMUNITY",
+      "id": "passive_enhanced_immunity",
+      "rawArgs": "R.string.passive_enhanced_immunity_name, R.string.passive_enhanced_immunity_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_PERFECT_IMMUNITY",
+      "id": "passive_perfect_immunity",
+      "rawArgs": "R.string.passive_perfect_immunity_name, R.string.passive_perfect_immunity_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_FLYING",
+      "id": "passive_flying",
+      "rawArgs": "R.string.passive_flying_name, R.string.passive_flying_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_SPIKES",
+      "id": "passive_spikes",
+      "rawArgs": "R.string.passive_spikes_name, R.string.passive_spikes_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_SHARP_SPIKES",
+      "id": "passive_sharp_spikes",
+      "rawArgs": "R.string.passive_sharp_spikes_name, R.string.passive_sharp_spikes_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_DESERT_ARCHER",
+      "id": "passive_desert_archer",
+      "rawArgs": "R.string.passive_desert_archer_name, R.string.passive_desert_archer_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_INCORPOREAL",
+      "id": "passive_incorporeal",
+      "rawArgs": "R.string.passive_incorporeal_name, R.string.passive_incorporeal_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_DEFLECT_MAGIC",
+      "id": "passive_deflect_magic",
+      "rawArgs": "R.string.passive_deflect_magic_name, R.string.passive_deflect_magic_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_MASSIVE",
+      "id": "passive_massive",
+      "rawArgs": "R.string.passive_massive_name, R.string.passive_massive_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_RETALIATE",
+      "id": "passive_retaliate",
+      "rawArgs": "R.string.passive_retaliate_name, R.string.passive_retaliate_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_RETALIATE_II",
+      "id": "passive_retaliate_ii",
+      "rawArgs": "R.string.passive_retaliate_ii_name, R.string.passive_retaliate_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_REGENERATION_I",
+      "id": "passive_regeneration_i",
+      "rawArgs": "R.string.passive_regeneration_i_name, R.string.passive_regeneration_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_REGENERATION_II",
+      "id": "passive_regeneration_ii",
+      "rawArgs": "R.string.passive_regeneration_ii_name, R.string.passive_regeneration_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_REGENERATION_III",
+      "id": "passive_regeneration_iii",
+      "rawArgs": "R.string.passive_regeneration_iii_name, R.string.passive_regeneration_iii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_TROLL_MAGIC",
+      "id": "passive_troll_magic",
+      "rawArgs": "R.string.passive_troll_magic_name, R.string.passive_troll_magic_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_VENOMOUS_BITE",
+      "id": "passive_venomous_bite",
+      "rawArgs": "R.string.passive_venomous_bite_name, R.string.passive_venomous_bite_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_NIGHT_HUNTER",
+      "id": "passive_night_hunter",
+      "rawArgs": "R.string.passive_night_hunter_name, R.string.passive_night_hunter_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_ELEMENTAL_DUALITY",
+      "id": "passive_elemental_duality",
+      "rawArgs": "R.string.passive_elemental_duality_name, R.string.passive_elemental_duality_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_STATIC_AFFINITY",
+      "id": "passive_static_affinity",
+      "rawArgs": "R.string.passive_static_affinity_name, R.string.passive_static_affinity_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_CLAIRVOYANCE",
+      "id": "passive_clairvoyance",
+      "rawArgs": "R.string.passive_clairvoyance_name, R.string.passive_clairvoyance_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_LICH_CURSE",
+      "id": "passive_lich_curse",
+      "rawArgs": "R.string.passive_lich_curse_name, R.string.passive_lich_curse_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_LESSER_PSYONIC",
+      "id": "passive_lesser_psyonic",
+      "rawArgs": "R.string.passive_lesser_psyonic_name, R.string.passive_lesser_psyonic_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_PURIFIER",
+      "id": "passive_purifier",
+      "rawArgs": "R.string.passive_purifier_name, R.string.passive_purifier_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_INORGANIC",
+      "id": "passive_inorganic",
+      "rawArgs": "R.string.passive_inorganic_name, R.string.passive_inorganic_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_FLYING_FORTRESS",
+      "id": "passive_flying_fortress",
+      "rawArgs": "R.string.passive_flying_fortress_name, R.string.passive_flying_fortress_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_TERRITORIAL",
+      "id": "passive_territorial",
+      "rawArgs": "R.string.passive_territorial_name, R.string.passive_territorial_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_BEHEMOTH",
+      "id": "passive_behemoth",
+      "rawArgs": "R.string.passive_behemoth_name, R.string.passive_behemoth_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_FLYING_DISEASE",
+      "id": "passive_flying_disease",
+      "rawArgs": "R.string.passive_flying_disease_name, R.string.passive_flying_disease_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_ANIMATED_GUARDIAN",
+      "id": "passive_animated_guardian",
+      "rawArgs": "R.string.passive_animated_guardian_name, R.string.passive_animated_guardian_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_REVERSE_ENTROPY",
+      "id": "passive_reverse_entropy",
+      "rawArgs": "R.string.passive_reverse_entropy_name, R.string.passive_reverse_entropy_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_ELEMENTAL_CONTROL",
+      "id": "passive_elemental_control",
+      "rawArgs": "R.string.passive_elemental_control_name, R.string.passive_elemental_control_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_ELEMENTAL_MASTERY",
+      "id": "passive_elemental_mastery",
+      "rawArgs": "R.string.passive_elemental_mastery_name, R.string.passive_elemental_mastery_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_WICKED_APPETITE",
+      "id": "passive_wicked_appetite",
+      "rawArgs": "R.string.passive_wicked_appetite_name, R.string.passive_wicked_appetite_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_TERATOGEN",
+      "id": "passive_teratogen",
+      "rawArgs": "R.string.passive_teratogen_name, R.string.passive_teratogen_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_COSMIC_PROJECTION",
+      "id": "passive_cosmic_projection",
+      "rawArgs": "R.string.passive_cosmic_projection_name, R.string.passive_cosmic_projection_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_PRIMORDIAL_HUNGER",
+      "id": "passive_primordial_hunger",
+      "rawArgs": "R.string.passive_primordial_hunger_name, R.string.passive_primordial_hunger_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_NEUROTOXICITY",
+      "id": "passive_neurotoxicity",
+      "rawArgs": "R.string.passive_neurotoxicity_name, R.string.passive_neurotoxicity_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_BERSERKER_RAGE",
+      "id": "passive_berserker_rage",
+      "rawArgs": "R.string.passive_berserker_rage_name, R.string.passive_berserker_rage_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_PREHISTORIC_AVIAN",
+      "id": "passive_prehistoric_avian",
+      "rawArgs": "R.string.passive_prehistoric_avian_name, R.string.passive_prehistoric_avian_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_PREHISTORIC_COLOSSUS",
+      "id": "passive_prehistoric_colossus",
+      "rawArgs": "R.string.passive_prehistoric_colossus_name, R.string.passive_prehistoric_colossus_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_NATURAL_EMPATHY",
+      "id": "passive_natural_empathy",
+      "rawArgs": "R.string.passive_natural_empathy_name, R.string.passive_natural_empathy_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_FIRE_GIANT",
+      "id": "passive_fire_giant",
+      "rawArgs": "R.string.passive_fire_giant_name, R.string.passive_fire_giant_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_BIOENHANCED",
+      "id": "passive_bioenhanced",
+      "rawArgs": "R.string.passive_bioenhanced_name, R.string.passive_bioenhanced_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_SWARM",
+      "id": "passive_swarm",
+      "rawArgs": "R.string.passive_swarm_name, R.string.passive_swarm_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_INFINITY",
+      "id": "passive_infinity",
+      "rawArgs": "R.string.passive_infinity_name, R.string.passive_infinity_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_SHARP_BLADES",
+      "id": "passive_sharp_blades",
+      "rawArgs": "R.string.passive_sharp_blades_name, R.string.passive_sharp_blades_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_ELUSIVE",
+      "id": "passive_elusive",
+      "rawArgs": "R.string.passive_elusive_name, R.string.passive_elusive_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_MIND_FLAY",
+      "id": "passive_mind_flay",
+      "rawArgs": "R.string.passive_mind_flay_name, R.string.passive_mind_flay_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_UNETHICAL_CONDUCT",
+      "id": "passive_unethical_conduct",
+      "rawArgs": "R.string.passive_unethical_conduct_name, R.string.passive_unethical_conduct_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_GARGANTUAN",
+      "id": "passive_gargantuan",
+      "rawArgs": "R.string.passive_gargantuan_name, R.string.passive_gargantuan_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_ABLAZE",
+      "id": "passive_ablaze",
+      "rawArgs": "R.string.passive_ablaze_name, R.string.passive_ablaze_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_TRUE_LIFESTEAL",
+      "id": "passive_true_lifesteal",
+      "rawArgs": "R.string.passive_true_lifesteal_name, R.string.passive_true_lifesteal_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_ABSURD_GENEALOGY",
+      "id": "passive_absurd_genealogy",
+      "rawArgs": "R.string.passive_absurd_genealogy_name, R.string.passive_absurd_genealogy_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_BLIND_RAGE",
+      "id": "passive_blind_rage",
+      "rawArgs": "R.string.passive_blind_rage_name, R.string.passive_blind_rage_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_BIOENHANCED_II",
+      "id": "passive_bioenhanced_ii",
+      "rawArgs": "R.string.passive_bioenhanced_ii_name, R.string.passive_bioenhanced_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_INSCRUTABLE",
+      "id": "passive_inscrutable",
+      "rawArgs": "R.string.passive_inscrutable_name, R.string.passive_inscrutable_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_BEND_REALITY",
+      "id": "passive_bend_reality",
+      "rawArgs": "R.string.passive_bend_reality_name, R.string.passive_bend_reality_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_INITIATIVE",
+      "id": "passive_initiative",
+      "rawArgs": "R.string.passive_initiative_i_name, R.string.passive_initiative_i_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    },
+    {
+      "className": "PASSIVE_INITIATIVE_II",
+      "id": "passive_initiative_ii",
+      "rawArgs": "R.string.passive_initiative_ii_name, R.string.passive_initiative_ii_description",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\Skills.java"
+    }
+  ],
+  "metadata": {
+    "definitionsVersion": "1.0",
+    "generatedAt": "2026-07-13T09:11:43.555489",
+    "recordCount": 227,
+    "schemaVersion": "1.0"
+  }
+}

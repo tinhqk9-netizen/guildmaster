@@ -1,0 +1,142 @@
+{
+  "data": [
+    {
+      "className": "BarrenWastelands",
+      "id": "barren_wastelands",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "e8ba712f8b9543fe89cc7d31e7c37735d886822b1925c3304e2edbd3bfe10089",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\BarrenWastelands.java"
+    },
+    {
+      "className": "BlackwaterPort",
+      "id": "blackwater_port",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "6a6bc88bd12b940dc8a84ddfcc3902ed9b1ab88b9eda1c823fa3ab3ab9b56ec4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\BlackwaterPort.java"
+    },
+    {
+      "className": "EnchantedForest",
+      "id": "enchanted_forest",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "6f5b667ce7c38de1ccf1c5fac168a85abad80b606868e6f773b75221dff5a0ae",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\EnchantedForest.java"
+    },
+    {
+      "className": "EternalBattlefield",
+      "id": "eternal_battlefield",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "33d56157162cf174335b7c02fec0839f38ffd7a8161abfa9301c3270dbf8e921",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\EternalBattlefield.java"
+    },
+    {
+      "className": "FrostbitePeaks",
+      "id": "frostbite_peaks",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "f0e7d6f39e72fda796f4b02dd70a11a008458bced61c7b21fb0d211e9fcbd771",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\FrostbitePeaks.java"
+    },
+    {
+      "className": "HiddenCityOfLarox",
+      "id": "hidden_city_of_larox",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "6a552f43e9b867c868143053510e00872a4805ce9c12b7a4431638cae0201180",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\HiddenCityOfLarox.java"
+    },
+    {
+      "className": "LostLands",
+      "id": "lost_lands",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "bb1cf04ae81cc9e2ce88190ea34e9c95055ab65b8a6d992f0e2c3b36585f4c22",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\LostLands.java"
+    },
+    {
+      "className": "ObsidianMines",
+      "id": "obsidian_mines",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "b46fec4c829668f1aa0558e5eb26b6f5a3977e184863ec305cbc78721a6c82f8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\ObsidianMines.java"
+    },
+    {
+      "className": "TheDesert",
+      "id": "the_desert",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "a840590e4f8c869d79df73af32343a3e6b863f06c6c695d3f6e8e68a083c1a31",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\TheDesert.java"
+    },
+    {
+      "className": "TheGoldenCity",
+      "id": "the_golden_city",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "d658c116ba19042a5d01b9a615b244c5f2dbb19ab2f2d5482dcf467d451e9922",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\TheGoldenCity.java"
+    },
+    {
+      "className": "TheSouthernGrove",
+      "id": "the_southern_grove",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "f813d2e4c8d3c5f1f96c165bd6b69c5256660b668e6269d14f29c1db36bff1c8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\TheSouthernGrove.java"
+    }
+  ],
+  "metadata": {
+    "definitionsVersion": "1.0",
+    "generatedAt": "2026-07-13T09:48:42.401023",
+    "recordCount": 11,
+    "schemaVersion": "1.0"
+  }
+}

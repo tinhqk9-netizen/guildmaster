@@ -1,0 +1,60 @@
+{
+  "data": [
+    {
+      "className": "ActiveDeterrent",
+      "id": "active_deterrent",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\quests\\instances\\ActiveDeterrent.java"
+    },
+    {
+      "className": "AndStayDead",
+      "id": "and_stay_dead",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\quests\\instances\\AndStayDead.java"
+    },
+    {
+      "className": "Annihilator",
+      "id": "annihilator",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\quests\\instances\\Annihilator.java"
+    },
+    {
+      "className": "BotchedRitual",
+      "id": "botched_ritual",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\quests\\instances\\BotchedRitual.java"
+    },
+    {
+      "className": "ClashOfTitans",
+      "id": "clash_of_titans",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\quests\\instances\\ClashOfTitans.java"
+    },
+    {
+      "className": "Conqueror",
+      "id": "conqueror",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\quests\\instances\\Conqueror.java"
+    },
+    {
+      "className": "CoupDEtat",
+      "id": "coup_d_etat",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\quests\\instances\\CoupDEtat.java"
+    },
+    {
+      "className": "CriticalHit",
+      "id": "critical_hit",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\quests\\instances\\CriticalHit.java"
+    },
+    {
+      "className": "CrystalClear",
+      "id": "crystal_clear",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\quests\\instances\\CrystalClear.java"
+    },
+    {
+      "className": "DarknessWithin",
+      "id": "darkness_within",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\quests\\instances\\DarknessWithin.java"
+    }
+  ],
+  "metadata": {
+    "definitionsVersion": "1.0",
+    "generatedAt": "2026-07-13T09:11:43.565647",
+    "recordCount": 10,
+    "schemaVersion": "1.0"
+  }
+}

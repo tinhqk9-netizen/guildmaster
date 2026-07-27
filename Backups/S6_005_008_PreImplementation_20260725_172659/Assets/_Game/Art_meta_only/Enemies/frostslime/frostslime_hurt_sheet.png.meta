@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: 31d4e357e527440418c2985b0ee3f963
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7652693101567971363
+    second: frostslime_hurt_sheet_0
+  - first:
+      213: -6615370402851089994
+    second: frostslime_hurt_sheet_1
+  - first:
+      213: -6796070615010003495
+    second: frostslime_hurt_sheet_2
+  - first:
+      213: 3799328421741244345
+    second: frostslime_hurt_sheet_3
+  - first:
+      213: 1126780989102935940
+    second: frostslime_hurt_sheet_4
+  - first:
+      213: -7111373483441827639
+    second: frostslime_hurt_sheet_5
+  - first:
+      213: -4140822035610134090
+    second: frostslime_hurt_sheet_6
+  - first:
+      213: 6127266694889712059
+    second: frostslime_hurt_sheet_7
+  - first:
+      213: -1219623318809505448
+    second: frostslime_hurt_sheet_8
+  - first:
+      213: 8364628069793978145
+    second: frostslime_hurt_sheet_9
+  - first:
+      213: -7222559052999846273
+    second: frostslime_hurt_sheet_10
+  - first:
+      213: 7436811395512854238
+    second: frostslime_hurt_sheet_11
+  - first:
+      213: -2675963394944174769
+    second: frostslime_hurt_sheet_12
+  - first:
+      213: -645469096711971510
+    second: frostslime_hurt_sheet_13
+  - first:
+      213: 2460250802998014331
+    second: frostslime_hurt_sheet_14
+  - first:
+      213: -7969085469465478198
+    second: frostslime_hurt_sheet_15
+  - first:
+      213: -8554245257991115152
+    second: frostslime_hurt_down_00
+  - first:
+      213: -894632768523454449
+    second: frostslime_hurt_down_01
+  - first:
+      213: 6237341830069481692
+    second: frostslime_hurt_down_02
+  - first:
+      213: -114675041116020641
+    second: frostslime_hurt_down_03
+  - first:
+      213: -730215534896037266
+    second: frostslime_hurt_up_00
+  - first:
+      213: 8748564128764208784
+    second: frostslime_hurt_up_01
+  - first:
+      213: -4994667537081973269
+    second: frostslime_hurt_up_02
+  - first:
+      213: 8250362637783319863
+    second: frostslime_hurt_up_03
+  - first:
+      213: -5075683795826563044
+    second: frostslime_hurt_left_00
+  - first:
+      213: -4842320527920851263
+    second: frostslime_hurt_left_01
+  - first:
+      213: 3417962347233079678
+    second: frostslime_hurt_left_02
+  - first:
+      213: 7734688887245557943
+    second: frostslime_hurt_left_03
+  - first:
+      213: -4013781807301974691
+    second: frostslime_hurt_right_00
+  - first:
+      213: -7229362194726955517
+    second: frostslime_hurt_right_01
+  - first:
+      213: -1309080907634653160
+    second: frostslime_hurt_right_02
+  - first:
+      213: -5231258942400463119
+    second: frostslime_hurt_right_03
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: frostslime_hurt_down_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07eaedb9247394980800000000000000
+      internalID: -8554245257991115152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostslime_hurt_down_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f083cbbac30a593f0800000000000000
+      internalID: -894632768523454449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostslime_hurt_down_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd0f9fbf85d7f8650800000000000000
+      internalID: 6237341830069481692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostslime_hurt_down_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f502dad58a7986ef0800000000000000
+      internalID: -114675041116020641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostslime_hurt_up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e62cc0107d0cdd5f0800000000000000
+      internalID: -730215534896037266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostslime_hurt_up_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09627b529b4296970800000000000000
+      internalID: 8748564128764208784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostslime_hurt_up_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be5cd0186506faab0800000000000000
+      internalID: -4994667537081973269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostslime_hurt_up_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735ca355b1d2f7270800000000000000
+      internalID: 8250362637783319863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostslime_hurt_left_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c182d85da7c8f89b0800000000000000
+      internalID: -5075683795826563044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostslime_hurt_left_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c612b4b22f9cccb0800000000000000
+      internalID: -4842320527920851263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostslime_hurt_left_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e71fc7a45aa0f6f20800000000000000
+      internalID: 3417962347233079678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostslime_hurt_left_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0de641092275b60800000000000000
+      internalID: 7734688887245557943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostslime_hurt_right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5527d156be2c48c0800000000000000
+      internalID: -4013781807301974691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostslime_hurt_right_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30659aef2652cab90800000000000000
+      internalID: -7229362194726955517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostslime_hurt_right_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818c03ea9d535dde0800000000000000
+      internalID: -1309080907634653160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frostslime_hurt_right_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fe722255b5d667b0800000000000000
+      internalID: -5231258942400463119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      frostslime_hurt_down_00: -8554245257991115152
+      frostslime_hurt_down_01: -894632768523454449
+      frostslime_hurt_down_02: 6237341830069481692
+      frostslime_hurt_down_03: -114675041116020641
+      frostslime_hurt_left_00: -5075683795826563044
+      frostslime_hurt_left_01: -4842320527920851263
+      frostslime_hurt_left_02: 3417962347233079678
+      frostslime_hurt_left_03: 7734688887245557943
+      frostslime_hurt_right_00: -4013781807301974691
+      frostslime_hurt_right_01: -7229362194726955517
+      frostslime_hurt_right_02: -1309080907634653160
+      frostslime_hurt_right_03: -5231258942400463119
+      frostslime_hurt_sheet_0: 7652693101567971363
+      frostslime_hurt_sheet_1: -6615370402851089994
+      frostslime_hurt_sheet_10: -7222559052999846273
+      frostslime_hurt_sheet_11: 7436811395512854238
+      frostslime_hurt_sheet_12: -2675963394944174769
+      frostslime_hurt_sheet_13: -645469096711971510
+      frostslime_hurt_sheet_14: 2460250802998014331
+      frostslime_hurt_sheet_15: -7969085469465478198
+      frostslime_hurt_sheet_2: -6796070615010003495
+      frostslime_hurt_sheet_3: 3799328421741244345
+      frostslime_hurt_sheet_4: 1126780989102935940
+      frostslime_hurt_sheet_5: -7111373483441827639
+      frostslime_hurt_sheet_6: -4140822035610134090
+      frostslime_hurt_sheet_7: 6127266694889712059
+      frostslime_hurt_sheet_8: -1219623318809505448
+      frostslime_hurt_sheet_9: 8364628069793978145
+      frostslime_hurt_up_00: -730215534896037266
+      frostslime_hurt_up_01: 8748564128764208784
+      frostslime_hurt_up_02: -4994667537081973269
+      frostslime_hurt_up_03: 8250362637783319863
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: d02a24153224ad84582f149f3c8633d9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4330085629015659866
+    second: bloodskeleton_hurt_sheet_0
+  - first:
+      213: 5216947059555377575
+    second: bloodskeleton_hurt_sheet_1
+  - first:
+      213: -8087437989689383197
+    second: bloodskeleton_hurt_sheet_2
+  - first:
+      213: 3480284401934025427
+    second: bloodskeleton_hurt_sheet_3
+  - first:
+      213: 5542753429927965033
+    second: bloodskeleton_hurt_sheet_4
+  - first:
+      213: -3368778515570757829
+    second: bloodskeleton_hurt_sheet_5
+  - first:
+      213: -4021781852479614500
+    second: bloodskeleton_hurt_sheet_6
+  - first:
+      213: 4971832525866612055
+    second: bloodskeleton_hurt_sheet_7
+  - first:
+      213: 1042192884376857050
+    second: bloodskeleton_hurt_sheet_8
+  - first:
+      213: -3769296192114341540
+    second: bloodskeleton_hurt_sheet_9
+  - first:
+      213: -42519787457352441
+    second: bloodskeleton_hurt_sheet_10
+  - first:
+      213: -722696613947683462
+    second: bloodskeleton_hurt_sheet_11
+  - first:
+      213: -6331718150115061591
+    second: bloodskeleton_hurt_sheet_12
+  - first:
+      213: 5596865700999208201
+    second: bloodskeleton_hurt_sheet_13
+  - first:
+      213: 1727038088228616013
+    second: bloodskeleton_hurt_sheet_14
+  - first:
+      213: -3070447302668341633
+    second: bloodskeleton_hurt_sheet_15
+  - first:
+      213: -470273899083259586
+    second: bloodskeleton_hurt_down_00
+  - first:
+      213: 8149351994297478595
+    second: bloodskeleton_hurt_down_01
+  - first:
+      213: -1024304981370256564
+    second: bloodskeleton_hurt_down_02
+  - first:
+      213: 3472301231764510922
+    second: bloodskeleton_hurt_down_03
+  - first:
+      213: 5931237515944722206
+    second: bloodskeleton_hurt_up_00
+  - first:
+      213: 8870616544175284699
+    second: bloodskeleton_hurt_up_01
+  - first:
+      213: -4573983784290774652
+    second: bloodskeleton_hurt_up_02
+  - first:
+      213: -8618998495405433821
+    second: bloodskeleton_hurt_up_03
+  - first:
+      213: -1904169979095298536
+    second: bloodskeleton_hurt_left_00
+  - first:
+      213: 388451740336528935
+    second: bloodskeleton_hurt_left_01
+  - first:
+      213: 7138239389292071757
+    second: bloodskeleton_hurt_left_02
+  - first:
+      213: 1930930072462185724
+    second: bloodskeleton_hurt_left_03
+  - first:
+      213: -8318492376809247141
+    second: bloodskeleton_hurt_right_00
+  - first:
+      213: -5611380443334854902
+    second: bloodskeleton_hurt_right_01
+  - first:
+      213: -6280154751562991153
+    second: bloodskeleton_hurt_right_02
+  - first:
+      213: -1599845657875903369
+    second: bloodskeleton_hurt_right_03
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bloodskeleton_hurt_down_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31210261604979f0800000000000000
+      internalID: -470273899083259586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodskeleton_hurt_down_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cde8b13670581170800000000000000
+      internalID: 8149351994297478595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodskeleton_hurt_down_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4343c3eb00f8c1f0800000000000000
+      internalID: -1024304981370256564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodskeleton_hurt_down_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac89970c297103030800000000000000
+      internalID: 3472301231764510922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodskeleton_hurt_up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1ffa50881dff4250800000000000000
+      internalID: 5931237515944722206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodskeleton_hurt_up_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd165469fb2ca1b70800000000000000
+      internalID: 8870616544175284699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodskeleton_hurt_up_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48193f07bf1f580c0800000000000000
+      internalID: -4573983784290774652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodskeleton_hurt_up_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c9bb9a88a236880800000000000000
+      internalID: -8618998495405433821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodskeleton_hurt_left_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ecf042e770395e0800000000000000
+      internalID: -1904169979095298536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodskeleton_hurt_left_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e142bbcce046500800000000000000
+      internalID: 388451740336528935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodskeleton_hurt_left_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b847097ee101360800000000000000
+      internalID: 7138239389292071757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodskeleton_hurt_left_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf45a3f9baa0cca10800000000000000
+      internalID: 1930930072462185724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodskeleton_hurt_right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5e6d7da147ce8c80800000000000000
+      internalID: -8318492376809247141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodskeleton_hurt_right_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a07b377973f5022b0800000000000000
+      internalID: -5611380443334854902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodskeleton_hurt_right_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc93b92f68868d8a0800000000000000
+      internalID: -6280154751562991153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloodskeleton_hurt_right_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c0bdab9d43cc9e0800000000000000
+      internalID: -1599845657875903369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      bloodskeleton_hurt_down_00: -470273899083259586
+      bloodskeleton_hurt_down_01: 8149351994297478595
+      bloodskeleton_hurt_down_02: -1024304981370256564
+      bloodskeleton_hurt_down_03: 3472301231764510922
+      bloodskeleton_hurt_left_00: -1904169979095298536
+      bloodskeleton_hurt_left_01: 388451740336528935
+      bloodskeleton_hurt_left_02: 7138239389292071757
+      bloodskeleton_hurt_left_03: 1930930072462185724
+      bloodskeleton_hurt_right_00: -8318492376809247141
+      bloodskeleton_hurt_right_01: -5611380443334854902
+      bloodskeleton_hurt_right_02: -6280154751562991153
+      bloodskeleton_hurt_right_03: -1599845657875903369
+      bloodskeleton_hurt_sheet_0: -4330085629015659866
+      bloodskeleton_hurt_sheet_1: 5216947059555377575
+      bloodskeleton_hurt_sheet_10: -42519787457352441
+      bloodskeleton_hurt_sheet_11: -722696613947683462
+      bloodskeleton_hurt_sheet_12: -6331718150115061591
+      bloodskeleton_hurt_sheet_13: 5596865700999208201
+      bloodskeleton_hurt_sheet_14: 1727038088228616013
+      bloodskeleton_hurt_sheet_15: -3070447302668341633
+      bloodskeleton_hurt_sheet_2: -8087437989689383197
+      bloodskeleton_hurt_sheet_3: 3480284401934025427
+      bloodskeleton_hurt_sheet_4: 5542753429927965033
+      bloodskeleton_hurt_sheet_5: -3368778515570757829
+      bloodskeleton_hurt_sheet_6: -4021781852479614500
+      bloodskeleton_hurt_sheet_7: 4971832525866612055
+      bloodskeleton_hurt_sheet_8: 1042192884376857050
+      bloodskeleton_hurt_sheet_9: -3769296192114341540
+      bloodskeleton_hurt_up_00: 5931237515944722206
+      bloodskeleton_hurt_up_01: 8870616544175284699
+      bloodskeleton_hurt_up_02: -4573983784290774652
+      bloodskeleton_hurt_up_03: -8618998495405433821
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

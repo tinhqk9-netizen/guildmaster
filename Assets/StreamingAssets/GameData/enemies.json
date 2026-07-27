@@ -1,0 +1,4594 @@
+{
+ "data": [
+  {
+   "className": "Abomination",
+   "id": "abomination",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "3b7bea737073fec7762a3954d75cb57d2d764b298c628bcbaa529ecc84a6f7e3",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Abomination.java",
+   "stats": {},
+   "BaseMaxHp": 1000,
+   "BaseConstitution": 20,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 2,
+   "BaseDefense": 50,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 196,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 30,
+   "MaxDamage": 35,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Abomination",
+   "Drops": {
+    "soul_shard": 50,
+    "bone_fragment": 946,
+    "potion_of_constitution": 4
+   },
+   "DropStacks": {
+    "soul_shard": 1,
+    "bone_fragment": 3,
+    "potion_of_constitution": 1
+   }
+  },
+  {
+   "className": "AmanitaObscura",
+   "id": "amanita_obscura",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "a89d033eb16bd3feef457eb45a8999bb436f6c0d39f4769b914db4f085934ed2",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\AmanitaObscura.java",
+   "stats": {},
+   "BaseMaxHp": 450,
+   "BaseConstitution": 14,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 4,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 188,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 150,
+   "MaxDamage": 190,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "AmanitaObscura",
+   "Drops": {
+    "poisonous_flesh": 10
+   },
+   "DropStacks": {
+    "poisonous_flesh": 1
+   }
+  },
+  {
+   "className": "AncientEnt",
+   "id": "ancient_ent",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "ac4f90326096a760d6c4b0b9698d975593256b45d5dc0cd75d70851ed7b2e520",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\AncientEnt.java",
+   "stats": {},
+   "BaseMaxHp": 3200,
+   "BaseConstitution": 130,
+   "BaseIntelligence": 48,
+   "BaseDexterity": 27,
+   "BaseDefense": 10,
+   "BaseMagicDefense": 10,
+   "ExpGiven": 240,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 140,
+   "MaxDamage": 195,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "AncientEnt",
+   "Drops": {
+    "elysian_wood": 460,
+    "living_vine": 80,
+    "avocado": 100,
+    "wooden_egg": 1
+   },
+   "DropStacks": {
+    "elysian_wood": 3,
+    "living_vine": 1,
+    "avocado": 1,
+    "wooden_egg": 1
+   }
+  },
+  {
+   "className": "ArcaneAssassin",
+   "id": "arcane_assassin",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "d79a88d045fa419d945df3ff10726ff86accfca85c80798254337d2435415d36",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ArcaneAssassin.java",
+   "stats": {},
+   "BaseMaxHp": 300,
+   "BaseConstitution": 15,
+   "BaseIntelligence": 20,
+   "BaseDexterity": 84,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 92,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 30,
+   "MaxDamage": 60,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "ArcaneAssassin",
+   "Drops": {
+    "gold_scraps": 400,
+    "corrupted_dagger": 1,
+    "black_ooze": 200
+   },
+   "DropStacks": {
+    "gold_scraps": 1,
+    "corrupted_dagger": 1,
+    "black_ooze": 1
+   }
+  },
+  {
+   "className": "ArchmageOfLarox",
+   "id": "archmage_of_larox",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "6feb6a5a3055eb2822215f80ce4b2d4268441547d246eea20133a1fce3105f6e",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ArchmageOfLarox.java",
+   "stats": {},
+   "BaseMaxHp": 770,
+   "BaseConstitution": 4,
+   "BaseIntelligence": 245,
+   "BaseDexterity": 34,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 30,
+   "ExpGiven": 330,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 180,
+   "MaxDamage": 195,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "ArchmageOfLarox",
+   "Drops": {
+    "laroxian_fabric": 275,
+    "pumpkin": 35,
+    "spell_compendium": 1
+   },
+   "DropStacks": {
+    "laroxian_fabric": 1,
+    "pumpkin": 1,
+    "spell_compendium": 1
+   }
+  },
+  {
+   "className": "AvatarOfTheAncient",
+   "id": "avatar_of_the_ancient",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "701003b286dbf9df84f75292716e2f6016423dad3fd66df32781008f3b3a8936",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\AvatarOfTheAncient.java",
+   "stats": {},
+   "BaseMaxHp": 6000,
+   "BaseConstitution": 1,
+   "BaseIntelligence": 999,
+   "BaseDexterity": 24,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 10000,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 610,
+   "MaxDamage": 650,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "AvatarOfTheAncient",
+   "Drops": {
+    "star_fragment": 325,
+    "esoteric_egg": 1
+   },
+   "DropStacks": {
+    "star_fragment": 1,
+    "esoteric_egg": 1
+   }
+  },
+  {
+   "className": "Banshee",
+   "id": "banshee",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "3722dfecfa39e909bd2ac351483249374263e0f4a4a160b85805a385592931c2",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Banshee.java",
+   "stats": {},
+   "BaseMaxHp": 1400,
+   "BaseConstitution": 250,
+   "BaseIntelligence": 5,
+   "BaseDexterity": 85,
+   "BaseDefense": 35,
+   "BaseMagicDefense": 35,
+   "ExpGiven": 250,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 153,
+   "MaxDamage": 205,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Banshee",
+   "Drops": {
+    "banshee_scale": 600,
+    "banshee_claw": 18,
+    "banshee_horn": 2,
+    "reptile_egg": 1
+   },
+   "DropStacks": {
+    "banshee_scale": 1,
+    "banshee_claw": 1,
+    "banshee_horn": 1,
+    "reptile_egg": 1
+   }
+  },
+  {
+   "className": "Beholder",
+   "id": "beholder",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "8bc3978b4a48c9146d5a7fbb5f9a6b13dd4a6a46b9e65de2c473e6a48c79e30b",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Beholder.java",
+   "stats": {},
+   "BaseMaxHp": 1100,
+   "BaseConstitution": 2,
+   "BaseIntelligence": 100,
+   "BaseDexterity": 15,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 30,
+   "ExpGiven": 125,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 38,
+   "MaxDamage": 46,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Beholder",
+   "Drops": {
+    "eldritch_tendril": 500,
+    "large_iris": 60,
+    "esoteric_egg": 1
+   },
+   "DropStacks": {
+    "eldritch_tendril": 1,
+    "large_iris": 1,
+    "esoteric_egg": 1
+   }
+  },
+  {
+   "className": "Berserker",
+   "id": "berserker",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "876f97bcbd59f1cdf3aae7537797224eb449f63e8b7e6999264f5110eebe3913",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Berserker.java",
+   "stats": {},
+   "BaseMaxHp": 1880,
+   "BaseConstitution": 60,
+   "BaseIntelligence": 8,
+   "BaseDexterity": 40,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 175,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 390,
+   "MaxDamage": 450,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Berserker",
+   "Drops": {
+    "mithril": 350
+   },
+   "DropStacks": {
+    "mithril": 1
+   }
+  },
+  {
+   "className": "BleakDeacon",
+   "id": "bleak_deacon",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "ad1317df8b1cd3dc991a899cfad408f713b72eb0463ea06b1a9ec528043e3b29",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\BleakDeacon.java",
+   "stats": {},
+   "BaseMaxHp": 1700,
+   "BaseConstitution": 24,
+   "BaseIntelligence": 215,
+   "BaseDexterity": 76,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 30,
+   "ExpGiven": 1000,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 200,
+   "MaxDamage": 350,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "BleakDeacon",
+   "Drops": {
+    "eldritch_shred": 350,
+    "esoteric_egg": 1
+   },
+   "DropStacks": {
+    "eldritch_shred": 1,
+    "esoteric_egg": 1
+   }
+  },
+  {
+   "className": "BleakDisciple",
+   "id": "bleak_disciple",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "4fffd2645791b0638d21370746c9807abfb6c5ea4c79247bb3c2be5279bf5c70",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\BleakDisciple.java",
+   "stats": {
+    "darknessDamageAmplification": {
+     "fieldName": "darknessDamageAmplification",
+     "semanticTag": "STAT_DAMAGE",
+     "value": 0.01
+    }
+   },
+   "BaseMaxHp": 1490,
+   "BaseConstitution": 9,
+   "BaseIntelligence": 158,
+   "BaseDexterity": 62,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 30,
+   "ExpGiven": 360,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 160,
+   "MaxDamage": 380,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "BleakDisciple",
+   "Drops": {
+    "abherrant_fabric": 440,
+    "esoteric_egg": 1
+   },
+   "DropStacks": {
+    "abherrant_fabric": 1,
+    "esoteric_egg": 1
+   }
+  },
+  {
+   "className": "Boar",
+   "id": "boar",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "85a566fc3a4e3354181dfc28f9d1751890ab9c5f9fa00a0ac4862b2463c46d6d",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Boar.java",
+   "stats": {},
+   "BaseMaxHp": 100,
+   "BaseConstitution": 10,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 2,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 12,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 1,
+   "MaxDamage": 3,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Boar",
+   "Drops": {
+    "boar_tusk": 300,
+    "beast_pelt": 450,
+    "meat_chop": 12,
+    "wild_egg": 1
+   },
+   "DropStacks": {
+    "boar_tusk": 1,
+    "beast_pelt": 1,
+    "meat_chop": 1,
+    "wild_egg": 1
+   }
+  },
+  {
+   "className": "CelestialDestroyer",
+   "id": "celestial_destroyer",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "769baff0c0805974ecce3f5b5e337a12caafac259561d9ac1a100878a5a5b5d2",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\CelestialDestroyer.java",
+   "stats": {},
+   "BaseMaxHp": 4000,
+   "BaseConstitution": 200,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 62,
+   "BaseDefense": 20,
+   "BaseMagicDefense": 20,
+   "ExpGiven": 2400,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 100,
+   "MaxDamage": 120,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "CelestialDestroyer",
+   "Drops": {
+    "celestial_scraps": 600,
+    "aether_ignis": 400
+   },
+   "DropStacks": {
+    "celestial_scraps": 3,
+    "aether_ignis": 1
+   }
+  },
+  {
+   "className": "CelestialLancer",
+   "id": "celestial_lancer",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "3cfc1537c76ec999a5a6849655b49bdb223f5e7df929cf5262da9e13db63da04",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\CelestialLancer.java",
+   "stats": {},
+   "BaseMaxHp": 2280,
+   "BaseConstitution": 120,
+   "BaseIntelligence": 95,
+   "BaseDexterity": 75,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 200,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 130,
+   "MaxDamage": 170,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "CelestialLancer",
+   "Drops": {
+    "celestial_scraps": 550,
+    "synapse": 15
+   },
+   "DropStacks": {
+    "celestial_scraps": 1,
+    "synapse": 1
+   }
+  },
+  {
+   "className": "Centaur",
+   "id": "centaur",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "057f695ee53825ec4e515b6b1def76cac04400f0b2b1a4d1909325b8146aab23",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Centaur.java",
+   "stats": {},
+   "BaseMaxHp": 80,
+   "BaseConstitution": 12,
+   "BaseIntelligence": 10,
+   "BaseDexterity": 22,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 24,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 8,
+   "MaxDamage": 15,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Centaur",
+   "Drops": {
+    "plant_fiber": 25
+   },
+   "DropStacks": {
+    "plant_fiber": 1
+   }
+  },
+  {
+   "className": "Cerebrum",
+   "id": "cerebrum",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "131a71a2a9e0bb8d6cbff5d9080b0e5ff6ef0fae0533030212e3a1e2858f4c23",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Cerebrum.java",
+   "stats": {},
+   "BaseMaxHp": 5000,
+   "BaseConstitution": 100,
+   "BaseIntelligence": 250,
+   "BaseDexterity": 1,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 860,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 500,
+   "MaxDamage": 800,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Cerebrum",
+   "Drops": {
+    "abiotic_core": 100
+   },
+   "DropStacks": {
+    "abiotic_core": 1
+   }
+  },
+  {
+   "className": "ChiefScientistAva",
+   "id": "chief_scientist_ava",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "6cd4c0a5229652bc8b26dafe106a1ae280c8cc54918f906d0ce6015218969a60",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ChiefScientistAva.java",
+   "stats": {},
+   "BaseMaxHp": 15000,
+   "BaseConstitution": 18,
+   "BaseIntelligence": 375,
+   "BaseDexterity": 12,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 4000,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 750,
+   "MaxDamage": 2500,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "ChiefScientistAva",
+   "Drops": {
+    "kaunian_fabric": 830,
+    "potion_of_clumsiness": 120,
+    "chief_scientist_coat": 50
+   },
+   "DropStacks": {
+    "kaunian_fabric": 1,
+    "potion_of_clumsiness": 1,
+    "chief_scientist_coat": 1
+   }
+  },
+  {
+   "className": "CityWarden",
+   "id": "city_warden",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "a67094b0cd20f050c0348bbf9f819b5dc66d303f61ef2660af512d35965bce6f",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\CityWarden.java",
+   "stats": {},
+   "BaseMaxHp": 300,
+   "BaseConstitution": 20,
+   "BaseIntelligence": 8,
+   "BaseDexterity": 16,
+   "BaseDefense": 15,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 35,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 26,
+   "MaxDamage": 31,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "CityWarden",
+   "Drops": {
+    "warden_belt": 50
+   },
+   "DropStacks": {
+    "warden_belt": 1
+   }
+  },
+  {
+   "className": "Claris",
+   "id": "claris",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "0bd7d0f169bbc034bdf24e0b38173009b1499e7b389f838a9ea4fabc7edb94a5",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Claris.java",
+   "stats": {},
+   "BaseMaxHp": 3200,
+   "BaseConstitution": 6,
+   "BaseIntelligence": 84,
+   "BaseDexterity": 26,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 50,
+   "ExpGiven": 540,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 182,
+   "MaxDamage": 188,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Claris",
+   "Drops": {
+    "seal_of_claris": 50,
+    "elixir_of_learning": 20,
+    "potion_of_magic_defense": 100
+   },
+   "DropStacks": {
+    "seal_of_claris": 1,
+    "elixir_of_learning": 1,
+    "potion_of_magic_defense": 1
+   }
+  },
+  {
+   "className": "Crusader",
+   "id": "crusader",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "1f8c623d34cacb29a03401fb67d03abe1b3ab1231865cfdcbdaa3e326b4d0bea",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Crusader.java",
+   "stats": {
+    "retaliationMagicalDamage": {
+     "fieldName": "retaliationMagicalDamage",
+     "semanticTag": "STAT_DAMAGE",
+     "value": 20
+    }
+   },
+   "BaseMaxHp": 940,
+   "BaseConstitution": 16,
+   "BaseIntelligence": 4,
+   "BaseDexterity": 19,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 72,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 55,
+   "MaxDamage": 80,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Crusader",
+   "Drops": {
+    "kabelian_metal": 150,
+    "crusader_insigna": 20
+   },
+   "DropStacks": {
+    "kabelian_metal": 1,
+    "crusader_insigna": 1
+   }
+  },
+  {
+   "className": "DeathHound",
+   "id": "death_hound",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "730f92349abc3ada4b084e5f74aa7e5e16e7b194e765c9703b7a5af963df9e84",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\DeathHound.java",
+   "stats": {},
+   "BaseMaxHp": 70,
+   "BaseConstitution": 8,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 20,
+   "BaseDefense": 50,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 36,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 17,
+   "MaxDamage": 28,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "DeathHound",
+   "Drops": {
+    "tattered_hide": 800,
+    "elongated_bone": 40
+   },
+   "DropStacks": {
+    "tattered_hide": 1,
+    "elongated_bone": 1
+   }
+  },
+  {
+   "className": "Deckhand",
+   "id": "deckhand",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "705cd4be037faeb2d6407eba7f545313f5de54ab00e020ca09a358aa09c53a28",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Deckhand.java",
+   "stats": {},
+   "BaseMaxHp": 320,
+   "BaseConstitution": 16,
+   "BaseIntelligence": 4,
+   "BaseDexterity": 74,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 30,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 24,
+   "MaxDamage": 28,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Deckhand",
+   "Drops": {
+    "monkey_hide": 300,
+    "abyssal_seashell": 200,
+    "banana": 20,
+    "wild_egg": 1
+   },
+   "DropStacks": {
+    "monkey_hide": 1,
+    "abyssal_seashell": 1,
+    "banana": 1,
+    "wild_egg": 1
+   }
+  },
+  {
+   "className": "Djinn",
+   "id": "djinn",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "0ca25264b06e0f3f6a9710a5d59d356ca071714abeb3106a276066f58baca7d7",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Djinn.java",
+   "stats": {},
+   "BaseMaxHp": 500,
+   "BaseConstitution": 16,
+   "BaseIntelligence": 20,
+   "BaseDexterity": 15,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 30,
+   "ExpGiven": 142,
+   "Rarity": 0,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 27,
+   "MaxDamage": 33,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Djinn",
+   "Drops": {
+    "bottled_sand_spirit": 30,
+    "potion_of_precision": 11,
+    "esoteric_egg": 1
+   },
+   "DropStacks": {
+    "bottled_sand_spirit": 1,
+    "potion_of_precision": 1,
+    "esoteric_egg": 1
+   }
+  },
+  {
+   "className": "DreamwroughtBeast",
+   "id": "dreamwrought_beast",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "d4efdc2f8f62126d8c7d9b3a30009d7981e064195fd80dc7c03311d19b1921c7",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\DreamwroughtBeast.java",
+   "stats": {},
+   "BaseMaxHp": 6000,
+   "BaseConstitution": 120,
+   "BaseIntelligence": 120,
+   "BaseDexterity": 140,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 400,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 550,
+   "MaxDamage": 800,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "DreamwroughtBeast",
+   "Drops": {
+    "dreamwrought_mane": 700
+   },
+   "DropStacks": {
+    "dreamwrought_mane": 1
+   }
+  },
+  {
+   "className": "DreamwroughtDragon",
+   "id": "dreamwrought_dragon",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "d7c0d5e91d8bfb1318c7dd44bf45935df2a2834d1cf2eac024cdbbce53494ea5",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\DreamwroughtDragon.java",
+   "stats": {},
+   "BaseMaxHp": 12500,
+   "BaseConstitution": 315,
+   "BaseIntelligence": 100,
+   "BaseDexterity": 400,
+   "BaseDefense": 10,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 550,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 900,
+   "MaxDamage": 1150,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "DreamwroughtDragon",
+   "Drops": {
+    "dreamwrought_hide": 900
+   },
+   "DropStacks": {
+    "dreamwrought_hide": 1
+   }
+  },
+  {
+   "className": "DreamwroughtForge",
+   "id": "dreamwrought_forge",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "a00e130e36b5f68e648a80b49e643b8b85aaf1ddafa16ddb6928f988e228417f",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\DreamwroughtForge.java",
+   "stats": {},
+   "BaseMaxHp": 16000,
+   "BaseConstitution": 700,
+   "BaseIntelligence": 250,
+   "BaseDexterity": 5,
+   "BaseDefense": 10,
+   "BaseMagicDefense": 10,
+   "ExpGiven": 625,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 1000,
+   "MaxDamage": 1150,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "DreamwroughtForge",
+   "Drops": {
+    "dreamwrought_steel": 1000
+   },
+   "DropStacks": {
+    "dreamwrought_steel": 1
+   }
+  },
+  {
+   "className": "DreamwroughtSwarm",
+   "id": "dreamwrought_swarm",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "62a31d0d0eec00ae45a5c17710ec52f7f291bad836def6f746dc999f2af0bb0b",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\DreamwroughtSwarm.java",
+   "stats": {},
+   "BaseMaxHp": 30,
+   "BaseConstitution": 1,
+   "BaseIntelligence": 50,
+   "BaseDexterity": 65,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 500,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 275,
+   "MaxDamage": 285,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "DreamwroughtSwarm",
+   "Drops": {
+    "dreamwrought_larva": 334
+   },
+   "DropStacks": {
+    "dreamwrought_larva": 1
+   }
+  },
+  {
+   "className": "Dryad",
+   "id": "dryad",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "fc64dfc7b72e6e9b61af18f73a50137188d687019b1cc245e166895532926d44",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Dryad.java",
+   "stats": {},
+   "BaseMaxHp": 670,
+   "BaseConstitution": 4,
+   "BaseIntelligence": 150,
+   "BaseDexterity": 60,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 30,
+   "ExpGiven": 200,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 150,
+   "MaxDamage": 280,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Dryad",
+   "Drops": {
+    "fleetfoot_fabric": 350,
+    "bag_of_choking_powder": 100,
+    "white_hair": 15,
+    "sylvan_flute": 10,
+    "meaty_mushroom": 120,
+    "potion_of_agility": 2
+   },
+   "DropStacks": {
+    "fleetfoot_fabric": 1,
+    "bag_of_choking_powder": 1,
+    "white_hair": 1,
+    "sylvan_flute": 1,
+    "meaty_mushroom": 1,
+    "potion_of_agility": 1
+   }
+  },
+  {
+   "className": "EldritchHound",
+   "id": "eldritch_hound",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "7d2a26f5eefc83eb1d1d3883ff18519bb4b44ca58b2f1a3815eacd5f0caa461b",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\EldritchHound.java",
+   "stats": {
+    "darknessDamageAmplification": {
+     "fieldName": "darknessDamageAmplification",
+     "semanticTag": "STAT_DAMAGE",
+     "value": 0.01
+    }
+   },
+   "BaseMaxHp": 1046,
+   "BaseConstitution": 22,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 128,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 326,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 178,
+   "MaxDamage": 252,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "EldritchHound",
+   "Drops": {
+    "black_hide": 340,
+    "esoteric_egg": 1
+   },
+   "DropStacks": {
+    "black_hide": 1,
+    "esoteric_egg": 1
+   }
+  },
+  {
+   "className": "ElectricSlime",
+   "id": "electric_slime",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "7bbce79debb6b6ac7c60a302a65c237eea03052b0184605968747e93ce232a48",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ElectricSlime.java",
+   "stats": {},
+   "BaseMaxHp": 100,
+   "BaseConstitution": 40,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 6,
+   "BaseDefense": 40,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 30,
+   "Rarity": 0,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 26,
+   "MaxDamage": 35,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "ElectricSlime",
+   "Drops": {
+    "green_slime": 50,
+    "static_core": 120,
+    "potion_of_immunity": 100
+   },
+   "DropStacks": {
+    "green_slime": 3,
+    "static_core": 1,
+    "potion_of_immunity": 1
+   }
+  },
+  {
+   "className": "EmperorClovisXXVIII",
+   "id": "emperor_clovis_xxviii",
+   "manualRuleRequired": true,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "MANUAL_RULE_REQUIRED",
+    "MISSING_STATS"
+   ],
+   "parseStatus": "partial",
+   "recordHash": "4e217206adb53d23374045af36444d889cf53b408c3fc17b79ff614216d67a74",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\EmperorClovisXXVIII.java",
+   "stats": {}
+  },
+  {
+   "className": "Enemy",
+   "id": "enemy",
+   "manualRuleRequired": true,
+   "nameKey": null,
+   "parentClass": "Entity",
+   "parseReasons": [
+    "MANUAL_RULE_REQUIRED",
+    "MISSING_STATS"
+   ],
+   "parseStatus": "partial",
+   "recordHash": "3499c8bd49160a9859d93d8e6f870508a08d7fa9e5a71a0be5867de36692fa3e",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\Enemy.java",
+   "stats": {}
+  },
+  {
+   "className": "Enforcer",
+   "id": "enforcer",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "64b603f454d6009afb65e5aa0a7176b15ce3fa89ce8898f55aebfde9cf7630db",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Enforcer.java",
+   "stats": {},
+   "BaseMaxHp": 18000,
+   "BaseConstitution": 400,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 35,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 575,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 825,
+   "MaxDamage": 1100,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Enforcer",
+   "Drops": {
+    "mutant_hide": 800
+   },
+   "DropStacks": {
+    "mutant_hide": 1
+   }
+  },
+  {
+   "className": "Ent",
+   "id": "ent",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "d301faf5d934fbc904ac31e9fa672059fff992849115fcb61af537f1f8076d94",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Ent.java",
+   "stats": {},
+   "BaseMaxHp": 300,
+   "BaseConstitution": 20,
+   "BaseIntelligence": 20,
+   "BaseDexterity": 3,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 120,
+   "Rarity": 3,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 11,
+   "MaxDamage": 14,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Ent",
+   "Drops": {
+    "wood": 499,
+    "ancient_seed": 50,
+    "apple": 250,
+    "wooden_egg": 1
+   },
+   "DropStacks": {
+    "wood": 1,
+    "ancient_seed": 1,
+    "apple": 1,
+    "wooden_egg": 1
+   }
+  },
+  {
+   "className": "EtherealSoul",
+   "id": "ethereal_soul",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "efd0bfe035506b0e40da4a405d8d8c0b1ebb8095231c74a4159dd23e6b4b16b1",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\EtherealSoul.java",
+   "stats": {},
+   "BaseMaxHp": 3180,
+   "BaseConstitution": 20,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 23,
+   "BaseDefense": 50,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 300,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 112,
+   "MaxDamage": 138,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "EtherealSoul",
+   "Drops": {},
+   "DropStacks": {}
+  },
+  {
+   "className": "FireSlime",
+   "id": "fire_slime",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "307c074f322f07bc9113340f92de41a6b5fc0d412954b0bbcf2d567755c3046a",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\FireSlime.java",
+   "stats": {},
+   "BaseMaxHp": 100,
+   "BaseConstitution": 40,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 6,
+   "BaseDefense": 40,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 30,
+   "Rarity": 0,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 26,
+   "MaxDamage": 35,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "FireSlime",
+   "Drops": {
+    "green_slime": 50,
+    "sunfire_core": 120,
+    "potion_of_immunity": 100
+   },
+   "DropStacks": {
+    "green_slime": 3,
+    "sunfire_core": 1,
+    "potion_of_immunity": 1
+   }
+  },
+  {
+   "className": "FirstMinisterAtos",
+   "id": "first_minister_atos",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "aad8bc3cf77685624f0d33e380cb0ab43d69c5f4743da03e7ed20b30f316f9da",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\FirstMinisterAtos.java",
+   "stats": {},
+   "BaseMaxHp": 18500,
+   "BaseConstitution": 75,
+   "BaseIntelligence": 5,
+   "BaseDexterity": 190,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 4000,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 1200,
+   "MaxDamage": 1900,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "FirstMinisterAtos",
+   "Drops": {
+    "kaunian_fabric": 650,
+    "fireproof_oil": 350
+   },
+   "DropStacks": {
+    "kaunian_fabric": 1,
+    "fireproof_oil": 1
+   }
+  },
+  {
+   "className": "ForestSpirit",
+   "id": "forest_spirit",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "ae9b35fa19a1e860a895e3d7d5d3d6d1fb3b6b5d8b8a286f7d217dba81098b25",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ForestSpirit.java",
+   "stats": {},
+   "BaseMaxHp": 2000,
+   "BaseConstitution": 34,
+   "BaseIntelligence": 40,
+   "BaseDexterity": 35,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 600,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 72,
+   "MaxDamage": 92,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "ForestSpirit",
+   "Drops": {
+    "primordial_essence": 250
+   },
+   "DropStacks": {
+    "primordial_essence": 1
+   }
+  },
+  {
+   "className": "FrozenSlime",
+   "id": "frozen_slime",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "9c688860aa98d96d6360ff53346841062494882bc8615c1ca130e95603ce3e40",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\FrozenSlime.java",
+   "stats": {},
+   "BaseMaxHp": 100,
+   "BaseConstitution": 40,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 6,
+   "BaseDefense": 40,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 30,
+   "Rarity": 0,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 26,
+   "MaxDamage": 35,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "FrozenSlime",
+   "Drops": {
+    "green_slime": 50,
+    "permafrost_core": 120,
+    "potion_of_immunity": 100
+   },
+   "DropStacks": {
+    "green_slime": 3,
+    "permafrost_core": 1,
+    "potion_of_immunity": 1
+   }
+  },
+  {
+   "className": "Gcss",
+   "id": "gcss",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "ddf4f74c43a44f03f1d2d1c9375f29d24fc07ff944e4477617242d4f7699d10d",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Gcss.java",
+   "stats": {},
+   "BaseMaxHp": 5000,
+   "BaseConstitution": 400,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 45,
+   "BaseDefense": 35,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 300,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 600,
+   "MaxDamage": 900,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Gcss",
+   "Drops": {
+    "synapse": 1000
+   },
+   "DropStacks": {
+    "synapse": 1
+   }
+  },
+  {
+   "className": "Ghoul",
+   "id": "ghoul",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "4cf899e4d810c7e593243757e8f918c64599f9132374cb0bdb67d7541ca91b96",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Ghoul.java",
+   "stats": {},
+   "BaseMaxHp": 150,
+   "BaseConstitution": 20,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 42,
+   "BaseDefense": 50,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 90,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 18,
+   "MaxDamage": 32,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Ghoul",
+   "Drops": {
+    "infected_blood": 50
+   },
+   "DropStacks": {
+    "infected_blood": 1
+   }
+  },
+  {
+   "className": "GiantMoth",
+   "id": "giant_moth",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "24e474f47c3a23c19b82cd497b6efd69660e24df0e258959ec6fd653023d46e6",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\GiantMoth.java",
+   "stats": {},
+   "BaseMaxHp": 480,
+   "BaseConstitution": 7,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 42,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 70,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 70,
+   "MaxDamage": 95,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "GiantMoth",
+   "Drops": {
+    "giant_moth_wing": 550,
+    "insect_egg": 1
+   },
+   "DropStacks": {
+    "giant_moth_wing": 1,
+    "insect_egg": 1
+   }
+  },
+  {
+   "className": "GiantSpider",
+   "id": "giant_spider",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "4657e047cc646e42457fd4d8dcb3d18419476c169289ee374b5f26d21f7b8690",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\GiantSpider.java",
+   "stats": {},
+   "BaseMaxHp": 600,
+   "BaseConstitution": 10,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 35,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 58,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 30,
+   "MaxDamage": 60,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "GiantSpider",
+   "Drops": {
+    "cobweb_bundle": 300,
+    "spider_leg": 200,
+    "insect_egg": 1
+   },
+   "DropStacks": {
+    "cobweb_bundle": 1,
+    "spider_leg": 1,
+    "insect_egg": 1
+   }
+  },
+  {
+   "className": "GiantTortoise",
+   "id": "giant_tortoise",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "5278a7d363d4bda5a28bfa4a4a157949fdfd363bb9c08042de5a3fac1627fcb9",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\GiantTortoise.java",
+   "stats": {},
+   "BaseMaxHp": 1400,
+   "BaseConstitution": 60,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 1,
+   "BaseDefense": 50,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 70,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 40,
+   "MaxDamage": 55,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "GiantTortoise",
+   "Drops": {
+    "giant_shell_fragment": 500,
+    "tortoise_thorn": 50,
+    "egg": 25,
+    "reptile_egg": 1
+   },
+   "DropStacks": {
+    "giant_shell_fragment": 1,
+    "tortoise_thorn": 1,
+    "egg": 1,
+    "reptile_egg": 1
+   }
+  },
+  {
+   "className": "GoldenRabbit",
+   "id": "golden_rabbit",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "dd14f7f2776e3c1df6d6cc1b2cf9bce74c700f3037f73a8e9878b9130465d3eb",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\GoldenRabbit.java",
+   "stats": {},
+   "BaseMaxHp": 40,
+   "BaseConstitution": 3,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 42,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 120,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 1,
+   "MaxDamage": 2,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "GoldenRabbit",
+   "Drops": {
+    "cottontail_fur": 300,
+    "meat_chop": 20,
+    "wild_egg": 1
+   },
+   "DropStacks": {
+    "cottontail_fur": 1,
+    "meat_chop": 1,
+    "wild_egg": 1
+   }
+  },
+  {
+   "className": "GreenSpitfang",
+   "id": "green_spitfang",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "e5c92cba07ece173e9967049612b9379058b9d43cb5effd9f9786b9aa9800786",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\GreenSpitfang.java",
+   "stats": {},
+   "BaseMaxHp": 520,
+   "BaseConstitution": 15,
+   "BaseIntelligence": 3,
+   "BaseDexterity": 55,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 92,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 105,
+   "MaxDamage": 150,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "GreenSpitfang",
+   "Drops": {
+    "spitfang_scale": 400,
+    "long_serpent_fang": 20,
+    "reptile_egg": 1
+   },
+   "DropStacks": {
+    "spitfang_scale": 1,
+    "long_serpent_fang": 1,
+    "reptile_egg": 1
+   }
+  },
+  {
+   "className": "HeadlessKnight",
+   "id": "headless_knight",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "aac454310069bdbf025813125902efab04e0fed89eed691688b406831bbc4371",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\HeadlessKnight.java",
+   "stats": {},
+   "BaseMaxHp": 22500,
+   "BaseConstitution": 200,
+   "BaseIntelligence": 120,
+   "BaseDexterity": 170,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 10000,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 1650,
+   "MaxDamage": 1800,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "HeadlessKnight",
+   "Drops": {
+    "dreadful_morningstar": 75
+   },
+   "DropStacks": {
+    "dreadful_morningstar": 1
+   }
+  },
+  {
+   "className": "HeraldKali",
+   "id": "herald_kali",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "f46c987a163dd5726ebd801605e7bf0e2222cb268dd4d78bac13125bda035248",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\HeraldKali.java",
+   "stats": {},
+   "BaseMaxHp": 4500,
+   "BaseConstitution": 500,
+   "BaseIntelligence": 500,
+   "BaseDexterity": 500,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 9600,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 280,
+   "MaxDamage": 305,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "HeraldKali",
+   "Drops": {
+    "serpent_staff": 1000
+   },
+   "DropStacks": {
+    "serpent_staff": 1
+   }
+  },
+  {
+   "className": "HeraldMaya",
+   "id": "herald_maya",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "1e8961c96c059ec698035848572155427afaced1acfb94a6024a11c05988d5f9",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\HeraldMaya.java",
+   "stats": {},
+   "BaseMaxHp": 4500,
+   "BaseConstitution": 500,
+   "BaseIntelligence": 500,
+   "BaseDexterity": 500,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 9600,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 280,
+   "MaxDamage": 305,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "HeraldMaya",
+   "Drops": {
+    "serpent_sting": 1000
+   },
+   "DropStacks": {
+    "serpent_sting": 1
+   }
+  },
+  {
+   "className": "HeraldShoran",
+   "id": "herald_shoran",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "b99fca6e6ca9c980a8809219af98689b3b39a4323275d7c89497393829cc076c",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\HeraldShoran.java",
+   "stats": {},
+   "BaseMaxHp": 4500,
+   "BaseConstitution": 500,
+   "BaseIntelligence": 500,
+   "BaseDexterity": 500,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 9600,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 280,
+   "MaxDamage": 305,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "HeraldShoran",
+   "Drops": {
+    "serpent_bite": 1000
+   },
+   "DropStacks": {
+    "serpent_bite": 1
+   }
+  },
+  {
+   "className": "HeraldXavi",
+   "id": "herald_xavi",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "c32ddf3c4ec1e3553914633f7c30658f9f89ba12ce690b0f544892841c32e36a",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\HeraldXavi.java",
+   "stats": {},
+   "BaseMaxHp": 4500,
+   "BaseConstitution": 500,
+   "BaseIntelligence": 500,
+   "BaseDexterity": 500,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 9600,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 280,
+   "MaxDamage": 305,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "HeraldXavi",
+   "Drops": {
+    "serpent_lunge": 1000
+   },
+   "DropStacks": {
+    "serpent_lunge": 1
+   }
+  },
+  {
+   "className": "IceElemental",
+   "id": "ice_elemental",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "557e933acc206953fd96c8db86adc189277a6f44c3e2a8c839f4fc76952a6925",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\IceElemental.java",
+   "stats": {},
+   "BaseMaxHp": 2000,
+   "BaseConstitution": 3,
+   "BaseIntelligence": 33,
+   "BaseDexterity": 3,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 50,
+   "ExpGiven": 280,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 20,
+   "MaxDamage": 55,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "IceElemental",
+   "Drops": {
+    "frostmetal_ore": 500,
+    "frost_crystal": 50,
+    "frost_nucleus": 5,
+    "esoteric_egg": 1
+   },
+   "DropStacks": {
+    "frostmetal_ore": 1,
+    "frost_crystal": 1,
+    "frost_nucleus": 1,
+    "esoteric_egg": 1
+   }
+  },
+  {
+   "className": "Iconoclast",
+   "id": "iconoclast",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "ea869386a793ca60e232af96fe7e2f6b75daddaf25385d1c5f17dcde9648c60d",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Iconoclast.java",
+   "stats": {},
+   "BaseMaxHp": 820,
+   "BaseConstitution": 15,
+   "BaseIntelligence": 32,
+   "BaseDexterity": 22,
+   "BaseDefense": 30,
+   "BaseMagicDefense": 30,
+   "ExpGiven": 80,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 80,
+   "MaxDamage": 82,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Iconoclast",
+   "Drops": {
+    "chain_link": 40,
+    "charred_heart": 1
+   },
+   "DropStacks": {
+    "chain_link": 1,
+    "charred_heart": 1
+   }
+  },
+  {
+   "className": "Imp",
+   "id": "imp",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "6efd5d38342ab1a628040f9e537761b32b0324c028500c4d5c6b18a40b61adc4",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Imp.java",
+   "stats": {},
+   "BaseMaxHp": 440,
+   "BaseConstitution": 50,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 94,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 116,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 130,
+   "MaxDamage": 180,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Imp",
+   "Drops": {
+    "spellwoven_hide": 400
+   },
+   "DropStacks": {
+    "spellwoven_hide": 1
+   }
+  },
+  {
+   "className": "ImperialGuard",
+   "id": "imperial_guard",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "431cc84be5496b1872f10861239de5a1b341b2e5efe8d42849225301c299ba62",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ImperialGuard.java",
+   "stats": {},
+   "BaseMaxHp": 600,
+   "BaseConstitution": 35,
+   "BaseIntelligence": 10,
+   "BaseDexterity": 25,
+   "BaseDefense": 30,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 92,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 30,
+   "MaxDamage": 34,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "ImperialGuard",
+   "Drops": {
+    "gold_scraps": 400,
+    "corrupted_shield": 1,
+    "black_ooze": 200
+   },
+   "DropStacks": {
+    "gold_scraps": 1,
+    "corrupted_shield": 1,
+    "black_ooze": 1
+   }
+  },
+  {
+   "className": "ImperialMage",
+   "id": "imperial_mage",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "ae362d538874bb16a784592038d294f2124fdb322fa052f4f57e9adb1d5241b2",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ImperialMage.java",
+   "stats": {},
+   "BaseMaxHp": 300,
+   "BaseConstitution": 15,
+   "BaseIntelligence": 40,
+   "BaseDexterity": 20,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 30,
+   "ExpGiven": 92,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 26,
+   "MaxDamage": 29,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "ImperialMage",
+   "Drops": {
+    "gold_scraps": 400,
+    "corrupted_staff": 1,
+    "potion_of_intelligence": 4,
+    "black_ooze": 200
+   },
+   "DropStacks": {
+    "gold_scraps": 1,
+    "corrupted_staff": 1,
+    "potion_of_intelligence": 1,
+    "black_ooze": 1
+   }
+  },
+  {
+   "className": "InsaneCitizen",
+   "id": "insane_citizen",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "c43b71e96a1414f4c0973beca6b7b6bda4e22f7e3026ae3326fe8e3d1f1092e8",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\InsaneCitizen.java",
+   "stats": {},
+   "BaseMaxHp": 200,
+   "BaseConstitution": 16,
+   "BaseIntelligence": 8,
+   "BaseDexterity": 5,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 19,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 23,
+   "MaxDamage": 27,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "InsaneCitizen",
+   "Drops": {
+    "silver_ring": 5,
+    "silk_thread": 100,
+    "potato": 25,
+    "black_ooze": 200
+   },
+   "DropStacks": {
+    "silver_ring": 1,
+    "silk_thread": 1,
+    "potato": 1,
+    "black_ooze": 1
+   }
+  },
+  {
+   "className": "InsaneMerchant",
+   "id": "insane_merchant",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "130b23af01e406441f9214cd66f669ed1144c268b517334894f7b74f3b17e12d",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\InsaneMerchant.java",
+   "stats": {},
+   "BaseMaxHp": 180,
+   "BaseConstitution": 16,
+   "BaseIntelligence": 20,
+   "BaseDexterity": 5,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 19,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 23,
+   "MaxDamage": 27,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "InsaneMerchant",
+   "Drops": {
+    "emerald": 180,
+    "flute": 8,
+    "chocolate": 200
+   },
+   "DropStacks": {
+    "emerald": 1,
+    "flute": 1,
+    "chocolate": 1
+   }
+  },
+  {
+   "className": "InsanePriest",
+   "id": "insane_priest",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "55b41298b42eb558d8092e1b2decb74f4784c5232d072747096685e358e04a35",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\InsanePriest.java",
+   "stats": {},
+   "BaseMaxHp": 200,
+   "BaseConstitution": 12,
+   "BaseIntelligence": 30,
+   "BaseDexterity": 12,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 30,
+   "ExpGiven": 35,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 40,
+   "MaxDamage": 42,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "InsanePriest",
+   "Drops": {
+    "silk_thread": 300,
+    "gold_scraps": 100,
+    "holy_water": 2,
+    "mitre_hat": 1,
+    "black_ooze": 200
+   },
+   "DropStacks": {
+    "silk_thread": 1,
+    "gold_scraps": 1,
+    "holy_water": 1,
+    "mitre_hat": 1,
+    "black_ooze": 1
+   }
+  },
+  {
+   "className": "KabarTheRotten",
+   "id": "kabar_the_rotten",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "f0853a4ca400549838e818c07be0eeee377c0e78b8567a627c9ffb47d2520c2c",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\KabarTheRotten.java",
+   "stats": {},
+   "BaseMaxHp": 900,
+   "BaseConstitution": 14,
+   "BaseIntelligence": 34,
+   "BaseDexterity": 8,
+   "BaseDefense": 50,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 360,
+   "Rarity": 1,
+   "BaseLifesteal": 25,
+   "Counterattack": 0,
+   "MinDamage": 130,
+   "MaxDamage": 150,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "KabarTheRotten",
+   "Drops": {
+    "phylactery_fragment": 666,
+    "cursed_silver": 309,
+    "robe_of_the_lich": 25
+   },
+   "DropStacks": {
+    "phylactery_fragment": 1,
+    "cursed_silver": 3,
+    "robe_of_the_lich": 1
+   }
+  },
+  {
+   "className": "KasimirTheSeer",
+   "id": "kasimir_the_seer",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "145fd373c0f6af5cbf6bc995b189bab9a02575202adbf4ff7386052a7f1ec49b",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\KasimirTheSeer.java",
+   "stats": {},
+   "BaseMaxHp": 4500,
+   "BaseConstitution": 500,
+   "BaseIntelligence": 500,
+   "BaseDexterity": 500,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 5000,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 280,
+   "MaxDamage": 305,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "KasimirTheSeer",
+   "Drops": {},
+   "DropStacks": {}
+  },
+  {
+   "className": "KingAino",
+   "id": "king_aino",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "bca77481d6927454b7d6962238d66efb9a23f0ecfd6e5d36395bee34b554fb86",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\KingAino.java",
+   "stats": {},
+   "BaseMaxHp": 25000,
+   "BaseConstitution": 200,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 200,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 5500,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 2500,
+   "MaxDamage": 3500,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "KingAino",
+   "Drops": {
+    "orichalcum_scraps": 950,
+    "spider": 50
+   },
+   "DropStacks": {
+    "orichalcum_scraps": 5,
+    "spider": 1
+   }
+  },
+  {
+   "className": "Lazarus",
+   "id": "lazarus",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "27103804b96892b48f9001e0617a162a2f5d7ef6249b89844128a23beb6c6853",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Lazarus.java",
+   "stats": {},
+   "BaseMaxHp": 28500,
+   "BaseConstitution": 80,
+   "BaseIntelligence": 200,
+   "BaseDexterity": 250,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 5000,
+   "Rarity": 1,
+   "BaseLifesteal": 200,
+   "Counterattack": 0,
+   "MinDamage": 2800,
+   "MaxDamage": 4000,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Lazarus",
+   "Drops": {
+    "ancestral_blood": 400
+   },
+   "DropStacks": {
+    "ancestral_blood": 1
+   }
+  },
+  {
+   "className": "LegateHadrian",
+   "id": "legate_hadrian",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "fe0e0fb0b517ba6592995390fcd7db9012fdf1939bc719eab34f160ac4ad96fa",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\LegateHadrian.java",
+   "stats": {
+    "criticalDamage": {
+     "fieldName": "criticalDamage",
+     "semanticTag": "STAT_DAMAGE",
+     "value": 2.0
+    },
+    "darknessDamageAmplification": {
+     "fieldName": "darknessDamageAmplification",
+     "semanticTag": "STAT_DAMAGE",
+     "value": 0.01
+    }
+   },
+   "BaseMaxHp": 6400,
+   "BaseConstitution": 120,
+   "BaseIntelligence": 80,
+   "BaseDexterity": 96,
+   "BaseDefense": 20,
+   "BaseMagicDefense": 20,
+   "ExpGiven": 300,
+   "Rarity": 1,
+   "BaseLifesteal": 20,
+   "Counterattack": 4602678819172646912,
+   "MinDamage": 700,
+   "MaxDamage": 950,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "LegateHadrian",
+   "Drops": {},
+   "DropStacks": {}
+  },
+  {
+   "className": "LesserTitan",
+   "id": "lesser_titan",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "78d4353cb9bd237d60588cfa813b86bcfbae668b818af5cf016b10b75c65883b",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\LesserTitan.java",
+   "stats": {},
+   "BaseMaxHp": 4150,
+   "BaseConstitution": 40,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 16,
+   "BaseDefense": 10,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 300,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 220,
+   "MaxDamage": 300,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "LesserTitan",
+   "Drops": {
+    "alchemic_powder": 300,
+    "sentient_slab": 150,
+    "construct_egg": 1
+   },
+   "DropStacks": {
+    "alchemic_powder": 1,
+    "sentient_slab": 1,
+    "construct_egg": 1
+   }
+  },
+  {
+   "className": "LostMiner",
+   "id": "lost_miner",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "e5cfdb7362adcc8b301811fe37ca9336caba121cfcdc979f4b7da887114f88bc",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\LostMiner.java",
+   "stats": {
+    "darknessDamageAmplification": {
+     "fieldName": "darknessDamageAmplification",
+     "semanticTag": "STAT_DAMAGE",
+     "value": 0.01
+    }
+   },
+   "BaseMaxHp": 790,
+   "BaseConstitution": 8,
+   "BaseIntelligence": 20,
+   "BaseDexterity": 40,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 300,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 88,
+   "MaxDamage": 162,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "LostMiner",
+   "Drops": {
+    "obsidian_chunk": 300,
+    "shadow_gem": 200,
+    "potion_of_darkness": 4
+   },
+   "DropStacks": {
+    "obsidian_chunk": 1,
+    "shadow_gem": 1,
+    "potion_of_darkness": 1
+   }
+  },
+  {
+   "className": "MagicArmor",
+   "id": "magic_armor",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "b962bf2d1af138c7e10ebe17901aee296784f7e317fa8a194ba5ed6d141a26ed",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\MagicArmor.java",
+   "stats": {
+    "retaliationMagicalDamage": {
+     "fieldName": "retaliationMagicalDamage",
+     "semanticTag": "STAT_DAMAGE",
+     "value": 105
+    }
+   },
+   "BaseMaxHp": 400,
+   "BaseConstitution": 68,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 54,
+   "BaseDefense": 75,
+   "BaseMagicDefense": 75,
+   "ExpGiven": 116,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 120,
+   "MaxDamage": 135,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "MagicArmor",
+   "Drops": {
+    "animated_scraps": 375,
+    "radiating_nucleus": 2,
+    "construct_egg": 1
+   },
+   "DropStacks": {
+    "animated_scraps": 1,
+    "radiating_nucleus": 1,
+    "construct_egg": 1
+   }
+  },
+  {
+   "className": "Mimic",
+   "id": "mimic",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "d3f70b275e0774b20dd2017e8a87fa1579de2d39dea8f20a36c6fd51ca1f2242",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Mimic.java",
+   "stats": {},
+   "BaseMaxHp": 236,
+   "BaseConstitution": 25,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 18,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 132,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 42,
+   "MaxDamage": 78,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Mimic",
+   "Drops": {
+    "ghostwood_stump": 666,
+    "coin_purse": 333,
+    "construct_egg": 1
+   },
+   "DropStacks": {
+    "ghostwood_stump": 3,
+    "coin_purse": 1,
+    "construct_egg": 1
+   }
+  },
+  {
+   "className": "MysteriousTentacle",
+   "id": "mysterious_tentacle",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "274ac708a1dbea0b556703270bec226ad2ad33caf255defbebf3eee9a6db029c",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\MysteriousTentacle.java",
+   "stats": {},
+   "BaseMaxHp": 800,
+   "BaseConstitution": 52,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 3,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 132,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 21,
+   "MaxDamage": 24,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "MysteriousTentacle",
+   "Drops": {
+    "mysterious_appendage": 200,
+    "esoteric_egg": 1
+   },
+   "DropStacks": {
+    "mysterious_appendage": 1,
+    "esoteric_egg": 1
+   }
+  },
+  {
+   "className": "Necrobot",
+   "id": "necrobot",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "54ffd660145bf3a4d949c5005c2e5151f41c50b0af103bf0069f83081ec0e5f7",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Necrobot.java",
+   "stats": {},
+   "BaseMaxHp": 10000,
+   "BaseConstitution": 140,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 140,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 480,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 600,
+   "MaxDamage": 750,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Necrobot",
+   "Drops": {
+    "orichalcum_scraps": 750
+   },
+   "DropStacks": {
+    "orichalcum_scraps": 1
+   }
+  },
+  {
+   "className": "Necrolith",
+   "id": "necrolith",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "b2f97abf3e8f8b4658dcd79432cf02e2a40c221a9ee4fa504d550377262c8e9c",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Necrolith.java",
+   "stats": {},
+   "BaseMaxHp": 1000000,
+   "BaseConstitution": 500,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 1,
+   "BaseDefense": 100,
+   "BaseMagicDefense": 100,
+   "ExpGiven": 10,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 1,
+   "MaxDamage": 2,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Necrolith",
+   "Drops": {},
+   "DropStacks": {}
+  },
+  {
+   "className": "NexusResearcher",
+   "id": "nexus_researcher",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "79cad096f28a31f6041cd88d654f140e368e643814c50b8ac95616942712c3db",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\NexusResearcher.java",
+   "stats": {},
+   "BaseMaxHp": 735,
+   "BaseConstitution": 22,
+   "BaseIntelligence": 154,
+   "BaseDexterity": 15,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 140,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 225,
+   "MaxDamage": 240,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "NexusResearcher",
+   "Drops": {
+    "pumpkin": 25
+   },
+   "DropStacks": {
+    "pumpkin": 1
+   }
+  },
+  {
+   "className": "ObsidianGolem",
+   "id": "obsidian_golem",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "a3d72cf3fe7eb93d58d21831604434a4dc08541247d5e46be366e0dca5c771e5",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ObsidianGolem.java",
+   "stats": {},
+   "BaseMaxHp": 1200,
+   "BaseConstitution": 30,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 1,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 100,
+   "ExpGiven": 84,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 20,
+   "MaxDamage": 25,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "ObsidianGolem",
+   "Drops": {
+    "obsidian_chunk": 600,
+    "construct_egg": 1
+   },
+   "DropStacks": {
+    "obsidian_chunk": 1,
+    "construct_egg": 1
+   }
+  },
+  {
+   "className": "Oculus",
+   "id": "oculus",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "45fb40f44c54080dbe40269507ad8b5a0baa1f08d06f1450c91d5c24ace3a5a9",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Oculus.java",
+   "stats": {},
+   "BaseMaxHp": 1100,
+   "BaseConstitution": 55,
+   "BaseIntelligence": 65,
+   "BaseDexterity": 36,
+   "BaseDefense": 10,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 80,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 110,
+   "MaxDamage": 135,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Oculus",
+   "Drops": {
+    "elastic_membrane": 400,
+    "flux_limiter": 3,
+    "scanner": 4
+   },
+   "DropStacks": {
+    "elastic_membrane": 1,
+    "flux_limiter": 1,
+    "scanner": 1
+   }
+  },
+  {
+   "className": "PaleHermit",
+   "id": "pale_hermit",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "922920ed274c92c085cebc277b0cfcb94ab220235fcbb24f498a135ec4be77e9",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\PaleHermit.java",
+   "stats": {
+    "darknessDamageAmplification": {
+     "fieldName": "darknessDamageAmplification",
+     "semanticTag": "STAT_DAMAGE",
+     "value": 0.01
+    }
+   },
+   "BaseMaxHp": 3500,
+   "BaseConstitution": 8,
+   "BaseIntelligence": 40,
+   "BaseDexterity": 60,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 2500,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 112,
+   "MaxDamage": 218,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "PaleHermit",
+   "Drops": {
+    "voodoo_doll": 1000
+   },
+   "DropStacks": {
+    "voodoo_doll": 1
+   }
+  },
+  {
+   "className": "Phantasm",
+   "id": "phantasm",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "8e845a6e59963366cc215bafc5339bc9329a68a180680a115feedd38f9fcd233",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Phantasm.java",
+   "stats": {},
+   "BaseMaxHp": 450,
+   "BaseConstitution": 22,
+   "BaseIntelligence": 165,
+   "BaseDexterity": 500,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 900,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 999,
+   "MaxDamage": 1000,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Phantasm",
+   "Drops": {
+    "kaunian_fabric": 500
+   },
+   "DropStacks": {
+    "kaunian_fabric": 1
+   }
+  },
+  {
+   "className": "Phoenix",
+   "id": "phoenix",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "936025a6bcc1d72474c79d7bfd7113a4880080e199ed64d40677f63d92f7ae8c",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Phoenix.java",
+   "stats": {},
+   "BaseMaxHp": 12000,
+   "BaseConstitution": 50,
+   "BaseIntelligence": 125,
+   "BaseDexterity": 210,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 7500,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 1250,
+   "MaxDamage": 1350,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Phoenix",
+   "Drops": {
+    "phoenix_feather": 260
+   },
+   "DropStacks": {
+    "phoenix_feather": 1
+   }
+  },
+  {
+   "className": "Pirate",
+   "id": "pirate",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "9192ca9d1d00078c9e48aee7d8a1da876bb033f6f4bc6299426465c91c404111",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Pirate.java",
+   "stats": {},
+   "BaseMaxHp": 380,
+   "BaseConstitution": 25,
+   "BaseIntelligence": 4,
+   "BaseDexterity": 20,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 30,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 4602678819172646912,
+   "MinDamage": 28,
+   "MaxDamage": 35,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Pirate",
+   "Drops": {
+    "ghostwood_stump": 300,
+    "black_iron_scraps": 200,
+    "fresh_salmon": 12
+   },
+   "DropStacks": {
+    "ghostwood_stump": 1,
+    "black_iron_scraps": 1,
+    "fresh_salmon": 1
+   }
+  },
+  {
+   "className": "PirateCaptain",
+   "id": "pirate_captain",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "4c01008330d7812d17a3679d0658947bc23efe258ba64b7a5781cf1efd41e7af",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\PirateCaptain.java",
+   "stats": {},
+   "BaseMaxHp": 800,
+   "BaseConstitution": 40,
+   "BaseIntelligence": 8,
+   "BaseDexterity": 35,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 264,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 4602678819172646912,
+   "MinDamage": 40,
+   "MaxDamage": 54,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "PirateCaptain",
+   "Drops": {
+    "ghostwood_stump": 375,
+    "black_iron_scraps": 378,
+    "exotic_velvet": 200,
+    "fresh_tuna": 23,
+    "potion_of_dexterity": 2
+   },
+   "DropStacks": {
+    "ghostwood_stump": 1,
+    "black_iron_scraps": 1,
+    "exotic_velvet": 1,
+    "fresh_tuna": 1,
+    "potion_of_dexterity": 1
+   }
+  },
+  {
+   "className": "PirateLieutenant",
+   "id": "pirate_lieutenant",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "084288f4b8688c227828954773b7922def3700ccf340cd501b4fc9019ebcd750",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\PirateLieutenant.java",
+   "stats": {},
+   "BaseMaxHp": 600,
+   "BaseConstitution": 30,
+   "BaseIntelligence": 8,
+   "BaseDexterity": 25,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 132,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 4602678819172646912,
+   "MinDamage": 30,
+   "MaxDamage": 43,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "PirateLieutenant",
+   "Drops": {
+    "ghostwood_stump": 375,
+    "black_iron_scraps": 379,
+    "exotic_velvet": 200,
+    "fresh_tuna": 20,
+    "potion_of_dexterity": 1
+   },
+   "DropStacks": {
+    "ghostwood_stump": 1,
+    "black_iron_scraps": 1,
+    "exotic_velvet": 1,
+    "fresh_tuna": 1,
+    "potion_of_dexterity": 1
+   }
+  },
+  {
+   "className": "PrimevalWurm",
+   "id": "primeval_wurm",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "b6f1e96a479a3ae8a358b845bb2bfdc3a723689682e1588c3c819dbf389f8862",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\PrimevalWurm.java",
+   "stats": {},
+   "BaseMaxHp": 16000,
+   "BaseConstitution": 215,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 70,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 4000,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 540,
+   "MaxDamage": 595,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "PrimevalWurm",
+   "Drops": {
+    "primeval_scale": 999,
+    "insect_egg": 1
+   },
+   "DropStacks": {
+    "primeval_scale": 1,
+    "insect_egg": 1
+   }
+  },
+  {
+   "className": "PrimordialTitan",
+   "id": "primordial_titan",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "f7065beaacc024c0c8a9a7a7ac273b5b2086477914975e71c8f62a59882d764e",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\PrimordialTitan.java",
+   "stats": {},
+   "BaseMaxHp": 15000,
+   "BaseConstitution": 200,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 80,
+   "BaseDefense": 10,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 1200,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 280,
+   "MaxDamage": 330,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "PrimordialTitan",
+   "Drops": {
+    "exalted_powder": 300,
+    "colossal_sword": 100,
+    "potion_of_defense": 160,
+    "construct_egg": 1
+   },
+   "DropStacks": {
+    "exalted_powder": 1,
+    "colossal_sword": 1,
+    "potion_of_defense": 1,
+    "construct_egg": 1
+   }
+  },
+  {
+   "className": "Pterodactyl",
+   "id": "pterodactyl",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "173031405af19c499cd6a591bd294def9a15252838956524ff83061d3061fff9",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Pterodactyl.java",
+   "stats": {},
+   "BaseMaxHp": 775,
+   "BaseConstitution": 15,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 126,
+   "BaseDefense": 10,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 175,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 415,
+   "MaxDamage": 495,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Pterodactyl",
+   "Drops": {
+    "ancient_membrane": 325,
+    "pterodactyl_claw": 67
+   },
+   "DropStacks": {
+    "ancient_membrane": 1,
+    "pterodactyl_claw": 1
+   }
+  },
+  {
+   "className": "ReinforcedDoor",
+   "id": "reinforced_door",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "680f884797eb42d10a0fe4ad1a9b50517f5f16a17f4ef7f71ca16d21b23ffe7b",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ReinforcedDoor.java",
+   "stats": {},
+   "BaseMaxHp": 3000,
+   "BaseConstitution": 400,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 15,
+   "BaseDefense": 20,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 300,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 200,
+   "MaxDamage": 300,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "ReinforcedDoor",
+   "Drops": {
+    "celestial_scraps": 1000
+   },
+   "DropStacks": {
+    "celestial_scraps": 50
+   }
+  },
+  {
+   "className": "SandDemon",
+   "id": "sand_demon",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "95451e0714eab72cccd1b2dd32d59c61438b21372a55589de8b7a7987937eb83",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\SandDemon.java",
+   "stats": {},
+   "BaseMaxHp": 950,
+   "BaseConstitution": 46,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 16,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 50,
+   "ExpGiven": 36,
+   "Rarity": 0,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 30,
+   "MaxDamage": 46,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "SandDemon",
+   "Drops": {
+    "metamorphic_sand": 1000
+   },
+   "DropStacks": {
+    "metamorphic_sand": 1
+   }
+  },
+  {
+   "className": "SandStatue",
+   "id": "sand_statue",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "01a57c091def12cc0a848525fb84dc68131f5568df11665792d3968a7b41fff6",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\SandStatue.java",
+   "stats": {},
+   "BaseMaxHp": 120,
+   "BaseConstitution": 12,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 10,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 50,
+   "ExpGiven": 29,
+   "Rarity": 0,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 5,
+   "MaxDamage": 8,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "SandStatue",
+   "Drops": {
+    "metamorphic_sand": 300
+   },
+   "DropStacks": {
+    "metamorphic_sand": 1
+   }
+  },
+  {
+   "className": "SandVulture",
+   "id": "sand_vulture",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "a75a0af13bf83c3dbac86bda76cccddf415d1c24796b9874c18da010ac29336a",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\SandVulture.java",
+   "stats": {},
+   "BaseMaxHp": 90,
+   "BaseConstitution": 10,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 27,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 14,
+   "Rarity": 0,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 6,
+   "MaxDamage": 12,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "SandVulture",
+   "Drops": {
+    "feather": 500,
+    "egg": 30,
+    "avian_egg": 1
+   },
+   "DropStacks": {
+    "feather": 1,
+    "egg": 1,
+    "avian_egg": 1
+   }
+  },
+  {
+   "className": "ShaKireFirstSwordsman",
+   "id": "sha_kire_first_swordsman",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "ef85ab43ecfe5c1396fea2f18c94ce62dea497f163f6bbbacdff9a92d1d66e6a",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ShaKireFirstSwordsman.java",
+   "stats": {},
+   "BaseMaxHp": 3500,
+   "BaseConstitution": 24,
+   "BaseIntelligence": 36,
+   "BaseDexterity": 42,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 600,
+   "Rarity": 0,
+   "BaseLifesteal": 0,
+   "Counterattack": 4607182418800017408,
+   "MinDamage": 75,
+   "MaxDamage": 104,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "ShaKireFirstSwordsman",
+   "Drops": {
+    "eyes_of_the_swordsman": 1000
+   },
+   "DropStacks": {
+    "eyes_of_the_swordsman": 1
+   }
+  },
+  {
+   "className": "ShaTheHiddenGod",
+   "id": "sha_the_hidden_god",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "0c405c9778959f3ebb64d1e454cbdf530dc049ec89f422329e02ab79f70b33ad",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ShaTheHiddenGod.java",
+   "stats": {},
+   "BaseMaxHp": 7777,
+   "BaseConstitution": 7,
+   "BaseIntelligence": 7,
+   "BaseDexterity": 7,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 9600,
+   "Rarity": 0,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 7,
+   "MaxDamage": 7,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "ShaTheHiddenGod",
+   "Drops": {
+    "divine_zygote": 1000
+   },
+   "DropStacks": {
+    "divine_zygote": 1
+   }
+  },
+  {
+   "className": "ShahuriArcher",
+   "id": "shahuri_archer",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "607596c8baf1f9dadd3f4a00c48efa64bb0d1a693cf341a8a59aa8a5d82a77f5",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ShahuriArcher.java",
+   "stats": {},
+   "BaseMaxHp": 70,
+   "BaseConstitution": 8,
+   "BaseIntelligence": 10,
+   "BaseDexterity": 25,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 50,
+   "ExpGiven": 30,
+   "Rarity": 0,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 9,
+   "MaxDamage": 13,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "ShahuriArcher",
+   "Drops": {
+    "scrap_metal": 500,
+    "pineapple": 10,
+    "shahuri_bow_frame": 30
+   },
+   "DropStacks": {
+    "scrap_metal": 1,
+    "pineapple": 1,
+    "shahuri_bow_frame": 1
+   }
+  },
+  {
+   "className": "ShahuriMage",
+   "id": "shahuri_mage",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "d8101e8c823acf9a37b4bffbe8a09e6dfbf78774072af7c115fc8b202b6f0429",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ShahuriMage.java",
+   "stats": {},
+   "BaseMaxHp": 65,
+   "BaseConstitution": 4,
+   "BaseIntelligence": 15,
+   "BaseDexterity": 5,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 50,
+   "ExpGiven": 30,
+   "Rarity": 0,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 8,
+   "MaxDamage": 9,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "ShahuriMage",
+   "Drops": {
+    "scrap_metal": 500,
+    "quartz": 30,
+    "pineapple": 10
+   },
+   "DropStacks": {
+    "scrap_metal": 1,
+    "quartz": 1,
+    "pineapple": 1
+   }
+  },
+  {
+   "className": "ShahuriWarrior",
+   "id": "shahuri_warrior",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "6b4f4e6e88818a858af37a0ed46ae4fff98cdae1e6161891ba39ce7f8bad683b",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ShahuriWarrior.java",
+   "stats": {},
+   "BaseMaxHp": 145,
+   "BaseConstitution": 12,
+   "BaseIntelligence": 8,
+   "BaseDexterity": 5,
+   "BaseDefense": 20,
+   "BaseMagicDefense": 50,
+   "ExpGiven": 30,
+   "Rarity": 0,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 6,
+   "MaxDamage": 8,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "ShahuriWarrior",
+   "Drops": {
+    "scrap_metal": 500,
+    "pineapple": 10,
+    "recurve_blade": 30
+   },
+   "DropStacks": {
+    "scrap_metal": 1,
+    "pineapple": 1,
+    "recurve_blade": 1
+   }
+  },
+  {
+   "className": "Singularity",
+   "id": "singularity",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "470147e426973a42bc0f88f1cad997fa8c0348e4fd67e90f180ca27cd8ee062a",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Singularity.java",
+   "stats": {},
+   "BaseMaxHp": 30000,
+   "BaseConstitution": 100,
+   "BaseIntelligence": 100,
+   "BaseDexterity": 100,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 12000,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 1225,
+   "MaxDamage": 1275,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Singularity",
+   "Drops": {
+    "flake_of_infinity": 960,
+    "infinity_hat": 40
+   },
+   "DropStacks": {
+    "flake_of_infinity": 1,
+    "infinity_hat": 1
+   }
+  },
+  {
+   "className": "Slime",
+   "id": "slime",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "d825e8bf5912cc20aa5e1cda9f80d92e8d3e7a5b3cea6468c0320de55c823271",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Slime.java",
+   "stats": {},
+   "BaseMaxHp": 130,
+   "BaseConstitution": 40,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 6,
+   "BaseDefense": 40,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 24,
+   "Rarity": 0,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 26,
+   "MaxDamage": 35,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Slime",
+   "Drops": {
+    "green_slime": 50
+   },
+   "DropStacks": {
+    "green_slime": 3
+   }
+  },
+  {
+   "className": "SlimeKing",
+   "id": "slime_king",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "673356106131fc3de47d80b4fa4e7ecfda03c38963aa312a05e49bdbd8982c69",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\SlimeKing.java",
+   "stats": {},
+   "BaseMaxHp": 1000,
+   "BaseConstitution": 38,
+   "BaseIntelligence": 5,
+   "BaseDexterity": 8,
+   "BaseDefense": 40,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 240,
+   "Rarity": 0,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 40,
+   "MaxDamage": 50,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "SlimeKing",
+   "Drops": {
+    "green_slime": 250,
+    "slime_kings_crown": 30,
+    "seeking_glass": 10
+   },
+   "DropStacks": {
+    "green_slime": 3,
+    "slime_kings_crown": 1,
+    "seeking_glass": 1
+   }
+  },
+  {
+   "className": "SmolderingTitan",
+   "id": "smoldering_titan",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "b9891c32832011b3065e9d4f0a22160b8f9fc00e22c28e7afc874b68725107f2",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\SmolderingTitan.java",
+   "stats": {},
+   "BaseMaxHp": 6850,
+   "BaseConstitution": 340,
+   "BaseIntelligence": 28,
+   "BaseDexterity": 10,
+   "BaseDefense": 35,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 3750,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 500,
+   "MaxDamage": 550,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "SmolderingTitan",
+   "Drops": {
+    "infernite": 1000
+   },
+   "DropStacks": {
+    "infernite": 1
+   }
+  },
+  {
+   "className": "SnowWyvern",
+   "id": "snow_wyvern",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "966a0a8cb8bd7412344a554fc5240fc6d4387f1ff2c7131a54731e26167eaf67",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\SnowWyvern.java",
+   "stats": {},
+   "BaseMaxHp": 1250,
+   "BaseConstitution": 15,
+   "BaseIntelligence": 30,
+   "BaseDexterity": 40,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 520,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 65,
+   "MaxDamage": 90,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "SnowWyvern",
+   "Drops": {
+    "frostmetal_ore": 500,
+    "frozen_scale": 50,
+    "frozen_egg": 5,
+    "wyvern_chop": 200,
+    "avian_egg": 1
+   },
+   "DropStacks": {
+    "frostmetal_ore": 1,
+    "frozen_scale": 1,
+    "frozen_egg": 1,
+    "wyvern_chop": 1,
+    "avian_egg": 1
+   }
+  },
+  {
+   "className": "StoneShaman",
+   "id": "stone_shaman",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "286b9a460e990b8a20f675ae2a2ccb68aaf99abee26abfafe3bf04afa23b297f",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\StoneShaman.java",
+   "stats": {},
+   "BaseMaxHp": 1200,
+   "BaseConstitution": 40,
+   "BaseIntelligence": 115,
+   "BaseDexterity": 2,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 90,
+   "ExpGiven": 270,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 180,
+   "MaxDamage": 350,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "StoneShaman",
+   "Drops": {
+    "kindlequartz": 4
+   },
+   "DropStacks": {
+    "kindlequartz": 1
+   }
+  },
+  {
+   "className": "TekeliLiFirstApostle",
+   "id": "tekeli_li_first_apostle",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "65135cd704a65b6504c2b777cac9654b0c0e1fe520afe3f14ea38c583d6a0608",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\TekeliLiFirstApostle.java",
+   "stats": {},
+   "BaseMaxHp": 18000,
+   "BaseConstitution": 165,
+   "BaseIntelligence": 320,
+   "BaseDexterity": 38,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 16000,
+   "Rarity": 1,
+   "BaseLifesteal": 100,
+   "Counterattack": 0,
+   "MinDamage": 460,
+   "MaxDamage": 515,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "TekeliLiFirstApostle",
+   "Drops": {
+    "astral_goo": 500,
+    "cosmic_violin": 250,
+    "esoteric_egg": 1
+   },
+   "DropStacks": {
+    "astral_goo": 1,
+    "cosmic_violin": 1,
+    "esoteric_egg": 1
+   }
+  },
+  {
+   "className": "Terrorsaurus",
+   "id": "terrorsaurus",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "e490dbfe17fb8ab63feb1c23b77973c6ad7b6824420cfaa3cb00889ae3ea82a4",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Terrorsaurus.java",
+   "stats": {},
+   "BaseMaxHp": 2600,
+   "BaseConstitution": 94,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 12,
+   "BaseDefense": 10,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 194,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 400,
+   "MaxDamage": 480,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Terrorsaurus",
+   "Drops": {
+    "ancient_hide": 390,
+    "terrorsaurus_fang": 67
+   },
+   "DropStacks": {
+    "ancient_hide": 1,
+    "terrorsaurus_fang": 1
+   }
+  },
+  {
+   "className": "TheAncient",
+   "id": "the_ancient",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "3256c7e5f07a52d0f449fd9fb80314ce09fbd24e752e4f158e0d255ac8fe048a",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\TheAncient.java",
+   "stats": {},
+   "BaseMaxHp": 35000,
+   "BaseConstitution": 85,
+   "BaseIntelligence": 925,
+   "BaseDexterity": 45,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 17500,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 3500,
+   "MaxDamage": 4500,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "TheAncient",
+   "Drops": {
+    "heart_of_darkness": 333
+   },
+   "DropStacks": {
+    "heart_of_darkness": 1
+   }
+  },
+  {
+   "className": "TheExiled",
+   "id": "the_exiled",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "1cb653703a0d92e424d2eae73d21f68a3b79128ec25b19d4b5a0a34840d2c2d7",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\TheExiled.java",
+   "stats": {
+    "criticalDamage": {
+     "fieldName": "criticalDamage",
+     "semanticTag": "STAT_DAMAGE",
+     "value": 2.5
+    },
+    "darknessDamageAmplification": {
+     "fieldName": "darknessDamageAmplification",
+     "semanticTag": "STAT_DAMAGE",
+     "value": 0.02
+    }
+   },
+   "BaseMaxHp": 30000,
+   "BaseConstitution": 215,
+   "BaseIntelligence": 215,
+   "BaseDexterity": 215,
+   "BaseDefense": 25,
+   "BaseMagicDefense": 25,
+   "ExpGiven": 15000,
+   "Rarity": 1,
+   "BaseLifesteal": 35,
+   "Counterattack": 4605380978949069210,
+   "MinDamage": 1075,
+   "MaxDamage": 1425,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "TheExiled",
+   "Drops": {
+    "gift_of_light": 666
+   },
+   "DropStacks": {
+    "gift_of_light": 1
+   }
+  },
+  {
+   "className": "TheMachine",
+   "id": "the_machine",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "264efa93aec837b86ef5a992115a34c11c84e35c0cac9e5a7e64baa984dba463",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\TheMachine.java",
+   "stats": {},
+   "BaseMaxHp": 42500,
+   "BaseConstitution": 100,
+   "BaseIntelligence": 100,
+   "BaseDexterity": 100,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 20000,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 1,
+   "MaxDamage": 9999,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "TheMachine",
+   "Drops": {
+    "mysterious_cog": 1000
+   },
+   "DropStacks": {
+    "mysterious_cog": 1
+   }
+  },
+  {
+   "className": "Thorvus",
+   "id": "thorvus",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "ea947dba7728cb3440225465a5003f7fdbcc025c3be70121941a1800bb2876ce",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Thorvus.java",
+   "stats": {},
+   "BaseMaxHp": 4450,
+   "BaseConstitution": 14,
+   "BaseIntelligence": 68,
+   "BaseDexterity": 20,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 50,
+   "ExpGiven": 500,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 168,
+   "MaxDamage": 176,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Thorvus",
+   "Drops": {
+    "eternal_hunger": 20
+   },
+   "DropStacks": {
+    "eternal_hunger": 1
+   }
+  },
+  {
+   "className": "Treant",
+   "id": "treant",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "3415870bb79b5f65a6f97aa92503a587af4b475d6cbe9ab0f61e8b79e5ac5bdc",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Treant.java",
+   "stats": {},
+   "BaseMaxHp": 100,
+   "BaseConstitution": 10,
+   "BaseIntelligence": 5,
+   "BaseDexterity": 6,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 24,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 6,
+   "MaxDamage": 9,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Treant",
+   "Drops": {
+    "wood": 599,
+    "plant_fiber": 345,
+    "living_sap": 5,
+    "tomato": 12,
+    "wooden_egg": 1
+   },
+   "DropStacks": {
+    "wood": 1,
+    "plant_fiber": 1,
+    "living_sap": 1,
+    "tomato": 1,
+    "wooden_egg": 1
+   }
+  },
+  {
+   "className": "Troll",
+   "id": "troll",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "4ea01870d9059505d453b90410ea46e0e8a351abc196b8ec2a69a477ab9cc7cf",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Troll.java",
+   "stats": {},
+   "BaseMaxHp": 600,
+   "BaseConstitution": 30,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 8,
+   "BaseDefense": 70,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 68,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 48,
+   "MaxDamage": 62,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Troll",
+   "Drops": {
+    "troll_hide": 25
+   },
+   "DropStacks": {
+    "troll_hide": 1
+   }
+  },
+  {
+   "className": "TrollShaman",
+   "id": "troll_shaman",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "1a0a3e8b1b56ed4695ed2a899d74ba1a87b820c060b629d2d57193d5deb0a6dd",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\TrollShaman.java",
+   "stats": {},
+   "BaseMaxHp": 540,
+   "BaseConstitution": 10,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 4,
+   "BaseDefense": 40,
+   "BaseMagicDefense": 30,
+   "ExpGiven": 114,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 73,
+   "MaxDamage": 77,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "TrollShaman",
+   "Drops": {
+    "troll_hide": 200,
+    "winterwood": 40,
+    "potion_of_health": 4
+   },
+   "DropStacks": {
+    "troll_hide": 1,
+    "winterwood": 1,
+    "potion_of_health": 1
+   }
+  },
+  {
+   "className": "TrollWarrior",
+   "id": "troll_warrior",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "bba12536af3bafc090ff2c6302e0771e7d058996fffa7bd8e06164b9f3e031ae",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\TrollWarrior.java",
+   "stats": {},
+   "BaseMaxHp": 820,
+   "BaseConstitution": 30,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 10,
+   "BaseDefense": 70,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 114,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 67,
+   "MaxDamage": 78,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "TrollWarrior",
+   "Drops": {
+    "troll_hide": 30
+   },
+   "DropStacks": {
+    "troll_hide": 1
+   }
+  },
+  {
+   "className": "TrollWhelp",
+   "id": "troll_whelp",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "1d1071beeec3fd832644bcb56733bc74cad909051574a0bba41d0314444564b3",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\TrollWhelp.java",
+   "stats": {},
+   "BaseMaxHp": 470,
+   "BaseConstitution": 20,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 6,
+   "BaseDefense": 50,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 60,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 42,
+   "MaxDamage": 48,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "TrollWhelp",
+   "Drops": {
+    "troll_hide": 300,
+    "blueberry": 15
+   },
+   "DropStacks": {
+    "troll_hide": 1,
+    "blueberry": 1
+   }
+  },
+  {
+   "className": "TutorialWolf",
+   "id": "tutorial_wolf",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "ef876216f7d1f89c6b0ce0af2a1f4b387d2948be841a6e67d5eca13e2f39ebcf",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\TutorialWolf.java",
+   "stats": {},
+   "BaseMaxHp": 45,
+   "BaseConstitution": 8,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 5,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 12,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 2,
+   "MaxDamage": 5,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "TutorialWolf",
+   "Drops": {
+    "beast_pelt": 1000
+   },
+   "DropStacks": {
+    "beast_pelt": 2
+   }
+  },
+  {
+   "className": "Ultraslime",
+   "id": "ultraslime",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "6e70e075ff90ff69aeb851826ab40d660087b943a8745fb066cbb6ebc2293e31",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Ultraslime.java",
+   "stats": {},
+   "BaseMaxHp": 99999,
+   "BaseConstitution": 1000,
+   "BaseIntelligence": 100,
+   "BaseDexterity": 125,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 12500,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 920,
+   "MaxDamage": 1860,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Ultraslime",
+   "Drops": {
+    "white_slime": 500
+   },
+   "DropStacks": {
+    "white_slime": 1
+   }
+  },
+  {
+   "className": "Undead",
+   "id": "undead",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "c9cd8b1434c64948d0d04635f07ddfa19a0bf5dd11c8334988d7d9c9790d2dd9",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Undead.java",
+   "stats": {},
+   "BaseMaxHp": 160,
+   "BaseConstitution": 16,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 5,
+   "BaseDefense": 50,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 20,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 8,
+   "MaxDamage": 11,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Undead",
+   "Drops": {
+    "bone_fragment": 500,
+    "sharp_rib": 10
+   },
+   "DropStacks": {
+    "bone_fragment": 1,
+    "sharp_rib": 1
+   }
+  },
+  {
+   "className": "UndeadArcher",
+   "id": "undead_archer",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "e5b99d50b0bfb34382244e06ced88af053d2cd302428a57d56fbef14ac38ed71",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\UndeadArcher.java",
+   "stats": {},
+   "BaseMaxHp": 120,
+   "BaseConstitution": 5,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 8,
+   "BaseDefense": 50,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 20,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 11,
+   "MaxDamage": 14,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "UndeadArcher",
+   "Drops": {
+    "bone_fragment": 500,
+    "sharp_rib": 10
+   },
+   "DropStacks": {
+    "bone_fragment": 1,
+    "sharp_rib": 1
+   }
+  },
+  {
+   "className": "UndeadGeneral",
+   "id": "undead_general",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "1e88825d9a2d078c455f2f250713dd39259340ecb1dbffa41bf577090c53108c",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\UndeadGeneral.java",
+   "stats": {},
+   "BaseMaxHp": 600,
+   "BaseConstitution": 35,
+   "BaseIntelligence": 16,
+   "BaseDexterity": 24,
+   "BaseDefense": 50,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 240,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 60,
+   "MaxDamage": 90,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "UndeadGeneral",
+   "Drops": {
+    "bone_fragment": 570,
+    "cursed_silver": 300,
+    "potion_of_viciousness": 100
+   },
+   "DropStacks": {
+    "bone_fragment": 5,
+    "cursed_silver": 1,
+    "potion_of_viciousness": 1
+   }
+  },
+  {
+   "className": "UndeadWarlord",
+   "id": "undead_warlord",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "1180aa4e16694f69a95a64ba9d34fcb085c5047b74c0ff0477ca5db6ca37f204",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\UndeadWarlord.java",
+   "stats": {
+    "retaliationPhysicalDamage": {
+     "fieldName": "retaliationPhysicalDamage",
+     "semanticTag": "STAT_DAMAGE",
+     "value": 12
+    }
+   },
+   "BaseMaxHp": 220,
+   "BaseConstitution": 24,
+   "BaseIntelligence": 1,
+   "BaseDexterity": 12,
+   "BaseDefense": 50,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 84,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 12,
+   "MaxDamage": 16,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "UndeadWarlord",
+   "Drops": {
+    "warlord_skull": 10,
+    "bone_fragment": 960
+   },
+   "DropStacks": {
+    "warlord_skull": 2,
+    "bone_fragment": 1
+   }
+  },
+  {
+   "className": "VampireBat",
+   "id": "vampire_bat",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "05e1348cc656395fc178e4a4b06fd73a1bbfeb1e900f256940eb24ead59d2a42",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\VampireBat.java",
+   "stats": {},
+   "BaseMaxHp": 350,
+   "BaseConstitution": 2,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 65,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 58,
+   "Rarity": 1,
+   "BaseLifesteal": 100,
+   "Counterattack": 0,
+   "MinDamage": 28,
+   "MaxDamage": 52,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "VampireBat",
+   "Drops": {
+    "bat_wing": 300,
+    "bat_tooth": 200,
+    "avian_egg": 1
+   },
+   "DropStacks": {
+    "bat_wing": 1,
+    "bat_tooth": 1,
+    "avian_egg": 1
+   }
+  },
+  {
+   "className": "VoidSlime",
+   "id": "void_slime",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "4a4930211675472be7c61a35a405c50ab595331db85613faaaa6051e3794c8ef",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\VoidSlime.java",
+   "stats": {
+    "retaliationMagicalDamage": {
+     "fieldName": "retaliationMagicalDamage",
+     "semanticTag": "STAT_DAMAGE",
+     "value": 33
+    }
+   },
+   "BaseMaxHp": 100,
+   "BaseConstitution": 40,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 6,
+   "BaseDefense": 40,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 60,
+   "Rarity": 0,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 33,
+   "MaxDamage": 33,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "VoidSlime",
+   "Drops": {
+    "green_slime": 100,
+    "void_core": 160
+   },
+   "DropStacks": {
+    "green_slime": 3,
+    "void_core": 1
+   }
+  },
+  {
+   "className": "WickedTribute",
+   "id": "wicked_tribute",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "298cd5b59c9c507c195b6bf67b826110f96ab4191224257d1bef8536c4bc3b68",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\WickedTribute.java",
+   "stats": {},
+   "BaseMaxHp": 100,
+   "BaseConstitution": 2,
+   "BaseIntelligence": 400,
+   "BaseDexterity": 32,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 850,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 1,
+   "MaxDamage": 1,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "WickedTribute",
+   "Drops": {
+    "hellish_rations": 107,
+    "wicked_seal": 3,
+    "esoteric_egg": 1
+   },
+   "DropStacks": {
+    "hellish_rations": 1,
+    "wicked_seal": 1,
+    "esoteric_egg": 1
+   }
+  },
+  {
+   "className": "WillOWisp",
+   "id": "will_o_wisp",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "f30c3d95a187f2d6bd4986814757f2783bdfc240754536969d87d3e29fc635b3",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\WillOWisp.java",
+   "stats": {},
+   "BaseMaxHp": 90,
+   "BaseConstitution": 8,
+   "BaseIntelligence": 15,
+   "BaseDexterity": 20,
+   "BaseDefense": 100,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 38,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 10,
+   "MaxDamage": 13,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "WillOWisp",
+   "Drops": {
+    "spirit_tome": 10,
+    "spirit_candle": 30,
+    "spectral_cloth": 700,
+    "esoteric_egg": 1
+   },
+   "DropStacks": {
+    "spirit_tome": 1,
+    "spirit_candle": 1,
+    "spectral_cloth": 1,
+    "esoteric_egg": 1
+   }
+  },
+  {
+   "className": "WizardOfLarox",
+   "id": "wizard_of_larox",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "74a990e88257003122629501d30e5a410650b1a9ec29843a2e99cbc1d2505ab3",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\WizardOfLarox.java",
+   "stats": {},
+   "BaseMaxHp": 750,
+   "BaseConstitution": 8,
+   "BaseIntelligence": 172,
+   "BaseDexterity": 46,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 30,
+   "ExpGiven": 200,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 165,
+   "MaxDamage": 180,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "WizardOfLarox",
+   "Drops": {
+    "laroxian_fabric": 225,
+    "pumpkin": 35,
+    "spell_compendium": 2
+   },
+   "DropStacks": {
+    "laroxian_fabric": 1,
+    "pumpkin": 1,
+    "spell_compendium": 1
+   }
+  },
+  {
+   "className": "Wolf",
+   "id": "wolf",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "e7c07a1e2d19fb331cbd06410759337acfb410787c27fd4e80fbdee38054efea",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Wolf.java",
+   "stats": {},
+   "BaseMaxHp": 60,
+   "BaseConstitution": 8,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 7,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 12,
+   "Rarity": 1,
+   "BaseLifesteal": 0,
+   "Counterattack": 0,
+   "MinDamage": 2,
+   "MaxDamage": 6,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Wolf",
+   "Drops": {
+    "beast_pelt": 700,
+    "alpha_wolf_fang": 80,
+    "werewolf_fang": 2,
+    "wild_egg": 1
+   },
+   "DropStacks": {
+    "beast_pelt": 1,
+    "alpha_wolf_fang": 1,
+    "werewolf_fang": 1,
+    "wild_egg": 1
+   }
+  },
+  {
+   "className": "Wurm",
+   "id": "wurm",
+   "manualRuleRequired": false,
+   "nameKey": null,
+   "parentClass": "Enemy",
+   "parseReasons": [
+    "EXTRACTED_FROM_DEX_S6_5A"
+   ],
+   "parseStatus": "complete_from_dex",
+   "recordHash": "f71419caad71f4cfc28e35b068d559e16aed0d32b47188b3d72afd5468cdce97",
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Wurm.java",
+   "stats": {},
+   "BaseMaxHp": 160,
+   "BaseConstitution": 16,
+   "BaseIntelligence": 2,
+   "BaseDexterity": 6,
+   "BaseDefense": 0,
+   "BaseMagicDefense": 0,
+   "ExpGiven": 14,
+   "Rarity": 0,
+   "BaseLifesteal": 100,
+   "Counterattack": 0,
+   "MinDamage": 8,
+   "MaxDamage": 16,
+   "IsMagic": false,
+   "IsRanged": false,
+   "SourceClass": "Wurm",
+   "Drops": {
+    "wurm_scale": 1
+   },
+   "DropStacks": {
+    "wurm_scale": 1
+   }
+  }
+ ],
+ "metadata": {
+  "definitionsVersion": "1.0",
+  "generatedAt": "2026-07-17T11:47:00.418471",
+  "recordCount": 122,
+  "schemaVersion": "1.0"
+ }
+}

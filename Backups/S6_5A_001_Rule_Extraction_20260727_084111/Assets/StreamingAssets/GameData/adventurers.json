@@ -1,0 +1,5102 @@
+{
+  "data": [
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 3
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 5
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 15
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 25
+        }
+      },
+      "className": "Adept",
+      "id": "adept",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "1b022f9656a854450710c0a6b57f839eef8b881d3ce85e76a91f8c9892509cfb",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Adept.java"
+    },
+    {
+      "baseStats": {
+        "immunityToStatus": {
+          "fieldName": "immunityToStatus",
+          "semanticTag": "UNKNOWN",
+          "value": {
+            "_type": "arithmetic",
+            "raw": "this.immunityToStatus + (((double) this.potionsDrank.get(9)) * 0.01d)"
+          }
+        }
+      },
+      "className": "Adventurer",
+      "id": "adventurer",
+      "nameKey": null,
+      "parentClass": "Entity",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "088aa7bd7d306b578facb3d2287bdb8a66e39996b407b0eff043b9f584ace044",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\Adventurer.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 26
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 16
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 155
+        }
+      },
+      "className": "Alchemist",
+      "id": "alchemist",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "d4a558601ec5a37ab77f7c40d35020b6ab7fc4ebb2fa7bff7cb693922f690e95",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Alchemist.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 40
+        },
+        "baseLifesteal": {
+          "fieldName": "baseLifesteal",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 125
+        }
+      },
+      "className": "AncientLich",
+      "id": "ancient_lich",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "78e8d9ff4b04b5634f96b9b3d1462d67cb06b21c744fc7f000839453a040d6e2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\AncientLich.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 45
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 160
+        }
+      },
+      "className": "Angel",
+      "id": "angel",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "8761613d00decb1ac67309ce19a441fb059706740a24b792db219d3e261e0663",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Angel.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 40
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 40
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 380
+        },
+        "immunityToStatus": {
+          "fieldName": "immunityToStatus",
+          "semanticTag": "UNKNOWN",
+          "value": 0.7
+        }
+      },
+      "className": "AngelOfWar",
+      "id": "angel_of_war",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "6856198025e4617cc0ad68a2612290efc97f2d211f189f8bb92b6eb10d36dfcc",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\AngelOfWar.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 2
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 4
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        }
+      },
+      "className": "Apprentice",
+      "id": "apprentice",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "d553d5548cbd9483e0d8bab8d0af2d6563d5516b7ea313c96551cc03d73aa56e",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Apprentice.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 200
+        }
+      },
+      "className": "Archangel",
+      "id": "archangel",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "37ab897f4b25f3bc9d3cf367b814e93af26721f98842da0351c874633c86166c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Archangel.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 4
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 4
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        }
+      },
+      "className": "Archer",
+      "id": "archer",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "cf74fb4a2ff65fb1a6c5e71671c3596cc5263215968658d29e992c27a9ed6e49",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Archer.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 15
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 15
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 7
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 90
+        }
+      },
+      "className": "Assassin",
+      "id": "assassin",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "4be7a01489419a39a7c26a52ea4a5e726e3b4db5bb0930a161ea6dabf42a6f02",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Assassin.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 36
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 36
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 36
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 36
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 36
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 380
+        }
+      },
+      "className": "Balrog",
+      "id": "balrog",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "5cbc40ff167ea4b8ee5fa112c9f6c3a336ca7ebb250dffa6871cca77498aa8c9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Balrog.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 17
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 17
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 17
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 155
+        }
+      },
+      "className": "Bard",
+      "id": "bard",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "166c2aaef52152a6bd62b5822a76e6e287299c6321da7b6faa1765e22f050bd9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Bard.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        },
+        "baseLifesteal": {
+          "fieldName": "baseLifesteal",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 200
+        }
+      },
+      "className": "BlackIdol",
+      "id": "black_idol",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "b40f49f29639e4484bb9ffcdd0fbb3373624ad5f2636284fa5074e66a6109f05",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\BlackIdol.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 40
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 18
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 14
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 380
+        }
+      },
+      "className": "BlackRegent",
+      "id": "black_regent",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "3c6bc4ecfb58dd2895569770b82c030529c407ba85d26c46c40dd56f7285814d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\BlackRegent.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 32
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 16
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 195
+        }
+      },
+      "className": "Blight",
+      "id": "blight",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "ddd98a84c9ccb1a3f3e9d13be263c8842630f4d4fdb1e05150dfb7f9ffc8c57f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Blight.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 72
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 17
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 1
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 315
+        }
+      },
+      "className": "BoneHorror",
+      "id": "bone_horror",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "4a35d25b7dc745e6e2b1583e64be9457262262dcdb6a6b8359bf12bad47efe99",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\BoneHorror.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 125
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 1
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 390
+        }
+      },
+      "className": "BoneHydra",
+      "id": "bone_hydra",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "c1987228f3753e58dbeed278fcc0ab0eb7a4634aa71b46b8c093f2a4cde41ba7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\BoneHydra.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 105
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 1
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 345
+        }
+      },
+      "className": "BoneNightmare",
+      "id": "bone_nightmare",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "954935b211ef9f979c2dc54e44d5ce7b71a3829578bd20fe9b5ce884fd1320f9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\BoneNightmare.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 40
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 290
+        }
+      },
+      "className": "CelestialRain",
+      "id": "celestial_rain",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "70900ae0e309d675d693590b9cb6f9831ac29ab97a0dce84f7698dda0f74d888",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\CelestialRain.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 4
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 6
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 35
+        }
+      },
+      "className": "Cleric",
+      "id": "cleric",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "b0117d526638789efee271538433733e68c23a415d1f116b8e54343a5c5c0eee",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Cleric.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 40
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 290
+        }
+      },
+      "className": "CorrosiveWraith",
+      "id": "corrosive_wraith",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "48c33b3e23a79b4bb35197f94747e50ab6f774d8e7b3e45fb5fdc56926d0b899",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\CorrosiveWraith.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 6
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 65
+        }
+      },
+      "className": "Cutthroat",
+      "id": "cutthroat",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "1d4699c86de0be3954ac8724839749ff2ab2d4a59553b289d52c582bb6d717c3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Cutthroat.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 130
+        }
+      },
+      "className": "DarkKnight",
+      "id": "dark_knight",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "2678b7d19a0f93bbebb3e7ea8d2aea8f97509df5661d6a51cf9aca76446b2aa2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\DarkKnight.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 4
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 6
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseLifesteal": {
+          "fieldName": "baseLifesteal",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 35
+        }
+      },
+      "className": "DarkSorcerer",
+      "id": "dark_sorcerer",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "9cb3661dc5fa84a6e7b214455fc9d1ad9bdbfdf702fc575a79a4fcca348e31e8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\DarkSorcerer.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 170
+        }
+      },
+      "className": "DeathKnight",
+      "id": "death_knight",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "23f801b124362ffe9c9d4a2ab137f27d74cddf29944e9fe88e68209aac3637b7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\DeathKnight.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 6
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseLifesteal": {
+          "fieldName": "baseLifesteal",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 70
+        }
+      },
+      "className": "Demilich",
+      "id": "demilich",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "9d35ae8474594d272ee355a12de77442fc97b5eb8a3ee552c86bbb6b5402ece0",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Demilich.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 215
+        }
+      },
+      "className": "Demon",
+      "id": "demon",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "44e19c5b30b90c666b9898b1ce1f29de899cab52d9d5d1f1d22d3a54d338b400",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Demon.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 40
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 18
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 14
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 380
+        }
+      },
+      "className": "DivineChampion",
+      "id": "divine_champion",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "b933f782f01702fcc848890e3c1ad7b14f2de7487e8082b41d3df8b45532dfb7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\DivineChampion.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 36
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 16
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 13
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 320
+        }
+      },
+      "className": "DivineDuelist",
+      "id": "divine_duelist",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "be53d029e7e84bf9438b7f98081fbcfcab8bd381763d5fc72728cedc5b9f5b51",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\DivineDuelist.java"
+    },
+    {
+      "baseStats": {},
+      "className": "Doctrine",
+      "id": "doctrine",
+      "nameKey": null,
+      "parentClass": null,
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "8603cecfd0dd115fc36c24cdeda17df3b32a7b82871586bc99455351e8fe1c57",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\Doctrine.java"
+    },
+    {
+      "baseStats": {},
+      "className": "DoctrineAbility",
+      "id": "doctrine_ability",
+      "nameKey": null,
+      "parentClass": null,
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "fd99aa7cc179c15d591d1beababcb828cb6cabc6d473e10bbad598dee8270ffa",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\DoctrineAbility.java"
+    },
+    {
+      "baseStats": {},
+      "className": "DoctrineOfAffliction",
+      "id": "doctrine_of_affliction",
+      "nameKey": null,
+      "parentClass": "Doctrine",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "4f103a83819cccbb720a5eb83ae0333ef331e148fa76fe38ccb1364b8a47385a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfAffliction.java"
+    },
+    {
+      "baseStats": {},
+      "className": "DoctrineOfControl",
+      "id": "doctrine_of_control",
+      "nameKey": null,
+      "parentClass": "Doctrine",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "5be6f9ca3c97ae8a992215b1df176af64548d459988f734952b0a4521c82c20f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfControl.java"
+    },
+    {
+      "baseStats": {},
+      "className": "DoctrineOfFortitude",
+      "id": "doctrine_of_fortitude",
+      "nameKey": null,
+      "parentClass": "Doctrine",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "c0b7220e38938212dfc898ce208c4caabbbb148a690a65c56deaaad040c4ad43",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfFortitude.java"
+    },
+    {
+      "baseStats": {},
+      "className": "DoctrineOfGrace",
+      "id": "doctrine_of_grace",
+      "nameKey": null,
+      "parentClass": "Doctrine",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "8388e1e75fc7bf140ce5139cef0ffacec4d1a68e6dd9917b0fd20e243aed23ce",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfGrace.java"
+    },
+    {
+      "baseStats": {},
+      "className": "DoctrineOfIllusion",
+      "id": "doctrine_of_illusion",
+      "nameKey": null,
+      "parentClass": "Doctrine",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "5f43074d1ca7e63fcdd838355d0cf6f9dcad39a7ebabdb7bb21d88d51bd4477e",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfIllusion.java"
+    },
+    {
+      "baseStats": {},
+      "className": "DoctrineOfKnowledge",
+      "id": "doctrine_of_knowledge",
+      "nameKey": null,
+      "parentClass": "Doctrine",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "ba3f12d24be67b10faf5504b424d5ffe1d3195a34b5975ad4bf833b11134959c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfKnowledge.java"
+    },
+    {
+      "baseStats": {},
+      "className": "DoctrineOfRuin",
+      "id": "doctrine_of_ruin",
+      "nameKey": null,
+      "parentClass": "Doctrine",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "87135cda806c0ec8575bb0e55c608441df317f7853cabf72d4f2a972bd8604ad",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfRuin.java"
+    },
+    {
+      "baseStats": {},
+      "className": "DoctrineOfWar",
+      "id": "doctrine_of_war",
+      "nameKey": null,
+      "parentClass": "Doctrine",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "18991434a2ba1b58c09482d913003f35f4a020eec03090076b67fdd2d8533f8e",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfWar.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 32
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 16
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 195
+        }
+      },
+      "className": "DrakeRider",
+      "id": "drake_rider",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "6dcc4652950b2a8232f8e212dc9ae6c89dc9adbc5f8d78240d2456fece7fa4dd",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\DrakeRider.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 23
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 23
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 26
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 290
+        }
+      },
+      "className": "Eidolon",
+      "id": "eidolon",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "d82e8f911ece0eec008128bb1eaf82c3cab3ec861895b104c23901a6563c8ef8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Eidolon.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 32
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 28
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 290
+        }
+      },
+      "className": "EldritchAlchemist",
+      "id": "eldritch_alchemist",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "516227395a98ca993daa65a6fbae07ef51e4e055e0fb44daf2ad6a5ae8b09653",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\EldritchAlchemist.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 28
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 195
+        }
+      },
+      "className": "ElementalAlchemist",
+      "id": "elemental_alchemist",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "1115921a12105234cd7efebdc090c5ca69fed9700dd51674bc0f7a7dcff9acc7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\ElementalAlchemist.java"
+    },
+    {
+      "baseStats": {},
+      "className": "EmptyDoctrine",
+      "id": "empty_doctrine",
+      "nameKey": null,
+      "parentClass": "Doctrine",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "1d0471d1e5d4d8e55eee354d730623453355b0fe98a02397e5dbddd0b14f23ca",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\EmptyDoctrine.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 240
+        }
+      },
+      "className": "EsotericAlchemist",
+      "id": "esoteric_alchemist",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "8db05d9bc65aa2021efa5846c1cf267db802e24caa13aa0f1931c70f367cd6af",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\EsotericAlchemist.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 40
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 380
+        }
+      },
+      "className": "EternalFortress",
+      "id": "eternal_fortress",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "961a3cdaed5708ad16a01b9969176ad9a30e2dd23d84bdf7708dd4e1827898d9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\EternalFortress.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 4
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 6
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 35
+        }
+      },
+      "className": "FireWizard",
+      "id": "fire_wizard",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "2db5287ea17c794b5bae468653b3330bc3ee1a11ccf2e498c69befe7e6d84620",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\FireWizard.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 4
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 4
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 40
+        }
+      },
+      "className": "Footman",
+      "id": "footman",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "4e5cb1cb776aacd5cdc1c3ce6e813497937d8342ea63e7626d100c0f19fdb101",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Footman.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": {
+            "_type": "enum_ref",
+            "class": "Logger",
+            "value": "BARD_SHIELD"
+          }
+        }
+      },
+      "className": "Fury",
+      "id": "fury",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "318353de911e0bf401834fcf90ed388f7edb29e2e99cd2d34a90e4aab01e4913",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Fury.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 36
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 18
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 240
+        }
+      },
+      "className": "GoldenRider",
+      "id": "golden_rider",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "b2fcdb9aaf02258365af2ce111f48e1956b10d288fb9a393114755019dd692f6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\GoldenRider.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 16
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 6
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 95
+        }
+      },
+      "className": "Guard",
+      "id": "guard",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "e16a2f0d467b34416f4eab79c775771cc8090bdd555cab273eab016b439ff834",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Guard.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 28
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 14
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 155
+        }
+      },
+      "className": "Hailstorm",
+      "id": "hailstorm",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "df9aaf915f0dad38561741f8a2b3228e2c2fa5fdd16695ccba16b07c9eb1ed35",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Hailstorm.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 21
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 21
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 23
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 240
+        }
+      },
+      "className": "HeavenlyCantor",
+      "id": "heavenly_cantor",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "33936c0e983cbe0b4391c0447615567b04b02bf1f3507d42d7ae0c10988b4901",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\HeavenlyCantor.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 27
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 27
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 240
+        }
+      },
+      "className": "HellishSculptor",
+      "id": "hellish_sculptor",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "a963eece62a2d6e50e46c2993d61a4c5ae6780fc0f25676c30edee573f9e79ca",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\HellishSculptor.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 7
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 23
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 130
+        }
+      },
+      "className": "HolyKnight",
+      "id": "holy_knight",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "bd4d46729328c29c2f930231d6d9825467067a3c30985886e7f4b58e32832166",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\HolyKnight.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 6
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 16
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 65
+        }
+      },
+      "className": "HorseRider",
+      "id": "horse_rider",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "8d6e526d126d0bc82ac9622dd0b34bb1f4f1981b949e4894ce2412d3ca96159d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\HorseRider.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 5
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 6
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 45
+        }
+      },
+      "className": "Huntress",
+      "id": "huntress",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "ba192faf6de3e438cf7adbc46b61d4fc19610d2a17a724497003af14995ef7e0",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Huntress.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 36
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 18
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 240
+        }
+      },
+      "className": "Hurricane",
+      "id": "hurricane",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "ef4cb27134109635657f5d655101e57560094e15be925de37bfe1e9feb40c7e6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Hurricane.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 28
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 28
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 28
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 28
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 28
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 265
+        }
+      },
+      "className": "InfernalLord",
+      "id": "infernal_lord",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "a9ada6356f68103ea4fbb52a8414b18e62a3ed8b543d133f6f09a1fc927d02ee",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\InfernalLord.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 32
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 32
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 32
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 32
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 32
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 320
+        }
+      },
+      "className": "InfernalPrince",
+      "id": "infernal_prince",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "3f6d71902a055154cfdc83ed019a200a9a26df156d5cfaf5e678ee981332fa5d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\InfernalPrince.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 200
+        }
+      },
+      "className": "Inferno",
+      "id": "inferno",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "719aee70eb0003bf44935573777cb503dd6f8b76993367745d14fd6d243ecbc2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Inferno.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 32
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 16
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 33
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 265
+        }
+      },
+      "className": "Inquisitor",
+      "id": "inquisitor",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "d449cf890503e96c5770fe6fbc3935315b49098dd7d7ff93c52a09bcaa7760ea",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Inquisitor.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 170
+        }
+      },
+      "className": "IronDefender",
+      "id": "iron_defender",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "86f79e1bca54097defbc68323719d1e8e0785d2e0942522e7dae787b07cbe33f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\IronDefender.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 22
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 7
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 22
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 130
+        }
+      },
+      "className": "IronWarden",
+      "id": "iron_warden",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "9c70b3eab1c9611ceef29f3a50a757766a61af00047431391772424b990d43c4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\IronWarden.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 28
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 25
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 14
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 25
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 215
+        }
+      },
+      "className": "Juggernaut",
+      "id": "juggernaut",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "de621f911793294ca1659544bc96df4c80d803fd955b769c6050ae44d451ce74",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Juggernaut.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 36
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 18
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 36
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 320
+        }
+      },
+      "className": "Justiciar",
+      "id": "justiciar",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "eeeeefcc0f2df5431dacc7fd44ec757d8ada541d5fd592c5d08a9636a0245765",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Justiciar.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 32
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 14
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 265
+        }
+      },
+      "className": "KingsHand",
+      "id": "kings_hand",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "f2bbc3840bf9e393125f89f8af3904705c5450c9b7446a3682b4be9c14959165",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\KingsHand.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 16
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 6
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 95
+        }
+      },
+      "className": "Knight",
+      "id": "knight",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "5132ebbe1aa86396c9bf77fe58ecf343f28e844d9ed3cee8c74841a47bdeda59",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Knight.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 7
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 35
+        },
+        "baseLifesteal": {
+          "fieldName": "baseLifesteal",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 95
+        }
+      },
+      "className": "Lich",
+      "id": "lich",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "fc49589da0f492c39cc41cb63ef8b2befeec8ee1b2060d341f4876b725c4850d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Lich.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 3
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 5
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 15
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 25
+        }
+      },
+      "className": "LightDisciple",
+      "id": "light_disciple",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "3c9c71f3954319549b98fef16ec21b2d0e8cdd07c69156b590a558ec75f7b792",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\LightDisciple.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 19
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 19
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 195
+        }
+      },
+      "className": "Lorekeeper",
+      "id": "lorekeeper",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "057f62e31b18b41054446113e5fa3b6e949254fda28fdc05e1827bf02ca39e4a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Lorekeeper.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 45
+        },
+        "baseLifesteal": {
+          "fieldName": "baseLifesteal",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 160
+        }
+      },
+      "className": "LorfOfDecay",
+      "id": "lorf_of_decay",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "1e58cd201de1dcfbba6d0c76a6127c9746e45ad8b78bc213a776ee655c3865fb",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\LorfOfDecay.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 6
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 16
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 65
+        }
+      },
+      "className": "Marksman",
+      "id": "marksman",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "f36e901fc20533815d203dee73567dbac9e10be0a83ca170f8e2c20ca0c506c5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Marksman.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 21
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 21
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 155
+        }
+      },
+      "className": "MeatCarver",
+      "id": "meat_carver",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "962ed0f3185d38769f68ab0abcd215ece02c2cb0e86ba5fa191ed73cd1b0bfe5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\MeatCarver.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 45
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 160
+        }
+      },
+      "className": "MeltingElder",
+      "id": "melting_elder",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "a1afb299df8ff4ab3cc64bfe4cd64e92b7e919a8a35e7cde5a20bdfbe1bf1b54",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\MeltingElder.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 15
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 15
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 14
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": {
+            "_type": "enum_ref",
+            "class": "Logger",
+            "value": "BARD_SHIELD"
+          }
+        }
+      },
+      "className": "Minstrel",
+      "id": "minstrel",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "71d3b1f9ef81889741760ae6e950f4a1de21f5be5612850bcdb921b9cdc4845d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Minstrel.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 5
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 7
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 25
+        },
+        "baseLifesteal": {
+          "fieldName": "baseLifesteal",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        }
+      },
+      "className": "Necromancer",
+      "id": "necromancer",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "e1d93c1ad7ac76b67ee9d26f20e7c145c4dc3bd24cbee5fcd4f39545f39f25f7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Necromancer.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 18
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 18
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": {
+            "_type": "enum_ref",
+            "class": "Logger",
+            "value": "BARD_SHIELD"
+          }
+        }
+      },
+      "className": "NightBlade",
+      "id": "night_blade",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "b1129453b81eac9fdaa7bc5209738ff00ece42580f35567db890a017c7952c67",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\NightBlade.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 290
+        }
+      },
+      "className": "NightLament",
+      "id": "night_lament",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "c3d56f43f45ef3821716f795db6b35c4c9205f0b3ac724a79c5b1e4aa6b635e2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\NightLament.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 21
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 21
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 155
+        }
+      },
+      "className": "NightSpecter",
+      "id": "night_specter",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "296c4b887ea249c4cb32f8c966747f6383b145235b21defc135914514732d0c7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\NightSpecter.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 195
+        }
+      },
+      "className": "NightTerror",
+      "id": "night_terror",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "b7dc17d32913c6380ebf9a1dee6e2f8aa386492d591ed34218dd60577f32138c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\NightTerror.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 27
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 27
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 240
+        }
+      },
+      "className": "NightVeil",
+      "id": "night_veil",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "33351f44ae89b716c10456932292a9a7a44d3119c185a092953f29af5447c10c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\NightVeil.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 36
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 16
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 13
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 320
+        }
+      },
+      "className": "Overlord",
+      "id": "overlord",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "39c8dbb461fb1f9dc06e4c363d30a4bde54e96f2397417638ace5478ebd1cbd3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Overlord.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 26
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 170
+        }
+      },
+      "className": "Paladin",
+      "id": "paladin",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "9a9a3e81ecccc8ba5202b43d888c8d4f31b432949afb8d32c92171ecf74db927",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Paladin.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 28
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 14
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 155
+        }
+      },
+      "className": "PlagueSpreader",
+      "id": "plague_spreader",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "273aa4d487b0257b51dbaa505d9e8ab8067f88c1db0bf584fde8004459714004",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\PlagueSpreader.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 7
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 90
+        }
+      },
+      "className": "PoisonBow",
+      "id": "poison_bow",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "0874e8aee2a6cebc5502eab66aec463062b0fd14fc710fa739adcb0b28f6c68a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\PoisonBow.java"
+    },
+    {
+      "baseStats": {},
+      "className": "PotionsDrank",
+      "id": "potions_drank",
+      "nameKey": null,
+      "parentClass": null,
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "29e95a364a486c46e7f07eaf048b736aa9571e4c20b391967dd57ffd3c70c1b9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\PotionsDrank.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 40
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 125
+        }
+      },
+      "className": "RadiantElder",
+      "id": "radiant_elder",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "b3e93a50288f20d77b2e15a89b4d1a5132ede2b3892dacd4f5a4ffaac2e362c2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\RadiantElder.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 6
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 70
+        }
+      },
+      "className": "RedArchmage",
+      "id": "red_archmage",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "6eb93252a829ef37d8d7f394be1c8f80423eb6253edadf0b3ff27f19954f6368",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\RedArchmage.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 7
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 35
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 95
+        }
+      },
+      "className": "RedElder",
+      "id": "red_elder",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "cec2fdf09a9b47024f0b27d78bce5597c318685b62cb13ab6ee813ffbc8f6de8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\RedElder.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 5
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 7
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 25
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        }
+      },
+      "className": "RedMage",
+      "id": "red_mage",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "3ddee1a8a25f5f33c680196f84ca865950eaf2e1e7ad4387269fd9ea897a03ad",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\RedMage.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 18
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 18
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": {
+            "_type": "enum_ref",
+            "class": "Logger",
+            "value": "BARD_SHIELD"
+          }
+        }
+      },
+      "className": "RedStalker",
+      "id": "red_stalker",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "6278749adb9e6c71ab3f269acec3d9c7e28af38dee9ac9ec6eb111061b5a41f5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\RedStalker.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 6
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 6
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 4
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        }
+      },
+      "className": "Rogue",
+      "id": "rogue",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "2cb1f51544da536b4bd4144e63216777d0424eb813c44e31513958690f06e393",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Rogue.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 28
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 215
+        }
+      },
+      "className": "RoyalCaptain",
+      "id": "royal_captain",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "e7cd434a04be8cb2b0c99875d0eedc1d37707be94725b85aef1efd733cdddde7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\RoyalCaptain.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 130
+        }
+      },
+      "className": "RoyalGuard",
+      "id": "royal_guard",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "f27a764d036e5ca2852bea1c466a55c40c6e65733079d706ab44db3720f59905",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\RoyalGuard.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 170
+        }
+      },
+      "className": "RoyalSwordsman",
+      "id": "royal_swordsman",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "03523d22b37edd3f5e75b1231fd63b7eca8730e72632112cdb4be0cfa988d182",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\RoyalSwordsman.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 40
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 125
+        }
+      },
+      "className": "ScorchingElder",
+      "id": "scorching_elder",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "6ad8bdb0e6b46ed303e587592953596dffe2c83b6ec7e4a32ce4995df3fdf802",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\ScorchingElder.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 28
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 215
+        }
+      },
+      "className": "Scourge",
+      "id": "scourge",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "b931b3f35247e95ef3eb38c9c4f65f4a5c7b331e0c365ba0ff82f985813e2422",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Scourge.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 6
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 65
+        }
+      },
+      "className": "ShadowCrawler",
+      "id": "shadow_crawler",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "cd68d453a8d473e3e6a39fc7b7fe00f88d8d56ced0f5066f770aca8a8cdbf7f0",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\ShadowCrawler.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 15
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 15
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 7
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 90
+        }
+      },
+      "className": "ShadowDancer",
+      "id": "shadow_dancer",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "f1d94f7b56bdfd13226586095575db9b3569dfb3833815c3ead8eccb2702ba9b",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\ShadowDancer.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 13
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 13
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 90
+        }
+      },
+      "className": "SilverTongue",
+      "id": "silver_tongue",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "e8f4ee41b068aaa72fc7c5a12f2a68130a92ed715621ebd8c15141d9ed3f77a1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\SilverTongue.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 14
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 1
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 170
+        }
+      },
+      "className": "Skeleton",
+      "id": "skeleton",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "19e26049318cb9885f7a0d42400691725bad654472f000da76a9efb1b55148db",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Skeleton.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 21
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 21
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 155
+        }
+      },
+      "className": "SpireAcolyte",
+      "id": "spire_acolyte",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "0e002678730b0f831b678ff6c91f58ddd1585bd96da981ffe6cb373d7c916a8d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\SpireAcolyte.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 18
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 18
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": {
+            "_type": "enum_ref",
+            "class": "Logger",
+            "value": "BARD_SHIELD"
+          }
+        }
+      },
+      "className": "SpireInitiate",
+      "id": "spire_initiate",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "de30b257ef486adb7a57ea93497b2439e41f675fdddba32ac2e245652e73b1c3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\SpireInitiate.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 195
+        }
+      },
+      "className": "SpireLeader",
+      "id": "spire_leader",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "b9f8d29c7908888fa166ea3fe9d2e2999d7620ed7ffc24465130bb23ae3c367a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\SpireLeader.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 27
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 27
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 240
+        }
+      },
+      "className": "SpireSage",
+      "id": "spire_sage",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "7f546b2a21684c5e3a9052cac26e11f97e96554b2712370db82c774c0b75228c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\SpireSage.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 290
+        }
+      },
+      "className": "SpiritEngraver",
+      "id": "spirit_engraver",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "1fa7bef2350ccc5e18ca539bfc404a9f6fb087fad7805f7684ebf795047bc227",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\SpiritEngraver.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 28
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 14
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 155
+        }
+      },
+      "className": "SpitfangRider",
+      "id": "spitfang_rider",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "a2a3eb84ae241ebcd1bd3ae30d654f3655a399d853e414462e7838e7011acc27",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\SpitfangRider.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 7
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 90
+        }
+      },
+      "className": "Sureshot",
+      "id": "sureshot",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "f57487f5772aa93de00c7e56a923b15cc3c7f120a4676c54ea95148aae0e282a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Sureshot.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 32
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 16
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 195
+        }
+      },
+      "className": "Tempest",
+      "id": "tempest",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "da2a12a1626097f8ca27d5903f77108ce38cc1546ed02eac1a45452fa04d0684",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Tempest.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 28
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 14
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 215
+        }
+      },
+      "className": "Templar",
+      "id": "templar",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "09b4e84103eccff45830fdbd8676986130c6ca5996e0815220b83a6d1c5a1d3a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Templar.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 5
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 45
+        }
+      },
+      "className": "Thief",
+      "id": "thief",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "5d07480c99b7a2610994fb92490ea6ca260b6e8e8de58e3f373573e9e1014145",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Thief.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 32
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 27
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 16
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 27
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 265
+        }
+      },
+      "className": "Titan",
+      "id": "titan",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "f351d645539f2db9341b70eb47183140fd0cc9b6a2b9f56f4f9bfc44631c5e4e",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Titan.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": {
+            "_type": "enum_ref",
+            "class": "Logger",
+            "value": "BARD_SHIELD"
+          }
+        }
+      },
+      "className": "ToxicStalker",
+      "id": "toxic_stalker",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "696cdded3224923e96872143bb367aa346ebc0eabba2a207c76092da0567b545",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\ToxicStalker.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 65
+        }
+      },
+      "className": "Trickster",
+      "id": "trickster",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "6172c87eeb51ce10d1be6ace802ec37f7afe14601046149981919af26be9ce6f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Trickster.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 32
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 14
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 265
+        }
+      },
+      "className": "Tyrant",
+      "id": "tyrant",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "bd07c79286c7911e2cc590fa324790b69aa8e3d5fb7a72d3a861340616d177e5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Tyrant.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 170
+        }
+      },
+      "className": "Unchained",
+      "id": "unchained",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "383da456decd6b0d3a2950d769563e5961877af936fc28fa8a6dc997665b2826",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Unchained.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 36
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 29
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 18
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 29
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 320
+        }
+      },
+      "className": "UndyingBastion",
+      "id": "undying_bastion",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "616cadc47e51cab0023965b0b0e5064ec7508b40fb0fb82b5746e892e8f3e5f4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\UndyingBastion.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 5
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 6
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 65
+        }
+      },
+      "className": "Warrior",
+      "id": "warrior",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "648d31b3b90df1a6531bb71d97f1994d51133825e775c1ac61e94994e15d6a66",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Warrior.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 290
+        }
+      },
+      "className": "Whisper",
+      "id": "whisper",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "6828382e085efcaf6ea8c490d8c1a2f071907bb18546f09555e157edba84eff6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Whisper.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 6
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 70
+        }
+      },
+      "className": "WhiteArchmage",
+      "id": "white_archmage",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "7c210fcdd0da047963223d636567a698122c587f76b2d42e73fb09a3d8065a53",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\WhiteArchmage.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 7
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 9
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 35
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 95
+        }
+      },
+      "className": "WhiteElder",
+      "id": "white_elder",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "116f06c33d03ff97b08da25b5c17e8d90447a03c72a7c2ed23a4020d3a576c92",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\WhiteElder.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 5
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 7
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 25
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 30
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        }
+      },
+      "className": "WhiteMage",
+      "id": "white_mage",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "c6b819f7d5b8709610729c8cc4903cfff9410d184714ad71ae7bac01d73443fe",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\WhiteMage.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 7
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 90
+        }
+      },
+      "className": "WolfRider",
+      "id": "wolf_rider",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "3b0a008a4572b6ab09731770fdc3f412f5b4318faa08b7d4a9cea5d06b760eb7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\WolfRider.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 8
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": {
+            "_type": "enum_ref",
+            "class": "Logger",
+            "value": "BARD_SHIELD"
+          }
+        }
+      },
+      "className": "WorgRider",
+      "id": "worg_rider",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "2858ff554e6c4004c456f39687296a4bb7f8d9d2c18913d79779ebe4ff5d9d77",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\WorgRider.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 195
+        }
+      },
+      "className": "WoundsWeaver",
+      "id": "wounds_weaver",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "2738f4ef34d2ee483706df453c491bcb0d50cd4dad2f1cd7a2867ab5f9be9d1d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\WoundsWeaver.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 36
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 18
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 240
+        }
+      },
+      "className": "Wraith",
+      "id": "wraith",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "41813ceb454992cad4817620dbbae70a1fd4334d6e0351863790310a9b4f2dab",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Wraith.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 12
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 40
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 20
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 290
+        }
+      },
+      "className": "WyrmRider",
+      "id": "wyrm_rider",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "7ac8fd95978be96886ddb6f2448a191432a63c40d7e8ec6b0d33ff55aabf0591",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\WyrmRider.java"
+    },
+    {
+      "baseStats": {
+        "baseConstitution": {
+          "fieldName": "baseConstitution",
+          "semanticTag": "UNKNOWN",
+          "value": 34
+        },
+        "baseDefense": {
+          "fieldName": "baseDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 50
+        },
+        "baseDexterity": {
+          "fieldName": "baseDexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "baseIntelligence": {
+          "fieldName": "baseIntelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 1
+        },
+        "baseMagicDefense": {
+          "fieldName": "baseMagicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 0
+        },
+        "baseMaxHp": {
+          "fieldName": "baseMaxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 130
+        }
+      },
+      "className": "Zombie",
+      "id": "zombie",
+      "nameKey": null,
+      "parentClass": "Adventurer",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "c5a7596e175dc466fa67fe4e41c65380d620acddfe10f21a2004434e5c66b194",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\units\\Zombie.java"
+    }
+  ],
+  "metadata": {
+    "definitionsVersion": "1.0",
+    "generatedAt": "2026-07-17T11:47:00.366480",
+    "recordCount": 129,
+    "schemaVersion": "1.0"
+  }
+}

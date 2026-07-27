@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: d41300455f928964aa3f593e267b4ad9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6967114157253993124
+    second: skeleton_hurt_sheet_0
+  - first:
+      213: -6987076424365576981
+    second: skeleton_hurt_sheet_1
+  - first:
+      213: 6507861111958248238
+    second: skeleton_hurt_sheet_2
+  - first:
+      213: -5375213322614651999
+    second: skeleton_hurt_sheet_3
+  - first:
+      213: -5724309963936935674
+    second: skeleton_hurt_sheet_4
+  - first:
+      213: 5539299727034616321
+    second: skeleton_hurt_sheet_5
+  - first:
+      213: 4005357490379020730
+    second: skeleton_hurt_sheet_6
+  - first:
+      213: -8034042545904068921
+    second: skeleton_hurt_sheet_7
+  - first:
+      213: -5272448521358767933
+    second: skeleton_hurt_sheet_8
+  - first:
+      213: 5711080752058692910
+    second: skeleton_hurt_sheet_9
+  - first:
+      213: -5509288077549492573
+    second: skeleton_hurt_sheet_10
+  - first:
+      213: 2208954292029302539
+    second: skeleton_hurt_sheet_11
+  - first:
+      213: -6622957162496000633
+    second: skeleton_hurt_sheet_12
+  - first:
+      213: 6534073466920351929
+    second: skeleton_hurt_sheet_13
+  - first:
+      213: -751003031325708676
+    second: skeleton_hurt_sheet_14
+  - first:
+      213: -1972407724410023923
+    second: skeleton_hurt_sheet_15
+  - first:
+      213: -7180332192009250435
+    second: skeleton_hurt_down_00
+  - first:
+      213: 7300037323151437071
+    second: skeleton_hurt_down_01
+  - first:
+      213: -687573689633113954
+    second: skeleton_hurt_down_02
+  - first:
+      213: -1812624131836410993
+    second: skeleton_hurt_down_03
+  - first:
+      213: -8463864870269165454
+    second: skeleton_hurt_up_00
+  - first:
+      213: -6726362703028220322
+    second: skeleton_hurt_up_01
+  - first:
+      213: -6855393364603520788
+    second: skeleton_hurt_up_02
+  - first:
+      213: 1541562267767123881
+    second: skeleton_hurt_up_03
+  - first:
+      213: -1829929876723203217
+    second: skeleton_hurt_left_00
+  - first:
+      213: 3785944706147659903
+    second: skeleton_hurt_left_01
+  - first:
+      213: 1730679246243819565
+    second: skeleton_hurt_left_02
+  - first:
+      213: -2407589670482508970
+    second: skeleton_hurt_left_03
+  - first:
+      213: -4761681607462648857
+    second: skeleton_hurt_right_00
+  - first:
+      213: -852286286582915090
+    second: skeleton_hurt_right_01
+  - first:
+      213: -2410654620452643998
+    second: skeleton_hurt_right_02
+  - first:
+      213: -1132274923424970593
+    second: skeleton_hurt_right_03
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skeleton_hurt_down_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d799cf51ae55a5c90800000000000000
+      internalID: -7180332192009250435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_hurt_down_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0de885a441fe4560800000000000000
+      internalID: 7300037323151437071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_hurt_down_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9873884f5f3576f0800000000000000
+      internalID: -687573689633113954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_hurt_down_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f83079ea4f348d6e0800000000000000
+      internalID: -1812624131836410993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_hurt_up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270e2b47ebf4a8a80800000000000000
+      internalID: -8463864870269165454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_hurt_up_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5e019762c827a2a0800000000000000
+      internalID: -6726362703028220322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_hurt_up_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce8bc3b6e00ccd0a0800000000000000
+      internalID: -6855393364603520788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_hurt_up_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9afa76907bab46510800000000000000
+      internalID: 1541562267767123881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_hurt_left_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f630a06f878ca96e0800000000000000
+      internalID: -1829929876723203217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_hurt_left_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70b335c6a06a8430800000000000000
+      internalID: 3785944706147659903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_hurt_left_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d20f08cda9b940810800000000000000
+      internalID: 1730679246243819565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_hurt_left_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6538dfd53f5869ed0800000000000000
+      internalID: -2407589670482508970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_hurt_right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e38da57ecb1bedb0800000000000000
+      internalID: -4761681607462648857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_hurt_right_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eefd94153221c24f0800000000000000
+      internalID: -852286286582915090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_hurt_right_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b14c71562ab8ed0800000000000000
+      internalID: -2410654620452643998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: skeleton_hurt_right_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f980c29c4f95940f0800000000000000
+      internalID: -1132274923424970593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      skeleton_hurt_down_00: -7180332192009250435
+      skeleton_hurt_down_01: 7300037323151437071
+      skeleton_hurt_down_02: -687573689633113954
+      skeleton_hurt_down_03: -1812624131836410993
+      skeleton_hurt_left_00: -1829929876723203217
+      skeleton_hurt_left_01: 3785944706147659903
+      skeleton_hurt_left_02: 1730679246243819565
+      skeleton_hurt_left_03: -2407589670482508970
+      skeleton_hurt_right_00: -4761681607462648857
+      skeleton_hurt_right_01: -852286286582915090
+      skeleton_hurt_right_02: -2410654620452643998
+      skeleton_hurt_right_03: -1132274923424970593
+      skeleton_hurt_sheet_0: 6967114157253993124
+      skeleton_hurt_sheet_1: -6987076424365576981
+      skeleton_hurt_sheet_10: -5509288077549492573
+      skeleton_hurt_sheet_11: 2208954292029302539
+      skeleton_hurt_sheet_12: -6622957162496000633
+      skeleton_hurt_sheet_13: 6534073466920351929
+      skeleton_hurt_sheet_14: -751003031325708676
+      skeleton_hurt_sheet_15: -1972407724410023923
+      skeleton_hurt_sheet_2: 6507861111958248238
+      skeleton_hurt_sheet_3: -5375213322614651999
+      skeleton_hurt_sheet_4: -5724309963936935674
+      skeleton_hurt_sheet_5: 5539299727034616321
+      skeleton_hurt_sheet_6: 4005357490379020730
+      skeleton_hurt_sheet_7: -8034042545904068921
+      skeleton_hurt_sheet_8: -5272448521358767933
+      skeleton_hurt_sheet_9: 5711080752058692910
+      skeleton_hurt_up_00: -8463864870269165454
+      skeleton_hurt_up_01: -6726362703028220322
+      skeleton_hurt_up_02: -6855393364603520788
+      skeleton_hurt_up_03: 1541562267767123881
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

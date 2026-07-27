@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: 8687b65ac6a9efe49a6c41eb68ebda75
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5285846907924305986
+    second: goblin_attack_sheet_0
+  - first:
+      213: -1466146428038354211
+    second: goblin_attack_sheet_1
+  - first:
+      213: 1451809128631619600
+    second: goblin_attack_sheet_2
+  - first:
+      213: -2199746348289353173
+    second: goblin_attack_sheet_3
+  - first:
+      213: 1683939611337597698
+    second: goblin_attack_sheet_4
+  - first:
+      213: -6069185371855097721
+    second: goblin_attack_sheet_5
+  - first:
+      213: 183077943364610037
+    second: goblin_attack_sheet_6
+  - first:
+      213: -5589684096260727434
+    second: goblin_attack_sheet_7
+  - first:
+      213: 6046214638022734426
+    second: goblin_attack_sheet_8
+  - first:
+      213: 4255144103430316270
+    second: goblin_attack_sheet_9
+  - first:
+      213: -5784657840697987748
+    second: goblin_attack_sheet_10
+  - first:
+      213: -887113021304874817
+    second: goblin_attack_sheet_11
+  - first:
+      213: 6424557240292226247
+    second: goblin_attack_sheet_12
+  - first:
+      213: 8065814386787891567
+    second: goblin_attack_sheet_13
+  - first:
+      213: 3302795065346537063
+    second: goblin_attack_sheet_14
+  - first:
+      213: -6407035751135978322
+    second: goblin_attack_sheet_15
+  - first:
+      213: 5195472590247109452
+    second: goblin_attack_down_00
+  - first:
+      213: 3240823605950297669
+    second: goblin_attack_down_01
+  - first:
+      213: -5821855398361462417
+    second: goblin_attack_down_02
+  - first:
+      213: -5997191947627524293
+    second: goblin_attack_down_03
+  - first:
+      213: -7156052409334908920
+    second: goblin_attack_up_00
+  - first:
+      213: 3498857825313207549
+    second: goblin_attack_up_01
+  - first:
+      213: -5656705409431342220
+    second: goblin_attack_up_02
+  - first:
+      213: 7728051957122067270
+    second: goblin_attack_up_03
+  - first:
+      213: 8653906995803326610
+    second: goblin_attack_left_00
+  - first:
+      213: -2576055182086308044
+    second: goblin_attack_left_01
+  - first:
+      213: 2037695571383127310
+    second: goblin_attack_left_02
+  - first:
+      213: -5094579144175560687
+    second: goblin_attack_left_03
+  - first:
+      213: 7558682116324470937
+    second: goblin_attack_right_00
+  - first:
+      213: 6109431471999800836
+    second: goblin_attack_right_01
+  - first:
+      213: -7693712491706992187
+    second: goblin_attack_right_02
+  - first:
+      213: 5585354533153660659
+    second: goblin_attack_right_03
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: goblin_attack_down_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4325f54bc60a1840800000000000000
+      internalID: 5195472590247109452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_attack_down_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5463e5426e7b9fc20800000000000000
+      internalID: 3240823605950297669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_attack_down_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6989f65c5d943fa0800000000000000
+      internalID: -5821855398361462417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_attack_down_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f04d7b2b1b5cca0800000000000000
+      internalID: -5997191947627524293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_attack_up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 808b3838f3890bc90800000000000000
+      internalID: -7156052409334908920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_attack_up_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4b36587a07e8030800000000000000
+      internalID: 3498857825313207549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_attack_up_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47370df86685f71b0800000000000000
+      internalID: -5656705409431342220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_attack_up_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64be50e5f4e8f3b60800000000000000
+      internalID: 7728051957122067270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_attack_left_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2980024ff8ad81870800000000000000
+      internalID: 8653906995803326610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_attack_left_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43ff0fdd573004cd0800000000000000
+      internalID: -2576055182086308044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_attack_left_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d8da47359574c10800000000000000
+      internalID: 2037695571383127310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_attack_left_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1185d47b24b6c49b0800000000000000
+      internalID: -5094579144175560687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_attack_right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9903e915655d5e860800000000000000
+      internalID: 7558682116324470937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_attack_right_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 406d32cfd8f09c450800000000000000
+      internalID: 6109431471999800836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_attack_right_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c9b1d770417a3590800000000000000
+      internalID: -7693712491706992187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goblin_attack_right_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fedd3dfa5a238d40800000000000000
+      internalID: 5585354533153660659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      goblin_attack_down_00: 5195472590247109452
+      goblin_attack_down_01: 3240823605950297669
+      goblin_attack_down_02: -5821855398361462417
+      goblin_attack_down_03: -5997191947627524293
+      goblin_attack_left_00: 8653906995803326610
+      goblin_attack_left_01: -2576055182086308044
+      goblin_attack_left_02: 2037695571383127310
+      goblin_attack_left_03: -5094579144175560687
+      goblin_attack_right_00: 7558682116324470937
+      goblin_attack_right_01: 6109431471999800836
+      goblin_attack_right_02: -7693712491706992187
+      goblin_attack_right_03: 5585354533153660659
+      goblin_attack_sheet_0: -5285846907924305986
+      goblin_attack_sheet_1: -1466146428038354211
+      goblin_attack_sheet_10: -5784657840697987748
+      goblin_attack_sheet_11: -887113021304874817
+      goblin_attack_sheet_12: 6424557240292226247
+      goblin_attack_sheet_13: 8065814386787891567
+      goblin_attack_sheet_14: 3302795065346537063
+      goblin_attack_sheet_15: -6407035751135978322
+      goblin_attack_sheet_2: 1451809128631619600
+      goblin_attack_sheet_3: -2199746348289353173
+      goblin_attack_sheet_4: 1683939611337597698
+      goblin_attack_sheet_5: -6069185371855097721
+      goblin_attack_sheet_6: 183077943364610037
+      goblin_attack_sheet_7: -5589684096260727434
+      goblin_attack_sheet_8: 6046214638022734426
+      goblin_attack_sheet_9: 4255144103430316270
+      goblin_attack_up_00: -7156052409334908920
+      goblin_attack_up_01: 3498857825313207549
+      goblin_attack_up_02: -5656705409431342220
+      goblin_attack_up_03: 7728051957122067270
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

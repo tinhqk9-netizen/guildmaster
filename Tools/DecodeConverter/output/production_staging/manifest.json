@@ -1,0 +1,142 @@
+{
+    "schemaVersion": "1.0",
+    "definitionsVersion": "1.0",
+    "decodeVersion": "unknown",
+    "generatedAt": "2026-07-13T09:48:42.436752",
+    "sourceHash": "4ec596e149fff64ea3958ed4d5a7e928d9ff6d7e35973de628f1e3c42f5713be",
+    "converterVersion": "1.0",
+    "deterministic": true,
+    "files": [
+        {
+            "filename": "adventurers.json",
+            "category": "adventurers",
+            "recordCount": 129,
+            "hash": "41396c5897c2e2413a9da8b836ea14b87430b02d7a7dcb84d4295c86161f4fe4",
+            "dependencies": [],
+            "loadOrder": 1
+        },
+        {
+            "filename": "dungeons.json",
+            "category": "dungeons",
+            "recordCount": 11,
+            "hash": "bc3941d368713f3d83bc33f794f26b80611f089b31f2fee5d9e8d68e7a48d7be",
+            "dependencies": [],
+            "loadOrder": 1
+        },
+        {
+            "filename": "enemies.json",
+            "category": "enemies",
+            "recordCount": 122,
+            "hash": "49fe7eb1751ae20578b0f2c18edbbd48acf98f4abd1fe2742bf9d60ce2237243",
+            "dependencies": [],
+            "loadOrder": 1
+        },
+        {
+            "filename": "items.json",
+            "category": "items",
+            "recordCount": 607,
+            "hash": "b212817db3c2fef1506512ae06667d9bd1f5bce3e89a8bb6c4521d127d34673b",
+            "dependencies": [],
+            "loadOrder": 1
+        },
+        {
+            "filename": "pets.json",
+            "category": "pets",
+            "recordCount": 21,
+            "hash": "ea19363167caf56250b435660dc29ca048752792a51631c5b6f1b957a4088d29",
+            "dependencies": [],
+            "loadOrder": 1
+        },
+        {
+            "filename": "quests.json",
+            "category": "quests",
+            "recordCount": 56,
+            "hash": "f97506abc6f3abe529da1da598bab7e2a51fd3e25767d2dfd93d414f6a8a881f",
+            "dependencies": [],
+            "loadOrder": 1
+        },
+        {
+            "filename": "raids.json",
+            "category": "raids",
+            "recordCount": 12,
+            "hash": "e1defa0c6b747ada7428d94aa744c589dbc16655416ba331980dd80f24253704",
+            "dependencies": [],
+            "loadOrder": 1
+        },
+        {
+            "filename": "recipes.json",
+            "category": "recipes",
+            "recordCount": 321,
+            "hash": "70c2e3383ffac2e11c011f75704be9e794f9b042899bc503d8b6df92e3553668",
+            "dependencies": [],
+            "loadOrder": 1
+        },
+        {
+            "filename": "skills.json",
+            "category": "skills",
+            "recordCount": 227,
+            "hash": "6cc138c7f1d3dd6f26b4dd645c2be67dc47f9063476e0460d65d1fd5bad56e67",
+            "dependencies": [],
+            "loadOrder": 1
+        },
+        {
+            "filename": "status_effects.json",
+            "category": "status_effects",
+            "recordCount": 25,
+            "hash": "90cd399c6a71e5af2eb7b0d96da25f0e8a4118cc1901257faaa551975bbc1629",
+            "dependencies": [],
+            "loadOrder": 1
+        }
+    ],
+    "recordCountByCategory": {
+        "adventurers": 129,
+        "dungeons": 11,
+        "enemies": 122,
+        "items": 607,
+        "pets": 21,
+        "quests": 56,
+        "raids": 12,
+        "recipes": 321,
+        "skills": 227,
+        "status_effects": 25
+    },
+    "fullCountByCategory": {
+        "adventurers": 129,
+        "dungeons": 0,
+        "enemies": 0,
+        "items": 607,
+        "pets": 21,
+        "quests": 56,
+        "raids": 12,
+        "recipes": 78,
+        "skills": 0,
+        "status_effects": 0
+    },
+    "partialCountByCategory": {
+        "adventurers": 0,
+        "dungeons": 11,
+        "enemies": 122,
+        "items": 0,
+        "pets": 0,
+        "quests": 0,
+        "raids": 0,
+        "recipes": 243,
+        "skills": 227,
+        "status_effects": 25
+    },
+    "failedCountByCategory": {
+        "adventurers": 0,
+        "dungeons": 0,
+        "enemies": 0,
+        "items": 0,
+        "pets": 0,
+        "quests": 0,
+        "raids": 0,
+        "recipes": 0,
+        "skills": 0,
+        "status_effects": 0
+    },
+    "manualRuleCount": 0,
+    "assetCount": 1056,
+    "localizationCount": 3930
+}

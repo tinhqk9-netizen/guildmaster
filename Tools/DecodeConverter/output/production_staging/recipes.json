@@ -1,0 +1,4981 @@
+{
+  "data": [
+    {
+      "className": "Recipe",
+      "id": "recipe_absolutezero",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "absolutezero",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"IceCage\", 1",
+      "recordHash": "f7b115f395fdc7ea7fbe8101dec02791e728765b30570d4adb522b73bb59b909",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_abyssalcompendium",
+      "ingredients": [
+        {
+          "amount": 50,
+          "itemId": "missingpage"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "abyssalcompendium",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"MissingPage\", 50)",
+      "recordHash": "6b79167988416faef77e4a5943734c6ea50e8160ec47e5eaf7f1172b57032b7a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_abyssalcutlass",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "abyssalcutlass",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"GhostwoodBoard\", 5",
+      "recordHash": "65999479e4d21dd528f1030a63dc944485591a7ac986b6f5d77c5f4e00f6eb74",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_abyssalgoo",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "abyssalgoo",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"AbyssalSeashell\", 30",
+      "recordHash": "24ff1b4da138dbfb41b190f7d33c260fa63545f9bda04bf737cce5db0881c220",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_abyssalingot",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "abyssalingot",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"AbyssalGoo\", 1",
+      "recordHash": "c8278b36d6233f4b7de796c66f1e41ddc9a021dae854b7a68acc94a05bef5998",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_aegismechanica",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "aegismechanica",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Aegis\", 1",
+      "recordHash": "49864835cfb259956309b7e6b4482bce577a09048892790b4eb6ef3738e374b7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_amuletofresurrection",
+      "ingredients": [
+        {
+          "amount": 6,
+          "itemId": "phoenixfeather"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "amuletofresurrection",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"PhoenixFeather\", 6)",
+      "recordHash": "918f009125dccdeb002d2b38db6c6f6fb03ae572c93400e2b136d294920d9bb7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_amuletoftheswordsman",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "amuletoftheswordsman",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"EyesOfTheSwordsman\", 1",
+      "recordHash": "79fde917127026944ebe05acaab6ffc317c06acdb8ae873cc8613cb8b89ab78a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ancientarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "ancientarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Mithril\", 164",
+      "recordHash": "aa8e74c2e89be20e4988934f8936284bacf3bcd28af60e6f0d82139438e0d82f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ancientboots",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "ancientboots",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"AncientHide\", Logger.STATUS_FEEBLE_TETHER",
+      "recordHash": "51ef6bf045887577c29aed477d27a0d8f4cc3201d546252b656cc5ef87a92185",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ancientgloves",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "ancientgloves",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"AncientHide\", 78",
+      "recordHash": "eaba4c10b2d5a6133bf83d6973283b6b8a00ccbee662592ae1d8e328f90d7e84",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ancientjacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "ancientjacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"AncientHide\", 186",
+      "recordHash": "010c327320365158036bffdda8be70a20573ef6f5a516e884ad5dc81e2cb6c3d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ancientrobe",
+      "ingredients": [
+        {
+          "amount": 200,
+          "itemId": "ancientmembrane"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "ancientrobe",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"AncientMembrane\", 200)",
+      "recordHash": "6d9ebea14b8f346e850b8910c3a7b40c9e5afdaad4075b166b9b4e41e05f3d8d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_animatedbow",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "animatedbow",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"AnimatedIngot\", 47",
+      "recordHash": "60fb8914b46c99f09bd99e59074d1b54334c2041d968f3b97a87e2f247ed0fd4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_animatedbuckler",
+      "ingredients": [
+        {
+          "amount": 37,
+          "itemId": "animatedingot"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "animatedbuckler",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"AnimatedIngot\", 37)",
+      "recordHash": "2e82454bffed0f7edd4e8d4cf13c88d128a5c094d7090388271498409b9a03b2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_animatedcuirass",
+      "ingredients": [
+        {
+          "amount": 56,
+          "itemId": "animatedingot"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "animatedcuirass",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"AnimatedIngot\", 56)",
+      "recordHash": "3954872c0a99facaa713676455fed4bd692ca86590c55137d994f0a3a9bb803b",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_animateddagger",
+      "ingredients": [
+        {
+          "amount": 45,
+          "itemId": "animatedingot"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "animateddagger",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"AnimatedIngot\", 45)",
+      "recordHash": "56471ce4c174abb7f40bcf93bb01d50431435bda87633a9ce279106144a15ab9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_animatedhelm",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "animatedhelm",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"AnimatedIngot\", 30",
+      "recordHash": "17b22ccc5a45fcdf8824f109c53384e28f4a807745e501dcda97ae4578bffbb3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_animatedingot",
+      "ingredients": [
+        {
+          "amount": 3,
+          "itemId": "animatedscraps"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "animatedingot",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"AnimatedScraps\", 3)",
+      "recordHash": "8269518b36362e680e21968b82154d196f7905fd9cddac56ad31d94221c41f8b",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_animatedstaff",
+      "ingredients": [
+        {
+          "amount": 47,
+          "itemId": "animatedingot"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "animatedstaff",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"AnimatedIngot\", 47)",
+      "recordHash": "667343fc2c7366edf6ab97e59ac1d90ffa59fe3c9699d413151e60dd33ed667c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_animatedsword",
+      "ingredients": [
+        {
+          "amount": 47,
+          "itemId": "animatedingot"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "animatedsword",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"AnimatedIngot\", 47)",
+      "recordHash": "6fa69c484700ec6e3525e4c6fc92355cd92ebdd86d1c55ac63c1839bbe536216",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_arcanedagger",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "arcanedagger",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CorruptedDagger\", 1",
+      "recordHash": "37c17f4895ef7f3e7c6651ba02edf22b64594b4a582d81860369bcfcd0ea58f7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_archaicamulet",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "archaicamulet",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Kindlequartz\", 1",
+      "recordHash": "9c8d6d51f8e46bffa4106958420bc1fb7315e3681328c1ec3308c984baee5205",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_armorofthedryad",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "armorofthedryad",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"TortoiseArmor\", 1",
+      "recordHash": "f9da8a3b023fe838bd4af4de4185f531393df8dde587119e15b431c29621ab19",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_armoroftheundying",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "armoroftheundying",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CursedSilver\", 16",
+      "recordHash": "69f97550216bbeacb019ee458d528e6827a1bc900270cd0009b85029044a4fa6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ascendedbow",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "ascendedbow",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ShahuriBow\", 1",
+      "recordHash": "e52abdd691609b1d1fb1a8e7e4a5b85b705df260e3d75a31d76ecd9f84e34ac8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_bansheebow",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "bansheebow",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BansheeClaw\", 2",
+      "recordHash": "ccea770619d002a759f8913740e308efa5a88dbca20e71395e897730a4ea14ae",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_bansheedagger",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "bansheedagger",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BansheeScale\", Logger.STATUS_FEEBLE_TETHER",
+      "recordHash": "0af466954b3f2a23326224c5fdc2d2cc9f76798f51ba8e8086138a34fc199bcb",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_bansheegloves",
+      "ingredients": [
+        {
+          "amount": 104,
+          "itemId": "bansheescale"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "bansheegloves",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"BansheeScale\", 104)",
+      "recordHash": "70b189dd403dd65b095a41274f2125988c90a499d43b8f26b0123e1879454f46",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_bansheejacket",
+      "ingredients": [
+        {
+          "amount": 148,
+          "itemId": "bansheescale"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "bansheejacket",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"BansheeScale\", 148)",
+      "recordHash": "efe66e66f601d1bbcdca913b8589fe560e02e042c0f1ce5c4983029a75e3a867",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_bansheescream",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "bansheescream",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BansheeBow\", 1",
+      "recordHash": "8310bca36d782003c21fa28f34f15e9cd91c21f1ec034a452ce75668cc6e02e4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_beastmasterjacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "beastmasterjacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"AncientHide\", 186",
+      "recordHash": "c7c3e6aa2039c8f92de16078c8f89ed78544a95af6c5e1cb5cfbece41220e319",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_beltjacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "beltjacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"WardenBelt\", 16",
+      "recordHash": "5d5c0bed737c5af4bbe3a97ee4c53380e5a59d3814486c035dc3775648deefca",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_blackironarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "blackironarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BlackIronIngot\", 18",
+      "recordHash": "4fd30ab26d01a10c5cf4619faaefbaeb9fcb09132cf5c169f4d287c168170128",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_blackironcutlass",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "blackironcutlass",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"GhostwoodBoard\", 5",
+      "recordHash": "5761aff3e9908f6a35c274b5d906b85de6be1fe040e37535327e8b229a235b87",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_blackirondagger",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "blackirondagger",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"GhostwoodBoard\", 2",
+      "recordHash": "65b01ae051e56ce16b992afc19d4a31ea47c64fc5332550495dd26ca1bf17cdf",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_blackirongauntlets",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "blackirongauntlets",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BlackIronIngot\", 10",
+      "recordHash": "2c4da0eaf8491c238e5443c2c1d626e2861d7b4d0c0d6b49575a7703ddc9047c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_blackironhelm",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "blackironhelm",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BlackIronIngot\", 12",
+      "recordHash": "19b3ea3c96e90a8b531bb6841501191ed241e120a4575c04867a1a746c1e794f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_blackironingot",
+      "ingredients": [
+        {
+          "amount": 3,
+          "itemId": "blackironscraps"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "blackironingot",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"BlackIronScraps\", 3)",
+      "recordHash": "a456598c44563f0f175fd507b26db0478df52b557a1dbf51fa43131d92ca2636",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_blackironscepter",
+      "ingredients": [
+        {
+          "amount": 16,
+          "itemId": "blackironingot"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "blackironscepter",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"BlackIronIngot\", 16)",
+      "recordHash": "3674e00da6c1f267832d6cd83f4055ac520bf3fce38f9a82e117feeb5d5249b5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_bleakboots",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "bleakboots",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"AbherrantFabric\", 48",
+      "recordHash": "8ab2db7ef2e72a72e42da5fe2d0c8cfd14f9f5e0fab4467f916e233848d51ad5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_bleakgloves",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "bleakgloves",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"AbherrantFabric\", 24",
+      "recordHash": "9a5b5a3fd2b621b23ea40f4b04b3f93d50f43ca98dba5203930097074adf5d9d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_breathtakingrobe",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "breathtakingrobe",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"MothRobe\", 1",
+      "recordHash": "a71ba77a0370258ea075ef30bcffe368be992aa31fad9c8c64bff95c0189866a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_burningcenser",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "burningcenser",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"IronIngot\", 8",
+      "recordHash": "0900dd91affc20ee07ed51b2278c040f3e3ffb88e42df258b531c34e7b32bf3a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_burningeffigy",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "burningeffigy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ShieldOfTheMartyr\", 1",
+      "recordHash": "ead1d8578b89ef8a4c42fbfd512b6308b8ff8fea8be651265f75e5e2643cd188",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_celestialarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "celestialarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CelestialMetal\", 45",
+      "recordHash": "62868373d96fa155e374bbd6beaea86e47fcfc3251afdd80004a3b57199a9664",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_celestialhelmet",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "celestialhelmet",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CelestialMetal\", 28",
+      "recordHash": "67b3220a819babdc22700849bbc51168be0efebd32ed49f993808cdcd1754bfe",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_celestialmercy",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "celestialmercy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CelestialSword\", 1",
+      "recordHash": "4d5453d6d221d0cb24b073b769b13b5abebe9a18c2c7578962ef4c9641def4f6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_celestialmetal",
+      "ingredients": [
+        {
+          "amount": 3,
+          "itemId": "celestialscraps"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "celestialmetal",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"CelestialScraps\", 3)",
+      "recordHash": "18313eb0162dd7061f662e06da08bcc71a9804006966061198a329c69bd400c7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_celestialshield",
+      "ingredients": [
+        {
+          "amount": 35,
+          "itemId": "celestialmetal"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "celestialshield",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"CelestialMetal\", 35)",
+      "recordHash": "fe3558f52a2ba66835fd7cdeb306da6a601ea6cc02b08a40be4675b22fc10d53",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_celestialsword",
+      "ingredients": [
+        {
+          "amount": 43,
+          "itemId": "celestialmetal"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "celestialsword",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"CelestialMetal\", 43)",
+      "recordHash": "8ecacc1df2dfa297b595c6a40fd17731336331532bcd7f3aaf2b70f1c807693d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ceremonialdagger",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "ceremonialdagger",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"FrostmetalIngot\", 16",
+      "recordHash": "a7f8a09cb24fca305d5006d351544e8ec083b9de5b46d82b63e70ef437686aab",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_chainofredemption",
+      "ingredients": [
+        {
+          "amount": 8,
+          "itemId": "chainlink"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "chainofredemption",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"ChainLink\", 8)",
+      "recordHash": "2e8c75fd89924b8acf0dec5efd1d51f72d9d3639a5cd9db7170cc2ef552740a9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_championarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "championarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"DuelistArmor\", 1",
+      "recordHash": "e53112cb1fa27b86be4068df0d66ee2afa208d1d46a4e2228ef0e2fd03a887cf",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_cleansingpotion",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "cleansingpotion",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"EssenceOfCorruption\", 1",
+      "recordHash": "65cc72a8ea054ef917ad754d961ddd321128c22eec9fd5ab9cce1bfa100fa80e",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_cloakofredemption",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "cloakofredemption",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"TunicaIgnis\", 1",
+      "recordHash": "663e394d5dd98d5c9c01b31f334913ea807aa2eb1a9569c3f12169430e25ff50",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_cloth",
+      "ingredients": [
+        {
+          "amount": 4,
+          "itemId": "plantfiber"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "cloth",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"PlantFiber\", 4)",
+      "recordHash": "55e388d21effbfc3313aa6dbc43fe8b018b8aa094f66dd670f968fb383fd40c7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_clothrobe",
+      "ingredients": [
+        {
+          "amount": 3,
+          "itemId": "cloth"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "clothrobe",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"Cloth\", 3)",
+      "recordHash": "cbb36eef39f8470ab63a8e721707a68b789dbc550da0314f9e8afa59464aec87",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_containmentorb",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "containmentorb",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Glass\", 5",
+      "recordHash": "f4e17bc25c6d4651c20f9c6bb20d4a9d3138d199ec5f6a7875920b7e306ca8f1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_copperarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "copperarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Leather\", 1",
+      "recordHash": "ee762d4ccdbd20b535cfac34f26422f0b5cf708881686f6badd44ab56c9a7fb1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_copperhelmet",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "copperhelmet",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CopperIngot\", 2",
+      "recordHash": "a7bacf8bb112f91f63594fbd258cf5f0bcb132c5d5dbce65b3af38b86b9237cf",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_copperingot",
+      "ingredients": [
+        {
+          "amount": 3,
+          "itemId": "copperore"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "copperingot",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"CopperOre\", 3)",
+      "recordHash": "740096ae014063fdb7c16d32011a39e477a50378c37180e3159d68de4a293e46",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_coppersword",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "coppersword",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Wood\", 3",
+      "recordHash": "cc9dccce448a62da2b3326e6a7dc963e1ccf4d06cf3499f0c712de964f198ae3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_corsairleather",
+      "ingredients": [
+        {
+          "amount": 2,
+          "itemId": "monkeyhide"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "corsairleather",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"MonkeyHide\", 2)",
+      "recordHash": "531e0065c1e0797c4242377cbaa7bd661dbb44287f341b0d47627637fe9e2b31",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_cottontailjacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "cottontailjacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CottontailFur\", 4",
+      "recordHash": "26e61c0a4821cd86285a03198cf1cc41321d87b9791fb623f37804f39639b479",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_crimsonbrew",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "crimsonbrew",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BatTooth\", 28",
+      "recordHash": "39001cc9cdd3a26e0f3b4d7d435fcc18b2e18e92e325b57044d93e305aeb0c71",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_crimsonleech",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "crimsonleech",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Redwood\", 48",
+      "recordHash": "d7b67b2cc9210a6ed2ba8082040325ebc6bebcafc9564e99560134f5420c9ad9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_crushingdepth",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "crushingdepth",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"AscendedBow\", 1",
+      "recordHash": "cd3a9d2f095e2872ca2bd0c2bfcfdd5f35fa9284525ecdc71fec1ebf6584590f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_crystaldagger",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "crystaldagger",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Winterwood\", 4",
+      "recordHash": "f02f0121a59ad883896e821589ea7792d97a39ac9bb19f0188dcefe43d40bdb9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_crystalstaff",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "crystalstaff",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"FrostCrystal\", 10",
+      "recordHash": "c85dd0ee7b5bbefbd2b9c9a815ccfe489117c6b9b104f1b7fc5b4f9577f6dc2a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_cunningdemise",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "cunningdemise",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CunningDownfall\", 1",
+      "recordHash": "a0108d6538afc62af4001083803142c6825d51096e6c0db7123aecb62983e352",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_cunningdownfall",
+      "ingredients": [
+        {
+          "amount": 36,
+          "itemId": "kabelianmetal"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "cunningdownfall",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"KabelianMetal\", 36)",
+      "recordHash": "834b4ce1e543dce2debf39ef97e216eb4c5324be624af41b4618caa273e8f710",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_cursedbow",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "cursedbow",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CursedSilver\", 32",
+      "recordHash": "b7958351084cbf057cab6703debcbc290ea41c3b7f8c940f64775f1b07e90ec0",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_cursedclaws",
+      "ingredients": [
+        {
+          "amount": 8,
+          "itemId": "cursedsilver"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "cursedclaws",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"CursedSilver\", 8)",
+      "recordHash": "9fcaae00cc249339c5e645cc7f1b5db0afe6fc61692dac927eec4bcd6a6085f0",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_cursedhelm",
+      "ingredients": [
+        {
+          "amount": 12,
+          "itemId": "cursedsilver"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "cursedhelm",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"CursedSilver\", 12)",
+      "recordHash": "4471c2f8d77724393551a99bff362ce93873998e5435eda1f7d5c75a530145d8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_cursedjacket",
+      "ingredients": [
+        {
+          "amount": 6,
+          "itemId": "cursedsilver"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "cursedjacket",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"CursedSilver\", 6)",
+      "recordHash": "12a1843d0639a461a6146cad3d63dd50ae64bce812b6c66f9cb2e5631f733d67",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_cursedscepter",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "cursedscepter",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"WickedScepter\", 1",
+      "recordHash": "2b4b7365fa9fc7780ae515c4f237bcbfa49255f5e4ba7d4eebfd19bde42ddd93",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_deathrayscepter",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "deathrayscepter",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"FocusedScepter\", 1",
+      "recordHash": "09eb8fdf56ab3e6bd177b3de11f351e12024532775a62033505fffc618bae2eb",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_deepseajacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "deepseajacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"DeepSeaVelvet\", 2",
+      "recordHash": "06e5b02cba92f98c00fa1954dd870ba49c2b5a1300728deb1e00d49a7b927cea",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_deepsearobe",
+      "ingredients": [
+        {
+          "amount": 2,
+          "itemId": "deepseavelvet"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "deepsearobe",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"DeepSeaVelvet\", 2)",
+      "recordHash": "440c30d9629ff7854c65262d692a76bdc573dafd207f774e2adf39c902b8554e",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_deepseavelvet",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "deepseavelvet",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"AbyssalGoo\", 1",
+      "recordHash": "3d5233e9a05d049d5fe7568cb858153d4a21c1da25e95d61db9555ac5fe902be",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_diamondamulet",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "diamondamulet",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Diamond\", 1",
+      "recordHash": "9e19814de04756a570085ed6f0d9f292e63b28ad87864f357ed5e891858953c6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_divineembryo",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "divineembryo",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"DivineZygote\", 1",
+      "recordHash": "e7bb19cd6c0fe04971caa65716644f38c976109ffcc39f6359edfe7efe5bf26b",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_divinelarvae",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "divinelarvae",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"DivineEmbryo\", 1",
+      "recordHash": "a0a4b76f0358a1e61330e7d99132db86e5a3955c009bb31cd44e60866de8d742",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_djinntonic",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "djinntonic",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Glass\", 5",
+      "recordHash": "f5ff96d5c263a5884f9f8be5dff4693a4dc6f8caae6263e321b4c264e79b8c0f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_dreamwroughtarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "dreamwroughtarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"DreamwroughtSteel\", 8",
+      "recordHash": "31fcc119d579acb5ad46309106942fbe6626993da4a221410905bdd5a3386237",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_dreamwroughtboots",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "dreamwroughtboots",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"DreamwroughtSilk\", 12",
+      "recordHash": "7aa745c27fd4dda57783904ede3c7b1606b6c7554337343e053bdd07c3721ca5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_dreamwroughtbow",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "dreamwroughtbow",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"DreamwroughtSteel\", 8",
+      "recordHash": "9279fffb6ac454af61fe11d14a6ab48c521554232f86ce4c63ee4cdac8c6ece7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_dreamwroughtgloves",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "dreamwroughtgloves",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"DreamwroughtSilk\", 18",
+      "recordHash": "bf3b5b2e8206656c425cc4d7944c49c906c52527004c536cc2a39828a30d833a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_dreamwroughtjacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "dreamwroughtjacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"DreamwroughtHide\", 7",
+      "recordHash": "8f43d939915547775075dbe12eb1bc27befc954ec2f25dc19e274b8115874661",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_dreamwroughtrobe",
+      "ingredients": [
+        {
+          "amount": 20,
+          "itemId": "dreamwroughtsilk"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "dreamwroughtrobe",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"DreamwroughtSilk\", 20)",
+      "recordHash": "70ee64421e19e9c713d42a2bc812c5937ba58109d96f16a4a36941f05e5fec72",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_dreamwroughtsilk",
+      "ingredients": [
+        {
+          "amount": 3,
+          "itemId": "dreamwroughtmane"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "dreamwroughtsilk",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"DreamwroughtMane\", 3)",
+      "recordHash": "3f5f345f7c67ce1671411f878fdcee01f9f3a861a70e509ffa521597091e7d6d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_dreamwroughtstaff",
+      "ingredients": [
+        {
+          "amount": 7,
+          "itemId": "dreamwroughtsteel"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "dreamwroughtstaff",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"DreamwroughtSteel\", 7)",
+      "recordHash": "9c1cd57c0502f5ba92beed7123d332f31434b8682a1d1108eeced8c089449cae",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_dryadsblessing",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "dryadsblessing",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ElysianWood\", 200",
+      "recordHash": "2dbf0c2ac5ad81a82ee1e1a987905cde4ab7d9c93c0224ec75bb32ad40ca4d3e",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_dryadscurse",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "dryadscurse",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"VerdantBlade\", 1",
+      "recordHash": "4ed8893cd1ed2f92ebdaf2ce85fe3b6f0f1cc2682b94775b25ab24e8a9a83097",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_duelistarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "duelistarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"SentientSlab\", 5",
+      "recordHash": "d388c278f24270f18b1da8f29b0e845c92b796e3d80353d05d707289a4ea7967",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_elasticboots",
+      "ingredients": [
+        {
+          "amount": 104,
+          "itemId": "elasticmembrane"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "elasticboots",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"ElasticMembrane\", 104)",
+      "recordHash": "5a99f0dc6f18d6f86e186cdd2d001a2d050a1dc01107f11d64f086873747de21",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_elasticrobe",
+      "ingredients": [
+        {
+          "amount": 148,
+          "itemId": "elasticmembrane"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "elasticrobe",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"ElasticMembrane\", 148)",
+      "recordHash": "aa8b7678a37e271ea815aef71305351bd49691637790de06579f9033453e7c11",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_eldritchmitre",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "eldritchmitre",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"MitreHat\", 1",
+      "recordHash": "75cb6ec1d1818681d42d3d01427a694b51979fba6a6aa5cd5519c663d520fd5d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_eldritchseal",
+      "ingredients": [
+        {
+          "amount": 7,
+          "itemId": "eldritchshred"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "eldritchseal",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"EldritchShred\", 7)",
+      "recordHash": "1f386a3c1043ce358e1a08fc8c507a511271a4e880cb43bd7461a2bd2edfa1e5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_electriccatalyst",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "electriccatalyst",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Quartz\", 5",
+      "recordHash": "a4a908453a6b214fb0d5629c2dfcb0bec29b003a618fa60ac5f06324055bf72c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_elixirofaffinity",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "elixirofaffinity",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"VoodooDoll\", 3",
+      "recordHash": "e64206d292f73ef67812d515a03971ddeda10eb547e215417a6ec416cb8eabe0",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_emeraldring",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "emeraldring",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"SilverRing\", 1",
+      "recordHash": "75610621ccc0c636f3d7f67d90dce8f0ce98cb0d2840f793a99a889d369687e3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_enchantedstaff",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "enchantedstaff",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Wood\", 10",
+      "recordHash": "6b339b66d254fcbc1a330288adba59b3802763b0b02b512d0ae3d421314fe840",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_enlightedservant",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "enlightedservant",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"InvisibleServant\", 1",
+      "recordHash": "aaad3cf965918f2fb02ed2a6bb7d608aced3a3dd0beb54816f13ca60c46607b6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_essenceofcorruption",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "essenceofcorruption",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BlackOoze\", 30",
+      "recordHash": "6daaad0ee26ddb3b84ec964765b934d16993f26252d3bc8483ade8e5146c28fd",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_exoticboots",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "exoticboots",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ExoticVelvet\", 4",
+      "recordHash": "8ecea4769ce0829d8caec2aac653ed9bb44589353bb7a6640f1720fafe1f3cce",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_exoticrobe",
+      "ingredients": [
+        {
+          "amount": 30,
+          "itemId": "exoticvelvet"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "exoticrobe",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"ExoticVelvet\", 30)",
+      "recordHash": "d6736e247fa0c42c8bb8aeab1c9bf0d61a151ac9ad040c1a54b4830bf1434cec",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_fangdagger",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "fangdagger",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Wood\", 6",
+      "recordHash": "e9b26ff97861876afae86c3aacb4f365d0c80d3f2a2c31102bbe7331cf20eb89",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_featherrobe",
+      "ingredients": [
+        {
+          "amount": 24,
+          "itemId": "feather"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "featherrobe",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"Feather\", 24)",
+      "recordHash": "1198adb2d36948354e5318e1fc62dc4c195347c10cdc06f78fed9774a6f0d4d9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_firecatalyst",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "firecatalyst",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Quartz\", 5",
+      "recordHash": "3ca5b0f6769dd00da98a3d8d3ac5e362da4f950d9d88deab33d393bcf792f03c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_fleetfootarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "fleetfootarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"TortoiseArmor\", 1",
+      "recordHash": "e379118014ac1e77664ae2e95cbdb9d8ab350c450710e0e2e2c2ad8a590f3d37",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_fleetfootboots",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "fleetfootboots",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"VerdantBoots\", 1",
+      "recordHash": "d0c449aa51431eae900bb88115f568d83c862d4c532415875226b76d7608be06",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_fleetfootgloves",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "fleetfootgloves",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"VerdantGloves\", 1",
+      "recordHash": "fdcd7272d1ff994b418c9039f40a1dba9b15b2403b47aa757a8a395b5e576a32",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_fleetfootjacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "fleetfootjacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"SpitfangJacket\", 1",
+      "recordHash": "9016b608171b670e030469442cc4ac75205fce1ff8aeb57b305447db0918d679",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_fleetfootrobe",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "fleetfootrobe",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"MothRobe\", 1",
+      "recordHash": "f40f0f0aad06a2b076b41bb648c796ba052baa96452ee8907df2674fb4ed7bc3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_flyingreaper",
+      "ingredients": [
+        {
+          "amount": 20,
+          "itemId": "kabelianmetal"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "flyingreaper",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"KabelianMetal\", 20)",
+      "recordHash": "b23addb058e9304755afffe8934de99ce3213fb522356163bb08e466ea680be8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_focusedscepter",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "focusedscepter",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CelestialMetal\", 43",
+      "recordHash": "4d15ce7d0873a163d2e252d09bd89471dbe036a0f6a9583a2199efc4fd335311",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_frostmetalarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "frostmetalarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"TrollHide\", 24",
+      "recordHash": "cba11aa1528b453e864165c29cf05f31bebc2ca9822ab9b8cd697afe530dba18",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_frostmetaldagger",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "frostmetaldagger",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Winterwood\", 4",
+      "recordHash": "b3f6664072a86451ff8f3a631c0070f973c58eda0e33702c3da623c8813dcd65",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_frostmetalingot",
+      "ingredients": [
+        {
+          "amount": 3,
+          "itemId": "frostmetalore"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "frostmetalingot",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"FrostmetalOre\", 3)",
+      "recordHash": "00b8f0a2996643fb7ae3a934bc82180d4ccfbf1f1579c57076d6004dffe6baf3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_frostmetalsword",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "frostmetalsword",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Winterwood\", 6",
+      "recordHash": "414f9d096479d4b5ac121cfd66bbcbc052eeafe6ffe88b6f3416b075819e7f5a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_frozeneggpendant",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "frozeneggpendant",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"IceFiber\", 1",
+      "recordHash": "64517ac6c19f06dba4750b19276152e0706ea57516ccc1083710f3c7c02509c7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_frozenembrace",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "frozenembrace",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"SlimeArmor\", 1",
+      "recordHash": "7c6e53c3d71c63759768336ccc8a732b11164d7c68d90709ea01fc3e62d90e3a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_fullmoondagger",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "fullmoondagger",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Wood\", 6",
+      "recordHash": "02a4727cd7239f2e46fdeff29d5e51f957de60dd13a6eca64347b696d7384609",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_gemofprotection",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "gemofprotection",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"UnstableGem\", 1",
+      "recordHash": "e53a23a4599ce52384dc01bfb4a4ac5fd8e5b3ade58f476fbcf9dc824b0736c1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ghastlycuirass",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "ghastlycuirass",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"TatteredHide\", 12",
+      "recordHash": "61ffd43602dfe659842337ad1d1741ca10741775d306878c4f3aa58e7e9e5ea5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ghastlyscimitar",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "ghastlyscimitar",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"LivingScimitar\", 1",
+      "recordHash": "97a5784341163b35e179797e8191d5e20f8750e0edd142549d8d064cd1cf2b48",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ghastlyshield",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "ghastlyshield",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"UndeadShield\", 1",
+      "recordHash": "4d8215ab2649899bd538b141bb11a479c31646bebaa2230a3c1e93f6f6c4ef48",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ghostrabbitcloak",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "ghostrabbitcloak",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CottontailFur\", 4",
+      "recordHash": "6f056bb81f15d1c77eac5ffc2151ed70da70c1cca15676629ddf947d912c37eb",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ghostwoodboard",
+      "ingredients": [
+        {
+          "amount": 3,
+          "itemId": "ghostwoodstump"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "ghostwoodboard",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"GhostwoodStump\", 3)",
+      "recordHash": "465cf85b12e46cb05e905f0465199b34a2f7aed46e22f2668489a7d8c18210d9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ghostwoodbow",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "ghostwoodbow",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ExoticVelvet\", 1",
+      "recordHash": "a10ffe3a482c40dfcb5c55703e1c9af7a03c027d78905c9bae9acf3c9d5f1acd",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ghostwoodshield",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "ghostwoodshield",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"GhostwoodBoard\", 10",
+      "recordHash": "0d46eb61d0f8f9beddab20d3115898e879891dbcedf219719d3f86d18a3d95c6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_glass",
+      "ingredients": [
+        {
+          "amount": 5,
+          "itemId": "sandstone"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "glass",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"Sandstone\", 5)",
+      "recordHash": "78eadab11e491d2dbb0335048031777caa335752c6e314ce2efa182d56c248a9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_glassknife",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "glassknife",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Glass\", 4",
+      "recordHash": "7be126a81bc6df160bedaf4e9c1c52965b8e74ceb9c77b6854149966bb6f71fb",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_goldenarmor",
+      "ingredients": [
+        {
+          "amount": 16,
+          "itemId": "goldingot"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "goldenarmor",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"GoldIngot\", 16)",
+      "recordHash": "dc6c1039c36b3fb4bb8a82c3735812db311afde69a0e596393dba6b190103971",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_goldenboots",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "goldenboots",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"GoldIngot\", 8",
+      "recordHash": "30e0810b68da50c2ef03b534e09cf1fefe9bb652bb36475bf1d3ac93393d6990",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_goldengauntlets",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "goldengauntlets",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"GoldIngot\", 4",
+      "recordHash": "957d5ebb4413b8e301552ef759cf470eed31e86273480a6f304f0acd2675d34a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_goldenhelm",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "goldenhelm",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"GoldIngot\", 10",
+      "recordHash": "45b2b0f9ce798ecc3c4ff14940e33f8bf2919a9bc7cc604e86e699a83d2b4818",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_goldenshield",
+      "ingredients": [
+        {
+          "amount": 12,
+          "itemId": "goldingot"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "goldenshield",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"GoldIngot\", 12)",
+      "recordHash": "063cf072ebe64bef53c569230f0a2d7f4b637e641e9ab682337679f95ebff879",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_goldensword",
+      "ingredients": [
+        {
+          "amount": 14,
+          "itemId": "goldingot"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "goldensword",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"GoldIngot\", 14)",
+      "recordHash": "c36e64c2cf1db81f0f7631cda7d8c9e5616f608c8acec8d44adbd2ee8265ba28",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_goldingot",
+      "ingredients": [
+        {
+          "amount": 3,
+          "itemId": "goldscraps"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "goldingot",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"GoldScraps\", 3)",
+      "recordHash": "643cd821c3ace09552dd183c908a5d1a1ca755f1a97beb0af3b60c17ab44899b",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_icecage",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "icecage",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"FrozenEmbrace\", 1",
+      "recordHash": "9a34a2baaeaa4e5297d1a4ec3aa836aa42d6bf1b5fbfad070a9e190a6d97d28b",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_icecatalyst",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "icecatalyst",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Quartz\", 5",
+      "recordHash": "12fde8b82549853469b188ea4c0ea3f41b1201f1b8eea051cd3f1417a586a8fb",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_icicle",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "icicle",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ImperialStaff\", 1",
+      "recordHash": "4d8fb1d9cebbc53e1029b8128940fdbe8d3f42f28d96285b4181649b2bca07a4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ignitionorb",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "ignitionorb",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ContainmentOrb\", 1",
+      "recordHash": "dd4ecfa2492e0050ebe71e859673dee1b91db64f377b806988a4a039c38ab1ab",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_imperialshield",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "imperialshield",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CorruptedShield\", 1",
+      "recordHash": "1a55b2b2fde3531873a8a1754d6bec8cec31705cff4e1006e902cbdecbde6694",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_imperialstaff",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "imperialstaff",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CorruptedStaff\", 1",
+      "recordHash": "6a9ba412d9eb76da8b00190e277f7a8831b2488d6abcc21f421ff5ccbb22180d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_infernalbow",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "infernalbow",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CursedBow\", 1",
+      "recordHash": "28c3cbbf011008dffb16d8cdb5dee46b224cd033dfe19346dea53aad27f1adc1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_infernalchakram",
+      "ingredients": [
+        {
+          "amount": 14,
+          "itemId": "infernite"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "infernalchakram",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"Infernite\", 14)",
+      "recordHash": "1235b27f0a44be0893382aa5050c474987da0c9db414e1961daa65f9dfa03318",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_infinitedespair",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "infinitedespair",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"MutualDespair\", 1",
+      "recordHash": "a6aa1c5471b9d825387ee501997643c4ad2a13963f0d654b11ef1ed2043df8d1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_infusednecklace",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "infusednecklace",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"TuskNecklace\", 1",
+      "recordHash": "b2c74d85f2b681ae0b96f34eeb516a01e6cdfaccdca621030f0903151324ef80",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_infusionofwisdom",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "infusionofwisdom",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ElixirOfLearning\", 1",
+      "recordHash": "d342410ce37391c88a4f231e29ba129b5fa388fd7882590d7ec2020fd04868d6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_invisibleservant",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "invisibleservant",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ShadowGem\", 200",
+      "recordHash": "c0585c355be4b0de6ad69bd3b1a147e8ab694eb1126ba24533ea472ff3f15418",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ironchainmail",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "ironchainmail",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"WurmScale\", 9",
+      "recordHash": "ea33712e405318cd1f74c1c0f6755346a69d82b7720bec229ecf79b8661ecb8a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ironhelm",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "ironhelm",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"IronIngot\", 4",
+      "recordHash": "31a1d501e0715f12cd606a9fb70e6e5859ac99b61c5cbd1e3cdb79f5a5c33c2a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ironingot",
+      "ingredients": [
+        {
+          "amount": 3,
+          "itemId": "scrapmetal"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "ironingot",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"ScrapMetal\", 3)",
+      "recordHash": "6a51077d23fcbb79b3c9d5cdba3239712d343fb3d05584c6b13f3e95b39e3798",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ivoryjacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "ivoryjacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BeltJacket\", 1",
+      "recordHash": "371ef896840e18b2a4360c882ebe077302989dba759eddd1d52e91b42feda569",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_jeweledcrown",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "jeweledcrown",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"GoldIngot\", 20",
+      "recordHash": "849c1267f00aeaf4a0c822d70ee823edfd553fe22c07aef747784878138e6339",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_kabelianarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "kabelianarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"KabelianMetal\", 26",
+      "recordHash": "d5681b5cca883e1f3a677f59ddbf3912f18a4f3ee1d6f8c7881c3246d1b6ad97",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_kabelianclaws",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "kabelianclaws",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CursedClaws\", 1",
+      "recordHash": "25303b3a32bfcf7b46de6525c3dc6b6244ddafe7cb1df881774ecf88fd912e91",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_kaunianrobe",
+      "ingredients": [
+        {
+          "amount": 24,
+          "itemId": "kaunianfabric"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "kaunianrobe",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"KaunianFabric\", 24)",
+      "recordHash": "ab21aa584085490ce91f61a8940c91a6eff14f38fdc651b4d687fcb31726d6f2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_laroxianboots",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "laroxianboots",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"LaroxianFabric\", 38",
+      "recordHash": "2cfd86e9e6a7af6d99ff6cf71ecaa1a5b460762d97d1eefc819f55501164ac03",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_laroxiangloves",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "laroxiangloves",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"LaroxianFabric\", 74",
+      "recordHash": "8b12e715c73bd16ad0b010781423a7345e74d55651779ae6e4ca2f156380d0c8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_laroxianrobe",
+      "ingredients": [
+        {
+          "amount": 168,
+          "itemId": "laroxianfabric"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "laroxianrobe",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"LaroxianFabric\", 168)",
+      "recordHash": "136df6b7bc3c3dc4004e58ef0efcbab83ce0b064b195c0d6662bef6c08878d88",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_leather",
+      "ingredients": [
+        {
+          "amount": 2,
+          "itemId": "beastpelt"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "leather",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"BeastPelt\", 2)",
+      "recordHash": "06dee2e89a57aee5f4dded5d77b99f01e41e5ed637763812d29ba870c7ef0f65",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_leatherboots",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "leatherboots",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Leather\", 2",
+      "recordHash": "acb96ae0ab79992c6b8176dfb6782170e3b167c6f9bf2018cb54788c3a786824",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_leathergloves",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "leathergloves",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Leather\", 1",
+      "recordHash": "a5bc9e7b4f78fb738d5a44d32e864c064f80727ad510dd2156dfc058d65d1b03",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_leatherjacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "leatherjacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Leather\", 2",
+      "recordHash": "d0a4aa288e11f5d662a8b5134d11bc98a98d204c4ed85dccd247007e0da6058e",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_livingscimitar",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "livingscimitar",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Scimitar\", 1",
+      "recordHash": "696560efa8fa613a1cb5767302c53d08b0127e080e8fb21614330cc558c2f22f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_livingwhip",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "livingwhip",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ElysianWood\", 36",
+      "recordHash": "0fb6561af0815063635a06625c7390f4232fd8800a028d26f00841d08071e421",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_metamorphicarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "metamorphicarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"GoldenArmor\", 1",
+      "recordHash": "92ad13dfefc650c5c9d7114cea19766296e54375bb37534ea2d3bd1334218b7d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_metamorphicshield",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "metamorphicshield",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"WurmscalesShield\", 1",
+      "recordHash": "5e868a99d7c8952db04668e430188f43124434d51983868cdc5d0f34c34da6e6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_mithrilbow",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "mithrilbow",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Mithril\", 170",
+      "recordHash": "603dabc5a87eaa01d1efb0e0cf09f26dd00a05e7dff38b61b298e9387e1244b2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_mithrildagger",
+      "ingredients": [
+        {
+          "amount": 166,
+          "itemId": "mithril"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "mithrildagger",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"Mithril\", 166)",
+      "recordHash": "efa8400bf7301a9ad17e5be4e8c5aedca13e6a133f5d805a40523e5891ae4f56",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_mithrilhelm",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "mithrilhelm",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Mithril\", Logger.STATUS_FEEBLE_TETHER",
+      "recordHash": "ce2945047d65354789eec8d4e4756614a2ef33480727f66ea25f522316e18313",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_mithrilshield",
+      "ingredients": [
+        {
+          "amount": 135,
+          "itemId": "mithril"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "mithrilshield",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"Mithril\", 135)",
+      "recordHash": "f042c0c8a58325c286419b347c3fc3f16d08a9905286780f86707d77e29e0f3e",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_mithrilsword",
+      "ingredients": [
+        {
+          "amount": 170,
+          "itemId": "mithril"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "mithrilsword",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"Mithril\", 170)",
+      "recordHash": "43b285dddcc951b09c4149370601e1caff312d193fd2829f3adc7b2c4b923ade",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_moltenstaff",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "moltenstaff",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Glass\", 5",
+      "recordHash": "a9ef2107a3502f6a9627c2cd91f9abdab139ff4488500a13ccb25f785339ca08",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_monkeyhidejacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "monkeyhidejacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ExoticVelvet\", 10",
+      "recordHash": "7403cf708983ce322317d4cd21bbc660f9b7bd3c3e4c9d70493f20b091929c5e",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_mothrobe",
+      "ingredients": [
+        {
+          "amount": 29,
+          "itemId": "wingfabric"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "mothrobe",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"WingFabric\", 29)",
+      "recordHash": "18097bcbe02ef4b263c50195cc5ce076467aa1fec6363b9db9a2fc9981348b5d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_mottiphobia",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "mottiphobia",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"DreamwroughtSteel\", 3",
+      "recordHash": "a46184c9ef48532d9acb9abe53e9cb5b57d7dcd9ec2192cf69352dafd4bee1b3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_mutantjacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "mutantjacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"MutantHide\", 24",
+      "recordHash": "85e8379f4da3bfbb293794c61bb28e17517359a5844c66e7bfe516cbab7c93b8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_mutualdespair",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "mutualdespair",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"KabelianMetal\", 50",
+      "recordHash": "e984def643c9e7ae3dee55ff0ce16b15a70ef49842edd7182c3fe7e298006c4e",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_nightwingjacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "nightwingjacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"SpiderSilk\", 6",
+      "recordHash": "30b439e70e9ca5a530fb9a3a4ba80f03ea33cde8614391b07c530a3f87aff54d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_nightwingleather",
+      "ingredients": [
+        {
+          "amount": 2,
+          "itemId": "batwing"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "nightwingleather",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"BatWing\", 2)",
+      "recordHash": "35daa0e9f65228283dd5ac6b0b075c4ca3a0e3cb1e8c1d1bf4873d6805377f16",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_nilarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "nilarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"VoidArmor\", 1",
+      "recordHash": "9f41d98127362688b79434507fc26a7bfbafd51d4c8f25ca7050e3d4a8e220a7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_nilpendant",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "nilpendant",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"VoidPendant\", 1",
+      "recordHash": "7c1437c0a896b6703c6db4a93bcf5c9031a82b680f8e354edad4c2a2c6c62827",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_oblivion",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "oblivion",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"StellarFlare\", 1",
+      "recordHash": "50a3e96405fce68365e064e935f50cf08cbe8540537235df7b850b7eea00914a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_obsidianbow",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "obsidianbow",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ObsidianChunk\", 62",
+      "recordHash": "a93104c0ff8cd5b949fc4828094da496cab7b64577fba89936d87827ad2f01d3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_obsidiancuirass",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "obsidiancuirass",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"NightwingLeather\", 5",
+      "recordHash": "afdf10933414ffee04d1548d9cceca6cce98260d3d899a3779dc5a3f9a4b11a8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_obsidiandagger",
+      "ingredients": [
+        {
+          "amount": 68,
+          "itemId": "obsidianchunk"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "obsidiandagger",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"ObsidianChunk\", 68)",
+      "recordHash": "dae03597741fcd20c374c6b96c34a3d1efd149fece165e48ecfc6bc6b60ea381",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_obsidianhelm",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "obsidianhelm",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ObsidianChunk\", 48",
+      "recordHash": "5d47edd225679a987ffdd57ddd240da9e7f215b4ecb8ff8faf54e082810ab303",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_obsidianscepter",
+      "ingredients": [
+        {
+          "amount": 72,
+          "itemId": "obsidianchunk"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "obsidianscepter",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"ObsidianChunk\", 72)",
+      "recordHash": "b7051556af229915a239835b349c9afb4edbffe29aec215f0dd1dbf0d1049f4a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_obsidianshield",
+      "ingredients": [
+        {
+          "amount": 56,
+          "itemId": "obsidianchunk"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "obsidianshield",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"ObsidianChunk\", 56)",
+      "recordHash": "9816ff14da875fc6c81a88811b6c3087fc3eddcb355ac72d8e5d5db5ffefed0f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_obsidiansword",
+      "ingredients": [
+        {
+          "amount": 72,
+          "itemId": "obsidianchunk"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "obsidiansword",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"ObsidianChunk\", 72)",
+      "recordHash": "2a349ee36eabc284f3a23694fed52d96f05672ea7ccd018b73d60b3970888c57",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_orichalcumarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "orichalcumarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"OrichalcumIngot\", 35",
+      "recordHash": "be5e91659e0acddfb615d238842836bf70411d6c03f5f1909d39ab5234c21521",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_orichalcumdagger",
+      "ingredients": [
+        {
+          "amount": 28,
+          "itemId": "orichalcumingot"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "orichalcumdagger",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"OrichalcumIngot\", 28)",
+      "recordHash": "5040780f91f30018d7e949decbcfcff8418b06e125abebb86e3a9cc999fabff8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_orichalcumhelm",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "orichalcumhelm",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"OrichalcumIngot\", 28",
+      "recordHash": "e72e967f7c14391c1febdec6ff3183c5e00239839393d7946b06d50f93206f85",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_orichalcumingot",
+      "ingredients": [
+        {
+          "amount": 4,
+          "itemId": "orichalcumscraps"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "orichalcumingot",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"OrichalcumScraps\", 4)",
+      "recordHash": "7dea69b5092323dba6b8513467fe54e1fc9ef769e13311b0b4a9198026ad6c15",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_orichalcumshield",
+      "ingredients": [
+        {
+          "amount": 32,
+          "itemId": "orichalcumingot"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "orichalcumshield",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"OrichalcumIngot\", 32)",
+      "recordHash": "3250efed94680595338052be30dabcdd57d5e03e06bab394434f75e0259cb20e",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_orichalcumsword",
+      "ingredients": [
+        {
+          "amount": 32,
+          "itemId": "orichalcumingot"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "orichalcumsword",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"OrichalcumIngot\", 32)",
+      "recordHash": "f25ff8178af437fb43f226242c262e7f5d9f97455046ad1298b4d72b8ecb8a21",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_panopticonstaff",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "panopticonstaff",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ObsidianChunk\", Logger.BARD_SHIELD",
+      "recordHash": "078974ae1c8be9b6d81d6a63dccd4092068fe2ae79a2c718dd494242b229d4d0",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_patricianarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "patricianarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CottontailFur\", 4",
+      "recordHash": "e72710e4b005013405243b44ac344ce72ec411a490c670df3ca9c9ba319973c9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_permafrostessence",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "permafrostessence",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"PermafrostCore\", 5",
+      "recordHash": "41aa555be454d7aba83f964f9771cde294560dfd72edb14da7978cdfb523d3c3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_phylactery",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "phylactery",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"PhylacteryFragment\", 13",
+      "recordHash": "8c45864f969dbfb089377c69634d0dc9a7c6785c455e0846526f87ef0138ee4b",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_piratekingtricorn",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "piratekingtricorn",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ExoticVelvet\", 20",
+      "recordHash": "1cd4d8b8fc514f340862ef371142658840988b294d0e7fd28663d21e1a6e23fc",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_potionofrejuvenation",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "potionofrejuvenation",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"GreenSlime\", 5",
+      "recordHash": "c6836f050b2364bd70519634a674fcc9659d74f4ea9937b411c5d9fcf34005f4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_prehistoricmixture",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "prehistoricmixture",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"PoisonousFlesh\", 3",
+      "recordHash": "e6b534fafd61faad1d7eae71e62d5db9db1ad9d78e3b5f841508e35b7e3c2692",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_primevalarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "primevalarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"PrimevalScale\", 8",
+      "recordHash": "9bf6db70092f741c55ba991e80cd40b3a82b68cbf0fc09e3474e971ed1fb6fc6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_primevalhelm",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "primevalhelm",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"PrimevalScale\", 4",
+      "recordHash": "ded4af8cbe538268fd5a51264aa3283d2edef0ad7293449f6814df0e092deff6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_primevalshield",
+      "ingredients": [
+        {
+          "amount": 5,
+          "itemId": "primevalscale"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "primevalshield",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"PrimevalScale\", 5)",
+      "recordHash": "0c61d823080c514d9e8a422870cd8ec2da91bf103fa7eaba7492ed61acd5f8aa",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_prismaticarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "prismaticarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"SlimeArmor\", 1",
+      "recordHash": "5e74244bfcb656e83434cbfbae385d3ba87bc9eba0bc0b90933ce506f28697e4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_prismaticessence",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "prismaticessence",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"SunfireEssence\", 3",
+      "recordHash": "ea0301e06c520223c95582688cc3991e4a45ec26a62328454086598dd5fad19c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_prismaticpendant",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "prismaticpendant",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"PrismaticEssence\", 1",
+      "recordHash": "fbf7261f6b3c1dd0aa7e2a8878461c37753d11835d538f4d32cbfe20cb4efaf3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_reassemblingjacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "reassemblingjacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ShieldingJacket\", 1",
+      "recordHash": "daa71512fe1783f83093aac3653e7f5dbaade7ff13b98652c5cceac86ecd9ceb",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_redwoodbow",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "redwoodbow",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Redwood\", 40",
+      "recordHash": "a8baf70bc3ec9a20d35628783ef3d232368c3a9e149ca98881740c21b0882bf4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_ritualblade",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "ritualblade",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"PterodactylClaw\", 1",
+      "recordHash": "4f2706064d272ae8643e07763e45e21f89297e67c48257598effb17a47cf70a4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_robeofthearchmage",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "robeofthearchmage",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"LaroxianRobe\", 1",
+      "recordHash": "dd06c81758e5c035161ae2bb5ac8d014496e3c7c07564c3bc48235f9df0f2e20",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_rubyring",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "rubyring",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"SilverRing\", 1",
+      "recordHash": "aa1c473cda88d9173b42a88e814d4de184480bffc9e85e9c8b9ad03bc66d6267",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_sagearmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "sagearmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"PatricianArmor\", 1",
+      "recordHash": "f9d2ce74c4a2483fcdc432ef357d937f9abae0e803680d4b2a514e2fc10e4723",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_sagecloak",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "sagecloak",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"GhostRabbitCloak\", 1",
+      "recordHash": "36fc05d72cf310e51ae1b66bcaeafb2102c37e944bcfc97110945d394bac0c7e",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_sagejacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "sagejacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CottontailJacket\", 1",
+      "recordHash": "4688bf728751dd813528bdb29b39a2bd125befabc10596a3bea58bcd5c7e492a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_scarletshroud",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "scarletshroud",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ScarletVeil\", 1",
+      "recordHash": "8ce0306a8e6d4e1e9ded8d7573fc94d94be78016e5c2e82c35fa0e7f4c49c1cd",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_scarletveil",
+      "ingredients": [
+        {
+          "amount": 4,
+          "itemId": "scarletstrand"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "scarletveil",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"ScarletStrand\", 4)",
+      "recordHash": "4821cad620e7a109afecece6986906e240f48f226915c16bc6a89dd1e67e0c73",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_scimitar",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "scimitar",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Wood\", 12",
+      "recordHash": "543d4a79bae300c8c29cc5776d2d4bf17f0bc89ccf1c50a4a069b3541e591082",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_sha",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "sha",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"DivineLarvae\", 1",
+      "recordHash": "f6e72d674975962fdaff4ef7f83961ccaf4975a1e2caace2474e337542ef4149",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_shadowbow",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "shadowbow",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ObsidianBow\", 1",
+      "recordHash": "ec03c34a68f03ed15fdb8cbc602110082593a867168fbd9701d1c4043d33b47c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_shadowdagger",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "shadowdagger",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ObsidianDagger\", 1",
+      "recordHash": "f63aa07be08218bbdeae057b844324f903f7fd2a112e416e8c386333e0d31d11",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_shadowpotion",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "shadowpotion",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CrimsonBrew\", 1",
+      "recordHash": "aa31a8023b1d657801d445d18e251859c98886d26aed5e25e1df29ea214ee838",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_shadowring",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "shadowring",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"SilverRing\", 1",
+      "recordHash": "196985d05b8bbab969e0f3f2fab2a1b1151a0e94ea43f2019b34fbd2e2936db6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_shahuribow",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "shahuribow",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ShahuriBowFrame\", 1",
+      "recordHash": "ef83df7d69ffc19f4363fc487fb59dc674ec4b2415ef52d7a7a3884612d45ea0",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_shieldingcuirass",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "shieldingcuirass",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"AnimatedCuirass\", 1",
+      "recordHash": "f24e171b1fd26f0bd745e3e09b6ce6acbd4ea8d420b3dc2b54beb49ba3f05cf5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_shieldinghelm",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "shieldinghelm",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"AnimatedHelm\", 1",
+      "recordHash": "6eabfde17b969d1068b1c0fb3a85ca49b7c3337fb936b2cbeae6bac5f086e183",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_shieldingjacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "shieldingjacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"SpellwovenJacket\", 1",
+      "recordHash": "455cb3b0a77c60c40b1122109f2553a517d00545eba4eb5547cb40b24c3dd3db",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_shieldofthemartyr",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "shieldofthemartyr",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ShieldOfTheTitan\", 1",
+      "recordHash": "a7b7c0786f41dc7eb89dd7327c431db5668aa5d9215545cc5d3fc6895a3193b6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_shieldofthetitan",
+      "ingredients": [
+        {
+          "amount": 12,
+          "itemId": "sentientslab"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "shieldofthetitan",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"SentientSlab\", 12)",
+      "recordHash": "fcda17a62c9965e344d52e2a0deb9b5867b3f26e714b3d685ceed32bb93dfe79",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_shortcircuit",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "shortcircuit",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ElasticMembrane\", 1",
+      "recordHash": "8313da15aafbe78875e1debc5e2947c6ad52c736e4e80ef4c2b46aba97d64ba1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_silkfabric",
+      "ingredients": [
+        {
+          "amount": 4,
+          "itemId": "silkthread"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "silkfabric",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"SilkThread\", 4)",
+      "recordHash": "8e53c6b6fa9a12abe9037c4ac974401549d7516644fd45c0b0f35a9883826615",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_silkrobe",
+      "ingredients": [
+        {
+          "amount": 12,
+          "itemId": "silkfabric"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "silkrobe",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"SilkFabric\", 12)",
+      "recordHash": "2cc97087002a8ce7c98d2d96a22141ab4ffb132ca114ac22b5cadbf20e8a7b3a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_sinisterstabilizer",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "sinisterstabilizer",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"HolyWater\", 5",
+      "recordHash": "a94777948b17291a967d63375dc0a220845ebd9fdbe96e1beeef7661e9821875",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_skinblender",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "skinblender",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BansheeGloves\", 1",
+      "recordHash": "90211c522f4a9343fce02b1b8c5ebf29367f11d7327e9ff933639c33628050f4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_skullcandle",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "skullcandle",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"WarlordSkull\", 1",
+      "recordHash": "8942f2d73cfaa1e1756b5f2faa4f77e8093f95a480b9a6726932a757ed6c6c04",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_slimearmor",
+      "ingredients": [
+        {
+          "amount": 140,
+          "itemId": "greenslime"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "slimearmor",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"GreenSlime\", 140)",
+      "recordHash": "de161ed1fab7190dfeb6c8e8e837dd06919f5f1c829fedf8afe7cf7de1c8285c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_slimejacket",
+      "ingredients": [
+        {
+          "amount": 140,
+          "itemId": "greenslime"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "slimejacket",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"GreenSlime\", 140)",
+      "recordHash": "62a764f1eb49de3b4dec473955e728c5db78fea9a340181d9635189f17e589df",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_slimerobe",
+      "ingredients": [
+        {
+          "amount": 140,
+          "itemId": "greenslime"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "slimerobe",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"GreenSlime\", 140)",
+      "recordHash": "1246a25c842eb69d75554cca8e0d15dc4aea8f16d60ad3078ea69311ba6ded8a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_spectralrobe",
+      "ingredients": [
+        {
+          "amount": 15,
+          "itemId": "spectralcloth"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "spectralrobe",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"SpectralCloth\", 15)",
+      "recordHash": "ab1a794c663a7615f0332f86a583e4715ce0c1bf3cdd419e78078d2fe280af7a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_spellwovenjacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "spellwovenjacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"SpellwovenLeather\", 79",
+      "recordHash": "bbab4064c33b70bf494a25dcd4545a90536ad1ee5fd72393e6fc8f299732e5c6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_spellwovenleather",
+      "ingredients": [
+        {
+          "amount": 2,
+          "itemId": "spellwovenhide"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "spellwovenleather",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"SpellwovenHide\", 2)",
+      "recordHash": "95776fb0528fb23b2a557ef5d2443ca17be39dfc51b79e38752180bcfebb0b5f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_spiderboots",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "spiderboots",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"SpiderSilk\", 6",
+      "recordHash": "de462c0f741d7c4b7d753ddeca8359b28dc053abf17c04f36f4d80b52437ea07",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_spidergloves",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "spidergloves",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"SpiderSilk\", 10",
+      "recordHash": "0aed7415c8f57200aa139ad886f32f13ffded11fe99969e2b68a28ad4a173159",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_spiderrobe",
+      "ingredients": [
+        {
+          "amount": 20,
+          "itemId": "spidersilk"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "spiderrobe",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"SpiderSilk\", 20)",
+      "recordHash": "87a8cb700bc69a01bed600d9b72341e312a746435d3337f06fd6f9d9788c9b1d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_spidersilk",
+      "ingredients": [
+        {
+          "amount": 4,
+          "itemId": "cobwebbundle"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "spidersilk",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"CobwebBundle\", 4)",
+      "recordHash": "ff438b490dd632f0e1579181136bb7a7d7917d7be41fe14945fc61b011aa739e",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_spikedprimevalshield",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "spikedprimevalshield",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"PrimevalShield\", 1",
+      "recordHash": "45787854f59914a5cafbb2c02fd5c1f3c5eaaf43cdad6620e754034b6d2d10f6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_spikedtortoiseshield",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "spikedtortoiseshield",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"TortoiseShield\", 1",
+      "recordHash": "3d871766ce61e1199379d58381e236c7d4bd3810fb69bd0ac9431c8b7f11b7d1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_spitfangjacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "spitfangjacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"WingFabric\", 5",
+      "recordHash": "47c3231bc082611021c8c049a47ff0ce2970af54eb611e66198b61434547d7c6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_staffofthearchmage",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "staffofthearchmage",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"UnstableStaff\", 1",
+      "recordHash": "932eb8d050f3606a98ee43094dc200acc6f216369ccc63cdbabd11340745bab9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_starvation",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "starvation",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"EternalHunger\", 1",
+      "recordHash": "8ed3fa89b91c91a648afd449fc0612b0e4f7cb80850c781be8a33601da4cf074",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_staticessence",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "staticessence",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"StaticCore\", 5",
+      "recordHash": "5021bf62099f8a6dbd00e9d5e81191ec7f7b47bd613e77f16857374756b08adf",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_stellarflare",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "stellarflare",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"TitanicMight\", 1",
+      "recordHash": "80f834f0ac630eb03dbc025f56cb7e4c4dc16f38c56be5ded2553cd21e65f5f7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_stellarstaff",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "stellarstaff",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"SunStaff\", 1",
+      "recordHash": "9e5c46930c9f91cfce0f2b2297b13bbf962c1b1004888c6cf6bfe650ba52903d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_sunfireessence",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "sunfireessence",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"SunfireCore\", 5",
+      "recordHash": "e9bd53fa07f49dad7b87eb6d819eeaa1c0fb0072ab761802d852772865a031e3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_sunstaff",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "sunstaff",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Glass\", 5",
+      "recordHash": "8e74929330eef455911535915abb7f500886a50b1769cf1933a2f09a8d2d598b",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_swarmkeeperarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "swarmkeeperarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"DreamwroughtArmor\", 1",
+      "recordHash": "6b9692a5feb25c5b277eba55fc7c8d58962392792bbed21c057057ee91f36a96",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_sylvanblessing",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "sylvanblessing",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"DryadsBlessing\", 1",
+      "recordHash": "3fbc4e6824bd03f86615f2daf2b7747863847f5d6f29ebeb5d8e913eddd2d049",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_sylvanmandate",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "sylvanmandate",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"DryadsCurse\", 1",
+      "recordHash": "94f9506706712c2f484e6c1b73431a14bab48af71cda9ed10f09dc9172090f46",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_tacticalhelmet",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "tacticalhelmet",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CelestialHelmet\", 1",
+      "recordHash": "07214fd32f6d7eacc9d84625879d239066be766f26b998a66fbd96ffdc1dd536",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_thaumaturgicblood",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "thaumaturgicblood",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"InfectedBlood\", 3",
+      "recordHash": "6011e81e73f19f346a82a924530643eb1a33647c3c0b1dd3d7dde59d51662bfc",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_titanicmight",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "titanicmight",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CrushingDepth\", 1",
+      "recordHash": "3706a20b5b739606eb1355eadf952edd3be0e8abcdaa13d5aec7b28f3cff84d6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_tortoisearmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "tortoisearmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"WingFabric\", 8",
+      "recordHash": "b3e78031b0796cf172890b3732136e49ac5a89025731b10be7ad4f89f57108ac",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_tortoiseshield",
+      "ingredients": [
+        {
+          "amount": 80,
+          "itemId": "giantshellfragment"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "tortoiseshield",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"GiantShellFragment\", 80)",
+      "recordHash": "5868c801a1569ed7ee3f3bb306ec7813dedc6f7e414e3337943fce39f076f556",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_toxinpouch",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "toxinpouch",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"AncientHide\", 8",
+      "recordHash": "1aa048257e68b37e13ca72f2b787aa6d082de0c31816e9051cd128715bc78070",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_trollskinjacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "trollskinjacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"TrollHide\", 48",
+      "recordHash": "9ac3a28f72f4c35b208366b5789706e6f9ed7124ccaa63b37de65366b5ea0825",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_tunicaignis",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "tunicaignis",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"SlimeRobe\", 1",
+      "recordHash": "36fb14d1e3405e93ae4cf09e9075a3c7955f18c1225eaf918a0f2f56eee86cf1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_tunicainfernalis",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "tunicainfernalis",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CloakOfRedemption\", 1",
+      "recordHash": "b3bb13abca5aa431296fbe5e2216c83036769aa9ff8cbf0a745b72ee64dc967b",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_tusknecklace",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "tusknecklace",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BoarTusk\", 4",
+      "recordHash": "1aec74d7816a5e568e8c7305e0ad090f86df43d5bf62f7d432a6af23cc5e6dfa",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_undeadcuirass",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "undeadcuirass",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"TatteredHide\", 12",
+      "recordHash": "2f0d7fc12bdf4b33404be654e213c7e64c355c439d42b6110e4dae39e77354b3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_undeadgloves",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "undeadgloves",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BoneFragment\", 14",
+      "recordHash": "57667edf6216bb46293f73fbfddffa2a16b913b53a855597e47ef1ca5939d183",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_undeadgreaves",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "undeadgreaves",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BoneFragment\", 20",
+      "recordHash": "49c629171f994b8d5cbd798d0e932fe7f582cfefee8c3d4df07e2fb2c9dfd660",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_undeadhelm",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "undeadhelm",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BoneFragment\", 20",
+      "recordHash": "3f6cc0e625742f3d6102c9f7e0a4479b7116b5fdedb40fb145449c4f5e2d254c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_undeadjacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "undeadjacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BoneFragment\", 24",
+      "recordHash": "a25e46f18bfaf480f0d5f08e8393c5d54ceb842a3409286d77662f1ea72acbb5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_undeadknife",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "undeadknife",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BoneFragment\", 30",
+      "recordHash": "4511618e2230ef3a71bf9969a3fc21b89c57e576ff012161345cd5e014cfda47",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_undeadshield",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "undeadshield",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BoneFragment\", 10",
+      "recordHash": "3e27facb5d03e394b34a67512155579bc6e47080ee9a16e2aba990a8532cc6dd",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_undeadstaff",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "undeadstaff",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BoneFragment\", 30",
+      "recordHash": "0b63184ce0c13747850d279c942f10071dc8af354c939fcdaeabb4a49123962d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_undeadsword",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "undeadsword",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"BoneFragment\", 30",
+      "recordHash": "817843b49df658655dbba0e45c18255724ad51e006d750d0c593a456fde82e69",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_unholycuirass",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "unholycuirass",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ObsidianCuirass\", 1",
+      "recordHash": "70c1c0c77d5b2122fdd3f48c73a83371e5fd2640058670c3a57af9a8eb1cc99f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_unholypotion",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "unholypotion",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"CrimsonBrew\", 1",
+      "recordHash": "30862f098bd30daca70e0b35e2487feb6ddf6b25c1e0e27eacbfb9e5199f0904",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_unholyspellcage",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "unholyspellcage",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"UnholyCuirass\", 1",
+      "recordHash": "4deafcb422ff72b8d24814dd8ecd8552f7729694dc72fcc4e06430246978a446",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_unholysword",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "unholysword",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ObsidianSword\", 1",
+      "recordHash": "7120e45910b91f6bca632b46b18e2cf74d49c4001db0caf8efef8c1c66feb436",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_unstablestaff",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "unstablestaff",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"AnimatedStaff\", 1",
+      "recordHash": "263a3e829d42457cc22e82ca8184973deaed2d71336b29323bd160534e5b9733",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_vampirebow",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "vampirebow",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ObsidianBow\", 1",
+      "recordHash": "57f9e24a4f02f15acee053369d036d1c401c2f729f7bbe05fde633b52f499044",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_vampiredagger",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "vampiredagger",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ObsidianDagger\", 1",
+      "recordHash": "3169056efe899e2739a3a1193e4ae674ce07bfc81b2605aa56ed788eb35d8bdd",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_vampirescepter",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "vampirescepter",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ObsidianScepter\", 1",
+      "recordHash": "aee94734ff62ef6c8013a9ad1264786abea838b4e793e95afc4102c456976ad3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_vampiresword",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "vampiresword",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ObsidianSword\", 1",
+      "recordHash": "2c621bc0d4b4a2f7d26095d63e9c19c42ed11003e50657aa68c08db71e680e08",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_veilshatterer",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "veilshatterer",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"VeilBreaker\", 1",
+      "recordHash": "ea80f48a9dd75365c9dd55c4c56cee5948f70ffa508805a658e78b0668cf9f52",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_verdantblade",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "verdantblade",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ElysianWood\", 64",
+      "recordHash": "898a7f62d62238c154868f24dd4f4a8b7851a9668a4730130b32680e06cda86f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_verdantboots",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "verdantboots",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"WingFabric\", 5",
+      "recordHash": "3de297e0c6df531208b09f47c0a57ca876bfd166216a33ffd3b741525c227305",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_verdantbow",
+      "ingredients": [
+        {
+          "amount": 200,
+          "itemId": "elysianwood"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "verdantbow",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"ElysianWood\", 200)",
+      "recordHash": "7684da1eae59214f3cfe1ad9b3aa732c0b54f227f8de458f42c6723a70ecbb64",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_verdantgloves",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "verdantgloves",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"WingFabric\", 8",
+      "recordHash": "03a394eb558c289edbcd1c0b1809f2cbde35569ab2b1481534354f6ce2adb637",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_verdanthelm",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "verdanthelm",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ElysianWood\", 84",
+      "recordHash": "6139490dc5249491f84661c70b3873e742d1fca493cc1079f2785e3c5a3b3f9d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_voidarmor",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "voidarmor",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"PrismaticArmor\", 1",
+      "recordHash": "d3d4c99654336769224a30280b74581b73b01dcc0d5ed828ce9b66a7bdec1fce",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_voidcrusher",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "voidcrusher",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ColossalSword\", 1",
+      "recordHash": "8879900d5b196a3587ad066c61afee16b109ccfe420c0484c0cffc0244655294",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_voidpendant",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "voidpendant",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"PrismaticPendant\", 1",
+      "recordHash": "ece31c285062cf22aef2b10a077c14c24193ccf2ee891feaab73ee3c3e8f9bfe",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_voltaicshock",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "voltaicshock",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"ShortCircuit\", 1",
+      "recordHash": "c99386d19bdcd01b219748fbd92fafd8dc684bcef99aed583fb5b89d7f9f9ca7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_wickedscepter",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "wickedscepter",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"AnimatedIngot\", 47",
+      "recordHash": "ae83cc99d3c45a5cc0803c37a327879ae0e78e9f349eae92167d3322595eec78",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_wingfabric",
+      "ingredients": [
+        {
+          "amount": 4,
+          "itemId": "giantmothwing"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "wingfabric",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"GiantMothWing\", 4)",
+      "recordHash": "0e10fc7e0ff19f52875eb7bc0a6ccbfd025a693b7d262f50160c37e8ef8019de",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_winterboots",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "winterboots",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"TrollHide\", 32",
+      "recordHash": "e7626a3ff7a599376c23b7472dc2357b36d5fcb735a0d81ef79522f22a0787ca",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_wintercape",
+      "ingredients": [
+        {
+          "amount": 18,
+          "itemId": "wintercloth"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "wintercape",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"Wintercloth\", 18)",
+      "recordHash": "79d89f4f3904df5a446e97f45c086bfe17266cd51c03fb716537c411249152c6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_wintercloth",
+      "ingredients": [
+        {
+          "amount": 4,
+          "itemId": "icefiber"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "wintercloth",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"IceFiber\", 4)",
+      "recordHash": "64638ae07e8e4f83ad465d46631f903be5eba713dda1a7ffc11501dc4861a405",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_wintergloves",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "wintergloves",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"TrollHide\", 16",
+      "recordHash": "83d828d52c61fccbae60134192f261eb71cf93bdebdb810ac21c64131a2a9436",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_winterhelm",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "winterhelm",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"FrostmetalIngot\", 10",
+      "recordHash": "27f5646e269c32100915fba285943f277311bb80a75f1161481cce40a9b47cb4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_wintershield",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "wintershield",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Winterwood\", 40",
+      "recordHash": "ec873d567eeed0f0237d3fa83e47cc6e5572dba0c3acdf7a469d9fa811a4b29d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_winterwoodbow",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "winterwoodbow",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Winterwood\", 60",
+      "recordHash": "4766536d4a2c88c123348baa1e05ea4b533af94f9739ada0046e41eb9324d7d0",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_winterwoodstaff",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "winterwoodstaff",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Winterwood\", 50",
+      "recordHash": "b0f7f8d10235981852933277bd4dbbff16516433ed7ca1e1726f39d949ea5ad7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_woodenbow",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "woodenbow",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"Wood\", 5",
+      "recordHash": "2de8fb4f5b9caec18b269e2c59c8f016cf146827c8d6fbd250ef6d1819b75ff1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_woodenbuckler",
+      "ingredients": [
+        {
+          "amount": 6,
+          "itemId": "wood"
+        }
+      ],
+      "manualRuleRequired": false,
+      "outputItemId": "woodenbuckler",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "rawArgs": "Item.getInstance(\"Wood\", 6)",
+      "recordHash": "e081adeff34623f3e7eb8829f0c69dd18a9abf2d04c40ed22074ffd223207451",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_wurmscalesboots",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "wurmscalesboots",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"WurmScale\", 12",
+      "recordHash": "63138881bb9f309270e558b99940d7d72febec1c1807038317b0dc188fafa1ef",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_wurmscalesgloves",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "wurmscalesgloves",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"WurmScale\", 8",
+      "recordHash": "facd184e328ec5d0cde7894379d9cf3efe15ff1cbdd59db5243fbd0c8c40db03",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_wurmscalesjacket",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "wurmscalesjacket",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"WurmScale\", 18",
+      "recordHash": "a8bd422e71d9668ea94698772af3d8189821bb0fbef12c1ab170361a698aa2f7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_wurmscalesshield",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "wurmscalesshield",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"WurmScale\", 8",
+      "recordHash": "bb48d1dfcfc1c12d2dd5b960355be0178c99dbf43737e829ec2cd55f1267863a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipe",
+      "id": "recipe_wyverncape",
+      "ingredients": [],
+      "manualRuleRequired": true,
+      "outputItemId": "wyverncape",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_INGREDIENTS"
+      ],
+      "parseStatus": "partial",
+      "rawArgs": "Item.getInstance(\"FrozenScale\", 6",
+      "recordHash": "142d50bb12ac30143cb58ae891481c622877b66094f62a27124bbd0421f638ac",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"
+    }
+  ],
+  "metadata": {
+    "definitionsVersion": "1.0",
+    "generatedAt": "2026-07-13T09:48:42.433157",
+    "recordCount": 321,
+    "schemaVersion": "1.0"
+  }
+}

@@ -1,0 +1,10 @@
+........usage: python.exe -m unittest [-h] [--config CONFIG] [--verbose]
+                              [--limit LIMIT] [--dry-run] [--output OUTPUT]
+                              [--strict] [--fail-on-fatal]
+                              {scan,validate,report,convert-items,convert-adventurers,convert-enemies,convert-skills,convert-status-effects,convert-dungeons,convert-raids,convert-quests,convert-pets,convert-recipes,convert-all,benchmark,convert-all-production,verify-determinism}
+python.exe -m unittest: error: argument command: invalid choice: 'convert-invalid' (choose from 'scan', 'validate', 'report', 'convert-items', 'convert-adventurers', 'convert-enemies', 'convert-skills', 'convert-status-effects', 'convert-dungeons', 'convert-raids', 'convert-quests', 'convert-pets', 'convert-recipes', 'convert-all', 'benchmark', 'convert-all-production', 'verify-determinism')
+...............................
+----------------------------------------------------------------------
+Ran 39 tests in 0.039s
+
+OK

@@ -1,0 +1,17 @@
+{
+    "decodeRoot": "D:\\Tinh\\Guild Master - Idle Dungeons",
+    "packageName": "it.paranoidsquirrels.idleguildmaster",
+    "appVersionName": "Unknown",
+    "appVersionCode": "Unknown",
+    "sourceFileCount": 1150,
+    "resourceFileCount": 1959,
+    "contentFileCountByCategory": {
+        "other": 209,
+        "adventurers": 133,
+        "enemies": 122,
+        "items": 628,
+        "quests": 58
+    },
+    "sourceHash": "4ec596e149fff64ea3958ed4d5a7e928d9ff6d7e35973de628f1e3c42f5713be",
+    "generatedAt": "2026-07-13T09:48:41.991805"
+}

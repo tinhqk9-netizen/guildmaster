@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: ca8abfb48ded38f4b9aa243b3f5753f0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4747084929141479367
+    second: slimeking_death_sheet_0
+  - first:
+      213: 4305961412968451995
+    second: slimeking_death_sheet_1
+  - first:
+      213: 6859636156703556480
+    second: slimeking_death_sheet_2
+  - first:
+      213: -4631767607484101164
+    second: slimeking_death_sheet_3
+  - first:
+      213: -4422807954022865904
+    second: slimeking_death_sheet_4
+  - first:
+      213: -99538321983020278
+    second: slimeking_death_sheet_5
+  - first:
+      213: -5529535572227627667
+    second: slimeking_death_sheet_6
+  - first:
+      213: -1247618579469921083
+    second: slimeking_death_sheet_7
+  - first:
+      213: -1597165958309793526
+    second: slimeking_death_sheet_8
+  - first:
+      213: 3501540657992280723
+    second: slimeking_death_sheet_9
+  - first:
+      213: -5532534237910833403
+    second: slimeking_death_sheet_10
+  - first:
+      213: -8106529609292271452
+    second: slimeking_death_sheet_11
+  - first:
+      213: -3299863247918374634
+    second: slimeking_death_sheet_12
+  - first:
+      213: -5557505219855550299
+    second: slimeking_death_sheet_13
+  - first:
+      213: 6943709393286216843
+    second: slimeking_death_sheet_14
+  - first:
+      213: 660163051948655342
+    second: slimeking_death_sheet_15
+  - first:
+      213: 8886483144729648097
+    second: slimeking_death_down_00
+  - first:
+      213: -8815330418650893619
+    second: slimeking_death_down_01
+  - first:
+      213: 5878204525267140895
+    second: slimeking_death_down_02
+  - first:
+      213: 4061112332177517093
+    second: slimeking_death_down_03
+  - first:
+      213: -4089003323133191744
+    second: slimeking_death_up_00
+  - first:
+      213: 2131541667199595951
+    second: slimeking_death_up_01
+  - first:
+      213: -3824912784209007082
+    second: slimeking_death_up_02
+  - first:
+      213: -8393857274983218788
+    second: slimeking_death_up_03
+  - first:
+      213: 2875147215000546192
+    second: slimeking_death_left_00
+  - first:
+      213: 5185341178549095524
+    second: slimeking_death_left_01
+  - first:
+      213: -5260050896013957114
+    second: slimeking_death_left_02
+  - first:
+      213: 685843452176862135
+    second: slimeking_death_left_03
+  - first:
+      213: -447618877533026178
+    second: slimeking_death_right_00
+  - first:
+      213: -5806127381981992585
+    second: slimeking_death_right_01
+  - first:
+      213: -1825133974226598960
+    second: slimeking_death_right_02
+  - first:
+      213: 3394659732928874346
+    second: slimeking_death_right_03
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: slimeking_death_down_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb5b186651235b70800000000000000
+      internalID: 8886483144729648097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeking_death_down_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc23e9a90b7a9a580800000000000000
+      internalID: -8815330418650893619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeking_death_down_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1144a52fd3939150800000000000000
+      internalID: 5878204525267140895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeking_death_down_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52a26604628fb5830800000000000000
+      internalID: 4061112332177517093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeking_death_up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c9114f5421f047c0800000000000000
+      internalID: -4089003323133191744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeking_death_up_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa530695ad1c49d10800000000000000
+      internalID: 2131541667199595951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeking_death_up_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61e2f58861e2beac0800000000000000
+      internalID: -3824912784209007082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeking_death_up_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c910c4de747038b80800000000000000
+      internalID: -8393857274983218788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeking_death_left_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09baf0ba82396e720800000000000000
+      internalID: 2875147215000546192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeking_death_left_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46ccf9a245806f740800000000000000
+      internalID: 5185341178549095524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeking_death_left_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 608ec9a349b8007b0800000000000000
+      internalID: -5260050896013957114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeking_death_left_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bb878a6cfa948900800000000000000
+      internalID: 685843452176862135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeking_death_right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7882e1a00db9c9f0800000000000000
+      internalID: -447618877533026178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeking_death_right_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7796b4488ed7c6fa0800000000000000
+      internalID: -5806127381981992585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeking_death_right_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d30ab60252dba6e0800000000000000
+      internalID: -1825133974226598960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slimeking_death_right_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a674c8a9a014c1f20800000000000000
+      internalID: 3394659732928874346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      slimeking_death_down_00: 8886483144729648097
+      slimeking_death_down_01: -8815330418650893619
+      slimeking_death_down_02: 5878204525267140895
+      slimeking_death_down_03: 4061112332177517093
+      slimeking_death_left_00: 2875147215000546192
+      slimeking_death_left_01: 5185341178549095524
+      slimeking_death_left_02: -5260050896013957114
+      slimeking_death_left_03: 685843452176862135
+      slimeking_death_right_00: -447618877533026178
+      slimeking_death_right_01: -5806127381981992585
+      slimeking_death_right_02: -1825133974226598960
+      slimeking_death_right_03: 3394659732928874346
+      slimeking_death_sheet_0: -4747084929141479367
+      slimeking_death_sheet_1: 4305961412968451995
+      slimeking_death_sheet_10: -5532534237910833403
+      slimeking_death_sheet_11: -8106529609292271452
+      slimeking_death_sheet_12: -3299863247918374634
+      slimeking_death_sheet_13: -5557505219855550299
+      slimeking_death_sheet_14: 6943709393286216843
+      slimeking_death_sheet_15: 660163051948655342
+      slimeking_death_sheet_2: 6859636156703556480
+      slimeking_death_sheet_3: -4631767607484101164
+      slimeking_death_sheet_4: -4422807954022865904
+      slimeking_death_sheet_5: -99538321983020278
+      slimeking_death_sheet_6: -5529535572227627667
+      slimeking_death_sheet_7: -1247618579469921083
+      slimeking_death_sheet_8: -1597165958309793526
+      slimeking_death_sheet_9: 3501540657992280723
+      slimeking_death_up_00: -4089003323133191744
+      slimeking_death_up_01: 2131541667199595951
+      slimeking_death_up_02: -3824912784209007082
+      slimeking_death_up_03: -8393857274983218788
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

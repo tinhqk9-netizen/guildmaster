@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: c00e4b9c62eed94409dc718446302f39
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4003101840200763763
+    second: merchant_idle_sheet_0
+  - first:
+      213: -5222062002822360993
+    second: merchant_idle_sheet_1
+  - first:
+      213: -3336817910105530628
+    second: merchant_idle_sheet_2
+  - first:
+      213: 2085877667035362044
+    second: merchant_idle_sheet_3
+  - first:
+      213: -6524548579453111090
+    second: merchant_idle_sheet_4
+  - first:
+      213: -4423313205275742552
+    second: merchant_idle_sheet_5
+  - first:
+      213: -9099741702937683197
+    second: merchant_idle_sheet_6
+  - first:
+      213: 3997970351027382413
+    second: merchant_idle_sheet_7
+  - first:
+      213: -3863386738001004975
+    second: merchant_idle_sheet_8
+  - first:
+      213: 3693843595256495757
+    second: merchant_idle_sheet_9
+  - first:
+      213: 4473648739669405711
+    second: merchant_idle_sheet_10
+  - first:
+      213: 8058216166635182128
+    second: merchant_idle_sheet_11
+  - first:
+      213: 8905624098043133034
+    second: merchant_idle_sheet_12
+  - first:
+      213: 7841326164708418868
+    second: merchant_idle_sheet_13
+  - first:
+      213: 1153294894550826113
+    second: merchant_idle_sheet_14
+  - first:
+      213: 6599353290097718787
+    second: merchant_idle_sheet_15
+  - first:
+      213: 8313336985952637297
+    second: merchant_idle_sheet_16
+  - first:
+      213: 5015696933953502213
+    second: merchant_idle_sheet_17
+  - first:
+      213: 1240018057826451012
+    second: merchant_idle_sheet_18
+  - first:
+      213: -2011935864547138126
+    second: merchant_idle_sheet_19
+  - first:
+      213: 6333615441292358069
+    second: merchant_idle_sheet_20
+  - first:
+      213: 5845218534652441584
+    second: merchant_idle_sheet_21
+  - first:
+      213: 7114027794677479597
+    second: merchant_idle_sheet_22
+  - first:
+      213: -7448544218454335498
+    second: merchant_idle_sheet_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: merchant_idle_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 779
+        width: 109
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37901e01aefdd8730800000000000000
+      internalID: 4003101840200763763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 778
+        width: 109
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5055bea6428787b0800000000000000
+      internalID: -5222062002822360993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 777
+        width: 109
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe9ffb3acd31b1d0800000000000000
+      internalID: -3336817910105530628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 778
+        width: 109
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2309ccfa682fc10800000000000000
+      internalID: 2085877667035362044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 581
+        width: 109
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4fae1b2a52475a0800000000000000
+      internalID: -6524548579453111090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 580
+        width: 109
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aeae35531c3d92c0800000000000000
+      internalID: -4423313205275742552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 579
+        width: 109
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b5798322937b180800000000000000
+      internalID: -9099741702937683197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 580
+        width: 109
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88e7832ad4ab7730800000000000000
+      internalID: 3997970351027382413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 523
+        width: 81
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156be7b1b3e726ac0800000000000000
+      internalID: -3863386738001004975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 522
+        width: 81
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8e7d17dd2b234330800000000000000
+      internalID: 3693843595256495757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 521
+        width: 81
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f007ed983d7951e30800000000000000
+      internalID: 4473648739669405711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 522
+        width: 81
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0389997c8e884df60800000000000000
+      internalID: 8058216166635182128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 360
+        width: 85
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6cf403eee1279b70800000000000000
+      internalID: 8905624098043133034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 359
+        width: 85
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435eb670a9cf1dc60800000000000000
+      internalID: 7841326164708418868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 358
+        width: 85
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c39fe9893510010800000000000000
+      internalID: 1153294894550826113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 359
+        width: 85
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 306749b3adc959b50800000000000000
+      internalID: 6599353290097718787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 255
+        width: 86
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 171d2d951f7ee5370800000000000000
+      internalID: 8313336985952637297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 255
+        width: 86
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c705189c55b9540800000000000000
+      internalID: 5015696933953502213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 255
+        width: 86
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44eb0db8add653110800000000000000
+      internalID: 1240018057826451012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 255
+        width: 86
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b5accaadfa2414e0800000000000000
+      internalID: -2011935864547138126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 11
+        width: 78
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b1f82adfa585e750800000000000000
+      internalID: 6333615441292358069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 10
+        width: 78
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3fc78b9436e1150800000000000000
+      internalID: 5845218534652441584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 9
+        width: 78
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8b108669a1ab260800000000000000
+      internalID: 7114027794677479597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: merchant_idle_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 10
+        width: 78
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff5d355f7471a890800000000000000
+      internalID: -7448544218454335498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      merchant_idle_sheet_0: 4003101840200763763
+      merchant_idle_sheet_1: -5222062002822360993
+      merchant_idle_sheet_10: 4473648739669405711
+      merchant_idle_sheet_11: 8058216166635182128
+      merchant_idle_sheet_12: 8905624098043133034
+      merchant_idle_sheet_13: 7841326164708418868
+      merchant_idle_sheet_14: 1153294894550826113
+      merchant_idle_sheet_15: 6599353290097718787
+      merchant_idle_sheet_16: 8313336985952637297
+      merchant_idle_sheet_17: 5015696933953502213
+      merchant_idle_sheet_18: 1240018057826451012
+      merchant_idle_sheet_19: -2011935864547138126
+      merchant_idle_sheet_2: -3336817910105530628
+      merchant_idle_sheet_20: 6333615441292358069
+      merchant_idle_sheet_21: 5845218534652441584
+      merchant_idle_sheet_22: 7114027794677479597
+      merchant_idle_sheet_23: -7448544218454335498
+      merchant_idle_sheet_3: 2085877667035362044
+      merchant_idle_sheet_4: -6524548579453111090
+      merchant_idle_sheet_5: -4423313205275742552
+      merchant_idle_sheet_6: -9099741702937683197
+      merchant_idle_sheet_7: 3997970351027382413
+      merchant_idle_sheet_8: -3863386738001004975
+      merchant_idle_sheet_9: 3693843595256495757
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

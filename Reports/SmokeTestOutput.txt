@@ -1,0 +1,16 @@
+SMOKE TEST RESULT
+Manifest Loaded: True
+Files Loaded: 10
+Fatal Errors: False
+Records:
+- adventurers: 129
+- dungeons: 11
+- enemy_drop_tables: 116
+- enemies: 122
+- items: 607
+- pets: 21
+- quests: 56
+- raids: 12
+- recipes: 321
+- skills: 227
+- status_effects: 25

@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: 06c62a3aca7fa364eb1a5b78f69f984a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4897882278671102885
+    second: fireorc_attack_sheet_0
+  - first:
+      213: -7266744024948118836
+    second: fireorc_attack_sheet_1
+  - first:
+      213: -6302328231887804773
+    second: fireorc_attack_sheet_2
+  - first:
+      213: -5223164989420743421
+    second: fireorc_attack_sheet_3
+  - first:
+      213: 9047472323811479893
+    second: fireorc_attack_sheet_4
+  - first:
+      213: 2966164149897685727
+    second: fireorc_attack_sheet_5
+  - first:
+      213: -6337438354510302731
+    second: fireorc_attack_sheet_6
+  - first:
+      213: 6568215224030038327
+    second: fireorc_attack_sheet_7
+  - first:
+      213: 1746369339968223731
+    second: fireorc_attack_sheet_8
+  - first:
+      213: 2418350435271366965
+    second: fireorc_attack_sheet_9
+  - first:
+      213: 1198222634606179857
+    second: fireorc_attack_sheet_10
+  - first:
+      213: -6126427560824515712
+    second: fireorc_attack_sheet_11
+  - first:
+      213: 3936461904127096382
+    second: fireorc_attack_sheet_12
+  - first:
+      213: 4891164727215009360
+    second: fireorc_attack_sheet_13
+  - first:
+      213: 2052456178155328996
+    second: fireorc_attack_sheet_14
+  - first:
+      213: -1812825106783549691
+    second: fireorc_attack_sheet_15
+  - first:
+      213: -890778336550288425
+    second: fireorc_attack_down_00
+  - first:
+      213: 3248241305554608840
+    second: fireorc_attack_down_01
+  - first:
+      213: 3148752264224254733
+    second: fireorc_attack_down_02
+  - first:
+      213: 1263439637882406495
+    second: fireorc_attack_down_03
+  - first:
+      213: -3299960381145740130
+    second: fireorc_attack_up_00
+  - first:
+      213: -7887135836596692868
+    second: fireorc_attack_up_01
+  - first:
+      213: -2733278819766289762
+    second: fireorc_attack_up_02
+  - first:
+      213: 651255673195600759
+    second: fireorc_attack_up_03
+  - first:
+      213: 1675395376496554471
+    second: fireorc_attack_left_00
+  - first:
+      213: 2405702878159473107
+    second: fireorc_attack_left_01
+  - first:
+      213: -175934325424066382
+    second: fireorc_attack_left_02
+  - first:
+      213: -1249345610547824800
+    second: fireorc_attack_left_03
+  - first:
+      213: 4566030067381858997
+    second: fireorc_attack_right_00
+  - first:
+      213: -4394314502920597526
+    second: fireorc_attack_right_01
+  - first:
+      213: 6895690217193441035
+    second: fireorc_attack_right_02
+  - first:
+      213: 1375992780836636902
+    second: fireorc_attack_right_03
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fireorc_attack_down_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d38e4c82d153a3f0800000000000000
+      internalID: -890778336550288425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_attack_down_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c2655ae142141d20800000000000000
+      internalID: 3248241305554608840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_attack_down_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0b2bc2608d92bb20800000000000000
+      internalID: 3148752264224254733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_attack_down_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56012b18a3a88110800000000000000
+      internalID: 1263439637882406495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_attack_up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c02fc648f2432d0800000000000000
+      internalID: -3299960381145740130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_attack_up_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7896649eb34b8290800000000000000
+      internalID: -7887135836596692868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_attack_up_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a3bbb1561711ad0800000000000000
+      internalID: -2733278819766289762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_attack_up_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b18c29599b90900800000000000000
+      internalID: 651255673195600759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_attack_left_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e1b862e733304710800000000000000
+      internalID: 1675395376496554471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_attack_left_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d984df8506c26120800000000000000
+      internalID: 2405702878159473107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_attack_left_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0fc45c9a4fe8df0800000000000000
+      internalID: -175934325424066382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_attack_left_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0677a9959ce69aee0800000000000000
+      internalID: -1249345610547824800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_attack_right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b27c08872ccd5f30800000000000000
+      internalID: 4566030067381858997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_attack_right_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef021edd324403c0800000000000000
+      internalID: -4394314502920597526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_attack_right_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0783f4b7b962bf50800000000000000
+      internalID: 6895690217193441035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_attack_right_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e80543d422881310800000000000000
+      internalID: 1375992780836636902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fireorc_attack_down_00: -890778336550288425
+      fireorc_attack_down_01: 3248241305554608840
+      fireorc_attack_down_02: 3148752264224254733
+      fireorc_attack_down_03: 1263439637882406495
+      fireorc_attack_left_00: 1675395376496554471
+      fireorc_attack_left_01: 2405702878159473107
+      fireorc_attack_left_02: -175934325424066382
+      fireorc_attack_left_03: -1249345610547824800
+      fireorc_attack_right_00: 4566030067381858997
+      fireorc_attack_right_01: -4394314502920597526
+      fireorc_attack_right_02: 6895690217193441035
+      fireorc_attack_right_03: 1375992780836636902
+      fireorc_attack_sheet_0: 4897882278671102885
+      fireorc_attack_sheet_1: -7266744024948118836
+      fireorc_attack_sheet_10: 1198222634606179857
+      fireorc_attack_sheet_11: -6126427560824515712
+      fireorc_attack_sheet_12: 3936461904127096382
+      fireorc_attack_sheet_13: 4891164727215009360
+      fireorc_attack_sheet_14: 2052456178155328996
+      fireorc_attack_sheet_15: -1812825106783549691
+      fireorc_attack_sheet_2: -6302328231887804773
+      fireorc_attack_sheet_3: -5223164989420743421
+      fireorc_attack_sheet_4: 9047472323811479893
+      fireorc_attack_sheet_5: 2966164149897685727
+      fireorc_attack_sheet_6: -6337438354510302731
+      fireorc_attack_sheet_7: 6568215224030038327
+      fireorc_attack_sheet_8: 1746369339968223731
+      fireorc_attack_sheet_9: 2418350435271366965
+      fireorc_attack_up_00: -3299960381145740130
+      fireorc_attack_up_01: -7887135836596692868
+      fireorc_attack_up_02: -2733278819766289762
+      fireorc_attack_up_03: 651255673195600759
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

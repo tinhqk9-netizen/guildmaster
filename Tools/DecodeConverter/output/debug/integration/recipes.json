@@ -1,0 +1,3718 @@
+{
+  "data": [
+    {
+      "className": "Cloth",
+      "id": "cloth",
+      "rawArgs": "Item.getInstance(\"PlantFiber\", 4)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Leather",
+      "id": "leather",
+      "rawArgs": "Item.getInstance(\"BeastPelt\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CopperIngot",
+      "id": "copperingot",
+      "rawArgs": "Item.getInstance(\"CopperOre\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "TuskNecklace",
+      "id": "tusknecklace",
+      "rawArgs": "Item.getInstance(\"BoarTusk\", 4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"PlantFiber\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "LeatherJacket",
+      "id": "leatherjacket",
+      "rawArgs": "Item.getInstance(\"Leather\", 2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Cloth\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "FangDagger",
+      "id": "fangdagger",
+      "rawArgs": "Item.getInstance(\"Wood\", 6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AlphaWolfFang\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "FullmoonDagger",
+      "id": "fullmoondagger",
+      "rawArgs": "Item.getInstance(\"Wood\", 6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"WerewolfFang\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ClothRobe",
+      "id": "clothrobe",
+      "rawArgs": "Item.getInstance(\"Cloth\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "EnchantedStaff",
+      "id": "enchantedstaff",
+      "rawArgs": "Item.getInstance(\"Wood\", 10",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AncientSeed\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CopperSword",
+      "id": "coppersword",
+      "rawArgs": "Item.getInstance(\"Wood\", 3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CopperIngot\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CopperArmor",
+      "id": "copperarmor",
+      "rawArgs": "Item.getInstance(\"Leather\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CopperIngot\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "InfusedNecklace",
+      "id": "infusednecklace",
+      "rawArgs": "Item.getInstance(\"TuskNecklace\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"LivingSap\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "WoodenBow",
+      "id": "woodenbow",
+      "rawArgs": "Item.getInstance(\"Wood\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"PlantFiber\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "LeatherBoots",
+      "id": "leatherboots",
+      "rawArgs": "Item.getInstance(\"Leather\", 2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Cloth\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "LeatherGloves",
+      "id": "leathergloves",
+      "rawArgs": "Item.getInstance(\"Leather\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Cloth\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CopperHelmet",
+      "id": "copperhelmet",
+      "rawArgs": "Item.getInstance(\"CopperIngot\", 2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Leather\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "WoodenBuckler",
+      "id": "woodenbuckler",
+      "rawArgs": "Item.getInstance(\"Wood\", 6)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "GhostRabbitCloak",
+      "id": "ghostrabbitcloak",
+      "rawArgs": "Item.getInstance(\"CottontailFur\", 4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SpectralCloth\", 10)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CottontailJacket",
+      "id": "cottontailjacket",
+      "rawArgs": "Item.getInstance(\"CottontailFur\", 4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Leather\", 10)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "PatricianArmor",
+      "id": "patricianarmor",
+      "rawArgs": "Item.getInstance(\"CottontailFur\", 4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"GoldIngot\", 10)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SageCloak",
+      "id": "sagecloak",
+      "rawArgs": "Item.getInstance(\"GhostRabbitCloak\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"InfusionOfWisdom\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SageJacket",
+      "id": "sagejacket",
+      "rawArgs": "Item.getInstance(\"CottontailJacket\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"InfusionOfWisdom\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SageArmor",
+      "id": "sagearmor",
+      "rawArgs": "Item.getInstance(\"PatricianArmor\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"InfusionOfWisdom\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "IronIngot",
+      "id": "ironingot",
+      "rawArgs": "Item.getInstance(\"ScrapMetal\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Glass",
+      "id": "glass",
+      "rawArgs": "Item.getInstance(\"Sandstone\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "GlassKnife",
+      "id": "glassknife",
+      "rawArgs": "Item.getInstance(\"Glass\", 4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Quartz\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "WurmscalesShield",
+      "id": "wurmscalesshield",
+      "rawArgs": "Item.getInstance(\"WurmScale\", 8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"IronIngot\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "MetamorphicShield",
+      "id": "metamorphicshield",
+      "rawArgs": "Item.getInstance(\"WurmscalesShield\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"MetamorphicSand\", 30)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "FeatherRobe",
+      "id": "featherrobe",
+      "rawArgs": "Item.getInstance(\"Feather\", 24)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "WurmscalesGloves",
+      "id": "wurmscalesgloves",
+      "rawArgs": "Item.getInstance(\"WurmScale\", 8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Feather\", 8)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Scimitar",
+      "id": "scimitar",
+      "rawArgs": "Item.getInstance(\"Wood\", 12",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"IronIngot\", 2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"RecurveBlade\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "LivingScimitar",
+      "id": "livingscimitar",
+      "rawArgs": "Item.getInstance(\"Scimitar\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"BottledSandSpirit\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DjinnTonic",
+      "id": "djinntonic",
+      "rawArgs": "Item.getInstance(\"Glass\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"IronIngot\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"BottledSandSpirit\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ShahuriBow",
+      "id": "shahuribow",
+      "rawArgs": "Item.getInstance(\"ShahuriBowFrame\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"PlantFiber\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "IronChainmail",
+      "id": "ironchainmail",
+      "rawArgs": "Item.getInstance(\"WurmScale\", 9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"IronIngot\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "WurmscalesJacket",
+      "id": "wurmscalesjacket",
+      "rawArgs": "Item.getInstance(\"WurmScale\", 18",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Feather\", 6)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "WurmscalesBoots",
+      "id": "wurmscalesboots",
+      "rawArgs": "Item.getInstance(\"WurmScale\", 12",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Feather\", 4)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "IronHelm",
+      "id": "ironhelm",
+      "rawArgs": "Item.getInstance(\"IronIngot\", 4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Leather\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "MoltenStaff",
+      "id": "moltenstaff",
+      "rawArgs": "Item.getInstance(\"Glass\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"IronIngot\", 10",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SunfireCore\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ContainmentOrb",
+      "id": "containmentorb",
+      "rawArgs": "Item.getInstance(\"Glass\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SoulShard\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "UndeadGreaves",
+      "id": "undeadgreaves",
+      "rawArgs": "Item.getInstance(\"BoneFragment\", 20",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SpectralCloth\", 3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ElongatedBone\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "UndeadHelm",
+      "id": "undeadhelm",
+      "rawArgs": "Item.getInstance(\"BoneFragment\", 20",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"TatteredHide\", 4)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "UndeadGloves",
+      "id": "undeadgloves",
+      "rawArgs": "Item.getInstance(\"BoneFragment\", 14",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SpectralCloth\", 4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SharpRib\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "UndeadStaff",
+      "id": "undeadstaff",
+      "rawArgs": "Item.getInstance(\"BoneFragment\", 30",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ElongatedBone\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"WarlordSkull\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "UndeadShield",
+      "id": "undeadshield",
+      "rawArgs": "Item.getInstance(\"BoneFragment\", 10",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"IronIngot\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "UndeadSword",
+      "id": "undeadsword",
+      "rawArgs": "Item.getInstance(\"BoneFragment\", 30",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ElongatedBone\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "UndeadJacket",
+      "id": "undeadjacket",
+      "rawArgs": "Item.getInstance(\"BoneFragment\", 24",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"TatteredHide\", 12)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "UndeadCuirass",
+      "id": "undeadcuirass",
+      "rawArgs": "Item.getInstance(\"TatteredHide\", 12",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"BoneFragment\", 24)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "GhastlyCuirass",
+      "id": "ghastlycuirass",
+      "rawArgs": "Item.getInstance(\"TatteredHide\", 12",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"BoneFragment\", 1000",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"OrbOfEctoplasm\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "GhastlyScimitar",
+      "id": "ghastlyscimitar",
+      "rawArgs": "Item.getInstance(\"LivingScimitar\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"OrbOfEctoplasm\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "GhastlyShield",
+      "id": "ghastlyshield",
+      "rawArgs": "Item.getInstance(\"UndeadShield\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"OrbOfEctoplasm\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "UndeadKnife",
+      "id": "undeadknife",
+      "rawArgs": "Item.getInstance(\"BoneFragment\", 30",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SharpRib\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SkullCandle",
+      "id": "skullcandle",
+      "rawArgs": "Item.getInstance(\"WarlordSkull\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SpiritCandle\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ThaumaturgicBlood",
+      "id": "thaumaturgicblood",
+      "rawArgs": "Item.getInstance(\"InfectedBlood\", 3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AncientSeed\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BurningCenser",
+      "id": "burningcenser",
+      "rawArgs": "Item.getInstance(\"IronIngot\", 8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SkullCandle\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ThaumaturgicBlood\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SpectralRobe",
+      "id": "spectralrobe",
+      "rawArgs": "Item.getInstance(\"SpectralCloth\", 15)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AscendedBow",
+      "id": "ascendedbow",
+      "rawArgs": "Item.getInstance(\"ShahuriBow\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"StaticCore\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SinisterStabilizer",
+      "id": "sinisterstabilizer",
+      "rawArgs": "Item.getInstance(\"HolyWater\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"OrbOfEctoplasm\", 3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"PrimordialEssence\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "RedwoodBow",
+      "id": "redwoodbow",
+      "rawArgs": "Item.getInstance(\"Redwood\", 40",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SilkThread\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CrimsonLeech",
+      "id": "crimsonleech",
+      "rawArgs": "Item.getInstance(\"Redwood\", 48",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Ruby\", 4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"EssenceOfCorruption\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SilkFabric",
+      "id": "silkfabric",
+      "rawArgs": "Item.getInstance(\"SilkThread\", 4)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SilkRobe",
+      "id": "silkrobe",
+      "rawArgs": "Item.getInstance(\"SilkFabric\", 12)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "RubyRing",
+      "id": "rubyring",
+      "rawArgs": "Item.getInstance(\"SilverRing\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Ruby\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "EmeraldRing",
+      "id": "emeraldring",
+      "rawArgs": "Item.getInstance(\"SilverRing\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Emerald\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BeltJacket",
+      "id": "beltjacket",
+      "rawArgs": "Item.getInstance(\"WardenBelt\", 16",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SilkFabric\", 8)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "IvoryJacket",
+      "id": "ivoryjacket",
+      "rawArgs": "Item.getInstance(\"BeltJacket\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Ivory\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "GoldIngot",
+      "id": "goldingot",
+      "rawArgs": "Item.getInstance(\"GoldScraps\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "EssenceOfCorruption",
+      "id": "essenceofcorruption",
+      "rawArgs": "Item.getInstance(\"BlackOoze\", 30",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"PrimordialEssence\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CleansingPotion",
+      "id": "cleansingpotion",
+      "rawArgs": "Item.getInstance(\"EssenceOfCorruption\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"HolyWater\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ImperialShield",
+      "id": "imperialshield",
+      "rawArgs": "Item.getInstance(\"CorruptedShield\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CleansingPotion\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ImperialStaff",
+      "id": "imperialstaff",
+      "rawArgs": "Item.getInstance(\"CorruptedStaff\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CleansingPotion\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ArcaneDagger",
+      "id": "arcanedagger",
+      "rawArgs": "Item.getInstance(\"CorruptedDagger\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CleansingPotion\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "GoldenArmor",
+      "id": "goldenarmor",
+      "rawArgs": "Item.getInstance(\"GoldIngot\", 16)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "MetamorphicArmor",
+      "id": "metamorphicarmor",
+      "rawArgs": "Item.getInstance(\"GoldenArmor\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"MetamorphicSand\", Logger.BARD_SHIELD)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "GoldenSword",
+      "id": "goldensword",
+      "rawArgs": "Item.getInstance(\"GoldIngot\", 14)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "GoldenBoots",
+      "id": "goldenboots",
+      "rawArgs": "Item.getInstance(\"GoldIngot\", 8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SilkFabric\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "GoldenGauntlets",
+      "id": "goldengauntlets",
+      "rawArgs": "Item.getInstance(\"GoldIngot\", 4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SilkFabric\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "GoldenHelm",
+      "id": "goldenhelm",
+      "rawArgs": "Item.getInstance(\"GoldIngot\", 10",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SilkFabric\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "GoldenShield",
+      "id": "goldenshield",
+      "rawArgs": "Item.getInstance(\"GoldIngot\", 12)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "JeweledCrown",
+      "id": "jeweledcrown",
+      "rawArgs": "Item.getInstance(\"GoldIngot\", 20",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Ruby\", 10",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Emerald\", 10)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "GhostwoodBoard",
+      "id": "ghostwoodboard",
+      "rawArgs": "Item.getInstance(\"GhostwoodStump\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BlackIronIngot",
+      "id": "blackironingot",
+      "rawArgs": "Item.getInstance(\"BlackIronScraps\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CorsairLeather",
+      "id": "corsairleather",
+      "rawArgs": "Item.getInstance(\"MonkeyHide\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BlackIronArmor",
+      "id": "blackironarmor",
+      "rawArgs": "Item.getInstance(\"BlackIronIngot\", 18",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CorsairLeather\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ExoticRobe",
+      "id": "exoticrobe",
+      "rawArgs": "Item.getInstance(\"ExoticVelvet\", 30)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BlackIronHelm",
+      "id": "blackironhelm",
+      "rawArgs": "Item.getInstance(\"BlackIronIngot\", 12",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CorsairLeather\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ExoticBoots",
+      "id": "exoticboots",
+      "rawArgs": "Item.getInstance(\"ExoticVelvet\", 4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CorsairLeather\", 16)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BlackIronGauntlets",
+      "id": "blackirongauntlets",
+      "rawArgs": "Item.getInstance(\"BlackIronIngot\", 10",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CorsairLeather\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "GhostwoodShield",
+      "id": "ghostwoodshield",
+      "rawArgs": "Item.getInstance(\"GhostwoodBoard\", 10",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CorsairLeather\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BlackIronCutlass",
+      "id": "blackironcutlass",
+      "rawArgs": "Item.getInstance(\"GhostwoodBoard\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"BlackIronIngot\", 14)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BlackIronScepter",
+      "id": "blackironscepter",
+      "rawArgs": "Item.getInstance(\"BlackIronIngot\", 16)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BlackIronDagger",
+      "id": "blackirondagger",
+      "rawArgs": "Item.getInstance(\"GhostwoodBoard\", 2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"BlackIronIngot\", 15)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "GhostwoodBow",
+      "id": "ghostwoodbow",
+      "rawArgs": "Item.getInstance(\"ExoticVelvet\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"GhostwoodBoard\", 15)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AbyssalGoo",
+      "id": "abyssalgoo",
+      "rawArgs": "Item.getInstance(\"AbyssalSeashell\", 30",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"MysteriousAppendage\", 24",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"EyeOfTheAbyss\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AbyssalIngot",
+      "id": "abyssalingot",
+      "rawArgs": "Item.getInstance(\"AbyssalGoo\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"BlackIronIngot\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DeepSeaVelvet",
+      "id": "deepseavelvet",
+      "rawArgs": "Item.getInstance(\"AbyssalGoo\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ExoticVelvet\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DeepSeaRobe",
+      "id": "deepsearobe",
+      "rawArgs": "Item.getInstance(\"DeepSeaVelvet\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DeepSeaJacket",
+      "id": "deepseajacket",
+      "rawArgs": "Item.getInstance(\"DeepSeaVelvet\", 2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CorsairLeather\", 8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AbyssalSeashell\", 15)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "MonkeyHideJacket",
+      "id": "monkeyhidejacket",
+      "rawArgs": "Item.getInstance(\"ExoticVelvet\", 10",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CorsairLeather\", 8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AbyssalSeashell\", 15)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AbyssalCutlass",
+      "id": "abyssalcutlass",
+      "rawArgs": "Item.getInstance(\"GhostwoodBoard\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AbyssalIngot\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CrushingDepth",
+      "id": "crushingdepth",
+      "rawArgs": "Item.getInstance(\"AscendedBow\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"StaticEssence\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"DeepSeaVelvet\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AbyssalCompendium",
+      "id": "abyssalcompendium",
+      "rawArgs": "Item.getInstance(\"MissingPage\", 50)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "PirateKingTricorn",
+      "id": "piratekingtricorn",
+      "rawArgs": "Item.getInstance(\"ExoticVelvet\", 20",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"DeepSeaVelvet\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Wintercloth",
+      "id": "wintercloth",
+      "rawArgs": "Item.getInstance(\"IceFiber\", 4)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "FrostmetalIngot",
+      "id": "frostmetalingot",
+      "rawArgs": "Item.getInstance(\"FrostmetalOre\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "FrostmetalSword",
+      "id": "frostmetalsword",
+      "rawArgs": "Item.getInstance(\"Winterwood\", 6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FrostmetalIngot\", 18)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "WinterwoodBow",
+      "id": "winterwoodbow",
+      "rawArgs": "Item.getInstance(\"Winterwood\", 60",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"IceFiber\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "WinterwoodStaff",
+      "id": "winterwoodstaff",
+      "rawArgs": "Item.getInstance(\"Winterwood\", 50",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FrostCrystal\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "FrostmetalDagger",
+      "id": "frostmetaldagger",
+      "rawArgs": "Item.getInstance(\"Winterwood\", 4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FrostmetalIngot\", 16)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "WinterCape",
+      "id": "wintercape",
+      "rawArgs": "Item.getInstance(\"Wintercloth\", 18)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "TrollskinJacket",
+      "id": "trollskinjacket",
+      "rawArgs": "Item.getInstance(\"TrollHide\", 48",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Wintercloth\", 6)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "FrostmetalArmor",
+      "id": "frostmetalarmor",
+      "rawArgs": "Item.getInstance(\"TrollHide\", 24",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FrostmetalIngot\", 16)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "WinterBoots",
+      "id": "winterboots",
+      "rawArgs": "Item.getInstance(\"TrollHide\", 32",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Wintercloth\", 4)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "WinterGloves",
+      "id": "wintergloves",
+      "rawArgs": "Item.getInstance(\"TrollHide\", 16",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Wintercloth\", 8)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "WinterHelm",
+      "id": "winterhelm",
+      "rawArgs": "Item.getInstance(\"FrostmetalIngot\", 10",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Wintercloth\", 4)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "WinterShield",
+      "id": "wintershield",
+      "rawArgs": "Item.getInstance(\"Winterwood\", 40",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FrostmetalIngot\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CrystalStaff",
+      "id": "crystalstaff",
+      "rawArgs": "Item.getInstance(\"FrostCrystal\", 10",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FrostNucleus\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CrystalDagger",
+      "id": "crystaldagger",
+      "rawArgs": "Item.getInstance(\"Winterwood\", 4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FrostCrystal\", 15)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CeremonialDagger",
+      "id": "ceremonialdagger",
+      "rawArgs": "Item.getInstance(\"FrostmetalIngot\", 16",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FrozenScale\", 8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FrostNucleus\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "FrozenEggPendant",
+      "id": "frozeneggpendant",
+      "rawArgs": "Item.getInstance(\"IceFiber\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FrozenScale\", 4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FrozenEgg\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "IceCage",
+      "id": "icecage",
+      "rawArgs": "Item.getInstance(\"FrozenEmbrace\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FrozenEgg\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "WyvernCape",
+      "id": "wyverncape",
+      "rawArgs": "Item.getInstance(\"FrozenScale\", 6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Wintercloth\", 18)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "NightwingLeather",
+      "id": "nightwingleather",
+      "rawArgs": "Item.getInstance(\"BatWing\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SpiderSilk",
+      "id": "spidersilk",
+      "rawArgs": "Item.getInstance(\"CobwebBundle\", 4)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CrimsonBrew",
+      "id": "crimsonbrew",
+      "rawArgs": "Item.getInstance(\"BatTooth\", 28",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SpiderLeg\", 28",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"EldritchTendril\", 16)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ShadowPotion",
+      "id": "shadowpotion",
+      "rawArgs": "Item.getInstance(\"CrimsonBrew\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ShadowGem\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "UnholyPotion",
+      "id": "unholypotion",
+      "rawArgs": "Item.getInstance(\"CrimsonBrew\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"VoodooDoll\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "InfusionOfWisdom",
+      "id": "infusionofwisdom",
+      "rawArgs": "Item.getInstance(\"ElixirOfLearning\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CrimsonBrew\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SinisterStabilizer\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SpiderGloves",
+      "id": "spidergloves",
+      "rawArgs": "Item.getInstance(\"SpiderSilk\", 10",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"NightwingLeather\", 8)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SpiderBoots",
+      "id": "spiderboots",
+      "rawArgs": "Item.getInstance(\"SpiderSilk\", 6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"NightwingLeather\", 16)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ObsidianHelm",
+      "id": "obsidianhelm",
+      "rawArgs": "Item.getInstance(\"ObsidianChunk\", 48",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SpiderSilk\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ObsidianShield",
+      "id": "obsidianshield",
+      "rawArgs": "Item.getInstance(\"ObsidianChunk\", 56)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SpiderRobe",
+      "id": "spiderrobe",
+      "rawArgs": "Item.getInstance(\"SpiderSilk\", 20)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "NightwingJacket",
+      "id": "nightwingjacket",
+      "rawArgs": "Item.getInstance(\"SpiderSilk\", 6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"NightwingLeather\", 30)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ObsidianCuirass",
+      "id": "obsidiancuirass",
+      "rawArgs": "Item.getInstance(\"NightwingLeather\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ObsidianChunk\", 75)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ObsidianSword",
+      "id": "obsidiansword",
+      "rawArgs": "Item.getInstance(\"ObsidianChunk\", 72)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ObsidianDagger",
+      "id": "obsidiandagger",
+      "rawArgs": "Item.getInstance(\"ObsidianChunk\", 68)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ObsidianBow",
+      "id": "obsidianbow",
+      "rawArgs": "Item.getInstance(\"ObsidianChunk\", 62",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SpiderSilk\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ObsidianScepter",
+      "id": "obsidianscepter",
+      "rawArgs": "Item.getInstance(\"ObsidianChunk\", 72)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "VampireSword",
+      "id": "vampiresword",
+      "rawArgs": "Item.getInstance(\"ObsidianSword\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CrimsonBrew\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "VampireDagger",
+      "id": "vampiredagger",
+      "rawArgs": "Item.getInstance(\"ObsidianDagger\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CrimsonBrew\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "VampireBow",
+      "id": "vampirebow",
+      "rawArgs": "Item.getInstance(\"ObsidianBow\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CrimsonBrew\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "VampireScepter",
+      "id": "vampirescepter",
+      "rawArgs": "Item.getInstance(\"ObsidianScepter\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CrimsonBrew\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "PanopticonStaff",
+      "id": "panopticonstaff",
+      "rawArgs": "Item.getInstance(\"ObsidianChunk\", Logger.BARD_SHIELD",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"LargeIris\", 4)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ShadowBow",
+      "id": "shadowbow",
+      "rawArgs": "Item.getInstance(\"ObsidianBow\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ShadowPotion\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ShadowDagger",
+      "id": "shadowdagger",
+      "rawArgs": "Item.getInstance(\"ObsidianDagger\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ShadowPotion\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "UnholyCuirass",
+      "id": "unholycuirass",
+      "rawArgs": "Item.getInstance(\"ObsidianCuirass\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"UnholyPotion\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "UnholySword",
+      "id": "unholysword",
+      "rawArgs": "Item.getInstance(\"ObsidianSword\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"UnholyPotion\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ShadowRing",
+      "id": "shadowring",
+      "rawArgs": "Item.getInstance(\"SilverRing\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ShadowGem\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "WingFabric",
+      "id": "wingfabric",
+      "rawArgs": "Item.getInstance(\"GiantMothWing\", 4)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "TortoiseArmor",
+      "id": "tortoisearmor",
+      "rawArgs": "Item.getInstance(\"WingFabric\", 8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"GiantShellFragment\", 92)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SpitfangJacket",
+      "id": "spitfangjacket",
+      "rawArgs": "Item.getInstance(\"WingFabric\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SpitfangScale\", 102)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "MothRobe",
+      "id": "mothrobe",
+      "rawArgs": "Item.getInstance(\"WingFabric\", 29)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "VerdantHelm",
+      "id": "verdanthelm",
+      "rawArgs": "Item.getInstance(\"ElysianWood\", 84",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"GiantShellFragment\", 40)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "TortoiseShield",
+      "id": "tortoiseshield",
+      "rawArgs": "Item.getInstance(\"GiantShellFragment\", 80)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "VerdantBoots",
+      "id": "verdantboots",
+      "rawArgs": "Item.getInstance(\"WingFabric\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ElysianWood\", Logger.SUMMON_SMOLDERING_TITAN)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "VerdantGloves",
+      "id": "verdantgloves",
+      "rawArgs": "Item.getInstance(\"WingFabric\", 8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ElysianWood\", 94)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "FleetfootArmor",
+      "id": "fleetfootarmor",
+      "rawArgs": "Item.getInstance(\"TortoiseArmor\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FleetfootFabric\", 38)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "FleetfootJacket",
+      "id": "fleetfootjacket",
+      "rawArgs": "Item.getInstance(\"SpitfangJacket\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FleetfootFabric\", 38)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "FleetfootRobe",
+      "id": "fleetfootrobe",
+      "rawArgs": "Item.getInstance(\"MothRobe\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FleetfootFabric\", 38)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "FleetfootBoots",
+      "id": "fleetfootboots",
+      "rawArgs": "Item.getInstance(\"VerdantBoots\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FleetfootFabric\", 21)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "FleetfootGloves",
+      "id": "fleetfootgloves",
+      "rawArgs": "Item.getInstance(\"VerdantGloves\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FleetfootFabric\", 21)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "PrimevalArmor",
+      "id": "primevalarmor",
+      "rawArgs": "Item.getInstance(\"PrimevalScale\", 8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"WingFabric\", 8)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BreathtakingRobe",
+      "id": "breathtakingrobe",
+      "rawArgs": "Item.getInstance(\"MothRobe\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"BagOfChokingPowder\", 12)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "PrimevalShield",
+      "id": "primevalshield",
+      "rawArgs": "Item.getInstance(\"PrimevalScale\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "PrimevalHelm",
+      "id": "primevalhelm",
+      "rawArgs": "Item.getInstance(\"PrimevalScale\", 4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ElysianWood\", 160)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SpikedTortoiseShield",
+      "id": "spikedtortoiseshield",
+      "rawArgs": "Item.getInstance(\"TortoiseShield\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"TortoiseThorn\", 18)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SpikedPrimevalShield",
+      "id": "spikedprimevalshield",
+      "rawArgs": "Item.getInstance(\"PrimevalShield\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"TortoiseThorn\", 18)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "LivingWhip",
+      "id": "livingwhip",
+      "rawArgs": "Item.getInstance(\"ElysianWood\", 36",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"LivingVine\", 12",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"WhiteHair\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DryadsBlessing",
+      "id": "dryadsblessing",
+      "rawArgs": "Item.getInstance(\"ElysianWood\", 200",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"WhiteHair\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "VerdantBlade",
+      "id": "verdantblade",
+      "rawArgs": "Item.getInstance(\"ElysianWood\", 64",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"LongSerpentFang\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DryadsCurse",
+      "id": "dryadscurse",
+      "rawArgs": "Item.getInstance(\"VerdantBlade\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"WhiteHair\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "VerdantBow",
+      "id": "verdantbow",
+      "rawArgs": "Item.getInstance(\"ElysianWood\", 200)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ArmorOfTheDryad",
+      "id": "armorofthedryad",
+      "rawArgs": "Item.getInstance(\"TortoiseArmor\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"WhiteHair\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ElixirOfAffinity",
+      "id": "elixirofaffinity",
+      "rawArgs": "Item.getInstance(\"VoodooDoll\", 3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"BansheeHorn\", 3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CharredHeart\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ChainOfRedemption",
+      "id": "chainofredemption",
+      "rawArgs": "Item.getInstance(\"ChainLink\", 8)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CelestialMetal",
+      "id": "celestialmetal",
+      "rawArgs": "Item.getInstance(\"CelestialScraps\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CelestialArmor",
+      "id": "celestialarmor",
+      "rawArgs": "Item.getInstance(\"CelestialMetal\", 45",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ElasticMembrane\", 15)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BansheeJacket",
+      "id": "bansheejacket",
+      "rawArgs": "Item.getInstance(\"BansheeScale\", 148)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ElasticRobe",
+      "id": "elasticrobe",
+      "rawArgs": "Item.getInstance(\"ElasticMembrane\", 148)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CelestialHelmet",
+      "id": "celestialhelmet",
+      "rawArgs": "Item.getInstance(\"CelestialMetal\", 28",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ElasticMembrane\", 20)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CelestialShield",
+      "id": "celestialshield",
+      "rawArgs": "Item.getInstance(\"CelestialMetal\", 35)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BansheeGloves",
+      "id": "bansheegloves",
+      "rawArgs": "Item.getInstance(\"BansheeScale\", 104)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ElasticBoots",
+      "id": "elasticboots",
+      "rawArgs": "Item.getInstance(\"ElasticMembrane\", 104)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CloakOfRedemption",
+      "id": "cloakofredemption",
+      "rawArgs": "Item.getInstance(\"TunicaIgnis\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ChainOfRedemption\", 4)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "TacticalHelmet",
+      "id": "tacticalhelmet",
+      "rawArgs": "Item.getInstance(\"CelestialHelmet\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Scanner\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Synapse\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "IgnitionOrb",
+      "id": "ignitionorb",
+      "rawArgs": "Item.getInstance(\"ContainmentOrb\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AetherIgnis\", 12)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "FocusedScepter",
+      "id": "focusedscepter",
+      "rawArgs": "Item.getInstance(\"CelestialMetal\", 43",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FluxLimiter\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Synapse\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BansheeBow",
+      "id": "bansheebow",
+      "rawArgs": "Item.getInstance(\"BansheeClaw\", 2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ElixirOfAffinity\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ElasticMembrane\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BansheeScream",
+      "id": "bansheescream",
+      "rawArgs": "Item.getInstance(\"BansheeBow\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FluxLimiter\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Synapse\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CelestialSword",
+      "id": "celestialsword",
+      "rawArgs": "Item.getInstance(\"CelestialMetal\", 43)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CelestialMercy",
+      "id": "celestialmercy",
+      "rawArgs": "Item.getInstance(\"CelestialSword\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AetherIgnis\", 8)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BansheeDagger",
+      "id": "bansheedagger",
+      "rawArgs": "Item.getInstance(\"BansheeScale\", Logger.STATUS_FEEBLE_TETHER",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"BansheeClaw\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SkinBlender",
+      "id": "skinblender",
+      "rawArgs": "Item.getInstance(\"BansheeGloves\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"BansheeClaw\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ShortCircuit",
+      "id": "shortcircuit",
+      "rawArgs": "Item.getInstance(\"ElasticMembrane\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Synapse\", 6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Scanner\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SpellwovenLeather",
+      "id": "spellwovenleather",
+      "rawArgs": "Item.getInstance(\"SpellwovenHide\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AnimatedIngot",
+      "id": "animatedingot",
+      "rawArgs": "Item.getInstance(\"AnimatedScraps\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "GemOfProtection",
+      "id": "gemofprotection",
+      "rawArgs": "Item.getInstance(\"UnstableGem\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"VeilBreaker\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"RadiatingNucleus\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "VeilShatterer",
+      "id": "veilshatterer",
+      "rawArgs": "Item.getInstance(\"VeilBreaker\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SpellCompendium\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SpellwovenJacket",
+      "id": "spellwovenjacket",
+      "rawArgs": "Item.getInstance(\"SpellwovenLeather\", 79",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"LaroxianFabric\", 10)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AnimatedCuirass",
+      "id": "animatedcuirass",
+      "rawArgs": "Item.getInstance(\"AnimatedIngot\", 56)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "LaroxianRobe",
+      "id": "laroxianrobe",
+      "rawArgs": "Item.getInstance(\"LaroxianFabric\", 168)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AnimatedSword",
+      "id": "animatedsword",
+      "rawArgs": "Item.getInstance(\"AnimatedIngot\", 47)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AnimatedStaff",
+      "id": "animatedstaff",
+      "rawArgs": "Item.getInstance(\"AnimatedIngot\", 47)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AnimatedDagger",
+      "id": "animateddagger",
+      "rawArgs": "Item.getInstance(\"AnimatedIngot\", 45)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AnimatedBow",
+      "id": "animatedbow",
+      "rawArgs": "Item.getInstance(\"AnimatedIngot\", 47",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"LaroxianFabric\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AnimatedHelm",
+      "id": "animatedhelm",
+      "rawArgs": "Item.getInstance(\"AnimatedIngot\", 30",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"LaroxianFabric\", 22)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AnimatedBuckler",
+      "id": "animatedbuckler",
+      "rawArgs": "Item.getInstance(\"AnimatedIngot\", 37)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "LaroxianGloves",
+      "id": "laroxiangloves",
+      "rawArgs": "Item.getInstance(\"LaroxianFabric\", 74",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SpellwovenLeather\", 19)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "LaroxianBoots",
+      "id": "laroxianboots",
+      "rawArgs": "Item.getInstance(\"LaroxianFabric\", 38",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SpellwovenLeather\", 37)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "UnstableStaff",
+      "id": "unstablestaff",
+      "rawArgs": "Item.getInstance(\"AnimatedStaff\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"VeilBreaker\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"UnstableGem\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "WickedScepter",
+      "id": "wickedscepter",
+      "rawArgs": "Item.getInstance(\"AnimatedIngot\", 47",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"VeilShatterer\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"WickedSeal\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ShieldingCuirass",
+      "id": "shieldingcuirass",
+      "rawArgs": "Item.getInstance(\"AnimatedCuirass\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"GemOfProtection\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ShieldingJacket",
+      "id": "shieldingjacket",
+      "rawArgs": "Item.getInstance(\"SpellwovenJacket\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"GemOfProtection\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ShieldingHelm",
+      "id": "shieldinghelm",
+      "rawArgs": "Item.getInstance(\"AnimatedHelm\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"GemOfProtection\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ReassemblingJacket",
+      "id": "reassemblingjacket",
+      "rawArgs": "Item.getInstance(\"ShieldingJacket\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"VeilShatterer\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"RuneOfPower\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "RobeOfTheArchmage",
+      "id": "robeofthearchmage",
+      "rawArgs": "Item.getInstance(\"LaroxianRobe\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SpellCompendium\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"RuneOfPower\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "StaffOfTheArchmage",
+      "id": "staffofthearchmage",
+      "rawArgs": "Item.getInstance(\"UnstableStaff\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SpellCompendium\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"RuneOfPower\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "UnholySpellcage",
+      "id": "unholyspellcage",
+      "rawArgs": "Item.getInstance(\"UnholyCuirass\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"RuneOfPower\", 2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"WickedSeal\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "PrehistoricMixture",
+      "id": "prehistoricmixture",
+      "rawArgs": "Item.getInstance(\"PoisonousFlesh\", 3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"PterodactylClaw\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"TerrorsaurusFang\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AncientBoots",
+      "id": "ancientboots",
+      "rawArgs": "Item.getInstance(\"AncientHide\", Logger.STATUS_FEEBLE_TETHER",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AncientMembrane\", 45)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AncientGloves",
+      "id": "ancientgloves",
+      "rawArgs": "Item.getInstance(\"AncientHide\", 78",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AncientMembrane\", 78)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "MithrilHelm",
+      "id": "mithrilhelm",
+      "rawArgs": "Item.getInstance(\"Mithril\", Logger.STATUS_FEEBLE_TETHER",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AncientHide\", 30)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "MithrilShield",
+      "id": "mithrilshield",
+      "rawArgs": "Item.getInstance(\"Mithril\", 135)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ToxinPouch",
+      "id": "toxinpouch",
+      "rawArgs": "Item.getInstance(\"AncientHide\", 8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"PoisonousFlesh\", 10)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ArchaicAmulet",
+      "id": "archaicamulet",
+      "rawArgs": "Item.getInstance(\"Kindlequartz\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"PrehistoricMixture\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AncientMembrane\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DiamondAmulet",
+      "id": "diamondamulet",
+      "rawArgs": "Item.getInstance(\"Diamond\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AncientMembrane\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BurningEffigy",
+      "id": "burningeffigy",
+      "rawArgs": "Item.getInstance(\"ShieldOfTheMartyr\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"PrehistoricMixture\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Infernite\", 18)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AncientArmor",
+      "id": "ancientarmor",
+      "rawArgs": "Item.getInstance(\"Mithril\", 164",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AncientHide\", 36)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AncientJacket",
+      "id": "ancientjacket",
+      "rawArgs": "Item.getInstance(\"AncientHide\", 186",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AncientMembrane\", 14)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BeastmasterJacket",
+      "id": "beastmasterjacket",
+      "rawArgs": "Item.getInstance(\"AncientHide\", 186",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AncientMembrane\", 14",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Kindlequartz\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AncientRobe",
+      "id": "ancientrobe",
+      "rawArgs": "Item.getInstance(\"AncientMembrane\", 200)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "MithrilSword",
+      "id": "mithrilsword",
+      "rawArgs": "Item.getInstance(\"Mithril\", 170)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "MithrilBow",
+      "id": "mithrilbow",
+      "rawArgs": "Item.getInstance(\"Mithril\", 170",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AncientMembrane\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "InfernalBow",
+      "id": "infernalbow",
+      "rawArgs": "Item.getInstance(\"CursedBow\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Infernite\", 10)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "MithrilDagger",
+      "id": "mithrildagger",
+      "rawArgs": "Item.getInstance(\"Mithril\", 166)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "RitualBlade",
+      "id": "ritualblade",
+      "rawArgs": "Item.getInstance(\"PterodactylClaw\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Diamond\", 2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Kindlequartz\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "InfernalChakram",
+      "id": "infernalchakram",
+      "rawArgs": "Item.getInstance(\"Infernite\", 14)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "FireCatalyst",
+      "id": "firecatalyst",
+      "rawArgs": "Item.getInstance(\"Quartz\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"WurmBlood\", 30",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ElongatedBone\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SunfireEssence",
+      "id": "sunfireessence",
+      "rawArgs": "Item.getInstance(\"SunfireCore\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FireCatalyst\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ContainmentOrb\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "IceCatalyst",
+      "id": "icecatalyst",
+      "rawArgs": "Item.getInstance(\"Quartz\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Ivory\", 2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"BoarTusk\", 30)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "PermafrostEssence",
+      "id": "permafrostessence",
+      "rawArgs": "Item.getInstance(\"PermafrostCore\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"IceCatalyst\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ContainmentOrb\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ElectricCatalyst",
+      "id": "electriccatalyst",
+      "rawArgs": "Item.getInstance(\"Quartz\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Feather\", 30",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SharpRib\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "StaticEssence",
+      "id": "staticessence",
+      "rawArgs": "Item.getInstance(\"StaticCore\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ElectricCatalyst\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ContainmentOrb\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "PrismaticEssence",
+      "id": "prismaticessence",
+      "rawArgs": "Item.getInstance(\"SunfireEssence\", 3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"PermafrostEssence\", 3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"StaticEssence\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SlimeArmor",
+      "id": "slimearmor",
+      "rawArgs": "Item.getInstance(\"GreenSlime\", 140)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SlimeJacket",
+      "id": "slimejacket",
+      "rawArgs": "Item.getInstance(\"GreenSlime\", 140)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SlimeRobe",
+      "id": "slimerobe",
+      "rawArgs": "Item.getInstance(\"GreenSlime\", 140)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "FrozenEmbrace",
+      "id": "frozenembrace",
+      "rawArgs": "Item.getInstance(\"SlimeArmor\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"PermafrostEssence\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "TunicaIgnis",
+      "id": "tunicaignis",
+      "rawArgs": "Item.getInstance(\"SlimeRobe\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SunfireEssence\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SunStaff",
+      "id": "sunstaff",
+      "rawArgs": "Item.getInstance(\"Glass\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"IronIngot\", 10",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SunfireEssence\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Icicle",
+      "id": "icicle",
+      "rawArgs": "Item.getInstance(\"ImperialStaff\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"PermafrostEssence\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "PrismaticPendant",
+      "id": "prismaticpendant",
+      "rawArgs": "Item.getInstance(\"PrismaticEssence\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"PlantFiber\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "VoidPendant",
+      "id": "voidpendant",
+      "rawArgs": "Item.getInstance(\"PrismaticPendant\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"VoidCore\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "PrismaticArmor",
+      "id": "prismaticarmor",
+      "rawArgs": "Item.getInstance(\"SlimeArmor\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"PrismaticEssence\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "VoidArmor",
+      "id": "voidarmor",
+      "rawArgs": "Item.getInstance(\"PrismaticArmor\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"VoidCore\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "PotionOfRejuvenation",
+      "id": "potionofrejuvenation",
+      "rawArgs": "Item.getInstance(\"GreenSlime\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"MetamorphicSand\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AmuletOfTheSwordsman",
+      "id": "amuletoftheswordsman",
+      "rawArgs": "Item.getInstance(\"EyesOfTheSwordsman\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Cloth\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DivineEmbryo",
+      "id": "divineembryo",
+      "rawArgs": "Item.getInstance(\"DivineZygote\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"BottledSandSpirit\", 15)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CursedJacket",
+      "id": "cursedjacket",
+      "rawArgs": "Item.getInstance(\"CursedSilver\", 6)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CursedClaws",
+      "id": "cursedclaws",
+      "rawArgs": "Item.getInstance(\"CursedSilver\", 8)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CursedHelm",
+      "id": "cursedhelm",
+      "rawArgs": "Item.getInstance(\"CursedSilver\", 12)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CursedBow",
+      "id": "cursedbow",
+      "rawArgs": "Item.getInstance(\"CursedSilver\", 32",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SilkThread\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Phylactery",
+      "id": "phylactery",
+      "rawArgs": "Item.getInstance(\"PhylacteryFragment\", 13",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SinisterStabilizer\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ArmorOfTheUndying",
+      "id": "armoroftheundying",
+      "rawArgs": "Item.getInstance(\"CursedSilver\", 16",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"Phylactery\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "FlyingReaper",
+      "id": "flyingreaper",
+      "rawArgs": "Item.getInstance(\"KabelianMetal\", 20)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "KabelianArmor",
+      "id": "kabelianarmor",
+      "rawArgs": "Item.getInstance(\"KabelianMetal\", 26",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"CrusaderInsigna\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DuelistArmor",
+      "id": "duelistarmor",
+      "rawArgs": "Item.getInstance(\"SentientSlab\", 5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AlchemicPowder\", 12",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"KabelianMetal\", 8)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ChampionArmor",
+      "id": "championarmor",
+      "rawArgs": "Item.getInstance(\"DuelistArmor\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ExaltedPowder\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "MutualDespair",
+      "id": "mutualdespair",
+      "rawArgs": "Item.getInstance(\"KabelianMetal\", 50",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AlchemicPowder\", 30)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "KabelianClaws",
+      "id": "kabelianclaws",
+      "rawArgs": "Item.getInstance(\"CursedClaws\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"KabelianMetal\", 32)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CunningDownfall",
+      "id": "cunningdownfall",
+      "rawArgs": "Item.getInstance(\"KabelianMetal\", 36)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CunningDemise",
+      "id": "cunningdemise",
+      "rawArgs": "Item.getInstance(\"CunningDownfall\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"SealOfClaris\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "TitanicMight",
+      "id": "titanicmight",
+      "rawArgs": "Item.getInstance(\"CrushingDepth\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ExaltedPowder\", 2)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ShieldOfTheTitan",
+      "id": "shieldofthetitan",
+      "rawArgs": "Item.getInstance(\"SentientSlab\", 12)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ShieldOfTheMartyr",
+      "id": "shieldofthemartyr",
+      "rawArgs": "Item.getInstance(\"ShieldOfTheTitan\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"ExaltedPowder\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BleakBoots",
+      "id": "bleakboots",
+      "rawArgs": "Item.getInstance(\"AbherrantFabric\", 48",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"BlackHide\", 24)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "BleakGloves",
+      "id": "bleakgloves",
+      "rawArgs": "Item.getInstance(\"AbherrantFabric\", 24",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"BlackHide\", 36)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "EldritchSeal",
+      "id": "eldritchseal",
+      "rawArgs": "Item.getInstance(\"EldritchShred\", 7)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "EldritchMitre",
+      "id": "eldritchmitre",
+      "rawArgs": "Item.getInstance(\"MitreHat\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"EldritchSeal\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AbherrantFabric\", 8)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "StellarFlare",
+      "id": "stellarflare",
+      "rawArgs": "Item.getInstance(\"TitanicMight\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"StarFragment\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "StellarStaff",
+      "id": "stellarstaff",
+      "rawArgs": "Item.getInstance(\"SunStaff\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"StarFragment\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "InvisibleServant",
+      "id": "invisibleservant",
+      "rawArgs": "Item.getInstance(\"ShadowGem\", 200",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"StarFragment\", 8)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DivineLarvae",
+      "id": "divinelarvae",
+      "rawArgs": "Item.getInstance(\"DivineEmbryo\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AstralGoo\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DreamwroughtSilk",
+      "id": "dreamwroughtsilk",
+      "rawArgs": "Item.getInstance(\"DreamwroughtMane\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "OrichalcumIngot",
+      "id": "orichalcumingot",
+      "rawArgs": "Item.getInstance(\"OrichalcumScraps\", 4)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "OrichalcumSword",
+      "id": "orichalcumsword",
+      "rawArgs": "Item.getInstance(\"OrichalcumIngot\", 32)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "VoidCrusher",
+      "id": "voidcrusher",
+      "rawArgs": "Item.getInstance(\"ColossalSword\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"HeartOfDarkness\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AegisMechanica",
+      "id": "aegismechanica",
+      "rawArgs": "Item.getInstance(\"Aegis\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"MysteriousCog\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DreamwroughtBow",
+      "id": "dreamwroughtbow",
+      "rawArgs": "Item.getInstance(\"DreamwroughtSteel\", 8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"DreamwroughtSilk\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Oblivion",
+      "id": "oblivion",
+      "rawArgs": "Item.getInstance(\"StellarFlare\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"HeartOfDarkness\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Mottiphobia",
+      "id": "mottiphobia",
+      "rawArgs": "Item.getInstance(\"DreamwroughtSteel\", 3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"DreamwroughtLarva\", 45)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "InfiniteDespair",
+      "id": "infinitedespair",
+      "rawArgs": "Item.getInstance(\"MutualDespair\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FlakeOfInfinity\", 14)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "OrichalcumDagger",
+      "id": "orichalcumdagger",
+      "rawArgs": "Item.getInstance(\"OrichalcumIngot\", 28)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SylvanMandate",
+      "id": "sylvanmandate",
+      "rawArgs": "Item.getInstance(\"DryadsCurse\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"GiftOfLight\", 6)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DreamwroughtStaff",
+      "id": "dreamwroughtstaff",
+      "rawArgs": "Item.getInstance(\"DreamwroughtSteel\", 7)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DeathRayScepter",
+      "id": "deathrayscepter",
+      "rawArgs": "Item.getInstance(\"FocusedScepter\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AbioticCore\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SylvanBlessing",
+      "id": "sylvanblessing",
+      "rawArgs": "Item.getInstance(\"DryadsBlessing\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"GiftOfLight\", 10)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "CursedScepter",
+      "id": "cursedscepter",
+      "rawArgs": "Item.getInstance(\"WickedScepter\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"HeartOfDarkness\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DreamwroughtArmor",
+      "id": "dreamwroughtarmor",
+      "rawArgs": "Item.getInstance(\"DreamwroughtSteel\", 8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"DreamwroughtHide\", 6)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "OrichalcumArmor",
+      "id": "orichalcumarmor",
+      "rawArgs": "Item.getInstance(\"OrichalcumIngot\", 35",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"MutantHide\", 14)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "SwarmkeeperArmor",
+      "id": "swarmkeeperarmor",
+      "rawArgs": "Item.getInstance(\"DreamwroughtArmor\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"DreamwroughtLarva\", 20)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AbsoluteZero",
+      "id": "absolutezero",
+      "rawArgs": "Item.getInstance(\"IceCage\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FlakeOfInfinity\", 8)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "NilArmor",
+      "id": "nilarmor",
+      "rawArgs": "Item.getInstance(\"VoidArmor\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"WhiteSlime\", 10)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DreamwroughtJacket",
+      "id": "dreamwroughtjacket",
+      "rawArgs": "Item.getInstance(\"DreamwroughtHide\", 7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"DreamwroughtSilk\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "MutantJacket",
+      "id": "mutantjacket",
+      "rawArgs": "Item.getInstance(\"MutantHide\", 24",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"KaunianFabric\", 8)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ScarletShroud",
+      "id": "scarletshroud",
+      "rawArgs": "Item.getInstance(\"ScarletVeil\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"MysteriousCog\", 5)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DreamwroughtRobe",
+      "id": "dreamwroughtrobe",
+      "rawArgs": "Item.getInstance(\"DreamwroughtSilk\", 20)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "KaunianRobe",
+      "id": "kaunianrobe",
+      "rawArgs": "Item.getInstance(\"KaunianFabric\", 24)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "TunicaInfernalis",
+      "id": "tunicainfernalis",
+      "rawArgs": "Item.getInstance(\"CloakOfRedemption\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"FireproofOil\", 6)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DreamwroughtGloves",
+      "id": "dreamwroughtgloves",
+      "rawArgs": "Item.getInstance(\"DreamwroughtSilk\", 18",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"DreamwroughtHide\", 7)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "DreamwroughtBoots",
+      "id": "dreamwroughtboots",
+      "rawArgs": "Item.getInstance(\"DreamwroughtSilk\", 12",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"DreamwroughtHide\", 10)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "OrichalcumHelm",
+      "id": "orichalcumhelm",
+      "rawArgs": "Item.getInstance(\"OrichalcumIngot\", 28",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"MutantHide\", 6)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "OrichalcumShield",
+      "id": "orichalcumshield",
+      "rawArgs": "Item.getInstance(\"OrichalcumIngot\", 32)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Starvation",
+      "id": "starvation",
+      "rawArgs": "Item.getInstance(\"EternalHunger\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AncestralBlood\", 6)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "AmuletOfResurrection",
+      "id": "amuletofresurrection",
+      "rawArgs": "Item.getInstance(\"PhoenixFeather\", 6)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "NilPendant",
+      "id": "nilpendant",
+      "rawArgs": "Item.getInstance(\"VoidPendant\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"WhiteSlime\", 3)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "EnlightedServant",
+      "id": "enlightedservant",
+      "rawArgs": "Item.getInstance(\"InvisibleServant\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"GiftOfLight\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"HeartOfDarkness\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Sha",
+      "id": "sha",
+      "rawArgs": "Item.getInstance(\"DivineLarvae\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"MysteriousCog\", 10)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "VoltaicShock",
+      "id": "voltaicshock",
+      "rawArgs": "Item.getInstance(\"ShortCircuit\", 1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getInstance",
+      "id": "getinstance",
+      "rawArgs": "\"AbioticCore\", 1)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "ScarletVeil",
+      "id": "scarletveil",
+      "rawArgs": "Item.getInstance(\"ScarletStrand\", 4)",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "Recipes",
+      "id": "recipes",
+      "rawArgs": "Item... itemArr) {\n        this.ingredients = itemArr;\n    }\n\n    public static List<Recipes> from(Item item) {\n        ArrayList arrayList = new ArrayList(",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "values",
+      "id": "values",
+      "rawArgs": ")) {\n            if (Arrays.asList(recipes.ingredients).contains(item)) {\n                arrayList.add(recipes",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "into",
+      "id": "into",
+      "rawArgs": "Item item) {\n        try {\n            return valueOf(item.getTrueClass()",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getIngredients",
+      "id": "getingredients",
+      "rawArgs": ") {\n        return Arrays.asList(this.ingredients",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    },
+    {
+      "className": "getResult",
+      "id": "getresult",
+      "rawArgs": ") {\n        return Item.getInstance(name()",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
+    }
+  ],
+  "metadata": {
+    "definitionsVersion": "1.0",
+    "generatedAt": "2026-07-13T09:11:43.571669",
+    "recordCount": 618,
+    "schemaVersion": "1.0"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "data": [
+    {
+      "className": "Beetle",
+      "id": "beetle",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\pets\\instances\\Beetle.java"
+    },
+    {
+      "className": "Crocodile",
+      "id": "crocodile",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\pets\\instances\\Crocodile.java"
+    },
+    {
+      "className": "Dove",
+      "id": "dove",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\pets\\instances\\Dove.java"
+    },
+    {
+      "className": "Eagle",
+      "id": "eagle",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\pets\\instances\\Eagle.java"
+    },
+    {
+      "className": "FloatingEye",
+      "id": "floating_eye",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\pets\\instances\\FloatingEye.java"
+    }
+  ],
+  "metadata": {
+    "definitionsVersion": "1.0",
+    "generatedAt": "2026-07-13T09:11:43.566818",
+    "recordCount": 5,
+    "schemaVersion": "1.0"
+  }
+}

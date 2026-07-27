@@ -1,0 +1,1868 @@
+[
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbherrantFabric.java",
+    "id": "abherrant_fabric",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbioticCore.java",
+    "id": "abiotic_core",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbsoluteZero.java",
+    "id": "absolute_zero",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbyssalCompendium.java",
+    "id": "abyssal_compendium",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbyssalCutlass.java",
+    "id": "abyssal_cutlass",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbyssalGoo.java",
+    "id": "abyssal_goo",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbyssalIngot.java",
+    "id": "abyssal_ingot",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbyssalSeashell.java",
+    "id": "abyssal_seashell",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\Aegis.java",
+    "id": "aegis",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AegisMechanica.java",
+    "id": "aegis_mechanica",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AetherIgnis.java",
+    "id": "aether_ignis",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AlchemicPowder.java",
+    "id": "alchemic_powder",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\Algae.java",
+    "id": "algae",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AlphaWolfFang.java",
+    "id": "alpha_wolf_fang",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\Ambrosia.java",
+    "id": "ambrosia",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AmuletOfResurrection.java",
+    "id": "amulet_of_resurrection",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AmuletOfTheSwordsman.java",
+    "id": "amulet_of_the_swordsman",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AncestralBlood.java",
+    "id": "ancestral_blood",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AncientArmor.java",
+    "id": "ancient_armor",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "WARNING",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AncientBoots.java",
+    "id": "ancient_boots",
+    "message": "nameKey not found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  },
+  {
+    "severity": "FATAL",
+    "source": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java",
+    "id": "getinstance",
+    "message": "Duplicate ID found"
+  }
+]

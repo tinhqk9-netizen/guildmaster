@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: 8b45440814a69ed4da45f4f4dc1d4d45
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1428759309806706319
+    second: toxicbat_run_sheet_0
+  - first:
+      213: 8427079567321945248
+    second: toxicbat_run_sheet_1
+  - first:
+      213: 4945958382299583026
+    second: toxicbat_run_sheet_2
+  - first:
+      213: 4414052872759178491
+    second: toxicbat_run_sheet_3
+  - first:
+      213: -251768049092711799
+    second: toxicbat_run_sheet_4
+  - first:
+      213: -8469612410101239995
+    second: toxicbat_run_sheet_5
+  - first:
+      213: 4801878899992879865
+    second: toxicbat_run_sheet_6
+  - first:
+      213: -8959679975691718013
+    second: toxicbat_run_sheet_7
+  - first:
+      213: -5024027676696774597
+    second: toxicbat_run_sheet_8
+  - first:
+      213: -3620272795093802887
+    second: toxicbat_run_sheet_9
+  - first:
+      213: -5935306300236616906
+    second: toxicbat_run_sheet_10
+  - first:
+      213: 2171895117716602527
+    second: toxicbat_run_sheet_11
+  - first:
+      213: 8346010592936992485
+    second: toxicbat_run_sheet_12
+  - first:
+      213: 9098500978676557826
+    second: toxicbat_run_sheet_13
+  - first:
+      213: 4696720120466150206
+    second: toxicbat_run_sheet_14
+  - first:
+      213: 2842414448553807111
+    second: toxicbat_run_sheet_15
+  - first:
+      213: 6862596204517605557
+    second: toxicbat_run_down_00
+  - first:
+      213: 3746427362032414953
+    second: toxicbat_run_down_01
+  - first:
+      213: 2343630335715016939
+    second: toxicbat_run_down_02
+  - first:
+      213: 2544181417429897881
+    second: toxicbat_run_down_03
+  - first:
+      213: -541262158804566491
+    second: toxicbat_run_up_00
+  - first:
+      213: -1637083753082244399
+    second: toxicbat_run_up_01
+  - first:
+      213: -2933665205715234734
+    second: toxicbat_run_up_02
+  - first:
+      213: 5844620688613306692
+    second: toxicbat_run_up_03
+  - first:
+      213: -816132389282394251
+    second: toxicbat_run_left_00
+  - first:
+      213: -3640076374074890871
+    second: toxicbat_run_left_01
+  - first:
+      213: -1165339399083525452
+    second: toxicbat_run_left_02
+  - first:
+      213: -3881489713522173142
+    second: toxicbat_run_left_03
+  - first:
+      213: 6959004544591645530
+    second: toxicbat_run_right_00
+  - first:
+      213: -9036802638828354971
+    second: toxicbat_run_right_01
+  - first:
+      213: -4191486548770640760
+    second: toxicbat_run_right_02
+  - first:
+      213: 7540954752116583937
+    second: toxicbat_run_right_03
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: toxicbat_run_down_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b0473f63e6dc3f50800000000000000
+      internalID: 6862596204517605557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxicbat_run_down_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0feba16dbfdf330800000000000000
+      internalID: 3746427362032414953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxicbat_run_down_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be08f1d8f5f368020800000000000000
+      internalID: 2343630335715016939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxicbat_run_down_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9921f0ef48fbe4320800000000000000
+      internalID: 2544181417429897881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxicbat_run_up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52eb71e2fec0d78f0800000000000000
+      internalID: -541262158804566491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxicbat_run_up_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d238fd0009e749e0800000000000000
+      internalID: -1637083753082244399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxicbat_run_up_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2509b63e9078947d0800000000000000
+      internalID: -2933665205715234734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxicbat_run_up_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 441f1b7dc834c1150800000000000000
+      internalID: 5844620688613306692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxicbat_run_left_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57fc12f7ae38ca4f0800000000000000
+      internalID: -816132389282394251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxicbat_run_left_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98569ffd2d9db7dc0800000000000000
+      internalID: -3640076374074890871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxicbat_run_left_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bafbd2adf1e3dfe0800000000000000
+      internalID: -1165339399083525452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxicbat_run_left_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2b9d2aabad222ac0800000000000000
+      internalID: -3881489713522173142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxicbat_run_right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5bc6be43c9539060800000000000000
+      internalID: 6959004544591645530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxicbat_run_right_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562c25701e3d69280800000000000000
+      internalID: -9036802638828354971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxicbat_run_right_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ca2bbf039d4d5c0800000000000000
+      internalID: -4191486548770640760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toxicbat_run_right_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ee333b46ad6a860800000000000000
+      internalID: 7540954752116583937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      toxicbat_run_down_00: 6862596204517605557
+      toxicbat_run_down_01: 3746427362032414953
+      toxicbat_run_down_02: 2343630335715016939
+      toxicbat_run_down_03: 2544181417429897881
+      toxicbat_run_left_00: -816132389282394251
+      toxicbat_run_left_01: -3640076374074890871
+      toxicbat_run_left_02: -1165339399083525452
+      toxicbat_run_left_03: -3881489713522173142
+      toxicbat_run_right_00: 6959004544591645530
+      toxicbat_run_right_01: -9036802638828354971
+      toxicbat_run_right_02: -4191486548770640760
+      toxicbat_run_right_03: 7540954752116583937
+      toxicbat_run_sheet_0: -1428759309806706319
+      toxicbat_run_sheet_1: 8427079567321945248
+      toxicbat_run_sheet_10: -5935306300236616906
+      toxicbat_run_sheet_11: 2171895117716602527
+      toxicbat_run_sheet_12: 8346010592936992485
+      toxicbat_run_sheet_13: 9098500978676557826
+      toxicbat_run_sheet_14: 4696720120466150206
+      toxicbat_run_sheet_15: 2842414448553807111
+      toxicbat_run_sheet_2: 4945958382299583026
+      toxicbat_run_sheet_3: 4414052872759178491
+      toxicbat_run_sheet_4: -251768049092711799
+      toxicbat_run_sheet_5: -8469612410101239995
+      toxicbat_run_sheet_6: 4801878899992879865
+      toxicbat_run_sheet_7: -8959679975691718013
+      toxicbat_run_sheet_8: -5024027676696774597
+      toxicbat_run_sheet_9: -3620272795093802887
+      toxicbat_run_up_00: -541262158804566491
+      toxicbat_run_up_01: -1637083753082244399
+      toxicbat_run_up_02: -2933665205715234734
+      toxicbat_run_up_03: 5844620688613306692
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,178 @@
+{
+  "data": [
+    {
+      "className": "Beetle",
+      "id": "beetle",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "80f795b5ebaf7bd1e4582be367915b42a5743b07e945b79aa7e4678e4a0e2fc7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\Beetle.java"
+    },
+    {
+      "className": "Crocodile",
+      "id": "crocodile",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "6f2d6399cf569b47a7bfbe32200d877cdac65d259f707e789930d25900b6edb0",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\Crocodile.java"
+    },
+    {
+      "className": "Dove",
+      "id": "dove",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "22e82233db00e0474a82b7357e326a783631acd774c21631cf7798c0ccee049f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\Dove.java"
+    },
+    {
+      "className": "Eagle",
+      "id": "eagle",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "2f253cf5093fc3599af1ffc2c4c86a71cbf7f9fa46b063e58c13bbad79d76c7f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\Eagle.java"
+    },
+    {
+      "className": "FloatingEye",
+      "id": "floating_eye",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "0a2a184a3b009c72b883854a014aee06a7a79e0e4de1638a0b393170c5c5cf3d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\FloatingEye.java"
+    },
+    {
+      "className": "FloatingSeed",
+      "id": "floating_seed",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "c7589d62285cf5b2908fc33d753718eb0015468f744e8948ebb34d6b083fce80",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\FloatingSeed.java"
+    },
+    {
+      "className": "Golem",
+      "id": "golem",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "d1b0b387fe1867aa4ba20ea4d10eab04d159ee7152f8091e325cc892688b397a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\Golem.java"
+    },
+    {
+      "className": "HolyTree",
+      "id": "holy_tree",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "162cc3e7a575d43941c2a1ebcef6f316c3d2e12e24fe60ca3f91fbeac63fdff9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\HolyTree.java"
+    },
+    {
+      "className": "Lizard",
+      "id": "lizard",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "5123c23ed548e67fa7775bbc025521a1baa6642e072134928746496e2a6c22c8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\Lizard.java"
+    },
+    {
+      "className": "Mosquito",
+      "id": "mosquito",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "4573bea057eb371cb7033b5018ddec2299f7b82c1627325080c7fbfa77514fae",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\Mosquito.java"
+    },
+    {
+      "className": "Owl",
+      "id": "owl",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "eb40d6ccd67ec6e15c281634ca8f1f92604f931f6576f3ca7445d626d7fcb4ed",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\Owl.java"
+    },
+    {
+      "className": "Rat",
+      "id": "rat",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "ce31fa7339b7d7a5090589afc759f9d90c44ebf7a8bde4b88e1e7f995c3a771f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\Rat.java"
+    },
+    {
+      "className": "RedWolf",
+      "id": "red_wolf",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "61d0baac1aca3357f8c93f6ecaad3da32fc8b18f0511c0fb7d3744ed088b9c92",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\RedWolf.java"
+    },
+    {
+      "className": "Rockling",
+      "id": "rockling",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "fe2c895177ab34b2bc414877efd2698f207f7cc16566bdbc5e6f3de5597ff7c4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\Rockling.java"
+    },
+    {
+      "className": "Squirrel",
+      "id": "squirrel",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "e00bfc6fed294ef59f13deea8325f2518fb7a17076e09ddc0aa6d5cfc5259ca4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\Squirrel.java"
+    },
+    {
+      "className": "Tarantula",
+      "id": "tarantula",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "4ad4ca71785eb7e0a91db729b7219dc314697ed6fa93ea0ef8962999e9a0d594",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\Tarantula.java"
+    },
+    {
+      "className": "TentacleTangle",
+      "id": "tentacle_tangle",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "2e4a928fd566327da92b16b63640113033e52178b585ede0d51754f1a144ef63",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\TentacleTangle.java"
+    },
+    {
+      "className": "Tesseract",
+      "id": "tesseract",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "3969e043b2a2989ff2acd0f0daf93408b81cbbdfc315bfae5b3008481b26f1bc",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\Tesseract.java"
+    },
+    {
+      "className": "ThingFromTheAbyss",
+      "id": "thing_from_the_abyss",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "390b7b1b133735948a017cc8cb443b97102eaa6ee8e9e9182ad17573e5d41b46",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\ThingFromTheAbyss.java"
+    },
+    {
+      "className": "TreeFrog",
+      "id": "tree_frog",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "c01b4cb64b13646f94b1aac28a35e673ddf9fc32e4a837b9482c47b53db9dea2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\TreeFrog.java"
+    },
+    {
+      "className": "WalkingBush",
+      "id": "walking_bush",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "b5e651fea8100c8ffeae477cfda00d643d6a5c7d3245029ba588963c39063cdf",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\pets\\instances\\WalkingBush.java"
+    }
+  ],
+  "metadata": {
+    "definitionsVersion": "1.0",
+    "generatedAt": "2026-07-17T11:47:00.470557",
+    "recordCount": 21,
+    "schemaVersion": "1.0"
+  }
+}

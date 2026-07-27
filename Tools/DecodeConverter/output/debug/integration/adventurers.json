@@ -1,0 +1,75 @@
+{
+  "data": [
+    {
+      "baseStats": {
+        "immunityToStatus": {
+          "fieldName": "immunityToStatus",
+          "semanticTag": "UNKNOWN",
+          "value": {
+            "_type": "arithmetic",
+            "raw": "this.immunityToStatus + (((double) this.potionsDrank.get(9)) * 0.01d)"
+          }
+        }
+      },
+      "className": "Adventurer",
+      "id": "adventurer",
+      "nameKey": null,
+      "parentClass": "Entity",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\adventurers\\Adventurer.java"
+    },
+    {
+      "baseStats": {},
+      "className": "PotionsDrank",
+      "id": "potions_drank",
+      "nameKey": null,
+      "parentClass": null,
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\adventurers\\PotionsDrank.java"
+    },
+    {
+      "baseStats": {},
+      "className": "Doctrine",
+      "id": "doctrine",
+      "nameKey": null,
+      "parentClass": null,
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\Doctrine.java"
+    },
+    {
+      "baseStats": {},
+      "className": "DoctrineAbility",
+      "id": "doctrine_ability",
+      "nameKey": null,
+      "parentClass": null,
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\DoctrineAbility.java"
+    },
+    {
+      "baseStats": {},
+      "className": "DoctrineOfAffliction",
+      "id": "doctrine_of_affliction",
+      "nameKey": null,
+      "parentClass": "Doctrine",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfAffliction.java"
+    },
+    {
+      "baseStats": {},
+      "className": "DoctrineOfControl",
+      "id": "doctrine_of_control",
+      "nameKey": null,
+      "parentClass": "Doctrine",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfControl.java"
+    },
+    {
+      "baseStats": {},
+      "className": "DoctrineOfFortitude",
+      "id": "doctrine_of_fortitude",
+      "nameKey": null,
+      "parentClass": "Doctrine",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfFortitude.java"
+    }
+  ],
+  "metadata": {
+    "definitionsVersion": "1.0",
+    "generatedAt": "2026-07-13T09:11:43.548310",
+    "recordCount": 7,
+    "schemaVersion": "1.0"
+  }
+}

@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: 3f198ddc8c54b0b4d99f98a94630e04a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6690967422797702288
+    second: hero_walk_sheet_0
+  - first:
+      213: 1982284566875744572
+    second: hero_walk_sheet_1
+  - first:
+      213: 8154661217222408667
+    second: hero_walk_sheet_2
+  - first:
+      213: 3650434694826331177
+    second: hero_walk_sheet_3
+  - first:
+      213: -4097712459571849599
+    second: hero_walk_sheet_4
+  - first:
+      213: 3360559485128618235
+    second: hero_walk_sheet_5
+  - first:
+      213: -247322809335852824
+    second: hero_walk_sheet_6
+  - first:
+      213: -5161107552326988984
+    second: hero_walk_sheet_7
+  - first:
+      213: 3886892221836489335
+    second: hero_walk_sheet_8
+  - first:
+      213: -5808755917816112318
+    second: hero_walk_sheet_9
+  - first:
+      213: 9097228982597951767
+    second: hero_walk_sheet_10
+  - first:
+      213: -4721820647795239254
+    second: hero_walk_sheet_11
+  - first:
+      213: -389787385492763046
+    second: hero_walk_sheet_12
+  - first:
+      213: 1808324998142311643
+    second: hero_walk_sheet_13
+  - first:
+      213: -1658087666313389101
+    second: hero_walk_sheet_14
+  - first:
+      213: -587779599440746712
+    second: hero_walk_sheet_15
+  - first:
+      213: -25870067666357263
+    second: hero_walk_down_00
+  - first:
+      213: 1989102187072502830
+    second: hero_walk_down_01
+  - first:
+      213: -9121859397744659831
+    second: hero_walk_down_02
+  - first:
+      213: -3505695265873132965
+    second: hero_walk_down_03
+  - first:
+      213: -3322293938258598509
+    second: hero_walk_up_00
+  - first:
+      213: 4492261191315004955
+    second: hero_walk_up_01
+  - first:
+      213: 6741377918293766773
+    second: hero_walk_up_02
+  - first:
+      213: 4333276179838788649
+    second: hero_walk_up_03
+  - first:
+      213: -1136161225990557763
+    second: hero_walk_left_00
+  - first:
+      213: 6375237828199141375
+    second: hero_walk_left_01
+  - first:
+      213: -5374776723555009990
+    second: hero_walk_left_02
+  - first:
+      213: -6758465189308251120
+    second: hero_walk_left_03
+  - first:
+      213: 7123355513888217659
+    second: hero_walk_right_00
+  - first:
+      213: 6899368458968359300
+    second: hero_walk_right_01
+  - first:
+      213: -6937721083213607438
+    second: hero_walk_right_02
+  - first:
+      213: 103229979240835315
+    second: hero_walk_right_03
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hero_walk_down_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f37e6e7f4714aff0800000000000000
+      internalID: -25870067666357263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_walk_down_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2cb86286e5ba9b10800000000000000
+      internalID: 1989102187072502830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_walk_down_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 982fe5a1535a86180800000000000000
+      internalID: -9121859397744659831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_walk_down_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b520ddacab4495fc0800000000000000
+      internalID: -3505695265873132965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_walk_up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 395a9a2f347d4e1d0800000000000000
+      internalID: -3322293938258598509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_walk_up_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e9a92a0c7b75e30800000000000000
+      internalID: 4492261191315004955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_walk_up_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 572ff84df7f2e8d50800000000000000
+      internalID: 6741377918293766773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_walk_up_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924e3f41ab3e22c30800000000000000
+      internalID: 4333276179838788649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_walk_left_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbfa245726b8b30f0800000000000000
+      internalID: -1136161225990557763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_walk_left_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fff417cf605697850800000000000000
+      internalID: 6375237828199141375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_walk_left_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3a3775fb05f865b0800000000000000
+      internalID: -5374776723555009990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_walk_left_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 014407cd7bb1532a0800000000000000
+      internalID: -6758465189308251120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_walk_right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3a9026491e3bd260800000000000000
+      internalID: 7123355513888217659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_walk_right_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 481e75b1f0b7fbf50800000000000000
+      internalID: 6899368458968359300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_walk_right_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fd8054be6348bf90800000000000000
+      internalID: -6937721083213607438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hero_walk_right_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f822d28e1fbe6100800000000000000
+      internalID: 103229979240835315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      hero_walk_down_00: -25870067666357263
+      hero_walk_down_01: 1989102187072502830
+      hero_walk_down_02: -9121859397744659831
+      hero_walk_down_03: -3505695265873132965
+      hero_walk_left_00: -1136161225990557763
+      hero_walk_left_01: 6375237828199141375
+      hero_walk_left_02: -5374776723555009990
+      hero_walk_left_03: -6758465189308251120
+      hero_walk_right_00: 7123355513888217659
+      hero_walk_right_01: 6899368458968359300
+      hero_walk_right_02: -6937721083213607438
+      hero_walk_right_03: 103229979240835315
+      hero_walk_sheet_0: -6690967422797702288
+      hero_walk_sheet_1: 1982284566875744572
+      hero_walk_sheet_10: 9097228982597951767
+      hero_walk_sheet_11: -4721820647795239254
+      hero_walk_sheet_12: -389787385492763046
+      hero_walk_sheet_13: 1808324998142311643
+      hero_walk_sheet_14: -1658087666313389101
+      hero_walk_sheet_15: -587779599440746712
+      hero_walk_sheet_2: 8154661217222408667
+      hero_walk_sheet_3: 3650434694826331177
+      hero_walk_sheet_4: -4097712459571849599
+      hero_walk_sheet_5: 3360559485128618235
+      hero_walk_sheet_6: -247322809335852824
+      hero_walk_sheet_7: -5161107552326988984
+      hero_walk_sheet_8: 3886892221836489335
+      hero_walk_sheet_9: -5808755917816112318
+      hero_walk_up_00: -3322293938258598509
+      hero_walk_up_01: 4492261191315004955
+      hero_walk_up_02: 6741377918293766773
+      hero_walk_up_03: 4333276179838788649
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

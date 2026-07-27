@@ -1,0 +1,829 @@
+{
+  "data": [
+    {
+      "className": "AbherrantFabric",
+      "fields": {
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "item_aberrant_fabric_description"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "abherrant_fabric"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "item_aberrant_fabric_name"
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 20
+        }
+      },
+      "iconKey": null,
+      "id": "abherrant_fabric",
+      "nameKey": null,
+      "parentClass": "Item",
+      "price": 20,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbherrantFabric.java"
+    },
+    {
+      "className": "AbioticCore",
+      "fields": {
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "item_abiotic_core_description"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "abiotic_core"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "item_abiotic_core_name"
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 2000
+        }
+      },
+      "iconKey": null,
+      "id": "abiotic_core",
+      "nameKey": null,
+      "parentClass": "Item",
+      "price": 2000,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbioticCore.java"
+    },
+    {
+      "className": "AbsoluteZero",
+      "fields": {
+        "defense": {
+          "fieldName": "defense",
+          "semanticTag": "UNKNOWN",
+          "value": 16
+        },
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "armor_heavy_absolute_zero_description"
+        },
+        "idEffect": {
+          "fieldName": "idEffect",
+          "semanticTag": "UNKNOWN",
+          "value": "armor_heavy_absolute_zero_effect"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "absolute_zero"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "armor_heavy_absolute_zero_name"
+        },
+        "maxHp": {
+          "fieldName": "maxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 310
+        },
+        "onSelfHit": {
+          "fieldName": "onSelfHit",
+          "semanticTag": "UNKNOWN",
+          "value": {
+            "_type": "new_object",
+            "args": [
+              {
+                "_type": "enum_ref",
+                "class": "StatusEffectType",
+                "value": "FROZEN"
+              },
+              null,
+              1,
+              1.0
+            ],
+            "class": "StatusEffect"
+          }
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 8889
+        }
+      },
+      "iconKey": null,
+      "id": "absolute_zero",
+      "nameKey": null,
+      "parentClass": "HeavyArmor",
+      "price": 8889,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbsoluteZero.java"
+    },
+    {
+      "className": "AbyssalCompendium",
+      "fields": {
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "accessory_abyssal_compendium_description"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "abyssal_compendium"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "accessory_abyssal_compendium_name"
+        },
+        "intelligence": {
+          "fieldName": "intelligence",
+          "semanticTag": "UNKNOWN",
+          "value": 15
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 375
+        }
+      },
+      "iconKey": null,
+      "id": "abyssal_compendium",
+      "nameKey": null,
+      "parentClass": "Accessory",
+      "price": 375,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbyssalCompendium.java"
+    },
+    {
+      "className": "AbyssalCutlass",
+      "fields": {
+        "constitution": {
+          "fieldName": "constitution",
+          "semanticTag": "UNKNOWN",
+          "value": 24
+        },
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "weapon_sword_abyssal_cutlass_description"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "abyssal_cutlass"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "weapon_sword_abyssal_cutlass_name"
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 5501
+        }
+      },
+      "iconKey": null,
+      "id": "abyssal_cutlass",
+      "nameKey": null,
+      "parentClass": "Sword",
+      "price": 5501,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbyssalCutlass.java"
+    },
+    {
+      "className": "AbyssalGoo",
+      "fields": {
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "item_abyssal_goo_description"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "abyssal_goo"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "item_abyssal_goo_name"
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 1193
+        }
+      },
+      "iconKey": null,
+      "id": "abyssal_goo",
+      "nameKey": null,
+      "parentClass": "Item",
+      "price": 1193,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbyssalGoo.java"
+    },
+    {
+      "className": "AbyssalIngot",
+      "fields": {
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "item_abyssal_ingot_description"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "abyssal_ingot"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "item_abyssal_ingot_name"
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 1811
+        }
+      },
+      "iconKey": null,
+      "id": "abyssal_ingot",
+      "nameKey": null,
+      "parentClass": "Item",
+      "price": 1811,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbyssalIngot.java"
+    },
+    {
+      "className": "AbyssalSeashell",
+      "fields": {
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "item_abyssal_seashell_description"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "abyssal_seashell"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "item_abyssal_seashell_name"
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 12
+        }
+      },
+      "iconKey": null,
+      "id": "abyssal_seashell",
+      "nameKey": null,
+      "parentClass": "Item",
+      "price": 12,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbyssalSeashell.java"
+    },
+    {
+      "className": "Aegis",
+      "fields": {
+        "defense": {
+          "fieldName": "defense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "weapon_sword_aegis_description"
+        },
+        "idEffect": {
+          "fieldName": "idEffect",
+          "semanticTag": "UNKNOWN",
+          "value": "weapon_sword_aegis_effect"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "aegis"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "weapon_sword_aegis_name"
+        },
+        "magicDefense": {
+          "fieldName": "magicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "maxHp": {
+          "fieldName": "maxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 60
+        },
+        "onTargetHit": {
+          "fieldName": "onTargetHit",
+          "semanticTag": "UNKNOWN",
+          "value": {
+            "_type": "new_object",
+            "args": [
+              {
+                "_type": "enum_ref",
+                "class": "StatusEffectType",
+                "value": "TAUNT"
+              },
+              null,
+              2,
+              1.0
+            ],
+            "class": "StatusEffect"
+          }
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 150000
+        }
+      },
+      "iconKey": null,
+      "id": "aegis",
+      "nameKey": null,
+      "parentClass": "Sword",
+      "price": 150000,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\Aegis.java"
+    },
+    {
+      "className": "AegisMechanica",
+      "fields": {
+        "defense": {
+          "fieldName": "defense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "weapon_sword_aegis_mechanica_description"
+        },
+        "idEffect": {
+          "fieldName": "idEffect",
+          "semanticTag": "UNKNOWN",
+          "value": "weapon_sword_aegis_mechanica_effect"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "aegis_mechanica"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "weapon_sword_aegis_mechanica_name"
+        },
+        "magicDefense": {
+          "fieldName": "magicDefense",
+          "semanticTag": "UNKNOWN",
+          "value": 10
+        },
+        "maxHp": {
+          "fieldName": "maxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 85
+        },
+        "onTargetHit": {
+          "fieldName": "onTargetHit",
+          "semanticTag": "UNKNOWN",
+          "value": {
+            "_type": "new_object",
+            "args": [
+              {
+                "_type": "enum_ref",
+                "class": "StatusEffectType",
+                "value": "TAUNT"
+              },
+              null,
+              2,
+              1.0
+            ],
+            "class": "StatusEffect"
+          }
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 234000
+        }
+      },
+      "iconKey": null,
+      "id": "aegis_mechanica",
+      "nameKey": null,
+      "parentClass": "Sword",
+      "price": 234000,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AegisMechanica.java"
+    },
+    {
+      "className": "AetherIgnis",
+      "fields": {
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "item_aether_ignis_description"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "aether_ignis"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "item_aether_ignis_name"
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 19
+        }
+      },
+      "iconKey": null,
+      "id": "aether_ignis",
+      "nameKey": null,
+      "parentClass": "Item",
+      "price": 19,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AetherIgnis.java"
+    },
+    {
+      "className": "AlchemicPowder",
+      "fields": {
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "item_alchemic_powder_description"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "alchemic_powder"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "item_alchemic_powder_name"
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 100
+        }
+      },
+      "iconKey": null,
+      "id": "alchemic_powder",
+      "nameKey": null,
+      "parentClass": "Item",
+      "price": 100,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AlchemicPowder.java"
+    },
+    {
+      "className": "Algae",
+      "fields": {
+        "feedPower": {
+          "fieldName": "feedPower",
+          "semanticTag": "UNKNOWN",
+          "value": 1
+        },
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "food_algae_description"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "algae"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "food_algae_name"
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 1
+        }
+      },
+      "iconKey": null,
+      "id": "algae",
+      "nameKey": null,
+      "parentClass": "Food",
+      "price": 1,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\Algae.java"
+    },
+    {
+      "className": "AlphaWolfFang",
+      "fields": {
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "item_alpha_wolf_fang_description"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "alpha_wolf_fang"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "item_alpha_wolf_fang_name"
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 5
+        }
+      },
+      "iconKey": null,
+      "id": "alpha_wolf_fang",
+      "nameKey": null,
+      "parentClass": "Item",
+      "price": 5,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AlphaWolfFang.java"
+    },
+    {
+      "className": "Ambrosia",
+      "fields": {
+        "feedPower": {
+          "fieldName": "feedPower",
+          "semanticTag": "UNKNOWN",
+          "value": 13500
+        },
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "food_ambrosia_description"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "ambrosia"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "food_ambrosia_name"
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 1000
+        }
+      },
+      "iconKey": null,
+      "id": "ambrosia",
+      "nameKey": null,
+      "parentClass": "Food",
+      "price": 1000,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\Ambrosia.java"
+    },
+    {
+      "className": "AmuletOfResurrection",
+      "fields": {
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "accessory_amulet_of_resurrection_description"
+        },
+        "idEffect": {
+          "fieldName": "idEffect",
+          "semanticTag": "UNKNOWN",
+          "value": "accessory_amulet_of_resurrection_effect"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "amulet_of_resurrection"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "accessory_amulet_of_resurrection_name"
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 7425
+        }
+      },
+      "iconKey": null,
+      "id": "amulet_of_resurrection",
+      "nameKey": null,
+      "parentClass": "Accessory",
+      "price": 7425,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AmuletOfResurrection.java"
+    },
+    {
+      "className": "AmuletOfTheSwordsman",
+      "fields": {
+        "alwaysHits": {
+          "fieldName": "alwaysHits",
+          "semanticTag": "UNKNOWN",
+          "value": true
+        },
+        "constitution": {
+          "fieldName": "constitution",
+          "semanticTag": "UNKNOWN",
+          "value": 25
+        },
+        "counterattack": {
+          "fieldName": "counterattack",
+          "semanticTag": "UNKNOWN",
+          "value": 0.25
+        },
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "accessory_amulet_of_the_swordsman_description"
+        },
+        "idEffect": {
+          "fieldName": "idEffect",
+          "semanticTag": "UNKNOWN",
+          "value": "accessory_amulet_of_the_swordsman_effect"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "amulet_of_the_swordsman"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "accessory_amulet_of_the_swordsman_name"
+        },
+        "notSellable": {
+          "fieldName": "notSellable",
+          "semanticTag": "UNKNOWN",
+          "value": true
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 7590
+        },
+        "uniqueOrigin": {
+          "fieldName": "uniqueOrigin",
+          "semanticTag": "UNKNOWN",
+          "value": "EyesOfTheSwordsman"
+        }
+      },
+      "iconKey": null,
+      "id": "amulet_of_the_swordsman",
+      "nameKey": null,
+      "parentClass": "Accessory",
+      "price": 7590,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AmuletOfTheSwordsman.java"
+    },
+    {
+      "className": "AncestralBlood",
+      "fields": {
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "item_ancestral_blood_description"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "ancestral_blood"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "item_ancestral_blood_name"
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 1000
+        }
+      },
+      "iconKey": null,
+      "id": "ancestral_blood",
+      "nameKey": null,
+      "parentClass": "Item",
+      "price": 1000,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AncestralBlood.java"
+    },
+    {
+      "className": "AncientArmor",
+      "fields": {
+        "constitution": {
+          "fieldName": "constitution",
+          "semanticTag": "UNKNOWN",
+          "value": 11
+        },
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "armor_heavy_ancient_armor_description"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "ancient_armor"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "armor_heavy_ancient_armor_name"
+        },
+        "maxHp": {
+          "fieldName": "maxHp",
+          "semanticTag": "UNKNOWN",
+          "value": 330
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 1092
+        }
+      },
+      "iconKey": null,
+      "id": "ancient_armor",
+      "nameKey": null,
+      "parentClass": "HeavyArmor",
+      "price": 1092,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AncientArmor.java"
+    },
+    {
+      "className": "AncientBoots",
+      "fields": {
+        "dexterity": {
+          "fieldName": "dexterity",
+          "semanticTag": "UNKNOWN",
+          "value": 33
+        },
+        "idDescription": {
+          "fieldName": "idDescription",
+          "semanticTag": "LOCALIZATION_DESCRIPTION",
+          "value": "accessory_ancient_boots_description"
+        },
+        "idImage": {
+          "fieldName": "idImage",
+          "semanticTag": "UNKNOWN",
+          "value": "ancient_boots"
+        },
+        "idName": {
+          "fieldName": "idName",
+          "semanticTag": "LOCALIZATION_NAME",
+          "value": "accessory_ancient_boots_name"
+        },
+        "price": {
+          "fieldName": "price",
+          "semanticTag": "PRICE",
+          "value": 465
+        }
+      },
+      "iconKey": null,
+      "id": "ancient_boots",
+      "nameKey": null,
+      "parentClass": "Accessory",
+      "price": 465,
+      "rarity": "COMMON",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AncientBoots.java"
+    }
+  ],
+  "metadata": {
+    "definitionsVersion": "1.0",
+    "generatedAt": "2026-07-13T09:11:43.536856",
+    "recordCount": 20,
+    "schemaVersion": "1.0"
+  }
+}

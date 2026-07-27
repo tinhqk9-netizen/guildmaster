@@ -1,0 +1,37 @@
+{
+  "data": [
+    {
+      "className": "AbherrantFabric",
+      "fields": {},
+      "iconKey": "abherrant_fabric",
+      "id": "abherrant_fabric",
+      "nameKey": "raid_name_the_lost_expedition",
+      "parentClass": "Item",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbherrantFabric.java"
+    },
+    {
+      "className": "AbioticCore",
+      "fields": {},
+      "iconKey": "abiotic_core",
+      "id": "abiotic_core",
+      "nameKey": "raid_name_kaunis",
+      "parentClass": "Item",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbioticCore.java"
+    },
+    {
+      "className": "AbsoluteZero",
+      "fields": {},
+      "iconKey": "absolute_zero",
+      "id": "absolute_zero",
+      "nameKey": "armor_heavy_absolute_zero_name",
+      "parentClass": "HeavyArmor",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\instances\\AbsoluteZero.java"
+    }
+  ],
+  "metadata": {
+    "definitionsVersion": "1.0.0",
+    "generatedAt": "2026-07-13T08:40:17.829303",
+    "recordCount": 3,
+    "schemaVersion": "1.0"
+  }
+}

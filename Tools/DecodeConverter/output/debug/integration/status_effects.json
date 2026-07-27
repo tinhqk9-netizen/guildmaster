@@ -1,0 +1,160 @@
+{
+  "data": [
+    {
+      "className": "TAUNT",
+      "id": "taunt",
+      "rawArgs": "R.string.status_effect_taunt, R.string.status_effect_taunt_description, R.drawable.icon_effect_taunt, true, false",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "DEFENSIVE_STANCE",
+      "id": "defensive_stance",
+      "rawArgs": "R.string.status_effect_defensive_stance, R.string.status_effect_defensive_stance_description, R.drawable.icon_effect_defensive_stance, false, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "STUN",
+      "id": "stun",
+      "rawArgs": "R.string.status_effect_stun, R.string.status_effect_stun_description, R.drawable.icon_effect_stun, true, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "STUN_NOT_CLEANSABLE",
+      "id": "stun_not_cleansable",
+      "rawArgs": "R.string.status_effect_stun, R.string.status_effect_stun_description, R.drawable.icon_effect_stun, false, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "SILENCE",
+      "id": "silence",
+      "rawArgs": "R.string.status_effect_silence, R.string.status_effect_silence_description, R.drawable.icon_effect_silence, true, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "ABLAZE",
+      "id": "ablaze",
+      "rawArgs": "R.string.status_effect_ablaze, R.string.status_effect_ablaze_description, R.drawable.icon_effect_ablaze, true, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "POISON",
+      "id": "poison",
+      "rawArgs": "R.string.status_effect_poison, R.string.status_effect_poison_description, R.drawable.icon_effect_poison, true, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "REGENERATION",
+      "id": "regeneration",
+      "rawArgs": "R.string.status_effect_regeneration, R.string.status_effect_regeneration_description, R.drawable.icon_effect_regeneration, false, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "LESSER_CURSE",
+      "id": "lesser_curse",
+      "rawArgs": "R.string.status_effect_lesser_curse, R.string.status_effect_lesser_curse_description, R.drawable.icon_effect_curse, true, false",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "CURSE",
+      "id": "curse",
+      "rawArgs": "R.string.status_effect_curse, R.string.status_effect_curse_description, R.drawable.icon_effect_curse, true, false",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "GREATER_CURSE",
+      "id": "greater_curse",
+      "rawArgs": "R.string.status_effect_greater_curse, R.string.status_effect_greater_curse_description, R.drawable.icon_effect_curse, true, false",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "OMINOUS_CURSE",
+      "id": "ominous_curse",
+      "rawArgs": "R.string.status_effect_ominous_curse, R.string.status_effect_ominous_curse_description, R.drawable.icon_effect_curse, true, false",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "ABHORRENT_CURSE",
+      "id": "abhorrent_curse",
+      "rawArgs": "R.string.status_effect_abhorrent_curse, R.string.status_effect_abhorrent_curse_description, R.drawable.icon_effect_curse, true, false",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "BLEED",
+      "id": "bleed",
+      "rawArgs": "R.string.status_effect_bleed, R.string.status_effect_bleed_description, R.drawable.icon_effect_bleed, true, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "DELIRIUM",
+      "id": "delirium",
+      "rawArgs": "R.string.status_effect_delirium, R.string.status_effect_delirium_description, R.drawable.icon_effect_delirium, false, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "FRENZY",
+      "id": "frenzy",
+      "rawArgs": "R.string.status_effect_frenzy, R.string.status_effect_frenzy_description, R.drawable.icon_effect_frenzy, false, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "ANOINTED",
+      "id": "anointed",
+      "rawArgs": "R.string.status_effect_anointed, R.string.status_effect_anointed_description, R.drawable.icon_effect_anointed, false, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "SKELETON_KEY",
+      "id": "skeleton_key",
+      "rawArgs": "R.string.status_effect_skeleton_key, R.string.status_effect_skeleton_key_description, R.drawable.skeleton_key, false, false",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "FEEBLE_TETHER",
+      "id": "feeble_tether",
+      "rawArgs": "R.string.status_effect_feeble_tether, R.string.status_effect_feeble_tether_description, R.drawable.feeble_tether, false, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "INSPIRE",
+      "id": "inspire",
+      "rawArgs": "R.string.status_effect_inspire, R.string.status_effect_inspire_description, R.drawable.icon_effect_inspire, false, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "EXALT",
+      "id": "exalt",
+      "rawArgs": "R.string.status_effect_exalt, R.string.status_effect_exalt_description, R.drawable.icon_effect_exalt, false, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "PETRIFY",
+      "id": "petrify",
+      "rawArgs": "R.string.status_effect_petrify, R.string.status_effect_petrify_description, R.drawable.icon_effect_petrify, true, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "FALSE_LIFE",
+      "id": "false_life",
+      "rawArgs": "R.string.status_effect_false_life, R.string.status_effect_false_life_description, R.drawable.icon_effect_false_life, false, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "TERRIFY",
+      "id": "terrify",
+      "rawArgs": "R.string.status_effect_terrify, R.string.status_effect_terrify_description, R.drawable.icon_effect_terrify, true, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    },
+    {
+      "className": "FROZEN",
+      "id": "frozen",
+      "rawArgs": "R.string.status_effect_freeze, R.string.status_effect_freeze_description, R.drawable.icon_effect_freeze, true, true",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\StatusEffectType.java"
+    }
+  ],
+  "metadata": {
+    "definitionsVersion": "1.0",
+    "generatedAt": "2026-07-13T09:11:43.557146",
+    "recordCount": 25,
+    "schemaVersion": "1.0"
+  }
+}

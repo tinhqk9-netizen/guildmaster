@@ -1,0 +1,135 @@
+
+    private int calculateTotalStat(int p15)
+    {
+        double v3_6;
+        long v1 = 4607182418800017408;
+        if (!this.ascended) {
+            v3_6 = 4607182418800017408;
+        } else {
+            v3_6 = 4609434218613702656;
+        }
+        double v3_4;
+        double v3_11;
+        long v4_6;
+        int v9 = 0;
+        if (p15 == 0) {
+            v3_4 = (((int) (((double) this.baseConstitution) * v3_6)) + this.potionsDrank.get(0));
+            v4_6 = this.doctrine.bonusConstitution();
+            v3_11 = (v3_4 + v4_6);
+        } else {
+            if (p15 == 1) {
+                v3_4 = (((int) (((double) this.baseIntelligence) * v3_6)) + this.potionsDrank.get(2));
+                v4_6 = this.doctrine.bonusIntelligence();
+            } else {
+                if (p15 == 2) {
+                    v3_4 = (((int) (((double) this.baseDexterity) * v3_6)) + this.potionsDrank.get(1));
+                    v4_6 = this.doctrine.bonusDexterity();
+                } else {
+                    if (p15 == 3) {
+                        v3_4 = (((int) (((double) ((this.baseMaxHp + this.level) - 1)) * v3_6)) + (this.potionsDrank.get(3) * 5));
+                        v4_6 = this.doctrine.bonusHp();
+                    } else {
+                        if (p15 == 4) {
+                            v3_4 = (this.baseDefense + this.potionsDrank.get(4));
+                            v4_6 = this.doctrine.bonusDefense();
+                        } else {
+                            if (p15 == 5) {
+                                v3_4 = (this.baseMagicDefense + this.potionsDrank.get(5));
+                                v4_6 = this.doctrine.bonusMagicDefense();
+                            } else {
+                                v3_11 = 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        long v4_24 = this.doctrine.doubleAccessoryStats();
+        long v10_15 = new it.paranoidsquirrels.idleguildmaster.storage.data.items.abstractClasses.Equipment[3];
+        v10_15[0] = this.weapon;
+        v10_15[1] = this.armor;
+        v10_15[2] = this.accessory;
+        long v10_17 = java.util.Arrays.asList(v10_15).iterator();
+        while (v10_17.hasNext()) {
+            int v11_1 = ((it.paranoidsquirrels.idleguildmaster.storage.data.items.abstractClasses.Equipment) v10_17.next());
+            if (v11_1 != 0) {
+                if ((v4_24 == 0) || (!(v11_1 instanceof it.paranoidsquirrels.idleguildmaster.storage.data.items.abstractClasses.Accessory))) {
+                    int v12_2 = 1;
+                } else {
+                    v12_2 = 2;
+                }
+                int v11_3;
+                int v11_2;
+                if (p15 == 0) {
+                    v11_2 = v11_1.getConstitution();
+                    v11_3 = (v11_2 * v12_2);
+                } else {
+                    if (p15 == 1) {
+                        v11_2 = v11_1.getIntelligence();
+                    } else {
+                        if (p15 == 2) {
+                            v11_2 = v11_1.getDexterity();
+                        } else {
+                            if (p15 == 3) {
+                                v11_2 = v11_1.getMaxHp();
+                            } else {
+                                if (p15 == 4) {
+                                    v11_3 = v11_1.getDefense();
+                                } else {
+                                    if (p15 == 5) {
+                                        v11_3 = v11_1.getMagicDefense();
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                v9 += v11_3;
+            }
+        }
+        if (this.traitCommon != null) {
+            switch (it.paranoidsquirrels.idleguildmaster.storage.data.entities.adventurers.Adventurer$1.$SwitchMap$it$paranoidsquirrels$idleguildmaster$storage$data$entities$adventurers$Trait[this.traitCommon.ordinal()]) {
+                case 1:
+                    if (p15 == 0) {
+                    } else {
+                        if (p15 == 1) {
+                            v1 = 4607632778762754458;
+                        } else {
+                            if (p15 == 2) {
+                            }
+                        }
+                    }
+                    break;
+                case 2:
+                    if ((p15 == 0) || (p15 == 1)) {
+                    } else {
+                        if (p15 == 2) {
+                        }
+                    }
+                    break;
+                case 3:
+                    if (p15 == 0) {
+                    } else {
+                        if ((p15 == 1) || (p15 == 2)) {
+                        }
+                    }
+                    break;
+                case 4:
+                    if (p15 == 1) {
+                        v1 = 4607857958744122982;
+                    }
+                    break;
+                case 5:
+                    if (p15 == 2) {
+                    }
+                    break;
+                case 6:
+                    if (p15 == 0) {
+                    }
+                    break;
+                default:
+            }
+            v1 = 4606732058837280358;
+        }
+        return it.paranoidsquirrels.idleguildmaster.Utils.round((((double) (v3_11 + v9)) * v1));
+    }

@@ -1,0 +1,7 @@
+﻿{
+  "_example": {
+    "rename": "old_id_to_new_id",
+    "remove": false,
+    "fallback": "default_id"
+  }
+}

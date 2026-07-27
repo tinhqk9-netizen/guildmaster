@@ -1,0 +1,428 @@
+====================================================================================================
+METHOD : Lit/paranoidsquirrels/idleguildmaster/Utils;->rollPotion()Lit/paranoidsquirrels/idleguildmaster/storage/data/items/MerchantOffer;
+DEX    : apk_out/classes3.dex
+ACCESS : public static
+REGS   : registers=6 ins=0 outs=3
+CODE   : 456 bytes = 228 code-units
+====================================================================================================
+
+offset(hex)  offset(dec)  instruction
+----------------------------------------------------------------------------------------------------
+0x00000         0  invoke-static Lit/paranoidsquirrels/idleguildmaster/Utils;->random()D
+0x00003         3  move-result-wide v0
+0x00004         4  const-wide v2, 4591215111030249286
+0x00009         9  cmpg-double v2, v0, v2
+0x0000b        11  const/16 v3, 80
+0x0000d        13  if-gez v2, +00ch
+0x0000f        15  const-class v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/PotionOfConstitution;
+0x00011        17  const-string v0, "PotionOfConstitution"
+0x00013        19  invoke-static v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x00016        22  move-result-object v0
+0x00017        23  goto/16 +0bfh
+0x00019        25  const-wide v4, 4595718710657619782
+0x0001e        30  cmpg-double v2, v0, v4
+0x00020        32  if-gez v2, +00ch
+0x00022        34  const-class v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/PotionOfDexterity;
+0x00024        36  const-string v0, "PotionOfDexterity"
+0x00026        38  invoke-static v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x00029        41  move-result-object v0
+0x0002a        42  goto/16 +0ach
+0x0002c        44  const-wide v4, 4598584637693219188
+0x00031        49  cmpg-double v2, v0, v4
+0x00033        51  if-gez v2, +00ch
+0x00035        53  const-class v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/PotionOfIntelligence;
+0x00037        55  const-string v0, "PotionOfIntelligence"
+0x00039        57  invoke-static v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x0003c        60  move-result-object v0
+0x0003d        61  goto/16 +099h
+0x0003f        63  const-wide v4, 4600222310284990278
+0x00044        68  cmpg-double v2, v0, v4
+0x00046        70  if-gez v2, +00ch
+0x00048        72  const-class v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/PotionOfHealth;
+0x0004a        74  const-string v0, "PotionOfHealth"
+0x0004c        76  invoke-static v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x0004f        79  move-result-object v0
+0x00050        80  goto/16 +086h
+0x00052        82  const-wide v4, 4601859982876761368
+0x00057        87  cmpg-double v2, v0, v4
+0x00059        89  if-gez v2, +00eh
+0x0005b        91  const-class v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/PotionOfDefense;
+0x0005d        93  const-string v0, "PotionOfDefense"
+0x0005f        95  invoke-static v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x00062        98  move-result-object v0
+0x00063        99  const/16 v3, 110
+0x00065       101  goto/16 +071h
+0x00067       103  const-wide v4, 4603088237320589684
+0x0006c       108  cmpg-double v2, v0, v4
+0x0006e       110  if-gez v2, +00dh
+0x00070       112  const-class v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/PotionOfMagicDefense;
+0x00072       114  const-string v0, "PotionOfMagicDefense"
+0x00074       116  invoke-static v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x00077       119  move-result-object v0
+0x00078       120  const/16 v3, 100
+0x0007a       122  goto +5ch
+0x0007b       123  const-wide v4, 4603907073616475229
+0x00080       128  cmpg-double v2, v0, v4
+0x00082       130  if-gez v2, +00bh
+0x00084       132  const-class v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/PotionOfPrecision;
+0x00086       134  const-string v0, "PotionOfPrecision"
+0x00088       136  invoke-static v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x0008b       139  move-result-object v0
+0x0008c       140  goto +4ah
+0x0008d       141  const-wide v4, 4604725909912360774
+0x00092       146  cmpg-double v2, v0, v4
+0x00094       148  if-gez v2, +00bh
+0x00096       150  const-class v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/PotionOfViciousness;
+0x00098       152  const-string v0, "PotionOfViciousness"
+0x0009a       154  invoke-static v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x0009d       157  move-result-object v0
+0x0009e       158  goto +38h
+0x0009f       159  const-wide v4, 4605544746208246319
+0x000a4       164  cmpg-double v2, v0, v4
+0x000a6       166  if-gez v2, +00bh
+0x000a8       168  const-class v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/PotionOfDarkness;
+0x000aa       170  const-string v0, "PotionOfDarkness"
+0x000ac       172  invoke-static v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x000af       175  move-result-object v0
+0x000b0       176  goto +26h
+0x000b1       177  const-wide v4, 4606363582504131864
+0x000b6       182  cmpg-double v2, v0, v4
+0x000b8       184  if-gez v2, +00dh
+0x000ba       186  const-class v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/PotionOfImmunity;
+0x000bc       188  const-string v0, "PotionOfImmunity"
+0x000be       190  invoke-static v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x000c1       193  move-result-object v0
+0x000c2       194  const/16 v3, 70
+0x000c4       196  goto +12h
+0x000c5       197  const-wide/high16 v4, 4607182418800017408
+0x000c7       199  cmpg-double v0, v0, v4
+0x000c9       201  if-gez v0, +00bh
+0x000cb       203  const-class v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/PotionOfAgility;
+0x000cd       205  const-string v0, "PotionOfAgility"
+0x000cf       207  invoke-static v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x000d2       210  move-result-object v0
+0x000d3       211  goto +3h
+0x000d4       212  const/4 v0, 0
+0x000d5       213  const/4 v3, 0
+0x000d6       214  new-instance v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/MerchantOffer;
+0x000d8       216  invoke-direct v1, v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/MerchantOffer;-><init>(Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;)V
+0x000db       219  int-to-long v2, v3
+0x000dc       220  invoke-virtual v1, v2, v3, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/MerchantOffer;->setPrice(J)V
+0x000df       223  const/4 v0, 1
+0x000e0       224  invoke-virtual v1, v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/MerchantOffer;->setGems(Z)V
+0x000e3       227  return-object v1
+----------------------------------------------------------------------------------------------------
+TOTAL INSTRUCTIONS: 103
+
+
+====================================================================================================
+METHOD : Lit/paranoidsquirrels/idleguildmaster/Utils;->rollSpecialFoods()Ljava/util/List;
+DEX    : apk_out/classes3.dex
+ACCESS : public static
+REGS   : registers=8 ins=0 outs=3
+CODE   : 352 bytes = 176 code-units
+====================================================================================================
+
+offset(hex)  offset(dec)  instruction
+----------------------------------------------------------------------------------------------------
+0x00000         0  new-instance v0, Ljava/util/ArrayList;
+0x00002         2  invoke-direct v0, Ljava/util/ArrayList;-><init>()V
+0x00005         5  const/4 v1, 0
+0x00006         6  move v2, v1
+0x00007         7  const/4 v3, 3
+0x00008         8  if-ge v2, v3, +09bh
+0x0000a        10  const/4 v3, 0
+0x0000b        11  move-object v4, v3
+0x0000c        12  if-eqz v4, +00fh
+0x0000e        14  invoke-interface v0, v4, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+0x00011        17  move-result v5
+0x00012        18  if-eqz v5, +003h
+0x00014        20  goto +7h
+0x00015        21  invoke-interface v0, v4, Ljava/util/List;->add(Ljava/lang/Object;)Z
+0x00018        24  add-int/lit8 v2, v2, 1
+0x0001a        26  goto -13h
+0x0001b        27  invoke-static Lit/paranoidsquirrels/idleguildmaster/Utils;->random()D
+0x0001e        30  move-result-wide v4
+0x0001f        31  const-wide v6, 4595172819793696085
+0x00024        36  cmpg-double v6, v4, v6
+0x00026        38  if-gez v6, +00dh
+0x00028        40  const-class v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/GlazedDonut;
+0x0002a        42  const-string v4, "GlazedDonut"
+0x0002c        44  invoke-static v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x0002f        47  move-result-object v4
+0x00030        48  const/16 v5, 50
+0x00032        50  goto +61h
+0x00033        51  const-wide v6, 4599676419421066581
+0x00038        56  cmpg-double v6, v4, v6
+0x0003a        58  if-gez v6, +00dh
+0x0003c        60  const-class v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/GourmetIcecream;
+0x0003e        62  const-string v4, "GourmetIcecream"
+0x00040        64  invoke-static v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x00043        67  move-result-object v4
+0x00044        68  const/16 v5, 100
+0x00046        70  goto +4dh
+0x00047        71  const-wide/high16 v6, 4602678819172646912
+0x00049        73  cmpg-double v6, v4, v6
+0x0004b        75  if-gez v6, +00dh
+0x0004d        77  const-class v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Maxxiburger;
+0x0004f        79  const-string v4, "Maxxiburger"
+0x00051        81  invoke-static v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x00054        84  move-result-object v4
+0x00055        85  const/16 v5, 200
+0x00057        87  goto +3ch
+0x00058        88  const-wide v6, 4604180019048437077
+0x0005d        93  cmpg-double v6, v4, v6
+0x0005f        95  if-gez v6, +00dh
+0x00061        97  const-class v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Cheesecake;
+0x00063        99  const-string v4, "Cheesecake"
+0x00065       101  invoke-static v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x00068       104  move-result-object v4
+0x00069       105  const/16 v5, 400
+0x0006b       107  goto +28h
+0x0006c       108  const-wide v6, 4605681218924227242
+0x00071       113  cmpg-double v6, v4, v6
+0x00073       115  if-gez v6, +00dh
+0x00075       117  const-class v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Ambrosia;
+0x00077       119  const-string v4, "Ambrosia"
+0x00079       121  invoke-static v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x0007c       124  move-result-object v4
+0x0007d       125  const/16 v5, 800
+0x0007f       127  goto +14h
+0x00080       128  const-wide/high16 v6, 4607182418800017408
+0x00082       130  cmpg-double v4, v4, v6
+0x00084       132  if-gez v4, +00dh
+0x00086       134  const-class v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/CeremonialCake;
+0x00088       136  const-string v4, "CeremonialCake"
+0x0008a       138  invoke-static v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x0008d       141  move-result-object v4
+0x0008e       142  const/16 v5, 1500
+0x00090       144  goto +3h
+0x00091       145  move v5, v1
+0x00092       146  move-object v4, v3
+0x00093       147  new-instance v6, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/MerchantOffer;
+0x00095       149  invoke-direct v6, v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/MerchantOffer;-><init>(Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;)V
+0x00098       152  int-to-long v4, v5
+0x00099       153  invoke-virtual v6, v4, v5, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/MerchantOffer;->setPrice(J)V
+0x0009c       156  const/4 v4, 1
+0x0009d       157  invoke-virtual v6, v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/MerchantOffer;->setGems(Z)V
+0x000a0       160  move-object v4, v6
+0x000a1       161  goto/16 -095h
+0x000a3       163  new-instance v1, Lit/paranoidsquirrels/idleguildmaster/Utils$$ExternalSyntheticLambda2;
+0x000a5       165  invoke-direct v1, Lit/paranoidsquirrels/idleguildmaster/Utils$$ExternalSyntheticLambda2;-><init>()V
+0x000a8       168  invoke-static v1, Ljava/util/Comparator;->comparingInt(Ljava/util/function/ToIntFunction;)Ljava/util/Comparator;
+0x000ab       171  move-result-object v1
+0x000ac       172  invoke-interface v0, v1, Ljava/util/List;->sort(Ljava/util/Comparator;)V
+0x000af       175  return-object v0
+----------------------------------------------------------------------------------------------------
+TOTAL INSTRUCTIONS: 88
+
+
+====================================================================================================
+METHOD : Lit/paranoidsquirrels/idleguildmaster/Utils;->rollUpgrades()Ljava/util/List;
+DEX    : apk_out/classes3.dex
+ACCESS : public static
+REGS   : registers=7 ins=0 outs=3
+CODE   : 560 bytes = 280 code-units
+====================================================================================================
+
+offset(hex)  offset(dec)  instruction
+----------------------------------------------------------------------------------------------------
+0x00000         0  new-instance v0, Ljava/util/ArrayList;
+0x00002         2  invoke-direct v0, Ljava/util/ArrayList;-><init>()V
+0x00005         5  sget-object v1, Lit/paranoidsquirrels/idleguildmaster/MainActivity;->data Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;
+0x00007         7  invoke-virtual v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;->getUpgradeMarketQueue()I
+0x0000a        10  move-result v1
+0x0000b        11  const/4 v2, 1
+0x0000c        12  if-ge v1, v2, +00dh
+0x0000e        14  const-class v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/UpgradeMarketQueue;
+0x00010        16  const-string v1, "UpgradeMarketQueue"
+0x00012        18  invoke-static v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x00015        21  move-result-object v1
+0x00016        22  invoke-interface v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+0x00019        25  sget-object v1, Lit/paranoidsquirrels/idleguildmaster/MainActivity;->data Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;
+0x0001b        27  invoke-virtual v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;->getUpgradeMarketTime()I
+0x0001e        30  move-result v1
+0x0001f        31  const/4 v3, 2
+0x00020        32  if-ge v1, v3, +00dh
+0x00022        34  const-class v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/UpgradeMarketTime;
+0x00024        36  const-string v1, "UpgradeMarketTime"
+0x00026        38  invoke-static v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x00029        41  move-result-object v1
+0x0002a        42  invoke-interface v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+0x0002d        45  sget-object v1, Lit/paranoidsquirrels/idleguildmaster/MainActivity;->data Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;
+0x0002f        47  invoke-virtual v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;->getUpgradeQuarters()I
+0x00032        50  move-result v1
+0x00033        51  if-ge v1, v2, +00dh
+0x00035        53  const-class v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/UpgradeQuarters;
+0x00037        55  const-string v1, "UpgradeQuarters"
+0x00039        57  invoke-static v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x0003c        60  move-result-object v1
+0x0003d        61  invoke-interface v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+0x00040        64  sget-object v1, Lit/paranoidsquirrels/idleguildmaster/MainActivity;->data Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;
+0x00042        66  invoke-virtual v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;->getUpgradeShelter()I
+0x00045        69  move-result v1
+0x00046        70  if-ge v1, v2, +00dh
+0x00048        72  const-class v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/UpgradeShelter;
+0x0004a        74  const-string v1, "UpgradeShelter"
+0x0004c        76  invoke-static v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x0004f        79  move-result-object v1
+0x00050        80  invoke-interface v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+0x00053        83  sget-object v1, Lit/paranoidsquirrels/idleguildmaster/MainActivity;->data Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;
+0x00055        85  invoke-virtual v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;->getUpgradeStorage()I
+0x00058        88  move-result v1
+0x00059        89  const/16 v4, 10
+0x0005b        91  const-string v5, "UpgradeStorage"
+0x0005d        93  if-ge v1, v4, +00bh
+0x0005f        95  const-class v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/UpgradeStorage;
+0x00061        97  invoke-static v5, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x00064       100  move-result-object v1
+0x00065       101  invoke-interface v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+0x00068       104  sget-object v1, Lit/paranoidsquirrels/idleguildmaster/MainActivity;->data Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;
+0x0006a       106  invoke-virtual v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;->getUpgradeTavernCapacity()I
+0x0006d       109  move-result v1
+0x0006e       110  if-ge v1, v2, +00dh
+0x00070       112  const-class v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/UpgradeTavernCapacity;
+0x00072       114  const-string v1, "UpgradeTavernCapacity"
+0x00074       116  invoke-static v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x00077       119  move-result-object v1
+0x00078       120  invoke-interface v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+0x0007b       123  sget-object v1, Lit/paranoidsquirrels/idleguildmaster/MainActivity;->data Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;
+0x0007d       125  invoke-virtual v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;->getUpgradeTavernTime()I
+0x00080       128  move-result v1
+0x00081       129  if-ge v1, v3, +00dh
+0x00083       131  const-class v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/UpgradeTavernTime;
+0x00085       133  const-string v1, "UpgradeTavernTime"
+0x00087       135  invoke-static v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x0008a       138  move-result-object v1
+0x0008b       139  invoke-interface v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+0x0008e       142  sget-object v1, Lit/paranoidsquirrels/idleguildmaster/MainActivity;->data Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;
+0x00090       144  invoke-virtual v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;->getUpgradeWorkshopQueue()I
+0x00093       147  move-result v1
+0x00094       148  if-ge v1, v2, +00dh
+0x00096       150  const-class v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/UpgradeWorkshopQueue;
+0x00098       152  const-string v1, "UpgradeWorkshopQueue"
+0x0009a       154  invoke-static v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x0009d       157  move-result-object v1
+0x0009e       158  invoke-interface v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+0x000a1       161  sget-object v1, Lit/paranoidsquirrels/idleguildmaster/MainActivity;->data Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;
+0x000a3       163  invoke-virtual v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;->getUpgradeWorkshopTime()I
+0x000a6       166  move-result v1
+0x000a7       167  if-ge v1, v3, +00dh
+0x000a9       169  const-class v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/UpgradeWorkshopTime;
+0x000ab       171  const-string v1, "UpgradeWorkshopTime"
+0x000ad       173  invoke-static v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x000b0       176  move-result-object v1
+0x000b1       177  invoke-interface v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+0x000b4       180  new-instance v1, Ljava/util/ArrayList;
+0x000b6       182  invoke-direct v1, Ljava/util/ArrayList;-><init>()V
+0x000b9       185  sget-object v3, Lit/paranoidsquirrels/idleguildmaster/MainActivity;->data Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;
+0x000bb       187  invoke-virtual v3, Lit/paranoidsquirrels/idleguildmaster/storage/data/Data;->getUpgradeStorage()I
+0x000be       190  move-result v3
+0x000bf       191  const/4 v4, 6
+0x000c0       192  if-ge v3, v4, +020h
+0x000c2       194  const-class v3, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/instances/UpgradeStorage;
+0x000c4       196  invoke-static v5, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;->getInstance(Ljava/lang/String;)Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x000c7       199  move-result-object v3
+0x000c8       200  invoke-interface v0, v3, Ljava/util/List;->remove(Ljava/lang/Object;)Z
+0x000cb       203  new-instance v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/MerchantOffer;
+0x000cd       205  invoke-direct v4, v3, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/MerchantOffer;-><init>(Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;)V
+0x000d0       208  check-cast v3, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/abstractClasses/Upgrade;
+0x000d2       210  invoke-virtual v3, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/abstractClasses/Upgrade;->getGemPrice()I
+0x000d5       213  move-result v3
+0x000d6       214  int-to-long v5, v3
+0x000d7       215  invoke-virtual v4, v5, v6, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/MerchantOffer;->setPrice(J)V
+0x000da       218  invoke-virtual v4, v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/MerchantOffer;->setGems(Z)V
+0x000dd       221  invoke-interface v1, v4, Ljava/util/List;->add(Ljava/lang/Object;)Z
+0x000e0       224  invoke-interface v0, Ljava/util/List;->isEmpty()Z
+0x000e3       227  move-result v3
+0x000e4       228  if-nez v3, +033h
+0x000e6       230  invoke-interface v1, Ljava/util/List;->size()I
+0x000e9       233  move-result v3
+0x000ea       234  const/4 v4, 3
+0x000eb       235  if-ge v3, v4, +02ch
+0x000ed       237  invoke-static Lit/paranoidsquirrels/idleguildmaster/Utils;->random()D
+0x000f0       240  move-result-wide v3
+0x000f1       241  invoke-interface v0, Ljava/util/List;->size()I
+0x000f4       244  move-result v5
+0x000f5       245  int-to-double v5, v5
+0x000f6       246  mul-double/2addr v3, v5
+0x000f7       247  double-to-int v3, v3
+0x000f8       248  invoke-interface v0, v3, Ljava/util/List;->get(I)Ljava/lang/Object;
+0x000fb       251  move-result-object v3
+0x000fc       252  check-cast v3, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;
+0x000fe       254  invoke-interface v0, v3, Ljava/util/List;->remove(Ljava/lang/Object;)Z
+0x00101       257  new-instance v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/MerchantOffer;
+0x00103       259  invoke-direct v4, v3, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/MerchantOffer;-><init>(Lit/paranoidsquirrels/idleguildmaster/storage/data/items/Item;)V
+0x00106       262  check-cast v3, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/abstractClasses/Upgrade;
+0x00108       264  invoke-virtual v3, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/abstractClasses/Upgrade;->getGemPrice()I
+0x0010b       267  move-result v3
+0x0010c       268  int-to-long v5, v3
+0x0010d       269  invoke-virtual v4, v5, v6, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/MerchantOffer;->setPrice(J)V
+0x00110       272  invoke-virtual v4, v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/MerchantOffer;->setGems(Z)V
+0x00113       275  invoke-interface v1, v4, Ljava/util/List;->add(Ljava/lang/Object;)Z
+0x00116       278  goto -36h
+0x00117       279  return-object v1
+----------------------------------------------------------------------------------------------------
+TOTAL INSTRUCTIONS: 135
+
+
+====================================================================================================
+METHOD : Lit/paranoidsquirrels/idleguildmaster/Utils;->truncatePrice(J)J
+DEX    : apk_out/classes3.dex
+ACCESS : public static
+REGS   : registers=6 ins=2 outs=0
+CODE   : 46 bytes = 23 code-units
+====================================================================================================
+
+offset(hex)  offset(dec)  instruction
+----------------------------------------------------------------------------------------------------
+0x00000         0  const-wide/16 v0, 10000
+0x00002         2  cmp-long v2, v4, v0
+0x00004         4  if-gtz v2, +003h
+0x00006         6  return-wide v4
+0x00007         7  const-wide/32 v2, 1000000
+0x0000a        10  cmp-long v2, v4, v2
+0x0000c        12  if-gtz v2, +008h
+0x0000e        14  const-wide/16 v0, 100
+0x00010        16  rem-long v0, v4, v0
+0x00012        18  sub-long/2addr v4, v0
+0x00013        19  return-wide v4
+0x00014        20  rem-long v0, v4, v0
+0x00016        22  goto -4h
+----------------------------------------------------------------------------------------------------
+TOTAL INSTRUCTIONS: 13
+
+
+====================================================================================================
+METHOD : Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area;->rollMerchantRegularOffers()Ljava/util/LinkedHashMap;
+DEX    : apk_out/classes3.dex
+ACCESS : public
+REGS   : registers=2 ins=1 outs=1
+CODE   : 12 bytes = 6 code-units
+====================================================================================================
+
+offset(hex)  offset(dec)  instruction
+----------------------------------------------------------------------------------------------------
+0x00000         0  new-instance v0, Ljava/util/LinkedHashMap;
+0x00002         2  invoke-direct v0, Ljava/util/LinkedHashMap;-><init>()V
+0x00005         5  return-object v0
+----------------------------------------------------------------------------------------------------
+TOTAL INSTRUCTIONS: 3
+
+
+====================================================================================================
+METHOD : Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area;->rollMerchantSpecialOffers()Ljava/util/LinkedHashMap;
+DEX    : apk_out/classes3.dex
+ACCESS : public
+REGS   : registers=2 ins=1 outs=1
+CODE   : 12 bytes = 6 code-units
+====================================================================================================
+
+offset(hex)  offset(dec)  instruction
+----------------------------------------------------------------------------------------------------
+0x00000         0  new-instance v0, Ljava/util/LinkedHashMap;
+0x00002         2  invoke-direct v0, Ljava/util/LinkedHashMap;-><init>()V
+0x00005         5  return-object v0
+----------------------------------------------------------------------------------------------------
+TOTAL INSTRUCTIONS: 3
+

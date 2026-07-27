@@ -1,0 +1,13 @@
+﻿{
+  "decodeRoot": "D:\\Tinh\\Guild Master - Idle Dungeons",
+  "gameSourceRoot": "sources/it/paranoidsquirrels/idleguildmaster",
+  "resourcesRoot": "resources/res",
+  "outputRoot": "output/debug",
+  "reportRoot": "output/reports",
+  "schemaVersion": "1.0",
+  "definitionsVersion": "1.0.0",
+  "enabledParsers": ["item_parser", "enum_parser", "strings_parser"],
+  "failOnFatal": true,
+  "deterministicSort": true,
+  "includeSourceMetadata": true
+}

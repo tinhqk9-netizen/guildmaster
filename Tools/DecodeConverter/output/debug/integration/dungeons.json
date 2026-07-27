@@ -1,0 +1,24 @@
+{
+  "data": [
+    {
+      "className": "BarrenWastelands",
+      "id": "barren_wastelands",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\places\\dungeons\\BarrenWastelands.java"
+    },
+    {
+      "className": "BlackwaterPort",
+      "id": "blackwater_port",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\places\\dungeons\\BlackwaterPort.java"
+    }
+  ],
+  "metadata": {
+    "definitionsVersion": "1.0",
+    "generatedAt": "2026-07-13T09:11:43.560768",
+    "recordCount": 2,
+    "schemaVersion": "1.0"
+  }
+}

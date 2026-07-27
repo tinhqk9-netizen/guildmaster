@@ -1,0 +1,211 @@
+====================================================================================================
+METHOD : Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->calculateTotalStat(I)I
+DEX    : apk_out/classes3.dex
+ACCESS : private
+REGS   : registers=16  ins=2  outs=2
+CODE   : 664 bytes = 332 code-units
+NOTE   : Full method incl. packed-switch payload (trait table).
+====================================================================================================
+
+offset(hex)  offset(dec)  instruction
+----------------------------------------------------------------------------------------------------
+0x00000         0  iget-boolean v0, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->ascended Z
+0x00002         2  const-wide/high16 v1, 4607182418800017408
+0x00004         4  if-eqz v0, +005h
+0x00006         6  const-wide/high16 v3, 4609434218613702656
+0x00008         8  goto +2h
+0x00009         9  move-wide v3, v1
+0x0000a        10  const/4 v0, 4
+0x0000b        11  const/4 v5, 5
+0x0000c        12  const/4 v6, 3
+0x0000d        13  const/4 v7, 2
+0x0000e        14  const/4 v8, 1
+0x0000f        15  const/4 v9, 0
+0x00010        16  if-eqz v15, +06ch
+0x00012        18  if-eq v15, v8, +057h
+0x00014        20  if-eq v15, v7, +042h
+0x00016        22  if-eq v15, v6, +028h
+0x00018        24  if-eq v15, v0, +016h
+0x0001a        26  if-eq v15, v5, +004h
+0x0001c        28  move v3, v9
+0x0001d        29  goto +72h
+0x0001e        30  iget v3, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->baseMagicDefense I
+0x00020        32  iget-object v4, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->potionsDrank Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/PotionsDrank;
+0x00022        34  invoke-virtual v4, v5, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/PotionsDrank;->get(I)I
+0x00025        37  move-result v4
+0x00026        38  add-int/2addr v3, v4
+0x00027        39  iget-object v4, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->doctrine Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/doctrines/Doctrine;
+0x00029        41  invoke-virtual v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/doctrines/Doctrine;->bonusMagicDefense()I
+0x0002c        44  move-result v4
+0x0002d        45  goto +61h
+0x0002e        46  iget v3, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->baseDefense I
+0x00030        48  iget-object v4, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->potionsDrank Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/PotionsDrank;
+0x00032        50  invoke-virtual v4, v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/PotionsDrank;->get(I)I
+0x00035        53  move-result v4
+0x00036        54  add-int/2addr v3, v4
+0x00037        55  iget-object v4, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->doctrine Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/doctrines/Doctrine;
+0x00039        57  invoke-virtual v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/doctrines/Doctrine;->bonusDefense()I
+0x0003c        60  move-result v4
+0x0003d        61  goto +51h
+0x0003e        62  iget v10, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->baseMaxHp I
+0x00040        64  iget v11, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->level I
+0x00042        66  add-int/2addr v10, v11
+0x00043        67  sub-int/2addr v10, v8
+0x00044        68  int-to-double v10, v10
+0x00045        69  mul-double/2addr v10, v3
+0x00046        70  double-to-int v3, v10
+0x00047        71  iget-object v4, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->potionsDrank Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/PotionsDrank;
+0x00049        73  invoke-virtual v4, v6, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/PotionsDrank;->get(I)I
+0x0004c        76  move-result v4
+0x0004d        77  mul-int/2addr v4, v5
+0x0004e        78  add-int/2addr v3, v4
+0x0004f        79  iget-object v4, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->doctrine Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/doctrines/Doctrine;
+0x00051        81  invoke-virtual v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/doctrines/Doctrine;->bonusHp()I
+0x00054        84  move-result v4
+0x00055        85  goto +39h
+0x00056        86  iget v10, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->baseDexterity I
+0x00058        88  int-to-double v10, v10
+0x00059        89  mul-double/2addr v10, v3
+0x0005a        90  double-to-int v3, v10
+0x0005b        91  iget-object v4, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->potionsDrank Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/PotionsDrank;
+0x0005d        93  invoke-virtual v4, v8, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/PotionsDrank;->get(I)I
+0x00060        96  move-result v4
+0x00061        97  add-int/2addr v3, v4
+0x00062        98  iget-object v4, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->doctrine Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/doctrines/Doctrine;
+0x00064       100  invoke-virtual v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/doctrines/Doctrine;->bonusDexterity()I
+0x00067       103  move-result v4
+0x00068       104  goto +26h
+0x00069       105  iget v10, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->baseIntelligence I
+0x0006b       107  int-to-double v10, v10
+0x0006c       108  mul-double/2addr v10, v3
+0x0006d       109  double-to-int v3, v10
+0x0006e       110  iget-object v4, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->potionsDrank Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/PotionsDrank;
+0x00070       112  invoke-virtual v4, v7, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/PotionsDrank;->get(I)I
+0x00073       115  move-result v4
+0x00074       116  add-int/2addr v3, v4
+0x00075       117  iget-object v4, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->doctrine Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/doctrines/Doctrine;
+0x00077       119  invoke-virtual v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/doctrines/Doctrine;->bonusIntelligence()I
+0x0007a       122  move-result v4
+0x0007b       123  goto +13h
+0x0007c       124  iget v10, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->baseConstitution I
+0x0007e       126  int-to-double v10, v10
+0x0007f       127  mul-double/2addr v10, v3
+0x00080       128  double-to-int v3, v10
+0x00081       129  iget-object v4, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->potionsDrank Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/PotionsDrank;
+0x00083       131  invoke-virtual v4, v9, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/PotionsDrank;->get(I)I
+0x00086       134  move-result v4
+0x00087       135  add-int/2addr v3, v4
+0x00088       136  iget-object v4, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->doctrine Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/doctrines/Doctrine;
+0x0008a       138  invoke-virtual v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/doctrines/Doctrine;->bonusConstitution()I
+0x0008d       141  move-result v4
+0x0008e       142  add-int/2addr v3, v4
+0x0008f       143  iget-object v4, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->doctrine Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/doctrines/Doctrine;
+0x00091       145  invoke-virtual v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/doctrines/Doctrine;->doubleAccessoryStats()Z
+0x00094       148  move-result v4
+0x00095       149  new-array v10, v6, [Lit/paranoidsquirrels/idleguildmaster/storage/data/items/abstractClasses/Equipment;
+0x00097       151  iget-object v11, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->weapon Lit/paranoidsquirrels/idleguildmaster/storage/data/items/abstractClasses/Weapon;
+0x00099       153  aput-object v11, v10, v9
+0x0009b       155  iget-object v11, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->armor Lit/paranoidsquirrels/idleguildmaster/storage/data/items/abstractClasses/Armor;
+0x0009d       157  aput-object v11, v10, v8
+0x0009f       159  iget-object v11, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->accessory Lit/paranoidsquirrels/idleguildmaster/storage/data/items/abstractClasses/Accessory;
+0x000a1       161  aput-object v11, v10, v7
+0x000a3       163  invoke-static v10, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+0x000a6       166  move-result-object v10
+0x000a7       167  invoke-interface v10, Ljava/util/List;->iterator()Ljava/util/Iterator;
+0x000aa       170  move-result-object v10
+0x000ab       171  invoke-interface v10, Ljava/util/Iterator;->hasNext()Z
+0x000ae       174  move-result v11
+0x000af       175  if-eqz v11, +041h
+0x000b1       177  invoke-interface v10, Ljava/util/Iterator;->next()Ljava/lang/Object;
+0x000b4       180  move-result-object v11
+0x000b5       181  check-cast v11, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/abstractClasses/Equipment;
+0x000b7       183  if-nez v11, +003h
+0x000b9       185  goto -eh
+0x000ba       186  if-eqz v4, +008h
+0x000bc       188  instance-of v12, v11, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/abstractClasses/Accessory;
+0x000be       190  if-eqz v12, +004h
+0x000c0       192  move v12, v7
+0x000c1       193  goto +2h
+0x000c2       194  move v12, v8
+0x000c3       195  if-eqz v15, +026h
+0x000c5       197  if-eq v15, v8, +01fh
+0x000c7       199  if-eq v15, v7, +018h
+0x000c9       201  if-eq v15, v6, +011h
+0x000cb       203  if-eq v15, v0, +00ah
+0x000cd       205  if-eq v15, v5, +003h
+0x000cf       207  goto -24h
+0x000d0       208  invoke-virtual v11, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/abstractClasses/Equipment;->getMagicDefense()I
+0x000d3       211  move-result v11
+0x000d4       212  goto +1ah
+0x000d5       213  invoke-virtual v11, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/abstractClasses/Equipment;->getDefense()I
+0x000d8       216  move-result v11
+0x000d9       217  goto +15h
+0x000da       218  invoke-virtual v11, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/abstractClasses/Equipment;->getMaxHp()I
+0x000dd       221  move-result v11
+0x000de       222  goto +fh
+0x000df       223  invoke-virtual v11, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/abstractClasses/Equipment;->getDexterity()I
+0x000e2       226  move-result v11
+0x000e3       227  goto +ah
+0x000e4       228  invoke-virtual v11, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/abstractClasses/Equipment;->getIntelligence()I
+0x000e7       231  move-result v11
+0x000e8       232  goto +5h
+0x000e9       233  invoke-virtual v11, Lit/paranoidsquirrels/idleguildmaster/storage/data/items/abstractClasses/Equipment;->getConstitution()I
+0x000ec       236  move-result v11
+0x000ed       237  mul-int/2addr v11, v12
+0x000ee       238  add-int/2addr v9, v11
+0x000ef       239  goto -44h
+0x000f0       240  iget-object v0, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->traitCommon Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Trait;
+0x000f2       242  if-eqz v0, +041h
+0x000f4       244  sget-object v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer$1;->$SwitchMap$it$paranoidsquirrels$idleguildmaster$storage$data$entities$adventurers$Trait [I
+0x000f6       246  iget-object v4, v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->traitCommon Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Trait;
+0x000f8       248  invoke-virtual v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Trait;->ordinal()I
+0x000fb       251  move-result v4
+0x000fc       252  aget v0, v0, v4
+0x000fe       254  const-wide v4, 4607857958744122982
+0x00103       259  const-wide v10, 4607632778762754458
+0x00108       264  const-wide v12, 4606732058837280358
+0x0010d       269  packed-switch v0, +000002fh
+0x00110       272  goto +23h
+0x00111       273  if-nez v15, +022h
+0x00113       275  goto +6h
+0x00114       276  if-ne v15, v7, +01fh
+0x00116       278  goto +3h
+0x00117       279  if-ne v15, v8, +01ch
+0x00119       281  move-wide v1, v4
+0x0011a       282  goto +19h
+0x0011b       283  if-eqz v15, +009h
+0x0011d       285  if-eq v15, v8, +005h
+0x0011f       287  if-eq v15, v7, +003h
+0x00121       289  goto +12h
+0x00122       290  move-wide v1, v12
+0x00123       291  goto +10h
+0x00124       292  move-wide v1, v10
+0x00125       293  goto +eh
+0x00126       294  if-eqz v15, -004h
+0x00128       296  if-eq v15, v8, -006h
+0x0012a       298  if-eq v15, v7, -006h
+0x0012c       300  goto +7h
+0x0012d       301  if-eqz v15, -00bh
+0x0012f       303  if-eq v15, v8, -00bh
+0x00131       305  if-eq v15, v7, -00fh
+0x00133       307  add-int/2addr v3, v9
+0x00134       308  int-to-double v3, v3
+0x00135       309  mul-double/2addr v3, v1
+0x00136       310  invoke-static v3, v4, Lit/paranoidsquirrels/idleguildmaster/Utils;->round(D)I
+0x00139       313  move-result v15
+0x0013a       314  return v15
+0x0013b       315  nop 
+0x0013c       316  packed-switch-payload 1 2 3 4 5 6
+----------------------------------------------------------------------------------------------------
+TOTAL INSTRUCTIONS: 187
+
+### PAYLOAD @0x0013c (packed-switch-payload) ident=0x0100 size=6
+###   Referenced by: `packed-switch v0, +0x2f` @0x0010d   (0x0010d + 0x2f = 0x0013c OK)
+###   Case->Trait mapping source: Adventurer$1.<clinit> $SwitchMap (see S6_5A_001C_TraitSwitchMapping.md)
+    first_key=1
+    case 1 [BOOKWORM      ] rel= 32 (+0x20)  -> ABSOLUTE offset 0x0012d  (switch@0x0010d + 0x20)
+    case 2 [FERAL         ] rel= 25 (+0x19)  -> ABSOLUTE offset 0x00126  (switch@0x0010d + 0x19)
+    case 3 [BRUTE         ] rel= 14 (+0x0e)  -> ABSOLUTE offset 0x0011b  (switch@0x0010d + 0x0e)
+    case 4 [BOOKWORM_PLUS ] rel= 10 (+0x0a)  -> ABSOLUTE offset 0x00117  (switch@0x0010d + 0x0a)
+    case 5 [FERAL_PLUS    ] rel=  7 (+0x07)  -> ABSOLUTE offset 0x00114  (switch@0x0010d + 0x07)
+    case 6 [BRUTE_PLUS    ] rel=  4 (+0x04)  -> ABSOLUTE offset 0x00111  (switch@0x0010d + 0x04)

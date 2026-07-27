@@ -1,0 +1,106 @@
+{
+  "data": [
+    {
+      "className": "AncientGraveDigging",
+      "id": "ancient_grave_digging",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "c48dad519034eb470b292fbbd01362402842416c1946fe7d0e8813dc57a70ec5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\raids\\AncientGraveDigging.java"
+    },
+    {
+      "className": "CelestialMothership",
+      "id": "celestial_mothership",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "066f7af7fb5ca7da777d977b70d888066bee905102dbbc2371a17057d092c3c2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\raids\\CelestialMothership.java"
+    },
+    {
+      "className": "DivineArcheology",
+      "id": "divine_archeology",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "6b773d9d1f761652104b6ba602c87bbc816256d091fa91bd86832857516108be",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\raids\\DivineArcheology.java"
+    },
+    {
+      "className": "ImperialRescue",
+      "id": "imperial_rescue",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "e3ef8945d2f43505c9921e0093c5355916810da4e8a238978b50d590cda2a74d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\raids\\ImperialRescue.java"
+    },
+    {
+      "className": "Kaunis",
+      "id": "kaunis",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "3362f9928a7cad825b97f999b55a9317ae94404698796785e176fe57770bcd6c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\raids\\Kaunis.java"
+    },
+    {
+      "className": "SleepingPlanet",
+      "id": "sleeping_planet",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "7c5f07490ed1af15ca45e34f84eed0c2f0c0d45b8418761cf6699519230ec736",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\raids\\SleepingPlanet.java"
+    },
+    {
+      "className": "TheCultistRebels",
+      "id": "the_cultist_rebels",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "44d7ce5504b6a066808421ed621cb4a34df592d019fa3e445958ab376bb8c09c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\raids\\TheCultistRebels.java"
+    },
+    {
+      "className": "TheDireDescent",
+      "id": "the_dire_descent",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "8615d7ad35ec8b6e0816320d548e48f3ef71fad0a878d49d70a815a31e3528f1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\raids\\TheDireDescent.java"
+    },
+    {
+      "className": "TheDreadfulAscent",
+      "id": "the_dreadful_ascent",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "6f1c4d16908221215f65f26f5731533bd228d426bd6fcdbec63e6e97db38e3bc",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\raids\\TheDreadfulAscent.java"
+    },
+    {
+      "className": "TheLostExpedition",
+      "id": "the_lost_expedition",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "de3ba3f2b300282a5ac76ae763c91f0de4cf3b8e5b32ca0c6f9b10cde59ad02b",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\raids\\TheLostExpedition.java"
+    },
+    {
+      "className": "TheSlimePond",
+      "id": "the_slime_pond",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "14d0df1102560001e15bb507132f1cf6247a2e22738f0777311d5fb313f5c482",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\raids\\TheSlimePond.java"
+    },
+    {
+      "className": "TheTower",
+      "id": "the_tower",
+      "parseReasons": [],
+      "parseStatus": "full",
+      "recordHash": "7339200c5c45a139ef2961586b85f6dddffda9664128c8289bb10b59d72593e4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\raids\\TheTower.java"
+    }
+  ],
+  "metadata": {
+    "definitionsVersion": "1.0",
+    "generatedAt": "2026-07-17T11:47:00.456735",
+    "recordCount": 12,
+    "schemaVersion": "1.0"
+  }
+}

@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: 148ba1964d78f2e4881c9aff3ee0b09d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7286627482171831816
+    second: archer_hurt_sheet_0
+  - first:
+      213: -2640514608944074418
+    second: archer_hurt_sheet_1
+  - first:
+      213: -7135634668088913763
+    second: archer_hurt_sheet_2
+  - first:
+      213: -6684388192495465727
+    second: archer_hurt_sheet_3
+  - first:
+      213: -937666474677238597
+    second: archer_hurt_sheet_4
+  - first:
+      213: 6616367997702390032
+    second: archer_hurt_sheet_5
+  - first:
+      213: -8956444186712525064
+    second: archer_hurt_sheet_6
+  - first:
+      213: -391918324596649601
+    second: archer_hurt_sheet_7
+  - first:
+      213: -2988580414239487393
+    second: archer_hurt_sheet_8
+  - first:
+      213: 6617607186169947596
+    second: archer_hurt_sheet_9
+  - first:
+      213: -5507616399878650673
+    second: archer_hurt_sheet_10
+  - first:
+      213: 7766810074699322656
+    second: archer_hurt_sheet_11
+  - first:
+      213: 8269510700199196696
+    second: archer_hurt_sheet_12
+  - first:
+      213: -8909068631265730828
+    second: archer_hurt_sheet_13
+  - first:
+      213: 2638108765024175271
+    second: archer_hurt_sheet_14
+  - first:
+      213: -4038283910904236788
+    second: archer_hurt_sheet_15
+  - first:
+      213: -2703299395448009219
+    second: archer_hurt_down_00
+  - first:
+      213: 7946647067867492307
+    second: archer_hurt_down_01
+  - first:
+      213: 6904255299949792753
+    second: archer_hurt_down_02
+  - first:
+      213: -2007451209466957481
+    second: archer_hurt_down_03
+  - first:
+      213: 3670562271172510738
+    second: archer_hurt_up_00
+  - first:
+      213: 3496468485453888464
+    second: archer_hurt_up_01
+  - first:
+      213: -1556593276091282664
+    second: archer_hurt_up_02
+  - first:
+      213: 1863030117894454231
+    second: archer_hurt_up_03
+  - first:
+      213: -4366962144487738221
+    second: archer_hurt_left_00
+  - first:
+      213: -3105906752793206054
+    second: archer_hurt_left_01
+  - first:
+      213: 7097441484792826966
+    second: archer_hurt_left_02
+  - first:
+      213: -1458535548693841698
+    second: archer_hurt_left_03
+  - first:
+      213: -4807114100780701124
+    second: archer_hurt_right_00
+  - first:
+      213: 9120594187711429341
+    second: archer_hurt_right_01
+  - first:
+      213: -508658849527153590
+    second: archer_hurt_right_02
+  - first:
+      213: 3934326500102334539
+    second: archer_hurt_right_03
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: archer_hurt_down_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd0bc4c583fb7ad0800000000000000
+      internalID: -2703299395448009219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_hurt_down_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3df24a3b769284e60800000000000000
+      internalID: 7946647067867492307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_hurt_down_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd8d107d97d0df50800000000000000
+      internalID: 6904255299949792753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_hurt_down_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7513bcbc2c91424e0800000000000000
+      internalID: -2007451209466957481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_hurt_up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 214403b20f470f230800000000000000
+      internalID: 3670562271172510738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_hurt_up_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dbb3dbff83f58030800000000000000
+      internalID: 3496468485453888464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_hurt_up_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81b41de99aed56ae0800000000000000
+      internalID: -1556593276091282664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_hurt_up_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dbf3fe7500dad910800000000000000
+      internalID: 1863030117894454231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_hurt_left_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394fa36111f6563c0800000000000000
+      internalID: -4366962144487738221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_hurt_left_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2264e934a95e4d0800000000000000
+      internalID: -3105906752793206054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_hurt_left_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c82333d6d2f7260800000000000000
+      internalID: 7097441484792826966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_hurt_left_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8f2d765ad32cbe0800000000000000
+      internalID: -1458535548693841698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_hurt_right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ae13cc133b94db0800000000000000
+      internalID: -4807114100780701124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_hurt_right_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda380b371cd29e70800000000000000
+      internalID: 9120594187711429341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_hurt_right_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4c331aa871e0f8f0800000000000000
+      internalID: -508658849527153590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: archer_hurt_right_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b48610d5b19899630800000000000000
+      internalID: 3934326500102334539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      archer_hurt_down_00: -2703299395448009219
+      archer_hurt_down_01: 7946647067867492307
+      archer_hurt_down_02: 6904255299949792753
+      archer_hurt_down_03: -2007451209466957481
+      archer_hurt_left_00: -4366962144487738221
+      archer_hurt_left_01: -3105906752793206054
+      archer_hurt_left_02: 7097441484792826966
+      archer_hurt_left_03: -1458535548693841698
+      archer_hurt_right_00: -4807114100780701124
+      archer_hurt_right_01: 9120594187711429341
+      archer_hurt_right_02: -508658849527153590
+      archer_hurt_right_03: 3934326500102334539
+      archer_hurt_sheet_0: 7286627482171831816
+      archer_hurt_sheet_1: -2640514608944074418
+      archer_hurt_sheet_10: -5507616399878650673
+      archer_hurt_sheet_11: 7766810074699322656
+      archer_hurt_sheet_12: 8269510700199196696
+      archer_hurt_sheet_13: -8909068631265730828
+      archer_hurt_sheet_14: 2638108765024175271
+      archer_hurt_sheet_15: -4038283910904236788
+      archer_hurt_sheet_2: -7135634668088913763
+      archer_hurt_sheet_3: -6684388192495465727
+      archer_hurt_sheet_4: -937666474677238597
+      archer_hurt_sheet_5: 6616367997702390032
+      archer_hurt_sheet_6: -8956444186712525064
+      archer_hurt_sheet_7: -391918324596649601
+      archer_hurt_sheet_8: -2988580414239487393
+      archer_hurt_sheet_9: 6617607186169947596
+      archer_hurt_up_00: 3670562271172510738
+      archer_hurt_up_01: 3496468485453888464
+      archer_hurt_up_02: -1556593276091282664
+      archer_hurt_up_03: 1863030117894454231
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

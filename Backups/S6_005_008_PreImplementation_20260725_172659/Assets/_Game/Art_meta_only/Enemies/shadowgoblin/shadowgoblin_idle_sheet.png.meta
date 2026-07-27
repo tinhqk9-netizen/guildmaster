@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: 2dc0a8fcc9b1f6c45b863e6285c4bc1c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1835112611281985366
+    second: shadowgoblin_idle_sheet_0
+  - first:
+      213: 7561500180230665621
+    second: shadowgoblin_idle_sheet_1
+  - first:
+      213: -1412526075198234884
+    second: shadowgoblin_idle_sheet_2
+  - first:
+      213: 1039834384141405321
+    second: shadowgoblin_idle_sheet_3
+  - first:
+      213: 4302990972598448231
+    second: shadowgoblin_idle_sheet_4
+  - first:
+      213: -3922074182959963034
+    second: shadowgoblin_idle_sheet_5
+  - first:
+      213: -5457792101669582066
+    second: shadowgoblin_idle_sheet_6
+  - first:
+      213: -5604780464473050082
+    second: shadowgoblin_idle_sheet_7
+  - first:
+      213: 8798143884457919220
+    second: shadowgoblin_idle_sheet_8
+  - first:
+      213: -7808268306291078319
+    second: shadowgoblin_idle_sheet_9
+  - first:
+      213: 2150979135175982251
+    second: shadowgoblin_idle_sheet_10
+  - first:
+      213: 6275596766507326973
+    second: shadowgoblin_idle_sheet_11
+  - first:
+      213: -1334893516000588385
+    second: shadowgoblin_idle_sheet_12
+  - first:
+      213: 217502248098879120
+    second: shadowgoblin_idle_sheet_13
+  - first:
+      213: -2105634177985726629
+    second: shadowgoblin_idle_sheet_14
+  - first:
+      213: 1431583229696124340
+    second: shadowgoblin_idle_sheet_15
+  - first:
+      213: -8512080024152025711
+    second: shadowgoblin_idle_down_00
+  - first:
+      213: 6656527896017294491
+    second: shadowgoblin_idle_down_01
+  - first:
+      213: -226724525922239816
+    second: shadowgoblin_idle_down_02
+  - first:
+      213: 8785458583798246452
+    second: shadowgoblin_idle_down_03
+  - first:
+      213: 8387029706662199367
+    second: shadowgoblin_idle_up_00
+  - first:
+      213: -6234231114614230669
+    second: shadowgoblin_idle_up_01
+  - first:
+      213: 8436489376999392429
+    second: shadowgoblin_idle_up_02
+  - first:
+      213: -1427474119360686382
+    second: shadowgoblin_idle_up_03
+  - first:
+      213: -12517783581849504
+    second: shadowgoblin_idle_left_00
+  - first:
+      213: -4432886592523195042
+    second: shadowgoblin_idle_left_01
+  - first:
+      213: -6067493295465110867
+    second: shadowgoblin_idle_left_02
+  - first:
+      213: -2265989663632914067
+    second: shadowgoblin_idle_left_03
+  - first:
+      213: -6421945081112400032
+    second: shadowgoblin_idle_right_00
+  - first:
+      213: 1107157445547923399
+    second: shadowgoblin_idle_right_01
+  - first:
+      213: -1918100856208767670
+    second: shadowgoblin_idle_right_02
+  - first:
+      213: -6314443325204255765
+    second: shadowgoblin_idle_right_03
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shadowgoblin_idle_down_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19558b421540fd980800000000000000
+      internalID: -8512080024152025711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shadowgoblin_idle_down_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94d6978adcb06c50800000000000000
+      internalID: 6656527896017294491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shadowgoblin_idle_down_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba3982be338adcf0800000000000000
+      internalID: -226724525922239816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shadowgoblin_idle_down_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43c633cd8083ce970800000000000000
+      internalID: 8785458583798246452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shadowgoblin_idle_up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 740cf32f417b46470800000000000000
+      internalID: 8387029706662199367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shadowgoblin_idle_up_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3713bb5e4df8b79a0800000000000000
+      internalID: -6234231114614230669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shadowgoblin_idle_up_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da4c763d36e641570800000000000000
+      internalID: 8436489376999392429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shadowgoblin_idle_up_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6517df9d7903ce0800000000000000
+      internalID: -1427474119360686382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shadowgoblin_idle_left_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0688a34642783dff0800000000000000
+      internalID: -12517783581849504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shadowgoblin_idle_left_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d201b61293b72c0800000000000000
+      internalID: -4432886592523195042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shadowgoblin_idle_left_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da2ecb6aefeebcba0800000000000000
+      internalID: -6067493295465110867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shadowgoblin_idle_left_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69047a18669d80e0800000000000000
+      internalID: -2265989663632914067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shadowgoblin_idle_right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06f6a3149faa0e6a0800000000000000
+      internalID: -6421945081112400032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shadowgoblin_idle_right_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7105ca4d96d5f00800000000000000
+      internalID: 1107157445547923399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shadowgoblin_idle_right_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a45cd4e0f698165e0800000000000000
+      internalID: -1918100856208767670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shadowgoblin_idle_right_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beb2dd640479e58a0800000000000000
+      internalID: -6314443325204255765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      shadowgoblin_idle_down_00: -8512080024152025711
+      shadowgoblin_idle_down_01: 6656527896017294491
+      shadowgoblin_idle_down_02: -226724525922239816
+      shadowgoblin_idle_down_03: 8785458583798246452
+      shadowgoblin_idle_left_00: -12517783581849504
+      shadowgoblin_idle_left_01: -4432886592523195042
+      shadowgoblin_idle_left_02: -6067493295465110867
+      shadowgoblin_idle_left_03: -2265989663632914067
+      shadowgoblin_idle_right_00: -6421945081112400032
+      shadowgoblin_idle_right_01: 1107157445547923399
+      shadowgoblin_idle_right_02: -1918100856208767670
+      shadowgoblin_idle_right_03: -6314443325204255765
+      shadowgoblin_idle_sheet_0: 1835112611281985366
+      shadowgoblin_idle_sheet_1: 7561500180230665621
+      shadowgoblin_idle_sheet_10: 2150979135175982251
+      shadowgoblin_idle_sheet_11: 6275596766507326973
+      shadowgoblin_idle_sheet_12: -1334893516000588385
+      shadowgoblin_idle_sheet_13: 217502248098879120
+      shadowgoblin_idle_sheet_14: -2105634177985726629
+      shadowgoblin_idle_sheet_15: 1431583229696124340
+      shadowgoblin_idle_sheet_2: -1412526075198234884
+      shadowgoblin_idle_sheet_3: 1039834384141405321
+      shadowgoblin_idle_sheet_4: 4302990972598448231
+      shadowgoblin_idle_sheet_5: -3922074182959963034
+      shadowgoblin_idle_sheet_6: -5457792101669582066
+      shadowgoblin_idle_sheet_7: -5604780464473050082
+      shadowgoblin_idle_sheet_8: 8798143884457919220
+      shadowgoblin_idle_sheet_9: -7808268306291078319
+      shadowgoblin_idle_up_00: 8387029706662199367
+      shadowgoblin_idle_up_01: -6234231114614230669
+      shadowgoblin_idle_up_02: 8436489376999392429
+      shadowgoblin_idle_up_03: -1427474119360686382
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

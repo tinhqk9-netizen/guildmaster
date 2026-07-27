@@ -1,0 +1,100 @@
+{
+  "data": [
+    {
+      "className": "Enemy",
+      "id": "enemy",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Entity",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\enemies\\Enemy.java",
+      "stats": {}
+    },
+    {
+      "className": "Abomination",
+      "id": "abomination",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\enemies\\units\\Abomination.java",
+      "stats": {}
+    },
+    {
+      "className": "AmanitaObscura",
+      "id": "amanita_obscura",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\enemies\\units\\AmanitaObscura.java",
+      "stats": {}
+    },
+    {
+      "className": "AncientEnt",
+      "id": "ancient_ent",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\enemies\\units\\AncientEnt.java",
+      "stats": {}
+    },
+    {
+      "className": "ArcaneAssassin",
+      "id": "arcane_assassin",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\enemies\\units\\ArcaneAssassin.java",
+      "stats": {}
+    },
+    {
+      "className": "ArchmageOfLarox",
+      "id": "archmage_of_larox",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\enemies\\units\\ArchmageOfLarox.java",
+      "stats": {}
+    },
+    {
+      "className": "AvatarOfTheAncient",
+      "id": "avatar_of_the_ancient",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\enemies\\units\\AvatarOfTheAncient.java",
+      "stats": {}
+    },
+    {
+      "className": "Banshee",
+      "id": "banshee",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\enemies\\units\\Banshee.java",
+      "stats": {}
+    },
+    {
+      "className": "Beholder",
+      "id": "beholder",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\enemies\\units\\Beholder.java",
+      "stats": {}
+    },
+    {
+      "className": "Berserker",
+      "id": "berserker",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\entities\\enemies\\units\\Berserker.java",
+      "stats": {}
+    }
+  ],
+  "metadata": {
+    "definitionsVersion": "1.0",
+    "generatedAt": "2026-07-13T09:11:43.553861",
+    "recordCount": 10,
+    "schemaVersion": "1.0"
+  }
+}

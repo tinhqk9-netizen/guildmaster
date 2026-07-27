@@ -1,0 +1,1897 @@
+{
+  "data": [
+    {
+      "className": "Abomination",
+      "id": "abomination",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "3b7bea737073fec7762a3954d75cb57d2d764b298c628bcbaa529ecc84a6f7e3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Abomination.java",
+      "stats": {}
+    },
+    {
+      "className": "AmanitaObscura",
+      "id": "amanita_obscura",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "a89d033eb16bd3feef457eb45a8999bb436f6c0d39f4769b914db4f085934ed2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\AmanitaObscura.java",
+      "stats": {}
+    },
+    {
+      "className": "AncientEnt",
+      "id": "ancient_ent",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "ac4f90326096a760d6c4b0b9698d975593256b45d5dc0cd75d70851ed7b2e520",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\AncientEnt.java",
+      "stats": {}
+    },
+    {
+      "className": "ArcaneAssassin",
+      "id": "arcane_assassin",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "d79a88d045fa419d945df3ff10726ff86accfca85c80798254337d2435415d36",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ArcaneAssassin.java",
+      "stats": {}
+    },
+    {
+      "className": "ArchmageOfLarox",
+      "id": "archmage_of_larox",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "6feb6a5a3055eb2822215f80ce4b2d4268441547d246eea20133a1fce3105f6e",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ArchmageOfLarox.java",
+      "stats": {}
+    },
+    {
+      "className": "AvatarOfTheAncient",
+      "id": "avatar_of_the_ancient",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "701003b286dbf9df84f75292716e2f6016423dad3fd66df32781008f3b3a8936",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\AvatarOfTheAncient.java",
+      "stats": {}
+    },
+    {
+      "className": "Banshee",
+      "id": "banshee",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "3722dfecfa39e909bd2ac351483249374263e0f4a4a160b85805a385592931c2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Banshee.java",
+      "stats": {}
+    },
+    {
+      "className": "Beholder",
+      "id": "beholder",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "8bc3978b4a48c9146d5a7fbb5f9a6b13dd4a6a46b9e65de2c473e6a48c79e30b",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Beholder.java",
+      "stats": {}
+    },
+    {
+      "className": "Berserker",
+      "id": "berserker",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "876f97bcbd59f1cdf3aae7537797224eb449f63e8b7e6999264f5110eebe3913",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Berserker.java",
+      "stats": {}
+    },
+    {
+      "className": "BleakDeacon",
+      "id": "bleak_deacon",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "ad1317df8b1cd3dc991a899cfad408f713b72eb0463ea06b1a9ec528043e3b29",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\BleakDeacon.java",
+      "stats": {}
+    },
+    {
+      "className": "BleakDisciple",
+      "id": "bleak_disciple",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "4fffd2645791b0638d21370746c9807abfb6c5ea4c79247bb3c2be5279bf5c70",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\BleakDisciple.java",
+      "stats": {
+        "darknessDamageAmplification": {
+          "fieldName": "darknessDamageAmplification",
+          "semanticTag": "STAT_DAMAGE",
+          "value": 0.01
+        }
+      }
+    },
+    {
+      "className": "Boar",
+      "id": "boar",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "85a566fc3a4e3354181dfc28f9d1751890ab9c5f9fa00a0ac4862b2463c46d6d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Boar.java",
+      "stats": {}
+    },
+    {
+      "className": "CelestialDestroyer",
+      "id": "celestial_destroyer",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "769baff0c0805974ecce3f5b5e337a12caafac259561d9ac1a100878a5a5b5d2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\CelestialDestroyer.java",
+      "stats": {}
+    },
+    {
+      "className": "CelestialLancer",
+      "id": "celestial_lancer",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "3cfc1537c76ec999a5a6849655b49bdb223f5e7df929cf5262da9e13db63da04",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\CelestialLancer.java",
+      "stats": {}
+    },
+    {
+      "className": "Centaur",
+      "id": "centaur",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "057f695ee53825ec4e515b6b1def76cac04400f0b2b1a4d1909325b8146aab23",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Centaur.java",
+      "stats": {}
+    },
+    {
+      "className": "Cerebrum",
+      "id": "cerebrum",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "131a71a2a9e0bb8d6cbff5d9080b0e5ff6ef0fae0533030212e3a1e2858f4c23",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Cerebrum.java",
+      "stats": {}
+    },
+    {
+      "className": "ChiefScientistAva",
+      "id": "chief_scientist_ava",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "6cd4c0a5229652bc8b26dafe106a1ae280c8cc54918f906d0ce6015218969a60",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ChiefScientistAva.java",
+      "stats": {}
+    },
+    {
+      "className": "CityWarden",
+      "id": "city_warden",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "a67094b0cd20f050c0348bbf9f819b5dc66d303f61ef2660af512d35965bce6f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\CityWarden.java",
+      "stats": {}
+    },
+    {
+      "className": "Claris",
+      "id": "claris",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "0bd7d0f169bbc034bdf24e0b38173009b1499e7b389f838a9ea4fabc7edb94a5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Claris.java",
+      "stats": {}
+    },
+    {
+      "className": "Crusader",
+      "id": "crusader",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "1f8c623d34cacb29a03401fb67d03abe1b3ab1231865cfdcbdaa3e326b4d0bea",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Crusader.java",
+      "stats": {
+        "retaliationMagicalDamage": {
+          "fieldName": "retaliationMagicalDamage",
+          "semanticTag": "STAT_DAMAGE",
+          "value": 20
+        }
+      }
+    },
+    {
+      "className": "DeathHound",
+      "id": "death_hound",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "730f92349abc3ada4b084e5f74aa7e5e16e7b194e765c9703b7a5af963df9e84",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\DeathHound.java",
+      "stats": {}
+    },
+    {
+      "className": "Deckhand",
+      "id": "deckhand",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "705cd4be037faeb2d6407eba7f545313f5de54ab00e020ca09a358aa09c53a28",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Deckhand.java",
+      "stats": {}
+    },
+    {
+      "className": "Djinn",
+      "id": "djinn",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "0ca25264b06e0f3f6a9710a5d59d356ca071714abeb3106a276066f58baca7d7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Djinn.java",
+      "stats": {}
+    },
+    {
+      "className": "DreamwroughtBeast",
+      "id": "dreamwrought_beast",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "d4efdc2f8f62126d8c7d9b3a30009d7981e064195fd80dc7c03311d19b1921c7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\DreamwroughtBeast.java",
+      "stats": {}
+    },
+    {
+      "className": "DreamwroughtDragon",
+      "id": "dreamwrought_dragon",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "d7c0d5e91d8bfb1318c7dd44bf45935df2a2834d1cf2eac024cdbbce53494ea5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\DreamwroughtDragon.java",
+      "stats": {}
+    },
+    {
+      "className": "DreamwroughtForge",
+      "id": "dreamwrought_forge",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "a00e130e36b5f68e648a80b49e643b8b85aaf1ddafa16ddb6928f988e228417f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\DreamwroughtForge.java",
+      "stats": {}
+    },
+    {
+      "className": "DreamwroughtSwarm",
+      "id": "dreamwrought_swarm",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "62a31d0d0eec00ae45a5c17710ec52f7f291bad836def6f746dc999f2af0bb0b",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\DreamwroughtSwarm.java",
+      "stats": {}
+    },
+    {
+      "className": "Dryad",
+      "id": "dryad",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "fc64dfc7b72e6e9b61af18f73a50137188d687019b1cc245e166895532926d44",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Dryad.java",
+      "stats": {}
+    },
+    {
+      "className": "EldritchHound",
+      "id": "eldritch_hound",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "7d2a26f5eefc83eb1d1d3883ff18519bb4b44ca58b2f1a3815eacd5f0caa461b",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\EldritchHound.java",
+      "stats": {
+        "darknessDamageAmplification": {
+          "fieldName": "darknessDamageAmplification",
+          "semanticTag": "STAT_DAMAGE",
+          "value": 0.01
+        }
+      }
+    },
+    {
+      "className": "ElectricSlime",
+      "id": "electric_slime",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "7bbce79debb6b6ac7c60a302a65c237eea03052b0184605968747e93ce232a48",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ElectricSlime.java",
+      "stats": {}
+    },
+    {
+      "className": "EmperorClovisXXVIII",
+      "id": "emperor_clovis_xxviii",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "4e217206adb53d23374045af36444d889cf53b408c3fc17b79ff614216d67a74",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\EmperorClovisXXVIII.java",
+      "stats": {}
+    },
+    {
+      "className": "Enemy",
+      "id": "enemy",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Entity",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "3499c8bd49160a9859d93d8e6f870508a08d7fa9e5a71a0be5867de36692fa3e",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\Enemy.java",
+      "stats": {}
+    },
+    {
+      "className": "Enforcer",
+      "id": "enforcer",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "64b603f454d6009afb65e5aa0a7176b15ce3fa89ce8898f55aebfde9cf7630db",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Enforcer.java",
+      "stats": {}
+    },
+    {
+      "className": "Ent",
+      "id": "ent",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "d301faf5d934fbc904ac31e9fa672059fff992849115fcb61af537f1f8076d94",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Ent.java",
+      "stats": {}
+    },
+    {
+      "className": "EtherealSoul",
+      "id": "ethereal_soul",
+      "manualRuleRequired": false,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "efd0bfe035506b0e40da4a405d8d8c0b1ebb8095231c74a4159dd23e6b4b16b1",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\EtherealSoul.java",
+      "stats": {}
+    },
+    {
+      "className": "FireSlime",
+      "id": "fire_slime",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "307c074f322f07bc9113340f92de41a6b5fc0d412954b0bbcf2d567755c3046a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\FireSlime.java",
+      "stats": {}
+    },
+    {
+      "className": "FirstMinisterAtos",
+      "id": "first_minister_atos",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "aad8bc3cf77685624f0d33e380cb0ab43d69c5f4743da03e7ed20b30f316f9da",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\FirstMinisterAtos.java",
+      "stats": {}
+    },
+    {
+      "className": "ForestSpirit",
+      "id": "forest_spirit",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "ae9b35fa19a1e860a895e3d7d5d3d6d1fb3b6b5d8b8a286f7d217dba81098b25",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ForestSpirit.java",
+      "stats": {}
+    },
+    {
+      "className": "FrozenSlime",
+      "id": "frozen_slime",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "9c688860aa98d96d6360ff53346841062494882bc8615c1ca130e95603ce3e40",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\FrozenSlime.java",
+      "stats": {}
+    },
+    {
+      "className": "Gcss",
+      "id": "gcss",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "ddf4f74c43a44f03f1d2d1c9375f29d24fc07ff944e4477617242d4f7699d10d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Gcss.java",
+      "stats": {}
+    },
+    {
+      "className": "Ghoul",
+      "id": "ghoul",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "4cf899e4d810c7e593243757e8f918c64599f9132374cb0bdb67d7541ca91b96",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Ghoul.java",
+      "stats": {}
+    },
+    {
+      "className": "GiantMoth",
+      "id": "giant_moth",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "24e474f47c3a23c19b82cd497b6efd69660e24df0e258959ec6fd653023d46e6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\GiantMoth.java",
+      "stats": {}
+    },
+    {
+      "className": "GiantSpider",
+      "id": "giant_spider",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "4657e047cc646e42457fd4d8dcb3d18419476c169289ee374b5f26d21f7b8690",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\GiantSpider.java",
+      "stats": {}
+    },
+    {
+      "className": "GiantTortoise",
+      "id": "giant_tortoise",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "5278a7d363d4bda5a28bfa4a4a157949fdfd363bb9c08042de5a3fac1627fcb9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\GiantTortoise.java",
+      "stats": {}
+    },
+    {
+      "className": "GoldenRabbit",
+      "id": "golden_rabbit",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "dd14f7f2776e3c1df6d6cc1b2cf9bce74c700f3037f73a8e9878b9130465d3eb",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\GoldenRabbit.java",
+      "stats": {}
+    },
+    {
+      "className": "GreenSpitfang",
+      "id": "green_spitfang",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "e5c92cba07ece173e9967049612b9379058b9d43cb5effd9f9786b9aa9800786",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\GreenSpitfang.java",
+      "stats": {}
+    },
+    {
+      "className": "HeadlessKnight",
+      "id": "headless_knight",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "aac454310069bdbf025813125902efab04e0fed89eed691688b406831bbc4371",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\HeadlessKnight.java",
+      "stats": {}
+    },
+    {
+      "className": "HeraldKali",
+      "id": "herald_kali",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "f46c987a163dd5726ebd801605e7bf0e2222cb268dd4d78bac13125bda035248",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\HeraldKali.java",
+      "stats": {}
+    },
+    {
+      "className": "HeraldMaya",
+      "id": "herald_maya",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "1e8961c96c059ec698035848572155427afaced1acfb94a6024a11c05988d5f9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\HeraldMaya.java",
+      "stats": {}
+    },
+    {
+      "className": "HeraldShoran",
+      "id": "herald_shoran",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "b99fca6e6ca9c980a8809219af98689b3b39a4323275d7c89497393829cc076c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\HeraldShoran.java",
+      "stats": {}
+    },
+    {
+      "className": "HeraldXavi",
+      "id": "herald_xavi",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "c32ddf3c4ec1e3553914633f7c30658f9f89ba12ce690b0f544892841c32e36a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\HeraldXavi.java",
+      "stats": {}
+    },
+    {
+      "className": "IceElemental",
+      "id": "ice_elemental",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "557e933acc206953fd96c8db86adc189277a6f44c3e2a8c839f4fc76952a6925",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\IceElemental.java",
+      "stats": {}
+    },
+    {
+      "className": "Iconoclast",
+      "id": "iconoclast",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "ea869386a793ca60e232af96fe7e2f6b75daddaf25385d1c5f17dcde9648c60d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Iconoclast.java",
+      "stats": {}
+    },
+    {
+      "className": "Imp",
+      "id": "imp",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "6efd5d38342ab1a628040f9e537761b32b0324c028500c4d5c6b18a40b61adc4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Imp.java",
+      "stats": {}
+    },
+    {
+      "className": "ImperialGuard",
+      "id": "imperial_guard",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "431cc84be5496b1872f10861239de5a1b341b2e5efe8d42849225301c299ba62",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ImperialGuard.java",
+      "stats": {}
+    },
+    {
+      "className": "ImperialMage",
+      "id": "imperial_mage",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "ae362d538874bb16a784592038d294f2124fdb322fa052f4f57e9adb1d5241b2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ImperialMage.java",
+      "stats": {}
+    },
+    {
+      "className": "InsaneCitizen",
+      "id": "insane_citizen",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "c43b71e96a1414f4c0973beca6b7b6bda4e22f7e3026ae3326fe8e3d1f1092e8",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\InsaneCitizen.java",
+      "stats": {}
+    },
+    {
+      "className": "InsaneMerchant",
+      "id": "insane_merchant",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "130b23af01e406441f9214cd66f669ed1144c268b517334894f7b74f3b17e12d",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\InsaneMerchant.java",
+      "stats": {}
+    },
+    {
+      "className": "InsanePriest",
+      "id": "insane_priest",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "55b41298b42eb558d8092e1b2decb74f4784c5232d072747096685e358e04a35",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\InsanePriest.java",
+      "stats": {}
+    },
+    {
+      "className": "KabarTheRotten",
+      "id": "kabar_the_rotten",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "f0853a4ca400549838e818c07be0eeee377c0e78b8567a627c9ffb47d2520c2c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\KabarTheRotten.java",
+      "stats": {}
+    },
+    {
+      "className": "KasimirTheSeer",
+      "id": "kasimir_the_seer",
+      "manualRuleRequired": false,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "145fd373c0f6af5cbf6bc995b189bab9a02575202adbf4ff7386052a7f1ec49b",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\KasimirTheSeer.java",
+      "stats": {}
+    },
+    {
+      "className": "KingAino",
+      "id": "king_aino",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "bca77481d6927454b7d6962238d66efb9a23f0ecfd6e5d36395bee34b554fb86",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\KingAino.java",
+      "stats": {}
+    },
+    {
+      "className": "Lazarus",
+      "id": "lazarus",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "27103804b96892b48f9001e0617a162a2f5d7ef6249b89844128a23beb6c6853",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Lazarus.java",
+      "stats": {}
+    },
+    {
+      "className": "LegateHadrian",
+      "id": "legate_hadrian",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "fe0e0fb0b517ba6592995390fcd7db9012fdf1939bc719eab34f160ac4ad96fa",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\LegateHadrian.java",
+      "stats": {
+        "criticalDamage": {
+          "fieldName": "criticalDamage",
+          "semanticTag": "STAT_DAMAGE",
+          "value": 2.0
+        },
+        "darknessDamageAmplification": {
+          "fieldName": "darknessDamageAmplification",
+          "semanticTag": "STAT_DAMAGE",
+          "value": 0.01
+        }
+      }
+    },
+    {
+      "className": "LesserTitan",
+      "id": "lesser_titan",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "78d4353cb9bd237d60588cfa813b86bcfbae668b818af5cf016b10b75c65883b",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\LesserTitan.java",
+      "stats": {}
+    },
+    {
+      "className": "LostMiner",
+      "id": "lost_miner",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "e5cfdb7362adcc8b301811fe37ca9336caba121cfcdc979f4b7da887114f88bc",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\LostMiner.java",
+      "stats": {
+        "darknessDamageAmplification": {
+          "fieldName": "darknessDamageAmplification",
+          "semanticTag": "STAT_DAMAGE",
+          "value": 0.01
+        }
+      }
+    },
+    {
+      "className": "MagicArmor",
+      "id": "magic_armor",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "b962bf2d1af138c7e10ebe17901aee296784f7e317fa8a194ba5ed6d141a26ed",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\MagicArmor.java",
+      "stats": {
+        "retaliationMagicalDamage": {
+          "fieldName": "retaliationMagicalDamage",
+          "semanticTag": "STAT_DAMAGE",
+          "value": 105
+        }
+      }
+    },
+    {
+      "className": "Mimic",
+      "id": "mimic",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "d3f70b275e0774b20dd2017e8a87fa1579de2d39dea8f20a36c6fd51ca1f2242",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Mimic.java",
+      "stats": {}
+    },
+    {
+      "className": "MysteriousTentacle",
+      "id": "mysterious_tentacle",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "274ac708a1dbea0b556703270bec226ad2ad33caf255defbebf3eee9a6db029c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\MysteriousTentacle.java",
+      "stats": {}
+    },
+    {
+      "className": "Necrobot",
+      "id": "necrobot",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "54ffd660145bf3a4d949c5005c2e5151f41c50b0af103bf0069f83081ec0e5f7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Necrobot.java",
+      "stats": {}
+    },
+    {
+      "className": "Necrolith",
+      "id": "necrolith",
+      "manualRuleRequired": false,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "b2f97abf3e8f8b4658dcd79432cf02e2a40c221a9ee4fa504d550377262c8e9c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Necrolith.java",
+      "stats": {}
+    },
+    {
+      "className": "NexusResearcher",
+      "id": "nexus_researcher",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "79cad096f28a31f6041cd88d654f140e368e643814c50b8ac95616942712c3db",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\NexusResearcher.java",
+      "stats": {}
+    },
+    {
+      "className": "ObsidianGolem",
+      "id": "obsidian_golem",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "a3d72cf3fe7eb93d58d21831604434a4dc08541247d5e46be366e0dca5c771e5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ObsidianGolem.java",
+      "stats": {}
+    },
+    {
+      "className": "Oculus",
+      "id": "oculus",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "45fb40f44c54080dbe40269507ad8b5a0baa1f08d06f1450c91d5c24ace3a5a9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Oculus.java",
+      "stats": {}
+    },
+    {
+      "className": "PaleHermit",
+      "id": "pale_hermit",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "922920ed274c92c085cebc277b0cfcb94ab220235fcbb24f498a135ec4be77e9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\PaleHermit.java",
+      "stats": {
+        "darknessDamageAmplification": {
+          "fieldName": "darknessDamageAmplification",
+          "semanticTag": "STAT_DAMAGE",
+          "value": 0.01
+        }
+      }
+    },
+    {
+      "className": "Phantasm",
+      "id": "phantasm",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "8e845a6e59963366cc215bafc5339bc9329a68a180680a115feedd38f9fcd233",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Phantasm.java",
+      "stats": {}
+    },
+    {
+      "className": "Phoenix",
+      "id": "phoenix",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "936025a6bcc1d72474c79d7bfd7113a4880080e199ed64d40677f63d92f7ae8c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Phoenix.java",
+      "stats": {}
+    },
+    {
+      "className": "Pirate",
+      "id": "pirate",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "9192ca9d1d00078c9e48aee7d8a1da876bb033f6f4bc6299426465c91c404111",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Pirate.java",
+      "stats": {}
+    },
+    {
+      "className": "PirateCaptain",
+      "id": "pirate_captain",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "4c01008330d7812d17a3679d0658947bc23efe258ba64b7a5781cf1efd41e7af",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\PirateCaptain.java",
+      "stats": {}
+    },
+    {
+      "className": "PirateLieutenant",
+      "id": "pirate_lieutenant",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "084288f4b8688c227828954773b7922def3700ccf340cd501b4fc9019ebcd750",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\PirateLieutenant.java",
+      "stats": {}
+    },
+    {
+      "className": "PrimevalWurm",
+      "id": "primeval_wurm",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "b6f1e96a479a3ae8a358b845bb2bfdc3a723689682e1588c3c819dbf389f8862",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\PrimevalWurm.java",
+      "stats": {}
+    },
+    {
+      "className": "PrimordialTitan",
+      "id": "primordial_titan",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "f7065beaacc024c0c8a9a7a7ac273b5b2086477914975e71c8f62a59882d764e",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\PrimordialTitan.java",
+      "stats": {}
+    },
+    {
+      "className": "Pterodactyl",
+      "id": "pterodactyl",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "173031405af19c499cd6a591bd294def9a15252838956524ff83061d3061fff9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Pterodactyl.java",
+      "stats": {}
+    },
+    {
+      "className": "ReinforcedDoor",
+      "id": "reinforced_door",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "680f884797eb42d10a0fe4ad1a9b50517f5f16a17f4ef7f71ca16d21b23ffe7b",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ReinforcedDoor.java",
+      "stats": {}
+    },
+    {
+      "className": "SandDemon",
+      "id": "sand_demon",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "95451e0714eab72cccd1b2dd32d59c61438b21372a55589de8b7a7987937eb83",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\SandDemon.java",
+      "stats": {}
+    },
+    {
+      "className": "SandStatue",
+      "id": "sand_statue",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "01a57c091def12cc0a848525fb84dc68131f5568df11665792d3968a7b41fff6",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\SandStatue.java",
+      "stats": {}
+    },
+    {
+      "className": "SandVulture",
+      "id": "sand_vulture",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "a75a0af13bf83c3dbac86bda76cccddf415d1c24796b9874c18da010ac29336a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\SandVulture.java",
+      "stats": {}
+    },
+    {
+      "className": "ShaKireFirstSwordsman",
+      "id": "sha_kire_first_swordsman",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "ef85ab43ecfe5c1396fea2f18c94ce62dea497f163f6bbbacdff9a92d1d66e6a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ShaKireFirstSwordsman.java",
+      "stats": {}
+    },
+    {
+      "className": "ShaTheHiddenGod",
+      "id": "sha_the_hidden_god",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "0c405c9778959f3ebb64d1e454cbdf530dc049ec89f422329e02ab79f70b33ad",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ShaTheHiddenGod.java",
+      "stats": {}
+    },
+    {
+      "className": "ShahuriArcher",
+      "id": "shahuri_archer",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "607596c8baf1f9dadd3f4a00c48efa64bb0d1a693cf341a8a59aa8a5d82a77f5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ShahuriArcher.java",
+      "stats": {}
+    },
+    {
+      "className": "ShahuriMage",
+      "id": "shahuri_mage",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "d8101e8c823acf9a37b4bffbe8a09e6dfbf78774072af7c115fc8b202b6f0429",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ShahuriMage.java",
+      "stats": {}
+    },
+    {
+      "className": "ShahuriWarrior",
+      "id": "shahuri_warrior",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "6b4f4e6e88818a858af37a0ed46ae4fff98cdae1e6161891ba39ce7f8bad683b",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\ShahuriWarrior.java",
+      "stats": {}
+    },
+    {
+      "className": "Singularity",
+      "id": "singularity",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "470147e426973a42bc0f88f1cad997fa8c0348e4fd67e90f180ca27cd8ee062a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Singularity.java",
+      "stats": {}
+    },
+    {
+      "className": "Slime",
+      "id": "slime",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "d825e8bf5912cc20aa5e1cda9f80d92e8d3e7a5b3cea6468c0320de55c823271",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Slime.java",
+      "stats": {}
+    },
+    {
+      "className": "SlimeKing",
+      "id": "slime_king",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "673356106131fc3de47d80b4fa4e7ecfda03c38963aa312a05e49bdbd8982c69",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\SlimeKing.java",
+      "stats": {}
+    },
+    {
+      "className": "SmolderingTitan",
+      "id": "smoldering_titan",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "b9891c32832011b3065e9d4f0a22160b8f9fc00e22c28e7afc874b68725107f2",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\SmolderingTitan.java",
+      "stats": {}
+    },
+    {
+      "className": "SnowWyvern",
+      "id": "snow_wyvern",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "966a0a8cb8bd7412344a554fc5240fc6d4387f1ff2c7131a54731e26167eaf67",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\SnowWyvern.java",
+      "stats": {}
+    },
+    {
+      "className": "StoneShaman",
+      "id": "stone_shaman",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "286b9a460e990b8a20f675ae2a2ccb68aaf99abee26abfafe3bf04afa23b297f",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\StoneShaman.java",
+      "stats": {}
+    },
+    {
+      "className": "TekeliLiFirstApostle",
+      "id": "tekeli_li_first_apostle",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "65135cd704a65b6504c2b777cac9654b0c0e1fe520afe3f14ea38c583d6a0608",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\TekeliLiFirstApostle.java",
+      "stats": {}
+    },
+    {
+      "className": "Terrorsaurus",
+      "id": "terrorsaurus",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "e490dbfe17fb8ab63feb1c23b77973c6ad7b6824420cfaa3cb00889ae3ea82a4",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Terrorsaurus.java",
+      "stats": {}
+    },
+    {
+      "className": "TheAncient",
+      "id": "the_ancient",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "3256c7e5f07a52d0f449fd9fb80314ce09fbd24e752e4f158e0d255ac8fe048a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\TheAncient.java",
+      "stats": {}
+    },
+    {
+      "className": "TheExiled",
+      "id": "the_exiled",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "1cb653703a0d92e424d2eae73d21f68a3b79128ec25b19d4b5a0a34840d2c2d7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\TheExiled.java",
+      "stats": {
+        "criticalDamage": {
+          "fieldName": "criticalDamage",
+          "semanticTag": "STAT_DAMAGE",
+          "value": 2.5
+        },
+        "darknessDamageAmplification": {
+          "fieldName": "darknessDamageAmplification",
+          "semanticTag": "STAT_DAMAGE",
+          "value": 0.02
+        }
+      }
+    },
+    {
+      "className": "TheMachine",
+      "id": "the_machine",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "264efa93aec837b86ef5a992115a34c11c84e35c0cac9e5a7e64baa984dba463",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\TheMachine.java",
+      "stats": {}
+    },
+    {
+      "className": "Thorvus",
+      "id": "thorvus",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "ea947dba7728cb3440225465a5003f7fdbcc025c3be70121941a1800bb2876ce",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Thorvus.java",
+      "stats": {}
+    },
+    {
+      "className": "Treant",
+      "id": "treant",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "3415870bb79b5f65a6f97aa92503a587af4b475d6cbe9ab0f61e8b79e5ac5bdc",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Treant.java",
+      "stats": {}
+    },
+    {
+      "className": "Troll",
+      "id": "troll",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "4ea01870d9059505d453b90410ea46e0e8a351abc196b8ec2a69a477ab9cc7cf",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Troll.java",
+      "stats": {}
+    },
+    {
+      "className": "TrollShaman",
+      "id": "troll_shaman",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "1a0a3e8b1b56ed4695ed2a899d74ba1a87b820c060b629d2d57193d5deb0a6dd",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\TrollShaman.java",
+      "stats": {}
+    },
+    {
+      "className": "TrollWarrior",
+      "id": "troll_warrior",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "bba12536af3bafc090ff2c6302e0771e7d058996fffa7bd8e06164b9f3e031ae",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\TrollWarrior.java",
+      "stats": {}
+    },
+    {
+      "className": "TrollWhelp",
+      "id": "troll_whelp",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "1d1071beeec3fd832644bcb56733bc74cad909051574a0bba41d0314444564b3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\TrollWhelp.java",
+      "stats": {}
+    },
+    {
+      "className": "TutorialWolf",
+      "id": "tutorial_wolf",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "ef876216f7d1f89c6b0ce0af2a1f4b387d2948be841a6e67d5eca13e2f39ebcf",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\TutorialWolf.java",
+      "stats": {}
+    },
+    {
+      "className": "Ultraslime",
+      "id": "ultraslime",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "6e70e075ff90ff69aeb851826ab40d660087b943a8745fb066cbb6ebc2293e31",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Ultraslime.java",
+      "stats": {}
+    },
+    {
+      "className": "Undead",
+      "id": "undead",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "c9cd8b1434c64948d0d04635f07ddfa19a0bf5dd11c8334988d7d9c9790d2dd9",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Undead.java",
+      "stats": {}
+    },
+    {
+      "className": "UndeadArcher",
+      "id": "undead_archer",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "e5b99d50b0bfb34382244e06ced88af053d2cd302428a57d56fbef14ac38ed71",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\UndeadArcher.java",
+      "stats": {}
+    },
+    {
+      "className": "UndeadGeneral",
+      "id": "undead_general",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "1e88825d9a2d078c455f2f250713dd39259340ecb1dbffa41bf577090c53108c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\UndeadGeneral.java",
+      "stats": {}
+    },
+    {
+      "className": "UndeadWarlord",
+      "id": "undead_warlord",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "1180aa4e16694f69a95a64ba9d34fcb085c5047b74c0ff0477ca5db6ca37f204",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\UndeadWarlord.java",
+      "stats": {
+        "retaliationPhysicalDamage": {
+          "fieldName": "retaliationPhysicalDamage",
+          "semanticTag": "STAT_DAMAGE",
+          "value": 12
+        }
+      }
+    },
+    {
+      "className": "VampireBat",
+      "id": "vampire_bat",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "05e1348cc656395fc178e4a4b06fd73a1bbfeb1e900f256940eb24ead59d2a42",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\VampireBat.java",
+      "stats": {}
+    },
+    {
+      "className": "VoidSlime",
+      "id": "void_slime",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "4a4930211675472be7c61a35a405c50ab595331db85613faaaa6051e3794c8ef",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\VoidSlime.java",
+      "stats": {
+        "retaliationMagicalDamage": {
+          "fieldName": "retaliationMagicalDamage",
+          "semanticTag": "STAT_DAMAGE",
+          "value": 33
+        }
+      }
+    },
+    {
+      "className": "WickedTribute",
+      "id": "wicked_tribute",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "298cd5b59c9c507c195b6bf67b826110f96ab4191224257d1bef8536c4bc3b68",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\WickedTribute.java",
+      "stats": {}
+    },
+    {
+      "className": "WillOWisp",
+      "id": "will_o_wisp",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "f30c3d95a187f2d6bd4986814757f2783bdfc240754536969d87d3e29fc635b3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\WillOWisp.java",
+      "stats": {}
+    },
+    {
+      "className": "WizardOfLarox",
+      "id": "wizard_of_larox",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "74a990e88257003122629501d30e5a410650b1a9ec29843a2e99cbc1d2505ab3",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\WizardOfLarox.java",
+      "stats": {}
+    },
+    {
+      "className": "Wolf",
+      "id": "wolf",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "e7c07a1e2d19fb331cbd06410759337acfb410787c27fd4e80fbdee38054efea",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Wolf.java",
+      "stats": {}
+    },
+    {
+      "className": "Wurm",
+      "id": "wurm",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parentClass": "Enemy",
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED",
+        "MISSING_STATS"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "f71419caad71f4cfc28e35b068d559e16aed0d32b47188b3d72afd5468cdce97",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\enemies\\units\\Wurm.java",
+      "stats": {}
+    }
+  ],
+  "metadata": {
+    "definitionsVersion": "1.0",
+    "generatedAt": "2026-07-17T11:47:00.418471",
+    "recordCount": 122,
+    "schemaVersion": "1.0"
+  }
+}

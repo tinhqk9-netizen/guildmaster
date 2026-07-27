@@ -1,0 +1,944 @@
+{
+  "data": [
+    {
+      "RegularMerchantOffers": [
+        {
+          "ItemId": "elasticmembrane",
+          "StackCount": 12,
+          "Weight": 260
+        },
+        {
+          "ItemId": "celestialscraps",
+          "StackCount": 5,
+          "Weight": 260
+        },
+        {
+          "ItemId": "bansheescale",
+          "StackCount": 6,
+          "Weight": 260
+        }
+      ],
+      "SpecialMerchantOffers": [],
+      "className": "BarrenWastelands",
+      "id": "barren_wastelands",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "d5e33e8f9c22a411af919da700f31bd666a0b90755435dfd23e9dc535f377f66",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\BarrenWastelands.java"
+    },
+    {
+      "RegularMerchantOffers": [
+        {
+          "ItemId": "ghostwoodboard",
+          "StackCount": 2,
+          "Weight": 170
+        },
+        {
+          "ItemId": "blackironscraps",
+          "StackCount": 8,
+          "Weight": 166
+        },
+        {
+          "ItemId": "exoticvelvet",
+          "StackCount": 2,
+          "Weight": 166
+        },
+        {
+          "ItemId": "mysteriousappendage",
+          "StackCount": 4,
+          "Weight": 166
+        },
+        {
+          "ItemId": "abyssalseashell",
+          "StackCount": 8,
+          "Weight": 166
+        },
+        {
+          "ItemId": "monkeyhide",
+          "StackCount": 5,
+          "Weight": 166
+        }
+      ],
+      "SpecialMerchantOffers": [
+        {
+          "ItemId": "blackironarmor",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "exoticrobe",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "blackironhelm",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "exoticboots",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "blackirongauntlets",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "ghostwoodshield",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "blackironcutlass",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "blackironscepter",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "blackirondagger",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "ghostwoodbow",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "monkeyhidejacket",
+          "StackCount": 1,
+          "Weight": 90
+        }
+      ],
+      "className": "BlackwaterPort",
+      "id": "blackwater_port",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "f8f81f9f2bf0e41671f5f01e14aac392e594ded530007cbd6ffe1111ee862708",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\BlackwaterPort.java"
+    },
+    {
+      "RegularMerchantOffers": [
+        {
+          "ItemId": "beastpelt",
+          "StackCount": 3,
+          "Weight": 240
+        },
+        {
+          "ItemId": "plantfiber",
+          "StackCount": 6,
+          "Weight": 240
+        },
+        {
+          "ItemId": "copperore",
+          "StackCount": 5,
+          "Weight": 240
+        },
+        {
+          "ItemId": "wood",
+          "StackCount": 8,
+          "Weight": 240
+        },
+        {
+          "ItemId": "cottontailfur",
+          "StackCount": 1,
+          "Weight": 40
+        }
+      ],
+      "SpecialMerchantOffers": [
+        {
+          "ItemId": "leatherjacket",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "fangdagger",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "clothrobe",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "enchantedstaff",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "coppersword",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "copperarmor",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "woodenbow",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "leatherboots",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "leathergloves",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "copperhelmet",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "woodenbuckler",
+          "StackCount": 1,
+          "Weight": 90
+        }
+      ],
+      "className": "EnchantedForest",
+      "id": "enchanted_forest",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "b5986fb5c2831cb0f03be4c73cd91b2510728e0c356b1c134eb7c7a8c5ecefe0",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\EnchantedForest.java"
+    },
+    {
+      "RegularMerchantOffers": [
+        {
+          "ItemId": "bonefragment",
+          "StackCount": 8,
+          "Weight": 200
+        },
+        {
+          "ItemId": "tatteredhide",
+          "StackCount": 5,
+          "Weight": 160
+        },
+        {
+          "ItemId": "elongatedbone",
+          "StackCount": 1,
+          "Weight": 160
+        },
+        {
+          "ItemId": "sharprib",
+          "StackCount": 1,
+          "Weight": 160
+        },
+        {
+          "ItemId": "spectralcloth",
+          "StackCount": 1,
+          "Weight": 160
+        },
+        {
+          "ItemId": "infectedblood",
+          "StackCount": 1,
+          "Weight": 160
+        }
+      ],
+      "SpecialMerchantOffers": [
+        {
+          "ItemId": "undeadgreaves",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "undeadhelm",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "undeadgloves",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "undeadstaff",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "undeadshield",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "undeadsword",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "undeadjacket",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "undeadcuirass",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "undeadknife",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "spectralrobe",
+          "StackCount": 1,
+          "Weight": 100
+        }
+      ],
+      "className": "EternalBattlefield",
+      "id": "eternal_battlefield",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "12ee6076e26fdedf2f687b39e8eaadfc678a7eb92e2c86a7b7d9abf93962e0b7",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\EternalBattlefield.java"
+    },
+    {
+      "RegularMerchantOffers": [
+        {
+          "ItemId": "icefiber",
+          "StackCount": 6,
+          "Weight": 200
+        },
+        {
+          "ItemId": "frostmetalore",
+          "StackCount": 5,
+          "Weight": 200
+        },
+        {
+          "ItemId": "trollhide",
+          "StackCount": 5,
+          "Weight": 200
+        },
+        {
+          "ItemId": "winterwood",
+          "StackCount": 6,
+          "Weight": 200
+        },
+        {
+          "ItemId": "frostcrystal",
+          "StackCount": 1,
+          "Weight": 200
+        }
+      ],
+      "SpecialMerchantOffers": [
+        {
+          "ItemId": "frostmetalsword",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "winterwoodbow",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "winterwoodstaff",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "frostmetaldagger",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "wintercape",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "trollskinjacket",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "frostmetalarmor",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "winterboots",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "wintergloves",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "winterhelm",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "wintershield",
+          "StackCount": 1,
+          "Weight": 90
+        }
+      ],
+      "className": "FrostbitePeaks",
+      "id": "frostbite_peaks",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "bbbe8847ddf669c5a0d58f134350042e5bab21dbb8616e877617029bbde723fc",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\FrostbitePeaks.java"
+    },
+    {
+      "RegularMerchantOffers": [
+        {
+          "ItemId": "spellwovenhide",
+          "StackCount": 6,
+          "Weight": 326
+        },
+        {
+          "ItemId": "animatedscraps",
+          "StackCount": 9,
+          "Weight": 326
+        },
+        {
+          "ItemId": "laroxianfabric",
+          "StackCount": 3,
+          "Weight": 326
+        },
+        {
+          "ItemId": "veilbreaker",
+          "StackCount": 1,
+          "Weight": 11
+        },
+        {
+          "ItemId": "unstablegem",
+          "StackCount": 1,
+          "Weight": 11
+        }
+      ],
+      "SpecialMerchantOffers": [
+        {
+          "ItemId": "spellwovenjacket",
+          "StackCount": 1,
+          "Weight": 90
+        },
+        {
+          "ItemId": "animatedcuirass",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "laroxianrobe",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "animatedsword",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "animatedstaff",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "animateddagger",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "animatedbow",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "animatedhelm",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "animatedbuckler",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "laroxiangloves",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "laroxianboots",
+          "StackCount": 1,
+          "Weight": 91
+        }
+      ],
+      "className": "HiddenCityOfLarox",
+      "id": "hidden_city_of_larox",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "d287692881ae62655c68b515b8cb9215c122c4766fb1a69b082d83352f62293c",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\HiddenCityOfLarox.java"
+    },
+    {
+      "RegularMerchantOffers": [
+        {
+          "ItemId": "mithril",
+          "StackCount": 9,
+          "Weight": 279
+        },
+        {
+          "ItemId": "ancienthide",
+          "StackCount": 9,
+          "Weight": 279
+        },
+        {
+          "ItemId": "ancientmembrane",
+          "StackCount": 9,
+          "Weight": 279
+        },
+        {
+          "ItemId": "poisonousflesh",
+          "StackCount": 1,
+          "Weight": 151
+        },
+        {
+          "ItemId": "kindlequartz",
+          "StackCount": 1,
+          "Weight": 11
+        },
+        {
+          "ItemId": "diamond",
+          "StackCount": 1,
+          "Weight": 1
+        }
+      ],
+      "SpecialMerchantOffers": [
+        {
+          "ItemId": "ancientboots",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "ancientgloves",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "mithrilhelm",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "mithrilshield",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "ancientarmor",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "ancientjacket",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "ancientrobe",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "mithrilsword",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "mithrilbow",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "mithrildagger",
+          "StackCount": 1,
+          "Weight": 100
+        }
+      ],
+      "className": "LostLands",
+      "id": "lost_lands",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "ea81b0c138f7dc2d2ccd55a80b574416ab99cb9abadc0a4698e785c81c5962a5",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\LostLands.java"
+    },
+    {
+      "RegularMerchantOffers": [
+        {
+          "ItemId": "batwing",
+          "StackCount": 6,
+          "Weight": 230
+        },
+        {
+          "ItemId": "cobwebbundle",
+          "StackCount": 5,
+          "Weight": 230
+        },
+        {
+          "ItemId": "obsidianchunk",
+          "StackCount": 6,
+          "Weight": 230
+        },
+        {
+          "ItemId": "battooth",
+          "StackCount": 4,
+          "Weight": 105
+        },
+        {
+          "ItemId": "spiderleg",
+          "StackCount": 4,
+          "Weight": 105
+        },
+        {
+          "ItemId": "eldritchtendril",
+          "StackCount": 2,
+          "Weight": 100
+        }
+      ],
+      "SpecialMerchantOffers": [
+        {
+          "ItemId": "spidergloves",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "spiderboots",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "obsidianhelm",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "obsidianshield",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "spiderrobe",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "nightwingjacket",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "obsidiancuirass",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "obsidiansword",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "obsidiandagger",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "obsidianbow",
+          "StackCount": 1,
+          "Weight": 91
+        },
+        {
+          "ItemId": "obsidianscepter",
+          "StackCount": 1,
+          "Weight": 90
+        }
+      ],
+      "className": "ObsidianMines",
+      "id": "obsidian_mines",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "a399319d4b462a02feb0f24259233e9dab5aa1b0e10ac4edcfea628fc94b8348",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\ObsidianMines.java"
+    },
+    {
+      "RegularMerchantOffers": [
+        {
+          "ItemId": "scrapmetal",
+          "StackCount": 5,
+          "Weight": 200
+        },
+        {
+          "ItemId": "sandstone",
+          "StackCount": 6,
+          "Weight": 200
+        },
+        {
+          "ItemId": "wurmscale",
+          "StackCount": 8,
+          "Weight": 200
+        },
+        {
+          "ItemId": "feather",
+          "StackCount": 5,
+          "Weight": 200
+        },
+        {
+          "ItemId": "metamorphicsand",
+          "StackCount": 10,
+          "Weight": 200
+        }
+      ],
+      "SpecialMerchantOffers": [
+        {
+          "ItemId": "glassknife",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "wurmscalesshield",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "featherrobe",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "wurmscalesgloves",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "scimitar",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "shahuribow",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "ironchainmail",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "wurmscalesjacket",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "wurmscalesboots",
+          "StackCount": 1,
+          "Weight": 100
+        },
+        {
+          "ItemId": "ironhelm",
+          "StackCount": 1,
+          "Weight": 100
+        }
+      ],
+      "className": "TheDesert",
+      "id": "the_desert",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "7b7d18931c663a9b04827df7df9165735bd89a19af0818614fb58470a2232277",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\TheDesert.java"
+    },
+    {
+      "RegularMerchantOffers": [
+        {
+          "ItemId": "silkthread",
+          "StackCount": 8,
+          "Weight": 200
+        },
+        {
+          "ItemId": "goldscraps",
+          "StackCount": 6,
+          "Weight": 160
+        },
+        {
+          "ItemId": "emerald",
+          "StackCount": 1,
+          "Weight": 160
+        },
+        {
+          "ItemId": "ruby",
+          "StackCount": 1,
+          "Weight": 160
+        },
+        {
+          "ItemId": "ivory",
+          "StackCount": 1,
+          "Weight": 160
+        },
+        {
+          "ItemId": "blackooze",
+          "StackCount": 10,
+          "Weight": 160
+        }
+      ],
+      "SpecialMerchantOffers": [
+        {
+          "ItemId": "silkrobe",
+          "StackCount": 1,
+          "Weight": 125
+        },
+        {
+          "ItemId": "beltjacket",
+          "StackCount": 1,
+          "Weight": 125
+        },
+        {
+          "ItemId": "goldenarmor",
+          "StackCount": 1,
+          "Weight": 125
+        },
+        {
+          "ItemId": "goldensword",
+          "StackCount": 1,
+          "Weight": 125
+        },
+        {
+          "ItemId": "goldenboots",
+          "StackCount": 1,
+          "Weight": 125
+        },
+        {
+          "ItemId": "goldengauntlets",
+          "StackCount": 1,
+          "Weight": 125
+        },
+        {
+          "ItemId": "goldenhelm",
+          "StackCount": 1,
+          "Weight": 125
+        },
+        {
+          "ItemId": "goldenshield",
+          "StackCount": 1,
+          "Weight": 125
+        }
+      ],
+      "className": "TheGoldenCity",
+      "id": "the_golden_city",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "c137452181d60334b6a16a40aa74bec028b3fc16bcdb7933303aa3824a97032a",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\TheGoldenCity.java"
+    },
+    {
+      "RegularMerchantOffers": [
+        {
+          "ItemId": "elysianwood",
+          "StackCount": 12,
+          "Weight": 200
+        },
+        {
+          "ItemId": "spitfangscale",
+          "StackCount": 5,
+          "Weight": 200
+        },
+        {
+          "ItemId": "giantshellfragment",
+          "StackCount": 6,
+          "Weight": 200
+        },
+        {
+          "ItemId": "giantmothwing",
+          "StackCount": 5,
+          "Weight": 200
+        },
+        {
+          "ItemId": "fleetfootfabric",
+          "StackCount": 2,
+          "Weight": 100
+        },
+        {
+          "ItemId": "tortoisethorn",
+          "StackCount": 2,
+          "Weight": 100
+        }
+      ],
+      "SpecialMerchantOffers": [],
+      "className": "TheSouthernGrove",
+      "id": "the_southern_grove",
+      "manualRuleRequired": true,
+      "nameKey": null,
+      "parseReasons": [
+        "MANUAL_RULE_REQUIRED"
+      ],
+      "parseStatus": "partial",
+      "recordHash": "ba2a33e3f3dbcf407cafb93cd1653c632d214c922045a1c03fe693c6f64eaa91",
+      "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\places\\dungeons\\TheSouthernGrove.java"
+    }
+  ],
+  "metadata": {
+    "definitionsVersion": "1.0",
+    "generatedAt": "2026-07-17T11:47:00.444917",
+    "recordCount": 11,
+    "schemaVersion": "1.0"
+  }
+}

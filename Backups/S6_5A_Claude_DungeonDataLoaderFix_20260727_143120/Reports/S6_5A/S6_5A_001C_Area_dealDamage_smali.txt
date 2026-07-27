@@ -1,0 +1,593 @@
+====================================================================================================
+METHOD : Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area;->dealDamage(Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity; Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity; Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill; Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;)V
+DEX    : apk_out/classes3.dex
+ACCESS : private
+REGS   : registers=40  ins=5  outs=7
+CODE   : 2204 bytes = 1102 code-units
+NOTE   : Full method, no branch omitted. Called by fightTurn/cast.
+====================================================================================================
+
+offset(hex)  offset(dec)  instruction
+----------------------------------------------------------------------------------------------------
+0x00000         0  move-object/from16 v0, v35
+0x00002         2  move-object/from16 v7, v36
+0x00004         4  move-object/from16 v15, v37
+0x00006         6  move-object/from16 v5, v38
+0x00008         8  move-object/from16 v6, v39
+0x0000a        10  instance-of v4, v7, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;
+0x0000c        12  instance-of v1, v15, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;
+0x0000e        14  if-eqz v5, +00dh
+0x00010        16  invoke-static/range v38, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill;->access$900(Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill;)Ljava/lang/Boolean;
+0x00013        19  move-result-object v3
+0x00014        20  if-eqz v3, +007h
+0x00016        22  invoke-static/range v38, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill;->access$900(Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill;)Ljava/lang/Boolean;
+0x00019        25  move-result-object v3
+0x0001a        26  goto +bh
+0x0001b        27  if-eqz v6, +009h
+0x0001d        29  iget-object v3, v6, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;->forceRange Ljava/lang/Boolean;
+0x0001f        31  if-eqz v3, +005h
+0x00021        33  iget-object v3, v6, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;->forceRange Ljava/lang/Boolean;
+0x00023        35  goto +2h
+0x00024        36  const/4 v3, 0
+0x00025        37  if-eqz v3, +007h
+0x00027        39  invoke-virtual v3, Ljava/lang/Boolean;->booleanValue()Z
+0x0002a        42  move-result v3
+0x0002b        43  goto +5h
+0x0002c        44  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->isRanged()Z
+0x0002f        47  move-result v3
+0x00030        48  if-nez v5, +00ah
+0x00032        50  if-eqz v6, +006h
+0x00034        52  iget-boolean v8, v6, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;->replicatesBasicAttack Z
+0x00036        54  if-eqz v8, +004h
+0x00038        56  const/4 v8, 1
+0x00039        57  goto +2h
+0x0003a        58  const/4 v8, 0
+0x0003b        59  invoke-direct v0, v7, v15, v8, v3, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area;->dodge(Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity; Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity; Z Z)Z
+0x0003e        62  move-result v9
+0x0003f        63  const-wide/16 v11, 1
+0x00041        65  if-eqz v9, +00ah
+0x00043        67  if-eqz v1, +007h
+0x00045        69  sget-object v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/QuestsManager;->hitOrMiss Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/Quest;
+0x00047        71  invoke-static v1, v11, v12, Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/QuestsManager;->increment(Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/Quest; J)V
+0x0004a        74  return-void 
+0x0004b        75  invoke-virtual/range v37, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getPositiveStatusEffects()Ljava/util/List;
+0x0004e        78  move-result-object v9
+0x0004f        79  invoke-interface v9, Ljava/util/List;->iterator()Ljava/util/Iterator;
+0x00052        82  move-result-object v9
+0x00053        83  invoke-interface v9, Ljava/util/Iterator;->hasNext()Z
+0x00056        86  move-result v10
+0x00057        87  if-eqz v10, +034h
+0x00059        89  invoke-interface v9, Ljava/util/Iterator;->next()Ljava/lang/Object;
+0x0005c        92  move-result-object v10
+0x0005d        93  check-cast v10, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;
+0x0005f        95  invoke-virtual v10, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;->getType()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x00062        98  move-result-object v2
+0x00063        99  sget-object v11, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;->DEFENSIVE_STANCE Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x00065       101  if-eq v2, v11, +00eh
+0x00067       103  invoke-virtual v10, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;->getType()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x0006a       106  move-result-object v2
+0x0006b       107  sget-object v11, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;->FALSE_LIFE Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x0006d       109  if-ne v2, v11, +003h
+0x0006f       111  goto +4h
+0x00070       112  const-wide/16 v11, 1
+0x00072       114  goto -1fh
+0x00073       115  invoke-virtual v10, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;->getType()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x00076       118  move-result-object v2
+0x00077       119  sget-object v9, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;->FALSE_LIFE Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x00079       121  if-ne v2, v9, +010h
+0x0007b       123  move-object v2, v15
+0x0007c       124  check-cast v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;
+0x0007e       126  invoke-virtual v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->getDoctrine()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/doctrines/Doctrine;
+0x00081       129  move-result-object v2
+0x00082       130  invoke-virtual v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/doctrines/Doctrine;->damageOnFalseLifeRemoval()I
+0x00085       133  move-result v2
+0x00086       134  move v12, v2
+0x00087       135  move-object v2, v10
+0x00088       136  goto +5h
+0x00089       137  move-object v2, v10
+0x0008a       138  goto +2h
+0x0008b       139  const/4 v2, 0
+0x0008c       140  const/4 v12, 0
+0x0008d       141  const-wide/high16 v17, 4611686018427387904
+0x0008f       143  const-wide/16 v19, 0
+0x00091       145  const-wide v21, 4576918229304087675
+0x00096       150  if-eqz v2, +032h
+0x00098       152  invoke-virtual/range v37, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getPositiveStatusEffects()Ljava/util/List;
+0x0009b       155  move-result-object v1
+0x0009c       156  invoke-interface v1, v2, Ljava/util/List;->remove(Ljava/lang/Object;)Z
+0x0009f       159  if-eqz v8, +00ch
+0x000a1       161  const/16 v1, 31
+0x000a3       163  filled-new-array/range v36 ... v37, [Ljava/lang/Object;
+0x000a6       166  move-result-object v8
+0x000a7       167  invoke-static v0, v1, v8, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Logger;->log(Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area; I [Ljava/lang/Object;)V
+0x000aa       170  goto +ah
+0x000ab       171  const/16 v1, 32
+0x000ad       173  filled-new-array/range v37, [Ljava/lang/Object;
+0x000b0       176  move-result-object v8
+0x000b1       177  invoke-static v0, v1, v8, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Logger;->log(Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area; I [Ljava/lang/Object;)V
+0x000b4       180  invoke-virtual v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;->getType()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x000b7       183  move-result-object v1
+0x000b8       184  filled-new-array v15, v1, [Ljava/lang/Object;
+0x000bb       187  move-result-object v1
+0x000bc       188  const/16 v2, 10
+0x000be       190  invoke-static v0, v2, v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Logger;->log(Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area; I [Ljava/lang/Object;)V
+0x000c1       193  move/from16 v29, v3
+0x000c3       195  move-object v5, v6
+0x000c4       196  move v3, v12
+0x000c5       197  const/4 v14, 0
+0x000c6       198  goto/16 +1e9h
+0x000c8       200  if-eqz v6, +008h
+0x000ca       202  iget-boolean v2, v6, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;->flatDamage Z
+0x000cc       204  if-eqz v2, +004h
+0x000ce       206  const/4 v2, 1
+0x000cf       207  goto +2h
+0x000d0       208  const/4 v2, 0
+0x000d1       209  const-wide/high16 v23, 4607182418800017408
+0x000d3       211  if-eqz v5, +007h
+0x000d5       213  invoke-static/range v38, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill;->access$000(Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill;)D
+0x000d8       216  move-result-wide v8
+0x000d9       217  goto +3h
+0x000da       218  move-wide/from16 v8, v23
+0x000dc       220  if-eqz v6, +00fh
+0x000de       222  iget-boolean v10, v6, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;->fromLivingCompanion Z
+0x000e0       224  if-eqz v10, +00bh
+0x000e2       226  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getLivingCompanionBonusDamage()I
+0x000e5       229  move-result v8
+0x000e6       230  int-to-double v8, v8
+0x000e7       231  mul-double v8, v8, v21
+0x000e9       233  add-double v8, v8, v23
+0x000eb       235  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->isMoreDamageWhenHalfLife()Z
+0x000ee       238  move-result v10
+0x000ef       239  if-eqz v10, +017h
+0x000f1       241  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getCurrentHp()I
+0x000f4       244  move-result v10
+0x000f5       245  int-to-double v10, v10
+0x000f6       246  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->calculateTotalMaxHp()I
+0x000f9       249  move-result v13
+0x000fa       250  int-to-double v14, v13
+0x000fb       251  const-wide/high16 v25, 4602678819172646912
+0x000fd       253  mul-double v14, v14, v25
+0x000ff       255  cmpg-double v10, v10, v14
+0x00101       257  if-gtz v10, +005h
+0x00103       259  const-wide/high16 v10, 4609434218613702656
+0x00105       261  mul-double/2addr v8, v10
+0x00106       262  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->isMoreDamageDealtAndTaken()Z
+0x00109       265  move-result v10
+0x0010a       266  const-wide v13, 4608758678669597082
+0x0010f       271  if-eqz v10, +003h
+0x00111       273  mul-double/2addr v8, v13
+0x00112       274  invoke-virtual/range v37, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->isMoreDamageDealtAndTaken()Z
+0x00115       277  move-result v10
+0x00116       278  if-eqz v10, +003h
+0x00118       280  mul-double/2addr v8, v13
+0x00119       281  if-eqz v2, +005h
+0x0011b       283  move-wide/from16 v10, v23
+0x0011d       285  goto +9h
+0x0011e       286  invoke-virtual/range v37, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getCriticalReduction()D
+0x00121       289  move-result-wide v10
+0x00122       290  invoke-direct v0, v7, v5, v10, v11, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area;->calculateCriticalMultiplier(Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity; Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill; D)D
+0x00125       293  move-result-wide v10
+0x00126       294  if-eqz v4, +029h
+0x00128       296  iget-object v13, v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area;->petExploring Lit/paranoidsquirrels/idleguildmaster/storage/data/pets/Pet;
+0x0012a       298  if-eqz v13, +025h
+0x0012c       300  cmpl-double v14, v10, v23
+0x0012e       302  if-lez v14, +021h
+0x00130       304  invoke-virtual v13, Lit/paranoidsquirrels/idleguildmaster/storage/data/pets/Pet;->getSavage()D
+0x00133       307  move-result-wide v13
+0x00134       308  cmpl-double v13, v13, v19
+0x00136       310  if-lez v13, +019h
+0x00138       312  invoke-static Lit/paranoidsquirrels/idleguildmaster/Utils;->random()D
+0x0013b       315  move-result-wide v13
+0x0013c       316  iget-object v15, v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area;->petExploring Lit/paranoidsquirrels/idleguildmaster/storage/data/pets/Pet;
+0x0013e       318  invoke-virtual v15, Lit/paranoidsquirrels/idleguildmaster/storage/data/pets/Pet;->getSavage()D
+0x00141       321  move-result-wide v25
+0x00142       322  const-wide/high16 v27, 4636737291354636288
+0x00144       324  div-double v25, v25, v27
+0x00146       326  cmpg-double v13, v13, v25
+0x00148       328  if-gez v13, +007h
+0x0014a       330  mul-double/2addr v10, v10
+0x0014b       331  move-wide/from16 v25, v10
+0x0014d       333  const/4 v15, 1
+0x0014e       334  goto +4h
+0x0014f       335  move-wide/from16 v25, v10
+0x00151       337  const/4 v15, 0
+0x00152       338  if-eqz v2, +005h
+0x00154       340  move-wide/from16 v10, v23
+0x00156       342  goto +bh
+0x00157       343  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->calculateTotalDarknessDamageAmplification()D
+0x0015a       346  move-result-wide v10
+0x0015b       347  iget v13, v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area;->localDarkness I
+0x0015d       349  int-to-double v13, v13
+0x0015e       350  mul-double/2addr v10, v13
+0x0015f       351  add-double v10, v10, v23
+0x00161       353  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getPositiveStatusEffects()Ljava/util/List;
+0x00164       356  move-result-object v13
+0x00165       357  invoke-interface v13, Ljava/util/List;->iterator()Ljava/util/Iterator;
+0x00168       360  move-result-object v13
+0x00169       361  move-wide/from16 v27, v23
+0x0016b       363  invoke-interface v13, Ljava/util/Iterator;->hasNext()Z
+0x0016e       366  move-result v14
+0x0016f       367  if-eqz v14, +050h
+0x00171       369  invoke-interface v13, Ljava/util/Iterator;->next()Ljava/lang/Object;
+0x00174       372  move-result-object v14
+0x00175       373  check-cast v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;
+0x00177       375  move/from16 v29, v3
+0x00179       377  invoke-virtual v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;->getType()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x0017c       380  move-result-object v3
+0x0017d       381  move/from16 v30, v12
+0x0017f       383  sget-object v12, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;->DELIRIUM Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x00181       385  if-ne v3, v12, +005h
+0x00183       387  mul-double v27, v27, v17
+0x00185       389  goto +35h
+0x00186       390  invoke-virtual v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;->getType()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x00189       393  move-result-object v3
+0x0018a       394  sget-object v12, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;->SKELETON_KEY Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x0018c       396  if-ne v3, v12, +003h
+0x0018e       398  goto -bh
+0x0018f       399  invoke-virtual v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;->getType()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x00192       402  move-result-object v3
+0x00193       403  sget-object v12, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;->FRENZY Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x00195       405  if-ne v3, v12, +00ah
+0x00197       407  const-wide v31, 4608533498688228557
+0x0019c       412  mul-double v27, v27, v31
+0x0019e       414  goto +1ch
+0x0019f       415  invoke-virtual v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;->getType()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x001a2       418  move-result-object v3
+0x001a3       419  sget-object v12, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;->ANOINTED Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x001a5       421  if-eq v3, v12, +012h
+0x001a7       423  invoke-virtual v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;->getType()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x001aa       426  move-result-object v3
+0x001ab       427  sget-object v12, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;->INSPIRE Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x001ad       429  if-eq v3, v12, +00ah
+0x001af       431  invoke-virtual v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;->getType()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x001b2       434  move-result-object v3
+0x001b3       435  sget-object v12, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;->EXALT Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x001b5       437  if-ne v3, v12, +005h
+0x001b7       439  const-wide/high16 v31, 4608308318706860032
+0x001b9       441  goto -1dh
+0x001ba       442  move/from16 v3, v29
+0x001bc       444  move/from16 v12, v30
+0x001be       446  goto -53h
+0x001bf       447  move/from16 v29, v3
+0x001c1       449  move/from16 v30, v12
+0x001c3       451  invoke-virtual/range v37, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getNegativeStatusEffects()Ljava/util/List;
+0x001c6       454  move-result-object v3
+0x001c7       455  invoke-interface v3, Ljava/util/List;->iterator()Ljava/util/Iterator;
+0x001ca       458  move-result-object v3
+0x001cb       459  invoke-interface v3, Ljava/util/Iterator;->hasNext()Z
+0x001ce       462  move-result v12
+0x001cf       463  if-eqz v12, +015h
+0x001d1       465  invoke-interface v3, Ljava/util/Iterator;->next()Ljava/lang/Object;
+0x001d4       468  move-result-object v12
+0x001d5       469  check-cast v12, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;
+0x001d7       471  invoke-virtual v12, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;->getType()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x001da       474  move-result-object v12
+0x001db       475  sget-object v13, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;->PETRIFY Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x001dd       477  if-ne v12, v13, -012h
+0x001df       479  const-wide v27, 4607632778762754458
+0x001e4       484  if-eqz v6, +00eh
+0x001e6       486  iget-object v3, v6, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;->forceMagic Ljava/lang/Boolean;
+0x001e8       488  if-nez v3, +003h
+0x001ea       490  goto +8h
+0x001eb       491  iget-object v3, v6, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;->forceMagic Ljava/lang/Boolean;
+0x001ed       493  invoke-virtual v3, Ljava/lang/Boolean;->booleanValue()Z
+0x001f0       496  move-result v3
+0x001f1       497  goto +5h
+0x001f2       498  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->isMagic()Z
+0x001f5       501  move-result v3
+0x001f6       502  if-eqz v3, +007h
+0x001f8       504  invoke-virtual/range v35, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area;->magicDamageAmplification()D
+0x001fb       507  move-result-wide v12
+0x001fc       508  goto +3h
+0x001fd       509  move-wide/from16 v12, v23
+0x001ff       511  if-eqz v2, +008h
+0x00201       513  iget v2, v6, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;->damage I
+0x00203       515  move/from16 v31, v15
+0x00205       517  int-to-double v14, v2
+0x00206       518  goto +7h
+0x00207       519  move/from16 v31, v15
+0x00209       521  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->rollAttackDamage()D
+0x0020c       524  move-result-wide v14
+0x0020d       525  sget-object v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;->EXTRA_ATTACK_HP_TO_DAMAGE Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;
+0x0020f       527  if-ne v6, v2, +007h
+0x00211       529  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getCurrentHp()I
+0x00214       532  move-result v2
+0x00215       533  int-to-double v14, v2
+0x00216       534  iget-object v2, v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area;->petExploring Lit/paranoidsquirrels/idleguildmaster/storage/data/pets/Pet;
+0x00218       536  if-eqz v2, +00bh
+0x0021a       538  if-eqz v1, +009h
+0x0021c       540  invoke-virtual v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/pets/Pet;->getBarrier()I
+0x0021f       543  move-result v2
+0x00220       544  move-wide/from16 v32, v14
+0x00222       546  goto +4h
+0x00223       547  move-wide/from16 v32, v14
+0x00225       549  const/4 v2, 0
+0x00226       550  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getPassiveSkill()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Skills;
+0x00229       553  move-result-object v14
+0x0022a       554  sget-object v15, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Skills;->PASSIVE_CHAOTIC Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Skills;
+0x0022c       556  if-ne v14, v15, +01ch
+0x0022e       558  if-eqz v4, +01ah
+0x00230       560  if-eqz v1, +018h
+0x00232       562  move-object v14, v7
+0x00233       563  check-cast v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;
+0x00235       565  invoke-virtual v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->getId()I
+0x00238       568  move-result v14
+0x00239       569  move-object/from16 v15, v37
+0x0023b       571  move-object/from16 v34, v15
+0x0023d       573  check-cast v34, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;
+0x0023f       575  invoke-virtual/range v34, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->getId()I
+0x00242       578  move-result v5
+0x00243       579  if-ne v14, v5, +007h
+0x00245       581  move-wide/from16 v32, v23
+0x00247       583  goto +3h
+0x00248       584  move-object/from16 v15, v37
+0x0024a       586  mul-double v32, v32, v25
+0x0024c       588  mul-double v32, v32, v8
+0x0024e       590  mul-double v32, v32, v10
+0x00250       592  mul-double v32, v32, v27
+0x00252       594  mul-double v9, v32, v12
+0x00254       596  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getArmorIgnored()D
+0x00257       599  move-result-wide v13
+0x00258       600  move-object/from16 v8, v37
+0x0025a       602  const-wide/16 v5, 1
+0x0025c       604  move v11, v3
+0x0025d       605  move/from16 v3, v30
+0x0025f       607  move v12, v2
+0x00260       608  const/4 v2, 1
+0x00261       609  invoke-virtual/range v8 ... v14, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->applyDamage(D Z I D)I
+0x00264       612  move-result v14
+0x00265       613  if-eqz v4, +019h
+0x00267       615  cmpl-double v8, v25, v23
+0x00269       617  if-lez v8, +008h
+0x0026b       619  sget-object v8, Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/QuestsManager;->smartFighter Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/Quest;
+0x0026d       621  int-to-long v9, v14
+0x0026e       622  invoke-static v8, v9, v10, Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/QuestsManager;->increment(Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/Quest; J)V
+0x00271       625  sget-object v8, Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/QuestsManager;->annihilator Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/Quest;
+0x00273       627  int-to-long v9, v14
+0x00274       628  invoke-static v8, v9, v10, Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/QuestsManager;->incrementToValue(Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/Quest; J)V
+0x00277       631  if-nez v1, +007h
+0x00279       633  sget-object v8, Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/QuestsManager;->warrior Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/Quest;
+0x0027b       635  invoke-static v8, v5, v6, Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/QuestsManager;->increment(Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/Quest; J)V
+0x0027e       638  if-eqz v1, +009h
+0x00280       640  if-gt v14, v2, +007h
+0x00282       642  sget-object v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/QuestsManager;->unscathed Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/Quest;
+0x00284       644  invoke-static v1, v5, v6, Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/QuestsManager;->increment(Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/Quest; J)V
+0x00287       647  sget v1, Lit/paranoidsquirrels/idleguildmaster/R$string;->log_damage_dealt I
+0x00289       649  move-object/from16 v5, v39
+0x0028b       651  if-eqz v5, +004h
+0x0028d       653  iget v1, v5, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;->log I
+0x0028f       655  invoke-static v1, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x00292       658  move-result-object v1
+0x00293       659  if-eqz v31, +004h
+0x00295       661  const/4 v13, 2
+0x00296       662  goto +8h
+0x00297       663  cmpl-double v6, v25, v23
+0x00299       665  if-lez v6, +004h
+0x0029b       667  move v13, v2
+0x0029c       668  goto +2h
+0x0029d       669  const/4 v13, 0
+0x0029e       670  invoke-static v13, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x002a1       673  move-result-object v2
+0x002a2       674  invoke-static v14, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x002a5       677  move-result-object v6
+0x002a6       678  filled-new-array v1, v2, v7, v15, v6, [Ljava/lang/Object;
+0x002a9       681  move-result-object v1
+0x002aa       682  const/16 v2, 33
+0x002ac       684  invoke-static v0, v2, v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Logger;->log(Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area; I [Ljava/lang/Object;)V
+0x002af       687  if-eqz v38, +063h
+0x002b1       689  invoke-virtual/range v37, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getCurrentHp()I
+0x002b4       692  move-result v1
+0x002b5       693  int-to-double v1, v1
+0x002b6       694  invoke-virtual/range v37, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->calculateTotalMaxHp()I
+0x002b9       697  move-result v6
+0x002ba       698  int-to-double v8, v6
+0x002bb       699  div-double/2addr v1, v8
+0x002bc       700  invoke-static/range v38, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill;->access$1000(Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill;)D
+0x002bf       703  move-result-wide v8
+0x002c0       704  cmpg-double v1, v1, v8
+0x002c2       706  const/4 v8, 0
+0x002c3       707  if-gez v1, +00eh
+0x002c5       709  invoke-virtual v15, v8, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->setCurrentHp(I)V
+0x002c8       712  const/16 v1, 34
+0x002ca       714  filled-new-array v15, v7, [Ljava/lang/Object;
+0x002cd       717  move-result-object v2
+0x002ce       718  invoke-static v0, v1, v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Logger;->log(Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area; I [Ljava/lang/Object;)V
+0x002d1       721  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getActiveSkill()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Skills;
+0x002d4       724  move-result-object v1
+0x002d5       725  sget-object v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Skills;->ACTIVE_THOUSAND_CUTS Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Skills;
+0x002d7       727  if-ne v1, v2, +011h
+0x002d9       729  invoke-static/range v38, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill;->access$200(Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill;)Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;
+0x002dc       732  move-result-object v1
+0x002dd       733  int-to-double v9, v14
+0x002de       734  const-wide/high16 v11, 4613937818241073152
+0x002e0       736  div-double/2addr v9, v11
+0x002e1       737  invoke-static v9, v10, Lit/paranoidsquirrels/idleguildmaster/Utils;->round(D)I
+0x002e4       740  move-result v2
+0x002e5       741  invoke-virtual v1, v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;->setTurnsLeft(I)V
+0x002e8       744  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getActiveSkill()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Skills;
+0x002eb       747  move-result-object v1
+0x002ec       748  sget-object v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Skills;->ACTIVE_THOUSAND_CUTS_II Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Skills;
+0x002ee       750  if-ne v1, v2, +010h
+0x002f0       752  invoke-static/range v38, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill;->access$200(Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill;)Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;
+0x002f3       755  move-result-object v1
+0x002f4       756  int-to-double v9, v14
+0x002f5       757  div-double v9, v9, v17
+0x002f7       759  invoke-static v9, v10, Lit/paranoidsquirrels/idleguildmaster/Utils;->round(D)I
+0x002fa       762  move-result v2
+0x002fb       763  invoke-virtual v1, v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;->setTurnsLeft(I)V
+0x002fe       766  invoke-static/range v38, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill;->access$100(Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill;)Z
+0x00301       769  move-result v1
+0x00302       770  if-nez v1, +042h
+0x00304       772  invoke-static/range v38, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill;->access$200(Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area$Skill;)Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;
+0x00307       775  move-result-object v1
+0x00308       776  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->calculateIgnoreImmunityToStatus()D
+0x0030b       779  move-result-wide v9
+0x0030c       780  mul-double v9, v9, v21
+0x0030e       782  invoke-virtual v0, v15, v1, v9, v10, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area;->applyStatus(Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity; Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect; D)V
+0x00311       785  goto +33h
+0x00312       786  const/4 v8, 0
+0x00313       787  if-eqz v5, +031h
+0x00315       789  iget-object v1, v5, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;->effect Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;
+0x00317       791  if-eqz v1, +02dh
+0x00319       793  new-instance v9, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;
+0x0031b       795  iget-object v1, v5, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;->effect Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;
+0x0031d       797  invoke-virtual v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;->getType()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x00320       800  move-result-object v2
+0x00321       801  iget-object v1, v5, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;->effect Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;
+0x00323       803  invoke-virtual v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;->getTurnsLeft()I
+0x00326       806  move-result v6
+0x00327       807  iget-object v1, v5, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;->effect Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;
+0x00329       809  invoke-virtual v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;->getProbability()D
+0x0032c       812  move-result-wide v10
+0x0032d       813  move-object v1, v9
+0x0032e       814  move v13, v3
+0x0032f       815  move/from16 v12, v29
+0x00331       817  move-object/from16 v3, v36
+0x00333       819  move/from16 v16, v4
+0x00335       821  move v4, v6
+0x00336       822  move-wide v5, v10
+0x00337       823  invoke-direct/range v1 ... v6, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;-><init>(Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType; Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity; I D)V
+0x0033a       826  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->calculateIgnoreImmunityToStatus()D
+0x0033d       829  move-result-wide v1
+0x0033e       830  mul-double v1, v1, v21
+0x00340       832  invoke-virtual v0, v15, v9, v1, v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area;->applyStatus(Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity; Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect; D)V
+0x00343       835  goto +6h
+0x00344       836  move v13, v3
+0x00345       837  move/from16 v16, v4
+0x00347       839  move/from16 v12, v29
+0x00349       841  iget-object v1, v0, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area;->petExploring Lit/paranoidsquirrels/idleguildmaster/storage/data/pets/Pet;
+0x0034b       843  if-eqz v1, +009h
+0x0034d       845  if-eqz v16, +007h
+0x0034f       847  invoke-virtual v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/pets/Pet;->getLifesteal()D
+0x00352       850  move-result-wide v1
+0x00353       851  goto +3h
+0x00354       852  move-wide/from16 v1, v19
+0x00356       854  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->calculateTotalLifesteal()I
+0x00359       857  move-result v3
+0x0035a       858  int-to-double v3, v3
+0x0035b       859  add-double/2addr v3, v1
+0x0035c       860  mul-double v3, v3, v21
+0x0035e       862  int-to-double v1, v14
+0x0035f       863  mul-double/2addr v3, v1
+0x00360       864  invoke-static v3, v4, Lit/paranoidsquirrels/idleguildmaster/Utils;->round(D)I
+0x00363       867  move-result v1
+0x00364       868  if-eqz v38, +00ch
+0x00366       870  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getActiveSkill()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Skills;
+0x00369       873  move-result-object v2
+0x0036a       874  sget-object v3, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Skills;->ACTIVE_FRAGMENTATION Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Skills;
+0x0036c       876  if-ne v2, v3, +004h
+0x0036e       878  const/16 v1, 1000
+0x00370       880  if-lez v1, +081h
+0x00372       882  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getCurrentHp()I
+0x00375       885  move-result v2
+0x00376       886  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->calculateTotalMaxHp()I
+0x00379       889  move-result v3
+0x0037a       890  add-int v4, v2, v1
+0x0037c       892  invoke-static v3, v4, Ljava/lang/Math;->min(I I)I
+0x0037f       895  move-result v4
+0x00380       896  invoke-virtual v7, v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->setCurrentHp(I)V
+0x00383       899  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getMaxLifestealOverheal()I
+0x00386       902  move-result v5
+0x00387       903  if-lez v5, +02ah
+0x00389       905  sub-int v5, v1, v3
+0x0038b       907  add-int/2addr v5, v2
+0x0038c       908  invoke-static v8, v5, Ljava/lang/Math;->max(I I)I
+0x0038f       911  move-result v5
+0x00390       912  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getCurrentShield()I
+0x00393       915  move-result v6
+0x00394       916  add-int/2addr v6, v5
+0x00395       917  int-to-double v8, v3
+0x00396       918  mul-double v8, v8, v21
+0x00398       920  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getMaxLifestealOverheal()I
+0x0039b       923  move-result v3
+0x0039c       924  int-to-double v10, v3
+0x0039d       925  mul-double/2addr v8, v10
+0x0039e       926  invoke-static v8, v9, Lit/paranoidsquirrels/idleguildmaster/Utils;->round(D)I
+0x003a1       929  move-result v3
+0x003a2       930  invoke-static v6, v3, Ljava/lang/Math;->min(I I)I
+0x003a5       933  move-result v3
+0x003a6       934  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getCurrentShield()I
+0x003a9       937  move-result v5
+0x003aa       938  invoke-static v5, v3, Ljava/lang/Math;->max(I I)I
+0x003ad       941  move-result v3
+0x003ae       942  invoke-virtual v7, v3, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->setCurrentShield(I)V
+0x003b1       945  invoke-static v1, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x003b4       948  move-result-object v3
+0x003b5       949  filled-new-array v7, v3, [Ljava/lang/Object;
+0x003b8       952  move-result-object v3
+0x003b9       953  const/16 v5, 35
+0x003bb       955  invoke-static v0, v5, v3, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Logger;->log(Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area; I [Ljava/lang/Object;)V
+0x003be       958  if-eqz v16, +033h
+0x003c0       960  sget-object v3, Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/QuestsManager;->vampiricThirst Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/Quest;
+0x003c2       962  sub-int/2addr v4, v2
+0x003c3       963  int-to-long v8, v4
+0x003c4       964  invoke-static v3, v8, v9, Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/QuestsManager;->increment(Lit/paranoidsquirrels/idleguildmaster/storage/data/quests/Quest; J)V
+0x003c7       967  move-object v2, v7
+0x003c8       968  check-cast v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;
+0x003ca       970  invoke-virtual v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->getMinionBound()Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;
+0x003cd       973  move-result-object v3
+0x003ce       974  if-eqz v3, +023h
+0x003d0       976  invoke-virtual v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->isHealsMinionBound()Z
+0x003d3       979  move-result v2
+0x003d4       980  if-eqz v2, +01dh
+0x003d6       982  invoke-virtual v3, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->calculateTotalMaxHp()I
+0x003d9       985  move-result v2
+0x003da       986  invoke-virtual v3, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->getCurrentHp()I
+0x003dd       989  move-result v4
+0x003de       990  add-int/2addr v4, v1
+0x003df       991  invoke-static v2, v4, Ljava/lang/Math;->min(I I)I
+0x003e2       994  move-result v2
+0x003e3       995  invoke-virtual v3, v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/adventurers/Adventurer;->setCurrentHp(I)V
+0x003e6       998  invoke-static v1, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+0x003e9      1001  move-result-object v1
+0x003ea      1002  filled-new-array v3, v1, [Ljava/lang/Object;
+0x003ed      1005  move-result-object v1
+0x003ee      1006  invoke-static v0, v5, v1, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Logger;->log(Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area; I [Ljava/lang/Object;)V
+0x003f1      1009  move-object/from16 v8, v39
+0x003f3      1011  if-eqz v8, +006h
+0x003f5      1013  iget-boolean v1, v8, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;->replicatesBasicAttack Z
+0x003f7      1015  if-eqz v1, +04ah
+0x003f9      1017  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->onTargetHitEffects()Ljava/util/List;
+0x003fc      1020  move-result-object v1
+0x003fd      1021  invoke-interface v1, Ljava/util/List;->iterator()Ljava/util/Iterator;
+0x00400      1024  move-result-object v1
+0x00401      1025  invoke-interface v1, Ljava/util/Iterator;->hasNext()Z
+0x00404      1028  move-result v2
+0x00405      1029  if-eqz v2, +012h
+0x00407      1031  invoke-interface v1, Ljava/util/Iterator;->next()Ljava/lang/Object;
+0x0040a      1034  move-result-object v2
+0x0040b      1035  check-cast v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;
+0x0040d      1037  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->calculateIgnoreImmunityToStatus()D
+0x00410      1040  move-result-wide v3
+0x00411      1041  mul-double v3, v3, v21
+0x00413      1043  invoke-virtual v0, v15, v2, v3, v4, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area;->applyStatus(Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity; Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect; D)V
+0x00416      1046  goto -15h
+0x00417      1047  invoke-virtual/range v37, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getCurrentHp()I
+0x0041a      1050  move-result v1
+0x0041b      1051  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getCurrentHp()I
+0x0041e      1054  move-result v2
+0x0041f      1055  if-ge v1, v2, +022h
+0x00421      1057  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getStunChanceOnLowerHp()D
+0x00424      1060  move-result-wide v1
+0x00425      1061  cmpl-double v1, v1, v19
+0x00427      1063  if-lez v1, +01ah
+0x00429      1065  new-instance v9, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;
+0x0042b      1067  sget-object v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;->STUN Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType;
+0x0042d      1069  const/4 v4, 1
+0x0042e      1070  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->getStunChanceOnLowerHp()D
+0x00431      1073  move-result-wide v5
+0x00432      1074  move-object v1, v9
+0x00433      1075  move-object/from16 v3, v36
+0x00435      1077  invoke-direct/range v1 ... v6, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect;-><init>(Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffectType; Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity; I D)V
+0x00438      1080  invoke-virtual/range v36, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;->calculateIgnoreImmunityToStatus()D
+0x0043b      1083  move-result-wide v1
+0x0043c      1084  mul-double v1, v1, v21
+0x0043e      1086  invoke-virtual v0, v15, v9, v1, v2, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area;->applyStatus(Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity; Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/StatusEffect; D)V
+0x00441      1089  invoke-virtual v0, v15, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area;->checkDeath(Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity;)V
+0x00444      1092  if-eqz v8, +006h
+0x00446      1094  iget-boolean v1, v8, Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/EndOfTurnAction;->triggersRetaliation Z
+0x00448      1096  if-eqz v1, +005h
+0x0044a      1098  invoke-direct v0, v7, v15, v12, v13, Lit/paranoidsquirrels/idleguildmaster/storage/data/places/Area;->retaliate(Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity; Lit/paranoidsquirrels/idleguildmaster/storage/data/entities/Entity; Z I)V
+0x0044d      1101  return-void 
+----------------------------------------------------------------------------------------------------
+TOTAL INSTRUCTIONS: 580

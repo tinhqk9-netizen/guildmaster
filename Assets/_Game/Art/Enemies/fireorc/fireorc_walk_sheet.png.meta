@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: ef5d4f4edbd16074b91fb193b3693159
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9210085385211048516
+    second: fireorc_walk_sheet_0
+  - first:
+      213: -3478718215043416195
+    second: fireorc_walk_sheet_1
+  - first:
+      213: 7482684774420706509
+    second: fireorc_walk_sheet_2
+  - first:
+      213: -3999213623393311868
+    second: fireorc_walk_sheet_3
+  - first:
+      213: -7410246403557900875
+    second: fireorc_walk_sheet_4
+  - first:
+      213: 820919433775271312
+    second: fireorc_walk_sheet_5
+  - first:
+      213: 172222098528632921
+    second: fireorc_walk_sheet_6
+  - first:
+      213: 8667348387567031186
+    second: fireorc_walk_sheet_7
+  - first:
+      213: 6684836103057121505
+    second: fireorc_walk_sheet_8
+  - first:
+      213: -8147849343833049482
+    second: fireorc_walk_sheet_9
+  - first:
+      213: -8599459374922957904
+    second: fireorc_walk_sheet_10
+  - first:
+      213: 1386309054294259677
+    second: fireorc_walk_sheet_11
+  - first:
+      213: -637813478755921498
+    second: fireorc_walk_sheet_12
+  - first:
+      213: -4169187914963812672
+    second: fireorc_walk_sheet_13
+  - first:
+      213: 6144638938879668956
+    second: fireorc_walk_sheet_14
+  - first:
+      213: 7526527708898992316
+    second: fireorc_walk_sheet_15
+  - first:
+      213: 8767605007238927996
+    second: fireorc_walk_down_00
+  - first:
+      213: -4450453560643418629
+    second: fireorc_walk_down_01
+  - first:
+      213: -5802144260837430943
+    second: fireorc_walk_down_02
+  - first:
+      213: 5523664569881095248
+    second: fireorc_walk_down_03
+  - first:
+      213: -2398085616035317389
+    second: fireorc_walk_up_00
+  - first:
+      213: 9128471480589811199
+    second: fireorc_walk_up_01
+  - first:
+      213: -4041171601540552939
+    second: fireorc_walk_up_02
+  - first:
+      213: -7033996435952445281
+    second: fireorc_walk_up_03
+  - first:
+      213: 5475312782413314686
+    second: fireorc_walk_left_00
+  - first:
+      213: 6234120456971394831
+    second: fireorc_walk_left_01
+  - first:
+      213: -959014102189362059
+    second: fireorc_walk_left_02
+  - first:
+      213: 908538574245650148
+    second: fireorc_walk_left_03
+  - first:
+      213: -3012116809546155047
+    second: fireorc_walk_right_00
+  - first:
+      213: 963054234597464859
+    second: fireorc_walk_right_01
+  - first:
+      213: 7687105251661723594
+    second: fireorc_walk_right_02
+  - first:
+      213: -7914557102512070072
+    second: fireorc_walk_right_03
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fireorc_walk_down_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7699632d4acca970800000000000000
+      internalID: 8767605007238927996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_walk_down_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf50a7ce010dc32c0800000000000000
+      internalID: -4450453560643418629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_walk_down_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169a63d2984aa7fa0800000000000000
+      internalID: -5802144260837430943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_walk_down_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 768
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c6c2229aff7ac40800000000000000
+      internalID: 5523664569881095248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_walk_up_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 379bd3b76d948bed0800000000000000
+      internalID: -2398085616035317389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_walk_up_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffdf6d66278deae70800000000000000
+      internalID: 9128471480589811199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_walk_up_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51767c5e6dfdae7c0800000000000000
+      internalID: -4041171601540552939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_walk_up_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f98d0bb5289326e90800000000000000
+      internalID: -7033996435952445281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_walk_left_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ab6e557f73cfb40800000000000000
+      internalID: 5475312782413314686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_walk_left_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f96cc968b048650800000000000000
+      internalID: 6234120456971394831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_walk_left_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 574b96051c5e0b2f0800000000000000
+      internalID: -959014102189362059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_walk_left_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eed6a60507cb9c00800000000000000
+      internalID: 908538574245650148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_walk_right_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dbb40978bfc236d0800000000000000
+      internalID: -3012116809546155047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_walk_right_01
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b1e9059b47d5d00800000000000000
+      internalID: 963054234597464859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_walk_right_02
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac736549f751eaa60800000000000000
+      internalID: 7687105251661723594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireorc_walk_right_03
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84229369f38d92290800000000000000
+      internalID: -7914557102512070072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      fireorc_walk_down_00: 8767605007238927996
+      fireorc_walk_down_01: -4450453560643418629
+      fireorc_walk_down_02: -5802144260837430943
+      fireorc_walk_down_03: 5523664569881095248
+      fireorc_walk_left_00: 5475312782413314686
+      fireorc_walk_left_01: 6234120456971394831
+      fireorc_walk_left_02: -959014102189362059
+      fireorc_walk_left_03: 908538574245650148
+      fireorc_walk_right_00: -3012116809546155047
+      fireorc_walk_right_01: 963054234597464859
+      fireorc_walk_right_02: 7687105251661723594
+      fireorc_walk_right_03: -7914557102512070072
+      fireorc_walk_sheet_0: 9210085385211048516
+      fireorc_walk_sheet_1: -3478718215043416195
+      fireorc_walk_sheet_10: -8599459374922957904
+      fireorc_walk_sheet_11: 1386309054294259677
+      fireorc_walk_sheet_12: -637813478755921498
+      fireorc_walk_sheet_13: -4169187914963812672
+      fireorc_walk_sheet_14: 6144638938879668956
+      fireorc_walk_sheet_15: 7526527708898992316
+      fireorc_walk_sheet_2: 7482684774420706509
+      fireorc_walk_sheet_3: -3999213623393311868
+      fireorc_walk_sheet_4: -7410246403557900875
+      fireorc_walk_sheet_5: 820919433775271312
+      fireorc_walk_sheet_6: 172222098528632921
+      fireorc_walk_sheet_7: 8667348387567031186
+      fireorc_walk_sheet_8: 6684836103057121505
+      fireorc_walk_sheet_9: -8147849343833049482
+      fireorc_walk_up_00: -2398085616035317389
+      fireorc_walk_up_01: 9128471480589811199
+      fireorc_walk_up_02: -4041171601540552939
+      fireorc_walk_up_03: -7033996435952445281
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

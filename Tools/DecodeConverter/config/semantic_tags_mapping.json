@@ -1,0 +1,21 @@
+﻿{
+    "damage": "STAT_DAMAGE",
+    "health": "STAT_HP",
+    "mana": "STAT_MP",
+    "price": "PRICE",
+    "icon": "ICON",
+    "iconKey": "ICON",
+    "name": "LOCALIZATION_NAME",
+    "nameKey": "LOCALIZATION_NAME",
+    "description": "LOCALIZATION_DESCRIPTION",
+    "descriptionKey": "LOCALIZATION_DESCRIPTION",
+    "skill": "SKILL_REFERENCE",
+    "enemy": "ENEMY_REFERENCE",
+    "item": "ITEM_REFERENCE",
+    "rarity": "RARITY",
+    "level": "LEVEL",
+    "maxLevel": "MAX_LEVEL",
+    "type": "TYPE",
+    "amount": "AMOUNT",
+    "probability": "PROBABILITY"
+}
