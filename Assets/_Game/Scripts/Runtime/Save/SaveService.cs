@@ -11,12 +11,16 @@ namespace GuildMaster.Runtime.Save
         private readonly string _backupFilePath;
 
         public SaveData CurrentData { get; private set; }
+        public SaveLoadResult LastLoadStatus { get; private set; }
+
+        public event Action OnSaveStarted;
+        public event Action<bool> OnSaveCompleted;
 
         public SaveService()
         {
             _saveFilePath = Path.Combine(Application.persistentDataPath, "save.json");
             _backupFilePath = Path.Combine(Application.persistentDataPath, "save_backup.json");
-            CurrentData = new SaveData();
+            CurrentData = SaveData.CreateDefault();
         }
 
         public bool HasSaveFile()
@@ -30,8 +34,9 @@ namespace GuildMaster.Runtime.Save
             if (!HasSaveFile())
             {
                 // Fallback to empty save
-                CurrentData = new SaveData();
+                CurrentData = SaveData.CreateDefault();
                 CurrentData.NormalizeAfterLoad();
+                LastLoadStatus = SaveLoadResult.FreshNewGame;
                 return true;
             }
 
@@ -55,6 +60,7 @@ namespace GuildMaster.Runtime.Save
                 }
 
                 CurrentData = loadedData;
+                LastLoadStatus = SaveLoadResult.PrimaryLoaded;
                 return true;
             }
             catch (Exception ex)
@@ -69,21 +75,24 @@ namespace GuildMaster.Runtime.Save
                     try
                     {
                         string jsonBackup = File.ReadAllText(_backupFilePath);
-                        CurrentData = JsonUtility.FromJson<SaveData>(jsonBackup) ?? new SaveData();
+                        CurrentData = JsonUtility.FromJson<SaveData>(jsonBackup) ?? SaveData.CreateDefault();
                         CurrentData.NormalizeAfterLoad();
+                        LastLoadStatus = SaveLoadResult.BackupLoaded;
                         return true;
                     }
                     catch (Exception backupEx)
                     {
                         Debug.LogError($"[SaveService] Failed to load backup save: {backupEx.Message}");
-                        CurrentData = new SaveData(); // Fallback to empty
+                        CurrentData = SaveData.CreateDefault(); // Fallback to empty
                         CurrentData.NormalizeAfterLoad();
+                        LastLoadStatus = SaveLoadResult.FreshAfterCorruption;
                         return false;
                     }
                 }
                 
-                CurrentData = new SaveData(); // Fallback to empty
+                CurrentData = SaveData.CreateDefault(); // Fallback to empty
                 CurrentData.NormalizeAfterLoad();
+                LastLoadStatus = SaveLoadResult.FreshAfterCorruption;
                 return false;
             }
         }
@@ -91,6 +100,9 @@ namespace GuildMaster.Runtime.Save
         public bool Save(out Exception error)
         {
             error = null;
+            bool success = false;
+            OnSaveStarted?.Invoke();
+            
             try
             {
                 if (CurrentData.Metadata == null)
@@ -111,6 +123,7 @@ namespace GuildMaster.Runtime.Save
                 }
 
                 File.WriteAllText(_saveFilePath, json);
+                success = true;
                 return true;
             }
             catch (Exception ex)
@@ -118,6 +131,10 @@ namespace GuildMaster.Runtime.Save
                 Debug.LogError($"[SaveService] Failed to save game: {ex.Message}");
                 error = ex;
                 return false;
+            }
+            finally
+            {
+                OnSaveCompleted?.Invoke(success);
             }
         }
 
@@ -131,7 +148,7 @@ namespace GuildMaster.Runtime.Save
             {
                 File.Delete(_backupFilePath);
             }
-            CurrentData = new SaveData();
+            CurrentData = SaveData.CreateDefault();
         }
 
         private void MigrateSave(SaveData oldData)

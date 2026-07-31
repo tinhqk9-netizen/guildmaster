@@ -1,0 +1,835 @@
+{
+  "files_opened": 158,
+  "cs_files": [
+    "Assets\\_Game\\Scripts\\ForceRefresh.cs",
+    "Assets\\_Game\\Scripts\\ForceRefresh2.cs",
+    "Assets\\_Game\\Scripts\\Bootstrap\\Bootstrapper.cs",
+    "Assets\\_Game\\Scripts\\Database\\DatabaseBuilder.cs",
+    "Assets\\_Game\\Scripts\\Database\\DatabaseBuildReport.cs",
+    "Assets\\_Game\\Scripts\\Database\\EnemyDropTableLoader.cs",
+    "Assets\\_Game\\Scripts\\Database\\GameDatabase.cs",
+    "Assets\\_Game\\Scripts\\Definitions\\AdventurerDefinition.cs",
+    "Assets\\_Game\\Scripts\\Definitions\\DefinitionBase.cs",
+    "Assets\\_Game\\Scripts\\Definitions\\DungeonDefinition.cs",
+    "Assets\\_Game\\Scripts\\Definitions\\EnemyDefinition.cs",
+    "Assets\\_Game\\Scripts\\Definitions\\ItemDefinition.cs",
+    "Assets\\_Game\\Scripts\\Definitions\\ItemEnums.cs",
+    "Assets\\_Game\\Scripts\\Definitions\\PetDefinition.cs",
+    "Assets\\_Game\\Scripts\\Definitions\\QuestDefinition.cs",
+    "Assets\\_Game\\Scripts\\Definitions\\RaidDefinition.cs",
+    "Assets\\_Game\\Scripts\\Definitions\\RecipeDefinition.cs",
+    "Assets\\_Game\\Scripts\\Definitions\\SkillDefinition.cs",
+    "Assets\\_Game\\Scripts\\Definitions\\StatusEffectDefinition.cs",
+    "Assets\\_Game\\Scripts\\Definitions\\Enums\\CombatResult.cs",
+    "Assets\\_Game\\Scripts\\Definitions\\Enums\\StatusEffectType.cs",
+    "Assets\\_Game\\Scripts\\Editor\\AssetCatalogBuilder.cs",
+    "Assets\\_Game\\Scripts\\Editor\\AssetDatabaseVerifier.cs",
+    "Assets\\_Game\\Scripts\\Editor\\AssetImportPresets.cs",
+    "Assets\\_Game\\Scripts\\Editor\\GuildMasterUnifiedApply.cs",
+    "Assets\\_Game\\Scripts\\Editor\\GuildMasterValidate.cs",
+    "Assets\\_Game\\Scripts\\Editor\\SpriteSheetSlicer.cs",
+    "Assets\\_Game\\Scripts\\Editor\\TilesetSheetSlicer.cs",
+    "Assets\\_Game\\Scripts\\Editor\\UIFoundationGenerator.cs",
+    "Assets\\_Game\\Scripts\\Editor\\UIHierarchyOrganizer.cs",
+    "Assets\\_Game\\Scripts\\Editor\\UIScreenLayoutBuilder.cs",
+    "Assets\\_Game\\Scripts\\Editor\\UIScreenPreviewTool.cs",
+    "Assets\\_Game\\Scripts\\Editor\\UIWiringGenerator.cs",
+    "Assets\\_Game\\Scripts\\Infrastructure\\DataProviders\\EditorExternalGameDataProvider.cs",
+    "Assets\\_Game\\Scripts\\Infrastructure\\DataProviders\\IGameDataProvider.cs",
+    "Assets\\_Game\\Scripts\\Infrastructure\\DataProviders\\StreamingAssetsGameDataProvider.cs",
+    "Assets\\_Game\\Scripts\\Infrastructure\\Serialization\\IJsonSerializer.cs",
+    "Assets\\_Game\\Scripts\\Infrastructure\\Serialization\\UnityJsonSerializer.cs",
+    "Assets\\_Game\\Scripts\\Loaders\\DTOs\\DefinitionFile.cs",
+    "Assets\\_Game\\Scripts\\Loaders\\DTOs\\ManifestDefinition.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Assets\\AssetCatalog.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Boot\\BootSceneLoader.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Boot\\Bootstrapper.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Boot\\UIRuntimeBootstrap.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Core\\DefaultInstanceIdGenerator.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Core\\GameLoopRunner.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Core\\IInstanceIdGenerator.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Core\\RuntimeFactory.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Formulas\\DecodeMath.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Formulas\\FormulaService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Formulas\\IFormulaService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Models\\CharacterRuntime.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Models\\CraftResult.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Models\\DungeonRuntime.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Models\\EnemyRuntime.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Models\\ItemRuntime.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Models\\MerchantResult.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Models\\OfflineProgressResult.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Models\\QuestRuntime.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Models\\SkillRuntime.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Models\\StatusEffectRuntime.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Save\\ActiveDungeonSaveData.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Save\\CombatEncounterSaveData.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Save\\DungeonActionState.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Save\\ISaveService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\CharacterService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\CombatService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\CraftService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\DoctrineService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\DungeonService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\EnemyService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\EquipmentService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\GameLoopService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ICharacterService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ICombatService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ICraftService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IDoctrineService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IDungeonService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IEquipmentService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IGameLoopService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IInventoryService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IItemService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ILootService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IMerchantService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\InventoryService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IOfflineProgressService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IQuestService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ISettingsService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ITargetSelectionService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ITavernService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ItemService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\LootService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\MerchantService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\OfflineProgressService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\QuestService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ServiceContainer.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\SettingsService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\SkillService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\StatusEffectService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\TargetSelectionService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\TavernService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\UIScreenId.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\Character\\CharacterScreen.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\Core\\IUIService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\Core\\SafeArea.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\Core\\UICardFactory.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\Core\\UIScreen.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\Core\\UIService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\Core\\UITemporaryTheme.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\Craft\\CraftScreen.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\Dungeon\\DungeonScreen.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\HUD\\HUDController.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\Inventory\\InventoryScreen.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\Merchant\\MerchantScreen.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\Popup\\PopupScreen.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\Quest\\QuestScreen.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\Settings\\SettingsScreen.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\Tavern\\TavernScreen.cs",
+    "Assets\\_Game\\Scripts\\Services\\AssetManifestService.cs",
+    "Assets\\_Game\\Scripts\\Services\\DatabaseService.cs",
+    "Assets\\_Game\\Scripts\\Services\\LocalizationService.cs",
+    "Assets\\_Game\\Scripts\\Tests\\GuildMasterAutomatedTestsRunner.cs",
+    "Assets\\_Game\\Scripts\\Tests\\EditMode\\DatabaseTests.cs",
+    "Assets\\_Game\\Scripts\\Tests\\EditMode\\S2VerificationTests.cs",
+    "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_DungeonDataIntegrityTests.cs",
+    "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage10_SettingsTests.cs",
+    "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage11_OfflineTests.cs",
+    "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage1_FoundationTests.cs",
+    "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage2_ServiceWiringTests.cs",
+    "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage3_TavernTests.cs",
+    "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage4_CharacterTests.cs",
+    "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage5_InventoryTests.cs",
+    "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage6_CraftTests.cs",
+    "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage7_MerchantTests.cs",
+    "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage8_DungeonCombatTests.cs",
+    "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage9_QuestTests.cs",
+    "Assets\\_Game\\Scripts\\Tests\\Editor\\S3B2DDataImportTests.cs",
+    "Assets\\_Game\\Scripts\\Tests\\Editor\\SceneFixer.cs",
+    "Assets\\_Game\\Scripts\\Tests\\Editor\\SmokeTestRunner.cs",
+    "Assets\\_Game\\Scripts\\Tests\\PlayMode\\S6_5A_DungeonCombatLootActionTests.cs",
+    "Assets\\_Game\\Scripts\\Tests\\PlayMode\\S6_5A_PlayerFacingUIActionTests.cs",
+    "Assets\\_Game\\Scripts\\Tests\\PlayMode\\S6_5A_RuntimeActionSmokeTest.cs",
+    "Assets\\_Game\\Scripts\\Tests\\PlayMode\\S6_5A_RuntimeSmokeTest.cs"
+  ],
+  "tests_discovered": 87,
+  "editmode_tests": [
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\EditMode\\DatabaseTests.cs",
+      "count": 5
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\EditMode\\S2VerificationTests.cs",
+      "count": 4
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_DungeonDataIntegrityTests.cs",
+      "count": 7
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage10_SettingsTests.cs",
+      "count": 2
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage11_OfflineTests.cs",
+      "count": 2
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage1_FoundationTests.cs",
+      "count": 37
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage2_ServiceWiringTests.cs",
+      "count": 5
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage3_TavernTests.cs",
+      "count": 4
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage4_CharacterTests.cs",
+      "count": 3
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage5_InventoryTests.cs",
+      "count": 3
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage6_CraftTests.cs",
+      "count": 2
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage7_MerchantTests.cs",
+      "count": 4
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage8_DungeonCombatTests.cs",
+      "count": 2
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage9_QuestTests.cs",
+      "count": 2
+    }
+  ],
+  "playmode_tests": [
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\PlayMode\\S6_5A_DungeonCombatLootActionTests.cs",
+      "count": 1
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\PlayMode\\S6_5A_PlayerFacingUIActionTests.cs",
+      "count": 1
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\PlayMode\\S6_5A_RuntimeActionSmokeTest.cs",
+      "count": 1
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\PlayMode\\S6_5A_RuntimeSmokeTest.cs",
+      "count": 1
+    }
+  ],
+  "save_fields": [
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\ActiveDungeonSaveData.cs",
+      "field": "DungeonDefinitionId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\ActiveDungeonSaveData.cs",
+      "field": "Progress"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\ActiveDungeonSaveData.cs",
+      "field": "MaxProgress"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\ActiveDungeonSaveData.cs",
+      "field": "LocalDarkness"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\CombatEncounterSaveData.cs",
+      "field": "DefinitionId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\CombatEncounterSaveData.cs",
+      "field": "CurrentHp"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\CombatEncounterSaveData.cs",
+      "field": "CurrentMana"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\CombatEncounterSaveData.cs",
+      "field": "CurrentShield"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\CombatEncounterSaveData.cs",
+      "field": "TurnsFighting"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\CombatEncounterSaveData.cs",
+      "field": "SavedActingEntityId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "SaveVersion"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "SaveTimeUnix"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "GameVersion"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "DataVersion"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "DefinitionId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "InstanceId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "StackCount"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "IsLocked"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "SourceInstanceId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "TurnsLeft"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "DefinitionId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "InstanceId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "Level"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "Exp"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "CurrentHp"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "WeaponInstanceId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "ArmorInstanceId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "AccessoryInstanceId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "IsAscended"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "DefinitionId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "InstanceId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "State"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "Progress"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "DefinitionId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "InstanceId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "State"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "ClearCount"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "BestTimeSeconds"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "DefinitionId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "InstanceId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "Level"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "CurrentCooldown"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "DefinitionId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "InstanceId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "StackCount"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "SecondsPassed"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "DefinitionId"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "StackCount"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "Price"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "IsGems"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "Metadata"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "LevelStorage"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "UpgradeStorage"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "Money"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "Gems"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "LevelWorkshopTime"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "LevelMarketTime"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "StarterPackPurchased"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "AdventurerPackPurchased"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "MerchantPackPurchased"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "ImperialVanguardPurchased"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "UnholyCrusadePurchased"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "LastAccess"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "LastHourTriggered"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "Last24Triggered"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "LastWeekTriggered"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "NextTavernVisit"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "TavernLocked"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "TutorialStep"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "LevelQuarters"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "UpgradeQuarters"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "LevelTavernCapacity"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "UpgradeTavernCapacity"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "LevelTavernTime"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "UpgradeTavernTime"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "UpgradeWorkshopTime"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "LevelWorkshopQueue"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "UpgradeWorkshopQueue"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "UpgradeMarketTime"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "LevelMarketListings"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "UpgradeMarketQueue"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "LevelShelter"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "UpgradeShelter"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "LevelShelterAutofeed"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "AfflictionLevel"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "AfflictionProgress"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "ControlLevel"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "ControlProgress"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "FortitudeLevel"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "FortitudeProgress"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "GraceLevel"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "GraceProgress"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "IllusionLevel"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "IllusionProgress"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "KnowledgeLevel"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "KnowledgeProgress"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "RuinLevel"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "RuinProgress"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "WarLevel"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "WarProgress"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "DoctrineMaxed"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "NewMerchantRegularItems"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "NewMerchantSpecialItems"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "QuestsSeen"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "QuestsRefreshed"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "QuestsCompleted"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "SettingAutoOpenDungeonDetail"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "SettingColorblindMode"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "SettingConfirmRetreat"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "SettingConfirmSwap"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "SettingConfirmUpgrade"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "SettingCraftMaxAmount"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "SettingSellMaxAmount"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "SettingVerboseLogs"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "SettingsNotifications"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "SettingsCloud"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "SettingsSound"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "SettingsMusic"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "SettingsVibration"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "ItemsCrafted"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "ItemsSold"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "MaxWealth"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "MaxAdventurerTier"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "field": "MaxAdventurersOwned"
+    }
+  ],
+  "save_methods": [
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "method": "NormalizeAfterLoad"
+    }
+  ],
+  "offline_methods": [
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Services\\OfflineProgressService.cs",
+      "method": "CalculateOfflineDeltaSeconds"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Runtime\\Services\\OfflineProgressService.cs",
+      "method": "ApplyOfflineProgress"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage11_OfflineTests.cs",
+      "method": "Setup"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage11_OfflineTests.cs",
+      "method": "OfflineProgressService_CalculateOfflineDeltaSeconds_CapsAt12Hours"
+    },
+    {
+      "file": "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage11_OfflineTests.cs",
+      "method": "OfflineProgressService_ApplyOfflineProgress_SimulatesCraftAndMarketAndUpdatesSaveTime"
+    }
+  ],
+  "bootstrap_classes": [
+    "Assets\\_Game\\Scripts\\Bootstrap\\Bootstrapper.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Boot\\Bootstrapper.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Boot\\UIRuntimeBootstrap.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Core\\GameLoopRunner.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Formulas\\FormulaService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Formulas\\IFormulaService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Save\\ISaveService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Save\\SaveService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\CharacterService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\CombatService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\CraftService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\DoctrineService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\DungeonService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\EnemyService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\EquipmentService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\GameLoopService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ICharacterService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ICombatService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ICraftService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IDoctrineService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IDungeonService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IEquipmentService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IGameLoopService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IInventoryService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IItemService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ILootService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IMerchantService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\InventoryService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IOfflineProgressService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\IQuestService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ISettingsService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ITargetSelectionService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ITavernService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ItemService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\LootService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\MerchantService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\OfflineProgressService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\QuestService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ServiceContainer.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\SettingsService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\SkillService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\StatusEffectService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\TargetSelectionService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\TavernService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\Core\\IUIService.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\UI\\Core\\UIService.cs",
+    "Assets\\_Game\\Scripts\\Services\\AssetManifestService.cs",
+    "Assets\\_Game\\Scripts\\Services\\DatabaseService.cs",
+    "Assets\\_Game\\Scripts\\Services\\LocalizationService.cs",
+    "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage2_ServiceWiringTests.cs"
+  ],
+  "service_locators": [
+    "Assets\\_Game\\Scripts\\Runtime\\Boot\\Bootstrapper.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Boot\\UIRuntimeBootstrap.cs",
+    "Assets\\_Game\\Scripts\\Runtime\\Services\\ServiceContainer.cs",
+    "Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage2_ServiceWiringTests.cs"
+  ],
+  "data_files": [
+    "Assets\\StreamingAssets\\GameData\\adventurers.json",
+    "Assets\\StreamingAssets\\GameData\\assets_manifest.json",
+    "Assets\\StreamingAssets\\GameData\\dungeons.json",
+    "Assets\\StreamingAssets\\GameData\\enemies.json",
+    "Assets\\StreamingAssets\\GameData\\items.json",
+    "Assets\\StreamingAssets\\GameData\\localization.json",
+    "Assets\\StreamingAssets\\GameData\\manifest.json",
+    "Assets\\StreamingAssets\\GameData\\pets.json",
+    "Assets\\StreamingAssets\\GameData\\quests.json",
+    "Assets\\StreamingAssets\\GameData\\raids.json",
+    "Assets\\StreamingAssets\\GameData\\recipes.json",
+    "Assets\\StreamingAssets\\GameData\\skills.json",
+    "Assets\\StreamingAssets\\GameData\\status_effects.json"
+  ],
+  "scenes": [
+    "Assets\\Scenes\\SampleScene.unity",
+    "Assets\\Settings\\Scenes\\URP2DSceneTemplate.unity",
+    "Assets\\_Game\\Scenes\\Boot 1.unity",
+    "Assets\\_Game\\Scenes\\Boot.unity",
+    "Assets\\_Game\\Scenes\\Main 1.unity",
+    "Assets\\_Game\\Scenes\\Main.unity"
+  ],
+  "prefabs": []
+}

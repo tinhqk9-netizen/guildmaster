@@ -1,0 +1,956 @@
+{
+  "entries": [
+    {
+      "id": "active_deterrent",
+      "className": "ActiveDeterrent",
+      "defaultRarity": 3,
+      "targetProgressValues": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "and_stay_dead",
+      "className": "AndStayDead",
+      "defaultRarity": 2,
+      "targetProgressValues": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "id": "annihilator",
+      "className": "Annihilator",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ]
+    },
+    {
+      "id": "botched_ritual",
+      "className": "BotchedRitual",
+      "defaultRarity": 2,
+      "targetProgressValues": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "id": "clash_of_titans",
+      "className": "ClashOfTitans",
+      "defaultRarity": 2,
+      "targetProgressValues": [
+        -150,
+        -125,
+        -100,
+        -75,
+        -50,
+        -25,
+        0,
+        25,
+        50,
+        75
+      ]
+    },
+    {
+      "id": "conqueror",
+      "className": "Conqueror",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        0,
+        1500,
+        3000,
+        4500,
+        6000,
+        7500,
+        9000,
+        10500,
+        12000,
+        13500
+      ]
+    },
+    {
+      "id": "coup_d_etat",
+      "className": "CoupDEtat",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "id": "critical_hit",
+      "className": "CriticalHit",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100,
+        100
+      ]
+    },
+    {
+      "id": "crystal_clear",
+      "className": "CrystalClear",
+      "defaultRarity": 3,
+      "targetProgressValues": [
+        -75,
+        -50,
+        -25,
+        0,
+        25,
+        50,
+        75,
+        100,
+        125,
+        150
+      ]
+    },
+    {
+      "id": "darkness_within",
+      "className": "DarknessWithin",
+      "defaultRarity": 4,
+      "targetProgressValues": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "delirious",
+      "className": "Delirious",
+      "defaultRarity": 4,
+      "targetProgressValues": [
+        25,
+        50,
+        75,
+        100,
+        125,
+        150,
+        175,
+        200,
+        225,
+        250
+      ]
+    },
+    {
+      "id": "eldritch_horror",
+      "className": "EldritchHorror",
+      "defaultRarity": 2,
+      "targetProgressValues": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "id": "endless_agony",
+      "className": "EndlessAgony",
+      "defaultRarity": 2,
+      "targetProgressValues": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "id": "exorcism",
+      "className": "Exorcism",
+      "defaultRarity": 4,
+      "targetProgressValues": [
+        20,
+        40,
+        60,
+        80,
+        100,
+        120,
+        140,
+        160,
+        180,
+        200
+      ]
+    },
+    {
+      "id": "expert_duelist",
+      "className": "ExpertDuelist",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        -3000,
+        -1500,
+        0,
+        1500,
+        3000,
+        4500,
+        6000,
+        7500,
+        9000,
+        10500
+      ]
+    },
+    {
+      "id": "falling_apart",
+      "className": "FallingApart",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        -40000,
+        -30000,
+        -20000,
+        -10000,
+        0,
+        10000,
+        20000,
+        30000,
+        40000,
+        50000
+      ]
+    },
+    {
+      "id": "fast_learner",
+      "className": "FastLearner",
+      "defaultRarity": 3,
+      "targetProgressValues": [
+        100,
+        200,
+        300,
+        400,
+        500,
+        600,
+        700,
+        800,
+        900,
+        1000
+      ]
+    },
+    {
+      "id": "from_hell",
+      "className": "FromHell",
+      "defaultRarity": 2,
+      "targetProgressValues": [
+        -30,
+        -25,
+        -20,
+        -15,
+        -10,
+        -5,
+        0,
+        5,
+        10,
+        15
+      ]
+    },
+    {
+      "id": "god_feared",
+      "className": "GodFeared",
+      "defaultRarity": 4,
+      "targetProgressValues": [
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300,
+        300
+      ]
+    },
+    {
+      "id": "heavy_armor",
+      "className": "HeavyArmor",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        500,
+        850,
+        1445,
+        2456,
+        4176,
+        7099,
+        12069,
+        20517,
+        34879,
+        59294
+      ]
+    },
+    {
+      "id": "hit_or_miss",
+      "className": "HitOrMiss",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        100,
+        150,
+        225,
+        338,
+        506,
+        759,
+        1139,
+        1709,
+        2563,
+        3844
+      ]
+    },
+    {
+      "id": "ice_breaker",
+      "className": "IceBreaker",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        -20,
+        -15,
+        -10,
+        -5,
+        0,
+        5,
+        10,
+        15,
+        20,
+        25
+      ]
+    },
+    {
+      "id": "innocence",
+      "className": "Innocence",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        -55,
+        -45,
+        -35,
+        -25,
+        -15,
+        -5,
+        5,
+        15,
+        25,
+        35
+      ]
+    },
+    {
+      "id": "its_a_trap",
+      "className": "ItsATrap",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        20,
+        40,
+        60,
+        80,
+        100,
+        120,
+        140,
+        160,
+        180,
+        200
+      ]
+    },
+    {
+      "id": "laroxian_power",
+      "className": "LaroxianPower",
+      "defaultRarity": 4,
+      "targetProgressValues": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "id": "light_bringer",
+      "className": "LightBringer",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        21,
+        24,
+        27
+      ]
+    },
+    {
+      "id": "long_march",
+      "className": "LongMarch",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        500,
+        3000,
+        6000,
+        9000,
+        12000,
+        15000,
+        18000,
+        21000,
+        24000,
+        27000
+      ]
+    },
+    {
+      "id": "lucky_roll",
+      "className": "LuckyRoll",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        50,
+        100,
+        150,
+        200,
+        250,
+        300,
+        350,
+        400,
+        450,
+        500
+      ]
+    },
+    {
+      "id": "marathon",
+      "className": "Marathon",
+      "defaultRarity": 4,
+      "targetProgressValues": [
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60,
+        60
+      ]
+    },
+    {
+      "id": "master_crafter",
+      "className": "MasterCrafter",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "medic",
+      "className": "Medic",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        10000,
+        25000,
+        40000,
+        55000,
+        70000,
+        85000,
+        100000,
+        115000,
+        130000,
+        145000
+      ]
+    },
+    {
+      "id": "miracle",
+      "className": "Miracle",
+      "defaultRarity": 3,
+      "targetProgressValues": [
+        -5,
+        -4,
+        -3,
+        -2,
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "myopia",
+      "className": "Myopia",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        0,
+        50,
+        100,
+        150,
+        200,
+        250,
+        300,
+        350,
+        400,
+        450
+      ]
+    },
+    {
+      "id": "nice_try",
+      "className": "NiceTry",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "paleontologist",
+      "className": "Paleontologist",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10
+      ]
+    },
+    {
+      "id": "protector",
+      "className": "Protector",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        10000,
+        70000,
+        130000,
+        190000,
+        250000,
+        310000,
+        370000,
+        430000,
+        490000,
+        550000
+      ]
+    },
+    {
+      "id": "psychiatrist",
+      "className": "Psychiatrist",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ]
+    },
+    {
+      "id": "pulverization",
+      "className": "Pulverization",
+      "defaultRarity": 3,
+      "targetProgressValues": [
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000,
+        1000
+      ]
+    },
+    {
+      "id": "raging_volcano",
+      "className": "RagingVolcano",
+      "defaultRarity": 4,
+      "targetProgressValues": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "id": "regicide",
+      "className": "Regicide",
+      "defaultRarity": 2,
+      "targetProgressValues": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "id": "shocking",
+      "className": "Shocking",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        -100,
+        -50,
+        0,
+        50,
+        100,
+        150,
+        200,
+        250,
+        300,
+        350
+      ]
+    },
+    {
+      "id": "slow_burn",
+      "className": "SlowBurn",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        -5000,
+        -2500,
+        0,
+        2500,
+        5000,
+        7500,
+        10000,
+        12500,
+        15000,
+        17500
+      ]
+    },
+    {
+      "id": "smart_fighter",
+      "className": "SmartFighter",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        1000,
+        20000,
+        30000,
+        40000,
+        50000,
+        60000,
+        70000,
+        80000,
+        90000,
+        100000
+      ]
+    },
+    {
+      "id": "smoking_hot",
+      "className": "SmokingHot",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        -200,
+        -100,
+        0,
+        100,
+        200,
+        300,
+        400,
+        500,
+        600,
+        700
+      ]
+    },
+    {
+      "id": "soft_and_fluffy",
+      "className": "SoftAndFluffy",
+      "defaultRarity": 2,
+      "targetProgressValues": [
+        -5,
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40
+      ]
+    },
+    {
+      "id": "soothing_remedy",
+      "className": "SoothingRemedy",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        -8000,
+        -6000,
+        -4000,
+        -2000,
+        0,
+        2000,
+        4000,
+        6000,
+        8000,
+        10000
+      ]
+    },
+    {
+      "id": "speedy_hare",
+      "className": "SpeedyHare",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        -90,
+        -70,
+        -50,
+        -30,
+        -10,
+        10,
+        30,
+        50,
+        70,
+        90
+      ]
+    },
+    {
+      "id": "spiky",
+      "className": "Spiky",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        10000,
+        20000,
+        30000,
+        40000,
+        50000,
+        60000,
+        70000,
+        80000,
+        90000,
+        100000
+      ]
+    },
+    {
+      "id": "student",
+      "className": "Student",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        1000,
+        7500,
+        11250,
+        16875,
+        25312,
+        37969,
+        56953,
+        85430,
+        128145,
+        192217
+      ]
+    },
+    {
+      "id": "tabula_rasa",
+      "className": "TabulaRasa",
+      "defaultRarity": 3,
+      "targetProgressValues": [
+        -10,
+        0,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80
+      ]
+    },
+    {
+      "id": "thalassophobia",
+      "className": "Thalassophobia",
+      "defaultRarity": 4,
+      "targetProgressValues": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "id": "the_end",
+      "className": "TheEnd",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        15,
+        30,
+        45,
+        60,
+        75,
+        90,
+        105,
+        120,
+        135,
+        150
+      ]
+    },
+    {
+      "id": "tormentor",
+      "className": "Tormentor",
+      "defaultRarity": 3,
+      "targetProgressValues": [
+        100,
+        1000,
+        1500,
+        2000,
+        2500,
+        3000,
+        3500,
+        4000,
+        4500,
+        5000
+      ]
+    },
+    {
+      "id": "unscathed",
+      "className": "Unscathed",
+      "defaultRarity": 3,
+      "targetProgressValues": [
+        0,
+        25,
+        50,
+        75,
+        100,
+        125,
+        150,
+        175,
+        200,
+        225
+      ]
+    },
+    {
+      "id": "vampiric_thirst",
+      "className": "VampiricThirst",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        1730,
+        2941,
+        5000,
+        8500,
+        14450,
+        24565,
+        41760,
+        70993,
+        120688,
+        205169
+      ]
+    },
+    {
+      "id": "warrior",
+      "className": "Warrior",
+      "defaultRarity": 1,
+      "targetProgressValues": [
+        1000,
+        20000,
+        30000,
+        40000,
+        50000,
+        60000,
+        70000,
+        80000,
+        90000,
+        100000
+      ]
+    }
+  ]
+}

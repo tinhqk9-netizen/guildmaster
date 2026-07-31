@@ -121,6 +121,20 @@ namespace GuildMaster.Runtime.Services
             item.StackCount -= amount;
             if (item.StackCount <= 0)
             {
+                // G17: Clear character equipment references if item is equipped
+                var data = _saveService.CurrentData;
+                if (data.Characters != null)
+                {
+                    foreach (var character in data.Characters)
+                    {
+                        if (character.WeaponInstanceId == instanceId)
+                            character.WeaponInstanceId = null;
+                        if (character.ArmorInstanceId == instanceId)
+                            character.ArmorInstanceId = null;
+                        if (character.AccessoryInstanceId == instanceId)
+                            character.AccessoryInstanceId = null;
+                    }
+                }
                 _items.Remove(item);
             }
             SyncToSave();

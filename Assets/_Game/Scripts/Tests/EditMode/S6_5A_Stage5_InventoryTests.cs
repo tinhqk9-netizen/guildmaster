@@ -1,10 +1,11 @@
-using System;
+using System.Linq;
 using NUnit.Framework;
 using GuildMaster.Database;
 using GuildMaster.Definitions;
 using GuildMaster.Infrastructure.DataProviders;
 using GuildMaster.Infrastructure.Serialization;
 using GuildMaster.Runtime.Models;
+using GuildMaster.Runtime.Save;
 using GuildMaster.Runtime.Services;
 
 namespace GuildMaster.Tests.EditMode
@@ -30,22 +31,28 @@ namespace GuildMaster.Tests.EditMode
         [Test]
         public void InventoryService_CategoryFiltering_ReturnsMatchingCategoryOnly()
         {
+            _container.Save.CurrentData.Items.Clear();
             var inv = _container.Inventory;
+            foreach (var item in inv.GetAllItems().ToList())
+            {
+                item.IsLocked = false;
+                inv.RemoveItem(item.InstanceId, item.StackCount);
+            }
 
-            var matDef = new ItemDefinition { id = "mat_iron", Category = ItemCategory.Material };
-            var wpDef = new ItemDefinition { id = "wp_sword", Category = ItemCategory.Weapon };
+            var matDef = new ItemDefinition { id = "m1", Category = ItemCategory.Material };
+            var wpDef = new ItemDefinition { id = "w1", Category = ItemCategory.Weapon };
 
-            inv.AddItem(new ItemRuntime("inst_1", matDef, 5));
-            inv.AddItem(new ItemRuntime("inst_2", wpDef, 1));
+            inv.AddItem(new ItemRuntime("inst_test_mat", matDef, 5));
+            inv.AddItem(new ItemRuntime("inst_test_wp", wpDef, 1));
 
             var materials = inv.GetItemsByCategory(ItemCategory.Material);
             var weapons = inv.GetItemsByCategory(ItemCategory.Weapon);
 
             Assert.AreEqual(1, materials.Count);
-            Assert.AreEqual("mat_iron", materials[0].Definition.id);
+            Assert.AreEqual("m1", materials[0].Definition.id);
 
             Assert.AreEqual(1, weapons.Count);
-            Assert.AreEqual("wp_sword", weapons[0].Definition.id);
+            Assert.AreEqual("w1", weapons[0].Definition.id);
         }
 
         [Test]
@@ -82,6 +89,19 @@ namespace GuildMaster.Tests.EditMode
             Assert.IsTrue(used);
             Assert.AreEqual(70, character.CurrentHp); // 20 + 50
             Assert.AreEqual(2, inv.GetItem("inst_hp").StackCount);
+        }
+
+        [Test]
+        public void DatabaseBuilder_ItemFields_PopulatesEquipmentStats()
+        {
+            Assert.IsTrue(_database.TryGet<ItemDefinition>("copper_sword", out var copperSword));
+            Assert.AreEqual(3, copperSword.Constitution);
+            Assert.AreEqual(1, copperSword.Dexterity);
+            Assert.AreEqual("+3 CON, +1 DEX", copperSword.GetStatSummary());
+
+            Assert.IsTrue(_database.TryGet<ItemDefinition>("cane", out var cane));
+            Assert.AreEqual(1, cane.Intelligence);
+            Assert.AreEqual("+1 INT", cane.GetStatSummary());
         }
     }
 }

@@ -76,7 +76,31 @@
       "Bash(python /tmp/newtick.py)",
       "Bash(python /dev/stdin)",
       "Bash(python \"C:/Users/gifft/AppData/Local/Temp/brace.py\" \"Assets/_Game/Scripts/Tests/PlayMode/S6_5A_DungeonCombatLootActionTests.cs\")",
-      "Bash(python \"C:/Users/gifft/AppData/Local/Temp/brace.py\" \"Assets/_Game/Scripts/Definitions/AdventurerDefinition.cs\")"
+      "Bash(python \"C:/Users/gifft/AppData/Local/Temp/brace.py\" \"Assets/_Game/Scripts/Definitions/AdventurerDefinition.cs\")",
+      "Bash(powershell -Command \"Get-Content 'D:\\\\Tinh\\\\Rebuild_GuildMaster\\\\Reports\\\\HermesAudit_Foundation_1of3_20260729\\\\HERMES_AUDIT_1of3_FOUNDATION.md' | Select-String -Pattern '^#|^##' | Select-Object -First 80\")",
+      "Bash([ -d \"$DIR\" ])",
+      "Bash(mkdir -p .claude/agents .claude/skills .claude/commands)",
+      "Bash(cp -r .agent/agents/. .claude/agents/)",
+      "Bash(cp -r .agent/skills/. .claude/skills/)",
+      "Bash(cp -r .agent/workflows/. .claude/commands/)",
+      "Skill(brainstorming)",
+      "Skill(brainstorming:*)",
+      "Bash(grep \"\\\\.cs$\")",
+      "Bash(where unity *)",
+      "Bash(dir \"C:\\\\Program Files\\\\Unity\\\\Hub\\\\Editor\")",
+      "Bash(dir \"C:\\\\Program Files\\\\Unity\")",
+      "Bash(where dotnet *)",
+      "Read(//c/Program Files/Unity/Hub/Editor/**)",
+      "Bash(dotnet --version)",
+      "Bash(where msbuild *)",
+      "Read(//d//**)",
+      "Bash(ls \"/c/Program Files/Unity/Hub/Editor/6000.3.17f1/Editor/Unity.exe\" 2>&1)",
+      "Read(//d/UnityGame/UnityEditer/**)",
+      "Read(//d/UnityGame/UnityEditer/6000.3.17f1/Editor/Data/Managed/UnityEngine/**)",
+      "Bash(timeout 90 dotnet build GuildMaster.Runtime.csproj)",
+      "Read(//d/UnityGame/UnityEditer/6000.3.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/**)",
+      "Read(//d/UnityGame/UnityEditer/6000.3.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/**)",
+      "Bash(ls \"/d/UnityGame/UnityEditer/6000.3.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/platforms\" 2>&1)"
     ]
   }
 }

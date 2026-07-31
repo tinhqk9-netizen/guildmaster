@@ -20,6 +20,8 @@ namespace GuildMaster.Definitions
         public int BaseDefense;
         public int BaseMagicDefense;
 
+        public string StarterWeaponId;
+
         // Maps to ItemType in ItemDefinition for equip restrictions.
         public string WeaponType;
         public string ArmorType;

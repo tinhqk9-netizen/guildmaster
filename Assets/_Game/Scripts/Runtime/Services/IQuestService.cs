@@ -8,6 +8,7 @@ namespace GuildMaster.Runtime.Services
         void Increment(string questInstanceId, long amount);
         void IncrementToValue(string questInstanceId, long newValue);
         bool ClaimReward(string questInstanceId, string targetDoctrineName = "war");
+        void IncrementDefinition(string definitionId, long amount);
         int GetRewardAmount(int rarity, bool isGems);
         IReadOnlyList<QuestRuntime> GetActiveQuests();
     }

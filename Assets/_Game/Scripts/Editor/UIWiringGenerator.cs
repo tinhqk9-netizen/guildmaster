@@ -17,7 +17,12 @@ namespace GuildMaster.Editor.UI
     {
         private const string CatalogPath = "Assets/_Game/Data/AssetCatalog.asset";
 
-        [MenuItem("GuildMaster/Wire UI Scene")]
+        /// <summary>
+        /// Step 1 of the unified apply pipeline (see GuildMasterUnifiedApply.Apply). Not a menu item on
+        /// its own anymore — running it in isolation would leave the card containers and Settings
+        /// confirm/cancel buttons unwired, so the single supported entrypoint is
+        /// "GuildMaster/UI/Apply Complete Functional Game UI".
+        /// </summary>
         public static void WireScene()
         {
             var canvas = GameObject.Find("UICanvas");
@@ -62,12 +67,14 @@ namespace GuildMaster.Editor.UI
                 CreateIcon(hud.transform, "GemsIcon", catalog.gemIcon, new Vector2(90, 800), 64f);
             }
 
+            var tavernBtn = CreateButton(hud.transform, "Btn_Tavern", "Tavern", new Vector2(0, 750));
             var invBtn = CreateButton(hud.transform, "Btn_Inventory", "Inventory", new Vector2(0, 600));
             var charBtn = CreateButton(hud.transform, "Btn_Character", "Character", new Vector2(0, 450));
-            var popupBtn = CreateButton(hud.transform, "Btn_Dungeon", "Dungeon (Deferred)", new Vector2(0, 300));
+            var popupBtn = CreateButton(hud.transform, "Btn_Dungeon", "Dungeon", new Vector2(0, 300));
             var craftBtn = CreateButton(hud.transform, "Btn_Craft", "Craft", new Vector2(0, 150));
             var merchantBtn = CreateButton(hud.transform, "Btn_Merchant", "Merchant", new Vector2(0, 0));
-            var settingsBtn = CreateButton(hud.transform, "Btn_Settings", "Settings", new Vector2(0, -150));
+            var questBtn = CreateButton(hud.transform, "Btn_Quest", "Quest", new Vector2(0, -150));
+            var settingsBtn = CreateButton(hud.transform, "Btn_Settings", "Settings", new Vector2(0, -300));
 
             // Real pack icons on the nav buttons (left-aligned), keeping the runtime text label.
             if (catalog != null)
@@ -89,29 +96,22 @@ namespace GuildMaster.Editor.UI
             hudSO.FindProperty("_craftButton").objectReferenceValue = craftBtn;
             hudSO.FindProperty("_merchantButton").objectReferenceValue = merchantBtn;
             hudSO.FindProperty("_settingsButton").objectReferenceValue = settingsBtn;
+            hudSO.FindProperty("_tavernButton").objectReferenceValue = tavernBtn;
+            hudSO.FindProperty("_questButton").objectReferenceValue = questBtn;
             hudSO.ApplyModifiedProperties();
 
-            // 3. Inventory
+            // 3. Inventory — component acquired here so SetActive(false) below works.
+            //    All child creation and field wiring are handled by
+            //    GuildMasterUnifiedApply.BuildInventory() (called after WireScene).
             var inv = CreateOrGetComponent<InventoryScreen>(screenRoot, "InventoryScreen");
             inv.ScreenId = UIScreenId.Inventory;
-            var invText = CreateText(inv.transform, "ListContent", new Vector2(0, 0));
-            invText.rectTransform.sizeDelta = new Vector2(800, 1500); // vertical scroll area
-            invText.alignment = TextAnchor.UpperLeft;
-            var invSO = new SerializedObject(inv);
-            invSO.FindProperty("_inventoryText").objectReferenceValue = invText;
-            invSO.ApplyModifiedProperties();
-            CreateButton(inv.transform, "Btn_Back", "Back", new Vector2(0, -800)); // wired to UIService.Back() at runtime
 
-            // 4. Character
+            // 4. Character — same: component only, no legacy text/button creation.
+            //    All child creation and field wiring are handled by
+            //    GuildMasterUnifiedApply.BuildCharacter() (called after WireScene).
             var chr = CreateOrGetComponent<CharacterScreen>(screenRoot, "CharacterScreen");
             chr.ScreenId = UIScreenId.Character;
-            var chrText = CreateText(chr.transform, "ListContent", new Vector2(0, 0));
-            chrText.rectTransform.sizeDelta = new Vector2(800, 1500);
-            chrText.alignment = TextAnchor.UpperLeft;
-            var chrSO = new SerializedObject(chr);
-            chrSO.FindProperty("_characterText").objectReferenceValue = chrText;
-            chrSO.ApplyModifiedProperties();
-            CreateButton(chr.transform, "Btn_Back", "Back", new Vector2(0, -800)); // wired to UIService.Back() at runtime
+
 
             // 5. Popup
             var pop = CreateOrGetComponent<PopupScreen>(popupRoot, "PopupScreen");
@@ -127,12 +127,9 @@ namespace GuildMaster.Editor.UI
             popSO.FindProperty("_okButton").objectReferenceValue = pOkBtn;
             popSO.ApplyModifiedProperties();
 
-            // 6. Placeholder panels for features whose real UI is not built yet.
-            //    Simple white panel + title + message + Back. No fake functionality.
-            CreatePlaceholder(screenRoot, "DungeonScreen", UIScreenId.Dungeon, "Dungeon", "Dungeon UI is not implemented yet.");
-            CreatePlaceholder(screenRoot, "CraftScreen", UIScreenId.Craft, "Craft", "Craft UI is not implemented yet.");
-            CreatePlaceholder(screenRoot, "MerchantScreen", UIScreenId.Merchant, "Merchant", "Merchant UI is not implemented yet.");
-            CreatePlaceholder(screenRoot, "SettingsScreen", UIScreenId.Settings, "Settings", "Settings UI is not implemented yet.");
+            // 6. Dungeon, Craft, Merchant, Settings (and Tavern, Character, Inventory, Quest) get their
+            //    real functional screens + card containers from GuildMaster/UI/Apply Complete Functional
+            //    Game UI, which calls this method as step 1. No "not implemented yet" dead panels here.
 
             // 7. Runtime composition root — wires UIService + screens at play time (S5 minimal).
             var composerGo = GameObject.Find("UIRuntimeBootstrap");
@@ -174,32 +171,6 @@ namespace GuildMaster.Editor.UI
             T comp = go.GetComponent<T>();
             if (comp == null) comp = go.AddComponent<T>();
             return comp;
-        }
-
-        /// <summary>A simple white placeholder screen: panel + title + message + Back button.</summary>
-        private static void CreatePlaceholder(Transform parent, string name, UIScreenId id, string title, string message)
-        {
-            var scr = CreateOrGetComponent<UIScreen>(parent, name);
-            scr.ScreenId = id;
-            var rt = scr.GetComponent<RectTransform>();
-            rt.anchoredPosition = Vector2.zero;
-            rt.sizeDelta = new Vector2(900, 1400);
-
-            var panel = scr.gameObject.GetComponent<Image>();
-            if (panel == null) panel = scr.gameObject.AddComponent<Image>();
-            panel.color = new Color(1f, 1f, 1f, 0.12f); // plain white placeholder
-
-            var t = CreateText(scr.transform, "Title", new Vector2(0, 550));
-            t.text = title;
-            t.fontSize = 48;
-
-            var m = CreateText(scr.transform, "Message", new Vector2(0, 0));
-            m.text = message;
-            m.rectTransform.sizeDelta = new Vector2(700, 300);
-
-            CreateButton(scr.transform, "Btn_Back", "Back", new Vector2(0, -550)); // wired at runtime
-
-            scr.gameObject.SetActive(false);
         }
 
         /// <summary>A standalone sprite icon (e.g. currency icon on the HUD).</summary>

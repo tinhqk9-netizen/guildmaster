@@ -1,0 +1,1111 @@
+{
+  "classes": {
+    "Bootstrapper": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scripts\\Runtime\\Boot\\Bootstrapper.cs",
+      "info": {
+        "methods": [
+          {
+            "return_type": "void",
+            "name": "Start",
+            "args": ""
+          },
+          {
+            "return_type": "void",
+            "name": "InitializePipeline",
+            "args": ""
+          }
+        ],
+        "fields": [],
+        "content_lines": 77,
+        "raw_content": "using System;\nusing UnityEngine;\nusing GuildMaster.Database;\nusing GuildMaster.Infrastructure.DataProviders;\nusing GuildMaster.Infrastructure.Serialization;\nusing GuildMaster.Runtime.Core;\nusing GuildMaster.Runtime.Formulas;\nusing GuildMaster.Runtime.Services;\nusing GuildMaster.Runtime.Save;\n\nnamespace GuildMaster.Runtime.Boot\n{\n    public class Bootstrapper : MonoBehaviour\n    {\n        public bool RuntimeReady { get; private set; }\n        \n        // Composition Root Instances\n        public ServiceContainer Services { get; private set; }\n        public GameDatabase Database { get; private set; }\n        public RuntimeFactory Factory { get; private set; }\n        public IFormulaService FormulaService { get; private set; }\n        public ISaveService SaveService { get; private set; }\n\n        private void Start()\n        {\n            InitializePipeline();\n        }\n\n        private void InitializePipeline()\n        {\n            try\n            {\n                Debug.Log(\"[Bootstrapper] Starting Pipeline...\");\n\n                // 1. Provider\n                IGameDataProvider dataProvider;\n#if UNITY_EDITOR\n                dataProvider = new EditorExternalGameDataProvider();\n#else\n                dataProvider = new StreamingAssetsGameDataProvider();\n#endif\n\n                // 2. Serializer\n                var serializer = new UnityJsonSerializer();\n\n                // 3. Database\n                Database = new GameDatabase();\n\n                // 4. Definition Registry (Build Database)\n                var builder = new DatabaseBuilder(dataProvider, serializer, Database);\n                var report = builder.Build();\n\n                if (report.hasFatalErrors)\n                {\n                    throw new Exception(\"Database build encountered fatal errors.\");\n                }\n\n                // 5. ServiceContainer (Composition Root)\n                Services = new ServiceContainer(Database);\n                FormulaService = Services.Formula;\n                SaveService = Services.Save;\n                Factory = Services.Factory;\n\n                // 6. Runtime Ready\n                RuntimeReady = true;\n                Debug.Log(\"[Bootstrapper] Runtime Ready with ServiceContainer. Waiting for Scene transition...\");\n            }\n            catch (Exception ex)\n            {\n                // If Fatal\n                RuntimeReady = false;\n                Debug.LogError($\"[Bootstrapper] FATAL BOOT ERROR: {ex.Message}\\n{ex.StackTrace}\");\n                // Gi\u1eef nguy\u00ean tr\u1ea1ng th\u00e1i Boot, kh\u00f4ng chuy\u1ec3n sang Main\n            }\n        }\n    }\n}\n"
+      }
+    },
+    "GameDatabase": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scripts\\Database\\GameDatabase.cs",
+      "info": {
+        "methods": [],
+        "fields": [],
+        "content_lines": 82,
+        "raw_content": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing GuildMaster.Definitions;\n\nnamespace GuildMaster.Database\n{\n    public class GameDatabase\n    {\n        private readonly Dictionary<Type, object> _registries = new Dictionary<Type, object>();\n\n        // Register a full collection of typed definitions\n        public void RegisterCollection<T>(IEnumerable<T> definitions) where T : DefinitionBase\n        {\n            var type = typeof(T);\n            var dict = new Dictionary<string, T>(StringComparer.OrdinalIgnoreCase);\n            \n            foreach (var def in definitions)\n            {\n                if (string.IsNullOrEmpty(def.id))\n                {\n                    UnityEngine.Debug.LogWarning($\"[GameDatabase] Skipping {type.Name} with null or empty ID.\");\n                    continue;\n                }\n\n                if (!dict.ContainsKey(def.id))\n                {\n                    dict[def.id] = def;\n                }\n                else\n                {\n                    UnityEngine.Debug.LogWarning($\"[GameDatabase] Duplicate ID found in {type.Name}: {def.id}\");\n                }\n            }\n\n            _registries[type] = dict;\n        }\n\n        public void Add<T>(T def) where T : DefinitionBase\n        {\n            var type = typeof(T);\n            if (!_registries.TryGetValue(type, out var registryObj))\n            {\n                registryObj = new Dictionary<string, T>(StringComparer.OrdinalIgnoreCase);\n                _registries[type] = registryObj;\n            }\n            ((Dictionary<string, T>)registryObj)[def.id] = def;\n        }\n\n        public bool TryGet<T>(string id, out T definition) where T : DefinitionBase\n        {\n            definition = null;\n            if (string.IsNullOrEmpty(id)) return false;\n\n            if (_registries.TryGetValue(typeof(T), out var registryObj))\n            {\n                var dict = (Dictionary<string, T>)registryObj;\n                return dict.TryGetValue(id, out definition);\n            }\n            return false;\n        }\n\n        public T GetRequired<T>(string id) where T : DefinitionBase\n        {\n            if (TryGet<T>(id, out var def))\n            {\n                return def;\n            }\n            throw new KeyNotFoundException($\"Definition of type {typeof(T).Name} with ID '{id}' was not found in GameDatabase.\");\n        }\n\n        public IReadOnlyCollection<T> GetAll<T>() where T : DefinitionBase\n        {\n            if (_registries.TryGetValue(typeof(T), out var registryObj))\n            {\n                var dict = (Dictionary<string, T>)registryObj;\n                return dict.Values;\n            }\n            return Array.Empty<T>();\n        }\n    }\n}\n"
+      }
+    },
+    "BootSceneLoader": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scripts\\Runtime\\Boot\\BootSceneLoader.cs",
+      "info": {
+        "methods": [
+          {
+            "return_type": "void",
+            "name": "Start",
+            "args": ""
+          }
+        ],
+        "fields": [
+          {
+            "type": "string",
+            "name": "_mainSceneName"
+          }
+        ],
+        "content_lines": 21,
+        "raw_content": "using UnityEngine;\nusing UnityEngine.SceneManagement;\n\nnamespace GuildMaster.Runtime.Boot\n{\n    /// <summary>\n    /// Minimal Boot -> Main scene transition for real builds (Standalone/APK), where\n    /// Boot.unity is the first scene in Build Settings. Editor Play Mode on Main.unity\n    /// directly does not go through this. No composition/service wiring here \u2014 that\n    /// stays in UIRuntimeBootstrap (S5) inside Main.unity.\n    /// </summary>\n    public class BootSceneLoader : MonoBehaviour\n    {\n        [SerializeField] private string _mainSceneName = \"Main\";\n\n        private void Start()\n        {\n            SceneManager.LoadScene(_mainSceneName);\n        }\n    }\n}\n"
+      }
+    },
+    "UIRuntimeBootstrap": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scripts\\Runtime\\Boot\\UIRuntimeBootstrap.cs",
+      "info": {
+        "methods": [
+          {
+            "return_type": "void",
+            "name": "Start",
+            "args": ""
+          },
+          {
+            "return_type": "void",
+            "name": "LogDatabaseBuild",
+            "args": "DatabaseBuildReport report, IGameDataProvider provider"
+          },
+          {
+            "return_type": "void",
+            "name": "PersistSave",
+            "args": "string reason"
+          },
+          {
+            "return_type": "void",
+            "name": "OnApplicationPause",
+            "args": "bool pauseStatus"
+          },
+          {
+            "return_type": "void",
+            "name": "OnApplicationQuit",
+            "args": ""
+          },
+          {
+            "return_type": "void",
+            "name": "WireBackButton",
+            "args": "UIScreen screen"
+          }
+        ],
+        "fields": [
+          {
+            "type": "UIService",
+            "name": "_ui"
+          },
+          {
+            "type": "ISaveService",
+            "name": "_save"
+          }
+        ],
+        "content_lines": 194,
+        "raw_content": "using System;\nusing UnityEngine;\nusing UnityEngine.UI;\nusing GuildMaster.Database;\nusing GuildMaster.Infrastructure.DataProviders;\nusing GuildMaster.Infrastructure.Serialization;\nusing GuildMaster.Runtime.Core;\nusing GuildMaster.Runtime.Formulas;\nusing GuildMaster.Runtime.Save;\nusing GuildMaster.Runtime.Services;\nusing GuildMaster.Runtime.UI;\nusing GuildMaster.Runtime.UI.Core;\nusing GuildMaster.Runtime.UI.HUD;\nusing GuildMaster.Runtime.UI.Inventory;\nusing GuildMaster.Runtime.UI.Character;\nusing GuildMaster.Runtime.UI.Popup;\nusing GuildMaster.Runtime.UI.Tavern;\nusing GuildMaster.Runtime.UI.Craft;\nusing GuildMaster.Runtime.UI.Merchant;\nusing GuildMaster.Runtime.UI.Dungeon;\nusing GuildMaster.Runtime.UI.Quest;\nusing GuildMaster.Runtime.UI.Settings;\n\nnamespace GuildMaster.Runtime.Boot\n{\n    /// <summary>\n    /// Minimal composition root for the Main scene (S5 scope). Builds the services the\n    /// existing UI screens depend on, registers every UIScreen with a UIService, initializes\n    /// the HUD / Inventory / Character / Popup controllers, wires Back buttons, and shows the\n    /// HUD. This is GLUE ONLY \u2014 it wires existing systems together. It adds no gameplay rules\n    /// and no fake data; empty save/database simply produce empty screens.\n    ///\n    /// Full boot orchestration (Boot\u2192Main transition, DI container) remains S6 work.\n    /// </summary>\n    public class UIRuntimeBootstrap : MonoBehaviour\n    {\n        private UIService _ui;\n        private ISaveService _save;\n        public ServiceContainer Services { get; private set; }\n\n        private void Start()\n        {\n            try\n            {\n                // --- backend composition ---\n#if UNITY_EDITOR\n                IGameDataProvider provider = new EditorExternalGameDataProvider();\n#else\n                IGameDataProvider provider = new StreamingAssetsGameDataProvider();\n#endif\n                var serializer = new UnityJsonSerializer();\n                var db = new GameDatabase();\n                LogDatabaseBuild(new DatabaseBuilder(provider, serializer, db).Build(), provider);\n\n                Services = new ServiceContainer(db);\n                _save = Services.Save;\n\n                var gameLoopRunner = gameObject.AddComponent<GameLoopRunner>();\n                gameLoopRunner.Initialize(Services.GameLoop, Services.Save);\n\n                // --- UI wiring ---\n                _ui = new UIService();\n\n                UIScreen[] screens = FindObjectsByType<UIScreen>(FindObjectsInactive.Include, FindObjectsSortMode.None);\n                PopupScreen popup = null;\n\n                foreach (UIScreen screen in screens)\n                {\n                    if (screen is PopupScreen p && screen.IsPopup)\n                    {\n                        popup = p;\n                        continue;\n                    }\n\n                    _ui.RegisterScreen(screen);\n                    WireBackButton(screen);\n                }\n\n                var hud = FindFirstObjectByType<HUDController>(FindObjectsInactive.Include);\n                if (hud != null) hud.Initialize(Services.Save, _ui);\n\n                // Inventory and Character cross-reference each other's current selection\n                // (equip pulls the selected item, use-consumable targets the selected character),\n                // so both must exist before either is initialized.\n                var inv = FindFirstObjectByType<InventoryScreen>(FindObjectsInactive.Include);\n                var chr = FindFirstObjectByType<CharacterScreen>(FindObjectsInactive.Include);\n                if (inv != null) inv.Initialize(Services, chr);\n                if (chr != null) chr.Initialize(Services, inv);\n\n                var tav = FindFirstObjectByType<TavernScreen>(FindObjectsInactive.Include);\n                if (tav != null) tav.Initialize(Services);\n\n                var crf = FindFirstObjectByType<CraftScreen>(FindObjectsInactive.Include);\n                if (crf != null) crf.Initialize(Services);\n\n                var mer = FindFirstObjectByType<MerchantScreen>(FindObjectsInactive.Include);\n                if (mer != null) mer.Initialize(Services, inv);\n\n                var dun = FindFirstObjectByType<DungeonScreen>(FindObjectsInactive.Include);\n                if (dun != null) dun.Initialize(Services, chr);\n\n                var que = FindFirstObjectByType<QuestScreen>(FindObjectsInactive.Include);\n                if (que != null) que.Initialize(Services);\n\n                var set = FindFirstObjectByType<SettingsScreen>(FindObjectsInactive.Include);\n                if (set != null) set.Initialize(Services);\n\n                if (popup != null) _ui.RegisterDialogScreen(popup);\n\n                _ui.ShowScreen(UIScreenId.MainHUD);\n                Debug.Log($\"[UIRuntimeBootstrap] Wired {screens.Length} screen(s); MainHUD shown.\");\n            }\n            catch (Exception ex)\n            {\n                Debug.LogError($\"[UIRuntimeBootstrap] Failed to wire UI: {ex.Message}\\n{ex.StackTrace}\");\n            }\n        }\n\n        /// <summary>\n        /// Surfaces the database build result. Without this the build silently produces an empty\n        /// database when data cannot be read (e.g. missing StreamingAssets in a player build),\n        /// leaving the UI up but blank with nothing in the log to diagnose it.\n        /// </summary>\n        private static void LogDatabaseBuild(DatabaseBuildReport report, IGameDataProvider provider)\n        {\n            int totalRecords = 0;\n            int dropTables = 0;\n            foreach (var kvp in report.loadedRecordsByCategory)\n            {\n                // Drop tables are a diagnostic counter, not a data file \u2014 keep them out of the total.\n                if (kvp.Key == \"enemy_drop_tables\") { dropTables = kvp.Value; continue; }\n                totalRecords += kvp.Value;\n            }\n\n            if (report.hasFatalErrors)\n            {\n                Debug.LogError(\n                    $\"[UIRuntimeBootstrap] Database build FAILED via {provider.ProviderName}. \" +\n                    $\"manifestLoaded={report.manifestLoaded}, files={report.loadedFiles}/{report.expectedFiles}. \" +\n                    $\"Errors: {string.Join(\" | \", report.errors)}\");\n                return;\n            }\n\n            Debug.Log(\n                $\"[UIRuntimeBootstrap] Database built via {provider.ProviderName}: \" +\n                $\"{report.loadedFiles}/{report.expectedFiles} file(s), {totalRecords} record(s). \" +\n                $\"Enemy drop tables loaded: {dropTables}.\");\n\n            if (report.recordCountMismatches.Count > 0)\n            {\n                Debug.LogWarning($\"[UIRuntimeBootstrap] Record count mismatches: {string.Join(\" | \", report.recordCountMismatches)}\");\n            }\n        }\n\n        /// <summary>Persists the current save state. No-op until <see cref=\"_save\"/> is set by Start().</summary>\n        private void PersistSave(string reason)\n        {\n            if (_save == null) return;\n\n            if (_save.Save(out Exception error))\n            {\n                Debug.Log($\"[UIRuntimeBootstrap] Save written ({reason}).\");\n            }\n            else\n            {\n                Debug.LogError($\"[UIRuntimeBootstrap] Save failed ({reason}): {error?.Message}\");\n            }\n        }\n\n        private void OnApplicationPause(bool pauseStatus)\n        {\n            if (pauseStatus) PersistSave(\"OnApplicationPause\");\n        }\n\n        private void OnApplicationQuit()\n        {\n            PersistSave(\"OnApplicationQuit\");\n        }\n\n        /// <summary>Any non-HUD screen with a descendant named \"Btn_Back\" (direct child, or inside a Header row) returns to the previous screen.</summary>\n        private void WireBackButton(UIScreen screen)\n        {\n            if (screen.ScreenId == UIScreenId.MainHUD) return;\n\n            Transform backT = screen.transform.Find(\"Btn_Back\");\n            if (backT == null) backT = screen.transform.Find(\"Header/Btn_Back\");\n            if (backT != null && backT.TryGetComponent(out Button backBtn))\n            {\n                backBtn.onClick.RemoveAllListeners();\n                backBtn.onClick.AddListener(() => _ui.Back());\n            }\n        }\n    }\n}\n"
+      }
+    },
+    "OfflineProgressResult": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scripts\\Runtime\\Models\\OfflineProgressResult.cs",
+      "info": {
+        "methods": [],
+        "fields": [],
+        "content_lines": 9,
+        "raw_content": "namespace GuildMaster.Runtime.Models\n{\n    public class OfflineProgressResult\n    {\n        public bool Success { get; set; }\n        public long DeltaSeconds { get; set; }\n        public bool DispatchDeferred { get; set; }\n    }\n}\n"
+      }
+    },
+    "ActiveDungeonSaveData": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scripts\\Runtime\\Save\\ActiveDungeonSaveData.cs",
+      "info": {
+        "methods": [],
+        "fields": [
+          {
+            "type": "string",
+            "name": "DungeonDefinitionId"
+          },
+          {
+            "type": "int",
+            "name": "Progress"
+          },
+          {
+            "type": "int",
+            "name": "MaxProgress"
+          },
+          {
+            "type": "int",
+            "name": "LocalDarkness"
+          },
+          {
+            "type": "List<string>",
+            "name": "AdventurerInstanceIds"
+          },
+          {
+            "type": "List<ItemSaveData>",
+            "name": "PendingDrops"
+          },
+          {
+            "type": "CombatEncounterSaveData",
+            "name": "EncounterState"
+          },
+          {
+            "type": "DungeonActionState",
+            "name": "ActionState"
+          }
+        ],
+        "content_lines": 20,
+        "raw_content": "using System;\nusing System.Collections.Generic;\n\nnamespace GuildMaster.Runtime.Save\n{\n    [Serializable]\n    public class ActiveDungeonSaveData\n    {\n        public string DungeonDefinitionId;\n        public int Progress;\n        public int MaxProgress;\n        public int LocalDarkness;\n        \n        public List<string> AdventurerInstanceIds = new List<string>();\n        public List<ItemSaveData> PendingDrops = new List<ItemSaveData>();\n        \n        public CombatEncounterSaveData EncounterState = new CombatEncounterSaveData();\n        public DungeonActionState ActionState = new DungeonActionState();\n    }\n}\n"
+      }
+    },
+    "CombatEncounterSaveData": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scripts\\Runtime\\Save\\CombatEncounterSaveData.cs",
+      "info": {
+        "methods": [],
+        "fields": [
+          {
+            "type": "string",
+            "name": "DefinitionId"
+          },
+          {
+            "type": "int",
+            "name": "CurrentHp"
+          },
+          {
+            "type": "int",
+            "name": "CurrentMana"
+          },
+          {
+            "type": "int",
+            "name": "CurrentShield"
+          },
+          {
+            "type": "List<StatusEffectSaveData>",
+            "name": "PositiveStatusEffects"
+          },
+          {
+            "type": "List<StatusEffectSaveData>",
+            "name": "NegativeStatusEffects"
+          },
+          {
+            "type": "List<EnemySaveData>",
+            "name": "Enemies"
+          },
+          {
+            "type": "List<EnemySaveData>",
+            "name": "Corpses"
+          },
+          {
+            "type": "int",
+            "name": "TurnsFighting"
+          },
+          {
+            "type": "string",
+            "name": "SavedActingEntityId"
+          }
+        ],
+        "content_lines": 25,
+        "raw_content": "using System;\nusing System.Collections.Generic;\n\nnamespace GuildMaster.Runtime.Save\n{\n    [Serializable]\n    public class EnemySaveData\n    {\n        public string DefinitionId;\n        public int CurrentHp;\n        public int CurrentMana;\n        public int CurrentShield;\n        public List<StatusEffectSaveData> PositiveStatusEffects = new List<StatusEffectSaveData>();\n        public List<StatusEffectSaveData> NegativeStatusEffects = new List<StatusEffectSaveData>();\n    }\n\n    [Serializable]\n    public class CombatEncounterSaveData\n    {\n        public List<EnemySaveData> Enemies = new List<EnemySaveData>();\n        public List<EnemySaveData> Corpses = new List<EnemySaveData>();\n        public int TurnsFighting;\n        public string SavedActingEntityId;\n    }\n}\n"
+      }
+    },
+    "ISaveService": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scripts\\Runtime\\Save\\ISaveService.cs",
+      "info": {
+        "methods": [],
+        "fields": [],
+        "content_lines": 14,
+        "raw_content": "using System;\n\nnamespace GuildMaster.Runtime.Save\n{\n    public interface ISaveService\n    {\n        SaveData CurrentData { get; }\n        \n        bool HasSaveFile();\n        bool Load(out Exception error);\n        bool Save(out Exception error);\n        void DeleteSave();\n    }\n}\n"
+      }
+    },
+    "SaveData": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scripts\\Runtime\\Save\\SaveData.cs",
+      "info": {
+        "methods": [
+          {
+            "return_type": "SaveData",
+            "name": "CreateDefault",
+            "args": ""
+          },
+          {
+            "return_type": "void",
+            "name": "NormalizeAfterLoad",
+            "args": ""
+          },
+          {
+            "return_type": "void",
+            "name": "NormalizeCharacter",
+            "args": "CharacterSaveData character"
+          },
+          {
+            "return_type": "void",
+            "name": "NormalizePet",
+            "args": "PetSaveData pet"
+          }
+        ],
+        "fields": [
+          {
+            "type": "int",
+            "name": "SaveVersion"
+          },
+          {
+            "type": "long",
+            "name": "SaveTimeUnix"
+          },
+          {
+            "type": "string",
+            "name": "GameVersion"
+          },
+          {
+            "type": "string",
+            "name": "DataVersion"
+          },
+          {
+            "type": "string",
+            "name": "DefinitionId"
+          },
+          {
+            "type": "string",
+            "name": "InstanceId"
+          },
+          {
+            "type": "int",
+            "name": "StackCount"
+          },
+          {
+            "type": "bool",
+            "name": "IsLocked"
+          },
+          {
+            "type": "string",
+            "name": "SourceInstanceId"
+          },
+          {
+            "type": "int",
+            "name": "TurnsLeft"
+          },
+          {
+            "type": "string",
+            "name": "DefinitionId"
+          },
+          {
+            "type": "string",
+            "name": "InstanceId"
+          },
+          {
+            "type": "int",
+            "name": "Level"
+          },
+          {
+            "type": "int",
+            "name": "Exp"
+          },
+          {
+            "type": "float",
+            "name": "CurrentHp"
+          },
+          {
+            "type": "bool",
+            "name": "IsHpInitialized"
+          },
+          {
+            "type": "string",
+            "name": "WeaponInstanceId"
+          },
+          {
+            "type": "string",
+            "name": "ArmorInstanceId"
+          },
+          {
+            "type": "string",
+            "name": "AccessoryInstanceId"
+          },
+          {
+            "type": "bool",
+            "name": "IsAscended"
+          },
+          {
+            "type": "int",
+            "name": "AscensionLevel"
+          },
+          {
+            "type": "string",
+            "name": "Trait"
+          },
+          {
+            "type": "int[]",
+            "name": "PotionsDrank"
+          },
+          {
+            "type": "List<StatusEffectSaveData>",
+            "name": "PositiveStatusEffects"
+          },
+          {
+            "type": "List<StatusEffectSaveData>",
+            "name": "NegativeStatusEffects"
+          },
+          {
+            "type": "string",
+            "name": "DefinitionId"
+          },
+          {
+            "type": "string",
+            "name": "InstanceId"
+          },
+          {
+            "type": "QuestState",
+            "name": "State"
+          },
+          {
+            "type": "long",
+            "name": "Progress"
+          },
+          {
+            "type": "int",
+            "name": "Rarity"
+          },
+          {
+            "type": "long",
+            "name": "TargetProgress"
+          },
+          {
+            "type": "string",
+            "name": "DefinitionId"
+          },
+          {
+            "type": "string",
+            "name": "InstanceId"
+          },
+          {
+            "type": "DungeonState",
+            "name": "State"
+          },
+          {
+            "type": "int",
+            "name": "ClearCount"
+          },
+          {
+            "type": "float",
+            "name": "BestTimeSeconds"
+          },
+          {
+            "type": "string",
+            "name": "DefinitionId"
+          },
+          {
+            "type": "string",
+            "name": "InstanceId"
+          },
+          {
+            "type": "int",
+            "name": "Level"
+          },
+          {
+            "type": "float",
+            "name": "CurrentCooldown"
+          },
+          {
+            "type": "string",
+            "name": "DefinitionId"
+          },
+          {
+            "type": "string",
+            "name": "InstanceId"
+          },
+          {
+            "type": "int",
+            "name": "StackCount"
+          },
+          {
+            "type": "long",
+            "name": "SecondsPassed"
+          },
+          {
+            "type": "string",
+            "name": "DefinitionId"
+          },
+          {
+            "type": "string",
+            "name": "InstanceId"
+          },
+          {
+            "type": "int",
+            "name": "Level"
+          },
+          {
+            "type": "long",
+            "name": "Exp"
+          },
+          {
+            "type": "string",
+            "name": "EquippedToCharacterId"
+          },
+          {
+            "type": "string",
+            "name": "DefinitionId"
+          },
+          {
+            "type": "int",
+            "name": "StackCount"
+          },
+          {
+            "type": "long",
+            "name": "Price"
+          },
+          {
+            "type": "bool",
+            "name": "IsGems"
+          },
+          {
+            "type": "SaveMetadata",
+            "name": "Metadata"
+          },
+          {
+            "type": "int",
+            "name": "LevelStorage"
+          },
+          {
+            "type": "int",
+            "name": "UpgradeStorage"
+          },
+          {
+            "type": "long",
+            "name": "Money"
+          },
+          {
+            "type": "long",
+            "name": "Gems"
+          },
+          {
+            "type": "int",
+            "name": "LevelWorkshopTime"
+          },
+          {
+            "type": "int",
+            "name": "LevelMarketTime"
+          },
+          {
+            "type": "List<ItemActionSaveData>",
+            "name": "WorkshopQueue"
+          },
+          {
+            "type": "List<ItemActionSaveData>",
+            "name": "CompletedWorkshopItems"
+          },
+          {
+            "type": "List<ItemActionSaveData>",
+            "name": "MarketListings"
+          },
+          {
+            "type": "List<ItemActionSaveData>",
+            "name": "SoldMarketItems"
+          },
+          {
+            "type": "List<ItemSaveData>",
+            "name": "Items"
+          },
+          {
+            "type": "List<CharacterSaveData>",
+            "name": "Characters"
+          },
+          {
+            "type": "List<QuestSaveData>",
+            "name": "Quests"
+          },
+          {
+            "type": "List<DungeonSaveData>",
+            "name": "Dungeons"
+          },
+          {
+            "type": "List<SkillSaveData>",
+            "name": "Skills"
+          },
+          {
+            "type": "List<PetSaveData>",
+            "name": "Pets"
+          },
+          {
+            "type": "ActiveDungeonSaveData",
+            "name": "ActiveDungeon"
+          },
+          {
+            "type": "bool",
+            "name": "StarterPackPurchased"
+          },
+          {
+            "type": "bool",
+            "name": "AdventurerPackPurchased"
+          },
+          {
+            "type": "bool",
+            "name": "MerchantPackPurchased"
+          },
+          {
+            "type": "bool",
+            "name": "ImperialVanguardPurchased"
+          },
+          {
+            "type": "bool",
+            "name": "UnholyCrusadePurchased"
+          },
+          {
+            "type": "long",
+            "name": "LastAccess"
+          },
+          {
+            "type": "long",
+            "name": "LastHourTriggered"
+          },
+          {
+            "type": "long",
+            "name": "Last24Triggered"
+          },
+          {
+            "type": "long",
+            "name": "LastWeekTriggered"
+          },
+          {
+            "type": "long",
+            "name": "NextTavernVisit"
+          },
+          {
+            "type": "bool",
+            "name": "TavernLocked"
+          },
+          {
+            "type": "int",
+            "name": "TutorialStep"
+          },
+          {
+            "type": "List<CharacterSaveData>",
+            "name": "TavernGuests"
+          },
+          {
+            "type": "int",
+            "name": "LevelQuarters"
+          },
+          {
+            "type": "int",
+            "name": "UpgradeQuarters"
+          },
+          {
+            "type": "int",
+            "name": "LevelTavernCapacity"
+          },
+          {
+            "type": "int",
+            "name": "UpgradeTavernCapacity"
+          },
+          {
+            "type": "int",
+            "name": "LevelTavernTime"
+          },
+          {
+            "type": "int",
+            "name": "UpgradeTavernTime"
+          },
+          {
+            "type": "int",
+            "name": "UpgradeWorkshopTime"
+          },
+          {
+            "type": "int",
+            "name": "LevelWorkshopQueue"
+          },
+          {
+            "type": "int",
+            "name": "UpgradeWorkshopQueue"
+          },
+          {
+            "type": "int",
+            "name": "UpgradeMarketTime"
+          },
+          {
+            "type": "int",
+            "name": "LevelMarketListings"
+          },
+          {
+            "type": "int",
+            "name": "UpgradeMarketQueue"
+          },
+          {
+            "type": "int",
+            "name": "LevelShelter"
+          },
+          {
+            "type": "int",
+            "name": "UpgradeShelter"
+          },
+          {
+            "type": "int",
+            "name": "LevelShelterAutofeed"
+          },
+          {
+            "type": "int",
+            "name": "AfflictionLevel"
+          },
+          {
+            "type": "int",
+            "name": "AfflictionProgress"
+          },
+          {
+            "type": "int",
+            "name": "ControlLevel"
+          },
+          {
+            "type": "int",
+            "name": "ControlProgress"
+          },
+          {
+            "type": "int",
+            "name": "FortitudeLevel"
+          },
+          {
+            "type": "int",
+            "name": "FortitudeProgress"
+          },
+          {
+            "type": "int",
+            "name": "GraceLevel"
+          },
+          {
+            "type": "int",
+            "name": "GraceProgress"
+          },
+          {
+            "type": "int",
+            "name": "IllusionLevel"
+          },
+          {
+            "type": "int",
+            "name": "IllusionProgress"
+          },
+          {
+            "type": "int",
+            "name": "KnowledgeLevel"
+          },
+          {
+            "type": "int",
+            "name": "KnowledgeProgress"
+          },
+          {
+            "type": "int",
+            "name": "RuinLevel"
+          },
+          {
+            "type": "int",
+            "name": "RuinProgress"
+          },
+          {
+            "type": "int",
+            "name": "WarLevel"
+          },
+          {
+            "type": "int",
+            "name": "WarProgress"
+          },
+          {
+            "type": "bool",
+            "name": "DoctrineMaxed"
+          },
+          {
+            "type": "List<MerchantOfferSaveData>",
+            "name": "MerchantRegularStockItems"
+          },
+          {
+            "type": "List<MerchantOfferSaveData>",
+            "name": "MerchantSpecialReserve"
+          },
+          {
+            "type": "List<string>",
+            "name": "UniqueItemsLost"
+          },
+          {
+            "type": "bool",
+            "name": "NewMerchantRegularItems"
+          },
+          {
+            "type": "bool",
+            "name": "NewMerchantSpecialItems"
+          },
+          {
+            "type": "bool",
+            "name": "QuestsSeen"
+          },
+          {
+            "type": "bool",
+            "name": "QuestsRefreshed"
+          },
+          {
+            "type": "int",
+            "name": "QuestsCompleted"
+          },
+          {
+            "type": "bool",
+            "name": "SettingAutoOpenDungeonDetail"
+          },
+          {
+            "type": "bool",
+            "name": "SettingColorblindMode"
+          },
+          {
+            "type": "bool",
+            "name": "SettingConfirmRetreat"
+          },
+          {
+            "type": "bool",
+            "name": "SettingConfirmSwap"
+          },
+          {
+            "type": "bool",
+            "name": "SettingConfirmUpgrade"
+          },
+          {
+            "type": "bool",
+            "name": "SettingCraftMaxAmount"
+          },
+          {
+            "type": "bool",
+            "name": "SettingSellMaxAmount"
+          },
+          {
+            "type": "bool",
+            "name": "SettingVerboseLogs"
+          },
+          {
+            "type": "string",
+            "name": "SettingsLanguage"
+          },
+          {
+            "type": "bool",
+            "name": "SettingsNotifications"
+          },
+          {
+            "type": "bool",
+            "name": "SettingsCloud"
+          },
+          {
+            "type": "bool",
+            "name": "SettingsSound"
+          },
+          {
+            "type": "bool",
+            "name": "SettingsMusic"
+          },
+          {
+            "type": "bool",
+            "name": "SettingsVibration"
+          },
+          {
+            "type": "long",
+            "name": "ItemsCrafted"
+          },
+          {
+            "type": "long",
+            "name": "ItemsSold"
+          },
+          {
+            "type": "long",
+            "name": "MaxWealth"
+          },
+          {
+            "type": "int",
+            "name": "MaxAdventurerTier"
+          },
+          {
+            "type": "int",
+            "name": "MaxAdventurersOwned"
+          }
+        ],
+        "content_lines": 344,
+        "raw_content": "using System;\nusing System.Collections.Generic;\nusing GuildMaster.Runtime.Models;\n\nnamespace GuildMaster.Runtime.Save\n{\n    [Serializable]\n    public class SaveMetadata\n    {\n        public int SaveVersion;\n        public long SaveTimeUnix;\n        public string GameVersion;\n        public string DataVersion;\n    }\n\n    [Serializable]\n    public class ItemSaveData\n    {\n        public string DefinitionId;\n        public string InstanceId;\n        public int StackCount;\n        public bool IsLocked;\n    }\n\n    [Serializable]\n    public class StatusEffectSaveData\n    {\n        public GuildMaster.Definitions.Enums.StatusEffectType Type;\n        public string SourceInstanceId;\n        public int TurnsLeft;\n    }\n\n    [Serializable]\n    public class CharacterSaveData\n    {\n        public string DefinitionId;\n        public string InstanceId;\n        public int Level;\n        public int Exp;\n        public float CurrentHp;\n        public bool IsHpInitialized;\n        \n        public string WeaponInstanceId;\n        public string ArmorInstanceId;\n        public string AccessoryInstanceId;\n\n        public bool IsAscended;\n        public int AscensionLevel;\n        public string Trait = string.Empty;\n        public int[] PotionsDrank = new int[6];\n\n        public List<StatusEffectSaveData> PositiveStatusEffects = new List<StatusEffectSaveData>();\n        public List<StatusEffectSaveData> NegativeStatusEffects = new List<StatusEffectSaveData>();\n    }\n\n    [Serializable]\n    public class QuestSaveData\n    {\n        public string DefinitionId;\n        public string InstanceId;\n        public QuestState State;\n        public long Progress;\n        public int Rarity;\n        public long TargetProgress;\n    }\n\n    [Serializable]\n    public class DungeonSaveData\n    {\n        public string DefinitionId;\n        public string InstanceId;\n        public DungeonState State;\n        public int ClearCount;\n        public float BestTimeSeconds;\n    }\n\n    [Serializable]\n    public class SkillSaveData\n    {\n        public string DefinitionId;\n        public string InstanceId;\n        public int Level;\n        public float CurrentCooldown;\n    }\n\n    [Serializable]\n    public class ItemActionSaveData\n    {\n        public string DefinitionId;\n        public string InstanceId;\n        public int StackCount;\n        public long SecondsPassed;\n    }\n\n    /// <summary>\n    /// A merchant offer sitting in stock. Mirrors <c>MerchantOffer</c>: the item on sale, its\n    /// price, and which currency pays for it \u2014 <c>IsGems</c> is what decides between money and\n    /// gems at purchase time, so it must round-trip through the save.\n    /// </summary>\n    [Serializable]\n    public class PetSaveData\n    {\n        public string DefinitionId;\n        public string InstanceId;\n        public int Level;\n        public long Exp;\n        public string EquippedToCharacterId; // null = unequipped\n    }\n\n    [Serializable]\n    public class MerchantOfferSaveData\n    {\n        public string DefinitionId;\n        public int StackCount;\n        public long Price;\n        public bool IsGems;\n    }\n\n    [Serializable]\n    public class SaveData\n    {\n        public SaveMetadata Metadata;\n        \n        // Storage progressions\n        public int LevelStorage;\n        public int UpgradeStorage;\n        \n        // S3 Batch 2 - Currency and Upgrades (Mapped from Java Data.java)\n        // Java money -> Unity Money\n        public long Money;\n        public long Gems;\n        \n        // Java levelWorkshopTime -> Unity LevelWorkshopTime\n        public int LevelWorkshopTime;\n        // Java levelMarketTime -> Unity LevelMarketTime\n        public int LevelMarketTime;\n        \n        // S3 Batch 2 - Craft & Merchant queues\n        public List<ItemActionSaveData> WorkshopQueue = new List<ItemActionSaveData>();\n        public List<ItemActionSaveData> CompletedWorkshopItems = new List<ItemActionSaveData>();\n        public List<ItemActionSaveData> MarketListings = new List<ItemActionSaveData>();\n        public List<ItemActionSaveData> SoldMarketItems = new List<ItemActionSaveData>();\n        \n        public List<ItemSaveData> Items = new List<ItemSaveData>();\n        public List<CharacterSaveData> Characters = new List<CharacterSaveData>();\n        public List<QuestSaveData> Quests = new List<QuestSaveData>();\n        public List<DungeonSaveData> Dungeons = new List<DungeonSaveData>();\n        public List<SkillSaveData> Skills = new List<SkillSaveData>();\n        public List<PetSaveData> Pets = new List<PetSaveData>();\n\n        public ActiveDungeonSaveData ActiveDungeon = null;\n\n        // ---------------------------------------------------------------------------------\n        // S6.5A Stage 1 \u2014 fields ported from Data.java that the core loop needs.\n        // Names follow the existing PascalCase convention; the Java field each one maps to is\n        // noted where the spelling differs. Everything defaults to the same value a fresh\n        // Data instance has in the original, so an older save that lacks these keys still\n        // loads with correct behaviour.\n        // ---------------------------------------------------------------------------------\n\n        // --- Purchase flags (Java: starterPackPurchased, adventurerPackPurchased, ...) ---\n        // Not a store implementation \u2014 these are inputs to the capacity/price formulas.\n        public bool StarterPackPurchased;\n        public bool AdventurerPackPurchased;\n        public bool MerchantPackPurchased;\n        public bool ImperialVanguardPurchased;\n        public bool UnholyCrusadePurchased;\n\n        // --- Time markers (Java: lastAccess, lastHourTriggered, ...) ---\n        // lastAccess drives offline progress; 0 means \"never played\", which the original\n        // treats as a 1 second delta rather than a huge one.\n        public long LastAccess;\n        public long LastHourTriggered;\n        public long Last24Triggered;\n        public long LastWeekTriggered;\n\n        // --- Tavern / quarters ---\n        public long NextTavernVisit;\n        public bool TavernLocked;\n        public int TutorialStep;\n        public List<CharacterSaveData> TavernGuests = new List<CharacterSaveData>();\n\n        public int LevelQuarters;\n        public int UpgradeQuarters;\n        public int LevelTavernCapacity;\n        public int UpgradeTavernCapacity;\n        public int LevelTavernTime;\n        public int UpgradeTavernTime;\n\n        // --- Workshop / market / shelter levels ---\n        // LevelStorage, UpgradeStorage, LevelWorkshopTime and LevelMarketTime already exist\n        // above; these complete the set the formulas expect.\n        public int UpgradeWorkshopTime;\n        public int LevelWorkshopQueue;\n        public int UpgradeWorkshopQueue;\n        public int UpgradeMarketTime;\n        public int LevelMarketListings;\n        public int UpgradeMarketQueue;\n        public int LevelShelter;\n        public int UpgradeShelter;\n        public int LevelShelterAutofeed;\n\n        // --- Doctrine progression (Java: warLevel/warProgress, ruinLevel/ruinProgress, ...) ---\n        // Quest rewards feed these, and they feed the combat stat bonuses.\n        public int AfflictionLevel;\n        public int AfflictionProgress;\n        public int ControlLevel;\n        public int ControlProgress;\n        public int FortitudeLevel;\n        public int FortitudeProgress;\n        public int GraceLevel;\n        public int GraceProgress;\n        public int IllusionLevel;\n        public int IllusionProgress;\n        public int KnowledgeLevel;\n        public int KnowledgeProgress;\n        public int RuinLevel;\n        public int RuinProgress;\n        public int WarLevel;\n        public int WarProgress;\n        public bool DoctrineMaxed;\n\n        // --- Merchant stock (Java: merchantRegularStockItems, merchantSpecialReserve) ---\n        // Buying removes the offer from one of these two lists.\n        public List<MerchantOfferSaveData> MerchantRegularStockItems = new List<MerchantOfferSaveData>();\n        public List<MerchantOfferSaveData> MerchantSpecialReserve = new List<MerchantOfferSaveData>();\n        public List<string> UniqueItemsLost = new List<string>();\n        public bool NewMerchantRegularItems;\n        public bool NewMerchantSpecialItems;\n\n        // --- Quest bookkeeping ---\n        public bool QuestsSeen;\n        public bool QuestsRefreshed;\n        public int QuestsCompleted;\n\n        // --- Settings (Java: setting* / settingsLanguage) ---\n        public bool SettingAutoOpenDungeonDetail;\n        public bool SettingColorblindMode;\n        public bool SettingConfirmRetreat;\n        public bool SettingConfirmSwap;\n        public bool SettingConfirmUpgrade;\n        public bool SettingCraftMaxAmount;\n        public bool SettingSellMaxAmount;\n        public bool SettingVerboseLogs;\n        public string SettingsLanguage = string.Empty;\n        public bool SettingsNotifications;\n        public bool SettingsCloud;\n        public bool SettingsSound;\n        public bool SettingsMusic;\n        public bool SettingsVibration;\n\n        // --- Statistics ---\n        public long ItemsCrafted;\n        public long ItemsSold;\n        public long MaxWealth;\n        public int MaxAdventurerTier;\n        public int MaxAdventurersOwned;\n\n        /// <summary>\n        /// The purchase flags in the shape the formula service expects. Several capacity and\n        /// price formulas read these directly in the original.\n        /// </summary>\n        public GuildMaster.Runtime.Formulas.PurchaseFlags GetPurchaseFlags()\n        {\n            return new GuildMaster.Runtime.Formulas.PurchaseFlags\n            {\n                StarterPack = StarterPackPurchased,\n                AdventurerPack = AdventurerPackPurchased,\n                MerchantPack = MerchantPackPurchased,\n                ImperialVanguard = ImperialVanguardPurchased,\n                UnholyCrusade = UnholyCrusadePurchased\n            };\n        }\n\n        /// <summary>\n        /// Repairs a deserialized instance in place.\n        ///\n        /// JsonUtility leaves any field absent from the JSON at its C# default, which turns\n        /// every list added after a save was written into null. Calling this right after load\n        /// keeps older saves working without touching the values they do carry.\n        /// </summary>\n        public static SaveData CreateDefault()\n        {\n            var data = new SaveData();\n            data.Money = 500;\n            data.LevelStorage = 1;\n            data.SettingsSound = true;\n            data.SettingsMusic = true;\n\n            data.NormalizeAfterLoad();\n            data.Characters.Add(new CharacterSaveData { DefinitionId = \"Footman\", Level = 1, InstanceId = System.Guid.NewGuid().ToString() });\n            return data;\n        }\n\n        public void NormalizeAfterLoad()\n        {\n            if (Metadata == null) Metadata = new SaveMetadata();\n\n            if (WorkshopQueue == null) WorkshopQueue = new List<ItemActionSaveData>();\n            if (CompletedWorkshopItems == null) CompletedWorkshopItems = new List<ItemActionSaveData>();\n            if (MarketListings == null) MarketListings = new List<ItemActionSaveData>();\n            if (SoldMarketItems == null) SoldMarketItems = new List<ItemActionSaveData>();\n\n            if (Items == null) Items = new List<ItemSaveData>();\n            if (Characters == null) Characters = new List<CharacterSaveData>();\n            if (Quests == null) Quests = new List<QuestSaveData>();\n            if (Dungeons == null) Dungeons = new List<DungeonSaveData>();\n            if (Skills == null) Skills = new List<SkillSaveData>();\n\n            if (TavernGuests == null) TavernGuests = new List<CharacterSaveData>();\n            if (Pets == null) Pets = new List<PetSaveData>();\n            if (MerchantRegularStockItems == null) MerchantRegularStockItems = new List<MerchantOfferSaveData>();\n            if (MerchantSpecialReserve == null) MerchantSpecialReserve = new List<MerchantOfferSaveData>();\n            if (UniqueItemsLost == null) UniqueItemsLost = new List<string>();\n\n            if (SettingsLanguage == null) SettingsLanguage = string.Empty;\n\n            foreach (CharacterSaveData c in Characters) NormalizeCharacter(c);\n            foreach (PetSaveData p in Pets) NormalizePet(p);\n            foreach (CharacterSaveData c in TavernGuests) NormalizeCharacter(c);\n        }\n\n        private static void NormalizeCharacter(CharacterSaveData character)\n        {\n            if (character == null) return;\n            if (character.PositiveStatusEffects == null)\n                character.PositiveStatusEffects = new List<StatusEffectSaveData>();\n            if (character.NegativeStatusEffects == null)\n                character.NegativeStatusEffects = new List<StatusEffectSaveData>();\n            if (character.PotionsDrank == null || character.PotionsDrank.Length != 6)\n                character.PotionsDrank = new int[6];\n            if (character.Trait == null)\n                character.Trait = string.Empty;\n        }\n\n        private static void NormalizePet(PetSaveData pet)\n        {\n            if (pet == null) return;\n            if (pet.Level < 1) pet.Level = 1;\n            if (string.IsNullOrEmpty(pet.InstanceId))\n                pet.InstanceId = System.Guid.NewGuid().ToString();\n        }\n    }\n}\n"
+      }
+    },
+    "SaveService": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scripts\\Runtime\\Save\\SaveService.cs",
+      "info": {
+        "methods": [
+          {
+            "return_type": "bool",
+            "name": "HasSaveFile",
+            "args": ""
+          },
+          {
+            "return_type": "bool",
+            "name": "Load",
+            "args": "out Exception error"
+          },
+          {
+            "return_type": "bool",
+            "name": "Save",
+            "args": "out Exception error"
+          },
+          {
+            "return_type": "void",
+            "name": "DeleteSave",
+            "args": ""
+          },
+          {
+            "return_type": "void",
+            "name": "MigrateSave",
+            "args": "SaveData oldData"
+          }
+        ],
+        "fields": [
+          {
+            "type": "int",
+            "name": "CurrentSaveVersion"
+          },
+          {
+            "type": "string",
+            "name": "_saveFilePath"
+          },
+          {
+            "type": "string",
+            "name": "_backupFilePath"
+          }
+        ],
+        "content_lines": 144,
+        "raw_content": "using System;\nusing System.IO;\nusing UnityEngine;\n\nnamespace GuildMaster.Runtime.Save\n{\n    public class SaveService : ISaveService\n    {\n        private const int CurrentSaveVersion = 1;\n        private readonly string _saveFilePath;\n        private readonly string _backupFilePath;\n\n        public SaveData CurrentData { get; private set; }\n\n        public SaveService()\n        {\n            _saveFilePath = Path.Combine(Application.persistentDataPath, \"save.json\");\n            _backupFilePath = Path.Combine(Application.persistentDataPath, \"save_backup.json\");\n            CurrentData = SaveData.CreateDefault();\n        }\n\n        public bool HasSaveFile()\n        {\n            return File.Exists(_saveFilePath);\n        }\n\n        public bool Load(out Exception error)\n        {\n            error = null;\n            if (!HasSaveFile())\n            {\n                // Fallback to empty save\n                CurrentData = SaveData.CreateDefault();\n                CurrentData.NormalizeAfterLoad();\n                return true;\n            }\n\n            try\n            {\n                string json = File.ReadAllText(_saveFilePath);\n                var loadedData = JsonUtility.FromJson<SaveData>(json);\n\n                if (loadedData == null)\n                {\n                    throw new InvalidDataException(\"Parsed save data is null.\");\n                }\n\n                // Fields introduced after this file was written come back as null/default;\n                // normalising first means migration and callers never see a null list.\n                loadedData.NormalizeAfterLoad();\n\n                if (loadedData.Metadata != null && loadedData.Metadata.SaveVersion < CurrentSaveVersion)\n                {\n                    MigrateSave(loadedData);\n                }\n\n                CurrentData = loadedData;\n                return true;\n            }\n            catch (Exception ex)\n            {\n                Debug.LogError($\"[SaveService] Failed to load save file: {ex.Message}\");\n                error = ex;\n                \n                // Fallback to backup\n                if (File.Exists(_backupFilePath))\n                {\n                    Debug.LogWarning(\"[SaveService] Attempting to load backup save...\");\n                    try\n                    {\n                        string jsonBackup = File.ReadAllText(_backupFilePath);\n                        CurrentData = JsonUtility.FromJson<SaveData>(jsonBackup) ?? SaveData.CreateDefault();\n                        CurrentData.NormalizeAfterLoad();\n                        return true;\n                    }\n                    catch (Exception backupEx)\n                    {\n                        Debug.LogError($\"[SaveService] Failed to load backup save: {backupEx.Message}\");\n                        CurrentData = SaveData.CreateDefault(); // Fallback to empty\n                        CurrentData.NormalizeAfterLoad();\n                        return false;\n                    }\n                }\n                \n                CurrentData = SaveData.CreateDefault(); // Fallback to empty\n                CurrentData.NormalizeAfterLoad();\n                return false;\n            }\n        }\n\n        public bool Save(out Exception error)\n        {\n            error = null;\n            try\n            {\n                if (CurrentData.Metadata == null)\n                {\n                    CurrentData.Metadata = new SaveMetadata();\n                }\n\n                CurrentData.Metadata.SaveVersion = CurrentSaveVersion;\n                CurrentData.Metadata.SaveTimeUnix = DateTimeOffset.UtcNow.ToUnixTimeSeconds();\n                CurrentData.Metadata.GameVersion = Application.version;\n\n                string json = JsonUtility.ToJson(CurrentData, true);\n\n                // Backup old save before overwriting\n                if (File.Exists(_saveFilePath))\n                {\n                    File.Copy(_saveFilePath, _backupFilePath, true);\n                }\n\n                File.WriteAllText(_saveFilePath, json);\n                return true;\n            }\n            catch (Exception ex)\n            {\n                Debug.LogError($\"[SaveService] Failed to save game: {ex.Message}\");\n                error = ex;\n                return false;\n            }\n        }\n\n        public void DeleteSave()\n        {\n            if (File.Exists(_saveFilePath))\n            {\n                File.Delete(_saveFilePath);\n            }\n            if (File.Exists(_backupFilePath))\n            {\n                File.Delete(_backupFilePath);\n            }\n            CurrentData = SaveData.CreateDefault();\n        }\n\n        private void MigrateSave(SaveData oldData)\n        {\n            // Placeholder for future migrations\n            Debug.Log($\"[SaveService] Migrating save from version {oldData.Metadata.SaveVersion} to {CurrentSaveVersion}\");\n            oldData.Metadata.SaveVersion = CurrentSaveVersion;\n        }\n    }\n}\n"
+      }
+    },
+    "IOfflineProgressService": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scripts\\Runtime\\Services\\IOfflineProgressService.cs",
+      "info": {
+        "methods": [],
+        "fields": [],
+        "content_lines": 10,
+        "raw_content": "using GuildMaster.Runtime.Models;\n\nnamespace GuildMaster.Runtime.Services\n{\n    public interface IOfflineProgressService\n    {\n        long CalculateOfflineDeltaSeconds(long lastSaveUnix, long currentUnix);\n        OfflineProgressResult ApplyOfflineProgress(long currentUnix);\n    }\n}\n"
+      }
+    },
+    "OfflineProgressService": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scripts\\Runtime\\Services\\OfflineProgressService.cs",
+      "info": {
+        "methods": [
+          {
+            "return_type": "long",
+            "name": "CalculateOfflineDeltaSeconds",
+            "args": "long lastSaveUnix, long currentUnix"
+          },
+          {
+            "return_type": "OfflineProgressResult",
+            "name": "ApplyOfflineProgress",
+            "args": "long currentUnix"
+          }
+        ],
+        "fields": [
+          {
+            "type": "ISaveService",
+            "name": "_saveService"
+          },
+          {
+            "type": "ICraftService",
+            "name": "_craftService"
+          },
+          {
+            "type": "IMerchantService",
+            "name": "_merchantService"
+          },
+          {
+            "type": "long",
+            "name": "Cap12Hours"
+          }
+        ],
+        "content_lines": 64,
+        "raw_content": "using System;\nusing GuildMaster.Runtime.Models;\nusing GuildMaster.Runtime.Save;\n\nnamespace GuildMaster.Runtime.Services\n{\n    public class OfflineProgressService : IOfflineProgressService\n    {\n        private readonly ISaveService _saveService;\n        private readonly ICraftService _craftService;\n        private readonly IMerchantService _merchantService;\n\n        private const long Cap12Hours = 12 * 3600;\n\n        public OfflineProgressService(ISaveService saveService, ICraftService craftService, IMerchantService merchantService)\n        {\n            _saveService = saveService ?? throw new ArgumentNullException(nameof(saveService));\n            _craftService = craftService ?? throw new ArgumentNullException(nameof(craftService));\n            _merchantService = merchantService ?? throw new ArgumentNullException(nameof(merchantService));\n        }\n\n        public long CalculateOfflineDeltaSeconds(long lastSaveUnix, long currentUnix)\n        {\n            if (lastSaveUnix <= 0) return 0;\n            if (currentUnix <= lastSaveUnix) return 0;\n\n            long delta = currentUnix - lastSaveUnix;\n            return Math.Min(delta, Cap12Hours);\n        }\n\n        public OfflineProgressResult ApplyOfflineProgress(long currentUnix)\n        {\n            var metadata = _saveService.CurrentData?.Metadata;\n            if (metadata == null) \n            {\n                return new OfflineProgressResult { Success = false, DeltaSeconds = 0, DispatchDeferred = false };\n            }\n\n            long delta = CalculateOfflineDeltaSeconds(metadata.SaveTimeUnix, currentUnix);\n            \n            // Save new last access time\n            metadata.SaveTimeUnix = currentUnix;\n\n            if (delta > 0)\n            {\n                // Dispatch to safe services (Craft and Merchant queues)\n                _craftService.ProgressWorkshop(delta);\n                _merchantService.ProgressMarket(delta);\n\n                // Dungeon tick deferred: No safe background dungeon loop implemented yet.\n                // Combat / Quest offline logic deferred.\n                \n                return new OfflineProgressResult \n                { \n                    Success = true, \n                    DeltaSeconds = delta, \n                    DispatchDeferred = true \n                };\n            }\n\n            return new OfflineProgressResult { Success = true, DeltaSeconds = 0, DispatchDeferred = false };\n        }\n    }\n}\n"
+      }
+    },
+    "ServiceContainer": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scripts\\Runtime\\Services\\ServiceContainer.cs",
+      "info": {
+        "methods": [],
+        "fields": [],
+        "content_lines": 88,
+        "raw_content": "using System;\nusing GuildMaster.Database;\nusing GuildMaster.Runtime.Core;\nusing GuildMaster.Runtime.Formulas;\nusing GuildMaster.Runtime.Save;\n\nnamespace GuildMaster.Runtime.Services\n{\n    /// <summary>\n    /// Central composition root container holding singletons for all runtime services.\n    /// Guarantees that a single shared ISaveService, IFormulaService, and GameDatabase\n    /// are injected across the entire game loop.\n    /// </summary>\n    public class ServiceContainer\n    {\n        public GameDatabase Database { get; }\n        public RuntimeFactory Factory { get; }\n        public IFormulaService Formula { get; }\n        public ISaveService Save { get; }\n\n        public IItemService Item { get; }\n        public IInventoryService Inventory { get; }\n        public ICharacterService Character { get; }\n        public IEquipmentService Equipment { get; }\n        public ISkillService Skill { get; }\n        public IStatusEffectService StatusEffect { get; }\n        public ICraftService Craft { get; }\n        public IMerchantService Merchant { get; }\n        public IDungeonService Dungeon { get; }\n        public ICombatService Combat { get; }\n        public ITargetSelectionService TargetSelection { get; }\n        public ILootService Loot { get; }\n        public IQuestService Quest { get; }\n        public IDoctrineService Doctrine { get; }\n        public IPromotionService Promotion { get; }\n        public ITavernService Tavern { get; }\n        public ISettingsService Settings { get; }\n        public IOfflineProgressService OfflineProgress { get; }\n        public IGameLoopService GameLoop { get; }\n        public IPetService Pet { get; }\n\n        public ServiceContainer(\n            GameDatabase database, \n            ISaveService saveService = null, \n            IFormulaService formulaService = null,\n            RuntimeFactory factory = null)\n        {\n            Database = database ?? throw new ArgumentNullException(nameof(database));\n            Formula = formulaService ?? new FormulaService();\n            \n            if (saveService == null)\n            {\n                var newSave = new SaveService();\n                newSave.Load(out _);\n                Save = newSave;\n            }\n            else\n            {\n                Save = saveService;\n            }\n\n            Factory = factory ?? new RuntimeFactory(new DefaultInstanceIdGenerator());\n\n            Item = new ItemService(Factory, Database);\n            Inventory = new InventoryService(Save, Formula, Item, Database);\n            Pet = new PetService(Save, Database);\n            Character = new CharacterService(Save, Formula, Database, Factory, Inventory, Pet);\n            Equipment = new EquipmentService(Inventory, Save);\n            Skill = new SkillService();\n            StatusEffect = new StatusEffectService();\n            Craft = new CraftService(Database, Inventory, Save);\n            Merchant = new MerchantService(Database, Inventory, Save);\n            Combat = new CombatService(Character, Pet);\n            TargetSelection = new TargetSelectionService();\n            Loot = new LootService();\n\n            Doctrine = new DoctrineService(Save, Formula);\n            Promotion = new PromotionService(Save, Database, Inventory, Character);\n            Quest = new QuestService(Save, Database, Doctrine);\n            // Dungeon drives the run loop, so it needs combat, loot, characters, inventory and quest.\n            Dungeon = new DungeonService(Save, Database, Combat, Loot, Character, Inventory, Quest);\n            Tavern = new TavernService(Save, Formula, Character, Database);\n            Settings = new SettingsService(Save);\n            OfflineProgress = new OfflineProgressService(Save, Craft, Merchant);\n            GameLoop = new GameLoopService(Save, Tavern, Merchant, Craft, Dungeon);\n        }\n    }\n}\n"
+      }
+    },
+    "UIService": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scripts\\Runtime\\UI\\Core\\UIService.cs",
+      "info": {
+        "methods": [
+          {
+            "return_type": "void",
+            "name": "RegisterScreen",
+            "args": "UIScreen screen"
+          },
+          {
+            "return_type": "void",
+            "name": "ShowScreen",
+            "args": "UIScreenId screenId"
+          },
+          {
+            "return_type": "void",
+            "name": "HideScreen",
+            "args": "UIScreenId screenId"
+          },
+          {
+            "return_type": "void",
+            "name": "Back",
+            "args": ""
+          },
+          {
+            "return_type": "void",
+            "name": "ShowPopup",
+            "args": "UIScreenId popupId"
+          },
+          {
+            "return_type": "void",
+            "name": "ClosePopup",
+            "args": ""
+          },
+          {
+            "return_type": "void",
+            "name": "RegisterDialogScreen",
+            "args": "GuildMaster.Runtime.UI.Popup.PopupScreen popupScreen"
+          },
+          {
+            "return_type": "void",
+            "name": "ShowInfo",
+            "args": "string title, string message"
+          },
+          {
+            "return_type": "void",
+            "name": "ShowError",
+            "args": "string title, string message"
+          },
+          {
+            "return_type": "void",
+            "name": "ShowDeferred",
+            "args": ""
+          }
+        ],
+        "fields": [
+          {
+            "type": "Stack<UIScreenId>",
+            "name": "_screenStack"
+          },
+          {
+            "type": "UIScreenId",
+            "name": "_currentPopup"
+          }
+        ],
+        "content_lines": 127,
+        "raw_content": "using System.Collections.Generic;\nusing UnityEngine;\n\nnamespace GuildMaster.Runtime.UI.Core\n{\n    public class UIService : IUIService\n    {\n        private readonly Dictionary<UIScreenId, UIScreen> _screens = new Dictionary<UIScreenId, UIScreen>();\n        private readonly Stack<UIScreenId> _screenStack = new Stack<UIScreenId>();\n        private UIScreenId _currentPopup = UIScreenId.None;\n\n        public void RegisterScreen(UIScreen screen)\n        {\n            if (screen == null) return;\n            _screens[screen.ScreenId] = screen;\n            screen.Hide(); // default state\n        }\n\n        public void ShowScreen(UIScreenId screenId)\n        {\n            if (!_screens.ContainsKey(screenId))\n            {\n                Debug.LogWarning($\"[UIService] Screen {screenId} not registered. (Deferred or Placeholder)\");\n                return;\n            }\n\n            // Hide current screen if any\n            if (_screenStack.Count > 0)\n            {\n                var current = _screenStack.Peek();\n                if (_screens.TryGetValue(current, out var currentScreen))\n                {\n                    currentScreen.Hide();\n                }\n            }\n\n            _screenStack.Push(screenId);\n            _screens[screenId].Show();\n        }\n\n        public void HideScreen(UIScreenId screenId)\n        {\n            if (_screens.TryGetValue(screenId, out var screen))\n            {\n                screen.Hide();\n            }\n        }\n\n        public void Back()\n        {\n            if (_screenStack.Count <= 1) return; // Don't pop the root screen\n\n            var current = _screenStack.Pop();\n            HideScreen(current);\n\n            var previous = _screenStack.Peek();\n            if (_screens.TryGetValue(previous, out var prevScreen))\n            {\n                prevScreen.Show();\n            }\n        }\n\n        public void ShowPopup(UIScreenId popupId)\n        {\n            if (!_screens.ContainsKey(popupId))\n            {\n                Debug.LogWarning($\"[UIService] Popup {popupId} not registered.\");\n                return;\n            }\n\n            if (_currentPopup != UIScreenId.None)\n            {\n                ClosePopup();\n            }\n\n            _currentPopup = popupId;\n            _screens[popupId].Show();\n        }\n\n        public void ClosePopup()\n        {\n            if (_currentPopup != UIScreenId.None && _screens.TryGetValue(_currentPopup, out var popup))\n            {\n                popup.Hide();\n                _currentPopup = UIScreenId.None;\n            }\n        }\n\n        // S4 Dialog System\n        private GuildMaster.Runtime.UI.Popup.PopupScreen _dialogScreen;\n\n        public void RegisterDialogScreen(GuildMaster.Runtime.UI.Popup.PopupScreen popupScreen)\n        {\n            _dialogScreen = popupScreen;\n            if (_dialogScreen != null) _dialogScreen.Hide();\n        }\n\n        public void ShowInfo(string title, string message)\n        {\n            if (_dialogScreen != null)\n            {\n                _dialogScreen.ShowMessage(title, message);\n            }\n            else\n            {\n                Debug.LogWarning($\"[UIService] ShowInfo: {title} - {message} (No Dialog Registered)\");\n            }\n        }\n\n        public void ShowError(string title, string message)\n        {\n            ShowInfo($\"[Error] {title}\", message);\n        }\n\n        public void ShowDeferred()\n        {\n            if (_dialogScreen != null)\n            {\n                _dialogScreen.ShowDeferred();\n            }\n            else\n            {\n                Debug.LogWarning(\"[UIService] Feature Deferred (No Dialog Registered)\");\n            }\n        }\n    }\n}\n"
+      }
+    },
+    "HUDController": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scripts\\Runtime\\UI\\HUD\\HUDController.cs",
+      "info": {
+        "methods": [
+          {
+            "return_type": "void",
+            "name": "Initialize",
+            "args": "ISaveService saveService, IUIService uiService"
+          },
+          {
+            "return_type": "void",
+            "name": "BindButtons",
+            "args": ""
+          },
+          {
+            "return_type": "void",
+            "name": "RefreshHUD",
+            "args": ""
+          },
+          {
+            "return_type": "void",
+            "name": "Show",
+            "args": ""
+          }
+        ],
+        "fields": [
+          {
+            "type": "ISaveService",
+            "name": "_saveService"
+          },
+          {
+            "type": "IUIService",
+            "name": "_uiService"
+          },
+          {
+            "type": "Text",
+            "name": "_moneyText"
+          },
+          {
+            "type": "Text",
+            "name": "_gemsText"
+          },
+          {
+            "type": "Button",
+            "name": "_inventoryButton"
+          },
+          {
+            "type": "Button",
+            "name": "_characterButton"
+          },
+          {
+            "type": "Button",
+            "name": "_dungeonButton"
+          },
+          {
+            "type": "Button",
+            "name": "_craftButton"
+          },
+          {
+            "type": "Button",
+            "name": "_merchantButton"
+          },
+          {
+            "type": "Button",
+            "name": "_settingsButton"
+          },
+          {
+            "type": "Button",
+            "name": "_tavernButton"
+          },
+          {
+            "type": "Button",
+            "name": "_questButton"
+          }
+        ],
+        "content_lines": 71,
+        "raw_content": "using GuildMaster.Runtime.Save;\nusing GuildMaster.Runtime.UI.Core;\nusing UnityEngine;\nusing UnityEngine.UI;\n\nnamespace GuildMaster.Runtime.UI.HUD\n{\n    public class HUDController : UIScreen\n    {\n        private ISaveService _saveService;\n        private IUIService _uiService;\n\n        [Header(\"Currency Displays\")]\n        [SerializeField] private Text _moneyText;\n        [SerializeField] private Text _gemsText;\n\n        [Header(\"Navigation Buttons\")]\n        [SerializeField] private Button _inventoryButton;\n        [SerializeField] private Button _characterButton;\n        [SerializeField] private Button _dungeonButton;\n        [SerializeField] private Button _craftButton;\n        [SerializeField] private Button _merchantButton;\n        [SerializeField] private Button _settingsButton;\n        [SerializeField] private Button _tavernButton;\n        [SerializeField] private Button _questButton;\n\n        public void Initialize(ISaveService saveService, IUIService uiService)\n        {\n            _saveService = saveService;\n            _uiService = uiService;\n            BindButtons();\n            RefreshHUD();\n        }\n\n        private void BindButtons()\n        {\n            if (_inventoryButton) _inventoryButton.onClick.AddListener(() => _uiService.ShowScreen(UIScreenId.Inventory));\n            if (_characterButton) _characterButton.onClick.AddListener(() => _uiService.ShowScreen(UIScreenId.Character));\n            if (_dungeonButton) _dungeonButton.onClick.AddListener(() => _uiService.ShowScreen(UIScreenId.Dungeon));\n            if (_craftButton) _craftButton.onClick.AddListener(() => _uiService.ShowScreen(UIScreenId.Craft));\n            if (_merchantButton) _merchantButton.onClick.AddListener(() => _uiService.ShowScreen(UIScreenId.Merchant));\n            if (_settingsButton) _settingsButton.onClick.AddListener(() => _uiService.ShowScreen(UIScreenId.Settings));\n            if (_tavernButton) _tavernButton.onClick.AddListener(() => _uiService.ShowScreen(UIScreenId.Tavern));\n            if (_questButton) _questButton.onClick.AddListener(() => _uiService.ShowScreen(UIScreenId.Quest));\n        }\n\n        public void RefreshHUD()\n        {\n            if (_saveService == null) return;\n            \n            var data = _saveService.CurrentData;\n            if (data != null)\n            {\n                if (_moneyText != null) _moneyText.text = data.Money.ToString();\n                if (_gemsText != null) _gemsText.text = data.Gems.ToString();\n            }\n            else\n            {\n                // Save is null -> display safe default\n                if (_moneyText != null) _moneyText.text = \"0\";\n                if (_gemsText != null) _gemsText.text = \"0\";\n            }\n        }\n\n        public override void Show()\n        {\n            base.Show();\n            RefreshHUD();\n        }\n    }\n}\n"
+      }
+    },
+    "S6_5A_Stage11_OfflineTests": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scripts\\Tests\\EditMode\\S6_5A_Stage11_OfflineTests.cs",
+      "info": {
+        "methods": [
+          {
+            "return_type": "void",
+            "name": "Setup",
+            "args": ""
+          },
+          {
+            "return_type": "void",
+            "name": "OfflineProgressService_CalculateOfflineDeltaSeconds_CapsAt12Hours",
+            "args": ""
+          },
+          {
+            "return_type": "void",
+            "name": "OfflineProgressService_ApplyOfflineProgress_SimulatesCraftAndMarketAndUpdatesSaveTime",
+            "args": ""
+          }
+        ],
+        "fields": [
+          {
+            "type": "GameDatabase",
+            "name": "_database"
+          },
+          {
+            "type": "ServiceContainer",
+            "name": "_container"
+          }
+        ],
+        "content_lines": 59,
+        "raw_content": "using System;\nusing NUnit.Framework;\nusing GuildMaster.Database;\nusing GuildMaster.Infrastructure.DataProviders;\nusing GuildMaster.Infrastructure.Serialization;\nusing GuildMaster.Runtime.Save;\nusing GuildMaster.Runtime.Services;\n\nnamespace GuildMaster.Tests.EditMode\n{\n    [TestFixture]\n    public class S6_5A_Stage11_OfflineTests\n    {\n        private GameDatabase _database;\n        private ServiceContainer _container;\n\n        [SetUp]\n        public void Setup()\n        {\n            _database = new GameDatabase();\n            var provider = new EditorExternalGameDataProvider();\n            var serializer = new UnityJsonSerializer();\n            var builder = new DatabaseBuilder(provider, serializer, _database);\n            builder.Build();\n\n            _container = new ServiceContainer(_database);\n        }\n\n        [Test]\n        public void OfflineProgressService_CalculateOfflineDeltaSeconds_CapsAt12Hours()\n        {\n            var offline = _container.OfflineProgress;\n            long now = 1000000000L;\n\n            // 24 hours offline = 86400s\n            long save24hAgo = now - 86400L;\n            long delta = offline.CalculateOfflineDeltaSeconds(save24hAgo, now);\n\n            // Must cap at 43200s (12 hours)\n            Assert.AreEqual(43200L, delta);\n        }\n\n        [Test]\n        public void OfflineProgressService_ApplyOfflineProgress_SimulatesCraftAndMarketAndUpdatesSaveTime()\n        {\n            var offline = _container.OfflineProgress;\n            var save = _container.Save;\n\n            save.CurrentData.Metadata.SaveTimeUnix = 1000000000L;\n            long currentUnix = 1000010000L; // 10000s offline\n\n            var result = offline.ApplyOfflineProgress(currentUnix);\n\n            Assert.IsTrue(result.Success);\n            Assert.AreEqual(10000L, result.DeltaSeconds);\n            Assert.AreEqual(currentUnix, save.CurrentData.Metadata.SaveTimeUnix);\n        }\n    }\n}\n"
+      }
+    }
+  },
+  "scenes": {
+    "Boot": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scenes\\Boot.unity",
+      "contains_boot_loader": true
+    },
+    "Main": {
+      "path": "D:\\Tinh\\Rebuild_GuildMaster\\Assets\\_Game\\Scenes\\Main.unity",
+      "contains_boot_loader": false
+    }
+  },
+  "prefabs": {}
+}

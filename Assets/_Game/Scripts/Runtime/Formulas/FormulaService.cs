@@ -248,5 +248,22 @@ namespace GuildMaster.Runtime.Formulas
                           * BASE_TAVERN_VISITOR_INTERVAL_SECONDS
                           * 1000.0d);
         }
+
+        public long GetSecondsToCraft(long itemPrice, int itemStack, int levelWorkshopTime, int upgradeWorkshopTime, PurchaseFlags flags)
+        {
+            double packMultiplier = flags.MerchantPack ? 0.6d : 1.0d;
+            double timeReduction = Math.Pow(0.9d, (levelWorkshopTime + upgradeWorkshopTime) - 1);
+            long effectivePrice = Math.Max(itemPrice - 1, 1L);
+            
+            return (long)(packMultiplier * timeReduction * effectivePrice * 6 * itemStack);
+        }
+
+        public long GetSecondsToSell(long itemPrice, int itemStack, int levelMarketTime, int upgradeMarketTime, PurchaseFlags flags)
+        {
+            double packMultiplier = flags.MerchantPack ? 0.6d : 1.0d;
+            double timeReduction = Math.Pow(0.9d, (levelMarketTime + upgradeMarketTime) - 1);
+            
+            return (long)(packMultiplier * timeReduction * itemPrice * 4 * itemStack);
+        }
     }
 }

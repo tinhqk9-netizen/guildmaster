@@ -183,5 +183,8 @@ namespace GuildMaster.Runtime.Services
             sold.Remove(item);
             return true;
         }
+
+        public IReadOnlyList<ItemActionSaveData> GetMarketListings() => _saveService.CurrentData.MarketListings;
+        public IReadOnlyList<ItemActionSaveData> GetSoldMarketItems() => _saveService.CurrentData.SoldMarketItems;
     }
 }

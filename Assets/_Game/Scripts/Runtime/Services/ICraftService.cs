@@ -14,5 +14,10 @@ namespace GuildMaster.Runtime.Services
         int GetQueueCapacity();
         IReadOnlyList<ItemActionSaveData> GetQueue();
         IReadOnlyList<ItemActionSaveData> GetCompletedItems();
+
+        // UI Upgrades
+        bool UpgradeQueueCapacity();
+        long GetUpgradeQueueCapacityPrice();
+        int GetQueueCapacityLevel();
     }
 }

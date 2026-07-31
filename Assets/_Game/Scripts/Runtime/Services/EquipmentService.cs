@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using GuildMaster.Definitions;
 using GuildMaster.Runtime.Models;
@@ -121,6 +122,18 @@ namespace GuildMaster.Runtime.Services
                 charSave.ArmorInstanceId = character.Armor?.InstanceId;
                 charSave.AccessoryInstanceId = character.Accessory?.InstanceId;
             }
+
+            // Sync IsLocked: an item is locked iff it is currently equipped by some character.
+            // Previously only charSave.WeaponInstanceId was written, leaving itemSave.IsLocked
+            // stale after unequip — the item would remain Locked in inventory and never show
+            // in the EquipmentPopup again (which filters !item.IsLocked).
+            var equippedIds = new HashSet<string>(
+                _saveService.CurrentData.Characters
+                    .SelectMany(c => new[] { c.WeaponInstanceId, c.ArmorInstanceId, c.AccessoryInstanceId })
+                    .Where(id => !string.IsNullOrEmpty(id)));
+
+            foreach (var itemSave in _saveService.CurrentData.Items)
+                itemSave.IsLocked = equippedIds.Contains(itemSave.InstanceId);
         }
     }
 }

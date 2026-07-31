@@ -38,12 +38,14 @@ namespace GuildMaster.Runtime.Save
         public int Level;
         public int Exp;
         public float CurrentHp;
+        public bool IsHpInitialized;
         
         public string WeaponInstanceId;
         public string ArmorInstanceId;
         public string AccessoryInstanceId;
 
         public bool IsAscended;
+        public int AscensionLevel;
         public string Trait = string.Empty;
         public int[] PotionsDrank = new int[6];
 
@@ -58,6 +60,8 @@ namespace GuildMaster.Runtime.Save
         public string InstanceId;
         public QuestState State;
         public long Progress;
+        public int Rarity;
+        public long TargetProgress;
     }
 
     [Serializable]
@@ -67,6 +71,7 @@ namespace GuildMaster.Runtime.Save
         public string InstanceId;
         public DungeonState State;
         public int ClearCount;
+        public int MaxProgress;
         public float BestTimeSeconds;
     }
 
@@ -93,6 +98,16 @@ namespace GuildMaster.Runtime.Save
     /// price, and which currency pays for it — <c>IsGems</c> is what decides between money and
     /// gems at purchase time, so it must round-trip through the save.
     /// </summary>
+    [Serializable]
+    public class PetSaveData
+    {
+        public string DefinitionId;
+        public string InstanceId;
+        public int Level;
+        public long Exp;
+        public string EquippedToCharacterId; // null = unequipped
+    }
+
     [Serializable]
     public class MerchantOfferSaveData
     {
@@ -132,8 +147,13 @@ namespace GuildMaster.Runtime.Save
         public List<QuestSaveData> Quests = new List<QuestSaveData>();
         public List<DungeonSaveData> Dungeons = new List<DungeonSaveData>();
         public List<SkillSaveData> Skills = new List<SkillSaveData>();
+        public List<PetSaveData> Pets = new List<PetSaveData>();
+        
+        public List<string> CurrentParty = new List<string>();
+        public List<List<string>> ExpeditionParties = new List<List<string>>();
 
         public ActiveDungeonSaveData ActiveDungeon = null;
+        public List<ExpeditionSaveData> ActiveExpeditions = new List<ExpeditionSaveData>();
 
         // ---------------------------------------------------------------------------------
         // S6.5A Stage 1 — fields ported from Data.java that the core loop needs.
@@ -264,6 +284,40 @@ namespace GuildMaster.Runtime.Save
         /// every list added after a save was written into null. Calling this right after load
         /// keeps older saves working without touching the values they do carry.
         /// </summary>
+        public static SaveData CreateDefault()
+        {
+            var data = new SaveData();
+            data.Money = 20;
+            data.LevelStorage = 1;
+            data.LevelQuarters = 1;
+            data.SettingsSound = true;
+            data.SettingsMusic = true;
+
+            data.NormalizeAfterLoad();
+
+            string charInstId = "inst_footman_starter_1";
+
+            // Starter character (Naked Footman)
+            data.Characters.Add(new CharacterSaveData
+            {
+                DefinitionId = "footman",
+                InstanceId = charInstId,
+                Level = 1,
+                Exp = 0,
+                CurrentHp = 40f,
+                IsHpInitialized = true,
+                WeaponInstanceId = "" // Empty weapon
+            });
+
+            data.CurrentParty.Add(charInstId);
+            if (data.ExpeditionParties.Count > 0)
+            {
+                data.ExpeditionParties[0].Add(charInstId);
+            }
+
+            return data;
+        }
+
         public void NormalizeAfterLoad()
         {
             if (Metadata == null) Metadata = new SaveMetadata();
@@ -280,13 +334,34 @@ namespace GuildMaster.Runtime.Save
             if (Skills == null) Skills = new List<SkillSaveData>();
 
             if (TavernGuests == null) TavernGuests = new List<CharacterSaveData>();
+            if (Pets == null) Pets = new List<PetSaveData>();
             if (MerchantRegularStockItems == null) MerchantRegularStockItems = new List<MerchantOfferSaveData>();
             if (MerchantSpecialReserve == null) MerchantSpecialReserve = new List<MerchantOfferSaveData>();
             if (UniqueItemsLost == null) UniqueItemsLost = new List<string>();
+            if (CurrentParty == null) CurrentParty = new List<string>();
+
+            // Multi-Party migration: migrate CurrentParty → ExpeditionParties[0]
+            if (ExpeditionParties == null) ExpeditionParties = new List<List<string>>();
+            while (ExpeditionParties.Count < 3) ExpeditionParties.Add(new List<string>());
+            if (CurrentParty.Count > 0 && ExpeditionParties[0].Count == 0)
+            {
+                ExpeditionParties[0].AddRange(CurrentParty);
+            }
 
             if (SettingsLanguage == null) SettingsLanguage = string.Empty;
 
+            if (ActiveExpeditions == null) ActiveExpeditions = new List<ExpeditionSaveData>();
+            if (ActiveDungeon != null && ActiveExpeditions.Count == 0)
+            {
+                ActiveExpeditions.Add(new ExpeditionSaveData
+                {
+                    SlotIndex = 0,
+                    Dungeon = ActiveDungeon
+                });
+            }
+
             foreach (CharacterSaveData c in Characters) NormalizeCharacter(c);
+            foreach (PetSaveData p in Pets) NormalizePet(p);
             foreach (CharacterSaveData c in TavernGuests) NormalizeCharacter(c);
         }
 
@@ -301,6 +376,14 @@ namespace GuildMaster.Runtime.Save
                 character.PotionsDrank = new int[6];
             if (character.Trait == null)
                 character.Trait = string.Empty;
+        }
+
+        private static void NormalizePet(PetSaveData pet)
+        {
+            if (pet == null) return;
+            if (pet.Level < 1) pet.Level = 1;
+            if (string.IsNullOrEmpty(pet.InstanceId))
+                pet.InstanceId = System.Guid.NewGuid().ToString();
         }
     }
 }

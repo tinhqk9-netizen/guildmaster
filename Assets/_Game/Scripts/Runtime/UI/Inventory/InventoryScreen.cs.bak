@@ -1,0 +1,207 @@
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using GuildMaster.Runtime.UI.Core;
+using GuildMaster.Runtime.UI.Character;
+using GuildMaster.Runtime.Services;
+using GuildMaster.Runtime.Models;
+using GuildMaster.Definitions;
+
+namespace GuildMaster.Runtime.UI.Inventory
+{
+    /// <summary>
+    /// Inventory screen — shows all owned items in a grid, detail panel for selected item,
+    /// and contextual actions (Use/Equip/Unequip/Lock/Sell) that are only enabled when valid.
+    /// Sources: DialogStorage.java, DialogItemDetail.java, DialogSell.java
+    /// </summary>
+    public class InventoryScreen : UIScreen
+    {
+        private IInventoryService _inventoryService;
+        private CharacterScreen   _characterScreen;
+
+        // ── Serialized references (wired by Apply tool) ──────────────────────────
+        [SerializeField] private RectTransform _cardContainer;
+        [SerializeField] private Text          _summaryText;
+        [SerializeField] private Text          _detailText;
+        [SerializeField] private Button        _useButton;
+        [SerializeField] private Button        _equipButton;
+        [SerializeField] private Button        _lockButton;
+        [SerializeField] private Text          _lockButtonLabel;
+        [SerializeField] private Button        _sellButton;
+        [SerializeField] private Text          _feedbackText;
+
+        private int _selectedIndex;
+
+        public void Initialize(ServiceContainer services, CharacterScreen characterScreen = null)
+        {
+            _inventoryService = services.Inventory;
+            _characterScreen  = characterScreen;
+        }
+
+        public override void Show()
+        {
+            base.Show();
+            Refresh();
+        }
+
+        /// <summary>Exposes the player's selected item for Character/Merchant cross-screen actions.</summary>
+        public ItemRuntime GetSelectedItem()
+        {
+            var items = _inventoryService?.GetAllItems();
+            if (items == null || items.Count == 0) return null;
+            _selectedIndex = Mathf.Clamp(_selectedIndex, 0, items.Count - 1);
+            return items[_selectedIndex];
+        }
+
+        public void Refresh()
+        {
+            if (_inventoryService == null) return;
+
+            var items = _inventoryService.GetAllItems();
+
+            if (_summaryText != null)
+                _summaryText.text = $"Items: {items?.Count ?? 0}";
+
+            if (items == null || items.Count == 0)
+            {
+                UICardFactory.ClearContainer(_cardContainer);
+                if (_detailText != null) _detailText.text = "Inventory is empty.";
+                SetAllActionsDisabled();
+                return;
+            }
+
+            _selectedIndex = Mathf.Clamp(_selectedIndex, 0, items.Count - 1);
+            BuildCards(items);
+            var sel = items[_selectedIndex];
+            RefreshDetail(sel);
+            RefreshActions(sel);
+        }
+
+        private void BuildCards(IReadOnlyList<ItemRuntime> items)
+        {
+            if (_cardContainer == null) return;
+            UICardFactory.ClearContainer(_cardContainer);
+            for (int i = 0; i < items.Count; i++)
+            {
+                int captured = i;
+                var item     = items[i];
+                string defId = item.Definition != null ? item.Definition.id : "Unknown";
+                string sub   = $"x{item.StackCount}";
+                if (item.IsLocked)   sub += " [Locked]";
+                if (IsEquipped(item)) sub += " [Equipped]";
+                UICardFactory.CreateCard(_cardContainer, defId, sub,
+                    i == _selectedIndex, true, () => SelectIndex(captured));
+            }
+        }
+
+        private bool IsEquipped(ItemRuntime item)
+        {
+            // Future: query equipment service when available
+            return false;
+        }
+
+        private void RefreshDetail(ItemRuntime item)
+        {
+            if (_detailText == null || item == null) return;
+            string defId = item.Definition != null ? item.Definition.id : "Unknown";
+            bool isConsumable = item.Definition is ItemDefinition id && id.Consumable;
+            bool isEquippable = item.Definition is ItemDefinition;
+
+            string text =
+                $"{defId}\n" +
+                $"Quantity: x{item.StackCount}\n" +
+                $"Locked: {(item.IsLocked ? "Yes" : "No")}\n";
+
+            if (isConsumable) text += "Type: Consumable\n";
+            else if (isEquippable) text += "Type: Equipment\n";
+            else text += "Type: Material\n";
+
+            text += $"\nInstance: {item.InstanceId}";
+            _detailText.text = text;
+        }
+
+        private void RefreshActions(ItemRuntime item)
+        {
+            if (item == null) { SetAllActionsDisabled(); return; }
+
+            bool isConsumable = item.Definition is ItemDefinition id && id.Consumable;
+            bool isEquippable = item.Definition is ItemDefinition;
+            bool hasCharacter = _characterScreen?.GetSelectedCharacter() != null;
+
+            if (_useButton   != null) _useButton.interactable   = isConsumable && hasCharacter;
+            if (_equipButton != null) _equipButton.interactable  = isEquippable && !isConsumable && hasCharacter;
+            if (_lockButton  != null) _lockButton.interactable   = true;
+            if (_lockButtonLabel != null)
+                _lockButtonLabel.text = item.IsLocked ? "Unlock" : "Lock";
+            if (_sellButton  != null) _sellButton.interactable   = !item.IsLocked;
+        }
+
+        private void SetAllActionsDisabled()
+        {
+            if (_useButton   != null) _useButton.interactable   = false;
+            if (_equipButton != null) _equipButton.interactable  = false;
+            if (_lockButton  != null) _lockButton.interactable   = false;
+            if (_sellButton  != null) _sellButton.interactable   = false;
+        }
+
+        /// <summary>Click-to-select — also callable from tests.</summary>
+        public void SelectIndex(int index)
+        {
+            int count = _inventoryService?.GetAllItems().Count ?? 0;
+            if (count == 0) return;
+            _selectedIndex = Mathf.Clamp(index, 0, count - 1);
+            Refresh();
+        }
+
+        public void OnClickSelectNext()     => CycleSelection(1);
+        public void OnClickSelectPrevious() => CycleSelection(-1);
+
+        private void CycleSelection(int dir)
+        {
+            int count = _inventoryService?.GetAllItems().Count ?? 0;
+            if (count == 0) return;
+            _selectedIndex = ((_selectedIndex + dir) % count + count) % count;
+            Refresh();
+        }
+
+        public void OnClickToggleLockSelected()
+        {
+            var item = GetSelectedItem();
+            if (item == null) return;
+            _inventoryService.ToggleLockItem(item.InstanceId);
+            ShowFeedback(item.IsLocked ? "Item unlocked." : "Item locked.", true);
+            Refresh();
+        }
+
+        public void OnClickUseSelectedConsumable()
+        {
+            var item   = GetSelectedItem();
+            var target = _characterScreen?.GetSelectedCharacter();
+            if (item?.Definition is ItemDefinition itemDef && itemDef.Consumable && target != null)
+            {
+                _inventoryService.UseConsumable(item.InstanceId, target);
+                ShowFeedback($"Used {itemDef.id}.", true);
+            }
+            else
+            {
+                ShowFeedback("Select a character first, or item is not consumable.", false);
+            }
+            Refresh();
+        }
+
+        public void OnClickSellSelected()
+        {
+            // Sell is handled via MerchantScreen which reads GetSelectedItem().
+            // This button triggers the sell flow if wired to Merchant directly.
+            // For now, show a reminder.
+            ShowFeedback("Go to Merchant > Sell tab to sell this item.", false);
+        }
+
+        private void ShowFeedback(string msg, bool success)
+        {
+            if (_feedbackText == null) return;
+            _feedbackText.text  = msg;
+            _feedbackText.color = success ? UITemporaryTheme.SuccessColor : UITemporaryTheme.WarningColor;
+        }
+    }
+}

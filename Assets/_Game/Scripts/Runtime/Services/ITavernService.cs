@@ -18,5 +18,13 @@ namespace GuildMaster.Runtime.Services
         bool UpgradeQuarters();
         bool UpgradeTavernCapacity();
         bool UpgradeTavernTime();
+
+        // UI Helpers
+        long GetUpgradeQuartersPrice();
+        long GetUpgradeTavernCapacityPrice();
+        long GetUpgradeTavernTimePrice();
+        int GetQuartersLevel();
+        int GetTavernCapacityLevel();
+        int GetTavernTimeLevel();
     }
 }

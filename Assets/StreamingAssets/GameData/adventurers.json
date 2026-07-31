@@ -46,7 +46,8 @@
    "BaseIntelligence": 15,
    "BaseDexterity": 5,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -66,7 +67,15 @@
    "parseReasons": [],
    "parseStatus": "full",
    "recordHash": "088aa7bd7d306b578facb3d2287bdb8a66e39996b407b0eff043b9f584ace044",
-   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\Adventurer.java"
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\Adventurer.java",
+   "BaseMaxHp": 100,
+   "BaseConstitution": 10,
+   "BaseIntelligence": 10,
+   "BaseDexterity": 10,
+   "BaseDefense": 5,
+   "BaseMagicDefense": 5,
+   "MaxLevel": 99,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -114,7 +123,8 @@
    "BaseIntelligence": 16,
    "BaseDexterity": 26,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -167,7 +177,8 @@
    "BaseIntelligence": 40,
    "BaseDexterity": 10,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -215,7 +226,8 @@
    "BaseIntelligence": 45,
    "BaseDexterity": 11,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -268,7 +280,8 @@
    "BaseIntelligence": 20,
    "BaseDexterity": 12,
    "BaseDefense": 20,
-   "BaseMagicDefense": 40
+   "BaseMagicDefense": 40,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -316,7 +329,8 @@
    "BaseIntelligence": 10,
    "BaseDexterity": 4,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": "apprentice_staff"
   },
   {
    "baseStats": {
@@ -364,7 +378,8 @@
    "BaseIntelligence": 50,
    "BaseDexterity": 12,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -412,7 +427,8 @@
    "BaseIntelligence": 4,
    "BaseDexterity": 8,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": "wooden_bow"
   },
   {
    "baseStats": {
@@ -460,7 +476,8 @@
    "BaseIntelligence": 7,
    "BaseDexterity": 15,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -508,7 +525,8 @@
    "BaseIntelligence": 36,
    "BaseDexterity": 36,
    "BaseDefense": 36,
-   "BaseMagicDefense": 36
+   "BaseMagicDefense": 36,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -556,7 +574,8 @@
    "BaseIntelligence": 17,
    "BaseDexterity": 17,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -609,7 +628,8 @@
    "BaseIntelligence": 50,
    "BaseDexterity": 12,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -657,7 +677,8 @@
    "BaseIntelligence": 14,
    "BaseDexterity": 18,
    "BaseDefense": 20,
-   "BaseMagicDefense": 20
+   "BaseMagicDefense": 20,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -705,7 +726,8 @@
    "BaseIntelligence": 16,
    "BaseDexterity": 32,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -753,7 +775,8 @@
    "BaseIntelligence": 1,
    "BaseDexterity": 17,
    "BaseDefense": 50,
-   "BaseMagicDefense": 0
+   "BaseMagicDefense": 0,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -801,7 +824,8 @@
    "BaseIntelligence": 1,
    "BaseDexterity": 24,
    "BaseDefense": 50,
-   "BaseMagicDefense": 0
+   "BaseMagicDefense": 0,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -849,7 +873,8 @@
    "BaseIntelligence": 1,
    "BaseDexterity": 20,
    "BaseDefense": 50,
-   "BaseMagicDefense": 0
+   "BaseMagicDefense": 0,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -897,7 +922,8 @@
    "BaseIntelligence": 20,
    "BaseDexterity": 40,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -945,7 +971,8 @@
    "BaseIntelligence": 20,
    "BaseDexterity": 6,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -993,7 +1020,8 @@
    "BaseIntelligence": 20,
    "BaseDexterity": 40,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -1041,7 +1069,8 @@
    "BaseIntelligence": 6,
    "BaseDexterity": 12,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -1089,7 +1118,8 @@
    "BaseIntelligence": 9,
    "BaseDexterity": 8,
    "BaseDefense": 20,
-   "BaseMagicDefense": 20
+   "BaseMagicDefense": 20,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -1142,7 +1172,8 @@
    "BaseIntelligence": 20,
    "BaseDexterity": 6,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -1190,7 +1221,8 @@
    "BaseIntelligence": 10,
    "BaseDexterity": 10,
    "BaseDefense": 20,
-   "BaseMagicDefense": 20
+   "BaseMagicDefense": 20,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -1243,7 +1275,8 @@
    "BaseIntelligence": 30,
    "BaseDexterity": 8,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -1291,7 +1324,8 @@
    "BaseIntelligence": 24,
    "BaseDexterity": 24,
    "BaseDefense": 24,
-   "BaseMagicDefense": 24
+   "BaseMagicDefense": 24,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -1339,7 +1373,8 @@
    "BaseIntelligence": 14,
    "BaseDexterity": 18,
    "BaseDefense": 20,
-   "BaseMagicDefense": 20
+   "BaseMagicDefense": 20,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -1387,7 +1422,8 @@
    "BaseIntelligence": 13,
    "BaseDexterity": 16,
    "BaseDefense": 20,
-   "BaseMagicDefense": 20
+   "BaseMagicDefense": 20,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {},
@@ -1398,7 +1434,8 @@
    "parseReasons": [],
    "parseStatus": "full",
    "recordHash": "8603cecfd0dd115fc36c24cdeda17df3b32a7b82871586bc99455351e8fe1c57",
-   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\Doctrine.java"
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\Doctrine.java",
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {},
@@ -1409,7 +1446,8 @@
    "parseReasons": [],
    "parseStatus": "full",
    "recordHash": "fd99aa7cc179c15d591d1beababcb828cb6cabc6d473e10bbad598dee8270ffa",
-   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\DoctrineAbility.java"
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\DoctrineAbility.java",
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {},
@@ -1420,7 +1458,8 @@
    "parseReasons": [],
    "parseStatus": "full",
    "recordHash": "4f103a83819cccbb720a5eb83ae0333ef331e148fa76fe38ccb1364b8a47385a",
-   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfAffliction.java"
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfAffliction.java",
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {},
@@ -1431,7 +1470,8 @@
    "parseReasons": [],
    "parseStatus": "full",
    "recordHash": "5be6f9ca3c97ae8a992215b1df176af64548d459988f734952b0a4521c82c20f",
-   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfControl.java"
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfControl.java",
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {},
@@ -1442,7 +1482,8 @@
    "parseReasons": [],
    "parseStatus": "full",
    "recordHash": "c0b7220e38938212dfc898ce208c4caabbbb148a690a65c56deaaad040c4ad43",
-   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfFortitude.java"
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfFortitude.java",
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {},
@@ -1453,7 +1494,8 @@
    "parseReasons": [],
    "parseStatus": "full",
    "recordHash": "8388e1e75fc7bf140ce5139cef0ffacec4d1a68e6dd9917b0fd20e243aed23ce",
-   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfGrace.java"
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfGrace.java",
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {},
@@ -1464,7 +1506,8 @@
    "parseReasons": [],
    "parseStatus": "full",
    "recordHash": "5f43074d1ca7e63fcdd838355d0cf6f9dcad39a7ebabdb7bb21d88d51bd4477e",
-   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfIllusion.java"
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfIllusion.java",
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {},
@@ -1475,7 +1518,8 @@
    "parseReasons": [],
    "parseStatus": "full",
    "recordHash": "ba3f12d24be67b10faf5504b424d5ffe1d3195a34b5975ad4bf833b11134959c",
-   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfKnowledge.java"
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfKnowledge.java",
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {},
@@ -1486,7 +1530,8 @@
    "parseReasons": [],
    "parseStatus": "full",
    "recordHash": "87135cda806c0ec8575bb0e55c608441df317f7853cabf72d4f2a972bd8604ad",
-   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfRuin.java"
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfRuin.java",
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {},
@@ -1497,7 +1542,8 @@
    "parseReasons": [],
    "parseStatus": "full",
    "recordHash": "18991434a2ba1b58c09482d913003f35f4a020eec03090076b67fdd2d8533f8e",
-   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfWar.java"
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\DoctrineOfWar.java",
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -1545,7 +1591,8 @@
    "BaseIntelligence": 16,
    "BaseDexterity": 32,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -1593,7 +1640,8 @@
    "BaseIntelligence": 26,
    "BaseDexterity": 23,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -1641,7 +1689,8 @@
    "BaseIntelligence": 28,
    "BaseDexterity": 32,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -1689,7 +1738,8 @@
    "BaseIntelligence": 20,
    "BaseDexterity": 28,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {},
@@ -1700,7 +1750,8 @@
    "parseReasons": [],
    "parseStatus": "full",
    "recordHash": "1d0471d1e5d4d8e55eee354d730623453355b0fe98a02397e5dbddd0b14f23ca",
-   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\EmptyDoctrine.java"
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\doctrines\\instances\\EmptyDoctrine.java",
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -1748,7 +1799,8 @@
    "BaseIntelligence": 24,
    "BaseDexterity": 30,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -1796,7 +1848,8 @@
    "BaseIntelligence": 20,
    "BaseDexterity": 12,
    "BaseDefense": 30,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -1844,7 +1897,8 @@
    "BaseIntelligence": 20,
    "BaseDexterity": 6,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -1892,7 +1946,8 @@
    "BaseIntelligence": 4,
    "BaseDexterity": 4,
    "BaseDefense": 20,
-   "BaseMagicDefense": 20
+   "BaseMagicDefense": 20,
+   "StarterWeaponId": "copper_sword"
   },
   {
    "baseStats": {
@@ -1944,7 +1999,8 @@
    "BaseIntelligence": 12,
    "BaseDexterity": 24,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -1992,7 +2048,8 @@
    "BaseIntelligence": 18,
    "BaseDexterity": 36,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2040,7 +2097,8 @@
    "BaseIntelligence": 8,
    "BaseDexterity": 6,
    "BaseDefense": 20,
-   "BaseMagicDefense": 20
+   "BaseMagicDefense": 20,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2088,7 +2146,8 @@
    "BaseIntelligence": 14,
    "BaseDexterity": 28,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2136,7 +2195,8 @@
    "BaseIntelligence": 23,
    "BaseDexterity": 21,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2184,7 +2244,8 @@
    "BaseIntelligence": 11,
    "BaseDexterity": 27,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2232,7 +2293,8 @@
    "BaseIntelligence": 10,
    "BaseDexterity": 7,
    "BaseDefense": 20,
-   "BaseMagicDefense": 23
+   "BaseMagicDefense": 23,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2280,7 +2342,8 @@
    "BaseIntelligence": 8,
    "BaseDexterity": 16,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2328,7 +2391,8 @@
    "BaseIntelligence": 6,
    "BaseDexterity": 12,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2376,7 +2440,8 @@
    "BaseIntelligence": 18,
    "BaseDexterity": 36,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2424,7 +2489,8 @@
    "BaseIntelligence": 28,
    "BaseDexterity": 28,
    "BaseDefense": 28,
-   "BaseMagicDefense": 28
+   "BaseMagicDefense": 28,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2472,7 +2538,8 @@
    "BaseIntelligence": 32,
    "BaseDexterity": 32,
    "BaseDefense": 32,
-   "BaseMagicDefense": 32
+   "BaseMagicDefense": 32,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2520,7 +2587,8 @@
    "BaseIntelligence": 50,
    "BaseDexterity": 12,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2568,7 +2636,8 @@
    "BaseIntelligence": 16,
    "BaseDexterity": 10,
    "BaseDefense": 20,
-   "BaseMagicDefense": 33
+   "BaseMagicDefense": 33,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2616,7 +2685,8 @@
    "BaseIntelligence": 12,
    "BaseDexterity": 8,
    "BaseDefense": 24,
-   "BaseMagicDefense": 24
+   "BaseMagicDefense": 24,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2664,7 +2734,8 @@
    "BaseIntelligence": 10,
    "BaseDexterity": 7,
    "BaseDefense": 22,
-   "BaseMagicDefense": 22
+   "BaseMagicDefense": 22,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2712,7 +2783,8 @@
    "BaseIntelligence": 14,
    "BaseDexterity": 9,
    "BaseDefense": 25,
-   "BaseMagicDefense": 25
+   "BaseMagicDefense": 25,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2760,7 +2832,8 @@
    "BaseIntelligence": 18,
    "BaseDexterity": 11,
    "BaseDefense": 20,
-   "BaseMagicDefense": 36
+   "BaseMagicDefense": 36,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2808,7 +2881,8 @@
    "BaseIntelligence": 12,
    "BaseDexterity": 14,
    "BaseDefense": 20,
-   "BaseMagicDefense": 20
+   "BaseMagicDefense": 20,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2856,7 +2930,8 @@
    "BaseIntelligence": 8,
    "BaseDexterity": 6,
    "BaseDefense": 20,
-   "BaseMagicDefense": 20
+   "BaseMagicDefense": 20,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2909,7 +2984,8 @@
    "BaseIntelligence": 35,
    "BaseDexterity": 9,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -2957,7 +3033,8 @@
    "BaseIntelligence": 15,
    "BaseDexterity": 5,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3005,7 +3082,8 @@
    "BaseIntelligence": 20,
    "BaseDexterity": 19,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3058,7 +3136,8 @@
    "BaseIntelligence": 45,
    "BaseDexterity": 11,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3106,7 +3185,8 @@
    "BaseIntelligence": 8,
    "BaseDexterity": 16,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3154,7 +3234,8 @@
    "BaseIntelligence": 9,
    "BaseDexterity": 21,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3202,7 +3283,8 @@
    "BaseIntelligence": 45,
    "BaseDexterity": 11,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3254,7 +3336,8 @@
    "BaseIntelligence": 14,
    "BaseDexterity": 15,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3307,7 +3390,8 @@
    "BaseIntelligence": 25,
    "BaseDexterity": 7,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3359,7 +3443,8 @@
    "BaseIntelligence": 8,
    "BaseDexterity": 18,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3407,7 +3492,8 @@
    "BaseIntelligence": 12,
    "BaseDexterity": 30,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3455,7 +3541,8 @@
    "BaseIntelligence": 9,
    "BaseDexterity": 21,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3503,7 +3590,8 @@
    "BaseIntelligence": 10,
    "BaseDexterity": 24,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3551,7 +3639,8 @@
    "BaseIntelligence": 11,
    "BaseDexterity": 27,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3599,7 +3688,8 @@
    "BaseIntelligence": 13,
    "BaseDexterity": 16,
    "BaseDefense": 20,
-   "BaseMagicDefense": 20
+   "BaseMagicDefense": 20,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3647,7 +3737,8 @@
    "BaseIntelligence": 12,
    "BaseDexterity": 8,
    "BaseDefense": 20,
-   "BaseMagicDefense": 26
+   "BaseMagicDefense": 26,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3695,7 +3786,8 @@
    "BaseIntelligence": 14,
    "BaseDexterity": 28,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3743,7 +3835,8 @@
    "BaseIntelligence": 10,
    "BaseDexterity": 20,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {},
@@ -3754,7 +3847,8 @@
    "parseReasons": [],
    "parseStatus": "full",
    "recordHash": "29e95a364a486c46e7f07eaf048b736aa9571e4c20b391967dd57ffd3c70c1b9",
-   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\PotionsDrank.java"
+   "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\entities\\adventurers\\PotionsDrank.java",
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3802,7 +3896,8 @@
    "BaseIntelligence": 40,
    "BaseDexterity": 10,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3850,7 +3945,8 @@
    "BaseIntelligence": 30,
    "BaseDexterity": 8,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3898,7 +3994,8 @@
    "BaseIntelligence": 35,
    "BaseDexterity": 9,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3946,7 +4043,8 @@
    "BaseIntelligence": 25,
    "BaseDexterity": 7,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -3998,7 +4096,8 @@
    "BaseIntelligence": 8,
    "BaseDexterity": 18,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4046,7 +4145,8 @@
    "BaseIntelligence": 4,
    "BaseDexterity": 6,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": "wooden_dagger"
   },
   {
    "baseStats": {
@@ -4094,7 +4194,8 @@
    "BaseIntelligence": 11,
    "BaseDexterity": 12,
    "BaseDefense": 20,
-   "BaseMagicDefense": 20
+   "BaseMagicDefense": 20,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4142,7 +4243,8 @@
    "BaseIntelligence": 9,
    "BaseDexterity": 8,
    "BaseDefense": 20,
-   "BaseMagicDefense": 20
+   "BaseMagicDefense": 20,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4190,7 +4292,8 @@
    "BaseIntelligence": 10,
    "BaseDexterity": 10,
    "BaseDefense": 20,
-   "BaseMagicDefense": 20
+   "BaseMagicDefense": 20,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4238,7 +4341,8 @@
    "BaseIntelligence": 40,
    "BaseDexterity": 10,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4286,7 +4390,8 @@
    "BaseIntelligence": 11,
    "BaseDexterity": 12,
    "BaseDefense": 20,
-   "BaseMagicDefense": 20
+   "BaseMagicDefense": 20,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4334,7 +4439,8 @@
    "BaseIntelligence": 6,
    "BaseDexterity": 12,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4382,7 +4488,8 @@
    "BaseIntelligence": 7,
    "BaseDexterity": 15,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4430,7 +4537,8 @@
    "BaseIntelligence": 11,
    "BaseDexterity": 13,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4478,7 +4586,8 @@
    "BaseIntelligence": 1,
    "BaseDexterity": 14,
    "BaseDefense": 50,
-   "BaseMagicDefense": 0
+   "BaseMagicDefense": 0,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4526,7 +4635,8 @@
    "BaseIntelligence": 9,
    "BaseDexterity": 21,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4578,7 +4688,8 @@
    "BaseIntelligence": 8,
    "BaseDexterity": 18,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4626,7 +4737,8 @@
    "BaseIntelligence": 10,
    "BaseDexterity": 24,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4674,7 +4786,8 @@
    "BaseIntelligence": 11,
    "BaseDexterity": 27,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4722,7 +4835,8 @@
    "BaseIntelligence": 12,
    "BaseDexterity": 30,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4770,7 +4884,8 @@
    "BaseIntelligence": 14,
    "BaseDexterity": 28,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4818,7 +4933,8 @@
    "BaseIntelligence": 10,
    "BaseDexterity": 20,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4866,7 +4982,8 @@
    "BaseIntelligence": 16,
    "BaseDexterity": 32,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4914,7 +5031,8 @@
    "BaseIntelligence": 14,
    "BaseDexterity": 9,
    "BaseDefense": 20,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -4962,7 +5080,8 @@
    "BaseIntelligence": 5,
    "BaseDexterity": 9,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -5010,7 +5129,8 @@
    "BaseIntelligence": 16,
    "BaseDexterity": 10,
    "BaseDefense": 27,
-   "BaseMagicDefense": 27
+   "BaseMagicDefense": 27,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -5062,7 +5182,8 @@
    "BaseIntelligence": 12,
    "BaseDexterity": 24,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -5110,7 +5231,8 @@
    "BaseIntelligence": 8,
    "BaseDexterity": 11,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -5158,7 +5280,8 @@
    "BaseIntelligence": 12,
    "BaseDexterity": 14,
    "BaseDefense": 20,
-   "BaseMagicDefense": 20
+   "BaseMagicDefense": 20,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -5206,7 +5329,8 @@
    "BaseIntelligence": 20,
    "BaseDexterity": 20,
    "BaseDefense": 20,
-   "BaseMagicDefense": 20
+   "BaseMagicDefense": 20,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -5254,7 +5378,8 @@
    "BaseIntelligence": 18,
    "BaseDexterity": 11,
    "BaseDefense": 29,
-   "BaseMagicDefense": 29
+   "BaseMagicDefense": 29,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -5302,7 +5427,8 @@
    "BaseIntelligence": 6,
    "BaseDexterity": 5,
    "BaseDefense": 20,
-   "BaseMagicDefense": 20
+   "BaseMagicDefense": 20,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -5350,7 +5476,8 @@
    "BaseIntelligence": 12,
    "BaseDexterity": 30,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -5398,7 +5525,8 @@
    "BaseIntelligence": 30,
    "BaseDexterity": 8,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -5446,7 +5574,8 @@
    "BaseIntelligence": 35,
    "BaseDexterity": 9,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -5494,7 +5623,8 @@
    "BaseIntelligence": 25,
    "BaseDexterity": 7,
    "BaseDefense": 0,
-   "BaseMagicDefense": 30
+   "BaseMagicDefense": 30,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -5542,7 +5672,8 @@
    "BaseIntelligence": 10,
    "BaseDexterity": 20,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -5594,7 +5725,8 @@
    "BaseIntelligence": 12,
    "BaseDexterity": 24,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -5642,7 +5774,8 @@
    "BaseIntelligence": 10,
    "BaseDexterity": 24,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -5690,7 +5823,8 @@
    "BaseIntelligence": 18,
    "BaseDexterity": 36,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -5738,7 +5872,8 @@
    "BaseIntelligence": 20,
    "BaseDexterity": 40,
    "BaseDefense": 10,
-   "BaseMagicDefense": 10
+   "BaseMagicDefense": 10,
+   "StarterWeaponId": ""
   },
   {
    "baseStats": {
@@ -5786,7 +5921,8 @@
    "BaseIntelligence": 1,
    "BaseDexterity": 11,
    "BaseDefense": 50,
-   "BaseMagicDefense": 0
+   "BaseMagicDefense": 0,
+   "StarterWeaponId": ""
   }
  ],
  "metadata": {

@@ -23,6 +23,7 @@ namespace GuildMaster.Runtime.Models
         public List<StatusEffectRuntime> NegativeStatusEffects { get; set; } = new List<StatusEffectRuntime>();
 
         public bool IsAscended { get; set; }
+        public int AscensionLevel { get; set; } = 0;
         public string Trait { get; set; } = string.Empty;
         public int[] PotionsDrank { get; set; } = new int[6];
 

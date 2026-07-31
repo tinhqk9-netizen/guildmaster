@@ -5,10 +5,10 @@
 | TASK 1: PRECHECK | Load Main, Wait Bootstrap | Not Loaded | Loaded | Yes | No | PASS |
 | TASK 2: INVENTORY | ToggleLockItem | Locked: False | Locked: True | Yes | No | PASS |
 | TASK 3: CRAFT | TryStartCraft & Claim | Queue: 0 | Queue: 1 (None) | Yes | No | PASS |
-| TASK 4: MERCHANT | BuyOffer | Money: 49985 | Money: 49975 | Yes | No | PASS |
+| TASK 4: MERCHANT | BuyOffer | Money: 10499 | Money: 10489 | Yes | No | PASS |
 | TASK 5: DUNGEON | Start & Tick | Type: 0 | Type: 1 | Yes | No | PASS |
 | TASK 6: QUEST | Increment | Prog: 0 (Active: True) | Prog: 1 | Yes | No | PASS |
 | TASK 7: SETTINGS | Toggle Music | Music: True | Music: False | Yes | No | PASS |
 
 ## Conclusion
-Status: **S6_5A_READY_FOR_USER_PLAYTEST**
+Status: **S6_5A_RUNTIME_ACTION_VERIFIED_READY_FOR_S6_5B_VISUAL**

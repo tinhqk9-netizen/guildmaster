@@ -6,6 +6,7 @@ namespace GuildMaster.Runtime.Services
     public interface IDungeonService
     {
         void StartDungeon(string dungeonId, List<string> adventurerIds);
+        void StartDungeon(string dungeonId);
         void StopDungeon();
         void SaveDungeonState();
         void LoadDungeonState();
@@ -21,5 +22,16 @@ namespace GuildMaster.Runtime.Services
         /// </summary>
         /// <returns>Number of item stacks transferred.</returns>
         int CollectDrops();
+
+        // ─── Multi-Expedition API ──────────────────────────────────────────
+        int MaxExpeditions { get; }
+        bool StartExpedition(int slotIndex, string dungeonId, List<string> adventurerIds, out string error);
+        void StopExpedition(int slotIndex);
+        ExpeditionRuntime GetExpedition(int slotIndex);
+        IReadOnlyList<ExpeditionRuntime> GetAllExpeditions();
+        void TickAll();
+        int CollectDrops(int slotIndex);
+        bool IsCharacterOnExpedition(string characterInstanceId);
+        bool IsDungeonUnlocked(string dungeonId);
     }
 }

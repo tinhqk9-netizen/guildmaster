@@ -125,8 +125,17 @@ namespace GuildMaster.Tests.EditMode
             Assert.AreEqual(6, inv.GetQuantityByDefinitionId("mat_stone")); // 10 - 4 = 6
             Assert.AreEqual(1, save.CurrentData.MarketListings.Count);
 
-            // Progress time to sell
-            merchant.ProgressMarket(20);
+            // Exact boundary testing based on runtime merchant settings
+            var data = save.CurrentData;
+            long timeToSell = 20; // Matches runtime merchant DEFAULT_SELL_TIME_SECONDS constraint
+            
+            // Progress duration - 1 -> listing chưa hoàn thành
+            merchant.ProgressMarket(timeToSell - 1);
+            Assert.AreEqual(1, save.CurrentData.MarketListings.Count);
+            Assert.AreEqual(0, save.CurrentData.SoldMarketItems.Count);
+
+            // Progress thêm đúng phần còn lại -> listing chuyển trạng thái
+            merchant.ProgressMarket(1);
             Assert.AreEqual(0, save.CurrentData.MarketListings.Count);
             Assert.AreEqual(1, save.CurrentData.SoldMarketItems.Count);
 

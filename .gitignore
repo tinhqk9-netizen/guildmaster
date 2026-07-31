@@ -45,3 +45,12 @@ Desktop.ini
 # Temporary files
 /scratch/
 verify-result.txt
+ 
+Backups/
+RecoveryBackup/
+UserSaveBeforeTest/
+
+# Backup exclusions
+/Backups/
+/_backups/
+/RecoveryBackup/

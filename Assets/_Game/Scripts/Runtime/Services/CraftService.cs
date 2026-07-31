@@ -173,7 +173,25 @@ namespace GuildMaster.Runtime.Services
 
             _inventoryService.AddItem(itemRuntime);
             completed.Remove(item);
+            _saveService.Save(out _);
             return true;
         }
+
+        public bool UpgradeQueueCapacity()
+        {
+            var data = _saveService.CurrentData;
+            long price = _formulaService.GetWorkshopQueuePrice(data.LevelWorkshopQueue);
+            if (data.Money >= price)
+            {
+                data.Money -= price;
+                data.LevelWorkshopQueue++;
+                _saveService.Save(out _);
+                return true;
+            }
+            return false;
+        }
+
+        public long GetUpgradeQueueCapacityPrice() => _formulaService.GetWorkshopQueuePrice(_saveService.CurrentData.LevelWorkshopQueue);
+        public int GetQueueCapacityLevel() => _saveService.CurrentData.LevelWorkshopQueue;
     }
 }

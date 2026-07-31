@@ -43,7 +43,9 @@
     "Iconoclast",
     "Oculus"
    ],
-   "SourceClass": "BarrenWastelands"
+   "SourceClass": "BarrenWastelands",
+   "RequiredClearDungeonId": "the_southern_grove",
+   "RequiredClearProgress": 60
   },
   {
    "RegularMerchantOffers": [
@@ -161,7 +163,9 @@
     "PirateCaptain",
     "PirateLieutenant"
    ],
-   "SourceClass": "BlackwaterPort"
+   "SourceClass": "BlackwaterPort",
+   "RequiredClearDungeonId": "the_golden_city",
+   "RequiredClearProgress": 100
   },
   {
    "RegularMerchantOffers": [
@@ -203,7 +207,7 @@
      "Weight": 91
     },
     {
-     "ItemId": "clothrobe",
+     "ItemId": "cloth_robe",
      "StackCount": 1,
      "Weight": 91
     },
@@ -276,7 +280,9 @@
     "Treant",
     "Wolf"
    ],
-   "SourceClass": "EnchantedForest"
+   "SourceClass": "EnchantedForest",
+   "RequiredClearDungeonId": "",
+   "RequiredClearProgress": 0
   },
   {
    "RegularMerchantOffers": [
@@ -391,7 +397,9 @@
     "UndeadWarlord",
     "WillOWisp"
    ],
-   "SourceClass": "EternalBattlefield"
+   "SourceClass": "EternalBattlefield",
+   "RequiredClearDungeonId": "the_desert",
+   "RequiredClearProgress": 100
   },
   {
    "RegularMerchantOffers": [
@@ -504,7 +512,9 @@
     "TrollWarrior",
     "TrollWhelp"
    ],
-   "SourceClass": "FrostbitePeaks"
+   "SourceClass": "FrostbitePeaks",
+   "RequiredClearDungeonId": "blackwater_port",
+   "RequiredClearProgress": 100
   },
   {
    "RegularMerchantOffers": [
@@ -617,7 +627,9 @@
     "WickedTribute",
     "WizardOfLarox"
    ],
-   "SourceClass": "HiddenCityOfLarox"
+   "SourceClass": "HiddenCityOfLarox",
+   "RequiredClearDungeonId": "barren_wastelands",
+   "RequiredClearProgress": 100
   },
   {
    "RegularMerchantOffers": [
@@ -730,7 +742,9 @@
     "StoneShaman",
     "Terrorsaurus"
    ],
-   "SourceClass": "LostLands"
+   "SourceClass": "LostLands",
+   "RequiredClearDungeonId": "hidden_city_of_larox",
+   "RequiredClearProgress": 100
   },
   {
    "RegularMerchantOffers": [
@@ -848,7 +862,9 @@
     "PaleHermit",
     "VampireBat"
    ],
-   "SourceClass": "ObsidianMines"
+   "SourceClass": "ObsidianMines",
+   "RequiredClearDungeonId": "frostbite_peaks",
+   "RequiredClearProgress": 100
   },
   {
    "RegularMerchantOffers": [
@@ -958,7 +974,9 @@
     "ShahuriWarrior",
     "Wurm"
    ],
-   "SourceClass": "TheDesert"
+   "SourceClass": "TheDesert",
+   "RequiredClearDungeonId": "enchanted_forest",
+   "RequiredClearProgress": 80
   },
   {
    "RegularMerchantOffers": [
@@ -1063,7 +1081,9 @@
     "InsaneMerchant",
     "InsanePriest"
    ],
-   "SourceClass": "TheGoldenCity"
+   "SourceClass": "TheGoldenCity",
+   "RequiredClearDungeonId": "eternal_battlefield",
+   "RequiredClearProgress": 100
   },
   {
    "RegularMerchantOffers": [
@@ -1125,7 +1145,9 @@
     "GreenSpitfang",
     "PrimevalWurm"
    ],
-   "SourceClass": "TheSouthernGrove"
+   "SourceClass": "TheSouthernGrove",
+   "RequiredClearDungeonId": "the_dreadful_ascent",
+   "RequiredClearProgress": 13
   }
  ],
  "metadata": {

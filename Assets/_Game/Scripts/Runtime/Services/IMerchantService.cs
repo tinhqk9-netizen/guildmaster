@@ -15,5 +15,9 @@ namespace GuildMaster.Runtime.Services
         bool ClaimSoldItem(string instanceId);
         IReadOnlyList<MerchantOfferSaveData> GetRegularStock();
         IReadOnlyList<MerchantOfferSaveData> GetSpecialStock();
+
+        // UI Listings Helpers
+        IReadOnlyList<ItemActionSaveData> GetMarketListings();
+        IReadOnlyList<ItemActionSaveData> GetSoldMarketItems();
     }
 }

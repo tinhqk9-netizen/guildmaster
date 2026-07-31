@@ -991,15 +991,12 @@
           "ItemId": "cloth"
         }
       ],
-      "OutputItemId": "clothrobe",
+      "OutputItemId": "cloth_robe",
       "className": "Recipe",
-      "id": "recipe_clothrobe",
+      "id": "recipe_cloth_robe",
       "manualRuleRequired": false,
-      "parseReasons": [
-        "MISSING_OUTPUT_ITEM",
-        "MISSING_INGREDIENTS"
-      ],
-      "parseStatus": "partial",
+      "parseReasons": [],
+      "parseStatus": "full",
       "rawArgs": "Item.getInstance(\"Cloth\", 3)",
       "recordHash": "9fb02b95474c0479175b4752fda4dd847f78332ab9d4708086ac857fbf1a9e75",
       "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources\\it\\paranoidsquirrels\\idleguildmaster\\storage\\data\\items\\Recipes.java"

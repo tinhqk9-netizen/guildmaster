@@ -32,9 +32,13 @@ namespace GuildMaster.Runtime.Services
         public ILootService Loot { get; }
         public IQuestService Quest { get; }
         public IDoctrineService Doctrine { get; }
+        public IPromotionService Promotion { get; }
         public ITavernService Tavern { get; }
         public ISettingsService Settings { get; }
         public IOfflineProgressService OfflineProgress { get; }
+        public IGameLoopService GameLoop { get; }
+        public IPetService Pet { get; }
+        public IPartyService Party { get; private set; }
 
         public ServiceContainer(
             GameDatabase database, 
@@ -60,23 +64,27 @@ namespace GuildMaster.Runtime.Services
 
             Item = new ItemService(Factory, Database);
             Inventory = new InventoryService(Save, Formula, Item, Database);
-            Character = new CharacterService(Save, Formula, Database, Factory, Inventory);
+            Pet = new PetService(Save, Database);
+            Character = new CharacterService(Save, Formula, Database, Factory, Inventory, Pet);
             Equipment = new EquipmentService(Inventory, Save);
             Skill = new SkillService();
             StatusEffect = new StatusEffectService();
             Craft = new CraftService(Database, Inventory, Save);
             Merchant = new MerchantService(Database, Inventory, Save);
-            Combat = new CombatService();
+            Combat = new CombatService(Character, Pet);
             TargetSelection = new TargetSelectionService();
             Loot = new LootService();
 
-            // Dungeon drives the run loop, so it needs combat, loot, characters and inventory.
-            Dungeon = new DungeonService(Save, Database, Combat, Loot, Character, Inventory);
             Doctrine = new DoctrineService(Save, Formula);
+            Promotion = new PromotionService(Save, Database, Inventory, Character);
             Quest = new QuestService(Save, Database, Doctrine);
+            Party = new PartyService(Save);
+            // Dungeon drives the run loop, so it needs combat, loot, characters, inventory and quest.
+            Dungeon = new DungeonService(Save, Database, Combat, Loot, Character, Inventory, Quest);
             Tavern = new TavernService(Save, Formula, Character, Database);
             Settings = new SettingsService(Save);
             OfflineProgress = new OfflineProgressService(Save, Craft, Merchant);
+            GameLoop = new GameLoopService(Save, Tavern, Merchant, Craft, Dungeon);
         }
     }
 }

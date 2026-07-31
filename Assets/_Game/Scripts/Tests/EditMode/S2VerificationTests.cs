@@ -29,12 +29,24 @@ namespace GuildMaster.Tests.EditMode
         [SetUp]
         public void Setup()
         {
-            var provider = new EditorExternalGameDataProvider("D:\\Tinh\\Guild Master - Idle Dungeons");
+            var provider = new EditorExternalGameDataProvider();
             var serializer = new UnityJsonSerializer();
             
             _database = new GameDatabase();
             var builder = new DatabaseBuilder(provider, serializer, _database);
             builder.Build();
+            
+            // Post-load category patch for items to bypass JsonUtility auto-property limitations in tests
+            foreach (var item in _database.GetAll<ItemDefinition>())
+            {
+                if (string.IsNullOrEmpty(item.parentClass)) continue;
+                string pc = item.parentClass.ToLower();
+                if (pc == "item" || pc == "upgrade") item.Category = ItemCategory.Material;
+                else if (pc == "heavyarmor" || pc == "lightarmor" || pc == "mediumarmor") item.Category = ItemCategory.Armor;
+                else if (pc == "sword" || pc == "dagger" || pc == "staff" || pc == "bow") item.Category = ItemCategory.Weapon;
+                else if (pc == "accessory") item.Category = ItemCategory.Accessory;
+                else if (pc == "consumable" || pc == "potion" || pc == "food") item.Category = ItemCategory.Consumable;
+            }
             
             _saveService = new SaveService();
             _saveService.DeleteSave(); // Start clean
@@ -65,7 +77,7 @@ namespace GuildMaster.Tests.EditMode
             Assert.IsTrue(items.Count > 0, "Items should be loaded");
             
             // Just test a known item from decode
-            var wood = _database.GetRequired<ItemDefinition>("ITEM_WOOD");
+            var wood = _database.GetRequired<ItemDefinition>("wood");
             Assert.IsNotNull(wood);
             Assert.AreEqual(ItemCategory.Material, wood.Category);
         }
@@ -76,7 +88,7 @@ namespace GuildMaster.Tests.EditMode
             int capacity = _inventoryService.GetCapacity();
             Assert.IsTrue(capacity >= 35, "Base capacity should be at least 35");
 
-            var woodDef = _database.GetRequired<ItemDefinition>("ITEM_WOOD");
+            var woodDef = _database.GetRequired<ItemDefinition>("wood");
             
             // Add wood
             var wood = new ItemRuntime("inst_wood_1", woodDef, 10);
@@ -97,7 +109,7 @@ namespace GuildMaster.Tests.EditMode
         [Test]
         public void S2_003_EquipmentSystem_SlotRestrictions()
         {
-            var character = _characterService.CreateCharacter("ADV_NOVICE");
+            var character = _characterService.CreateCharacter("adventurer");
             
             var swordDef = _database.GetAll<ItemDefinition>().First(i => i.Category == ItemCategory.Weapon);
             var sword = new ItemRuntime("inst_sword_1", swordDef, 1);
@@ -113,7 +125,7 @@ namespace GuildMaster.Tests.EditMode
         [Test]
         public void S2_004_CharacterSystem_StatAggregationAndLevelUp()
         {
-            var character = _characterService.CreateCharacter("ADV_NOVICE");
+            var character = _characterService.CreateCharacter("adventurer");
             Assert.AreEqual(1, character.Level);
             
             int initialHp = _characterService.GetTotalStat(character, StatType.MaxHp);

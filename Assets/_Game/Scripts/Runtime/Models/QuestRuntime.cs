@@ -20,17 +20,21 @@ namespace GuildMaster.Runtime.Models
 
         public QuestState State { get; set; }
         public long Progress { get; set; }
+        public int Rarity { get; set; }
+        public long TargetProgress { get; set; }
         public bool IsDirty { get; set; }
 
         public bool IsActive => State == QuestState.InProgress;
 
-        public QuestRuntime(string instanceId, QuestDefinition definition)
+        public QuestRuntime(string instanceId, QuestDefinition definition, int rarity = 1, long targetProgress = 100)
         {
             InstanceId = instanceId;
             Definition = definition ?? throw new ArgumentNullException(nameof(definition));
             
             State = QuestState.NotStarted;
             Progress = 0;
+            Rarity = rarity;
+            TargetProgress = targetProgress;
         }
     }
 }

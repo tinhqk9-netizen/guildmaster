@@ -1,0 +1,672 @@
+#if UNITY_EDITOR
+using System;
+using UnityEditor;
+using UnityEditor.Events;
+using UnityEngine;
+using UnityEngine.UI;
+using GuildMaster.Runtime.UI;
+using GuildMaster.Runtime.UI.Core;
+using GuildMaster.Runtime.UI.Tavern;
+using GuildMaster.Runtime.UI.Character;
+using GuildMaster.Runtime.UI.Inventory;
+using GuildMaster.Runtime.UI.Craft;
+using GuildMaster.Runtime.UI.Merchant;
+using GuildMaster.Runtime.UI.Dungeon;
+using GuildMaster.Runtime.UI.Quest;
+using GuildMaster.Runtime.UI.Settings;
+
+namespace GuildMaster.Editor.UI
+{
+    /// <summary>
+    /// The one entrypoint the user needs to run after compiling. Idempotent — safe to run again.
+    ///
+    /// Steps:
+    ///   1. UIWiringGenerator.WireScene() — ensures Canvas/HUD/Popup foundation.
+    ///   2. For each of the 8 gameplay screens:
+    ///      a. EnsureCleanScreen — destroy all old children, get/add component.
+    ///      b. UIScreenLayoutBuilder.Build — create Header/SummaryRow/Content/Detail/ActionBar scaffold.
+    ///      c. Wire all [SerializeField] references via SerializedObject.
+    ///      d. Add action buttons with real service-bound persistent listeners.
+    ///   3. Mark scene dirty and save.
+    ///
+    /// Status written to console on success: TEMP_PLAYTEST_UI_SOURCE_READY_PENDING_APPLY
+    /// </summary>
+    public static class GuildMasterUnifiedApply
+    {
+        [MenuItem("GuildMaster/UI/Apply Complete Functional Game UI")]
+        public static void Apply()
+        {
+            try
+            {
+                Debug.Log("[GuildMasterApply] Starting...");
+                int canvasBefore      = CountByType<Canvas>();
+                int eventSysBefore    = CountByType<UnityEngine.EventSystems.EventSystem>();
+
+                // Step 1: Foundation (HUD, Popup, Bootstrap)
+                UIWiringGenerator.WireScene();
+
+                var canvas = GameObject.Find("UICanvas");
+                if (canvas == null) throw new Exception("UICanvas not found after WireScene().");
+                Transform screenRoot = canvas.transform.Find("SafeArea/ScreenRoot");
+                if (screenRoot == null) throw new Exception("ScreenRoot not found after WireScene().");
+
+                // Step 2: 8 gameplay screens
+                BuildTavern(screenRoot);
+                BuildCharacter(screenRoot);
+                BuildInventory(screenRoot);
+                BuildCraft(screenRoot);
+                BuildMerchant(screenRoot);
+                BuildDungeon(screenRoot);
+                BuildQuest(screenRoot);
+                BuildSettings(screenRoot);
+
+                int canvasAfter     = CountByType<Canvas>();
+                int eventSysAfter   = CountByType<UnityEngine.EventSystems.EventSystem>();
+
+                // Step 3: Save
+                UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(
+                    UnityEngine.SceneManagement.SceneManager.GetActiveScene());
+                UnityEditor.SceneManagement.EditorSceneManager.SaveOpenScenes();
+
+                Debug.Log(
+                    $"[GuildMasterApply] SUCCESS — status: TEMP_PLAYTEST_UI_SOURCE_READY_PENDING_APPLY\n" +
+                    $"Canvas: {canvasBefore}→{canvasAfter}  EventSystem: {eventSysBefore}→{eventSysAfter}");
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError(
+                    $"[GuildMasterApply] FAILED — status: TEMP_PLAYTEST_UI_BLOCKED\n{ex.Message}\n{ex.StackTrace}");
+            }
+        }
+
+        // ── Screen factory helper ────────────────────────────────────────────────
+
+        /// <summary>
+        /// Finds or creates a screen GameObject, destroys ALL of its current children so the
+        /// scaffold always starts from a clean state (idempotent), and ensures the component.
+        /// </summary>
+        private static T EnsureCleanScreen<T>(Transform screenRoot, string name, UIScreenId id)
+            where T : UIScreen
+        {
+            Transform t = screenRoot.Find(name);
+            GameObject go;
+            if (t == null)
+            {
+                go = new GameObject(name);
+                go.transform.SetParent(screenRoot, false);
+            }
+            else
+            {
+                go = t.gameObject;
+                for (int i = go.transform.childCount - 1; i >= 0; i--)
+                    UnityEngine.Object.DestroyImmediate(go.transform.GetChild(i).gameObject);
+            }
+
+            if (go.GetComponent<RectTransform>() == null) go.AddComponent<RectTransform>();
+            var rt = (RectTransform)go.transform;
+            rt.anchorMin  = Vector2.zero;
+            rt.anchorMax  = Vector2.one;
+            rt.offsetMin  = Vector2.zero;
+            rt.offsetMax  = Vector2.zero;
+
+            T comp = go.GetComponent<T>();
+            if (comp == null) comp = go.AddComponent<T>();
+            comp.ScreenId = id;
+            go.SetActive(false); // hidden by default; shown via UIService navigation
+            return comp;
+        }
+
+        // ── Field wiring ─────────────────────────────────────────────────────────
+
+        private static void Bind(UnityEngine.Object owner, string fieldName, UnityEngine.Object value)
+        {
+            var so   = new SerializedObject(owner);
+            var prop = so.FindProperty(fieldName);
+            if (prop == null)
+            {
+                Debug.LogWarning($"[GuildMasterApply] Field '{fieldName}' not found on {owner.GetType().Name}.");
+                return;
+            }
+            prop.objectReferenceValue = value;
+            so.ApplyModifiedProperties();
+        }
+
+        // ── Tab bar helper ───────────────────────────────────────────────────────
+
+        /// <summary>Creates a HorizontalLayoutGroup tab bar as a direct child of the screen's root.</summary>
+        private static RectTransform AddTabBar(Transform screenRoot, string name)
+        {
+            var go  = new GameObject(name, typeof(RectTransform));
+            var rt  = (RectTransform)go.transform;
+            rt.SetParent(screenRoot, false);
+            var le  = go.AddComponent<LayoutElement>();
+            le.preferredHeight = UITemporaryTheme.TabBarHeight;
+            le.flexibleWidth   = 1;
+            var bg  = go.AddComponent<Image>();
+            bg.color = UITemporaryTheme.PanelSecondary;
+            var hg  = go.AddComponent<HorizontalLayoutGroup>();
+            hg.spacing = 4;
+            hg.padding = new RectOffset(4, 4, 4, 4);
+            hg.childForceExpandWidth  = true;
+            hg.childForceExpandHeight = true;
+            hg.childControlWidth  = true;
+            hg.childControlHeight = true;
+            return rt;
+        }
+
+        private static Button AddTabButton(Transform tabBar, string name, string label, UnityEngine.Events.UnityAction onClick)
+        {
+            var go  = new GameObject(name, typeof(RectTransform));
+            go.transform.SetParent(tabBar, false);
+            var le  = go.AddComponent<LayoutElement>();
+            le.flexibleWidth = 1;
+            var img = go.AddComponent<Image>();
+            img.color = UITemporaryTheme.TabInactive;
+            AddTextChild(go.transform, "Text", label, UITemporaryTheme.BodyFontSize, UITemporaryTheme.TextSecondary);
+            var btn = go.AddComponent<Button>();
+            btn.targetGraphic = img;
+            while (btn.onClick.GetPersistentEventCount() > 0)
+                UnityEventTools.RemovePersistentListener(btn.onClick, 0);
+            if (onClick != null) UnityEventTools.AddPersistentListener(btn.onClick, onClick);
+            return btn;
+        }
+
+        private static Text AddTextChild(Transform parent, string name, string text, int fontSize, Color color)
+        {
+            var go  = new GameObject(name, typeof(RectTransform));
+            var rt  = (RectTransform)go.transform;
+            rt.SetParent(parent, false);
+            rt.anchorMin = Vector2.zero;
+            rt.anchorMax = Vector2.one;
+            rt.offsetMin = Vector2.zero;
+            rt.offsetMax = Vector2.zero;
+            var txt = go.AddComponent<Text>();
+            txt.text          = text;
+            txt.font          = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            txt.fontSize      = fontSize;
+            txt.color         = color;
+            txt.alignment     = TextAnchor.MiddleCenter;
+            txt.raycastTarget = false;
+            return txt;
+        }
+
+        private static int CountByType<T>() where T : UnityEngine.Object
+            => UnityEngine.Object.FindObjectsByType<T>(FindObjectsSortMode.None).Length;
+
+        // ────────────────────────────────────────────────────────────────────────
+        //  Screen build methods
+        // ────────────────────────────────────────────────────────────────────────
+
+        private static void BuildTavern(Transform screenRoot)
+        {
+            var tav      = EnsureCleanScreen<TavernScreen>(screenRoot, "TavernScreen", UIScreenId.Tavern);
+            var scaffold = UIScreenLayoutBuilder.Build(tav.transform, "Tavern");
+
+            // SummaryRow children — timer + population
+            var timerText = AddTextChild(scaffold.SummaryRow, "TimerText", "Next visitor...",
+                UITemporaryTheme.SmallFontSize, UITemporaryTheme.TextSecondary);
+            var popText = AddTextChild(scaffold.SummaryRow, "PopulationText", "",
+                UITemporaryTheme.SmallFontSize, UITemporaryTheme.TextHighlight);
+
+            // Wire fields
+            Bind(tav, "_cardContainer",    scaffold.ContentArea);
+            Bind(tav, "_timerText",        timerText);
+            Bind(tav, "_populationText",   popText);
+            Bind(tav, "_detailText",       scaffold.DetailText);
+
+            // Action bar
+            var recruitBtn = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar,
+                "Btn_RecruitSelected", "Recruit Selected", true, tav.OnClickRecruitSelected);
+            UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Prev", "< Prev",   false, tav.OnClickSelectPrevious);
+            UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Next", "Next >",   false, tav.OnClickSelectNext);
+
+            // Upgrades on Action bar
+            var upgradeQuartersBtn = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar,
+                "Btn_UpgradeQuarters", "Upgrade Quarters", false, tav.OnClickUpgradeQuarters);
+            var upgradeCapacityBtn = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar,
+                "Btn_UpgradeCapacity", "Upgrade Capacity", false, tav.OnClickUpgradeTavernCapacity);
+            var upgradeTimeBtn = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar,
+                "Btn_UpgradeTime", "Upgrade Speed", false, tav.OnClickUpgradeTavernTime);
+
+            Bind(tav, "_recruitButton", recruitBtn);
+            Bind(tav, "_upgradeQuartersButton", upgradeQuartersBtn);
+            Bind(tav, "_upgradeCapacityButton", upgradeCapacityBtn);
+            Bind(tav, "_upgradeTimeButton",     upgradeTimeBtn);
+
+            // Feedback label (inside DetailPanel, below scaffold.DetailText)
+            var feedbackTxt = UICardFactory.CreateFeedbackLabel(scaffold.DetailPanel, "FeedbackText");
+            Bind(tav, "_feedbackText", feedbackTxt);
+        }
+
+        private static void BuildCharacter(Transform screenRoot)
+        {
+            var chr      = EnsureCleanScreen<CharacterScreen>(screenRoot, "CharacterScreen", UIScreenId.Character);
+            var scaffold = UIScreenLayoutBuilder.Build(chr.transform, "Characters");
+
+            var summaryTxt = AddTextChild(scaffold.SummaryRow, "SummaryText", "",
+                UITemporaryTheme.SmallFontSize, UITemporaryTheme.TextSecondary);
+
+            Bind(chr, "_cardContainer",    scaffold.ContentArea);
+            Bind(chr, "_summaryText",      summaryTxt);
+            Bind(chr, "_detailText",       scaffold.DetailText);
+
+            // Party buttons (row 1)
+            var addPartyBtn    = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_AddParty",    "Add to Party",      true,  chr.OnClickAddToParty);
+            var removePartyBtn = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_RemoveParty", "Remove from Party", false, chr.OnClickRemoveFromParty);
+            // Equipment buttons (row 2 — same HorizontalLayoutGroup)
+            var equipBtn       = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Equip",       "Equip Item",   true, chr.OnClickEquipSelectedItem);
+            var unequipWpnBtn  = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_UnWpn",       "Unwield",      false, chr.OnClickUnequipWeapon);
+            var unequipArmBtn  = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_UnArm",       "Remove Armor", false, chr.OnClickUnequipArmor);
+            var unequipAccBtn  = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_UnAcc",       "Remove Acc.",  false, chr.OnClickUnequipAccessory);
+
+            Bind(chr, "_addToPartyButton",        addPartyBtn);
+            Bind(chr, "_removeFromPartyButton",   removePartyBtn);
+            Bind(chr, "_equipButton",             equipBtn);
+            Bind(chr, "_unequipWeaponButton",     unequipWpnBtn);
+            Bind(chr, "_unequipArmorButton",      unequipArmBtn);
+            Bind(chr, "_unequipAccessoryButton",  unequipAccBtn);
+
+            var feedbackTxt = UICardFactory.CreateFeedbackLabel(scaffold.DetailPanel, "FeedbackText");
+            Bind(chr, "_feedbackText", feedbackTxt);
+        }
+
+        private static void BuildInventory(Transform screenRoot)
+        {
+            var inv      = EnsureCleanScreen<InventoryScreen>(screenRoot, "InventoryScreen", UIScreenId.Inventory);
+            var scaffold = UIScreenLayoutBuilder.Build(inv.transform, "Inventory");
+
+            var summaryTxt = AddTextChild(scaffold.SummaryRow, "SummaryText", "",
+                UITemporaryTheme.SmallFontSize, UITemporaryTheme.TextSecondary);
+
+            Bind(inv, "_cardContainer", scaffold.ContentArea);
+            Bind(inv, "_summaryText",   summaryTxt);
+            Bind(inv, "_detailText",    scaffold.DetailText);
+
+            var lockBtn = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Lock",       "Lock/Unlock", false, inv.OnClickToggleLockSelected);
+            var useBtn  = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Use",        "Use",         true,  inv.OnClickUseSelectedConsumable);
+            UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Prev", "< Prev", false, inv.OnClickSelectPrevious);
+            UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Next", "Next >", false, inv.OnClickSelectNext);
+
+            Bind(inv, "_lockButton",  lockBtn);
+            Bind(inv, "_useButton",   useBtn);
+
+            // Lock button text label (to swap Lock/Unlock at runtime)
+            var lockTxt = lockBtn.GetComponentInChildren<Text>();
+            if (lockTxt != null) Bind(inv, "_lockButtonLabel", lockTxt);
+
+            var feedbackTxt = UICardFactory.CreateFeedbackLabel(scaffold.DetailPanel, "FeedbackText");
+            Bind(inv, "_feedbackText", feedbackTxt);
+        }
+
+        private static void BuildCraft(Transform screenRoot)
+        {
+            var crf      = EnsureCleanScreen<CraftScreen>(screenRoot, "CraftScreen", UIScreenId.Craft);
+            var scaffold = UIScreenLayoutBuilder.Build(crf.transform, "Workshop");
+
+            var summaryTxt = AddTextChild(scaffold.SummaryRow, "SummaryText", "",
+                UITemporaryTheme.SmallFontSize, UITemporaryTheme.TextSecondary);
+
+            // Tab bar inserted after SummaryRow
+            var tabBar = AddTabBar(crf.transform, "TabBar_Craft");
+            tabBar.SetSiblingIndex(2); // Header=0, SummaryRow=1, TabBar=2
+
+            // Search Bar inserted after TabBar and before ContentScroll
+            var searchGo = new GameObject("SearchBarContainer", typeof(RectTransform), typeof(HorizontalLayoutGroup), typeof(Image));
+            searchGo.transform.SetParent(crf.transform, false);
+            searchGo.transform.SetSiblingIndex(3); // Header=0, SummaryRow=1, TabBar=2, SearchBar=3, ContentScroll=4...
+
+            var searchRt = searchGo.GetComponent<RectTransform>();
+            searchRt.anchorMin = new Vector2(0.02f, 0.85f);
+            searchRt.anchorMax = new Vector2(0.98f, 0.90f);
+            searchRt.offsetMin = Vector2.zero;
+            searchRt.offsetMax = Vector2.zero;
+
+            var searchImg = searchGo.GetComponent<Image>();
+            searchImg.color = new Color(0.12f, 0.13f, 0.17f, 0.90f);
+
+            var searchHlg = searchGo.GetComponent<HorizontalLayoutGroup>();
+            searchHlg.padding = new RectOffset(10, 10, 6, 6);
+            searchHlg.spacing = 8f;
+            searchHlg.childControlWidth = true;
+            searchHlg.childControlHeight = true;
+            searchHlg.childForceExpandWidth = true;
+
+            var inputGo = new GameObject("InputField_Search", typeof(RectTransform), typeof(Image), typeof(InputField));
+            inputGo.transform.SetParent(searchGo.transform, false);
+
+            var inputImg = inputGo.GetComponent<Image>();
+            inputImg.color = new Color(0.18f, 0.20f, 0.26f, 1f);
+
+            var inputField = inputGo.GetComponent<InputField>();
+
+            var placeholderGo = new GameObject("Placeholder", typeof(RectTransform), typeof(Text));
+            placeholderGo.transform.SetParent(inputGo.transform, false);
+            var phRt = placeholderGo.GetComponent<RectTransform>();
+            phRt.anchorMin = Vector2.zero; phRt.anchorMax = Vector2.one; phRt.offsetMin = new Vector2(10, 0); phRt.offsetMax = new Vector2(-10, 0);
+
+            var phTxt = placeholderGo.GetComponent<Text>();
+            phTxt.text = "🔍  Search recipes (Weapons, Armor, Potions)...";
+            phTxt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            phTxt.fontSize = 18;
+            phTxt.color = new Color(0.60f, 0.63f, 0.70f, 0.8f);
+            phTxt.alignment = TextAnchor.MiddleLeft;
+
+            var textGo = new GameObject("Text", typeof(RectTransform), typeof(Text));
+            textGo.transform.SetParent(inputGo.transform, false);
+            var textRt = textGo.GetComponent<RectTransform>();
+            textRt.anchorMin = Vector2.zero; textRt.anchorMax = Vector2.one; textRt.offsetMin = new Vector2(10, 0); textRt.offsetMax = new Vector2(-10, 0);
+
+            var txt = textGo.GetComponent<Text>();
+            txt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            txt.fontSize = 18;
+            txt.color = Color.white;
+            txt.alignment = TextAnchor.MiddleLeft;
+
+            inputField.textComponent = txt;
+            inputField.placeholder   = phTxt;
+
+            var tabRecipes   = AddTabButton(tabBar, "Tab_Recipes",   "Recipes",   crf.OnClickTabRecipes);
+            var tabQueue     = AddTabButton(tabBar, "Tab_Queue",     "Queue",     crf.OnClickTabQueue);
+            var tabCompleted = AddTabButton(tabBar, "Tab_Completed", "Completed", crf.OnClickTabCompleted);
+
+            Bind(crf, "_cardContainer",       scaffold.ContentArea);
+            Bind(crf, "_summaryText",         summaryTxt);
+            Bind(crf, "_detailText",          scaffold.DetailText);
+            Bind(crf, "_tabRecipesBtn",       tabRecipes);
+            Bind(crf, "_tabQueueBtn",         tabQueue);
+            Bind(crf, "_tabCompletedBtn",     tabCompleted);
+            Bind(crf, "_searchInputField",    inputField);
+            Bind(crf, "_searchBarContainer",  searchGo);
+
+            var craftBtn = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Craft", "Craft",      true,  crf.OnClickCraftSelected);
+            var claimBtn = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Claim", "Claim Item", true,  crf.OnClickClaimSelected);
+            var upgradeQueueBtn = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_UpgradeQueue", "Upgrade Queue", false, crf.OnClickUpgradeQueue);
+
+            Bind(crf, "_craftButton", craftBtn);
+            Bind(crf, "_claimButton", claimBtn);
+            Bind(crf, "_upgradeQueueButton", upgradeQueueBtn);
+
+            var feedbackTxt = UICardFactory.CreateFeedbackLabel(scaffold.DetailPanel, "FeedbackText");
+            Bind(crf, "_feedbackText", feedbackTxt);
+        }
+
+        private static void BuildMerchant(Transform screenRoot)
+        {
+            var mer      = EnsureCleanScreen<MerchantScreen>(screenRoot, "MerchantScreen", UIScreenId.Merchant);
+            var scaffold = UIScreenLayoutBuilder.Build(mer.transform, "Merchant");
+
+            var summaryTxt = AddTextChild(scaffold.SummaryRow, "SummaryText", "",
+                UITemporaryTheme.SmallFontSize, UITemporaryTheme.TextSecondary);
+
+            var tabBar = AddTabBar(mer.transform, "TabBar_Merchant");
+            tabBar.SetSiblingIndex(2);
+
+            var tabBuy      = AddTabButton(tabBar, "Tab_Buy",      "Buy",      mer.OnClickTabBuy);
+            var tabSell     = AddTabButton(tabBar, "Tab_Sell",     "Sell",     mer.OnClickTabSell);
+            var tabListings = AddTabButton(tabBar, "Tab_Listings", "Listings", mer.OnClickTabListings);
+
+            Bind(mer, "_cardContainer",   scaffold.ContentArea);
+            Bind(mer, "_summaryText",     summaryTxt);
+            Bind(mer, "_detailText",      scaffold.DetailText);
+            Bind(mer, "_tabBuyBtn",       tabBuy);
+            Bind(mer, "_tabSellBtn",      tabSell);
+            Bind(mer, "_tabListingsBtn",  tabListings);
+
+            var buyRegBtn = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_BuyRegular", "Buy Regular", true,  mer.OnClickBuySelectedRegular);
+            var buySpBtn  = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_BuySpecial", "Buy Special", true,  mer.OnClickBuySelectedSpecial);
+            var sellBtn   = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Sell",       "Sell Item",   false, mer.OnClickSellSelected);
+            var claimSoldBtn = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_ClaimSold", "Claim Gold",  true,  mer.OnClickClaimSold);
+
+            Bind(mer, "_buyRegularButton", buyRegBtn);
+            Bind(mer, "_buySpecialButton", buySpBtn);
+            Bind(mer, "_sellButton",       sellBtn);
+            Bind(mer, "_claimSoldButton",  claimSoldBtn);
+
+            var feedbackTxt = UICardFactory.CreateFeedbackLabel(scaffold.DetailPanel, "FeedbackText");
+            Bind(mer, "_feedbackText", feedbackTxt);
+        }
+
+        private static void BuildDungeon(Transform screenRoot)
+        {
+            var dun      = EnsureCleanScreen<DungeonScreen>(screenRoot, "DungeonScreen", UIScreenId.Dungeon);
+            var scaffold = UIScreenLayoutBuilder.Build(dun.transform, "Dungeons");
+
+            var summaryTxt = AddTextChild(scaffold.SummaryRow, "SummaryText", "",
+                UITemporaryTheme.SmallFontSize, UITemporaryTheme.TextSecondary);
+
+            // Three mode panels — each is a child of ContentArea with same size
+            // Select panel: dungeon card list
+            var panelSelect = BuildDungeonPanel_Select(dun, scaffold, summaryTxt);
+            // Active panel: combat info
+            var panelActive = BuildDungeonPanel_Active(dun, scaffold);
+            // Loot panel: loot cards
+            var panelLoot   = BuildDungeonPanel_Loot(dun, scaffold);
+
+            // Action bar shared buttons
+            var startBtn   = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Start",   "Start Dungeon", true,  dun.OnClickStartSelected);
+            var contBtn    = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Continue","Continue",      true,  dun.OnClickContinue);
+            var autoBtn    = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_AutoBattle", "Auto: OFF",  false, dun.OnClickToggleAutoBattle);
+            var collectBtn = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Collect", "Collect Loot",  true,  dun.OnClickCollectLoot);
+            UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_PrevDungeon", "< Dungeon", false, dun.OnClickSelectPreviousDungeon);
+            UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_NextDungeon", "Dungeon >", false, dun.OnClickSelectNextDungeon);
+
+            Bind(dun, "_summaryText",    summaryTxt);
+            Bind(dun, "_startButton",    startBtn);
+            Bind(dun, "_continueButton", contBtn);
+            Bind(dun, "_autoBattleButton", autoBtn);
+            Bind(dun, "_collectLootButton", collectBtn);
+            Bind(dun, "_panelSelect",    panelSelect.gameObject);
+            Bind(dun, "_panelActive",    panelActive.gameObject);
+            Bind(dun, "_panelLoot",      panelLoot.gameObject);
+
+            var feedbackTxt = UICardFactory.CreateFeedbackLabel(scaffold.DetailPanel, "FeedbackText");
+            Bind(dun, "_feedbackText", feedbackTxt);
+        }
+
+        private static RectTransform BuildDungeonPanel_Select(DungeonScreen dun, ScreenScaffold scaffold, Text summaryTxt)
+        {
+            var go  = new GameObject("Panel_Select", typeof(RectTransform));
+            go.transform.SetParent(scaffold.ContentArea, false);
+            var rt  = (RectTransform)go.transform;
+            rt.anchorMin = Vector2.zero; rt.anchorMax = Vector2.one;
+            rt.offsetMin = Vector2.zero; rt.offsetMax = Vector2.zero;
+            var vg  = go.AddComponent<VerticalLayoutGroup>();
+            vg.childForceExpandWidth = true; vg.childForceExpandHeight = false;
+            vg.childControlWidth = true; vg.childControlHeight = true;
+
+            // Inner card container for dungeon list
+            var cardContGo = new GameObject("DungeonCardContainer", typeof(RectTransform));
+            cardContGo.transform.SetParent(go.transform, false);
+            var cardContRt = (RectTransform)cardContGo.transform;
+            var cardContLE = cardContGo.AddComponent<LayoutElement>();
+            cardContLE.flexibleWidth = 1; cardContLE.preferredHeight = 300;
+            var cardContGrid = cardContGo.AddComponent<GridLayoutGroup>();
+            cardContGrid.cellSize = new Vector2(UITemporaryTheme.CardWidth, UITemporaryTheme.CardHeight);
+            cardContGrid.spacing  = new Vector2(8, 8);
+            cardContGrid.childAlignment = TextAnchor.UpperLeft;
+
+            // Selected dungeon label
+            var selTextGo = new GameObject("SelectedDungeonText", typeof(RectTransform));
+            selTextGo.transform.SetParent(go.transform, false);
+            selTextGo.AddComponent<LayoutElement>().preferredHeight = 32;
+            var selTxt = selTextGo.AddComponent<Text>();
+            selTxt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            selTxt.fontSize = UITemporaryTheme.BodyFontSize;
+            selTxt.color = UITemporaryTheme.TextPrimary;
+            selTxt.alignment = TextAnchor.MiddleLeft;
+            selTxt.raycastTarget = false;
+
+            // Party label
+            var partyTextGo = new GameObject("PartyText", typeof(RectTransform));
+            partyTextGo.transform.SetParent(go.transform, false);
+            partyTextGo.AddComponent<LayoutElement>().preferredHeight = 32;
+            var partyTxt = partyTextGo.AddComponent<Text>();
+            partyTxt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            partyTxt.fontSize = UITemporaryTheme.SmallFontSize;
+            partyTxt.color = UITemporaryTheme.TextSecondary;
+            partyTxt.alignment = TextAnchor.MiddleLeft;
+            partyTxt.raycastTarget = false;
+
+            Bind(dun, "_dungeonCardContainer", cardContRt);
+            Bind(dun, "_selectedDungeonText",  selTxt);
+            Bind(dun, "_partyText",            partyTxt);
+
+            return rt;
+        }
+
+        private static RectTransform BuildDungeonPanel_Active(DungeonScreen dun, ScreenScaffold scaffold)
+        {
+            var go = new GameObject("Panel_Active", typeof(RectTransform));
+            go.transform.SetParent(scaffold.ContentArea, false);
+            go.SetActive(false);
+            var rt = (RectTransform)go.transform;
+            rt.anchorMin = Vector2.zero; rt.anchorMax = Vector2.one;
+            rt.offsetMin = Vector2.zero; rt.offsetMax = Vector2.zero;
+            var vg = go.AddComponent<VerticalLayoutGroup>();
+            vg.childForceExpandWidth = true; vg.childForceExpandHeight = false;
+            vg.childControlWidth = true; vg.childControlHeight = true;
+            vg.spacing = 6;
+            vg.padding = new RectOffset(8, 8, 8, 8);
+
+            var titleGo = new GameObject("ActiveDungeonTitle", typeof(RectTransform));
+            titleGo.transform.SetParent(go.transform, false);
+            titleGo.AddComponent<LayoutElement>().preferredHeight = 36;
+            var titleTxt = titleGo.AddComponent<Text>();
+            titleTxt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            titleTxt.fontSize = UITemporaryTheme.TitleFontSize;
+            titleTxt.color = UITemporaryTheme.TextPrimary;
+            titleTxt.alignment = TextAnchor.MiddleLeft;
+            titleTxt.raycastTarget = false;
+
+            var turnGo = new GameObject("TurnText", typeof(RectTransform));
+            turnGo.transform.SetParent(go.transform, false);
+            turnGo.AddComponent<LayoutElement>().preferredHeight = 26;
+            var turnTxt = turnGo.AddComponent<Text>();
+            turnTxt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            turnTxt.fontSize = UITemporaryTheme.SmallFontSize;
+            turnTxt.color = UITemporaryTheme.TextSecondary;
+            turnTxt.alignment = TextAnchor.MiddleLeft;
+            turnTxt.raycastTarget = false;
+
+            var actionGo = new GameObject("ActionText", typeof(RectTransform));
+            actionGo.transform.SetParent(go.transform, false);
+            actionGo.AddComponent<LayoutElement>().preferredHeight = 26;
+            var actionTxt = actionGo.AddComponent<Text>();
+            actionTxt.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            actionTxt.fontSize = UITemporaryTheme.SmallFontSize;
+            actionTxt.color = UITemporaryTheme.TextHighlight;
+            actionTxt.alignment = TextAnchor.MiddleLeft;
+            actionTxt.raycastTarget = false;
+
+            var combatContGo = new GameObject("CombatCardContainer", typeof(RectTransform));
+            combatContGo.transform.SetParent(go.transform, false);
+            combatContGo.AddComponent<LayoutElement>().flexibleHeight = 1;
+            var combatContVG = combatContGo.AddComponent<VerticalLayoutGroup>();
+            combatContVG.childForceExpandWidth = true;
+            combatContVG.childForceExpandHeight = false;
+            combatContVG.childControlWidth = true;
+            combatContVG.childControlHeight = true;
+            combatContVG.spacing = 4;
+
+            Bind(dun, "_activeDungeonTitle",   titleTxt);
+            Bind(dun, "_activeTurnText",        turnTxt);
+            Bind(dun, "_activeActionText",      actionTxt);
+            Bind(dun, "_combatCardContainer",   (RectTransform)combatContGo.transform);
+
+            return rt;
+        }
+
+        private static RectTransform BuildDungeonPanel_Loot(DungeonScreen dun, ScreenScaffold scaffold)
+        {
+            var go = new GameObject("Panel_Loot", typeof(RectTransform));
+            go.transform.SetParent(scaffold.ContentArea, false);
+            go.SetActive(false);
+            var rt = (RectTransform)go.transform;
+            rt.anchorMin = Vector2.zero; rt.anchorMax = Vector2.one;
+            rt.offsetMin = Vector2.zero; rt.offsetMax = Vector2.zero;
+            var vg = go.AddComponent<VerticalLayoutGroup>();
+            vg.childForceExpandWidth = true; vg.childForceExpandHeight = false;
+            vg.childControlWidth = true; vg.childControlHeight = true;
+            vg.spacing = 6;
+            vg.padding = new RectOffset(8, 8, 8, 8);
+
+            var lootContGo = new GameObject("LootCardContainer", typeof(RectTransform));
+            lootContGo.transform.SetParent(go.transform, false);
+            lootContGo.AddComponent<LayoutElement>().flexibleHeight = 1;
+            var lootContVG = lootContGo.AddComponent<VerticalLayoutGroup>();
+            lootContVG.childForceExpandWidth = true;
+            lootContVG.childForceExpandHeight = false;
+            lootContVG.childControlWidth = true;
+            lootContVG.childControlHeight = true;
+            lootContVG.spacing = 4;
+
+            Bind(dun, "_lootCardContainer", (RectTransform)lootContGo.transform);
+            return rt;
+        }
+
+        private static void BuildQuest(Transform screenRoot)
+        {
+            var que      = EnsureCleanScreen<QuestScreen>(screenRoot, "QuestScreen", UIScreenId.Quest);
+            var scaffold = UIScreenLayoutBuilder.Build(que.transform, "Quests");
+
+            var summaryTxt = AddTextChild(scaffold.SummaryRow, "SummaryText", "",
+                UITemporaryTheme.SmallFontSize, UITemporaryTheme.TextSecondary);
+
+            Bind(que, "_cardContainer", scaffold.ContentArea);
+            Bind(que, "_summaryText",   summaryTxt);
+            Bind(que, "_detailText",    scaffold.DetailText);
+
+            var claimBtn = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Claim", "Claim Reward", true, que.OnClickClaimSelected);
+            var cycleBtn = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_CycleDoctrine", "Doctrine: WAR", false, que.OnClickCycleDoctrine);
+            UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Prev", "< Prev", false, que.OnClickSelectPrevious);
+            UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Next", "Next >", false, que.OnClickSelectNext);
+
+            Bind(que, "_claimButton",       claimBtn);
+            Bind(que, "_cycleDoctrineButton", cycleBtn);
+
+            var feedbackTxt = UICardFactory.CreateFeedbackLabel(scaffold.DetailPanel, "FeedbackText");
+            Bind(que, "_feedbackText", feedbackTxt);
+        }
+
+        private static void BuildSettings(Transform screenRoot)
+        {
+            var set      = EnsureCleanScreen<SettingsScreen>(screenRoot, "SettingsScreen", UIScreenId.Settings);
+            var scaffold = UIScreenLayoutBuilder.Build(set.transform, "Settings");
+
+            var summaryTxt = AddTextChild(scaffold.SummaryRow, "SummaryText", "",
+                UITemporaryTheme.SmallFontSize, UITemporaryTheme.TextSecondary);
+
+            // Settings has no card list — collapse the ContentScroll to save space
+            scaffold.ContentArea.parent.gameObject.SetActive(false);
+
+            Bind(set, "_summaryText", summaryTxt);
+            Bind(set, "_detailText",  scaffold.DetailText);
+
+            var sndBtn  = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Sound",        "Toggle Sound",        false, set.OnClickToggleSound);
+            var musBtn  = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Music",        "Toggle Music",        false, set.OnClickToggleMusic);
+            var vibBtn  = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Vibration",    "Toggle Vibration",    false, set.OnClickToggleVibration);
+            var notBtn  = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Notifications","Toggle Notifications",false, set.OnClickToggleNotifications);
+            var saveBtn = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Save",         "Save Settings",       true,  set.OnClickSave);
+            var rstBtn  = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_Reset",        "Reset Save Data",     false, set.OnClickReset);
+            var conBtn  = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_ConfirmReset", "Yes, Reset",          false, set.OnClickConfirmReset);
+            var canBtn  = UIScreenLayoutBuilder.AddActionButton(scaffold.ActionBar, "Btn_CancelReset",  "No, Cancel",          false, set.OnClickCancelReset);
+
+            // Confirm/Cancel hidden by default — shown via SettingsScreen.UpdateConfirmPanel()
+            conBtn.gameObject.SetActive(false);
+            canBtn.gameObject.SetActive(false);
+
+            Bind(set, "_toggleSoundButton",         sndBtn);
+            Bind(set, "_toggleMusicButton",         musBtn);
+            Bind(set, "_toggleVibrationButton",     vibBtn);
+            Bind(set, "_toggleNotificationsButton", notBtn);
+            Bind(set, "_saveButton",                saveBtn);
+            Bind(set, "_resetButton",               rstBtn);
+            Bind(set, "_confirmResetButton",        conBtn);
+            Bind(set, "_cancelResetButton",         canBtn);
+
+            var feedbackTxt = UICardFactory.CreateFeedbackLabel(scaffold.DetailPanel, "FeedbackText");
+            Bind(set, "_feedbackText", feedbackTxt);
+        }
+    }
+}
+#endif

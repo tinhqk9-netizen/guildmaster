@@ -195,6 +195,14 @@ namespace GuildMaster.Tests.PlayMode
             Assert.Greater(inventoryAfter, inventoryBefore, "inventory did not grow after collecting");
 
             // --- 7. progress -----------------------------------------------------------------
+            // Advance dungeon transition to the next room so progress increments
+            int progressTicks = 0;
+            while (progressTicks < 60 && run.Progress == 0)
+            {
+                services.Dungeon.Tick();
+                progressTicks++;
+            }
+
             Row("Dungeon progress", "progress advanced during the run",
                 $"progress={run.Progress}", run.Progress > 0);
 

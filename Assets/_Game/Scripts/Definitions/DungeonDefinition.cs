@@ -26,6 +26,19 @@ namespace GuildMaster.Definitions
         /// </summary>
         public List<string> EnemyIds;
 
+        /// <summary>
+        /// Dungeon chain gating (G05): the dungeon that must be cleared before this one unlocks.
+        /// Null or empty = no requirement.
+        /// </summary>
+        public string RequiredClearDungeonId;
+        public int RequiredClearProgress;
+
+        /// <summary>
+        /// Quest event category this dungeon completion feeds into.
+        /// Maps to QuestDefinition.TrueClass for caller wiring.
+        /// </summary>
+        public string QuestEventCategory;
+
         public string SourceClass;
     }
 }

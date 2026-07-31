@@ -1,5 +1,7 @@
+using GuildMaster.Runtime.Services;
 using GuildMaster.Runtime.Save;
 using GuildMaster.Runtime.UI.Core;
+using GuildMaster.Runtime.UI.Foundation;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -24,12 +26,36 @@ namespace GuildMaster.Runtime.UI.HUD
         [SerializeField] private Button _tavernButton;
         [SerializeField] private Button _questButton;
 
-        public void Initialize(ISaveService saveService, IUIService uiService)
+        [Header("Foundation UI Components")]
+        [SerializeField] private WelcomeModal _welcomeModal;
+        [SerializeField] private RecoveryWarningPopup _recoveryPopup;
+        [SerializeField] private SaveStatusIndicator _saveIndicator;
+        [SerializeField] private OfflineSummaryPopup _offlinePopup;
+
+        public void Initialize(ISaveService saveService, IUIService uiService, OfflineStateDiffSummary offlineSummary)
         {
             _saveService = saveService;
             _uiService = uiService;
             BindButtons();
             RefreshHUD();
+
+            if (_saveIndicator != null) _saveIndicator.Initialize(saveService);
+            if (_welcomeModal != null) _welcomeModal.Initialize();
+            if (_recoveryPopup != null) _recoveryPopup.Initialize();
+            if (_offlinePopup != null) _offlinePopup.Initialize();
+
+            if (saveService.LastLoadStatus == SaveLoadResult.FreshNewGame)
+            {
+                if (_welcomeModal != null) _welcomeModal.Show();
+            }
+            else if (saveService.LastLoadStatus == SaveLoadResult.FreshAfterCorruption || saveService.LastLoadStatus == SaveLoadResult.BackupLoaded)
+            {
+                if (_recoveryPopup != null) _recoveryPopup.ShowWarning(saveService.LastLoadStatus);
+            }
+            else if (offlineSummary.AppliedSeconds > 0)
+            {
+                if (_offlinePopup != null) _offlinePopup.ShowSummary(offlineSummary);
+            }
         }
 
         private void BindButtons()

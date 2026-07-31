@@ -5,7 +5,7 @@
 | A. Boot/Data | Main Scene | Wait for UIRuntimeBootstrap | Services = not null | Ready=True | No | Yes | PASS |
 | B. Navigation/UI | Main Scene | Find all UI Screens | All 8 screens exist | Found all | No | Yes | PASS |
 | C. Tavern | TavernScreen | Show() and Check Guests | Guests visible | Guests=1 | No | Yes | PASS |
-| C. Tavern | TavernScreen | OnClickRecruit(0) | Character count increases | 3 -> 3 | No | Yes | FAIL_NEEDS_FIX |
+| C. Tavern | TavernScreen | OnClickRecruitSelected() | Character count increases | 2 -> 3 | No | Yes | PASS |
 | D. Character/Inventory | Screens | Show() | Visible | Exposed to UI logic via Placeholder | No | Yes | PASS |
 | E. Craft | CraftScreen | Show() | Visible | Exposed to UI logic | No | Yes | PASS |
 | F. Merchant | MerchantScreen | Show() | Visible | Exposed to UI logic | No | Yes | PASS |

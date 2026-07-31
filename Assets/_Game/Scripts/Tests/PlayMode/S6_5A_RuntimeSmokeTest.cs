@@ -78,6 +78,7 @@ namespace GuildMaster.Tests.PlayMode
             yield return new WaitForSeconds(0.5f);
 
             // FLOW C: Tavern
+            services.Save.CurrentData.LevelQuarters = 2; // Ensure enough housing capacity for recruitment
             services.Tavern.ProgressVisitorTime(86400); // 1 day to spawn guests
             tavern.Show();
             yield return null;
@@ -86,10 +87,14 @@ namespace GuildMaster.Tests.PlayMode
             
             // Try Recruit
             int charsBefore = services.Character.GetAllCharacters().Count;
-            tavern.OnClickRecruit(0);
+            if (guestCount > 0)
+            {
+                tavern.SelectIndex(0); // Select the guest first!
+            }
+            tavern.OnClickRecruitSelected();
             yield return null;
             int charsAfter = services.Character.GetAllCharacters().Count;
-            AppendRow("C. Tavern", "TavernScreen", "OnClickRecruit(0)", "Character count increases", $"{charsBefore} -> {charsAfter}", true, true, charsAfter > charsBefore ? "PASS" : "FAIL_NEEDS_FIX");
+            AppendRow("C. Tavern", "TavernScreen", "OnClickRecruitSelected()", "Character count increases", $"{charsBefore} -> {charsAfter}", true, true, charsAfter > charsBefore ? "PASS" : "FAIL_NEEDS_FIX");
 
             // FLOW D: Character/Inventory
             character.Show();

@@ -57,20 +57,41 @@ namespace GuildMaster.Runtime.Services
             var data = _saveService.CurrentData;
             int level = GetLevel(doctrineName);
             int progress = GetProgress(doctrineName);
-            int needed = _formulaService.TotalStarsToNextLp(level) - progress;
 
             int newLevel = level;
-            int newProgress = progress;
+            int currentProgress = progress;
+            int remainingAmount = amount;
 
-            if (needed > amount)
+            while (remainingAmount > 0)
             {
-                newProgress = progress + amount;
+                int starsNeeded = _formulaService.TotalStarsToNextLp(newLevel);
+                if (starsNeeded <= 0)
+                {
+                    break;
+                }
+
+                int neededToNext = starsNeeded - currentProgress;
+                if (neededToNext <= 0)
+                {
+                    newLevel++;
+                    currentProgress = 0;
+                    continue;
+                }
+
+                if (neededToNext > remainingAmount)
+                {
+                    currentProgress += remainingAmount;
+                    remainingAmount = 0;
+                }
+                else
+                {
+                    newLevel++;
+                    remainingAmount -= neededToNext;
+                    currentProgress = 0;
+                }
             }
-            else
-            {
-                newLevel = level + 1;
-                newProgress = amount - needed;
-            }
+
+            int newProgress = currentProgress;
 
             switch (doctrineName.ToLowerInvariant())
             {

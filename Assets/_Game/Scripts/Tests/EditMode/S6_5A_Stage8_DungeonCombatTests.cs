@@ -65,14 +65,30 @@ namespace GuildMaster.Tests.EditMode
             var dungeonDef = new DungeonDefinition { id = "dungeon_1" };
             _database.Add(dungeonDef);
 
-            dungeon.StartDungeon("dungeon_1", new List<string> { "adv_1" });
+            if (!_database.TryGet<AdventurerDefinition>("adv_1", out _))
+            {
+                _database.Add(new AdventurerDefinition
+                {
+                    id = "adv_1",
+                    BaseMaxHp = 100,
+                    BaseConstitution = 10,
+                    MaxLevel = 100
+                });
+            }
+
+            var character = _container.Character.CreateCharacter("adv_1");
+
+            // Clear any pre-existing expedition from saved data
+            dungeon.StopDungeon();
+
+            dungeon.StartDungeon("dungeon_1", new List<string> { character.InstanceId });
             Assert.IsTrue(dungeon.IsDungeonActive());
 
             var active = dungeon.GetActiveDungeon();
             Assert.AreEqual(0, active.ActionType); // ENTER_DUNGEON
 
-            // ENTER_DUNGEON duration is 5 turns
-            for (int i = 0; i < 5; i++) dungeon.Tick();
+            // ENTER_DUNGEON duration is 5 turns, but DungeonService filters every second tick
+            for (int i = 0; i < 10; i++) dungeon.Tick();
 
             Assert.AreEqual(1, active.ActionType); // ENTER_ROOM
         }

@@ -68,7 +68,7 @@
     },
     {
       "className": "ClothRobe",
-      "id": "clothrobe",
+      "id": "cloth_robe",
       "rawArgs": "Item.getInstance(\"Cloth\", 3)",
       "sourcePath": "D:\\Tinh\\Guild Master - Idle Dungeons\\sources/it/paranoidsquirrels/idleguildmaster\\storage\\data\\items\\Recipes.java"
     },

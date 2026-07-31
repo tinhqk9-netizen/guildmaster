@@ -7,6 +7,7 @@ Records:
 - dungeons: 11
 - enemy_drop_tables: 116
 - enemies: 122
+- item_fields: 306
 - items: 607
 - pets: 21
 - quests: 56

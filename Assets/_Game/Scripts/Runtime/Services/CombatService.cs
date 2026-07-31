@@ -9,7 +9,15 @@ namespace GuildMaster.Runtime.Services
 {
     public class CombatService : ICombatService
     {
+        private readonly ICharacterService _characterService;
+        private readonly IPetService _petService;
         private readonly Random _random = new Random();
+
+        public CombatService(ICharacterService characterService = null, IPetService petService = null)
+        {
+            _characterService = characterService;
+            _petService = petService;
+        }
 
         public CombatResult ProcessTurn(List<CharacterRuntime> adventurers, List<EnemyRuntime> enemies, out string nextActingEntityId)
         {
@@ -19,7 +27,7 @@ namespace GuildMaster.Runtime.Services
             if (enemies.All(e => e.IsDead)) return CombatResult.Victory;
 
             var allEntities = new List<ICombatEntityWrapper>();
-            allEntities.AddRange(adventurers.Where(a => a.CurrentHp > 0).Select(a => new AdventurerWrapper(a)));
+            allEntities.AddRange(adventurers.Where(a => a.CurrentHp > 0).Select(a => new AdventurerWrapper(a, _characterService, _petService)));
             allEntities.AddRange(enemies.Where(e => !e.IsDead).Select(e => new EnemyWrapper(e)));
 
             var sorted = allEntities.OrderByDescending(e => e.IsInitiative).ThenByDescending(e => e.Dexterity).ToList();
@@ -42,12 +50,23 @@ namespace GuildMaster.Runtime.Services
                 }
             }
 
-            // Target opposite team
+            // Target opposite team via weighted threat selection (parity with Area.selectEnemyTarget)
+            var potentialTargets = sorted.Where(e => e.IsAdventurer != acting.IsAdventurer && e.CurrentHp > 0).ToList();
             ICombatEntityWrapper target = null;
-            if (acting.IsAdventurer)
-                target = sorted.FirstOrDefault(e => !e.IsAdventurer && e.CurrentHp > 0);
-            else
-                target = sorted.FirstOrDefault(e => e.IsAdventurer && e.CurrentHp > 0);
+            if (potentialTargets.Count > 0)
+            {
+                var weightedPool = new List<ICombatEntityWrapper>();
+                foreach (var p in potentialTargets)
+                {
+                    int threat = Math.Max(1, p.Threat);
+                    for (int i = 0; i < threat; i++)
+                    {
+                        weightedPool.Add(p);
+                    }
+                }
+                
+                target = weightedPool[_random.Next(weightedPool.Count)];
+            }
 
             if (target != null)
             {
@@ -91,10 +110,12 @@ namespace GuildMaster.Runtime.Services
             if (target == null || rawDamage <= 0) return 0;
             if (target.IsAdventurer == false) barrier = 0; // Enemy has no barrier
 
+            // [PARTIAL] Java flat reduction includes Exalt status (+5), DragonBlood (+ MaxLevel/5), Ascended (+ MaxLevel/10).
+            // Currently runtime model lacks StatusEffects and Traits. Ported Base + Constitution.
             int defStat = isMagic ? target.MagicDefense : target.Defense;
             double reduction = Math.Min(1.0, (1.0 - armorIgnored) * 0.01 * defStat);
 
-            int flatReduction = target.Constitution / 8; // Flat damage reduction rule
+            int flatReduction = target.FlatDamageReduction;
 
             double reducedDamage = (1.0 - reduction) * rawDamage - flatReduction - barrier;
             int result = DecodeMath.Round(Math.Max(1.0, reducedDamage));
@@ -130,6 +151,8 @@ namespace GuildMaster.Runtime.Services
         int MagicDefense { get; }
         bool IsInitiative { get; }
         string ActiveSkillId { get; }
+        
+        int FlatDamageReduction { get; }
 
         /// <summary>Attack range feeding <c>rollAttackDamage()</c>.</summary>
         int MinAttackDamage { get; }
@@ -139,12 +162,21 @@ namespace GuildMaster.Runtime.Services
 
         /// <summary>Experience this entity awards when killed (enemies only).</summary>
         int ExpGiven { get; }
+
+        int Threat { get; }
     }
 
     public class AdventurerWrapper : ICombatEntityWrapper
     {
         private CharacterRuntime _character;
-        public AdventurerWrapper(CharacterRuntime character) => _character = character;
+        private ICharacterService _charService;
+        private IPetService _petService;
+        public AdventurerWrapper(CharacterRuntime character, ICharacterService charService = null, IPetService petService = null)
+        {
+            _character = character;
+            _charService = charService;
+            _petService = petService;
+        }
         
         public string Id => _character.InstanceId;
         public bool IsAdventurer => true;
@@ -152,24 +184,129 @@ namespace GuildMaster.Runtime.Services
         public int CurrentMana { get => _character.CurrentMana; set => _character.CurrentMana = value; }
         public int CurrentShield { get => _character.CurrentShield; set => _character.CurrentShield = value; }
         
-        public int MaxHp => _character.Definition.BaseMaxHp;
+        public int MaxHp => _charService != null ? _charService.GetTotalStat(_character, GuildMaster.Definitions.StatType.MaxHp) : _character.Definition.BaseMaxHp;
         public int Regeneration => 1;
         public int ManaRegen => 10;
-        public int Dexterity => _character.Definition.BaseDexterity;
-        public int Constitution => _character.Definition.BaseConstitution;
-        public int Defense => _character.Definition.BaseDefense;
-        public int MagicDefense => _character.Definition.BaseMagicDefense;
+        public int Dexterity => _charService != null ? _charService.GetTotalStat(_character, GuildMaster.Definitions.StatType.Dexterity) : _character.Definition.BaseDexterity;
+        public int Constitution => _charService != null ? _charService.GetTotalStat(_character, GuildMaster.Definitions.StatType.Constitution) : _character.Definition.BaseConstitution;
+        public int Defense => _charService != null ? _charService.GetTotalStat(_character, GuildMaster.Definitions.StatType.Defense) : _character.Definition.BaseDefense;
+        public int MagicDefense => _charService != null ? _charService.GetTotalStat(_character, GuildMaster.Definitions.StatType.MagicDefense) : _character.Definition.BaseMagicDefense;
         public bool IsInitiative => false;
         public string ActiveSkillId => _character.ActiveSkillId;
 
-        // Adventurer damage comes from the equipped weapon in the decode. Until the weapon
-        // damage-modifier port lands, an unarmed adventurer deals the decode's unarmed
-        // minimum of 1 (Adventurer.calculateMinAttackDamage returns 1 when weapon == null).
-        public int MinAttackDamage => 1;
-        public int MaxAttackDamage => 1;
+        public int FlatDamageReduction
+        {
+            get
+            {
+                // Entity.java calculateFlatDamageReduction
+                int reduction = Constitution / 8;
+                // [PARTIAL] Statuses (Exalt +5) missing from runtime.
+                // Adventurer.java calculateFlatDamageReduction
+                // [PARTIAL] Traits (DragonBlood, Ascended) missing from runtime.
+                return reduction;
+            }
+        }
+
+        public int MinAttackDamage
+        {
+            get
+            {
+                var weapon = _character.Weapon;
+                if (weapon == null || weapon.Definition == null) return 1;
+
+                double con = Constitution;
+                double dex = Dexterity;
+                double intel = _charService != null ? _charService.GetTotalStat(_character, GuildMaster.Definitions.StatType.Intelligence) : _character.Definition.BaseIntelligence;
+
+                double mod = 0;
+                string parentClass = weapon.Definition.parentClass ?? "";
+
+                switch (parentClass.ToLowerInvariant())
+                {
+                    case "sword":
+                        mod = con * 1.2 + dex * 0.4;
+                        break;
+                    case "staff":
+                        mod = intel * 1.5;
+                        break;
+                    case "dagger":
+                        mod = dex * 1.2 + con * 0.3;
+                        break;
+                    case "bow":
+                        mod = dex * 1.5;
+                        break;
+                    default:
+                        mod = (con + dex + intel) / 2.0;
+                        break;
+                }
+
+                if (weapon.Definition.id == "serpent_bite")
+                {
+                    mod *= Threat;
+                }
+
+                double delta = 0.2; // 20% default delta
+                int minDmg = (int)Math.Round(mod * (1.0 - delta));
+                if (_petService != null)
+                {
+                    minDmg += (int)_petService.GetAttackBonus(_character.InstanceId);
+                }
+                return Math.Max(1, minDmg);
+            }
+        }
+
+        public int MaxAttackDamage
+        {
+            get
+            {
+                var weapon = _character.Weapon;
+                if (weapon == null || weapon.Definition == null) return 1;
+
+                double con = Constitution;
+                double dex = Dexterity;
+                double intel = _charService != null ? _charService.GetTotalStat(_character, GuildMaster.Definitions.StatType.Intelligence) : _character.Definition.BaseIntelligence;
+
+                double mod = 0;
+                string parentClass = weapon.Definition.parentClass ?? "";
+
+                switch (parentClass.ToLowerInvariant())
+                {
+                    case "sword":
+                        mod = con * 1.2 + dex * 0.4;
+                        break;
+                    case "staff":
+                        mod = intel * 1.5;
+                        break;
+                    case "dagger":
+                        mod = dex * 1.2 + con * 0.3;
+                        break;
+                    case "bow":
+                        mod = dex * 1.5;
+                        break;
+                    default:
+                        mod = (con + dex + intel) / 2.0;
+                        break;
+                }
+
+                if (weapon.Definition.id == "serpent_bite")
+                {
+                    mod *= Threat;
+                }
+
+                double delta = 0.2;
+                int maxDmg = (int)Math.Round(mod * (1.0 + delta));
+                if (_petService != null)
+                {
+                    maxDmg += (int)_petService.GetAttackBonus(_character.InstanceId);
+                }
+                return Math.Max(1, maxDmg);
+            }
+        }
+
         public bool IsMagic => false;
         public bool RollsDamageThreeTimes => false;
         public int ExpGiven => 0;
+        public int Threat => 5; // Base adventurer threat (from Java Adventurer.java:292)
     }
 
     public class EnemyWrapper : ICombatEntityWrapper
@@ -193,10 +330,23 @@ namespace GuildMaster.Runtime.Services
         public bool IsInitiative => false;
         public string ActiveSkillId => _enemy.ActiveSkillId;
 
+        public int FlatDamageReduction
+        {
+            get
+            {
+                // Entity.java calculateFlatDamageReduction
+                int reduction = Constitution / 8;
+                // [PARTIAL] Statuses (Exalt +5) missing from runtime.
+                // [PARTIAL] LegateHadrian (+15) and TheExiled (+40) enemy-specific overrides missing since enemy subtypes are unified here.
+                return reduction;
+            }
+        }
+
         public int MinAttackDamage => _enemy.Definition.MinDamage;
         public int MaxAttackDamage => _enemy.Definition.MaxDamage;
         public bool IsMagic => _enemy.Definition.IsMagic;
         public bool RollsDamageThreeTimes => false;
         public int ExpGiven => _enemy.Definition.ExpGiven;
+        public int Threat => 1; // Default enemy threat
     }
 }

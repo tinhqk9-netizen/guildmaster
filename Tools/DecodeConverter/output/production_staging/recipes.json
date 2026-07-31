@@ -893,7 +893,7 @@
     },
     {
       "className": "Recipe",
-      "id": "recipe_clothrobe",
+      "id": "recipe_cloth_robe",
       "ingredients": [
         {
           "amount": 3,
@@ -901,7 +901,7 @@
         }
       ],
       "manualRuleRequired": false,
-      "outputItemId": "clothrobe",
+      "outputItemId": "cloth_robe",
       "parseReasons": [],
       "parseStatus": "full",
       "rawArgs": "Item.getInstance(\"Cloth\", 3)",

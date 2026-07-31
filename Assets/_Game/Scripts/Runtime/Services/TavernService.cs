@@ -76,27 +76,101 @@ namespace GuildMaster.Runtime.Services
             var guestData = guests[index];
             guests.RemoveAt(index);
 
-            // Free recruit according to recovered rule TR-03
-            newCharacter = _characterService.CreateCharacter(guestData.DefinitionId);
+            newCharacter = _characterService.RecruitCharacter(guestData);
             return true;
         }
 
+        private string RollClass()
+        {
+            double rand = _random.NextDouble();
+            return rand < 0.25d ? "Footman" : rand < 0.5d ? "Rogue" : rand < 0.75d ? "Archer" : "Apprentice";
+        }
+
+        private string RollCommonTrait()
+        {
+            double rand = _random.NextDouble();
+            if (rand < 0.13333333333333333d) return "BOOKWORM";
+            if (rand < 0.26666666666666666d) return "BRUTE";
+            if (rand < 0.4d) return "FERAL";
+            return null;
+        }
+
+        private string RollRareTrait()
+        {
+            double rand = _random.NextDouble();
+            if (rand < 0.014285714285714285d) return "EMPATHETIC";
+            if (rand < 0.028571428571428574d) return "GIFTED";
+            if (rand < 0.04285714285714286d) return "INTIMIDATING";
+            if (rand < 0.05714285714285715d) return "FOCUSED";
+            if (rand < 0.07142857142857144d) return "DRAGON_BLOOD";
+            if (rand < 0.08571428571428572d) return "CURSED";
+            if (rand < 0.1d) return "REACTIVE";
+            return null;
+        }
+
+
+
         public void GenerateVisitor()
         {
-            var allDefs = _database.GetAll<AdventurerDefinition>().ToList();
-            if (allDefs.Count == 0) return;
+            var data = _saveService.CurrentData;
+            string classId = "Footman";
+            string trait = null;
 
-            var selectedDef = allDefs[_random.Next(allDefs.Count)];
+            if (data.TutorialStep <= 1)
+            {
+                classId = "Footman";
+            }
+            else if (data.TutorialStep == 6)
+            {
+                classId = "LightDisciple";
+                trait = "BOOKWORM";
+            }
+            else if (data.TutorialStep == 7)
+            {
+                classId = "Archer";
+                trait = "FERAL";
+                data.TutorialStep = 8;
+                // AchievementsUtils.unlock(AchievementsUtils.ACHIEVEMENT_GUILD_MANAGEMENT_101);
+            }
+            else
+            {
+                classId = RollClass();
+                trait = RollCommonTrait();
+                if (trait == null) trait = RollRareTrait();
+            }
+
+            if (!_database.TryGet<AdventurerDefinition>(classId, out var def))
+            {
+                // Fallback if ID case mismatch
+                var allDefs = _database.GetAll<AdventurerDefinition>().ToList();
+                if (allDefs.Count == 0) return;
+                def = allDefs.FirstOrDefault(x => x.id.Equals(classId, StringComparison.OrdinalIgnoreCase)) ?? allDefs[0];
+            }
+
             var guestData = new CharacterSaveData
             {
                 InstanceId = Guid.NewGuid().ToString(),
-                DefinitionId = selectedDef.id,
+                DefinitionId = def.id,
                 Level = 1,
                 Exp = 0,
-                CurrentHp = selectedDef.BaseMaxHp
+                CurrentHp = def.BaseMaxHp,
+                Trait = trait ?? string.Empty
             };
 
-            var data = _saveService.CurrentData;
+            string defaultWeapon = def.StarterWeaponId;
+            if (!string.IsNullOrEmpty(defaultWeapon))
+            {
+                var weaponItem = new ItemSaveData
+                {
+                    InstanceId = Guid.NewGuid().ToString(),
+                    DefinitionId = defaultWeapon,
+                    StackCount = 1,
+                    IsLocked = true
+                };
+                data.Items.Add(weaponItem);
+                guestData.WeaponInstanceId = weaponItem.InstanceId;
+            }
+
             // Insert at beginning (recovered rule TR-06)
             data.TavernGuests.Insert(0, guestData);
 
@@ -104,6 +178,11 @@ namespace GuildMaster.Runtime.Services
             int maxCap = GetTavernCapacity();
             while (data.TavernGuests.Count > maxCap)
             {
+                var removedGuest = data.TavernGuests[data.TavernGuests.Count - 1];
+                if (!string.IsNullOrEmpty(removedGuest.WeaponInstanceId))
+                {
+                    data.Items.RemoveAll(x => x.InstanceId == removedGuest.WeaponInstanceId);
+                }
                 data.TavernGuests.RemoveAt(data.TavernGuests.Count - 1);
             }
         }
@@ -166,5 +245,12 @@ namespace GuildMaster.Runtime.Services
             }
             return false;
         }
+
+        public long GetUpgradeQuartersPrice() => _formulaService.GetQuartersPrice(_saveService.CurrentData.LevelQuarters);
+        public long GetUpgradeTavernCapacityPrice() => _formulaService.GetTavernCapacityPrice(_saveService.CurrentData.LevelTavernCapacity);
+        public long GetUpgradeTavernTimePrice() => _formulaService.GetTavernTimePrice(_saveService.CurrentData.LevelTavernTime);
+        public int GetQuartersLevel() => _saveService.CurrentData.LevelQuarters;
+        public int GetTavernCapacityLevel() => _saveService.CurrentData.LevelTavernCapacity;
+        public int GetTavernTimeLevel() => _saveService.CurrentData.LevelTavernTime;
     }
 }

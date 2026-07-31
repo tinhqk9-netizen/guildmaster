@@ -1,0 +1,11 @@
+Assets/_Game/Data/AssetCatalog.asset
+Assets/_Game/Scenes/Boot 1.unity
+Assets/_Game/Scenes/Boot.unity
+Assets/_Game/Scenes/Main 1.unity
+Assets/_Game/Scenes/Main.unity
+Assets/DefaultVolumeProfile.asset
+Assets/Scenes/SampleScene.unity
+Assets/Settings/Renderer2D.asset
+Assets/Settings/Scenes/URP2DSceneTemplate.unity
+Assets/Settings/UniversalRP.asset
+Assets/UniversalRenderPipelineGlobalSettings.asset

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using GuildMaster.Database;
 using GuildMaster.Definitions;
@@ -8,12 +9,28 @@ using GuildMaster.Runtime.Save;
 
 namespace GuildMaster.Runtime.Services
 {
+    [Serializable]
+    public class QuestFlatMetadataEntry
+    {
+        public string id;
+        public string className;
+        public int defaultRarity;
+        public List<long> targetProgressValues;
+    }
+
+    [Serializable]
+    public class QuestFlatMetadataList
+    {
+        public List<QuestFlatMetadataEntry> entries;
+    }
+
     public class QuestService : IQuestService
     {
         private readonly ISaveService _saveService;
         private readonly GameDatabase _registry;
         private readonly IDoctrineService _doctrineService;
         private readonly List<QuestRuntime> _activeQuests = new List<QuestRuntime>();
+        private readonly Dictionary<string, QuestFlatMetadataEntry> _metadataMap = new Dictionary<string, QuestFlatMetadataEntry>(StringComparer.OrdinalIgnoreCase);
 
         public QuestService(
             ISaveService saveService, 
@@ -23,7 +40,50 @@ namespace GuildMaster.Runtime.Services
             _saveService = saveService ?? throw new ArgumentNullException(nameof(saveService));
             _registry = registry ?? throw new ArgumentNullException(nameof(registry));
             _doctrineService = doctrineService ?? new DoctrineService(_saveService, new Formulas.FormulaService());
+            
+            LoadMetadata();
             LoadQuests();
+        }
+
+        private void LoadMetadata()
+        {
+            _metadataMap.Clear();
+            try
+            {
+                string path = Path.Combine(UnityEngine.Application.streamingAssetsPath, "GameData", "quest_metadata.json");
+                if (File.Exists(path))
+                {
+                    string json = File.ReadAllText(path);
+                    var list = UnityEngine.JsonUtility.FromJson<QuestFlatMetadataList>(json);
+                    if (list != null && list.entries != null)
+                    {
+                        foreach (var entry in list.entries)
+                        {
+                            if (!string.IsNullOrEmpty(entry.id))
+                            {
+                                _metadataMap[entry.id] = entry;
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                UnityEngine.Debug.LogError($"[QuestService] Failed to load quest metadata: {ex.Message}");
+            }
+        }
+
+        public long GetTargetProgress(string questId, int rarity)
+        {
+            if (_metadataMap.TryGetValue(questId, out var entry))
+            {
+                int idx = Math.Clamp(rarity - 1, 0, 9);
+                if (entry.targetProgressValues != null && entry.targetProgressValues.Count > idx)
+                {
+                    return entry.targetProgressValues[idx];
+                }
+            }
+            return rarity * 100;
         }
 
         public IReadOnlyList<QuestRuntime> GetActiveQuests()
@@ -38,13 +98,17 @@ namespace GuildMaster.Runtime.Services
 
             foreach (var qData in _saveService.CurrentData.Quests)
             {
-                var def = _registry.GetRequired<QuestDefinition>(qData.DefinitionId);
-                var runtime = new QuestRuntime(qData.InstanceId, def)
+                if (_registry.TryGet<QuestDefinition>(qData.DefinitionId, out var def))
                 {
-                    State = qData.State,
-                    Progress = qData.Progress
-                };
-                _activeQuests.Add(runtime);
+                    int rarity = qData.Rarity > 0 ? qData.Rarity : 1;
+                    long targetProg = qData.TargetProgress > 0 ? qData.TargetProgress : GetTargetProgress(qData.DefinitionId, rarity);
+                    var runtime = new QuestRuntime(qData.InstanceId, def, rarity, targetProg)
+                    {
+                        State = qData.State,
+                        Progress = qData.Progress
+                    };
+                    _activeQuests.Add(runtime);
+                }
             }
         }
 
@@ -57,19 +121,21 @@ namespace GuildMaster.Runtime.Services
                 InstanceId = q.InstanceId,
                 DefinitionId = q.Definition.id,
                 State = q.State,
-                Progress = q.Progress
+                Progress = q.Progress,
+                Rarity = q.Rarity,
+                TargetProgress = q.TargetProgress
             }).ToList();
         }
 
         public void Increment(string questInstanceId, long amount)
         {
             var quest = _activeQuests.FirstOrDefault(q => q.InstanceId == questInstanceId);
-            if (quest == null || !quest.IsActive || amount <= 0 || quest.Progress >= quest.Definition.TargetProgress) return;
+            if (quest == null || !quest.IsActive || amount <= 0 || quest.Progress >= quest.TargetProgress) return;
 
             long newProgress = quest.Progress + amount;
             quest.Progress = newProgress;
             
-            if (newProgress >= quest.Definition.TargetProgress)
+            if (newProgress >= quest.TargetProgress)
             {
                 quest.State = QuestState.Completed;
             }
@@ -81,11 +147,11 @@ namespace GuildMaster.Runtime.Services
         public void IncrementToValue(string questInstanceId, long newValue)
         {
             var quest = _activeQuests.FirstOrDefault(q => q.InstanceId == questInstanceId);
-            if (quest == null || !quest.IsActive || newValue <= 0 || quest.Progress >= quest.Definition.TargetProgress) return;
+            if (quest == null || !quest.IsActive || newValue <= 0 || quest.Progress >= quest.TargetProgress) return;
 
             quest.Progress = newValue;
             
-            if (newValue >= quest.Definition.TargetProgress)
+            if (newValue >= quest.TargetProgress)
             {
                 quest.State = QuestState.Completed;
             }
@@ -114,8 +180,8 @@ namespace GuildMaster.Runtime.Services
             var quest = _activeQuests.FirstOrDefault(q => q.InstanceId == questInstanceId);
             if (quest == null || quest.State != QuestState.Completed) return false;
 
-            int rarity = 1; // Default quest rarity
-            bool isGems = false;
+            int rarity = quest.Rarity;
+            bool isGems = (rarity >= 4);
 
             int rewardAmount = GetRewardAmount(rarity, isGems);
 
@@ -133,6 +199,16 @@ namespace GuildMaster.Runtime.Services
             data.QuestsCompleted++;
             SaveQuests();
             return true;
+        }
+
+        public void IncrementDefinition(string definitionId, long amount)
+        {
+            if (string.IsNullOrEmpty(definitionId) || amount <= 0) return;
+            var targets = _activeQuests.Where(q => q.Definition.id.Equals(definitionId, StringComparison.OrdinalIgnoreCase)).ToList();
+            foreach (var q in targets)
+            {
+                Increment(q.InstanceId, amount);
+            }
         }
     }
 }

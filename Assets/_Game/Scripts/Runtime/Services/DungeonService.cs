@@ -11,30 +11,31 @@ namespace GuildMaster.Runtime.Services
 {
     public class DungeonService : IDungeonService
     {
-        /// <summary>Adventurers stop fighting after this many turns in a dungeon (Area case 2).</summary>
         private const int DUNGEON_TURN_CAP = 400;
-
-        /// <summary>Losing only wipes progress below this threshold (Area case 5).</summary>
         private const int PROGRESS_KEEP_THRESHOLD = 250;
+        private const int MAX_EXPEDITIONS = 3;
 
-        private DungeonRuntime _activeDungeon;
+        public int MaxExpeditions => MAX_EXPEDITIONS;
+
+        private readonly ExpeditionRuntime[] _expeditions = new ExpeditionRuntime[MAX_EXPEDITIONS];
+
         private readonly ISaveService _saveService;
         private readonly GameDatabase _registry;
         private readonly ICombatService _combatService;
         private readonly ILootService _lootService;
         private readonly ICharacterService _characterService;
         private readonly IInventoryService _inventoryService;
-        private readonly Random _random;
-
-        /// <summary>Party resolved at StartDungeon; combat mutates these instances directly.</summary>
-        private readonly List<CharacterRuntime> _party = new List<CharacterRuntime>();
+        private readonly IQuestService _questService;
+        private readonly System.Random _random;
+        private int _tickCounter;
 
         public DungeonService(ISaveService saveService, GameDatabase registry,
                               ICombatService combatService = null,
                               ILootService lootService = null,
                               ICharacterService characterService = null,
                               IInventoryService inventoryService = null,
-                              Random random = null)
+                              IQuestService questService = null,
+                              System.Random random = null)
         {
             _saveService = saveService ?? throw new ArgumentNullException(nameof(saveService));
             _registry = registry ?? throw new ArgumentNullException(nameof(registry));
@@ -42,263 +43,375 @@ namespace GuildMaster.Runtime.Services
             _lootService = lootService;
             _characterService = characterService;
             _inventoryService = inventoryService;
-            _random = random ?? new Random();
+            _questService = questService;
+            _random = random ?? new System.Random();
+
+            LoadDungeonState();
+        }
+
+        // ─── Legacy single-dungeon API (Slot 0) ────────────────────────────────
+
+        public void StartDungeon(string dungeonId)
+        {
+            var party = _saveService.CurrentData?.CurrentParty ?? new List<string>();
+            StartDungeon(dungeonId, party);
         }
 
         public void StartDungeon(string dungeonId, List<string> adventurerIds)
         {
-            var def = _registry.GetRequired<DungeonDefinition>(dungeonId);
-            _activeDungeon = new DungeonRuntime(Guid.NewGuid().ToString(), def)
-            {
-                State = DungeonState.Unlocked,
-                Progress = 0,
-                MaxProgress = 0, // Placeholder, endless dungeon logic deferred
-                AdventurerInstanceIds = new List<string>(adventurerIds)
-            };
-            
-            ResolveParty();
-            SaveDungeonState();
+            StartExpedition(0, dungeonId, adventurerIds, out _);
         }
-
-        /// <summary>
-        /// Looks the party up from CharacterService so combat mutates the same runtime
-        /// instances the rest of the game sees.
-        /// </summary>
-        private void ResolveParty()
-        {
-            _party.Clear();
-            if (_activeDungeon == null || _characterService == null) return;
-
-            IReadOnlyList<CharacterRuntime> owned = _characterService.GetAllCharacters();
-            foreach (string id in _activeDungeon.AdventurerInstanceIds)
-            {
-                CharacterRuntime match = owned.FirstOrDefault(c => c.InstanceId == id);
-                if (match != null) _party.Add(match);
-            }
-        }
-
-        /// <summary>Party members still standing.</summary>
-        private int AdventurersAlive() => _party.Count(c => c.CurrentHp > 0);
 
         public void StopDungeon()
         {
-            _activeDungeon = null;
-            if (_saveService.CurrentData != null)
-            {
-                _saveService.CurrentData.ActiveDungeon = null;
-            }
+            StopExpedition(0);
         }
 
-        public void SaveDungeonState()
-        {
-            if (_activeDungeon == null || _saveService.CurrentData == null) return;
+        public bool IsDungeonActive() => _expeditions[0] != null;
 
-            var activeData = _saveService.CurrentData.ActiveDungeon ?? new ActiveDungeonSaveData();
-            
-            activeData.DungeonDefinitionId = _activeDungeon.Definition.id;
-            activeData.Progress = _activeDungeon.Progress;
-            activeData.MaxProgress = _activeDungeon.MaxProgress;
-            activeData.LocalDarkness = _activeDungeon.LocalDarkness;
-            activeData.AdventurerInstanceIds = new List<string>(_activeDungeon.AdventurerInstanceIds);
-            
-            activeData.PendingDrops = _activeDungeon.PendingDrops.Select(drop => new ItemSaveData
-            {
-                DefinitionId = drop.Definition.id,
-                InstanceId = drop.InstanceId,
-                StackCount = drop.StackCount,
-                IsLocked = drop.IsLocked
-            }).ToList();
-
-            activeData.EncounterState = new CombatEncounterSaveData
-            {
-                TurnsFighting = _activeDungeon.TurnsFighting,
-                SavedActingEntityId = _activeDungeon.SavedActingEntityId,
-                Enemies = MapEnemies(_activeDungeon.Enemies),
-                Corpses = MapEnemies(_activeDungeon.Corpses)
-            };
-
-            activeData.ActionState = new DungeonActionState
-            {
-                Type = _activeDungeon.ActionType,
-                TurnsPassed = _activeDungeon.ActionTurnsPassed
-            };
-
-            _saveService.CurrentData.ActiveDungeon = activeData;
-        }
-
-        public void LoadDungeonState()
-        {
-            if (_saveService.CurrentData?.ActiveDungeon == null)
-            {
-                _activeDungeon = null;
-                return;
-            }
-
-            var activeData = _saveService.CurrentData.ActiveDungeon;
-            var def = _registry.GetRequired<DungeonDefinition>(activeData.DungeonDefinitionId);
-            
-            _activeDungeon = new DungeonRuntime(Guid.NewGuid().ToString(), def)
-            {
-                State = DungeonState.Unlocked,
-                Progress = activeData.Progress,
-                MaxProgress = activeData.MaxProgress,
-                LocalDarkness = activeData.LocalDarkness,
-                AdventurerInstanceIds = activeData.AdventurerInstanceIds != null ? new List<string>(activeData.AdventurerInstanceIds) : new List<string>(),
-                PendingDrops = new List<ItemRuntime>(),
-                ActionType = activeData.ActionState?.Type ?? 0,
-                ActionTurnsPassed = activeData.ActionState?.TurnsPassed ?? 0,
-                TurnsFighting = activeData.EncounterState?.TurnsFighting ?? 0,
-                SavedActingEntityId = activeData.EncounterState?.SavedActingEntityId
-            };
-
-            if (activeData.PendingDrops != null)
-            {
-                foreach (var dropData in activeData.PendingDrops)
-                {
-                    var itemDef = _registry.GetRequired<ItemDefinition>(dropData.DefinitionId);
-                    var itemRuntime = new ItemRuntime(dropData.InstanceId, itemDef)
-                    {
-                        StackCount = dropData.StackCount,
-                        IsLocked = dropData.IsLocked
-                    };
-                    _activeDungeon.PendingDrops.Add(itemRuntime);
-                }
-            }
-
-            if (activeData.EncounterState != null)
-            {
-                _activeDungeon.Enemies = HydrateEnemies(activeData.EncounterState.Enemies);
-                _activeDungeon.Corpses = HydrateEnemies(activeData.EncounterState.Corpses);
-            }
-        }
-
-        public bool IsDungeonActive() => _activeDungeon != null;
-
-        public DungeonRuntime GetActiveDungeon() => _activeDungeon;
+        public DungeonRuntime GetActiveDungeon() => _expeditions[0]?.Dungeon;
 
         public void AdvanceProgressOneStep()
         {
-            if (_activeDungeon != null)
+            if (_expeditions[0]?.Dungeon != null)
             {
-                _activeDungeon.Progress++;
+                _expeditions[0].Dungeon.Progress++;
                 SaveDungeonState();
             }
         }
 
-        /// <summary>
-        /// One second of dungeon time, mirroring <c>Area.tick()</c>: advance the current
-        /// action's timer, and when it completes run <c>performAction()</c> to move the state
-        /// machine on.
-        ///
-        /// Evidence: Reports/S6_5A/S6_5A_001D_Remaining_Core_Rules_Report.md (T-01, T-02)
-        /// </summary>
         public void Tick()
         {
-            if (_activeDungeon == null) return;
+            _tickCounter++;
+            if ((_tickCounter & 1) != 0) return;
 
-            _activeDungeon.ActionTurnsPassed++;
+            TickExpeditionInternal(0);
+        }
 
-            if (_activeDungeon.ActionTurnsPassed >= GetActionDuration(_activeDungeon.ActionType))
+        public int CollectDrops() => CollectDrops(0);
+
+        // ─── Multi-Expedition API ──────────────────────────────────────────
+
+        public bool IsCharacterOnExpedition(string characterInstanceId)
+        {
+            if (string.IsNullOrEmpty(characterInstanceId)) return false;
+
+            for (int i = 0; i < MAX_EXPEDITIONS; i++)
             {
-                _activeDungeon.ActionTurnsPassed = 0;
-                PerformAction();
+                var exp = _expeditions[i];
+                if (exp?.Dungeon?.AdventurerInstanceIds != null && exp.Dungeon.AdventurerInstanceIds.Contains(characterInstanceId))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private void UpdateMaxProgress(string dungeonId, int newMax)
+        {
+            var data = _saveService.CurrentData;
+            if (data == null) return;
+            
+            var d = data.Dungeons.FirstOrDefault(x => x.DefinitionId == dungeonId);
+            if (d == null)
+            {
+                d = new DungeonSaveData { DefinitionId = dungeonId, MaxProgress = newMax };
+                data.Dungeons.Add(d);
+            }
+            else
+            {
+                if (newMax > d.MaxProgress)
+                    d.MaxProgress = newMax;
+            }
+        }
+
+        public bool StartExpedition(int slotIndex, string dungeonId, List<string> adventurerIds, out string error)
+        {
+            error = string.Empty;
+
+            // ① Slot index range
+            if (slotIndex < 0 || slotIndex >= MAX_EXPEDITIONS)
+            {
+                error = $"Invalid slot index {slotIndex}. Must be 0..{MAX_EXPEDITIONS - 1}.";
+                return false;
+            }
+            if (_expeditions[slotIndex] != null)
+            {
+                error = $"Slot {slotIndex} already has an active expedition.";
+                return false;
+            }
+
+            // ③ Party size check (1 to 4)
+            if (adventurerIds == null || adventurerIds.Count < 1 || adventurerIds.Count > 4)
+            {
+                error = "Party must contain between 1 and 4 characters.";
+                return false;
+            }
+
+            // ④ Duplicate check in team
+            var localTeamSet = new HashSet<string>();
+            foreach (string id in adventurerIds)
+            {
+                if (string.IsNullOrEmpty(id) || !localTeamSet.Add(id))
+                {
+                    error = $"Duplicate or empty character ID '{id}' in party.";
+                    return false;
+                }
+            }
+
+            // ⑤ Character existence check
+            if (_characterService != null)
+            {
+                IReadOnlyList<CharacterRuntime> owned = _characterService.GetAllCharacters();
+                foreach (string id in adventurerIds)
+                {
+                    if (!owned.Any(c => c.InstanceId == id))
+                    {
+                        error = $"Character '{id}' not found.";
+                        return false;
+                    }
+                }
+            }
+
+            // ⑥ Character exclusivity check
+            foreach (string id in adventurerIds)
+            {
+                if (IsCharacterOnExpedition(id))
+                {
+                    error = $"Character '{id}' is already assigned to another expedition.";
+                    return false;
+                }
+            }
+
+            // ⑦ Dungeon definition & chain gate check
+            DungeonDefinition def;
+            if (!_registry.TryGet<DungeonDefinition>(dungeonId, out def))
+            {
+                error = $"Dungeon '{dungeonId}' definition not found.";
+                return false;
+            }
+
+            if (!IsDungeonUnlocked(dungeonId))
+            {
+                error = $"Dungeon '{dungeonId}' is locked — requires clearing '{def.RequiredClearDungeonId}' first.";
+                return false;
+            }
+
+            // Get historical max progress
+            int historicalMax = 0;
+            var persistentData = _saveService.CurrentData?.Dungeons?.FirstOrDefault(d => d.DefinitionId == dungeonId);
+            if (persistentData != null)
+            {
+                historicalMax = persistentData.MaxProgress;
+            }
+
+            // All validation passed → Mutate state
+            var dungeon = new DungeonRuntime(Guid.NewGuid().ToString(), def)
+            {
+                State = DungeonState.Unlocked,
+                Progress = 0,
+                MaxProgress = historicalMax,
+                AdventurerInstanceIds = new List<string>(adventurerIds)
+            };
+
+            var expedition = new ExpeditionRuntime
+            {
+                SlotIndex = slotIndex,
+                Dungeon = dungeon
+            };
+
+            ResolvePartyForExpedition(expedition);
+            _expeditions[slotIndex] = expedition;
+
+            SaveDungeonState();
+            return true;
+        }
+
+        public void StopExpedition(int slotIndex)
+        {
+            if (slotIndex < 0 || slotIndex >= MAX_EXPEDITIONS) return;
+
+            if (_expeditions[slotIndex] != null)
+            {
+                _expeditions[slotIndex] = null;
+                SaveDungeonState();
+            }
+        }
+
+        public ExpeditionRuntime GetExpedition(int slotIndex)
+        {
+            if (slotIndex < 0 || slotIndex >= MAX_EXPEDITIONS) return null;
+            return _expeditions[slotIndex];
+        }
+
+        public IReadOnlyList<ExpeditionRuntime> GetAllExpeditions()
+        {
+            return _expeditions.Where(e => e != null).ToList().AsReadOnly();
+        }
+
+        public void TickAll()
+        {
+            _tickCounter++;
+            for (int i = 0; i < MAX_EXPEDITIONS; i++)
+            {
+                TickExpeditionInternal(i);
+            }
+        }
+
+        public int CollectDrops(int slotIndex)
+        {
+            if (slotIndex < 0 || slotIndex >= MAX_EXPEDITIONS) return 0;
+            var exp = _expeditions[slotIndex];
+            if (exp?.Dungeon == null || _inventoryService == null) return 0;
+            if (exp.Dungeon.PendingDrops.Count == 0) return 0;
+
+            var moved = new List<ItemRuntime>(exp.Dungeon.PendingDrops);
+            int transferred = 0;
+
+            foreach (ItemRuntime drop in moved)
+            {
+                if (!_inventoryService.CanAddItem(drop.Definition.id)) continue;
+
+                _inventoryService.AddItem(drop);
+                exp.Dungeon.PendingDrops.Remove(drop);
+                transferred++;
+            }
+
+            SaveDungeonState();
+            return transferred;
+        }
+
+        public bool IsDungeonUnlocked(string dungeonId)
+        {
+            if (!_registry.TryGet<DungeonDefinition>(dungeonId, out var def)) return false;
+            if (string.IsNullOrEmpty(def.RequiredClearDungeonId)) return true;
+
+            var clearedDungeons = _saveService.CurrentData?.Dungeons;
+            return clearedDungeons != null &&
+                   clearedDungeons.Any(d => d.DefinitionId == def.RequiredClearDungeonId &&
+                                            d.MaxProgress >= def.RequiredClearProgress);
+        }
+
+        // ─── Party Resolution & Execution ───────────────────────────────────────
+
+        private void ResolvePartyForExpedition(ExpeditionRuntime exp)
+        {
+            if (exp == null) return;
+            exp.Party.Clear();
+            if (exp.Dungeon == null || _characterService == null) return;
+
+            IReadOnlyList<CharacterRuntime> owned = _characterService.GetAllCharacters();
+            foreach (string id in exp.Dungeon.AdventurerInstanceIds)
+            {
+                CharacterRuntime match = owned.FirstOrDefault(c => c.InstanceId == id);
+                if (match != null) exp.Party.Add(match);
+            }
+        }
+
+        private void TickExpeditionInternal(int slotIndex)
+        {
+            if (slotIndex < 0 || slotIndex >= MAX_EXPEDITIONS) return;
+            var exp = _expeditions[slotIndex];
+            if (exp?.Dungeon == null) return;
+
+            var dungeon = exp.Dungeon;
+            dungeon.ActionTurnsPassed++;
+
+            if (dungeon.ActionTurnsPassed >= GetActionDuration(dungeon.ActionType))
+            {
+                dungeon.ActionTurnsPassed = 0;
+                PerformAction(exp);
             }
 
             SaveDungeonState();
         }
 
-        /// <summary>
-        /// Port of <c>Area.performAction()</c>. Action ids follow the decode:
-        /// 0 ENTER_DUNGEON · 1 ENTER_ROOM · 2 FIGHT · 3 LOOT · 4 SEARCH_ROOM ·
-        /// 5 DEFEAT/RESPAWN · 6 FLEE.
-        /// </summary>
-        private void PerformAction()
+        private void PerformAction(ExpeditionRuntime exp)
         {
-            switch (_activeDungeon.ActionType)
+            var dungeon = exp.Dungeon;
+            switch (dungeon.ActionType)
             {
                 case 0: // ENTER_DUNGEON -> ENTER_ROOM
-                    _activeDungeon.ActionType = 1;
+                    dungeon.ActionType = 1;
                     break;
 
-                case 1: // ENTER_ROOM: spawn a room's worth of enemies, then fight or move on
-                    EnterRoom();
+                case 1: // ENTER_ROOM
+                    EnterRoom(exp);
                     break;
 
-                case 2: // FIGHT: one combat round per completed action
-                    FightRound();
+                case 2: // FIGHT
+                    FightRound(exp);
                     break;
 
-                case 3: // LOOT: roll the corpses' drop tables into the area chest
-                    RunLoot();
-                    _activeDungeon.ActionType = 4;
+                case 3: // LOOT
+                    RunLoot(exp);
+                    dungeon.ActionType = 4;
                     break;
 
-                case 4: // SEARCH_ROOM -> ENTER_ROOM, advancing depth
-                    if (AdventurersAliveOrNoParty())
+                case 4: // SEARCH_ROOM
+                    if (AdventurersAliveOrNoParty(exp))
                     {
-                        _activeDungeon.Progress++;
-                        _activeDungeon.ActionType = 1;
+                        dungeon.Progress++;
+                        if (dungeon.Progress > dungeon.MaxProgress)
+                        {
+                            dungeon.MaxProgress = dungeon.Progress;
+                            UpdateMaxProgress(dungeon.Definition.id, dungeon.MaxProgress);
+                        }
+                        _questService?.IncrementDefinition("long_march", 1);
+                        if (dungeon.Definition != null && dungeon.Definition.id == "the_desert")
+                        {
+                            _questService?.IncrementDefinition("conqueror", 1);
+                        }
+                        dungeon.ActionType = 1;
                     }
                     else
                     {
-                        _activeDungeon.ActionType = 5;
+                        dungeon.ActionType = 5;
                     }
                     break;
 
-                case 5: // DEFEAT/RESPAWN: progress is only wiped below the keep threshold
-                    if (_activeDungeon.Progress < PROGRESS_KEEP_THRESHOLD) _activeDungeon.Progress = 0;
-                    RestoreParty();
-                    _activeDungeon.TurnsFighting = 0;
-                    _activeDungeon.ActionType = 1;
+                case 5: // DEFEAT/RESPAWN
+                    if (dungeon.Progress < PROGRESS_KEEP_THRESHOLD) dungeon.Progress = 0;
+                    RestoreParty(exp);
+                    dungeon.TurnsFighting = 0;
+                    dungeon.ActionType = 1;
                     break;
 
-                case 6: // FLEE: drop the current encounter and re-enter
-                    _activeDungeon.Enemies.Clear();
-                    _activeDungeon.TurnsFighting = 0;
-                    _activeDungeon.ActionType = 1;
+                case 6: // FLEE
+                    dungeon.Enemies.Clear();
+                    dungeon.TurnsFighting = 0;
+                    dungeon.ActionType = 1;
                     break;
 
                 default:
-                    _activeDungeon.ActionType = 1;
+                    dungeon.ActionType = 1;
                     break;
             }
         }
 
-        /// <summary>
-        /// A party of zero is treated as alive so a caller that never assigned adventurers can
-        /// still walk the state machine; with a real party the usual alive check applies.
-        /// </summary>
-        private bool AdventurersAliveOrNoParty() => _party.Count == 0 || AdventurersAlive() > 0;
+        private bool AdventurersAliveOrNoParty(ExpeditionRuntime exp) =>
+            exp.Party.Count == 0 || AdventurersAlive(exp) > 0;
 
-        /// <summary>
-        /// <c>Area.enterRoom()</c> + <c>rollEnemies()</c>: populate the encounter from the
-        /// area's own enemy list. With no enemies to spawn the run falls through to SEARCH_ROOM,
-        /// exactly as the decode does when <c>rollEnemies()</c> comes back empty.
-        /// </summary>
-        private void EnterRoom()
+        private int AdventurersAlive(ExpeditionRuntime exp) =>
+            exp.Party.Count(c => c.CurrentHp > 0);
+
+        private void EnterRoom(ExpeditionRuntime exp)
         {
-            if (!AdventurersAliveOrNoParty())
+            if (!AdventurersAliveOrNoParty(exp))
             {
-                _activeDungeon.ActionType = 5;
+                exp.Dungeon.ActionType = 5;
                 return;
             }
 
-            _activeDungeon.Enemies = RollEnemies();
-            _activeDungeon.TurnsFighting = 0;
-
-            _activeDungeon.ActionType = _activeDungeon.Enemies.Count > 0 ? 2 : 4;
+            exp.Dungeon.Enemies = RollEnemies(exp.Dungeon);
+            exp.Dungeon.TurnsFighting = 0;
+            exp.Dungeon.ActionType = exp.Dungeon.Enemies.Count > 0 ? 2 : 4;
         }
 
-        /// <summary>
-        /// Picks one enemy from the area's <c>listEnemies()</c> set. The decode composes rooms
-        /// from that same list; a single spawn keeps the encounter shape honest without
-        /// inventing a room-size rule that was not recovered.
-        /// </summary>
-        private List<EnemyRuntime> RollEnemies()
+        private List<EnemyRuntime> RollEnemies(DungeonRuntime dungeon)
         {
             var spawned = new List<EnemyRuntime>();
-
-            List<string> pool = _activeDungeon.Definition?.EnemyIds;
+            List<string> pool = dungeon.Definition?.EnemyIds;
             if (pool == null || pool.Count == 0) return spawned;
 
             string enemyId = pool[_random.Next(pool.Count)];
@@ -314,68 +427,81 @@ namespace GuildMaster.Runtime.Services
             return spawned;
         }
 
-        /// <summary>
-        /// <c>Area.fightTurn()</c> wrapped in the case-2 guards: bail to FLEE past the turn cap,
-        /// to DEFEAT when the party is wiped, and to LOOT once the room is clear.
-        /// </summary>
-        private void FightRound()
+        private void FightRound(ExpeditionRuntime exp)
         {
-            if (!AdventurersAliveOrNoParty())
+            var dungeon = exp.Dungeon;
+            if (!AdventurersAliveOrNoParty(exp))
             {
-                _activeDungeon.ActionType = 5;
+                dungeon.ActionType = 5;
                 return;
             }
 
-            if (_activeDungeon.Enemies.Count == 0 || _activeDungeon.Enemies.All(e => e.IsDead))
+            if (dungeon.Enemies.Count == 0 || dungeon.Enemies.All(e => e.IsDead))
             {
-                MoveCorpsesAndAwardExperience();
-                _activeDungeon.ActionType = 3;
+                MoveCorpsesAndAwardExperience(exp);
+                dungeon.ActionType = 3;
                 return;
             }
 
-            if (_activeDungeon.TurnsFighting >= DUNGEON_TURN_CAP)
+            if (dungeon.TurnsFighting >= DUNGEON_TURN_CAP)
             {
-                _activeDungeon.ActionType = 6;
+                dungeon.ActionType = 6;
                 return;
             }
 
-            _activeDungeon.TurnsFighting++;
+            dungeon.TurnsFighting++;
 
-            if (_combatService != null && _party.Count > 0)
+            if (_combatService != null && exp.Party.Count > 0)
             {
                 string acting;
-                _combatService.ProcessTurn(_party, _activeDungeon.Enemies, out acting);
-                _activeDungeon.SavedActingEntityId = acting;
+                _combatService.ProcessTurn(exp.Party, dungeon.Enemies, out acting);
+                dungeon.SavedActingEntityId = acting;
             }
 
-            if (_activeDungeon.Enemies.All(e => e.IsDead))
+            if (dungeon.Enemies.All(e => e.IsDead))
             {
-                MoveCorpsesAndAwardExperience();
-                _activeDungeon.ActionType = 3;
+                MoveCorpsesAndAwardExperience(exp);
+                dungeon.ActionType = 3;
             }
-            else if (!AdventurersAliveOrNoParty())
+            else if (!AdventurersAliveOrNoParty(exp))
             {
-                _activeDungeon.ActionType = 5;
+                dungeon.ActionType = 5;
             }
         }
 
-        /// <summary>
-        /// Retires the dead into <c>corpses</c> (the list loot rolls from) and shares their
-        /// experience across the survivors, per <c>Area.collectExperience()</c>:
-        /// <c>totalExp / adventurersAlive()</c>, rounded with the decode's rounding.
-        /// </summary>
-        private void MoveCorpsesAndAwardExperience()
+        private void MoveCorpsesAndAwardExperience(ExpeditionRuntime exp)
         {
-            List<EnemyRuntime> dead = _activeDungeon.Enemies.Where(e => e.IsDead).ToList();
+            var dungeon = exp.Dungeon;
+            List<EnemyRuntime> dead = dungeon.Enemies.Where(e => e.IsDead).ToList();
             if (dead.Count == 0) return;
 
             foreach (EnemyRuntime corpse in dead)
             {
-                _activeDungeon.Enemies.Remove(corpse);
-                _activeDungeon.Corpses.Add(corpse);
+                dungeon.Enemies.Remove(corpse);
+                dungeon.Corpses.Add(corpse);
+
+                if (_questService != null)
+                {
+                    _questService.IncrementDefinition("active_deterrent", 1);
+                    _questService.IncrementDefinition("annihilator", 1);
+
+                    string dungeonId = dungeon.Definition?.id ?? "";
+                    string enemyId = corpse.Definition?.id ?? "";
+
+                    if (dungeonId == "ancient_grave_digging")
+                        _questService.IncrementDefinition("and_stay_dead", 1);
+                    else if (dungeonId == "hidden_city_of_larox" && enemyId == "wicked_tribute")
+                        _questService.IncrementDefinition("from_hell", 1);
+                    else if (dungeonId == "obsidian_mines" && enemyId == "beholder")
+                        _questService.IncrementDefinition("myopia", 1);
+                    else if (dungeonId == "blackwater_port" && enemyId == "mimic")
+                        _questService.IncrementDefinition("nice_try", 1);
+                    else if (dungeonId == "eternal_battlefield")
+                        _questService.IncrementDefinition("exorcism", 1);
+                }
             }
 
-            int alive = AdventurersAlive();
+            int alive = AdventurersAlive(exp);
             if (alive <= 0 || _characterService == null) return;
 
             double totalExp = dead.Sum(c => c.Definition != null ? c.Definition.ExpGiven : 0);
@@ -384,40 +510,36 @@ namespace GuildMaster.Runtime.Services
             int perHead = DecodeMath.Round(totalExp / alive);
             if (perHead <= 0) return;
 
-            foreach (CharacterRuntime member in _party.Where(c => c.CurrentHp > 0))
+            foreach (CharacterRuntime member in exp.Party.Where(c => c.CurrentHp > 0))
             {
                 _characterService.GainExperience(member, perHead);
             }
         }
 
-        /// <summary>
-        /// <c>Area.loot()</c>: roll every corpse's drop table into the temporary area chest.
-        /// Nothing reaches the player's storage here — <see cref="CollectDrops"/> does that.
-        /// </summary>
-        private void RunLoot()
+        private void RunLoot(ExpeditionRuntime exp)
         {
-            if (_lootService == null || _activeDungeon.Corpses.Count == 0) return;
+            var dungeon = exp.Dungeon;
+            if (_lootService == null || dungeon.Corpses.Count == 0) return;
 
             bool merchantPack = _saveService.CurrentData != null && _saveService.CurrentData.MerchantPackPurchased;
-            if (_lootService.IsChestFull(_activeDungeon.PendingDrops, merchantPack)) return;
+            if (_lootService.IsChestFull(dungeon.PendingDrops, merchantPack)) return;
 
-            foreach (EnemyRuntime corpse in _activeDungeon.Corpses)
+            foreach (EnemyRuntime corpse in dungeon.Corpses)
             {
                 List<DropTableEntry> table = BuildDropTable(corpse);
                 if (table.Count == 0) continue;
 
                 ItemRuntime drop = _lootService.RollSingleDrop(table);
-                if (drop == null) continue;   // rolled into the table's miss gap
+                if (drop == null) continue;
 
-                _lootService.CollectPendingLoot(_activeDungeon.PendingDrops,
+                _lootService.CollectPendingLoot(dungeon.PendingDrops,
                                                 new List<ItemRuntime> { drop },
                                                 merchantPack);
             }
 
-            _activeDungeon.Corpses.Clear();
+            dungeon.Corpses.Clear();
         }
 
-        /// <summary>Resolves an enemy's recovered drop table into item definitions.</summary>
         private List<DropTableEntry> BuildDropTable(EnemyRuntime enemy)
         {
             var table = new List<DropTableEntry>();
@@ -441,33 +563,11 @@ namespace GuildMaster.Runtime.Services
             return table;
         }
 
-        public int CollectDrops()
-        {
-            if (_activeDungeon == null || _inventoryService == null) return 0;
-            if (_activeDungeon.PendingDrops.Count == 0) return 0;
-
-            var moved = new List<ItemRuntime>(_activeDungeon.PendingDrops);
-            int transferred = 0;
-
-            foreach (ItemRuntime drop in moved)
-            {
-                if (!_inventoryService.CanAddItem(drop.Definition.id)) continue;
-
-                _inventoryService.AddItem(drop);
-                _activeDungeon.PendingDrops.Remove(drop);
-                transferred++;
-            }
-
-            SaveDungeonState();
-            return transferred;
-        }
-
-        /// <summary>Heals the party back to full, matching respawn after a wipe.</summary>
-        private void RestoreParty()
+        private void RestoreParty(ExpeditionRuntime exp)
         {
             if (_characterService == null) return;
 
-            foreach (CharacterRuntime member in _party)
+            foreach (CharacterRuntime member in exp.Party)
             {
                 member.CurrentHp = _characterService.GetTotalStat(member, StatType.MaxHp);
                 member.CurrentShield = 0;
@@ -478,14 +578,215 @@ namespace GuildMaster.Runtime.Services
         {
             switch (actionType)
             {
-                case 0: return 5;  // ENTER_DUNGEON
-                case 1: return 5;  // ENTER_ROOM
-                case 2: return 2;  // FIGHT
-                case 3: return 5;  // LOOT
-                case 4: return 5;  // SEARCH_ROOM
-                case 5: return 18; // RESPAWN / DEFEAT
-                case 6: return 12; // FLEE
-                default: return 5;
+                case 0: return 2;  // ENTER_DUNGEON
+                case 1: return 2;  // ENTER_ROOM
+                case 2: return 1;  // FIGHT
+                case 3: return 2;  // LOOT
+                case 4: return 2;  // SEARCH_ROOM
+                case 5: return 8;  // RESPAWN / DEFEAT
+                case 6: return 5;  // FLEE
+                default: return 2;
+            }
+        }
+
+        // ─── Save & Load Persistence ─────────────────────────────────────────────
+
+        public void SaveDungeonState()
+        {
+            var data = _saveService.CurrentData;
+            if (data == null) return;
+
+            var newExpeditions = new List<ExpeditionSaveData>();
+
+            for (int i = 0; i < MAX_EXPEDITIONS; i++)
+            {
+                var exp = _expeditions[i];
+                if (exp?.Dungeon == null) continue;
+
+                var dungeon = exp.Dungeon;
+                var activeData = new ActiveDungeonSaveData
+                {
+                    DungeonDefinitionId = dungeon.Definition.id,
+                    Progress = dungeon.Progress,
+                    MaxProgress = dungeon.MaxProgress,
+                    LocalDarkness = dungeon.LocalDarkness,
+                    AdventurerInstanceIds = new List<string>(dungeon.AdventurerInstanceIds),
+                    PendingDrops = dungeon.PendingDrops.Select(drop => new ItemSaveData
+                    {
+                        DefinitionId = drop.Definition.id,
+                        InstanceId = drop.InstanceId,
+                        StackCount = drop.StackCount,
+                        IsLocked = drop.IsLocked
+                    }).ToList(),
+                    EncounterState = new CombatEncounterSaveData
+                    {
+                        TurnsFighting = dungeon.TurnsFighting,
+                        SavedActingEntityId = dungeon.SavedActingEntityId,
+                        Enemies = MapEnemies(dungeon.Enemies),
+                        Corpses = MapEnemies(dungeon.Corpses)
+                    },
+                    ActionState = new DungeonActionState
+                    {
+                        Type = dungeon.ActionType,
+                        TurnsPassed = dungeon.ActionTurnsPassed
+                    }
+                };
+
+                newExpeditions.Add(new ExpeditionSaveData
+                {
+                    SlotIndex = i,
+                    Dungeon = activeData
+                });
+            }
+
+            var backupActiveDungeon = data.ActiveDungeon;
+            data.ActiveExpeditions = newExpeditions;
+            data.ActiveDungeon = null; // Tentatively clear legacy field
+
+            bool saveSuccess = _saveService.Save(out Exception saveError);
+
+            if (!saveSuccess)
+            {
+                // ROLLBACK if save failed
+                data.ActiveDungeon = backupActiveDungeon;
+                UnityEngine.Debug.LogError($"[DungeonService] SaveDungeonState failed, restored legacy ActiveDungeon. Error: {saveError?.Message ?? "unknown"}");
+            }
+        }
+
+        public void LoadDungeonState()
+        {
+            for (int i = 0; i < MAX_EXPEDITIONS; i++) _expeditions[i] = null;
+
+            if (_saveService.CurrentData == null) return;
+
+            _saveService.CurrentData.NormalizeAfterLoad();
+            var savedList = _saveService.CurrentData.ActiveExpeditions;
+            if (savedList == null) return;
+
+            var seenSlots = new HashSet<int>();
+            var seenCharacters = new HashSet<string>();
+
+            foreach (var saved in savedList)
+            {
+                if (saved == null) continue;
+
+                // ① Slot range check
+                if (saved.SlotIndex < 0 || saved.SlotIndex >= MAX_EXPEDITIONS)
+                {
+                    UnityEngine.Debug.LogWarning($"[DungeonService] LoadDungeonState: Skipping expedition with invalid slot index {saved.SlotIndex}");
+                    continue;
+                }
+
+                // ② Slot already committed
+                if (seenSlots.Contains(saved.SlotIndex))
+                {
+                    UnityEngine.Debug.LogWarning($"[DungeonService] LoadDungeonState: Skipping duplicate entry for slot {saved.SlotIndex}");
+                    continue;
+                }
+
+                // ③ Dungeon data & definition existence
+                if (saved.Dungeon == null || string.IsNullOrEmpty(saved.Dungeon.DungeonDefinitionId))
+                {
+                    UnityEngine.Debug.LogWarning($"[DungeonService] LoadDungeonState: Skipping slot {saved.SlotIndex}: null dungeon data");
+                    continue;
+                }
+
+                if (!_registry.TryGet<DungeonDefinition>(saved.Dungeon.DungeonDefinitionId, out DungeonDefinition def))
+                {
+                    UnityEngine.Debug.LogWarning($"[DungeonService] LoadDungeonState: Skipping slot {saved.SlotIndex}: unknown dungeon '{saved.Dungeon.DungeonDefinitionId}'");
+                    continue;
+                }
+
+                // ④ Party validation (1 to 4 members, no duplicates, characters exist)
+                var charIds = saved.Dungeon.AdventurerInstanceIds;
+                if (charIds == null || charIds.Count < 1 || charIds.Count > 4)
+                {
+                    UnityEngine.Debug.LogWarning($"[DungeonService] LoadDungeonState: Skipping slot {saved.SlotIndex}: invalid party size ({charIds?.Count ?? 0})");
+                    continue;
+                }
+
+                var localTeamSet = new HashSet<string>();
+                bool isPartyValid = true;
+
+                foreach (string cid in charIds)
+                {
+                    if (string.IsNullOrEmpty(cid) || !localTeamSet.Add(cid))
+                    {
+                        UnityEngine.Debug.LogWarning($"[DungeonService] LoadDungeonState: Skipping slot {saved.SlotIndex}: duplicate/empty character ID '{cid}'");
+                        isPartyValid = false;
+                        break;
+                    }
+
+                    if (_characterService != null && _characterService.GetAllCharacters().All(c => c.InstanceId != cid))
+                    {
+                        UnityEngine.Debug.LogWarning($"[DungeonService] LoadDungeonState: Skipping slot {saved.SlotIndex}: character '{cid}' no longer exists");
+                        isPartyValid = false;
+                        break;
+                    }
+
+                    if (seenCharacters.Contains(cid))
+                    {
+                        UnityEngine.Debug.LogWarning($"[DungeonService] LoadDungeonState: Skipping slot {saved.SlotIndex}: character '{cid}' already assigned to another expedition");
+                        isPartyValid = false;
+                        break;
+                    }
+                }
+
+                if (!isPartyValid) continue;
+
+                // ⑤ ALL validation passed → COMMIT slot & characters transactionally
+                seenSlots.Add(saved.SlotIndex);
+                foreach (string cid in localTeamSet)
+                {
+                    seenCharacters.Add(cid);
+                }
+
+                // Hydrate runtime object
+                var activeData = saved.Dungeon;
+                var dungeonRuntime = new DungeonRuntime(Guid.NewGuid().ToString(), def)
+                {
+                    State = DungeonState.Unlocked,
+                    Progress = activeData.Progress,
+                    MaxProgress = activeData.MaxProgress,
+                    LocalDarkness = activeData.LocalDarkness,
+                    AdventurerInstanceIds = activeData.AdventurerInstanceIds != null ? new List<string>(activeData.AdventurerInstanceIds) : new List<string>(),
+                    PendingDrops = new List<ItemRuntime>(),
+                    ActionType = activeData.ActionState?.Type ?? 0,
+                    ActionTurnsPassed = activeData.ActionState?.TurnsPassed ?? 0,
+                    TurnsFighting = activeData.EncounterState?.TurnsFighting ?? 0,
+                    SavedActingEntityId = activeData.EncounterState?.SavedActingEntityId
+                };
+
+                if (activeData.PendingDrops != null)
+                {
+                    foreach (var dropData in activeData.PendingDrops)
+                    {
+                        if (_registry.TryGet<ItemDefinition>(dropData.DefinitionId, out ItemDefinition itemDef))
+                        {
+                            var itemRuntime = new ItemRuntime(dropData.InstanceId, itemDef)
+                            {
+                                StackCount = dropData.StackCount,
+                                IsLocked = dropData.IsLocked
+                            };
+                            dungeonRuntime.PendingDrops.Add(itemRuntime);
+                        }
+                    }
+                }
+
+                if (activeData.EncounterState != null)
+                {
+                    dungeonRuntime.Enemies = HydrateEnemies(activeData.EncounterState.Enemies);
+                    dungeonRuntime.Corpses = HydrateEnemies(activeData.EncounterState.Corpses);
+                }
+
+                var expeditionRuntime = new ExpeditionRuntime
+                {
+                    SlotIndex = saved.SlotIndex,
+                    Dungeon = dungeonRuntime
+                };
+
+                ResolvePartyForExpedition(expeditionRuntime);
+                _expeditions[saved.SlotIndex] = expeditionRuntime;
             }
         }
 
@@ -509,16 +810,18 @@ namespace GuildMaster.Runtime.Services
             if (savedData == null) return list;
             foreach (var d in savedData)
             {
-                var def = _registry.GetRequired<EnemyDefinition>(d.DefinitionId);
-                var r = new EnemyRuntime(Guid.NewGuid().ToString(), def)
+                if (_registry.TryGet<EnemyDefinition>(d.DefinitionId, out EnemyDefinition def))
                 {
-                    CurrentHp = d.CurrentHp,
-                    CurrentMana = d.CurrentMana,
-                    CurrentShield = d.CurrentShield,
-                    PositiveStatusEffects = HydrateStatusEffects(d.PositiveStatusEffects),
-                    NegativeStatusEffects = HydrateStatusEffects(d.NegativeStatusEffects)
-                };
-                list.Add(r);
+                    var r = new EnemyRuntime(Guid.NewGuid().ToString(), def)
+                    {
+                        CurrentHp = d.CurrentHp,
+                        CurrentMana = d.CurrentMana,
+                        CurrentShield = d.CurrentShield,
+                        PositiveStatusEffects = HydrateStatusEffects(d.PositiveStatusEffects),
+                        NegativeStatusEffects = HydrateStatusEffects(d.NegativeStatusEffects)
+                    };
+                    list.Add(r);
+                }
             }
             return list;
         }
@@ -538,7 +841,7 @@ namespace GuildMaster.Runtime.Services
         {
             var list = new List<StatusEffectRuntime>();
             if (savedData == null) return list;
-            
+
             foreach (var d in savedData)
             {
                 list.Add(new StatusEffectRuntime

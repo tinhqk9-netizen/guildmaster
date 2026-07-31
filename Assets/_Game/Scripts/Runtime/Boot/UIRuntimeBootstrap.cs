@@ -10,6 +10,7 @@ using GuildMaster.Runtime.Save;
 using GuildMaster.Runtime.Services;
 using GuildMaster.Runtime.UI;
 using GuildMaster.Runtime.UI.Core;
+using GuildMaster.Runtime.UI.Foundation;
 using GuildMaster.Runtime.UI.HUD;
 using GuildMaster.Runtime.UI.Inventory;
 using GuildMaster.Runtime.UI.Character;
@@ -38,10 +39,31 @@ namespace GuildMaster.Runtime.Boot
         private ISaveService _save;
         public ServiceContainer Services { get; private set; }
 
+        public static event Action<string> OnBootFailed;
+        private bool _isInitializing;
+        
+        [SerializeField] private ErrorPopup _errorPopup;
+
         private void Start()
         {
+            Initialize();
+        }
+
+        public void Initialize()
+        {
+            if (_isInitializing) return;
+            _isInitializing = true;
+
+            // Cleanup if retrying
+            if (Services != null)
+            {
+                Services = null;
+            }
+
             try
             {
+                if (_errorPopup != null) _errorPopup.Hide();
+                
                 // --- backend composition ---
 #if UNITY_EDITOR
                 IGameDataProvider provider = new EditorExternalGameDataProvider();
@@ -54,6 +76,14 @@ namespace GuildMaster.Runtime.Boot
 
                 Services = new ServiceContainer(db);
                 _save = Services.Save;
+
+                var gameLoopRunner = gameObject.AddComponent<GameLoopRunner>();
+                
+                var offlineBuilder = new OfflineProgressSummaryBuilder(Services.Save);
+                OfflineStateDiffSummary offlineSummary = offlineBuilder.BuildSummary(() => 
+                {
+                    gameLoopRunner.Initialize(Services.GameLoop, Services.Save);
+                });
 
                 // --- UI wiring ---
                 _ui = new UIService();
@@ -74,13 +104,15 @@ namespace GuildMaster.Runtime.Boot
                 }
 
                 var hud = FindFirstObjectByType<HUDController>(FindObjectsInactive.Include);
-                if (hud != null) hud.Initialize(Services.Save, _ui);
+                if (hud != null) hud.Initialize(Services.Save, _ui, offlineSummary);
 
+                // Inventory and Character cross-reference each other's current selection
+                // (equip pulls the selected item, use-consumable targets the selected character),
+                // so both must exist before either is initialized.
                 var inv = FindFirstObjectByType<InventoryScreen>(FindObjectsInactive.Include);
-                if (inv != null) inv.Initialize(Services);
-
                 var chr = FindFirstObjectByType<CharacterScreen>(FindObjectsInactive.Include);
-                if (chr != null) chr.Initialize(Services);
+                if (inv != null) inv.Initialize(Services, chr);
+                if (chr != null) chr.Initialize(Services, inv);
 
                 var tav = FindFirstObjectByType<TavernScreen>(FindObjectsInactive.Include);
                 if (tav != null) tav.Initialize(Services);
@@ -89,10 +121,10 @@ namespace GuildMaster.Runtime.Boot
                 if (crf != null) crf.Initialize(Services);
 
                 var mer = FindFirstObjectByType<MerchantScreen>(FindObjectsInactive.Include);
-                if (mer != null) mer.Initialize(Services);
+                if (mer != null) mer.Initialize(Services, inv);
 
                 var dun = FindFirstObjectByType<DungeonScreen>(FindObjectsInactive.Include);
-                if (dun != null) dun.Initialize(Services);
+                if (dun != null) dun.Initialize(Services, chr);
 
                 var que = FindFirstObjectByType<QuestScreen>(FindObjectsInactive.Include);
                 if (que != null) que.Initialize(Services);
@@ -108,6 +140,46 @@ namespace GuildMaster.Runtime.Boot
             catch (Exception ex)
             {
                 Debug.LogError($"[UIRuntimeBootstrap] Failed to wire UI: {ex.Message}\n{ex.StackTrace}");
+                if (_errorPopup != null)
+                {
+                    _errorPopup.Initialize(RetryBoot, ResetData);
+                    _errorPopup.ShowError("Startup Failed:\n" + ex.Message);
+                }
+                OnBootFailed?.Invoke(ex.Message);
+            }
+            finally
+            {
+                _isInitializing = false;
+            }
+        }
+
+        public void RetryBoot()
+        {
+            Initialize();
+        }
+
+        public void ResetData()
+        {
+            // The actual UI should show a confirmation popup BEFORE calling this method.
+            // When called, this deletes the save safely, creates a fresh one, and restarts.
+            try
+            {
+                if (_save != null)
+                {
+                    _save.DeleteSave();
+                }
+                else
+                {
+                    // Fallback if Services failed to build
+                    var tempSave = new SaveService();
+                    tempSave.DeleteSave();
+                }
+                Initialize();
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError($"[UIRuntimeBootstrap] Failed to reset data: {ex.Message}");
+                OnBootFailed?.Invoke("Failed to reset data. Please restart the game.");
             }
         }
 
@@ -172,17 +244,28 @@ namespace GuildMaster.Runtime.Boot
             PersistSave("OnApplicationQuit");
         }
 
-        /// <summary>Any non-HUD screen with a child "Btn_Back" returns to the previous screen.</summary>
+        /// <summary>Any non-HUD screen with a descendant named "Btn_Back" (direct child, or inside a Header row) returns to the previous screen.</summary>
         private void WireBackButton(UIScreen screen)
         {
             if (screen.ScreenId == UIScreenId.MainHUD) return;
 
-            Transform backT = screen.transform.Find("Btn_Back");
-            if (backT != null && backT.TryGetComponent(out Button backBtn))
+            Button backBtn = FindButtonDeep(screen.transform, "Btn_Back");
+            if (backBtn != null)
             {
                 backBtn.onClick.RemoveAllListeners();
                 backBtn.onClick.AddListener(() => _ui.Back());
             }
+        }
+
+        private Button FindButtonDeep(Transform parent, string name)
+        {
+            if (parent.name == name && parent.TryGetComponent<Button>(out var btn)) return btn;
+            for (int i = 0; i < parent.childCount; i++)
+            {
+                var res = FindButtonDeep(parent.GetChild(i), name);
+                if (res != null) return res;
+            }
+            return null;
         }
     }
 }
