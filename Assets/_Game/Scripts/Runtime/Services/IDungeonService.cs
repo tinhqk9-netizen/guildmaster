@@ -30,6 +30,13 @@ namespace GuildMaster.Runtime.Services
         ExpeditionRuntime GetExpedition(int slotIndex);
         IReadOnlyList<ExpeditionRuntime> GetAllExpeditions();
         void TickAll();
+
+        /// <summary>
+        /// Advances every expedition slot by <paramref name="seconds"/> in-memory ticks and
+        /// persists exactly once at the end (instead of once per tick). Used for offline
+        /// catch-up to avoid O(seconds) disk saves.
+        /// </summary>
+        void FastForward(long seconds);
         int CollectDrops(int slotIndex);
         bool IsCharacterOnExpedition(string characterInstanceId);
         bool IsDungeonUnlocked(string dungeonId);

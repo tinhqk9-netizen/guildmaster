@@ -254,8 +254,31 @@ namespace GuildMaster.Runtime.Services
             _tickCounter++;
             for (int i = 0; i < MAX_EXPEDITIONS; i++)
             {
-                TickExpeditionInternal(i);
+                TickExpeditionLogicOnly(i);
             }
+            SaveDungeonState();
+        }
+
+        /// <summary>
+        /// Advances every expedition slot by <paramref name="seconds"/> ticks in-memory,
+        /// then persists exactly once. Used for offline catch-up, where calling
+        /// <see cref="TickAll"/> in a loop would otherwise perform one full disk save per
+        /// second of elapsed offline time (see B1 audit finding).
+        /// </summary>
+        public void FastForward(long seconds)
+        {
+            if (seconds <= 0) return;
+
+            for (long s = 0; s < seconds; s++)
+            {
+                _tickCounter++;
+                for (int i = 0; i < MAX_EXPEDITIONS; i++)
+                {
+                    TickExpeditionLogicOnly(i);
+                }
+            }
+
+            SaveDungeonState();
         }
 
         public int CollectDrops(int slotIndex)
@@ -308,7 +331,16 @@ namespace GuildMaster.Runtime.Services
             }
         }
 
+        /// <summary>Legacy single-slot API (slot 0 only): ticks and immediately persists, unchanged from prior behavior.</summary>
         private void TickExpeditionInternal(int slotIndex)
+        {
+            TickExpeditionLogicOnly(slotIndex);
+            SaveDungeonState();
+        }
+
+        /// <summary>Pure in-memory tick step for one expedition slot. No persistence side effect —
+        /// callers (TickAll, FastForward, legacy TickExpeditionInternal) decide when to save.</summary>
+        private void TickExpeditionLogicOnly(int slotIndex)
         {
             if (slotIndex < 0 || slotIndex >= MAX_EXPEDITIONS) return;
             var exp = _expeditions[slotIndex];
@@ -322,8 +354,6 @@ namespace GuildMaster.Runtime.Services
                 dungeon.ActionTurnsPassed = 0;
                 PerformAction(exp);
             }
-
-            SaveDungeonState();
         }
 
         private void PerformAction(ExpeditionRuntime exp)
@@ -578,14 +608,14 @@ namespace GuildMaster.Runtime.Services
         {
             switch (actionType)
             {
-                case 0: return 2;  // ENTER_DUNGEON
-                case 1: return 2;  // ENTER_ROOM
-                case 2: return 1;  // FIGHT
-                case 3: return 2;  // LOOT
-                case 4: return 2;  // SEARCH_ROOM
-                case 5: return 8;  // RESPAWN / DEFEAT
-                case 6: return 5;  // FLEE
-                default: return 2;
+                case 0: return 5;  // ENTER_DUNGEON
+                case 1: return 5;  // ENTER_ROOM
+                case 2: return 2;  // FIGHT
+                case 3: return 5;  // LOOT
+                case 4: return 5;  // SEARCH_ROOM
+                case 5: return 18; // RESPAWN / DEFEAT
+                case 6: return 12; // FLEE
+                default: return 5;
             }
         }
 

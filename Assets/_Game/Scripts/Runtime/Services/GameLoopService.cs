@@ -56,10 +56,9 @@ namespace GuildMaster.Runtime.Services
             _merchantService.ProgressMarket(jMax);
             _craftService.ProgressWorkshop(jMax);
 
-            for (long i = 0; i < jMax; i++)
-            {
-                _dungeonService.TickAll();
-            }
+            // Runs the same per-second tick logic as calling TickAll() jMax times, but persists
+            // dungeon state exactly once at the end instead of once per elapsed second (B1 fix).
+            _dungeonService.FastForward(jMax);
 
             data.LastAccess = currentUnix;
             _saveService.Save(out _);
