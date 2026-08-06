@@ -30,48 +30,60 @@ namespace GuildMaster.Runtime.Services
             allEntities.AddRange(adventurers.Where(a => a.CurrentHp > 0).Select(a => new AdventurerWrapper(a, _characterService, _petService)));
             allEntities.AddRange(enemies.Where(e => !e.IsDead).Select(e => new EnemyWrapper(e)));
 
+            // Java decode: Area.processCombat() iterates ALL entities in turn order.
+            // Each alive entity acts once per combat round (regen → mana → attack).
             var sorted = allEntities.OrderByDescending(e => e.IsInitiative).ThenByDescending(e => e.Dexterity).ToList();
-            var acting = sorted.First();
-            nextActingEntityId = acting.Id;
 
-            // Resolve status (Regen)
-            acting.CurrentHp = Math.Min(acting.MaxHp, acting.CurrentHp + acting.Regeneration);
-            
-            // Increase mana
-            if (!string.IsNullOrEmpty(acting.ActiveSkillId))
+            foreach (var acting in sorted)
             {
-                if (acting.CurrentMana >= 100)
-                {
-                    acting.CurrentMana = 0;
-                }
-                else
-                {
-                    acting.CurrentMana = Math.Min(100, acting.CurrentMana + acting.ManaRegen);
-                }
-            }
+                // Skip dead entities (may have died earlier this round)
+                if (acting.CurrentHp <= 0) continue;
 
-            // Target opposite team via weighted threat selection (parity with Area.selectEnemyTarget)
-            var potentialTargets = sorted.Where(e => e.IsAdventurer != acting.IsAdventurer && e.CurrentHp > 0).ToList();
-            ICombatEntityWrapper target = null;
-            if (potentialTargets.Count > 0)
-            {
-                var weightedPool = new List<ICombatEntityWrapper>();
-                foreach (var p in potentialTargets)
+                nextActingEntityId = acting.Id;
+
+                // Resolve status (Regen)
+                acting.CurrentHp = Math.Min(acting.MaxHp, acting.CurrentHp + acting.Regeneration);
+                
+                // Increase mana
+                if (!string.IsNullOrEmpty(acting.ActiveSkillId))
                 {
-                    int threat = Math.Max(1, p.Threat);
-                    for (int i = 0; i < threat; i++)
+                    if (acting.CurrentMana >= 100)
                     {
-                        weightedPool.Add(p);
+                        acting.CurrentMana = 0;
+                    }
+                    else
+                    {
+                        acting.CurrentMana = Math.Min(100, acting.CurrentMana + acting.ManaRegen);
                     }
                 }
-                
-                target = weightedPool[_random.Next(weightedPool.Count)];
-            }
 
-            if (target != null)
-            {
-                double rawDamage = RollAttackDamage(acting);
-                ApplyDamage(target, rawDamage, acting.IsMagic, 0, 0.0);
+                // Target opposite team via weighted threat selection (parity with Area.selectEnemyTarget)
+                var potentialTargets = sorted.Where(e => e.IsAdventurer != acting.IsAdventurer && e.CurrentHp > 0).ToList();
+                ICombatEntityWrapper target = null;
+                if (potentialTargets.Count > 0)
+                {
+                    var weightedPool = new List<ICombatEntityWrapper>();
+                    foreach (var p in potentialTargets)
+                    {
+                        int threat = Math.Max(1, p.Threat);
+                        for (int i = 0; i < threat; i++)
+                        {
+                            weightedPool.Add(p);
+                        }
+                    }
+                    
+                    target = weightedPool[_random.Next(weightedPool.Count)];
+                }
+
+                if (target != null)
+                {
+                    double rawDamage = RollAttackDamage(acting);
+                    ApplyDamage(target, rawDamage, acting.IsMagic, 0, 0.0);
+                }
+
+                // Early termination if combat is decided
+                if (adventurers.All(a => a.CurrentHp <= 0)) return CombatResult.Defeat;
+                if (enemies.All(e => e.IsDead)) return CombatResult.Victory;
             }
 
             if (adventurers.All(a => a.CurrentHp <= 0)) return CombatResult.Defeat;

@@ -1,0 +1,1194 @@
+File,Line,Pattern,Match,Context
+UIUtils.java,134,R_drawable_variable,R.drawable.dialog_border,alertDialogCreate.getWindow().setBackgroundDrawableResource(R.drawable.dialog_border);
+UIUtils.java,161,R_drawable_variable,R.drawable.dialog_border,alertDialogCreate.getWindow().setBackgroundDrawableResource(R.drawable.dialog_border);
+UIUtils.java,219,R_drawable_variable,R.drawable.object_border_dim_white,return R.drawable.object_border_dim_white;
+UIUtils.java,452,R_drawable_variable,R.drawable.object_border_ascended,layoutAdventurerBinding.containerAdventurer.setBackgroundResource(R.drawable.object_border_ascended);
+UIUtils.java,453,R_drawable_variable,R.drawable.object_border_ascended,layoutAdventurerBinding.weapon.setBackgroundResource(R.drawable.object_border_ascended);
+UIUtils.java,454,R_drawable_variable,R.drawable.object_border_ascended,layoutAdventurerBinding.armor.setBackgroundResource(R.drawable.object_border_ascended);
+UIUtils.java,455,R_drawable_variable,R.drawable.object_border_ascended,layoutAdventurerBinding.accessory.setBackgroundResource(R.drawable.object_border_ascended);
+UIUtils.java,456,R_drawable_variable,R.drawable.object_border_rounded_left_ascended,layoutAdventurerBinding.image.setBackgroundResource(R.drawable.object_border_rounded_left_ascended);
+UIUtils.java,517,getDrawable,getDrawable(getContext(),"imageView.setImageDrawable(ResourcesCompat.getDrawable(getContext().getResources(), item.getIdImage(), getContext().getTheme()));"
+UIUtils.java,551,getDrawable,getDrawable(getContext(),"imageView.setImageDrawable(ResourcesCompat.getDrawable(getContext().getResources(), Enemy.getInstance(enemyCounter.getEnemy()).getImageId(), getContex"
+UIUtils.java,552,R_drawable_variable,R.drawable.object_border_dim_white,imageView.setBackgroundResource(R.drawable.object_border_dim_white);
+UIUtils.java,597,getDrawable,getDrawable(context.getResources(),"layoutCraftNamedBinding.result.image.setImageDrawable(ResourcesCompat.getDrawable(context.getResources(), recipes.getResult().getIdImage(), context.ge"
+UIUtils.java,606,getDrawable,getDrawable(context.getResources(),"layoutCraftNamedBinding.ingredient1.image.setImageDrawable(ResourcesCompat.getDrawable(context.getResources(), recipes.getIngredients().get(0).getIdIm"
+UIUtils.java,619,getDrawable,getDrawable(context.getResources(),"layoutCraftNamedBinding.ingredient2.image.setImageDrawable(ResourcesCompat.getDrawable(context.getResources(), recipes.getIngredients().get(1).getIdIm"
+UIUtils.java,636,getDrawable,getDrawable(context.getResources(),"layoutCraftNamedBinding.ingredient3.image.setImageDrawable(ResourcesCompat.getDrawable(context.getResources(), recipes.getIngredients().get(2).getIdIm"
+UIUtils.java,784,getDrawable,getDrawable(getContext(),"imageView.setImageDrawable(ResourcesCompat.getDrawable(getContext().getResources(), MainActivity.data.getSeenEnemies().contains(enemy.getTrueClass()) "
+UIUtils.java,784,R_drawable_variable,R.drawable.unknown,"imageView.setImageDrawable(ResourcesCompat.getDrawable(getContext().getResources(), MainActivity.data.getSeenEnemies().contains(enemy.getTrueClass()) "
+UIUtils.java,901,getDrawable,getDrawable(context.getResources(),"imageView.setImageDrawable(ResourcesCompat.getDrawable(context.getResources(), doctrine.getIdImage(), context.getTheme()));"
+UIUtils.java,1027,getDrawable,getDrawable(getContext(),"imageView.setImageDrawable(ResourcesCompat.getDrawable(getContext().getResources(), pet.getIdImage(), getContext().getTheme()));"
+Utils.java,799,getDrawable,getDrawable(context.getResources(),"return ResourcesCompat.getDrawable(context.getResources(), equipment == null ? R.drawable.empty_equipment : equipment.getIdImage(), context.getTheme()"
+Utils.java,799,R_drawable_variable,R.drawable.empty_equipment,"return ResourcesCompat.getDrawable(context.getResources(), equipment == null ? R.drawable.empty_equipment : equipment.getIdImage(), context.getTheme()"
+AdventurersFragment.java,56,getDrawable,getDrawable(getResources(),"this.binding.imageArrow.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.menu_lift, getContext().getTheme()));"
+AdventurersFragment.java,56,R_drawable_variable,R.drawable.menu_lift,"this.binding.imageArrow.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.menu_lift, getContext().getTheme()));"
+AdventurersFragment.java,84,getDrawable,getDrawable(getResources(),"layoutAdventurerBindingInflate.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), next.getImageId(), getContext().getTheme()));"
+AdventurersFragment.java,94,getDrawable,getDrawable(getResources(),"layoutAdventurerBindingInflate.doctrine.setImageDrawable(ResourcesCompat.getDrawable(getResources(), next.getDoctrine().getIdImage(), getContext().get"
+AdventurersFragment.java,225,getDrawable,getDrawable(getResources(),"this.binding.imageArrow.setImageDrawable(ResourcesCompat.getDrawable(getResources(), zEquals ? R.drawable.menu_lift : R.drawable.menu_drop, getContext"
+AdventurersFragment.java,225,R_drawable_variable,R.drawable.menu_lift,"this.binding.imageArrow.setImageDrawable(ResourcesCompat.getDrawable(getResources(), zEquals ? R.drawable.menu_lift : R.drawable.menu_drop, getContext"
+AdventurersFragment.java,225,R_drawable_variable,R.drawable.menu_drop,"this.binding.imageArrow.setImageDrawable(ResourcesCompat.getDrawable(getResources(), zEquals ? R.drawable.menu_lift : R.drawable.menu_drop, getContext"
+CustomDialog.java,34,R_drawable_variable,R.drawable.dialog_border,getDialog().getWindow().setBackgroundDrawableResource(R.drawable.dialog_border);
+DialogChooseAdventurer.java,54,getDrawable,getDrawable(getResources(),"layoutAdventurerBindingInflate.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), adventurer.getImageId(), getContext().getTheme()));"
+DialogChooseAdventurer.java,57,getDrawable,getDrawable(getResources(),"layoutAdventurerBindingInflate.doctrine.setImageDrawable(ResourcesCompat.getDrawable(getResources(), adventurer.getDoctrine().getIdImage(), getContext"
+DialogConsumeEvo23.java,51,R_drawable_variable,R.drawable.object_border_ascended,layoutAdventurerChangeTraitBindingInflate.containerAdventurer.setBackgroundResource(R.drawable.object_border_ascended);
+DialogConsumeEvo23.java,52,R_drawable_variable,R.drawable.object_border_rounded_left_ascended,layoutAdventurerChangeTraitBindingInflate.image.setBackgroundResource(R.drawable.object_border_rounded_left_ascended);
+DialogConsumeEvo23.java,55,getDrawable,getDrawable(getResources(),"layoutAdventurerChangeTraitBindingInflate.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), adventurer.getImageId(), getContext().get"
+DialogConsumeEvo23.java,62,getDrawable,getDrawable(getResources(),"layoutAdventurerChangeTraitBindingInflate.doctrine.setImageDrawable(ResourcesCompat.getDrawable(getResources(), adventurer.getDoctrine().getIdImage(),"
+DialogConsumeFood.java,49,getDrawable,getDrawable(getResources(),"this.binding.foodSelected.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), this.selected.getIdImage(), getContext().getTheme()));"
+DialogConsumeFood.java,56,getDrawable,getDrawable(getResources(),"layoutPetFeedingBindingInflate.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), pet.getIdImage(), getContext().getTheme()));"
+DialogConsumeIntercession.java,53,getDrawable,getDrawable(getResources(),"layoutAdventurerChangeTraitBindingInflate.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), adventurer.getImageId(), getContext().get"
+DialogConsumePotion.java,49,getDrawable,getDrawable(getResources(),"this.binding.potionSelected.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), this.selected.getIdImage(), getContext().getTheme()));"
+DialogConsumePotion.java,58,R_drawable_variable,R.drawable.object_border_ascended,layoutAdventurerPotionsBindingInflate.containerAdventurer.setBackgroundResource(R.drawable.object_border_ascended);
+DialogConsumePotion.java,59,R_drawable_variable,R.drawable.object_border_rounded_left_ascended,layoutAdventurerPotionsBindingInflate.image.setBackgroundResource(R.drawable.object_border_rounded_left_ascended);
+DialogConsumePotion.java,60,R_drawable_variable,R.drawable.object_border_rounded_right_ascended,layoutAdventurerPotionsBindingInflate.potionsContainer.setBackgroundResource(R.drawable.object_border_rounded_right_ascended);
+DialogConsumePotion.java,64,getDrawable,getDrawable(getResources(),"layoutAdventurerPotionsBindingInflate.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), adventurer.getImageId(), getContext().getThem"
+DialogConsumePotion.java,67,getDrawable,getDrawable(getResources(),"layoutAdventurerPotionsBindingInflate.doctrine.setImageDrawable(ResourcesCompat.getDrawable(getResources(), adventurer.getDoctrine().getIdImage(), get"
+DialogConsumePotionOfClumsiness.java,54,R_drawable_variable,R.drawable.object_border_ascended,layoutAdventurerChangeTraitBindingInflate.containerAdventurer.setBackgroundResource(R.drawable.object_border_ascended);
+DialogConsumePotionOfClumsiness.java,55,R_drawable_variable,R.drawable.object_border_rounded_left_ascended,layoutAdventurerChangeTraitBindingInflate.image.setBackgroundResource(R.drawable.object_border_rounded_left_ascended);
+DialogConsumePotionOfClumsiness.java,58,getDrawable,getDrawable(getResources(),"layoutAdventurerChangeTraitBindingInflate.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), adventurer.getImageId(), getContext().get"
+DialogConsumePotionOfClumsiness.java,61,getDrawable,getDrawable(getResources(),"layoutAdventurerChangeTraitBindingInflate.doctrine.setImageDrawable(ResourcesCompat.getDrawable(getResources(), adventurer.getDoctrine().getIdImage(),"
+DialogConsumePotionOfRejuvenation.java,53,R_drawable_variable,R.drawable.object_border_ascended,layoutAdventurerChangeTraitBindingInflate.containerAdventurer.setBackgroundResource(R.drawable.object_border_ascended);
+DialogConsumePotionOfRejuvenation.java,54,R_drawable_variable,R.drawable.object_border_rounded_left_ascended,layoutAdventurerChangeTraitBindingInflate.image.setBackgroundResource(R.drawable.object_border_rounded_left_ascended);
+DialogConsumePotionOfRejuvenation.java,57,getDrawable,getDrawable(getResources(),"layoutAdventurerChangeTraitBindingInflate.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), adventurer.getImageId(), getContext().get"
+DialogConsumePotionOfRejuvenation.java,64,getDrawable,getDrawable(getResources(),"layoutAdventurerChangeTraitBindingInflate.doctrine.setImageDrawable(ResourcesCompat.getDrawable(getResources(), adventurer.getDoctrine().getIdImage(),"
+DialogCraft.java,72,getDrawable,getDrawable(getResources(),"layoutCraftBigBinding.result.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), recipes.getResult().getIdImage(), getContext().getThem"
+DialogCraft.java,74,getDrawable,getDrawable(getResources(),"layoutCraftBigBinding.ingredient1.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), recipes.getIngredients().get(0).getIdImage(), get"
+DialogCraft.java,80,getDrawable,getDrawable(getResources(),"layoutCraftBigBinding.ingredient2.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), recipes.getIngredients().get(1).getIdImage(), get"
+DialogCraft.java,90,getDrawable,getDrawable(getResources(),"layoutCraftBigBinding.ingredient3.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), recipes.getIngredients().get(2).getIdImage(), get"
+DialogDoctrine.java,99,getDrawable,getDrawable(getResources(),"layoutDoctrineAbilityBindingInflate.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), doctrineAbility.getType().image, getContext().g"
+DialogDungeonDetail.java,65,getDrawable,getDrawable(getResources(),"this.binding.imageView.setImageDrawable(ResourcesCompat.getDrawable(getResources(), this.area.getDetailDrawable(), getContext().getTheme()));"
+DialogDungeonDetail.java,173,getDrawable,getDrawable(getResources(),"this.binding.pet.setImageDrawable(ResourcesCompat.getDrawable(getResources(), this.area.getPetExploring().getIdImage(), getContext().getTheme()));"
+DialogDungeonDetail.java,200,getDrawable,getDrawable(getResources(),"this.binding.moon.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.darkness_0, getContext().getTheme()));"
+DialogDungeonDetail.java,200,R_drawable_variable,R.drawable.darkness_0,"this.binding.moon.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.darkness_0, getContext().getTheme()));"
+DialogDungeonDetail.java,202,getDrawable,getDrawable(getResources(),"this.binding.moon.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.darkness_1, getContext().getTheme()));"
+DialogDungeonDetail.java,202,R_drawable_variable,R.drawable.darkness_1,"this.binding.moon.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.darkness_1, getContext().getTheme()));"
+DialogDungeonDetail.java,204,getDrawable,getDrawable(getResources(),"this.binding.moon.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.darkness_2, getContext().getTheme()));"
+DialogDungeonDetail.java,204,R_drawable_variable,R.drawable.darkness_2,"this.binding.moon.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.darkness_2, getContext().getTheme()));"
+DialogDungeonDetail.java,206,getDrawable,getDrawable(getResources(),"this.binding.moon.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.darkness_3, getContext().getTheme()));"
+DialogDungeonDetail.java,206,R_drawable_variable,R.drawable.darkness_3,"this.binding.moon.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.darkness_3, getContext().getTheme()));"
+DialogDungeonDetail.java,208,getDrawable,getDrawable(getResources(),"this.binding.moon.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.darkness_4, getContext().getTheme()));"
+DialogDungeonDetail.java,208,R_drawable_variable,R.drawable.darkness_4,"this.binding.moon.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.darkness_4, getContext().getTheme()));"
+DialogDungeonDetail.java,210,getDrawable,getDrawable(getResources(),"this.binding.moon.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.darkness_5, getContext().getTheme()));"
+DialogDungeonDetail.java,210,R_drawable_variable,R.drawable.darkness_5,"this.binding.moon.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.darkness_5, getContext().getTheme()));"
+DialogDungeonDetail.java,230,getDrawable,getDrawable(getResources(),"layoutEntityFightingBinding.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), entity.getCurrentHp() > 0 ? entity.getImageId() : R.dra"
+DialogDungeonDetail.java,230,R_drawable_variable,R.drawable.tombstone,"layoutEntityFightingBinding.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), entity.getCurrentHp() > 0 ? entity.getImageId() : R.dra"
+DialogDungeonDetail.java,245,getDrawable,getDrawable(getResources(),"getStatusSlot(layoutEntityFightingBinding, i).setImageDrawable(ResourcesCompat.getDrawable(getResources(), statusEffect.getType().icon, getContext().g"
+DialogDungeonDetail.java,252,getDrawable,getDrawable(getResources(),"getStatusSlot(layoutEntityFightingBinding, i).setImageDrawable(ResourcesCompat.getDrawable(getResources(), statusEffect2.getType().icon, getContext()."
+DialogDungeonDetail.java,259,setImageResource,setImageResource(0),"getStatusSlot(layoutEntityFightingBinding, i).setImageResource(0);"
+DialogDungeonDetail.java,290,setImageResource,setImageResource(R.drawable.animated_icon_damaged),view.animation.setImageResource(R.drawable.animated_icon_damaged);
+DialogDungeonDetail.java,290,R_drawable_variable,R.drawable.animated_icon_damaged,view.animation.setImageResource(R.drawable.animated_icon_damaged);
+DialogEntityDetail.java,76,R_drawable_variable,R.drawable.object_border_ascended,this.binding.detailImage.setBackgroundResource(R.drawable.object_border_ascended);
+DialogEntityDetail.java,77,R_drawable_variable,R.drawable.object_border_ascended,this.binding.detailWeapon.setBackgroundResource(R.drawable.object_border_ascended);
+DialogEntityDetail.java,78,R_drawable_variable,R.drawable.object_border_ascended,this.binding.detailArmor.setBackgroundResource(R.drawable.object_border_ascended);
+DialogEntityDetail.java,79,R_drawable_variable,R.drawable.object_border_ascended,this.binding.detailAccessory.setBackgroundResource(R.drawable.object_border_ascended);
+DialogEntityDetail.java,80,R_drawable_variable,R.drawable.object_border_ascended,this.binding.swapEquipment.setBackgroundResource(R.drawable.object_border_ascended);
+DialogEntityDetail.java,101,R_drawable_variable,R.drawable.object_border_dim_white,layoutItemBindingInflate.getRoot().setBackgroundResource(R.drawable.object_border_dim_white);
+DialogEntityDetail.java,102,getDrawable,getDrawable(getResources(),"layoutItemBindingInflate.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), MainActivity.data.getSeenItems().contains(trueClass) ? ite"
+DialogEntityDetail.java,102,R_drawable_variable,R.drawable.unknown,"layoutItemBindingInflate.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), MainActivity.data.getSeenItems().contains(trueClass) ? ite"
+DialogEntityDetail.java,703,getDrawable,getDrawable(getResources(),"this.binding.detailImage.setImageDrawable(ResourcesCompat.getDrawable(getResources(), this.entity.getImageId(), getContext().getTheme()));"
+DialogEntityDetail.java,735,getDrawable,getDrawable(getResources(),"this.binding.doctrine.setImageDrawable(ResourcesCompat.getDrawable(getResources(), adventurer.getDoctrine().getIdImage(), getContext().getTheme()));"
+DialogEntityDetail.java,817,R_drawable_variable,R.drawable.object_border_dim_white_extra_opaque,view.setBackgroundResource(z ? R.drawable.object_border_dim_white_extra_opaque : R.drawable.object_border_dim_white);
+DialogEntityDetail.java,817,R_drawable_variable,R.drawable.object_border_dim_white,view.setBackgroundResource(z ? R.drawable.object_border_dim_white_extra_opaque : R.drawable.object_border_dim_white);
+DialogEntityDetail.java,819,R_drawable_variable,R.drawable.object_border_ascended_extra_opaque,view.setBackgroundResource(z ? z2 ? R.drawable.object_border_ascended_extra_opaque : R.drawable.object_border_dim_white_extra_opaque : z2 ? R.drawable
+DialogEntityDetail.java,819,R_drawable_variable,R.drawable.object_border_dim_white_extra_opaque,view.setBackgroundResource(z ? z2 ? R.drawable.object_border_ascended_extra_opaque : R.drawable.object_border_dim_white_extra_opaque : z2 ? R.drawable
+DialogEntityDetail.java,819,R_drawable_variable,R.drawable.object_border_ascended,view.setBackgroundResource(z ? z2 ? R.drawable.object_border_ascended_extra_opaque : R.drawable.object_border_dim_white_extra_opaque : z2 ? R.drawable
+DialogEntityDetail.java,819,R_drawable_variable,R.drawable.object_border_dim_white,view.setBackgroundResource(z ? z2 ? R.drawable.object_border_ascended_extra_opaque : R.drawable.object_border_dim_white_extra_opaque : z2 ? R.drawable
+DialogItemDetail.java,74,getDrawable,getDrawable(getResources(),"this.binding.item.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), item.getIdImage(), getContext().getTheme()));"
+DialogItemDetail.java,94,getDrawable,getDrawable(getResources(),"this.binding.consume.setImageDrawable(ResourcesCompat.getDrawable(getResources(), ((Consumable) item).printConsumeImage(), getContext().getTheme()));"
+DialogItemDetail.java,138,getDrawable,getDrawable(getResources(),"layoutCraftBinding.result.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), recipes.getResult().getIdImage(), getContext().getTheme()"
+DialogItemDetail.java,147,getDrawable,getDrawable(getResources(),"layoutCraftBinding.ingredient1.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), recipes.getIngredients().get(0).getIdImage(), getCon"
+DialogItemDetail.java,159,getDrawable,getDrawable(getResources(),"layoutCraftBinding.ingredient2.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), recipes.getIngredients().get(1).getIdImage(), getCon"
+DialogItemDetail.java,175,getDrawable,getDrawable(getResources(),"layoutCraftBinding.ingredient3.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), recipes.getIngredients().get(2).getIdImage(), getCon"
+DialogMarket.java,252,getDrawable,getDrawable(getContext(),"layoutMarketItemBindingInflate.item.image.setImageDrawable(ResourcesCompat.getDrawable(getContext().getResources(), itemAction.getItem().getIdImage(),"
+DialogMarket.java,253,R_drawable_variable,R.drawable.object_border_rounded_left,layoutMarketItemBindingInflate.item.image.setBackgroundResource(R.drawable.object_border_rounded_left);
+DialogMergePet.java,54,getDrawable,getDrawable(getResources(),"this.binding.foodSelected.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), this.selected.getIdImage(), getContext().getTheme()));"
+DialogMergePet.java,63,getDrawable,getDrawable(getResources(),"layoutPetFeedingBindingInflate.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), pet.getIdImage(), getContext().getTheme()));"
+DialogPetDetail.java,59,getDrawable,getDrawable(getResources(),"this.binding.detailImage.setImageDrawable(ResourcesCompat.getDrawable(getResources(), this.pet.getIdImage(), getContext().getTheme()));"
+DialogPromotionChoices.java,61,R_drawable_variable,R.drawable.object_border_ascended,layoutAdventurerPromotionBindingInflate.containerAdventurer.setBackgroundResource(R.drawable.object_border_ascended);
+DialogPromotionChoices.java,62,R_drawable_variable,R.drawable.object_border_rounded_left_ascended,layoutAdventurerPromotionBindingInflate.promotionImage.setBackgroundResource(R.drawable.object_border_rounded_left_ascended);
+DialogPromotionChoices.java,63,R_drawable_variable,R.drawable.object_border_rounded_right_ascended,layoutAdventurerPromotionBindingInflate.promotionLevelup.setBackgroundResource(R.drawable.object_border_rounded_right_ascended);
+DialogPromotionChoices.java,66,getDrawable,getDrawable(getResources(),"layoutAdventurerPromotionBindingInflate.promotionImage.setImageDrawable(ResourcesCompat.getDrawable(getResources(), adventurer.getImageId(), getContex"
+DialogPromotionChoices.java,74,getDrawable,getDrawable(getResources(),"layoutAdventurerPromotionBindingInflate.doctrine.setImageDrawable(ResourcesCompat.getDrawable(getResources(), adventurer.getDoctrine().getIdImage(), g"
+DialogPromotionChoices.java,75,getDrawable,getDrawable(getResources(),"layoutAdventurerPromotionBindingInflate.promotionLevelup.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.check_brass, getConte"
+DialogPromotionChoices.java,75,R_drawable_variable,R.drawable.check_brass,"layoutAdventurerPromotionBindingInflate.promotionLevelup.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.check_brass, getConte"
+DialogRecallAdventurers.java,66,getDrawable,getDrawable(getResources(),"layoutAdventurerBindingInflate.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), next.getImageId(), getContext().getTheme()));"
+DialogRecallAdventurers.java,74,getDrawable,getDrawable(getResources(),"layoutAdventurerBindingInflate.doctrine.setImageDrawable(ResourcesCompat.getDrawable(getResources(), next.getDoctrine().getIdImage(), getContext().get"
+DialogSelectEquipment.java,79,R_drawable_variable,R.drawable.object_border_rounded_left,this.binding.equipped.item.image.setBackgroundResource(R.drawable.object_border_rounded_left);
+DialogSelectEquipment.java,99,getDrawable,getDrawable(getResources(),"this.binding.equipped.item.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), accessory.getIdImage(), getContext().getTheme()));"
+DialogSelectEquipment.java,120,R_drawable_variable,R.drawable.object_border_rounded_left,layoutSelectEquipmentBindingInflate.item.image.setBackgroundResource(R.drawable.object_border_rounded_left);
+DialogSelectEquipment.java,121,getDrawable,getDrawable(getResources(),"layoutSelectEquipmentBindingInflate.item.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), equipment.getIdImage(), getContext().getTh"
+DialogSell.java,54,getDrawable,getDrawable(getResources(),"this.binding.item.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), this.item.getIdImage(), getContext().getTheme()));"
+DialogSendTeam.java,292,R_drawable_variable,R.drawable.object_border_dim_white,layoutAdventurerBinding.containerAdventurer.setBackgroundResource(R.drawable.object_border_dim_white);
+DialogSendTeam.java,293,R_drawable_variable,R.drawable.object_border_dim_white,layoutAdventurerBinding.weapon.setBackgroundResource(R.drawable.object_border_dim_white);
+DialogSendTeam.java,294,R_drawable_variable,R.drawable.object_border_dim_white,layoutAdventurerBinding.armor.setBackgroundResource(R.drawable.object_border_dim_white);
+DialogSendTeam.java,295,R_drawable_variable,R.drawable.object_border_dim_white,layoutAdventurerBinding.accessory.setBackgroundResource(R.drawable.object_border_dim_white);
+DialogSendTeam.java,296,R_drawable_variable,R.drawable.object_border_rounded_left,layoutAdventurerBinding.image.setBackgroundResource(R.drawable.object_border_rounded_left);
+DialogSendTeam.java,299,getDrawable,getDrawable(getResources(),"layoutAdventurerBinding.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), adventurer.getImageId(), getContext().getTheme()));"
+DialogSendTeam.java,302,getDrawable,getDrawable(getResources(),"layoutAdventurerBinding.doctrine.setImageDrawable(ResourcesCompat.getDrawable(getResources(), adventurer.getDoctrine().getIdImage(), getContext().getT"
+DialogSendTeam.java,342,getDrawable,getDrawable(getResources(),"this.binding.imagePet.setImageDrawable(ResourcesCompat.getDrawable(getResources(), pet.getIdImage(), getContext().getTheme()));"
+DialogShop.java,91,getDrawable,getDrawable(getResources(),"layoutAdventurerBinding.image.setImageDrawable(ResourcesCompat.getDrawable(getResources(), adventurer.getImageId(), getContext().getTheme()));"
+DialogStorage.java,351,getDrawable,getDrawable(getResources(),"this.binding.filtersArrow.setImageDrawable(ResourcesCompat.getDrawable(getResources(), this.filtersHidden ? R.drawable.menu_lift : R.drawable.menu_dro"
+DialogStorage.java,351,R_drawable_variable,R.drawable.menu_lift,"this.binding.filtersArrow.setImageDrawable(ResourcesCompat.getDrawable(getResources(), this.filtersHidden ? R.drawable.menu_lift : R.drawable.menu_dro"
+DialogStorage.java,351,R_drawable_variable,R.drawable.menu_drop,"this.binding.filtersArrow.setImageDrawable(ResourcesCompat.getDrawable(getResources(), this.filtersHidden ? R.drawable.menu_lift : R.drawable.menu_dro"
+DialogTavern.java,64,getDrawable,getDrawable(getResources(),"this.binding.lock.setBackground(ResourcesCompat.getDrawable(getResources(), MainActivity.data.isTavernLocked() ? R.drawable.lock_close : R.drawable.lo"
+DialogTavern.java,64,R_drawable_variable,R.drawable.lock_close,"this.binding.lock.setBackground(ResourcesCompat.getDrawable(getResources(), MainActivity.data.isTavernLocked() ? R.drawable.lock_close : R.drawable.lo"
+DialogTavern.java,64,R_drawable_variable,R.drawable.lock_open,"this.binding.lock.setBackground(ResourcesCompat.getDrawable(getResources(), MainActivity.data.isTavernLocked() ? R.drawable.lock_close : R.drawable.lo"
+DialogTavern.java,233,getDrawable,getDrawable(getContext(),"layoutTavernAdventurerBindingInflate.image.setImageDrawable(ResourcesCompat.getDrawable(getContext().getResources(), next.getImageId(), getContext().g"
+DialogTavern.java,239,getDrawable,getDrawable(getResources(),"layoutTavernAdventurerBindingInflate.recruitButton.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.object_border_unavailable_roun"
+DialogTavern.java,239,R_drawable_variable,R.drawable.object_border_unavailable_rounded_right,"layoutTavernAdventurerBindingInflate.recruitButton.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.object_border_unavailable_roun"
+DialogTavern.java,332,getDrawable,getDrawable(getResources(),"this.binding.lock.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.lock_open, getContext().getTheme()));"
+DialogTavern.java,332,R_drawable_variable,R.drawable.lock_open,"this.binding.lock.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.lock_open, getContext().getTheme()));"
+DialogTavern.java,335,getDrawable,getDrawable(getResources(),"this.binding.lock.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.lock_close, getContext().getTheme()));"
+DialogTavern.java,335,R_drawable_variable,R.drawable.lock_close,"this.binding.lock.setBackground(ResourcesCompat.getDrawable(getResources(), R.drawable.lock_close, getContext().getTheme()));"
+DialogWorkshop.java,227,getDrawable,getDrawable(getContext(),"imageView.setImageDrawable(ResourcesCompat.getDrawable(getContext().getResources(), R.drawable.check_brass, getContext().getTheme()));"
+DialogWorkshop.java,227,R_drawable_variable,R.drawable.check_brass,"imageView.setImageDrawable(ResourcesCompat.getDrawable(getContext().getResources(), R.drawable.check_brass, getContext().getTheme()));"
+DialogWorkshop.java,262,getDrawable,getDrawable(getContext(),"layoutWorkshopItemBindingInflate.item.image.setImageDrawable(ResourcesCompat.getDrawable(getContext().getResources(), itemAction.getItem().getIdImage("
+DialogWorkshop.java,263,R_drawable_variable,R.drawable.object_border_rounded_left,layoutWorkshopItemBindingInflate.item.image.setBackgroundResource(R.drawable.object_border_rounded_left);
+DialogWorkshop.java,269,getDrawable,getDrawable(getContext(),"layoutWorkshopItemBindingInflate.action.setImageDrawable(ResourcesCompat.getDrawable(getContext().getResources(), z ? R.drawable.check_brass : R.drawa"
+DialogWorkshop.java,269,R_drawable_variable,R.drawable.check_brass,"layoutWorkshopItemBindingInflate.action.setImageDrawable(ResourcesCompat.getDrawable(getContext().getResources(), z ? R.drawable.check_brass : R.drawa"
+DialogWorkshop.java,269,R_drawable_variable,R.drawable.delete,"layoutWorkshopItemBindingInflate.action.setImageDrawable(ResourcesCompat.getDrawable(getContext().getResources(), z ? R.drawable.check_brass : R.drawa"
+DungeonsFragment.java,40,getDrawable,getDrawable(getResources(),"area.getLayout().dungeonImage.setImageDrawable(ResourcesCompat.getDrawable(getResources(), area.getSummaryDrawable(), getContext().getTheme()));"
+RaidsFragment.java,48,getDrawable,getDrawable(getResources(),"area.getLayout().dungeonImage.setImageDrawable(ResourcesCompat.getDrawable(getResources(), area.getSummaryDrawable(), getContext().getTheme()));"
+StatusEffectType.java,7,R_drawable_variable,R.drawable.icon_effect_taunt,"TAUNT(R.string.status_effect_taunt, R.string.status_effect_taunt_description, R.drawable.icon_effect_taunt, true, false),"
+StatusEffectType.java,8,R_drawable_variable,R.drawable.icon_effect_defensive_stance,"DEFENSIVE_STANCE(R.string.status_effect_defensive_stance, R.string.status_effect_defensive_stance_description, R.drawable.icon_effect_defensive_stance"
+StatusEffectType.java,9,R_drawable_variable,R.drawable.icon_effect_stun,"STUN(R.string.status_effect_stun, R.string.status_effect_stun_description, R.drawable.icon_effect_stun, true, true),"
+StatusEffectType.java,10,R_drawable_variable,R.drawable.icon_effect_stun,"STUN_NOT_CLEANSABLE(R.string.status_effect_stun, R.string.status_effect_stun_description, R.drawable.icon_effect_stun, false, true),"
+StatusEffectType.java,11,R_drawable_variable,R.drawable.icon_effect_silence,"SILENCE(R.string.status_effect_silence, R.string.status_effect_silence_description, R.drawable.icon_effect_silence, true, true),"
+StatusEffectType.java,12,R_drawable_variable,R.drawable.icon_effect_ablaze,"ABLAZE(R.string.status_effect_ablaze, R.string.status_effect_ablaze_description, R.drawable.icon_effect_ablaze, true, true),"
+StatusEffectType.java,13,R_drawable_variable,R.drawable.icon_effect_poison,"POISON(R.string.status_effect_poison, R.string.status_effect_poison_description, R.drawable.icon_effect_poison, true, true),"
+StatusEffectType.java,14,R_drawable_variable,R.drawable.icon_effect_regeneration,"REGENERATION(R.string.status_effect_regeneration, R.string.status_effect_regeneration_description, R.drawable.icon_effect_regeneration, false, true),"
+StatusEffectType.java,15,R_drawable_variable,R.drawable.icon_effect_curse,"LESSER_CURSE(R.string.status_effect_lesser_curse, R.string.status_effect_lesser_curse_description, R.drawable.icon_effect_curse, true, false),"
+StatusEffectType.java,16,R_drawable_variable,R.drawable.icon_effect_curse,"CURSE(R.string.status_effect_curse, R.string.status_effect_curse_description, R.drawable.icon_effect_curse, true, false),"
+StatusEffectType.java,17,R_drawable_variable,R.drawable.icon_effect_curse,"GREATER_CURSE(R.string.status_effect_greater_curse, R.string.status_effect_greater_curse_description, R.drawable.icon_effect_curse, true, false),"
+StatusEffectType.java,18,R_drawable_variable,R.drawable.icon_effect_curse,"OMINOUS_CURSE(R.string.status_effect_ominous_curse, R.string.status_effect_ominous_curse_description, R.drawable.icon_effect_curse, true, false),"
+StatusEffectType.java,19,R_drawable_variable,R.drawable.icon_effect_curse,"ABHORRENT_CURSE(R.string.status_effect_abhorrent_curse, R.string.status_effect_abhorrent_curse_description, R.drawable.icon_effect_curse, true, false)"
+StatusEffectType.java,20,R_drawable_variable,R.drawable.icon_effect_bleed,"BLEED(R.string.status_effect_bleed, R.string.status_effect_bleed_description, R.drawable.icon_effect_bleed, true, true),"
+StatusEffectType.java,21,R_drawable_variable,R.drawable.icon_effect_delirium,"DELIRIUM(R.string.status_effect_delirium, R.string.status_effect_delirium_description, R.drawable.icon_effect_delirium, false, true),"
+StatusEffectType.java,22,R_drawable_variable,R.drawable.icon_effect_frenzy,"FRENZY(R.string.status_effect_frenzy, R.string.status_effect_frenzy_description, R.drawable.icon_effect_frenzy, false, true),"
+StatusEffectType.java,23,R_drawable_variable,R.drawable.icon_effect_anointed,"ANOINTED(R.string.status_effect_anointed, R.string.status_effect_anointed_description, R.drawable.icon_effect_anointed, false, true),"
+StatusEffectType.java,24,R_drawable_variable,R.drawable.skeleton_key,"SKELETON_KEY(R.string.status_effect_skeleton_key, R.string.status_effect_skeleton_key_description, R.drawable.skeleton_key, false, false),"
+StatusEffectType.java,25,R_drawable_variable,R.drawable.feeble_tether,"FEEBLE_TETHER(R.string.status_effect_feeble_tether, R.string.status_effect_feeble_tether_description, R.drawable.feeble_tether, false, true),"
+StatusEffectType.java,26,R_drawable_variable,R.drawable.icon_effect_inspire,"INSPIRE(R.string.status_effect_inspire, R.string.status_effect_inspire_description, R.drawable.icon_effect_inspire, false, true),"
+StatusEffectType.java,27,R_drawable_variable,R.drawable.icon_effect_exalt,"EXALT(R.string.status_effect_exalt, R.string.status_effect_exalt_description, R.drawable.icon_effect_exalt, false, true),"
+StatusEffectType.java,28,R_drawable_variable,R.drawable.icon_effect_petrify,"PETRIFY(R.string.status_effect_petrify, R.string.status_effect_petrify_description, R.drawable.icon_effect_petrify, true, true),"
+StatusEffectType.java,29,R_drawable_variable,R.drawable.icon_effect_false_life,"FALSE_LIFE(R.string.status_effect_false_life, R.string.status_effect_false_life_description, R.drawable.icon_effect_false_life, false, true),"
+StatusEffectType.java,30,R_drawable_variable,R.drawable.icon_effect_terrify,"TERRIFY(R.string.status_effect_terrify, R.string.status_effect_terrify_description, R.drawable.icon_effect_terrify, true, true),"
+StatusEffectType.java,31,R_drawable_variable,R.drawable.icon_effect_freeze,"FROZEN(R.string.status_effect_freeze, R.string.status_effect_freeze_description, R.drawable.icon_effect_freeze, true, true);"
+Area.java,2940,getDrawable,"getDrawable(resources, adventurer.getImageId()","getLayout().adventurerImage1.adventurerImage.setImageDrawable(ResourcesCompat.getDrawable(resources, adventurer.getImageId(), theme));"
+Area.java,2941,R_drawable_variable,R.drawable.object_border_ascended,getLayout().adventurerImage1.adventurerImage.setBackgroundResource(adventurer.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bor
+Area.java,2941,R_drawable_variable,R.drawable.object_border_dim_white,getLayout().adventurerImage1.adventurerImage.setBackgroundResource(adventurer.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bor
+Area.java,2945,getDrawable,"getDrawable(resources, adventurer2.getImageId()","getLayout().adventurerImage2.adventurerImage.setImageDrawable(ResourcesCompat.getDrawable(resources, adventurer2.getImageId(), theme));"
+Area.java,2946,R_drawable_variable,R.drawable.object_border_ascended,getLayout().adventurerImage2.adventurerImage.setBackgroundResource(adventurer2.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bo
+Area.java,2946,R_drawable_variable,R.drawable.object_border_dim_white,getLayout().adventurerImage2.adventurerImage.setBackgroundResource(adventurer2.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bo
+Area.java,2950,getDrawable,"getDrawable(resources, adventurer3.getImageId()","getLayout().adventurerImage3.adventurerImage.setImageDrawable(ResourcesCompat.getDrawable(resources, adventurer3.getImageId(), theme));"
+Area.java,2951,R_drawable_variable,R.drawable.object_border_ascended,getLayout().adventurerImage3.adventurerImage.setBackgroundResource(adventurer3.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bo
+Area.java,2951,R_drawable_variable,R.drawable.object_border_dim_white,getLayout().adventurerImage3.adventurerImage.setBackgroundResource(adventurer3.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bo
+Area.java,2955,getDrawable,"getDrawable(resources, adventurer4.getImageId()","getLayout().adventurerImage4.adventurerImage.setImageDrawable(ResourcesCompat.getDrawable(resources, adventurer4.getImageId(), theme));"
+Area.java,2956,R_drawable_variable,R.drawable.object_border_ascended,getLayout().adventurerImage4.adventurerImage.setBackgroundResource(adventurer4.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bo
+Area.java,2956,R_drawable_variable,R.drawable.object_border_dim_white,getLayout().adventurerImage4.adventurerImage.setBackgroundResource(adventurer4.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bo
+Area.java,2960,getDrawable,"getDrawable(resources, adventurer5.getImageId()","getLayout().adventurerImage5.adventurerImage.setImageDrawable(ResourcesCompat.getDrawable(resources, adventurer5.getImageId(), theme));"
+Area.java,2961,R_drawable_variable,R.drawable.object_border_ascended,getLayout().adventurerImage5.adventurerImage.setBackgroundResource(adventurer5.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bo
+Area.java,2961,R_drawable_variable,R.drawable.object_border_dim_white,getLayout().adventurerImage5.adventurerImage.setBackgroundResource(adventurer5.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bo
+Area.java,2965,getDrawable,"getDrawable(resources, adventurer6.getImageId()","getLayout().adventurerImage6.adventurerImage.setImageDrawable(ResourcesCompat.getDrawable(resources, adventurer6.getImageId(), theme));"
+Area.java,2966,R_drawable_variable,R.drawable.object_border_ascended,getLayout().adventurerImage6.adventurerImage.setBackgroundResource(adventurer6.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bo
+Area.java,2966,R_drawable_variable,R.drawable.object_border_dim_white,getLayout().adventurerImage6.adventurerImage.setBackgroundResource(adventurer6.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bo
+Area.java,2970,getDrawable,"getDrawable(resources, adventurer7.getImageId()","getLayout().adventurerImage7.adventurerImage.setImageDrawable(ResourcesCompat.getDrawable(resources, adventurer7.getImageId(), theme));"
+Area.java,2971,R_drawable_variable,R.drawable.object_border_ascended,getLayout().adventurerImage7.adventurerImage.setBackgroundResource(adventurer7.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bo
+Area.java,2971,R_drawable_variable,R.drawable.object_border_dim_white,getLayout().adventurerImage7.adventurerImage.setBackgroundResource(adventurer7.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bo
+Area.java,2975,getDrawable,"getDrawable(resources, adventurer8.getImageId()","getLayout().adventurerImage8.adventurerImage.setImageDrawable(ResourcesCompat.getDrawable(resources, adventurer8.getImageId(), theme));"
+Area.java,2976,R_drawable_variable,R.drawable.object_border_ascended,getLayout().adventurerImage8.adventurerImage.setBackgroundResource(adventurer8.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bo
+Area.java,2976,R_drawable_variable,R.drawable.object_border_dim_white,getLayout().adventurerImage8.adventurerImage.setBackgroundResource(adventurer8.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bo
+Area.java,2980,getDrawable,"getDrawable(resources, adventurer9.getImageId()","getLayout().adventurerImage9.adventurerImage.setImageDrawable(ResourcesCompat.getDrawable(resources, adventurer9.getImageId(), theme));"
+Area.java,2981,R_drawable_variable,R.drawable.object_border_ascended,getLayout().adventurerImage9.adventurerImage.setBackgroundResource(adventurer9.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bo
+Area.java,2981,R_drawable_variable,R.drawable.object_border_dim_white,getLayout().adventurerImage9.adventurerImage.setBackgroundResource(adventurer9.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_bo
+Area.java,2985,getDrawable,"getDrawable(resources, adventurer10.getImageId()","getLayout().adventurerImage10.adventurerImage.setImageDrawable(ResourcesCompat.getDrawable(resources, adventurer10.getImageId(), theme));"
+Area.java,2986,R_drawable_variable,R.drawable.object_border_ascended,getLayout().adventurerImage10.adventurerImage.setBackgroundResource(adventurer10.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_
+Area.java,2986,R_drawable_variable,R.drawable.object_border_dim_white,getLayout().adventurerImage10.adventurerImage.setBackgroundResource(adventurer10.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_
+Area.java,2990,getDrawable,"getDrawable(resources, adventurer11.getImageId()","getLayout().adventurerImage11.adventurerImage.setImageDrawable(ResourcesCompat.getDrawable(resources, adventurer11.getImageId(), theme));"
+Area.java,2991,R_drawable_variable,R.drawable.object_border_ascended,getLayout().adventurerImage11.adventurerImage.setBackgroundResource(adventurer11.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_
+Area.java,2991,R_drawable_variable,R.drawable.object_border_dim_white,getLayout().adventurerImage11.adventurerImage.setBackgroundResource(adventurer11.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_
+Area.java,2995,getDrawable,"getDrawable(resources, adventurer12.getImageId()","getLayout().adventurerImage12.adventurerImage.setImageDrawable(ResourcesCompat.getDrawable(resources, adventurer12.getImageId(), theme));"
+Area.java,2996,R_drawable_variable,R.drawable.object_border_ascended,getLayout().adventurerImage12.adventurerImage.setBackgroundResource(adventurer12.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_
+Area.java,2996,R_drawable_variable,R.drawable.object_border_dim_white,getLayout().adventurerImage12.adventurerImage.setBackgroundResource(adventurer12.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_
+Area.java,3000,getDrawable,"getDrawable(resources, adventurer13.getImageId()","getLayout().adventurerImage13.adventurerImage.setImageDrawable(ResourcesCompat.getDrawable(resources, adventurer13.getImageId(), theme));"
+Area.java,3001,R_drawable_variable,R.drawable.object_border_ascended,getLayout().adventurerImage13.adventurerImage.setBackgroundResource(adventurer13.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_
+Area.java,3001,R_drawable_variable,R.drawable.object_border_dim_white,getLayout().adventurerImage13.adventurerImage.setBackgroundResource(adventurer13.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_
+Area.java,3005,getDrawable,"getDrawable(resources, adventurer14.getImageId()","getLayout().adventurerImage14.adventurerImage.setImageDrawable(ResourcesCompat.getDrawable(resources, adventurer14.getImageId(), theme));"
+Area.java,3006,R_drawable_variable,R.drawable.object_border_ascended,getLayout().adventurerImage14.adventurerImage.setBackgroundResource(adventurer14.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_
+Area.java,3006,R_drawable_variable,R.drawable.object_border_dim_white,getLayout().adventurerImage14.adventurerImage.setBackgroundResource(adventurer14.isAscended() ? R.drawable.object_border_ascended : R.drawable.object_
+Area.java,3025,getDrawable,"getDrawable(resources, this.petExploring.getIdImage()","getLayout().pet.setImageDrawable(ResourcesCompat.getDrawable(resources, this.petExploring.getIdImage(), theme));"
+Area.java,3102,getDrawable,"getDrawable(resources, z ? R.drawable.loot_chest_full : R.drawable.loot_chest, theme)","getLayout().lootImage.setImageDrawable(ResourcesCompat.getDrawable(resources, z ? R.drawable.loot_chest_full : R.drawable.loot_chest, theme));"
+Area.java,3102,R_drawable_variable,R.drawable.loot_chest_full,"getLayout().lootImage.setImageDrawable(ResourcesCompat.getDrawable(resources, z ? R.drawable.loot_chest_full : R.drawable.loot_chest, theme));"
+Area.java,3102,R_drawable_variable,R.drawable.loot_chest,"getLayout().lootImage.setImageDrawable(ResourcesCompat.getDrawable(resources, z ? R.drawable.loot_chest_full : R.drawable.loot_chest, theme));"
+Area.java,3150,getDrawable,getDrawable(MainActivity.raidsFragment.getResources(),"getLayout().raidTryAvailable.setImageDrawable(ResourcesCompat.getDrawable(MainActivity.raidsFragment.getResources(), this.triesAvailable ? R.drawable."
+Area.java,3150,R_drawable_variable,R.drawable.raid_try_available,"getLayout().raidTryAvailable.setImageDrawable(ResourcesCompat.getDrawable(MainActivity.raidsFragment.getResources(), this.triesAvailable ? R.drawable."
+Area.java,3150,R_drawable_variable,R.drawable.raid_try_unavailable,"getLayout().raidTryAvailable.setImageDrawable(ResourcesCompat.getDrawable(MainActivity.raidsFragment.getResources(), this.triesAvailable ? R.drawable."
+BarrenWastelands.java,36,R_drawable_variable,R.drawable.summary_barren_wastelands,return R.drawable.summary_barren_wastelands;
+BarrenWastelands.java,41,R_drawable_variable,R.drawable.area_barren_wastelands,return R.drawable.area_barren_wastelands;
+BlackwaterPort.java,39,R_drawable_variable,R.drawable.summary_blackwater_port,return R.drawable.summary_blackwater_port;
+BlackwaterPort.java,44,R_drawable_variable,R.drawable.area_blackwater_port,return R.drawable.area_blackwater_port;
+EnchantedForest.java,39,R_drawable_variable,R.drawable.summary_enchanted_forest,return R.drawable.summary_enchanted_forest;
+EnchantedForest.java,44,R_drawable_variable,R.drawable.area_enchanted_forest,return R.drawable.area_enchanted_forest;
+EternalBattlefield.java,37,R_drawable_variable,R.drawable.summary_eternal_battlefield,return R.drawable.summary_eternal_battlefield;
+EternalBattlefield.java,42,R_drawable_variable,R.drawable.area_eternal_battlefield,return R.drawable.area_eternal_battlefield;
+FrostbitePeaks.java,35,R_drawable_variable,R.drawable.summary_frostbite_peaks,return R.drawable.summary_frostbite_peaks;
+FrostbitePeaks.java,40,R_drawable_variable,R.drawable.area_frostbite_peaks,return R.drawable.area_frostbite_peaks;
+HiddenCityOfLarox.java,40,R_drawable_variable,R.drawable.summary_hidden_city_of_larox,return R.drawable.summary_hidden_city_of_larox;
+HiddenCityOfLarox.java,45,R_drawable_variable,R.drawable.area_hidden_city_of_larox,return R.drawable.area_hidden_city_of_larox;
+LostLands.java,37,R_drawable_variable,R.drawable.summary_lost_lands,return R.drawable.summary_lost_lands;
+LostLands.java,42,R_drawable_variable,R.drawable.area_lost_lands,return R.drawable.area_lost_lands;
+ObsidianMines.java,32,R_drawable_variable,R.drawable.summary_obsidian_mines,return R.drawable.summary_obsidian_mines;
+ObsidianMines.java,37,R_drawable_variable,R.drawable.area_obsidian_mines,return R.drawable.area_obsidian_mines;
+TheDesert.java,40,R_drawable_variable,R.drawable.summary_the_desert,return R.drawable.summary_the_desert;
+TheDesert.java,45,R_drawable_variable,R.drawable.area_the_desert,return R.drawable.area_the_desert;
+TheGoldenCity.java,40,R_drawable_variable,R.drawable.summary_the_golden_city,return R.drawable.summary_the_golden_city;
+TheGoldenCity.java,45,R_drawable_variable,R.drawable.area_the_golden_city,return R.drawable.area_the_golden_city;
+TheSouthernGrove.java,40,R_drawable_variable,R.drawable.summary_the_southern_grove,return R.drawable.summary_the_southern_grove;
+TheSouthernGrove.java,45,R_drawable_variable,R.drawable.area_the_southern_grove,return R.drawable.area_the_southern_grove;
+AncientGraveDigging.java,36,R_drawable_variable,R.drawable.summary_ancient_grave_digging,return R.drawable.summary_ancient_grave_digging;
+AncientGraveDigging.java,41,R_drawable_variable,R.drawable.area_ancient_grave_digging,return R.drawable.area_ancient_grave_digging;
+CelestialMothership.java,41,R_drawable_variable,R.drawable.summary_celestial_mothership,return R.drawable.summary_celestial_mothership;
+CelestialMothership.java,46,R_drawable_variable,R.drawable.area_celestial_mothership,return R.drawable.area_celestial_mothership;
+DivineArcheology.java,42,R_drawable_variable,R.drawable.summary_divine_archeology,return R.drawable.summary_divine_archeology;
+DivineArcheology.java,47,R_drawable_variable,R.drawable.area_divine_archeology,return R.drawable.area_divine_archeology;
+ImperialRescue.java,42,R_drawable_variable,R.drawable.summary_imperial_rescue,return R.drawable.summary_imperial_rescue;
+ImperialRescue.java,47,R_drawable_variable,R.drawable.area_imperial_rescue,return R.drawable.area_imperial_rescue;
+Kaunis.java,44,R_drawable_variable,R.drawable.summary_kaunis,return R.drawable.summary_kaunis;
+Kaunis.java,49,R_drawable_variable,R.drawable.area_kaunis,return R.drawable.area_kaunis;
+SleepingPlanet.java,44,R_drawable_variable,R.drawable.summary_sleeping_planet,return R.drawable.summary_sleeping_planet;
+SleepingPlanet.java,49,R_drawable_variable,R.drawable.area_sleeping_planet,return R.drawable.area_sleeping_planet;
+TheCultistRebels.java,45,R_drawable_variable,R.drawable.summary_the_cultist_rebels,return R.drawable.summary_the_cultist_rebels;
+TheCultistRebels.java,50,R_drawable_variable,R.drawable.area_the_cultist_rebels,return R.drawable.area_the_cultist_rebels;
+TheDireDescent.java,40,R_drawable_variable,R.drawable.summary_the_dire_descent,return R.drawable.summary_the_dire_descent;
+TheDireDescent.java,45,R_drawable_variable,R.drawable.area_the_dire_descent,return R.drawable.area_the_dire_descent;
+TheDreadfulAscent.java,40,R_drawable_variable,R.drawable.summary_the_dreadful_ascent,return R.drawable.summary_the_dreadful_ascent;
+TheDreadfulAscent.java,45,R_drawable_variable,R.drawable.area_the_dreadful_ascent,return R.drawable.area_the_dreadful_ascent;
+TheLostExpedition.java,45,R_drawable_variable,R.drawable.summary_the_lost_expedition,return R.drawable.summary_the_lost_expedition;
+TheLostExpedition.java,50,R_drawable_variable,R.drawable.area_the_lost_expedition,return R.drawable.area_the_lost_expedition;
+TheSlimePond.java,41,R_drawable_variable,R.drawable.summary_the_slime_pond,return R.drawable.summary_the_slime_pond;
+TheSlimePond.java,46,R_drawable_variable,R.drawable.area_the_slime_pond,return R.drawable.area_the_slime_pond;
+TheTower.java,40,R_drawable_variable,R.drawable.summary_the_tower,return R.drawable.summary_the_tower;
+TheTower.java,45,R_drawable_variable,R.drawable.area_the_tower,return R.drawable.area_the_tower;
+Beetle.java,10,R_drawable_variable,R.drawable.pet_beetle,this.idImage = R.drawable.pet_beetle;
+Crocodile.java,10,R_drawable_variable,R.drawable.pet_crocodile,this.idImage = R.drawable.pet_crocodile;
+Dove.java,10,R_drawable_variable,R.drawable.pet_dove,this.idImage = R.drawable.pet_dove;
+Eagle.java,10,R_drawable_variable,R.drawable.pet_eagle,this.idImage = R.drawable.pet_eagle;
+FloatingEye.java,10,R_drawable_variable,R.drawable.pet_floating_eye,this.idImage = R.drawable.pet_floating_eye;
+FloatingSeed.java,10,R_drawable_variable,R.drawable.pet_floating_seed,this.idImage = R.drawable.pet_floating_seed;
+Golem.java,10,R_drawable_variable,R.drawable.pet_golem,this.idImage = R.drawable.pet_golem;
+HolyTree.java,10,R_drawable_variable,R.drawable.pet_holy_tree,this.idImage = R.drawable.pet_holy_tree;
+Lizard.java,10,R_drawable_variable,R.drawable.pet_lizard,this.idImage = R.drawable.pet_lizard;
+Mosquito.java,10,R_drawable_variable,R.drawable.pet_mosquito,this.idImage = R.drawable.pet_mosquito;
+Owl.java,10,R_drawable_variable,R.drawable.pet_owl,this.idImage = R.drawable.pet_owl;
+Rat.java,10,R_drawable_variable,R.drawable.pet_rat,this.idImage = R.drawable.pet_rat;
+RedWolf.java,10,R_drawable_variable,R.drawable.pet_red_wolf,this.idImage = R.drawable.pet_red_wolf;
+Rockling.java,10,R_drawable_variable,R.drawable.pet_rockling,this.idImage = R.drawable.pet_rockling;
+Squirrel.java,10,R_drawable_variable,R.drawable.pet_squirrel,this.idImage = R.drawable.pet_squirrel;
+Tarantula.java,10,R_drawable_variable,R.drawable.pet_tarantula,this.idImage = R.drawable.pet_tarantula;
+TentacleTangle.java,10,R_drawable_variable,R.drawable.pet_tentacle_tangle,this.idImage = R.drawable.pet_tentacle_tangle;
+Tesseract.java,10,R_drawable_variable,R.drawable.pet_tesseract,this.idImage = R.drawable.pet_tesseract;
+ThingFromTheAbyss.java,10,R_drawable_variable,R.drawable.pet_thing_from_the_abyss,this.idImage = R.drawable.pet_thing_from_the_abyss;
+TreeFrog.java,10,R_drawable_variable,R.drawable.pet_tree_frog,this.idImage = R.drawable.pet_tree_frog;
+WalkingBush.java,10,R_drawable_variable,R.drawable.pet_walking_bush,this.idImage = R.drawable.pet_walking_bush;
+Egg.java,17,R_drawable_variable,R.drawable.consume_egg,return R.drawable.consume_egg;
+Food.java,16,R_drawable_variable,R.drawable.consume_food,return R.drawable.consume_food;
+Potion.java,28,R_drawable_variable,R.drawable.consume_potion,return R.drawable.consume_potion;
+AbherrantFabric.java,12,R_drawable_variable,R.drawable.abherrant_fabric,this.idImage = R.drawable.abherrant_fabric;
+AbioticCore.java,12,R_drawable_variable,R.drawable.abiotic_core,this.idImage = R.drawable.abiotic_core;
+AbsoluteZero.java,15,R_drawable_variable,R.drawable.absolute_zero,this.idImage = R.drawable.absolute_zero;
+AbyssalCompendium.java,12,R_drawable_variable,R.drawable.abyssal_compendium,this.idImage = R.drawable.abyssal_compendium;
+AbyssalCutlass.java,12,R_drawable_variable,R.drawable.abyssal_cutlass,this.idImage = R.drawable.abyssal_cutlass;
+AbyssalGoo.java,12,R_drawable_variable,R.drawable.abyssal_goo,this.idImage = R.drawable.abyssal_goo;
+AbyssalIngot.java,12,R_drawable_variable,R.drawable.abyssal_ingot,this.idImage = R.drawable.abyssal_ingot;
+AbyssalSeashell.java,12,R_drawable_variable,R.drawable.abyssal_seashell,this.idImage = R.drawable.abyssal_seashell;
+Aegis.java,15,R_drawable_variable,R.drawable.aegis,this.idImage = R.drawable.aegis;
+AegisMechanica.java,20,R_drawable_variable,R.drawable.aegis_mechanica,this.idImage = R.drawable.aegis_mechanica;
+AetherIgnis.java,12,R_drawable_variable,R.drawable.aether_ignis,this.idImage = R.drawable.aether_ignis;
+AlchemicPowder.java,12,R_drawable_variable,R.drawable.alchemic_powder,this.idImage = R.drawable.alchemic_powder;
+Algae.java,12,R_drawable_variable,R.drawable.algae,this.idImage = R.drawable.algae;
+AlphaWolfFang.java,12,R_drawable_variable,R.drawable.alpha_wolf_fang,this.idImage = R.drawable.alpha_wolf_fang;
+Ambrosia.java,12,R_drawable_variable,R.drawable.ambrosia,this.idImage = R.drawable.ambrosia;
+AmuletOfResurrection.java,13,R_drawable_variable,R.drawable.amulet_of_resurrection,this.idImage = R.drawable.amulet_of_resurrection;
+AmuletOfTheSwordsman.java,13,R_drawable_variable,R.drawable.amulet_of_the_swordsman,this.idImage = R.drawable.amulet_of_the_swordsman;
+AncestralBlood.java,12,R_drawable_variable,R.drawable.ancestral_blood,this.idImage = R.drawable.ancestral_blood;
+AncientArmor.java,12,R_drawable_variable,R.drawable.ancient_armor,this.idImage = R.drawable.ancient_armor;
+AncientBoots.java,12,R_drawable_variable,R.drawable.ancient_boots,this.idImage = R.drawable.ancient_boots;
+AncientEye.java,13,R_drawable_variable,R.drawable.ancient_eye,this.idImage = R.drawable.ancient_eye;
+AncientGloves.java,12,R_drawable_variable,R.drawable.ancient_gloves,this.idImage = R.drawable.ancient_gloves;
+AncientHide.java,12,R_drawable_variable,R.drawable.ancient_hide,this.idImage = R.drawable.ancient_hide;
+AncientJacket.java,12,R_drawable_variable,R.drawable.ancient_jacket,this.idImage = R.drawable.ancient_jacket;
+AncientMembrane.java,12,R_drawable_variable,R.drawable.ancient_membrane,this.idImage = R.drawable.ancient_membrane;
+AncientRobe.java,13,R_drawable_variable,R.drawable.ancient_robe,this.idImage = R.drawable.ancient_robe;
+AncientSeed.java,12,R_drawable_variable,R.drawable.ancient_seed,this.idImage = R.drawable.ancient_seed;
+AnimatedBow.java,12,R_drawable_variable,R.drawable.animated_bow,this.idImage = R.drawable.animated_bow;
+AnimatedBuckler.java,12,R_drawable_variable,R.drawable.animated_buckler,this.idImage = R.drawable.animated_buckler;
+AnimatedCuirass.java,12,R_drawable_variable,R.drawable.animated_cuirass,this.idImage = R.drawable.animated_cuirass;
+AnimatedDagger.java,12,R_drawable_variable,R.drawable.animated_dagger,this.idImage = R.drawable.animated_dagger;
+AnimatedHelm.java,12,R_drawable_variable,R.drawable.animated_helm,this.idImage = R.drawable.animated_helm;
+AnimatedIngot.java,12,R_drawable_variable,R.drawable.animated_ingot,this.idImage = R.drawable.animated_ingot;
+AnimatedScraps.java,12,R_drawable_variable,R.drawable.animated_scraps,this.idImage = R.drawable.animated_scraps;
+AnimatedStaff.java,12,R_drawable_variable,R.drawable.animated_staff,this.idImage = R.drawable.animated_staff;
+AnimatedSword.java,12,R_drawable_variable,R.drawable.animated_sword,this.idImage = R.drawable.animated_sword;
+Apple.java,12,R_drawable_variable,R.drawable.apple,this.idImage = R.drawable.apple;
+ApplePie.java,12,R_drawable_variable,R.drawable.apple_pie,this.idImage = R.drawable.apple_pie;
+ArcaneDagger.java,18,R_drawable_variable,R.drawable.arcane_dagger,this.idImage = R.drawable.arcane_dagger;
+ArchaicAmulet.java,13,R_drawable_variable,R.drawable.archaic_amulet,this.idImage = R.drawable.archaic_amulet;
+ArchmageHat.java,13,R_drawable_variable,R.drawable.archmage_hat,this.idImage = R.drawable.archmage_hat;
+ArmorOfTheDryad.java,15,R_drawable_variable,R.drawable.armor_of_the_dryad,this.idImage = R.drawable.armor_of_the_dryad;
+ArmorOfTheUndying.java,15,R_drawable_variable,R.drawable.armor_of_the_undying,this.idImage = R.drawable.armor_of_the_undying;
+AscendedBow.java,15,R_drawable_variable,R.drawable.ascended_bow,this.idImage = R.drawable.ascended_bow;
+AstralGoo.java,12,R_drawable_variable,R.drawable.astral_goo,this.idImage = R.drawable.astral_goo;
+AvianEgg.java,13,R_drawable_variable,R.drawable.egg_avian,this.idImage = R.drawable.egg_avian;
+Avocado.java,12,R_drawable_variable,R.drawable.avocado,this.idImage = R.drawable.avocado;
+BagOfChokingPowder.java,12,R_drawable_variable,R.drawable.bag_of_choking_powder,this.idImage = R.drawable.bag_of_choking_powder;
+Banana.java,12,R_drawable_variable,R.drawable.banana,this.idImage = R.drawable.banana;
+BansheeBow.java,12,R_drawable_variable,R.drawable.banshee_bow,this.idImage = R.drawable.banshee_bow;
+BansheeClaw.java,12,R_drawable_variable,R.drawable.banshee_claw,this.idImage = R.drawable.banshee_claw;
+BansheeDagger.java,12,R_drawable_variable,R.drawable.banshee_dagger,this.idImage = R.drawable.banshee_dagger;
+BansheeGloves.java,12,R_drawable_variable,R.drawable.banshee_gloves,this.idImage = R.drawable.banshee_gloves;
+BansheeHorn.java,12,R_drawable_variable,R.drawable.banshee_horn,this.idImage = R.drawable.banshee_horn;
+BansheeJacket.java,12,R_drawable_variable,R.drawable.banshee_jacket,this.idImage = R.drawable.banshee_jacket;
+BansheeScale.java,12,R_drawable_variable,R.drawable.banshee_scale,this.idImage = R.drawable.banshee_scale;
+BansheeScream.java,13,R_drawable_variable,R.drawable.banshee_scream,this.idImage = R.drawable.banshee_scream;
+BatTooth.java,12,R_drawable_variable,R.drawable.bat_tooth,this.idImage = R.drawable.bat_tooth;
+BatWing.java,12,R_drawable_variable,R.drawable.bat_wing,this.idImage = R.drawable.bat_wing;
+BeastmasterJacket.java,13,R_drawable_variable,R.drawable.beastmaster_jacket,this.idImage = R.drawable.beastmaster_jacket;
+BeastPelt.java,12,R_drawable_variable,R.drawable.beast_pelt,this.idImage = R.drawable.beast_pelt;
+BeltJacket.java,12,R_drawable_variable,R.drawable.belt_jacket,this.idImage = R.drawable.belt_jacket;
+BlackHide.java,12,R_drawable_variable,R.drawable.black_hide,this.idImage = R.drawable.black_hide;
+BlackIronArmor.java,12,R_drawable_variable,R.drawable.black_iron_armor,this.idImage = R.drawable.black_iron_armor;
+BlackIronCutlass.java,12,R_drawable_variable,R.drawable.black_iron_cutlass,this.idImage = R.drawable.black_iron_cutlass;
+BlackIronDagger.java,12,R_drawable_variable,R.drawable.black_iron_dagger,this.idImage = R.drawable.black_iron_dagger;
+BlackIronGauntlets.java,12,R_drawable_variable,R.drawable.black_iron_gauntlets,this.idImage = R.drawable.black_iron_gauntlets;
+BlackIronHelm.java,12,R_drawable_variable,R.drawable.black_iron_helm,this.idImage = R.drawable.black_iron_helm;
+BlackIronIngot.java,12,R_drawable_variable,R.drawable.black_iron_ingot,this.idImage = R.drawable.black_iron_ingot;
+BlackIronScepter.java,12,R_drawable_variable,R.drawable.black_iron_scepter,this.idImage = R.drawable.black_iron_scepter;
+BlackIronScraps.java,12,R_drawable_variable,R.drawable.black_iron_scraps,this.idImage = R.drawable.black_iron_scraps;
+BlackOoze.java,12,R_drawable_variable,R.drawable.black_ooze,this.idImage = R.drawable.black_ooze;
+BleakBoots.java,13,R_drawable_variable,R.drawable.bleak_boots,this.idImage = R.drawable.bleak_boots;
+BleakGloves.java,13,R_drawable_variable,R.drawable.bleak_gloves,this.idImage = R.drawable.bleak_gloves;
+Blueberry.java,12,R_drawable_variable,R.drawable.blueberry,this.idImage = R.drawable.blueberry;
+BlueberryPancake.java,12,R_drawable_variable,R.drawable.blueberry_pancake,this.idImage = R.drawable.blueberry_pancake;
+BlueberrySmoothie.java,12,R_drawable_variable,R.drawable.blueberry_smoothie,this.idImage = R.drawable.blueberry_smoothie;
+BoarTusk.java,12,R_drawable_variable,R.drawable.boar_tusk,this.idImage = R.drawable.boar_tusk;
+BoneFragment.java,12,R_drawable_variable,R.drawable.bone_fragment,this.idImage = R.drawable.bone_fragment;
+BottledSandSpirit.java,12,R_drawable_variable,R.drawable.bottled_sand_spirit,this.idImage = R.drawable.bottled_sand_spirit;
+Bread.java,12,R_drawable_variable,R.drawable.bread,this.idImage = R.drawable.bread;
+BreathtakingRobe.java,15,R_drawable_variable,R.drawable.breathtaking_robe,this.idImage = R.drawable.breathtaking_robe;
+BurningCenser.java,13,R_drawable_variable,R.drawable.burning_censer,this.idImage = R.drawable.burning_censer;
+BurningEffigy.java,13,R_drawable_variable,R.drawable.burning_effigy,this.idImage = R.drawable.burning_effigy;
+Butter.java,12,R_drawable_variable,R.drawable.butter,this.idImage = R.drawable.butter;
+Cane.java,12,R_drawable_variable,R.drawable.cane,this.idImage = R.drawable.cane;
+CelestialArmor.java,12,R_drawable_variable,R.drawable.celestial_armor,this.idImage = R.drawable.celestial_armor;
+CelestialHelmet.java,12,R_drawable_variable,R.drawable.celestial_helmet,this.idImage = R.drawable.celestial_helmet;
+CelestialMercy.java,13,R_drawable_variable,R.drawable.celestials_mercy,this.idImage = R.drawable.celestials_mercy;
+CelestialMetal.java,12,R_drawable_variable,R.drawable.celestial_metal,this.idImage = R.drawable.celestial_metal;
+CelestialScraps.java,12,R_drawable_variable,R.drawable.celestial_scraps,this.idImage = R.drawable.celestial_scraps;
+CelestialShield.java,12,R_drawable_variable,R.drawable.celestial_shield,this.idImage = R.drawable.celestial_shield;
+CelestialSword.java,12,R_drawable_variable,R.drawable.celestial_sword,this.idImage = R.drawable.celestial_sword;
+CeremonialCake.java,12,R_drawable_variable,R.drawable.ceremonial_cake,this.idImage = R.drawable.ceremonial_cake;
+CeremonialDagger.java,18,R_drawable_variable,R.drawable.ceremonial_dagger,this.idImage = R.drawable.ceremonial_dagger;
+ChainLink.java,12,R_drawable_variable,R.drawable.chain_link,this.idImage = R.drawable.chain_link;
+ChainOfRedemption.java,12,R_drawable_variable,R.drawable.chain_of_redemption,this.idImage = R.drawable.chain_of_redemption;
+ChampionArmor.java,14,R_drawable_variable,R.drawable.champion_armor,this.idImage = R.drawable.champion_armor;
+CharredHeart.java,12,R_drawable_variable,R.drawable.charred_heart,this.idImage = R.drawable.charred_heart;
+Cheese.java,12,R_drawable_variable,R.drawable.cheese,this.idImage = R.drawable.cheese;
+Cheesecake.java,12,R_drawable_variable,R.drawable.cheesecake,this.idImage = R.drawable.cheesecake;
+CheeseRisotto.java,12,R_drawable_variable,R.drawable.cheese_risotto,this.idImage = R.drawable.cheese_risotto;
+ChiefScientistCoat.java,13,R_drawable_variable,R.drawable.chief_scientist_coat,this.idImage = R.drawable.chief_scientist_coat;
+Chocolate.java,12,R_drawable_variable,R.drawable.chocolate,this.idImage = R.drawable.chocolate;
+CleansingPotion.java,12,R_drawable_variable,R.drawable.cleansing_potion,this.idImage = R.drawable.cleansing_potion;
+CloakOfRedemption.java,14,R_drawable_variable,R.drawable.cloak_of_redemption,this.idImage = R.drawable.cloak_of_redemption;
+Cloth.java,12,R_drawable_variable,R.drawable.cloth,this.idImage = R.drawable.cloth;
+ClothRobe.java,12,R_drawable_variable,R.drawable.cloth_robe,this.idImage = R.drawable.cloth_robe;
+CobwebBundle.java,12,R_drawable_variable,R.drawable.cobweb_bundle,this.idImage = R.drawable.cobweb_bundle;
+Coffee.java,12,R_drawable_variable,R.drawable.coffee,this.idImage = R.drawable.coffee;
+CoinPurse.java,12,R_drawable_variable,R.drawable.coin_purse,this.idImage = R.drawable.coin_purse;
+ColossalSword.java,14,R_drawable_variable,R.drawable.colossal_sword,this.idImage = R.drawable.colossal_sword;
+ConstructEgg.java,13,R_drawable_variable,R.drawable.egg_construct,this.idImage = R.drawable.egg_construct;
+ContainmentOrb.java,12,R_drawable_variable,R.drawable.containment_orb,this.idImage = R.drawable.containment_orb;
+Cookie.java,12,R_drawable_variable,R.drawable.cookie,this.idImage = R.drawable.cookie;
+CopperArmor.java,13,R_drawable_variable,R.drawable.copper_armor,this.idImage = R.drawable.copper_armor;
+CopperHelmet.java,12,R_drawable_variable,R.drawable.copper_helmet,this.idImage = R.drawable.copper_helmet;
+CopperIngot.java,12,R_drawable_variable,R.drawable.copper_ingot,this.idImage = R.drawable.copper_ingot;
+CopperOre.java,12,R_drawable_variable,R.drawable.copper_ore,this.idImage = R.drawable.copper_ore;
+CopperSword.java,12,R_drawable_variable,R.drawable.copper_sword,this.idImage = R.drawable.copper_sword;
+CorruptedDagger.java,12,R_drawable_variable,R.drawable.corrupted_dagger,this.idImage = R.drawable.corrupted_dagger;
+CorruptedShield.java,12,R_drawable_variable,R.drawable.corrupted_shield,this.idImage = R.drawable.corrupted_shield;
+CorruptedStaff.java,12,R_drawable_variable,R.drawable.corrupted_staff,this.idImage = R.drawable.corrupted_staff;
+CorsairLeather.java,12,R_drawable_variable,R.drawable.corsair_leather,this.idImage = R.drawable.corsair_leather;
+CosmicViolin.java,13,R_drawable_variable,R.drawable.cosmic_violin,this.idImage = R.drawable.cosmic_violin;
+CottontailFur.java,12,R_drawable_variable,R.drawable.cottontail_fur,this.idImage = R.drawable.cottontail_fur;
+CottontailJacket.java,13,R_drawable_variable,R.drawable.cottontail_jacket,this.idImage = R.drawable.cottontail_jacket;
+CrimsonBrew.java,12,R_drawable_variable,R.drawable.crimson_brew,this.idImage = R.drawable.crimson_brew;
+CrimsonLeech.java,13,R_drawable_variable,R.drawable.crimson_leech,this.idImage = R.drawable.crimson_leech;
+CrusaderInsigna.java,12,R_drawable_variable,R.drawable.crusader_insigna,this.idImage = R.drawable.crusader_insigna;
+CrushingDepth.java,15,R_drawable_variable,R.drawable.crushing_depth,this.idImage = R.drawable.crushing_depth;
+CrystalDagger.java,13,R_drawable_variable,R.drawable.crystal_dagger,this.idImage = R.drawable.crystal_dagger;
+CrystalStaff.java,13,R_drawable_variable,R.drawable.crystal_staff,this.idImage = R.drawable.crystal_staff;
+CunningDemise.java,15,R_drawable_variable,R.drawable.cunning_demise,this.idImage = R.drawable.cunning_demise;
+CunningDownfall.java,15,R_drawable_variable,R.drawable.cunning_downfall,this.idImage = R.drawable.cunning_downfall;
+CursedBow.java,14,R_drawable_variable,R.drawable.cursed_bow,this.idImage = R.drawable.cursed_bow;
+CursedClaws.java,14,R_drawable_variable,R.drawable.cursed_claws,this.idImage = R.drawable.cursed_claws;
+CursedHelm.java,13,R_drawable_variable,R.drawable.cursed_helm,this.idImage = R.drawable.cursed_helm;
+CursedJacket.java,13,R_drawable_variable,R.drawable.cursed_jacket,this.idImage = R.drawable.cursed_jacket;
+CursedScepter.java,13,R_drawable_variable,R.drawable.cursed_scepter,this.idImage = R.drawable.cursed_scepter;
+CursedSilver.java,12,R_drawable_variable,R.drawable.cursed_silver,this.idImage = R.drawable.cursed_silver;
+DeathRayScepter.java,13,R_drawable_variable,R.drawable.death_ray_scepter,this.idImage = R.drawable.death_ray_scepter;
+DecomposedLimb.java,12,R_drawable_variable,R.drawable.decomposed_limb,this.idImage = R.drawable.decomposed_limb;
+DeepSeaJacket.java,13,R_drawable_variable,R.drawable.deep_sea_jacket,this.idImage = R.drawable.deep_sea_jacket;
+DeepSeaRobe.java,13,R_drawable_variable,R.drawable.deep_sea_robe,this.idImage = R.drawable.deep_sea_robe;
+DeepSeaVelvet.java,12,R_drawable_variable,R.drawable.deep_sea_velvet,this.idImage = R.drawable.deep_sea_velvet;
+DeviledEggs.java,12,R_drawable_variable,R.drawable.deviled_eggs,this.idImage = R.drawable.deviled_eggs;
+Diamond.java,13,R_drawable_variable,R.drawable.diamond,this.idImage = R.drawable.diamond;
+DiamondAmulet.java,13,R_drawable_variable,R.drawable.diamond_amulet,this.idImage = R.drawable.diamond_amulet;
+DinoRibs.java,12,R_drawable_variable,R.drawable.dino_ribs,this.idImage = R.drawable.dino_ribs;
+DivineEmbryo.java,13,R_drawable_variable,R.drawable.divine_embryo,this.idImage = R.drawable.divine_embryo;
+DivineLarvae.java,13,R_drawable_variable,R.drawable.divine_larvae,this.idImage = R.drawable.divine_larvae;
+DivineZygote.java,14,R_drawable_variable,R.drawable.divine_zygote,this.idImage = R.drawable.divine_zygote;
+DjinnTonic.java,13,R_drawable_variable,R.drawable.djinn_tonic,this.idImage = R.drawable.djinn_tonic;
+DreadfulMorningstar.java,15,R_drawable_variable,R.drawable.dreadful_morningstar,this.idImage = R.drawable.dreadful_morningstar;
+Dreamcatcher.java,13,R_drawable_variable,R.drawable.dreamcatcher,this.idImage = R.drawable.dreamcatcher;
+DreamwroughtArmor.java,12,R_drawable_variable,R.drawable.dreamwrought_armor,this.idImage = R.drawable.dreamwrought_armor;
+DreamwroughtBoots.java,12,R_drawable_variable,R.drawable.dreamwrought_boots,this.idImage = R.drawable.dreamwrought_boots;
+DreamwroughtBow.java,12,R_drawable_variable,R.drawable.dreamwrought_bow,this.idImage = R.drawable.dreamwrought_bow;
+DreamwroughtGloves.java,12,R_drawable_variable,R.drawable.dreamwrought_gloves,this.idImage = R.drawable.dreamwrought_gloves;
+DreamwroughtHide.java,12,R_drawable_variable,R.drawable.dreamwrought_hide,this.idImage = R.drawable.dreamwrought_hide;
+DreamwroughtJacket.java,12,R_drawable_variable,R.drawable.dreamwrought_jacket,this.idImage = R.drawable.dreamwrought_jacket;
+DreamwroughtLarva.java,12,R_drawable_variable,R.drawable.dreamwrought_larva,this.idImage = R.drawable.dreamwrought_larva;
+DreamwroughtMane.java,12,R_drawable_variable,R.drawable.dreamwrought_mane,this.idImage = R.drawable.dreamwrought_mane;
+DreamwroughtRobe.java,12,R_drawable_variable,R.drawable.dreamwrought_robe,this.idImage = R.drawable.dreamwrought_robe;
+DreamwroughtSilk.java,12,R_drawable_variable,R.drawable.dreamwrought_silk,this.idImage = R.drawable.dreamwrought_silk;
+DreamwroughtStaff.java,12,R_drawable_variable,R.drawable.dreamwrought_staff,this.idImage = R.drawable.dreamwrought_staff;
+DreamwroughtSteel.java,12,R_drawable_variable,R.drawable.dreamwrought_steel,this.idImage = R.drawable.dreamwrought_steel;
+DryadsBlessing.java,13,R_drawable_variable,R.drawable.dryads_blessing,this.idImage = R.drawable.dryads_blessing;
+DryadsCurse.java,18,R_drawable_variable,R.drawable.dryads_curse,this.idImage = R.drawable.dryads_curse;
+DuelistArmor.java,13,R_drawable_variable,R.drawable.duelist_armor,this.idImage = R.drawable.duelist_armor;
+Egg.java,12,R_drawable_variable,R.drawable.egg,this.idImage = R.drawable.egg;
+ElasticBoots.java,12,R_drawable_variable,R.drawable.elastic_boots,this.idImage = R.drawable.elastic_boots;
+ElasticMembrane.java,12,R_drawable_variable,R.drawable.elastic_membrane,this.idImage = R.drawable.elastic_membrane;
+ElasticRobe.java,12,R_drawable_variable,R.drawable.elastic_robe,this.idImage = R.drawable.elastic_robe;
+EldritchMitre.java,13,R_drawable_variable,R.drawable.eldritch_mitre,this.idImage = R.drawable.eldritch_mitre;
+EldritchSeal.java,12,R_drawable_variable,R.drawable.eldritch_seal,this.idImage = R.drawable.eldritch_seal;
+EldritchShred.java,12,R_drawable_variable,R.drawable.eldritch_shred,this.idImage = R.drawable.eldritch_shred;
+EldritchTendril.java,12,R_drawable_variable,R.drawable.eldritch_tendril,this.idImage = R.drawable.eldritch_tendril;
+ElectricCatalyst.java,12,R_drawable_variable,R.drawable.electric_catalyst,this.idImage = R.drawable.electric_catalyst;
+ElixirOfAffinity.java,12,R_drawable_variable,R.drawable.elixir_of_affinity,this.idImage = R.drawable.elixir_of_affinity;
+ElixirOfLearning.java,12,R_drawable_variable,R.drawable.elixir_of_learning,this.idImage = R.drawable.elixir_of_learning;
+ElongatedBone.java,12,R_drawable_variable,R.drawable.elongated_bone,this.idImage = R.drawable.elongated_bone;
+ElysianWood.java,12,R_drawable_variable,R.drawable.elysian_wood,this.idImage = R.drawable.elysian_wood;
+Emerald.java,12,R_drawable_variable,R.drawable.emerald,this.idImage = R.drawable.emerald;
+EmeraldRing.java,13,R_drawable_variable,R.drawable.emerald_ring,this.idImage = R.drawable.emerald_ring;
+EnchantedStaff.java,12,R_drawable_variable,R.drawable.enchanted_staff,this.idImage = R.drawable.enchanted_staff;
+EnlightedServant.java,14,R_drawable_variable,R.drawable.enlighted_servant,this.idImage = R.drawable.enlighted_servant;
+EsotericEgg.java,13,R_drawable_variable,R.drawable.egg_esoteric,this.idImage = R.drawable.egg_esoteric;
+EssenceOfCorruption.java,12,R_drawable_variable,R.drawable.essence_of_corruption,this.idImage = R.drawable.essence_of_corruption;
+EternalHunger.java,13,R_drawable_variable,R.drawable.eternal_hunger,this.idImage = R.drawable.eternal_hunger;
+Evo23Vial.java,12,R_drawable_variable,R.drawable.evo23_vial,this.idImage = R.drawable.evo23_vial;
+Evo23Vial.java,20,R_drawable_variable,R.drawable.consume_evo23_vial,return R.drawable.consume_evo23_vial;
+Evo23Vial2.java,12,R_drawable_variable,R.drawable.evo23_vial,this.idImage = R.drawable.evo23_vial;
+Evo23Vial2.java,19,R_drawable_variable,R.drawable.consume_evo23_vial,return R.drawable.consume_evo23_vial;
+ExaltedPowder.java,13,R_drawable_variable,R.drawable.exalted_powder,this.idImage = R.drawable.exalted_powder;
+ExoticBoots.java,12,R_drawable_variable,R.drawable.exotic_boots,this.idImage = R.drawable.exotic_boots;
+ExoticFruitSalad.java,12,R_drawable_variable,R.drawable.exotic_fruit_salad,this.idImage = R.drawable.exotic_fruit_salad;
+ExoticRobe.java,12,R_drawable_variable,R.drawable.exotic_robe,this.idImage = R.drawable.exotic_robe;
+ExoticVelvet.java,12,R_drawable_variable,R.drawable.exotic_velvet,this.idImage = R.drawable.exotic_velvet;
+EyeOfTheAbyss.java,12,R_drawable_variable,R.drawable.eye_of_the_abyss,this.idImage = R.drawable.eye_of_the_abyss;
+EyeOfUr.java,13,R_drawable_variable,R.drawable.eye_of_ur,this.idImage = R.drawable.eye_of_ur;
+EyesOfTheSwordsman.java,13,R_drawable_variable,R.drawable.eyes_of_the_swordsman,this.idImage = R.drawable.eyes_of_the_swordsman;
+FangDagger.java,12,R_drawable_variable,R.drawable.fang_dagger,this.idImage = R.drawable.fang_dagger;
+Feather.java,12,R_drawable_variable,R.drawable.feather,this.idImage = R.drawable.feather;
+FeatherRobe.java,12,R_drawable_variable,R.drawable.feather_robe,this.idImage = R.drawable.feather_robe;
+FireCatalyst.java,12,R_drawable_variable,R.drawable.fire_catalyst,this.idImage = R.drawable.fire_catalyst;
+FireproofOil.java,12,R_drawable_variable,R.drawable.fireproof_oil,this.idImage = R.drawable.fireproof_oil;
+FlakeOfInfinity.java,12,R_drawable_variable,R.drawable.flake_of_infinity,this.idImage = R.drawable.flake_of_infinity;
+FleetfootArmor.java,13,R_drawable_variable,R.drawable.fleetfoot_armor,this.idImage = R.drawable.fleetfoot_armor;
+FleetfootBoots.java,13,R_drawable_variable,R.drawable.fleetfoot_boots,this.idImage = R.drawable.fleetfoot_boots;
+FleetfootFabric.java,12,R_drawable_variable,R.drawable.fleetfoot_fabric,this.idImage = R.drawable.fleetfoot_fabric;
+FleetfootGloves.java,13,R_drawable_variable,R.drawable.fleetfoot_gloves,this.idImage = R.drawable.fleetfoot_gloves;
+FleetfootJacket.java,13,R_drawable_variable,R.drawable.fleetfoot_jacket,this.idImage = R.drawable.fleetfoot_jacket;
+FleetfootRobe.java,13,R_drawable_variable,R.drawable.fleetfoot_robe,this.idImage = R.drawable.fleetfoot_robe;
+Flute.java,13,R_drawable_variable,R.drawable.flute,this.idImage = R.drawable.flute;
+FluxLimiter.java,12,R_drawable_variable,R.drawable.flux_limiter,this.idImage = R.drawable.flux_limiter;
+FlyingReaper.java,18,R_drawable_variable,R.drawable.flying_reaper,this.idImage = R.drawable.flying_reaper;
+FocusedScepter.java,13,R_drawable_variable,R.drawable.focused_scepter,this.idImage = R.drawable.focused_scepter;
+FreshSalmon.java,12,R_drawable_variable,R.drawable.fresh_salmon,this.idImage = R.drawable.fresh_salmon;
+FreshTuna.java,12,R_drawable_variable,R.drawable.fresh_tuna,this.idImage = R.drawable.fresh_tuna;
+FrostCrystal.java,12,R_drawable_variable,R.drawable.frost_crystal,this.idImage = R.drawable.frost_crystal;
+FrostmetalArmor.java,13,R_drawable_variable,R.drawable.frostmetal_armor,this.idImage = R.drawable.frostmetal_armor;
+FrostmetalDagger.java,12,R_drawable_variable,R.drawable.frostmetal_dagger,this.idImage = R.drawable.frostmetal_dagger;
+FrostmetalIngot.java,12,R_drawable_variable,R.drawable.frostmetal_ingot,this.idImage = R.drawable.frostmetal_ingot;
+FrostmetalOre.java,12,R_drawable_variable,R.drawable.frostmetal_ore,this.idImage = R.drawable.frostmetal_ore;
+FrostmetalSword.java,12,R_drawable_variable,R.drawable.frostmetal_sword,this.idImage = R.drawable.frostmetal_sword;
+FrostNucleus.java,12,R_drawable_variable,R.drawable.frost_nucleus,this.idImage = R.drawable.frost_nucleus;
+FrozenBreathBroth.java,12,R_drawable_variable,R.drawable.frozen_breath_broth,this.idImage = R.drawable.frozen_breath_broth;
+FrozenEgg.java,12,R_drawable_variable,R.drawable.frozen_egg,this.idImage = R.drawable.frozen_egg;
+FrozenEggPendant.java,13,R_drawable_variable,R.drawable.frozen_egg_pendant,this.idImage = R.drawable.frozen_egg_pendant;
+FrozenEmbrace.java,15,R_drawable_variable,R.drawable.frozen_embrace,this.idImage = R.drawable.frozen_embrace;
+FrozenScale.java,12,R_drawable_variable,R.drawable.frozen_scale,this.idImage = R.drawable.frozen_scale;
+FruitSalad.java,12,R_drawable_variable,R.drawable.fruit_salad,this.idImage = R.drawable.fruit_salad;
+FullmoonDagger.java,13,R_drawable_variable,R.drawable.fullmoon_dagger,this.idImage = R.drawable.fullmoon_dagger;
+GemOfProtection.java,12,R_drawable_variable,R.drawable.gem_of_protection,this.idImage = R.drawable.gem_of_protection;
+Geode.java,12,R_drawable_variable,R.drawable.geode,this.idImage = R.drawable.geode;
+Geode.java,19,R_drawable_variable,R.drawable.consume_geode,return R.drawable.consume_geode;
+GhastlyCuirass.java,13,R_drawable_variable,R.drawable.ghastly_cuirass,this.idImage = R.drawable.ghastly_cuirass;
+GhastlyScimitar.java,13,R_drawable_variable,R.drawable.ghastly_scimitar,this.idImage = R.drawable.ghastly_scimitar;
+GhastlyShield.java,13,R_drawable_variable,R.drawable.ghastly_shield,this.idImage = R.drawable.ghastly_shield;
+GhostRabbitCloak.java,13,R_drawable_variable,R.drawable.ghost_rabbit_cloak,this.idImage = R.drawable.ghost_rabbit_cloak;
+GhostwoodBoard.java,12,R_drawable_variable,R.drawable.ghostwood_board,this.idImage = R.drawable.ghostwood_board;
+GhostwoodBow.java,12,R_drawable_variable,R.drawable.ghostwood_bow,this.idImage = R.drawable.ghostwood_bow;
+GhostwoodShield.java,12,R_drawable_variable,R.drawable.ghostwood_shield,this.idImage = R.drawable.ghostwood_shield;
+GhostwoodStump.java,12,R_drawable_variable,R.drawable.ghostwood_stump,this.idImage = R.drawable.ghostwood_stump;
+GiantMothWing.java,12,R_drawable_variable,R.drawable.giant_moth_wing,this.idImage = R.drawable.giant_moth_wing;
+GiantShellFragment.java,12,R_drawable_variable,R.drawable.giant_shell_fragment,this.idImage = R.drawable.giant_shell_fragment;
+GiftOfLight.java,12,R_drawable_variable,R.drawable.gift_of_light,this.idImage = R.drawable.gift_of_light;
+Glass.java,12,R_drawable_variable,R.drawable.glass,this.idImage = R.drawable.glass;
+GlassKnife.java,12,R_drawable_variable,R.drawable.glass_knife,this.idImage = R.drawable.glass_knife;
+GlazedDonut.java,12,R_drawable_variable,R.drawable.glazed_donut,this.idImage = R.drawable.glazed_donut;
+GoldenArmor.java,13,R_drawable_variable,R.drawable.golden_armor,this.idImage = R.drawable.golden_armor;
+GoldenBoots.java,12,R_drawable_variable,R.drawable.golden_boots,this.idImage = R.drawable.golden_boots;
+GoldenGauntlets.java,12,R_drawable_variable,R.drawable.golden_gauntlets,this.idImage = R.drawable.golden_gauntlets;
+GoldenHelm.java,12,R_drawable_variable,R.drawable.golden_helm,this.idImage = R.drawable.golden_helm;
+GoldenShield.java,12,R_drawable_variable,R.drawable.golden_shield,this.idImage = R.drawable.golden_shield;
+GoldenSword.java,12,R_drawable_variable,R.drawable.golden_sword,this.idImage = R.drawable.golden_sword;
+GoldIngot.java,12,R_drawable_variable,R.drawable.gold_ingot,this.idImage = R.drawable.gold_ingot;
+GoldScraps.java,12,R_drawable_variable,R.drawable.gold_scraps,this.idImage = R.drawable.gold_scraps;
+GourmetIcecream.java,12,R_drawable_variable,R.drawable.gourmet_icecream,this.idImage = R.drawable.gourmet_icecream;
+Grains.java,12,R_drawable_variable,R.drawable.grains,this.idImage = R.drawable.grains;
+GreenSlime.java,12,R_drawable_variable,R.drawable.green_slime,this.idImage = R.drawable.green_slime;
+GrilledCheese.java,12,R_drawable_variable,R.drawable.grilled_cheese,this.idImage = R.drawable.grilled_cheese;
+HeartOfDarkness.java,12,R_drawable_variable,R.drawable.heart_of_darkness,this.idImage = R.drawable.heart_of_darkness;
+HeavenAndHell.java,12,R_drawable_variable,R.drawable.heaven_and_hell,this.idImage = R.drawable.heaven_and_hell;
+HellishRations.java,13,R_drawable_variable,R.drawable.hellish_ration,this.idImage = R.drawable.hellish_ration;
+HolyWater.java,12,R_drawable_variable,R.drawable.holy_water,this.idImage = R.drawable.holy_water;
+IceCage.java,15,R_drawable_variable,R.drawable.ice_cage,this.idImage = R.drawable.ice_cage;
+IceCatalyst.java,12,R_drawable_variable,R.drawable.ice_catalyst,this.idImage = R.drawable.ice_catalyst;
+IceFiber.java,12,R_drawable_variable,R.drawable.ice_fiber,this.idImage = R.drawable.ice_fiber;
+Icicle.java,15,R_drawable_variable,R.drawable.icicle,this.idImage = R.drawable.icicle;
+IgnitionOrb.java,13,R_drawable_variable,R.drawable.ignition_orb,this.idImage = R.drawable.ignition_orb;
+ImperialShield.java,12,R_drawable_variable,R.drawable.imperial_shield,this.idImage = R.drawable.imperial_shield;
+ImperialStaff.java,12,R_drawable_variable,R.drawable.imperial_staff,this.idImage = R.drawable.imperial_staff;
+InfectedBlood.java,12,R_drawable_variable,R.drawable.infected_blood,this.idImage = R.drawable.infected_blood;
+InfernalBow.java,14,R_drawable_variable,R.drawable.infernal_bow,this.idImage = R.drawable.infernal_bow;
+InfernalChakram.java,18,R_drawable_variable,R.drawable.infernal_chakram,this.idImage = R.drawable.infernal_chakram;
+Infernite.java,12,R_drawable_variable,R.drawable.infernite,this.idImage = R.drawable.infernite;
+InfiniteDespair.java,13,R_drawable_variable,R.drawable.infinite_despair,this.idImage = R.drawable.infinite_despair;
+InfinityHat.java,13,R_drawable_variable,R.drawable.infinity_hat,this.idImage = R.drawable.infinity_hat;
+InfusedNecklace.java,13,R_drawable_variable,R.drawable.infused_necklace,this.idImage = R.drawable.infused_necklace;
+InfusionOfWisdom.java,12,R_drawable_variable,R.drawable.infusion_of_wisdom,this.idImage = R.drawable.infusion_of_wisdom;
+InsectEgg.java,13,R_drawable_variable,R.drawable.egg_insect,this.idImage = R.drawable.egg_insect;
+Intercession.java,12,R_drawable_variable,R.drawable.intercession,this.idImage = R.drawable.intercession;
+Intercession.java,19,R_drawable_variable,R.drawable.consume_intercession,return R.drawable.consume_intercession;
+InvisibleServant.java,14,R_drawable_variable,R.drawable.invisible_servant,this.idImage = R.drawable.invisible_servant;
+IronChainmail.java,12,R_drawable_variable,R.drawable.iron_chainmail,this.idImage = R.drawable.iron_chainmail;
+IronHelm.java,12,R_drawable_variable,R.drawable.iron_helm,this.idImage = R.drawable.iron_helm;
+IronIngot.java,12,R_drawable_variable,R.drawable.iron_ingot,this.idImage = R.drawable.iron_ingot;
+Ivory.java,12,R_drawable_variable,R.drawable.ivory,this.idImage = R.drawable.ivory;
+IvoryJacket.java,13,R_drawable_variable,R.drawable.ivory_jacket,this.idImage = R.drawable.ivory_jacket;
+JeweledCrown.java,13,R_drawable_variable,R.drawable.jeweled_crown,this.idImage = R.drawable.jeweled_crown;
+KabelianArmor.java,13,R_drawable_variable,R.drawable.kabelian_armor,this.idImage = R.drawable.kabelian_armor;
+KabelianClaws.java,14,R_drawable_variable,R.drawable.kabelian_claws,this.idImage = R.drawable.kabelian_claws;
+KabelianMetal.java,12,R_drawable_variable,R.drawable.kabelian_metal,this.idImage = R.drawable.kabelian_metal;
+KaunianFabric.java,12,R_drawable_variable,R.drawable.kaunian_fabric,this.idImage = R.drawable.kaunian_fabric;
+KaunianRobe.java,12,R_drawable_variable,R.drawable.kaunian_robe,this.idImage = R.drawable.kaunian_robe;
+Kindlequartz.java,12,R_drawable_variable,R.drawable.kindlequartz,this.idImage = R.drawable.kindlequartz;
+LargeIris.java,12,R_drawable_variable,R.drawable.large_iris,this.idImage = R.drawable.large_iris;
+LaroxianBoots.java,12,R_drawable_variable,R.drawable.laroxian_boots,this.idImage = R.drawable.laroxian_boots;
+LaroxianFabric.java,12,R_drawable_variable,R.drawable.laroxian_fabric,this.idImage = R.drawable.laroxian_fabric;
+LaroxianGloves.java,12,R_drawable_variable,R.drawable.laroxian_gloves,this.idImage = R.drawable.laroxian_gloves;
+LaroxianRobe.java,12,R_drawable_variable,R.drawable.laroxian_robe,this.idImage = R.drawable.laroxian_robe;
+Leather.java,13,R_drawable_variable,R.drawable.leather,this.idImage = R.drawable.leather;
+LeatherBoots.java,12,R_drawable_variable,R.drawable.leather_boots,this.idImage = R.drawable.leather_boots;
+LeatherGloves.java,12,R_drawable_variable,R.drawable.leather_gloves,this.idImage = R.drawable.leather_gloves;
+LeatherJacket.java,12,R_drawable_variable,R.drawable.leather_jacket,this.idImage = R.drawable.leather_jacket;
+Leek.java,12,R_drawable_variable,R.drawable.leek,this.idImage = R.drawable.leek;
+LivingSap.java,12,R_drawable_variable,R.drawable.living_sap,this.idImage = R.drawable.living_sap;
+LivingScimitar.java,13,R_drawable_variable,R.drawable.living_scimitar,this.idImage = R.drawable.living_scimitar;
+LivingVine.java,12,R_drawable_variable,R.drawable.living_vine,this.idImage = R.drawable.living_vine;
+LivingWhip.java,20,R_drawable_variable,R.drawable.living_whip,this.idImage = R.drawable.living_whip;
+LongSerpentFang.java,12,R_drawable_variable,R.drawable.long_serpent_fang,this.idImage = R.drawable.long_serpent_fang;
+MascarponeCheese.java,12,R_drawable_variable,R.drawable.mascarpone_cheese,this.idImage = R.drawable.mascarpone_cheese;
+Maxxiburger.java,12,R_drawable_variable,R.drawable.maxxiburger,this.idImage = R.drawable.maxxiburger;
+MeatChop.java,12,R_drawable_variable,R.drawable.meat_chop,this.idImage = R.drawable.meat_chop;
+MeatPie.java,13,R_drawable_variable,R.drawable.meat_pie,this.idImage = R.drawable.meat_pie;
+MeatStew.java,12,R_drawable_variable,R.drawable.meat_stew,this.idImage = R.drawable.meat_stew;
+MeatyMushroom.java,12,R_drawable_variable,R.drawable.meaty_mushroom,this.idImage = R.drawable.meaty_mushroom;
+MetamorphicArmor.java,13,R_drawable_variable,R.drawable.metamorphic_armor,this.idImage = R.drawable.metamorphic_armor;
+MetamorphicSand.java,12,R_drawable_variable,R.drawable.metamorphic_sand,this.idImage = R.drawable.metamorphic_sand;
+MetamorphicShield.java,13,R_drawable_variable,R.drawable.metamorphic_shield,this.idImage = R.drawable.metamorphic_shield;
+Milk.java,12,R_drawable_variable,R.drawable.milk,this.idImage = R.drawable.milk;
+MissingPage.java,12,R_drawable_variable,R.drawable.missing_page,this.idImage = R.drawable.missing_page;
+Mithril.java,12,R_drawable_variable,R.drawable.mithril,this.idImage = R.drawable.mithril;
+MithrilBow.java,12,R_drawable_variable,R.drawable.mithril_bow,this.idImage = R.drawable.mithril_bow;
+MithrilDagger.java,12,R_drawable_variable,R.drawable.mithril_dagger,this.idImage = R.drawable.mithril_dagger;
+MithrilHelm.java,12,R_drawable_variable,R.drawable.mithril_helm,this.idImage = R.drawable.mithril_helm;
+MithrilShield.java,12,R_drawable_variable,R.drawable.mithril_shield,this.idImage = R.drawable.mithril_shield;
+MithrilSword.java,12,R_drawable_variable,R.drawable.mithril_sword,this.idImage = R.drawable.mithril_sword;
+MitreHat.java,13,R_drawable_variable,R.drawable.mitre_hat,this.idImage = R.drawable.mitre_hat;
+MoltenStaff.java,12,R_drawable_variable,R.drawable.molten_staff,this.idImage = R.drawable.molten_staff;
+MonkeyHide.java,12,R_drawable_variable,R.drawable.monkey_hide,this.idImage = R.drawable.monkey_hide;
+MonkeyHideJacket.java,12,R_drawable_variable,R.drawable.monkey_hide_jacket,this.idImage = R.drawable.monkey_hide_jacket;
+MothRobe.java,12,R_drawable_variable,R.drawable.moth_robe,this.idImage = R.drawable.moth_robe;
+Mottiphobia.java,14,R_drawable_variable,R.drawable.mottiphobia,this.idImage = R.drawable.mottiphobia;
+MushroomOmelette.java,12,R_drawable_variable,R.drawable.mushroom_omelette,this.idImage = R.drawable.mushroom_omelette;
+MushroomRisotto.java,12,R_drawable_variable,R.drawable.mushroom_risotto,this.idImage = R.drawable.mushroom_risotto;
+MushroomStew.java,12,R_drawable_variable,R.drawable.mushroom_stew,this.idImage = R.drawable.mushroom_stew;
+MutantHide.java,12,R_drawable_variable,R.drawable.mutant_hide,this.idImage = R.drawable.mutant_hide;
+MutantJacket.java,13,R_drawable_variable,R.drawable.mutant_jacket,this.idImage = R.drawable.mutant_jacket;
+MutualDespair.java,13,R_drawable_variable,R.drawable.mutual_despair,this.idImage = R.drawable.mutual_despair;
+MysteriousAppendage.java,12,R_drawable_variable,R.drawable.mysterious_appendage,this.idImage = R.drawable.mysterious_appendage;
+MysteriousCog.java,12,R_drawable_variable,R.drawable.mysterious_cog,this.idImage = R.drawable.mysterious_cog;
+NightwingJacket.java,12,R_drawable_variable,R.drawable.nightwing_jacket,this.idImage = R.drawable.nightwing_jacket;
+NightwingLeather.java,12,R_drawable_variable,R.drawable.nightwing_leather,this.idImage = R.drawable.nightwing_leather;
+NilArmor.java,12,R_drawable_variable,R.drawable.nil_armor,this.idImage = R.drawable.nil_armor;
+NilPendant.java,13,R_drawable_variable,R.drawable.nil_pendant,this.idImage = R.drawable.nil_pendant;
+Oblivion.java,15,R_drawable_variable,R.drawable.oblivion,this.idImage = R.drawable.oblivion;
+ObsidianBow.java,12,R_drawable_variable,R.drawable.obsidian_bow,this.idImage = R.drawable.obsidian_bow;
+ObsidianChunk.java,12,R_drawable_variable,R.drawable.obsidian_chunk,this.idImage = R.drawable.obsidian_chunk;
+ObsidianCuirass.java,12,R_drawable_variable,R.drawable.obsidian_cuirass,this.idImage = R.drawable.obsidian_cuirass;
+ObsidianDagger.java,12,R_drawable_variable,R.drawable.obsidian_dagger,this.idImage = R.drawable.obsidian_dagger;
+ObsidianHelm.java,12,R_drawable_variable,R.drawable.obsidian_helm,this.idImage = R.drawable.obsidian_helm;
+ObsidianScepter.java,12,R_drawable_variable,R.drawable.obsidian_scepter,this.idImage = R.drawable.obsidian_scepter;
+ObsidianShield.java,12,R_drawable_variable,R.drawable.obsidian_shield,this.idImage = R.drawable.obsidian_shield;
+ObsidianSword.java,12,R_drawable_variable,R.drawable.obsidian_sword,this.idImage = R.drawable.obsidian_sword;
+OrbOfEctoplasm.java,12,R_drawable_variable,R.drawable.orb_of_ectoplasm,this.idImage = R.drawable.orb_of_ectoplasm;
+OrichalcumArmor.java,12,R_drawable_variable,R.drawable.orichalcum_armor,this.idImage = R.drawable.orichalcum_armor;
+OrichalcumDagger.java,12,R_drawable_variable,R.drawable.orichalcum_dagger,this.idImage = R.drawable.orichalcum_dagger;
+OrichalcumHelm.java,12,R_drawable_variable,R.drawable.orichalcum_helm,this.idImage = R.drawable.orichalcum_helm;
+OrichalcumIngot.java,12,R_drawable_variable,R.drawable.orichalcum_ingot,this.idImage = R.drawable.orichalcum_ingot;
+OrichalcumScraps.java,12,R_drawable_variable,R.drawable.orichalcum_scraps,this.idImage = R.drawable.orichalcum_scraps;
+OrichalcumShield.java,12,R_drawable_variable,R.drawable.orichalcum_shield,this.idImage = R.drawable.orichalcum_shield;
+OrichalcumSword.java,12,R_drawable_variable,R.drawable.orichalcum_sword,this.idImage = R.drawable.orichalcum_sword;
+PanopticonStaff.java,13,R_drawable_variable,R.drawable.panopticon_staff,this.idImage = R.drawable.panopticon_staff;
+Pasta.java,12,R_drawable_variable,R.drawable.pasta,this.idImage = R.drawable.pasta;
+PastaWithSauce.java,12,R_drawable_variable,R.drawable.pasta_with_sauce,this.idImage = R.drawable.pasta_with_sauce;
+PatricianArmor.java,14,R_drawable_variable,R.drawable.patrician_armor,this.idImage = R.drawable.patrician_armor;
+Pear.java,12,R_drawable_variable,R.drawable.pear,this.idImage = R.drawable.pear;
+Pearl.java,12,R_drawable_variable,R.drawable.pearl,this.idImage = R.drawable.pearl;
+PearPie.java,12,R_drawable_variable,R.drawable.pear_pie,this.idImage = R.drawable.pear_pie;
+PermafrostCore.java,12,R_drawable_variable,R.drawable.permafrost_core,this.idImage = R.drawable.permafrost_core;
+PermafrostEssence.java,12,R_drawable_variable,R.drawable.permafrost_essence,this.idImage = R.drawable.permafrost_essence;
+PhoenixFeather.java,12,R_drawable_variable,R.drawable.phoenix_feather,this.idImage = R.drawable.phoenix_feather;
+Phylactery.java,13,R_drawable_variable,R.drawable.phylactery,this.idImage = R.drawable.phylactery;
+PhylacteryFragment.java,12,R_drawable_variable,R.drawable.phylactery_fragment,this.idImage = R.drawable.phylactery_fragment;
+Pineapple.java,12,R_drawable_variable,R.drawable.pineapple,this.idImage = R.drawable.pineapple;
+PirateKingTricorn.java,13,R_drawable_variable,R.drawable.pirate_king_tricorn,this.idImage = R.drawable.pirate_king_tricorn;
+PlantFiber.java,12,R_drawable_variable,R.drawable.plant_fiber,this.idImage = R.drawable.plant_fiber;
+PoisonousFlesh.java,12,R_drawable_variable,R.drawable.poisonous_flesh,this.idImage = R.drawable.poisonous_flesh;
+Potato.java,12,R_drawable_variable,R.drawable.potato,this.idImage = R.drawable.potato;
+PotatoMash.java,12,R_drawable_variable,R.drawable.potato_mash,this.idImage = R.drawable.potato_mash;
+PotionOfAgility.java,17,R_drawable_variable,R.drawable.potion_of_agility,this.idImage = R.drawable.potion_of_agility;
+PotionOfClumsiness.java,13,R_drawable_variable,R.drawable.potion_of_clumsiness,this.idImage = R.drawable.potion_of_clumsiness;
+PotionOfClumsiness.java,20,R_drawable_variable,R.drawable.consume_potion,return R.drawable.consume_potion;
+PotionOfConstitution.java,17,R_drawable_variable,R.drawable.potion_of_constitution,this.idImage = R.drawable.potion_of_constitution;
+PotionOfDarkness.java,17,R_drawable_variable,R.drawable.potion_of_darkness,this.idImage = R.drawable.potion_of_darkness;
+PotionOfDefense.java,17,R_drawable_variable,R.drawable.potion_of_defense,this.idImage = R.drawable.potion_of_defense;
+PotionOfDexterity.java,17,R_drawable_variable,R.drawable.potion_of_dexterity,this.idImage = R.drawable.potion_of_dexterity;
+PotionOfHealth.java,17,R_drawable_variable,R.drawable.potion_of_health,this.idImage = R.drawable.potion_of_health;
+PotionOfImmunity.java,17,R_drawable_variable,R.drawable.potion_of_immunity,this.idImage = R.drawable.potion_of_immunity;
+PotionOfIntelligence.java,17,R_drawable_variable,R.drawable.potion_of_intelligence,this.idImage = R.drawable.potion_of_intelligence;
+PotionOfMagicDefense.java,17,R_drawable_variable,R.drawable.potion_of_magic_defense,this.idImage = R.drawable.potion_of_magic_defense;
+PotionOfPrecision.java,17,R_drawable_variable,R.drawable.potion_of_precision,this.idImage = R.drawable.potion_of_precision;
+PotionOfRejuvenation.java,12,R_drawable_variable,R.drawable.potion_of_rejuvenation,this.idImage = R.drawable.potion_of_rejuvenation;
+PotionOfRejuvenation.java,18,R_drawable_variable,R.drawable.consume_potion_of_rejuvenation,return R.drawable.consume_potion_of_rejuvenation;
+PotionOfViciousness.java,17,R_drawable_variable,R.drawable.potion_of_viciousness,this.idImage = R.drawable.potion_of_viciousness;
+PrehistoricMixture.java,12,R_drawable_variable,R.drawable.prehistoric_mixture,this.idImage = R.drawable.prehistoric_mixture;
+PrimevalArmor.java,12,R_drawable_variable,R.drawable.primeval_armor,this.idImage = R.drawable.primeval_armor;
+PrimevalHelm.java,12,R_drawable_variable,R.drawable.primeval_helm,this.idImage = R.drawable.primeval_helm;
+PrimevalScale.java,12,R_drawable_variable,R.drawable.primeval_scale,this.idImage = R.drawable.primeval_scale;
+PrimevalShield.java,12,R_drawable_variable,R.drawable.primeval_shield,this.idImage = R.drawable.primeval_shield;
+PrimordialEssence.java,12,R_drawable_variable,R.drawable.primordial_essence,this.idImage = R.drawable.primordial_essence;
+PrismaticArmor.java,12,R_drawable_variable,R.drawable.prismatic_armor,this.idImage = R.drawable.prismatic_armor;
+PrismaticEssence.java,12,R_drawable_variable,R.drawable.prismatic_essence,this.idImage = R.drawable.prismatic_essence;
+PrismaticPendant.java,13,R_drawable_variable,R.drawable.prismatic_pendant,this.idImage = R.drawable.prismatic_pendant;
+PterodactylClaw.java,12,R_drawable_variable,R.drawable.pterodactyl_claw,this.idImage = R.drawable.pterodactyl_claw;
+Pumpkin.java,12,R_drawable_variable,R.drawable.pumpkin,this.idImage = R.drawable.pumpkin;
+Quartz.java,12,R_drawable_variable,R.drawable.quartz,this.idImage = R.drawable.quartz;
+RadiatingNucleus.java,12,R_drawable_variable,R.drawable.radiating_nucleus,this.idImage = R.drawable.radiating_nucleus;
+ReassemblingJacket.java,13,R_drawable_variable,R.drawable.reassembling_jacket,this.idImage = R.drawable.reassembling_jacket;
+RecurveBlade.java,12,R_drawable_variable,R.drawable.recurve_blade,this.idImage = R.drawable.recurve_blade;
+RedReaper.java,12,R_drawable_variable,R.drawable.red_reaper,this.idImage = R.drawable.red_reaper;
+RedReaperSauce.java,12,R_drawable_variable,R.drawable.red_reaper_sauce,this.idImage = R.drawable.red_reaper_sauce;
+Redwood.java,12,R_drawable_variable,R.drawable.redwood,this.idImage = R.drawable.redwood;
+RedwoodBow.java,12,R_drawable_variable,R.drawable.redwood_bow,this.idImage = R.drawable.redwood_bow;
+ReptileEgg.java,13,R_drawable_variable,R.drawable.egg_reptile,this.idImage = R.drawable.egg_reptile;
+Rice.java,12,R_drawable_variable,R.drawable.rice,this.idImage = R.drawable.rice;
+RitualBlade.java,18,R_drawable_variable,R.drawable.ritual_blade,this.idImage = R.drawable.ritual_blade;
+RobeOfTheArchmage.java,13,R_drawable_variable,R.drawable.robe_of_the_archmage,this.idImage = R.drawable.robe_of_the_archmage;
+RobeOfTheLich.java,13,R_drawable_variable,R.drawable.robe_of_the_lich,this.idImage = R.drawable.robe_of_the_lich;
+Ruby.java,12,R_drawable_variable,R.drawable.ruby,this.idImage = R.drawable.ruby;
+RubyRing.java,13,R_drawable_variable,R.drawable.ruby_ring,this.idImage = R.drawable.ruby_ring;
+RuneOfPower.java,12,R_drawable_variable,R.drawable.rune_of_power,this.idImage = R.drawable.rune_of_power;
+SageArmor.java,13,R_drawable_variable,R.drawable.sage_armor,this.idImage = R.drawable.sage_armor;
+SageCloak.java,13,R_drawable_variable,R.drawable.sage_cloak,this.idImage = R.drawable.sage_cloak;
+SageJacket.java,13,R_drawable_variable,R.drawable.sage_jacket,this.idImage = R.drawable.sage_jacket;
+Salad.java,12,R_drawable_variable,R.drawable.salad,this.idImage = R.drawable.salad;
+SalmonNigiri.java,12,R_drawable_variable,R.drawable.salmon_nigiri,this.idImage = R.drawable.salmon_nigiri;
+SalmonRoll.java,12,R_drawable_variable,R.drawable.salmon_roll,this.idImage = R.drawable.salmon_roll;
+Salt.java,12,R_drawable_variable,R.drawable.salt,this.idImage = R.drawable.salt;
+Sandstone.java,12,R_drawable_variable,R.drawable.sandstone,this.idImage = R.drawable.sandstone;
+Sauce.java,12,R_drawable_variable,R.drawable.sauce,this.idImage = R.drawable.sauce;
+Scanner.java,12,R_drawable_variable,R.drawable.scanner,this.idImage = R.drawable.scanner;
+ScarletShroud.java,13,R_drawable_variable,R.drawable.scarlet_shroud,this.idImage = R.drawable.scarlet_shroud;
+ScarletStrand.java,12,R_drawable_variable,R.drawable.scarlet_strand,this.idImage = R.drawable.scarlet_strand;
+ScarletVeil.java,13,R_drawable_variable,R.drawable.scarlet_veil,this.idImage = R.drawable.scarlet_veil;
+Scimitar.java,12,R_drawable_variable,R.drawable.scimitar,this.idImage = R.drawable.scimitar;
+ScrapMetal.java,12,R_drawable_variable,R.drawable.scrap_metal,this.idImage = R.drawable.scrap_metal;
+SealOfClaris.java,12,R_drawable_variable,R.drawable.seal_of_claris,this.idImage = R.drawable.seal_of_claris;
+SeekingGlass.java,14,R_drawable_variable,R.drawable.seeking_glass,this.idImage = R.drawable.seeking_glass;
+SentientSlab.java,12,R_drawable_variable,R.drawable.sentient_slab,this.idImage = R.drawable.sentient_slab;
+SerpentBite.java,14,R_drawable_variable,R.drawable.serpent_bite,this.idImage = R.drawable.serpent_bite;
+SerpentJaws.java,13,R_drawable_variable,R.drawable.serpent_jaws,this.idImage = R.drawable.serpent_jaws;
+SerpentLunge.java,14,R_drawable_variable,R.drawable.serpent_lunge,this.idImage = R.drawable.serpent_lunge;
+SerpentStaff.java,16,R_drawable_variable,R.drawable.serpent_staff,this.idImage = R.drawable.serpent_staff;
+SerpentSting.java,15,R_drawable_variable,R.drawable.serpent_sting,this.idImage = R.drawable.serpent_sting;
+Sha.java,13,R_drawable_variable,R.drawable.sha,this.idImage = R.drawable.sha;
+ShadowBow.java,13,R_drawable_variable,R.drawable.shadow_bow,this.idImage = R.drawable.shadow_bow;
+ShadowDagger.java,13,R_drawable_variable,R.drawable.shadow_dagger,this.idImage = R.drawable.shadow_dagger;
+ShadowGem.java,12,R_drawable_variable,R.drawable.shadow_gem,this.idImage = R.drawable.shadow_gem;
+ShadowPotion.java,12,R_drawable_variable,R.drawable.shadow_potion,this.idImage = R.drawable.shadow_potion;
+ShadowRing.java,13,R_drawable_variable,R.drawable.shadow_ring,this.idImage = R.drawable.shadow_ring;
+ShahuriBow.java,14,R_drawable_variable,R.drawable.shahuri_bow,this.idImage = R.drawable.shahuri_bow;
+ShahuriBowFrame.java,12,R_drawable_variable,R.drawable.shahuri_bow_frame,this.idImage = R.drawable.shahuri_bow_frame;
+SharpRib.java,12,R_drawable_variable,R.drawable.sharp_rib,this.idImage = R.drawable.sharp_rib;
+ShieldingCuirass.java,13,R_drawable_variable,R.drawable.shielding_cuirass,this.idImage = R.drawable.shielding_cuirass;
+ShieldingHelm.java,13,R_drawable_variable,R.drawable.shielding_helm,this.idImage = R.drawable.shielding_helm;
+ShieldingJacket.java,13,R_drawable_variable,R.drawable.shielding_jacket,this.idImage = R.drawable.shielding_jacket;
+ShieldOfTheMartyr.java,13,R_drawable_variable,R.drawable.shield_of_the_martyr,this.idImage = R.drawable.shield_of_the_martyr;
+ShieldOfTheTitan.java,13,R_drawable_variable,R.drawable.shield_of_the_titan,this.idImage = R.drawable.shield_of_the_titan;
+ShortCircuit.java,14,R_drawable_variable,R.drawable.short_circuit,this.idImage = R.drawable.short_circuit;
+Sickle.java,12,R_drawable_variable,R.drawable.sickle,this.idImage = R.drawable.sickle;
+SilkFabric.java,12,R_drawable_variable,R.drawable.silk_fabric,this.idImage = R.drawable.silk_fabric;
+SilkRobe.java,12,R_drawable_variable,R.drawable.silk_robe,this.idImage = R.drawable.silk_robe;
+SilkThread.java,12,R_drawable_variable,R.drawable.silk_thread,this.idImage = R.drawable.silk_thread;
+SilverRing.java,13,R_drawable_variable,R.drawable.silver_ring,this.idImage = R.drawable.silver_ring;
+SinisterStabilizer.java,12,R_drawable_variable,R.drawable.sinister_stabilizer,this.idImage = R.drawable.sinister_stabilizer;
+SkeletonKey.java,13,R_drawable_variable,R.drawable.skeleton_key,this.idImage = R.drawable.skeleton_key;
+SkinBlender.java,13,R_drawable_variable,R.drawable.skin_blender,this.idImage = R.drawable.skin_blender;
+SkullCandle.java,13,R_drawable_variable,R.drawable.skull_candle,this.idImage = R.drawable.skull_candle;
+SlimeArmor.java,12,R_drawable_variable,R.drawable.slime_armor,this.idImage = R.drawable.slime_armor;
+SlimeJacket.java,12,R_drawable_variable,R.drawable.slime_jacket,this.idImage = R.drawable.slime_jacket;
+SlimeKingsCrown.java,14,R_drawable_variable,R.drawable.slime_kings_crown,this.idImage = R.drawable.slime_kings_crown;
+SlimeRobe.java,12,R_drawable_variable,R.drawable.slime_robe,this.idImage = R.drawable.slime_robe;
+SoulShard.java,12,R_drawable_variable,R.drawable.soul_shard,this.idImage = R.drawable.soul_shard;
+Spade.java,12,R_drawable_variable,R.drawable.spade,this.idImage = R.drawable.spade;
+SpectralCloth.java,12,R_drawable_variable,R.drawable.spectral_cloth,this.idImage = R.drawable.spectral_cloth;
+SpectralRobe.java,12,R_drawable_variable,R.drawable.spectral_robe,this.idImage = R.drawable.spectral_robe;
+SpellCompendium.java,12,R_drawable_variable,R.drawable.spell_compendium,this.idImage = R.drawable.spell_compendium;
+SpellwovenHide.java,12,R_drawable_variable,R.drawable.spellwoven_hide,this.idImage = R.drawable.spellwoven_hide;
+SpellwovenJacket.java,12,R_drawable_variable,R.drawable.spellwoven_jacket,this.idImage = R.drawable.spellwoven_jacket;
+SpellwovenLeather.java,12,R_drawable_variable,R.drawable.spellwoven_leather,this.idImage = R.drawable.spellwoven_leather;
+Spices.java,12,R_drawable_variable,R.drawable.spices,this.idImage = R.drawable.spices;
+SPIDER.java,14,R_drawable_variable,R.drawable.spider,this.idImage = R.drawable.spider;
+SpiderBoots.java,12,R_drawable_variable,R.drawable.spider_boots,this.idImage = R.drawable.spider_boots;
+SpiderGloves.java,12,R_drawable_variable,R.drawable.spider_gloves,this.idImage = R.drawable.spider_gloves;
+SpiderLeg.java,12,R_drawable_variable,R.drawable.spider_leg,this.idImage = R.drawable.spider_leg;
+SpiderRobe.java,12,R_drawable_variable,R.drawable.spider_robe,this.idImage = R.drawable.spider_robe;
+SpiderSilk.java,12,R_drawable_variable,R.drawable.spider_silk,this.idImage = R.drawable.spider_silk;
+SpikedPrimevalShield.java,13,R_drawable_variable,R.drawable.spiked_primeval_shield,this.idImage = R.drawable.spiked_primeval_shield;
+SpikedSkeleton.java,13,R_drawable_variable,R.drawable.spiked_skeleton,this.idImage = R.drawable.spiked_skeleton;
+SpikedTortoiseShield.java,13,R_drawable_variable,R.drawable.spiked_tortoise_shield,this.idImage = R.drawable.spiked_tortoise_shield;
+SpiritCandle.java,12,R_drawable_variable,R.drawable.spirit_candle,this.idImage = R.drawable.spirit_candle;
+SpiritTome.java,12,R_drawable_variable,R.drawable.spirit_tome,this.idImage = R.drawable.spirit_tome;
+SpitfangJacket.java,12,R_drawable_variable,R.drawable.spitfang_jacket,this.idImage = R.drawable.spitfang_jacket;
+SpitfangScale.java,12,R_drawable_variable,R.drawable.spitfang_scale,this.idImage = R.drawable.spitfang_scale;
+StaffOfTheArchmage.java,18,R_drawable_variable,R.drawable.staff_of_the_archmage,this.idImage = R.drawable.staff_of_the_archmage;
+StarFragment.java,12,R_drawable_variable,R.drawable.star_fragment,this.idImage = R.drawable.star_fragment;
+Starvation.java,13,R_drawable_variable,R.drawable.starvation,this.idImage = R.drawable.starvation;
+StaticCore.java,12,R_drawable_variable,R.drawable.static_core,this.idImage = R.drawable.static_core;
+StaticEssence.java,12,R_drawable_variable,R.drawable.static_essence,this.idImage = R.drawable.static_essence;
+SteakBraise.java,12,R_drawable_variable,R.drawable.steak_braise,this.idImage = R.drawable.steak_braise;
+StellarFlare.java,15,R_drawable_variable,R.drawable.stellar_flare,this.idImage = R.drawable.stellar_flare;
+StellarStaff.java,13,R_drawable_variable,R.drawable.stellar_staff,this.idImage = R.drawable.stellar_staff;
+Stew.java,12,R_drawable_variable,R.drawable.stew,this.idImage = R.drawable.stew;
+Strawberry.java,12,R_drawable_variable,R.drawable.strawberry,this.idImage = R.drawable.strawberry;
+StrawberryPancake.java,12,R_drawable_variable,R.drawable.strawberry_pancake,this.idImage = R.drawable.strawberry_pancake;
+StrawberrySmoothie.java,12,R_drawable_variable,R.drawable.strawberry_smoothie,this.idImage = R.drawable.strawberry_smoothie;
+SunfireCore.java,12,R_drawable_variable,R.drawable.sunfire_core,this.idImage = R.drawable.sunfire_core;
+SunfireEssence.java,12,R_drawable_variable,R.drawable.sunfire_essence,this.idImage = R.drawable.sunfire_essence;
+SunStaff.java,13,R_drawable_variable,R.drawable.sun_staff,this.idImage = R.drawable.sun_staff;
+SwarmkeeperArmor.java,13,R_drawable_variable,R.drawable.swarmkeeper_armor,this.idImage = R.drawable.swarmkeeper_armor;
+SweetAndSourMeat.java,12,R_drawable_variable,R.drawable.sweet_and_sour_meat,this.idImage = R.drawable.sweet_and_sour_meat;
+SylvanBlessing.java,13,R_drawable_variable,R.drawable.sylvan_blessing,this.idImage = R.drawable.sylvan_blessing;
+SylvanFlute.java,13,R_drawable_variable,R.drawable.sylvan_flute,this.idImage = R.drawable.sylvan_flute;
+SylvanMandate.java,18,R_drawable_variable,R.drawable.sylvan_mandate,this.idImage = R.drawable.sylvan_mandate;
+Synapse.java,12,R_drawable_variable,R.drawable.synapse,this.idImage = R.drawable.synapse;
+Taco.java,12,R_drawable_variable,R.drawable.taco,this.idImage = R.drawable.taco;
+TacticalHelmet.java,14,R_drawable_variable,R.drawable.tactical_helmet,this.idImage = R.drawable.tactical_helmet;
+TatteredHide.java,12,R_drawable_variable,R.drawable.tattered_hide,this.idImage = R.drawable.tattered_hide;
+TerrorsaurusFang.java,12,R_drawable_variable,R.drawable.terrorsaurus_fang,this.idImage = R.drawable.terrorsaurus_fang;
+ThaumaturgicBlood.java,12,R_drawable_variable,R.drawable.thaumaturgic_blood,this.idImage = R.drawable.thaumaturgic_blood;
+Tiramisu.java,12,R_drawable_variable,R.drawable.tiramisu,this.idImage = R.drawable.tiramisu;
+TitanicMight.java,15,R_drawable_variable,R.drawable.titanic_might,this.idImage = R.drawable.titanic_might;
+Tomato.java,12,R_drawable_variable,R.drawable.tomato,this.idImage = R.drawable.tomato;
+TortoiseArmor.java,12,R_drawable_variable,R.drawable.tortoise_armor,this.idImage = R.drawable.tortoise_armor;
+TortoiseShield.java,12,R_drawable_variable,R.drawable.tortoise_shield,this.idImage = R.drawable.tortoise_shield;
+TortoiseThorn.java,12,R_drawable_variable,R.drawable.tortoise_thorn,this.idImage = R.drawable.tortoise_thorn;
+ToxinPouch.java,13,R_drawable_variable,R.drawable.toxin_pouch,this.idImage = R.drawable.toxin_pouch;
+TrainingBow.java,12,R_drawable_variable,R.drawable.training_bow,this.idImage = R.drawable.training_bow;
+TrollHide.java,12,R_drawable_variable,R.drawable.troll_hide,this.idImage = R.drawable.troll_hide;
+TrollskinJacket.java,14,R_drawable_variable,R.drawable.trollskin_jacket,this.idImage = R.drawable.trollskin_jacket;
+TunaNigiri.java,12,R_drawable_variable,R.drawable.tuna_nigiri,this.idImage = R.drawable.tuna_nigiri;
+TunaRoll.java,12,R_drawable_variable,R.drawable.tuna_roll,this.idImage = R.drawable.tuna_roll;
+TunicaIgnis.java,13,R_drawable_variable,R.drawable.tunica_ignis,this.idImage = R.drawable.tunica_ignis;
+TunicaInfernalis.java,13,R_drawable_variable,R.drawable.tunica_infernalis,this.idImage = R.drawable.tunica_infernalis;
+TuskNecklace.java,12,R_drawable_variable,R.drawable.tusk_necklace,this.idImage = R.drawable.tusk_necklace;
+UndeadCuirass.java,12,R_drawable_variable,R.drawable.undead_cuirass,this.idImage = R.drawable.undead_cuirass;
+UndeadGloves.java,12,R_drawable_variable,R.drawable.undead_gloves,this.idImage = R.drawable.undead_gloves;
+UndeadGreaves.java,12,R_drawable_variable,R.drawable.undead_greaves,this.idImage = R.drawable.undead_greaves;
+UndeadHelm.java,12,R_drawable_variable,R.drawable.undead_helm,this.idImage = R.drawable.undead_helm;
+UndeadJacket.java,12,R_drawable_variable,R.drawable.undead_jacket,this.idImage = R.drawable.undead_jacket;
+UndeadKnife.java,13,R_drawable_variable,R.drawable.undead_knife,this.idImage = R.drawable.undead_knife;
+UndeadShield.java,12,R_drawable_variable,R.drawable.undead_shield,this.idImage = R.drawable.undead_shield;
+UndeadStaff.java,12,R_drawable_variable,R.drawable.undead_staff,this.idImage = R.drawable.undead_staff;
+UndeadSword.java,12,R_drawable_variable,R.drawable.undead_sword,this.idImage = R.drawable.undead_sword;
+UnholyCuirass.java,13,R_drawable_variable,R.drawable.unholy_cuirass,this.idImage = R.drawable.unholy_cuirass;
+UnholyPotion.java,12,R_drawable_variable,R.drawable.unholy_potion,this.idImage = R.drawable.unholy_potion;
+UnholySpellcage.java,13,R_drawable_variable,R.drawable.unholy_spellcage,this.idImage = R.drawable.unholy_spellcage;
+UnholySword.java,13,R_drawable_variable,R.drawable.unholy_sword,this.idImage = R.drawable.unholy_sword;
+UnstableGem.java,12,R_drawable_variable,R.drawable.unstable_gem,this.idImage = R.drawable.unstable_gem;
+UnstableStaff.java,18,R_drawable_variable,R.drawable.unstable_staff,this.idImage = R.drawable.unstable_staff;
+UpgradeMarketQueue.java,13,R_drawable_variable,R.drawable.upgrade_market_queue,this.idImage = R.drawable.upgrade_market_queue;
+UpgradeMarketTime.java,13,R_drawable_variable,R.drawable.upgrade_market_time,this.idImage = R.drawable.upgrade_market_time;
+UpgradeQuarters.java,13,R_drawable_variable,R.drawable.upgrade_quarters,this.idImage = R.drawable.upgrade_quarters;
+UpgradeShelter.java,13,R_drawable_variable,R.drawable.upgrade_shelter,this.idImage = R.drawable.upgrade_shelter;
+UpgradeStorage.java,13,R_drawable_variable,R.drawable.upgrade_storage,this.idImage = R.drawable.upgrade_storage;
+UpgradeTavernCapacity.java,13,R_drawable_variable,R.drawable.upgrade_tavern_capacity,this.idImage = R.drawable.upgrade_tavern_capacity;
+UpgradeTavernTime.java,13,R_drawable_variable,R.drawable.upgrade_tavern_time,this.idImage = R.drawable.upgrade_tavern_time;
+UpgradeWorkshopQueue.java,13,R_drawable_variable,R.drawable.upgrade_workshop_queue,this.idImage = R.drawable.upgrade_workshop_queue;
+UpgradeWorkshopTime.java,13,R_drawable_variable,R.drawable.upgrade_workshop_time,this.idImage = R.drawable.upgrade_workshop_time;
+VampireBow.java,13,R_drawable_variable,R.drawable.vampire_bow,this.idImage = R.drawable.vampire_bow;
+VampireDagger.java,13,R_drawable_variable,R.drawable.vampire_dagger,this.idImage = R.drawable.vampire_dagger;
+VampireScepter.java,13,R_drawable_variable,R.drawable.vampire_scepter,this.idImage = R.drawable.vampire_scepter;
+VampireSword.java,13,R_drawable_variable,R.drawable.vampire_sword,this.idImage = R.drawable.vampire_sword;
+VeilBreaker.java,12,R_drawable_variable,R.drawable.veil_breaker,this.idImage = R.drawable.veil_breaker;
+VeilShatterer.java,12,R_drawable_variable,R.drawable.veil_shatterer,this.idImage = R.drawable.veil_shatterer;
+VerdantBlade.java,12,R_drawable_variable,R.drawable.verdant_blade,this.idImage = R.drawable.verdant_blade;
+VerdantBoots.java,12,R_drawable_variable,R.drawable.verdant_boots,this.idImage = R.drawable.verdant_boots;
+VerdantBow.java,12,R_drawable_variable,R.drawable.verdant_bow,this.idImage = R.drawable.verdant_bow;
+VerdantGloves.java,12,R_drawable_variable,R.drawable.verdant_gloves,this.idImage = R.drawable.verdant_gloves;
+VerdantHelm.java,12,R_drawable_variable,R.drawable.verdant_helm,this.idImage = R.drawable.verdant_helm;
+Vinegar.java,12,R_drawable_variable,R.drawable.vinegar,this.idImage = R.drawable.vinegar;
+VoidArmor.java,12,R_drawable_variable,R.drawable.void_armor,this.idImage = R.drawable.void_armor;
+VoidCore.java,12,R_drawable_variable,R.drawable.void_core,this.idImage = R.drawable.void_core;
+VoidCrusher.java,13,R_drawable_variable,R.drawable.void_crusher,this.idImage = R.drawable.void_crusher;
+VoidPendant.java,14,R_drawable_variable,R.drawable.void_pendant,this.idImage = R.drawable.void_pendant;
+VoltaicShock.java,14,R_drawable_variable,R.drawable.voltaic_shock,this.idImage = R.drawable.voltaic_shock;
+VoodooDoll.java,12,R_drawable_variable,R.drawable.voodoo_doll,this.idImage = R.drawable.voodoo_doll;
+WardenBelt.java,12,R_drawable_variable,R.drawable.warden_belt,this.idImage = R.drawable.warden_belt;
+WarlordSkull.java,12,R_drawable_variable,R.drawable.warlord_skull,this.idImage = R.drawable.warlord_skull;
+WerewolfFang.java,12,R_drawable_variable,R.drawable.werewolf_fang,this.idImage = R.drawable.werewolf_fang;
+WhiteHair.java,12,R_drawable_variable,R.drawable.white_hair,this.idImage = R.drawable.white_hair;
+WhiteSlime.java,12,R_drawable_variable,R.drawable.white_slime,this.idImage = R.drawable.white_slime;
+WickedScepter.java,13,R_drawable_variable,R.drawable.wicked_scepter,this.idImage = R.drawable.wicked_scepter;
+WickedSeal.java,12,R_drawable_variable,R.drawable.wicked_seal,this.idImage = R.drawable.wicked_seal;
+WildEgg.java,13,R_drawable_variable,R.drawable.egg_wild,this.idImage = R.drawable.egg_wild;
+WingFabric.java,12,R_drawable_variable,R.drawable.wing_fabric,this.idImage = R.drawable.wing_fabric;
+WinterBoots.java,13,R_drawable_variable,R.drawable.winter_boots,this.idImage = R.drawable.winter_boots;
+WinterCape.java,12,R_drawable_variable,R.drawable.winter_cape,this.idImage = R.drawable.winter_cape;
+Wintercloth.java,12,R_drawable_variable,R.drawable.wintercloth,this.idImage = R.drawable.wintercloth;
+WinterGloves.java,13,R_drawable_variable,R.drawable.winter_gloves,this.idImage = R.drawable.winter_gloves;
+WinterHelm.java,13,R_drawable_variable,R.drawable.winter_helm,this.idImage = R.drawable.winter_helm;
+WinterShield.java,12,R_drawable_variable,R.drawable.winter_shield,this.idImage = R.drawable.winter_shield;
+Winterwood.java,12,R_drawable_variable,R.drawable.winterwood,this.idImage = R.drawable.winterwood;
+WinterwoodBow.java,12,R_drawable_variable,R.drawable.winterwood_bow,this.idImage = R.drawable.winterwood_bow;
+WinterwoodStaff.java,12,R_drawable_variable,R.drawable.winterwood_staff,this.idImage = R.drawable.winterwood_staff;
+Wood.java,12,R_drawable_variable,R.drawable.wood,this.idImage = R.drawable.wood;
+WoodenBow.java,12,R_drawable_variable,R.drawable.wooden_bow,this.idImage = R.drawable.wooden_bow;
+WoodenBuckler.java,12,R_drawable_variable,R.drawable.wooden_buckler,this.idImage = R.drawable.wooden_buckler;
+WoodenEgg.java,13,R_drawable_variable,R.drawable.egg_wooden,this.idImage = R.drawable.egg_wooden;
+WurmBlood.java,12,R_drawable_variable,R.drawable.wurm_blood,this.idImage = R.drawable.wurm_blood;
+WurmScale.java,12,R_drawable_variable,R.drawable.wurm_scale,this.idImage = R.drawable.wurm_scale;
+WurmscalesBoots.java,12,R_drawable_variable,R.drawable.wurmscales_boots,this.idImage = R.drawable.wurmscales_boots;
+WurmscalesGloves.java,12,R_drawable_variable,R.drawable.wurmscales_gloves,this.idImage = R.drawable.wurmscales_gloves;
+WurmscalesJacket.java,12,R_drawable_variable,R.drawable.wurmscales_jacket,this.idImage = R.drawable.wurmscales_jacket;
+WurmscalesShield.java,12,R_drawable_variable,R.drawable.wurmscales_shield,this.idImage = R.drawable.wurmscales_shield;
+WyvernCape.java,13,R_drawable_variable,R.drawable.wyvern_cape,this.idImage = R.drawable.wyvern_cape;
+WyvernChop.java,12,R_drawable_variable,R.drawable.wyvern_chop,this.idImage = R.drawable.wyvern_chop;
+Yoghurt.java,12,R_drawable_variable,R.drawable.yoghurt,this.idImage = R.drawable.yoghurt;
+Abomination.java,41,R_drawable_variable,R.drawable.unit_abomination,this.imageId = R.drawable.unit_abomination;
+AmanitaObscura.java,45,R_drawable_variable,R.drawable.unit_amanita_obscura,this.imageId = R.drawable.unit_amanita_obscura;
+AncientEnt.java,39,R_drawable_variable,R.drawable.unit_ancient_ent,this.imageId = R.drawable.unit_ancient_ent;
+ArcaneAssassin.java,39,R_drawable_variable,R.drawable.unit_arcane_assassin,this.imageId = R.drawable.unit_arcane_assassin;
+ArchmageOfLarox.java,44,R_drawable_variable,R.drawable.unit_archmage_of_larox,this.imageId = R.drawable.unit_archmage_of_larox;
+AvatarOfTheAncient.java,42,R_drawable_variable,R.drawable.unit_avatar_of_the_ancient,this.imageId = R.drawable.unit_avatar_of_the_ancient;
+Banshee.java,41,R_drawable_variable,R.drawable.unit_banshee,this.imageId = R.drawable.unit_banshee;
+Beholder.java,39,R_drawable_variable,R.drawable.unit_beholder,this.imageId = R.drawable.unit_beholder;
+Berserker.java,42,R_drawable_variable,R.drawable.unit_berserker,this.imageId = R.drawable.unit_berserker;
+BleakDeacon.java,44,R_drawable_variable,R.drawable.unit_bleak_deacon,this.imageId = R.drawable.unit_bleak_deacon;
+BleakDisciple.java,43,R_drawable_variable,R.drawable.unit_bleak_disciple,this.imageId = R.drawable.unit_bleak_disciple;
+Boar.java,39,R_drawable_variable,R.drawable.unit_boar,this.imageId = R.drawable.unit_boar;
+CelestialDestroyer.java,46,R_drawable_variable,R.drawable.unit_celestial_destroyer,this.imageId = R.drawable.unit_celestial_destroyer;
+CelestialLancer.java,42,R_drawable_variable,R.drawable.unit_celestial_lancer,this.imageId = R.drawable.unit_celestial_lancer;
+Centaur.java,40,R_drawable_variable,R.drawable.unit_centaur,this.imageId = R.drawable.unit_centaur;
+Cerebrum.java,45,R_drawable_variable,R.drawable.unit_cerebrum,this.imageId = R.drawable.unit_cerebrum;
+ChiefScientistAva.java,44,R_drawable_variable,R.drawable.unit_chief_scientist_ava,this.imageId = R.drawable.unit_chief_scientist_ava;
+CityWarden.java,40,R_drawable_variable,R.drawable.unit_city_warden,this.imageId = R.drawable.unit_city_warden;
+Claris.java,42,R_drawable_variable,R.drawable.unit_claris,this.imageId = R.drawable.unit_claris;
+Crusader.java,40,R_drawable_variable,R.drawable.unit_crusader,this.imageId = R.drawable.unit_crusader;
+DeathHound.java,39,R_drawable_variable,R.drawable.unit_death_hound,this.imageId = R.drawable.unit_death_hound;
+Deckhand.java,39,R_drawable_variable,R.drawable.unit_deckhand,this.imageId = R.drawable.unit_deckhand;
+Djinn.java,40,R_drawable_variable,R.drawable.unit_djinn,this.imageId = R.drawable.unit_djinn;
+DreamwroughtBeast.java,41,R_drawable_variable,R.drawable.unit_dreamwrought_beast,this.imageId = R.drawable.unit_dreamwrought_beast;
+DreamwroughtDragon.java,42,R_drawable_variable,R.drawable.unit_dreamwrought_dragon,this.imageId = R.drawable.unit_dreamwrought_dragon;
+DreamwroughtForge.java,41,R_drawable_variable,R.drawable.unit_dreamwrought_forge,this.imageId = R.drawable.unit_dreamwrought_forge;
+DreamwroughtSwarm.java,47,R_drawable_variable,R.drawable.unit_dreamwrought_swarm,this.imageId = R.drawable.unit_dreamwrought_swarm;
+Dryad.java,41,R_drawable_variable,R.drawable.unit_dryad,this.imageId = R.drawable.unit_dryad;
+EldritchHound.java,40,R_drawable_variable,R.drawable.unit_eldritch_hound,this.imageId = R.drawable.unit_eldritch_hound;
+ElectricSlime.java,44,R_drawable_variable,R.drawable.unit_electric_slime,this.imageId = R.drawable.unit_electric_slime;
+EmperorClovisXXVIII.java,43,R_drawable_variable,R.drawable.unit_emperor_clovis_xxviii,this.imageId = R.drawable.unit_emperor_clovis_xxviii;
+Enforcer.java,40,R_drawable_variable,R.drawable.unit_enforcer,this.imageId = R.drawable.unit_enforcer;
+Ent.java,41,R_drawable_variable,R.drawable.unit_ent,this.imageId = R.drawable.unit_ent;
+EtherealSoul.java,40,R_drawable_variable,R.drawable.unit_ethereal_soul,this.imageId = R.drawable.unit_ethereal_soul;
+FireSlime.java,44,R_drawable_variable,R.drawable.unit_fire_slime,this.imageId = R.drawable.unit_fire_slime;
+FirstMinisterAtos.java,45,R_drawable_variable,R.drawable.unit_first_minister_atos,this.imageId = R.drawable.unit_first_minister_atos;
+ForestSpirit.java,40,R_drawable_variable,R.drawable.unit_forest_spirit,this.imageId = R.drawable.unit_forest_spirit;
+FrozenSlime.java,44,R_drawable_variable,R.drawable.unit_frozen_slime,this.imageId = R.drawable.unit_frozen_slime;
+Gcss.java,44,R_drawable_variable,R.drawable.unit_gcss,this.imageId = R.drawable.unit_gcss;
+Ghoul.java,39,R_drawable_variable,R.drawable.unit_ghoul,this.imageId = R.drawable.unit_ghoul;
+GiantMoth.java,41,R_drawable_variable,R.drawable.unit_giant_moth,this.imageId = R.drawable.unit_giant_moth;
+GiantSpider.java,42,R_drawable_variable,R.drawable.unit_giant_spider,this.imageId = R.drawable.unit_giant_spider;
+GiantTortoise.java,42,R_drawable_variable,R.drawable.unit_giant_tortoise,this.imageId = R.drawable.unit_giant_tortoise;
+GoldenRabbit.java,41,R_drawable_variable,R.drawable.unit_golden_rabbit,this.imageId = R.drawable.unit_golden_rabbit;
+GreenSpitfang.java,40,R_drawable_variable,R.drawable.unit_green_spitfang,this.imageId = R.drawable.unit_green_spitfang;
+HeadlessKnight.java,54,R_drawable_variable,R.drawable.unit_headless_knight,this.imageId = R.drawable.unit_headless_knight;
+HeraldKali.java,47,R_drawable_variable,R.drawable.unit_herald_kali,this.imageId = R.drawable.unit_herald_kali;
+HeraldMaya.java,47,R_drawable_variable,R.drawable.unit_herald_maya,this.imageId = R.drawable.unit_herald_maya;
+HeraldShoran.java,47,R_drawable_variable,R.drawable.unit_herald_shoran,this.imageId = R.drawable.unit_herald_shoran;
+HeraldXavi.java,47,R_drawable_variable,R.drawable.unit_herald_xavi,this.imageId = R.drawable.unit_herald_xavi;
+IceElemental.java,43,R_drawable_variable,R.drawable.unit_ice_elemental,this.imageId = R.drawable.unit_ice_elemental;
+Iconoclast.java,45,R_drawable_variable,R.drawable.unit_iconoclast,this.imageId = R.drawable.unit_iconoclast;
+Imp.java,51,R_drawable_variable,R.drawable.unit_imp,this.imageId = R.drawable.unit_imp;
+ImperialGuard.java,39,R_drawable_variable,R.drawable.unit_imperial_guard,this.imageId = R.drawable.unit_imperial_guard;
+ImperialMage.java,39,R_drawable_variable,R.drawable.unit_imperial_mage,this.imageId = R.drawable.unit_imperial_mage;
+InsaneCitizen.java,39,R_drawable_variable,R.drawable.unit_insane_citizen,this.imageId = R.drawable.unit_insane_citizen;
+InsaneMerchant.java,40,R_drawable_variable,R.drawable.unit_insane_merchant,this.imageId = R.drawable.unit_insane_merchant;
+InsanePriest.java,39,R_drawable_variable,R.drawable.unit_insane_priest,this.imageId = R.drawable.unit_insane_priest;
+KabarTheRotten.java,41,R_drawable_variable,R.drawable.unit_kabar_the_rotten,this.imageId = R.drawable.unit_kabar_the_rotten;
+KasimirTheSeer.java,41,R_drawable_variable,R.drawable.unit_kasimir_the_seer,this.imageId = R.drawable.unit_kasimir_the_seer;
+KingAino.java,42,R_drawable_variable,R.drawable.unit_king_aino,this.imageId = R.drawable.unit_king_aino;
+Lazarus.java,41,R_drawable_variable,R.drawable.unit_lazarus,this.imageId = R.drawable.unit_lazarus;
+LegateHadrian.java,51,R_drawable_variable,R.drawable.unit_legate_hadrian,this.imageId = R.drawable.unit_legate_hadrian;
+LesserTitan.java,43,R_drawable_variable,R.drawable.unit_lesser_titan,this.imageId = R.drawable.unit_lesser_titan;
+LostMiner.java,41,R_drawable_variable,R.drawable.unit_lost_miner,this.imageId = R.drawable.unit_lost_miner;
+MagicArmor.java,42,R_drawable_variable,R.drawable.unit_magic_armor,this.imageId = R.drawable.unit_magic_armor;
+Mimic.java,40,R_drawable_variable,R.drawable.unit_mimic,this.imageId = R.drawable.unit_mimic;
+MysteriousTentacle.java,39,R_drawable_variable,R.drawable.unit_mysterious_tentacle,this.imageId = R.drawable.unit_mysterious_tentacle;
+Necrobot.java,42,R_drawable_variable,R.drawable.unit_necrobot,this.imageId = R.drawable.unit_necrobot;
+Necrolith.java,41,R_drawable_variable,R.drawable.unit_necrolith,this.imageId = R.drawable.unit_necrolith;
+NexusResearcher.java,42,R_drawable_variable,R.drawable.unit_nexus_researcher,this.imageId = R.drawable.unit_nexus_researcher;
+ObsidianGolem.java,39,R_drawable_variable,R.drawable.unit_obsidian_golem,this.imageId = R.drawable.unit_obsidian_golem;
+Oculus.java,41,R_drawable_variable,R.drawable.unit_oculus,this.imageId = R.drawable.unit_oculus;
+PaleHermit.java,42,R_drawable_variable,R.drawable.unit_pale_hermit,this.imageId = R.drawable.unit_pale_hermit;
+Phantasm.java,42,R_drawable_variable,R.drawable.unit_phantasm,this.imageId = R.drawable.unit_phantasm;
+Phoenix.java,40,R_drawable_variable,R.drawable.unit_phoenix,this.imageId = R.drawable.unit_phoenix;
+Pirate.java,40,R_drawable_variable,R.drawable.unit_pirate,this.imageId = R.drawable.unit_pirate;
+PirateCaptain.java,41,R_drawable_variable,R.drawable.unit_pirate_captain,this.imageId = R.drawable.unit_pirate_captain;
+PirateLieutenant.java,40,R_drawable_variable,R.drawable.unit_pirate_lieutenant,this.imageId = R.drawable.unit_pirate_lieutenant;
+PrimevalWurm.java,42,R_drawable_variable,R.drawable.unit_primeval_wurm,this.imageId = R.drawable.unit_primeval_wurm;
+PrimordialTitan.java,43,R_drawable_variable,R.drawable.unit_primordial_titan,this.imageId = R.drawable.unit_primordial_titan;
+Pterodactyl.java,40,R_drawable_variable,R.drawable.unit_pterodactyl,this.imageId = R.drawable.unit_pterodactyl;
+ReinforcedDoor.java,43,R_drawable_variable,R.drawable.unit_reinforced_door,this.imageId = R.drawable.unit_reinforced_door;
+SandDemon.java,43,R_drawable_variable,R.drawable.unit_sand_demon,this.imageId = R.drawable.unit_sand_demon;
+SandStatue.java,44,R_drawable_variable,R.drawable.unit_sand_statue,this.imageId = R.drawable.unit_sand_statue;
+SandVulture.java,39,R_drawable_variable,R.drawable.unit_sand_vulture,this.imageId = R.drawable.unit_sand_vulture;
+ShahuriArcher.java,42,R_drawable_variable,R.drawable.unit_shahuri_archer,this.imageId = R.drawable.unit_shahuri_archer;
+ShahuriMage.java,40,R_drawable_variable,R.drawable.unit_shahuri_mage,this.imageId = R.drawable.unit_shahuri_mage;
+ShahuriWarrior.java,39,R_drawable_variable,R.drawable.unit_shahuri_warrior,this.imageId = R.drawable.unit_shahuri_warrior;
+ShaKireFirstSwordsman.java,40,R_drawable_variable,R.drawable.unit_sha_kire_first_swordsman,this.imageId = R.drawable.unit_sha_kire_first_swordsman;
+ShaTheHiddenGod.java,41,R_drawable_variable,R.drawable.unit_sha_the_hidden_god,this.imageId = R.drawable.unit_sha_the_hidden_god;
+Singularity.java,45,R_drawable_variable,R.drawable.unit_singularity,this.imageId = R.drawable.unit_singularity;
+Slime.java,39,R_drawable_variable,R.drawable.unit_slime,this.imageId = R.drawable.unit_slime;
+SlimeKing.java,48,R_drawable_variable,R.drawable.unit_slime_king,this.imageId = R.drawable.unit_slime_king;
+SmolderingTitan.java,43,R_drawable_variable,R.drawable.unit_smoldering_titan,this.imageId = R.drawable.unit_smoldering_titan;
+SnowWyvern.java,40,R_drawable_variable,R.drawable.unit_snow_wyvern,this.imageId = R.drawable.unit_snow_wyvern;
+StoneShaman.java,42,R_drawable_variable,R.drawable.unit_stone_shaman,this.imageId = R.drawable.unit_stone_shaman;
+TekeliLiFirstApostle.java,41,R_drawable_variable,R.drawable.unit_tekeli_li_first_apostle,this.imageId = R.drawable.unit_tekeli_li_first_apostle;
+Terrorsaurus.java,40,R_drawable_variable,R.drawable.unit_terrorsaurus,this.imageId = R.drawable.unit_terrorsaurus;
+TheAncient.java,50,R_drawable_variable,R.drawable.unit_the_ancient,this.imageId = R.drawable.unit_the_ancient;
+TheExiled.java,49,R_drawable_variable,R.drawable.unit_the_exiled,this.imageId = R.drawable.unit_the_exiled;
+TheMachine.java,41,R_drawable_variable,R.drawable.unit_the_machine,this.imageId = R.drawable.unit_the_machine;
+Thorvus.java,49,R_drawable_variable,R.drawable.unit_thorvus,this.imageId = R.drawable.unit_thorvus;
+Treant.java,39,R_drawable_variable,R.drawable.unit_treant,this.imageId = R.drawable.unit_treant;
+Troll.java,40,R_drawable_variable,R.drawable.unit_troll,this.imageId = R.drawable.unit_troll;
+TrollShaman.java,43,R_drawable_variable,R.drawable.unit_troll_shaman,this.imageId = R.drawable.unit_troll_shaman;
+TrollWarrior.java,41,R_drawable_variable,R.drawable.unit_troll_warrior,this.imageId = R.drawable.unit_troll_warrior;
+TrollWhelp.java,40,R_drawable_variable,R.drawable.unit_troll_whelp,this.imageId = R.drawable.unit_troll_whelp;
+TutorialWolf.java,39,R_drawable_variable,R.drawable.unit_wolf,this.imageId = R.drawable.unit_wolf;
+Ultraslime.java,41,R_drawable_variable,R.drawable.unit_ultraslime,this.imageId = R.drawable.unit_ultraslime;
+Undead.java,39,R_drawable_variable,R.drawable.unit_undead,this.imageId = R.drawable.unit_undead;
+UndeadArcher.java,40,R_drawable_variable,R.drawable.unit_undead_archer,this.imageId = R.drawable.unit_undead_archer;
+UndeadGeneral.java,39,R_drawable_variable,R.drawable.unit_undead_general,this.imageId = R.drawable.unit_undead_general;
+UndeadWarlord.java,39,R_drawable_variable,R.drawable.unit_undead_warlord,this.imageId = R.drawable.unit_undead_warlord;
+VampireBat.java,41,R_drawable_variable,R.drawable.unit_vampire_bat,this.imageId = R.drawable.unit_vampire_bat;
+VoidSlime.java,40,R_drawable_variable,R.drawable.unit_void_slime,this.imageId = R.drawable.unit_void_slime;
+WickedTribute.java,41,R_drawable_variable,R.drawable.unit_wicked_tribute,this.imageId = R.drawable.unit_wicked_tribute;
+WillOWisp.java,40,R_drawable_variable,R.drawable.unit_will_o_wisp,this.imageId = R.drawable.unit_will_o_wisp;
+WizardOfLarox.java,44,R_drawable_variable,R.drawable.unit_wizard_of_larox,this.imageId = R.drawable.unit_wizard_of_larox;
+Wolf.java,40,R_drawable_variable,R.drawable.unit_wolf,this.imageId = R.drawable.unit_wolf;
+Wurm.java,39,R_drawable_variable,R.drawable.unit_wurm,this.imageId = R.drawable.unit_wurm;
+DoctrineAbilityType.java,7,R_drawable_variable,R.drawable.doctrine_ability_improved_health,"IMPROVED_HEALTH(R.string.doctrine_ability_improved_health_name, R.string.doctrine_ability_improved_health_description, R.drawable.doctrine_ability_imp"
+DoctrineAbilityType.java,8,R_drawable_variable,R.drawable.doctrine_ability_improved_constitution,"IMPROVED_CONSTITUTION(R.string.doctrine_ability_improved_constitution_name, R.string.doctrine_ability_improved_constitution_description, R.drawable.do"
+DoctrineAbilityType.java,9,R_drawable_variable,R.drawable.doctrine_ability_improved_dexterity,"IMPROVED_DEXTERITY(R.string.doctrine_ability_improved_dexterity_name, R.string.doctrine_ability_improved_dexterity_description, R.drawable.doctrine_ab"
+DoctrineAbilityType.java,10,R_drawable_variable,R.drawable.doctrine_ability_improved_intelligence,"IMPROVED_INTELLIGENCE(R.string.doctrine_ability_improved_intelligence_name, R.string.doctrine_ability_improved_intelligence_description, R.drawable.do"
+DoctrineAbilityType.java,11,R_drawable_variable,R.drawable.doctrine_ability_exalted_constitution,"EXALTED_CONSTITUTION(R.string.doctrine_ability_exalted_constitution_name, R.string.doctrine_ability_exalted_constitution_description, R.drawable.doctr"
+DoctrineAbilityType.java,12,R_drawable_variable,R.drawable.doctrine_ability_exalted_dexterity,"EXALTED_DEXTERITY(R.string.doctrine_ability_exalted_dexterity_name, R.string.doctrine_ability_exalted_dexterity_description, R.drawable.doctrine_abili"
+DoctrineAbilityType.java,13,R_drawable_variable,R.drawable.doctrine_ability_exalted_intelligence,"EXALTED_INTELLIGENCE(R.string.doctrine_ability_exalted_intelligence_name, R.string.doctrine_ability_exalted_intelligence_description, R.drawable.doctr"
+DoctrineAbilityType.java,14,R_drawable_variable,R.drawable.doctrine_ability_exalted_health,"EXALTED_HEALTH(R.string.doctrine_ability_exalted_health_name, R.string.doctrine_ability_exalted_health_description, R.drawable.doctrine_ability_exalte"
+DoctrineAbilityType.java,15,R_drawable_variable,R.drawable.doctrine_ability_exalted_mana,"EXALTED_MANA(R.string.doctrine_ability_exalted_mana_name, R.string.doctrine_ability_exalted_mana_description, R.drawable.doctrine_ability_exalted_mana"
+DoctrineAbilityType.java,16,R_drawable_variable,R.drawable.doctrine_ability_lore_master,"LORE_MASTER(R.string.doctrine_ability_lore_master_name, R.string.doctrine_ability_lore_master_description, R.drawable.doctrine_ability_lore_master, 10"
+DoctrineAbilityType.java,17,R_drawable_variable,R.drawable.doctrine_ability_servus_sanguinis,"SERVUS_SANGUINIS(R.string.doctrine_ability_servus_sanguinis_name, R.string.doctrine_ability_servus_sanguinis_description, R.drawable.doctrine_ability_"
+DoctrineAbilityType.java,18,R_drawable_variable,R.drawable.doctrine_ability_servus_umbrae,"SERVUS_UMBRAE(R.string.doctrine_ability_servus_umbrae_name, R.string.doctrine_ability_servus_umbrae_description, R.drawable.doctrine_ability_servus_um"
+DoctrineAbilityType.java,19,R_drawable_variable,R.drawable.doctrine_ability_necrosis_porphyrica,"NECROSIS_PORPHYRICA(R.string.doctrine_ability_necrosis_porphyrica_name, R.string.doctrine_ability_necrosis_porphyrica_description, R.drawable.doctrine"
+DoctrineAbilityType.java,20,R_drawable_variable,R.drawable.doctrine_ability_genus_vampyri,"GENUS_VAMPYRI(R.string.doctrine_ability_genus_vampyri_name, R.string.doctrine_ability_genus_vampyri_description, R.drawable.doctrine_ability_genus_vam"
+DoctrineAbilityType.java,21,R_drawable_variable,R.drawable.doctrine_ability_impenetrable_willpower,"IMPENETRABLE_WILLPOWER(R.string.doctrine_ability_impenetrable_willpower_name, R.string.doctrine_ability_impenetrable_willpower_description, R.drawable"
+DoctrineAbilityType.java,22,R_drawable_variable,R.drawable.doctrine_ability_chilling_flow,"CHILLING_FLOW(R.string.doctrine_ability_chilling_flow_name, R.string.doctrine_ability_chilling_flow_description, R.drawable.doctrine_ability_chilling_"
+DoctrineAbilityType.java,23,R_drawable_variable,R.drawable.doctrine_ability_mind_bender,"MIND_BENDER(R.string.doctrine_ability_mind_bender_name, R.string.doctrine_ability_mind_bender_description, R.drawable.doctrine_ability_mind_bender, 2,"
+DoctrineAbilityType.java,24,R_drawable_variable,R.drawable.doctrine_ability_star_gaze,"STAR_GAZE(R.string.doctrine_ability_star_gaze_name, R.string.doctrine_ability_star_gaze_description, R.drawable.doctrine_ability_star_gaze, 4, 5, 2, 2"
+DoctrineAbilityType.java,25,R_drawable_variable,R.drawable.doctrine_ability_arcane_suppression,"ARCANE_SUPPRESSION(R.string.doctrine_ability_arcane_suppression_name, R.string.doctrine_ability_arcane_suppression_description, R.drawable.doctrine_ab"
+DoctrineAbilityType.java,26,R_drawable_variable,R.drawable.doctrine_ability_conditioned_reflexes,"CONDITIONED_REFLEXES(R.string.doctrine_ability_conditioned_reflexes_name, R.string.doctrine_ability_conditioned_reflexes_description, R.drawable.doctr"
+DoctrineAbilityType.java,27,R_drawable_variable,R.drawable.doctrine_ability_tactical_knowledge,"TACTICAL_KNOWLEDGE(R.string.doctrine_ability_tactical_knowledge_name, R.string.doctrine_ability_tactical_knowledge_description, R.drawable.doctrine_ab"
+DoctrineAbilityType.java,28,R_drawable_variable,R.drawable.doctrine_ability_relentless_assault,"RELENTLESS_ASSAULT(R.string.doctrine_ability_relentless_assault_name, R.string.doctrine_ability_relentless_assault_description, R.drawable.doctrine_ab"
+DoctrineAbilityType.java,29,R_drawable_variable,R.drawable.doctrine_ability_weapon_master,"WEAPON_MASTER(R.string.doctrine_ability_weapon_master_name, R.string.doctrine_ability_weapon_master_description, R.drawable.doctrine_ability_weapon_ma"
+DoctrineAbilityType.java,30,R_drawable_variable,R.drawable.doctrine_ability_ephemeral_presence,"EPHEMERAL_PRESENCE(R.string.doctrine_ability_ephemeral_presence_name, R.string.doctrine_ability_ephemeral_presence_description, R.drawable.doctrine_ab"
+DoctrineAbilityType.java,31,R_drawable_variable,R.drawable.doctrine_ability_beat_the_odds,"BEAT_THE_ODDS(R.string.doctrine_ability_beat_the_odds_name, R.string.doctrine_ability_beat_the_odds_description, R.drawable.doctrine_ability_beat_the_"
+DoctrineAbilityType.java,32,R_drawable_variable,R.drawable.doctrine_ability_false_life,"FALSE_LIFE(R.string.doctrine_ability_false_life_name, R.string.doctrine_ability_false_life_description, R.drawable.doctrine_ability_false_life, 4, 4, "
+DoctrineAbilityType.java,33,R_drawable_variable,R.drawable.doctrine_ability_true_agony,"TRUE_AGONY(R.string.doctrine_ability_true_agony_name, R.string.doctrine_ability_true_agony_description, R.drawable.doctrine_ability_true_agony, 3, 150"
+DoctrineAbilityType.java,34,R_drawable_variable,R.drawable.doctrine_ability_troll_resistance,"TROLL_RESISTANCE(R.string.doctrine_ability_troll_resistance_name, R.string.doctrine_ability_troll_resistance_description, R.drawable.doctrine_ability_"
+DoctrineAbilityType.java,35,R_drawable_variable,R.drawable.doctrine_ability_warlock_resilience,"WARLOCK_RESILIENCE(R.string.doctrine_ability_warlock_resilience_name, R.string.doctrine_ability_warlock_resilience_description, R.drawable.doctrine_ab"
+DoctrineAbilityType.java,36,R_drawable_variable,R.drawable.doctrine_ability_manifest_danger,"MANIFEST_DANGER(R.string.doctrine_ability_manifest_danger_name, R.string.doctrine_ability_manifest_danger_description, R.drawable.doctrine_ability_man"
+DoctrineAbilityType.java,37,R_drawable_variable,R.drawable.doctrine_ability_mirror_of_anguish,"MIRROR_OF_ANGUISH(R.string.doctrine_ability_mirror_of_anguish_name, R.string.doctrine_ability_mirror_of_anguish_description, R.drawable.doctrine_abili"
+DoctrineAbilityType.java,38,R_drawable_variable,R.drawable.doctrine_ability_expose_weakness,"EXPOSE_WEAKNESS(R.string.doctrine_ability_expose_weakness_name, R.string.doctrine_ability_expose_weakness_description, R.drawable.doctrine_ability_exp"
+DoctrineAbilityType.java,39,R_drawable_variable,R.drawable.doctrine_ability_exploit_weakness,"EXPLOIT_WEAKNESS(R.string.doctrine_ability_exploit_weakness_name, R.string.doctrine_ability_exploit_weakness_description, R.drawable.doctrine_ability_"
+DoctrineAbilityType.java,40,R_drawable_variable,R.drawable.doctrine_ability_lightning_speed,"LIGHTNING_SPEED(R.string.doctrine_ability_lightning_speed_name, R.string.doctrine_ability_lightning_speed_description, R.drawable.doctrine_ability_lig"
+DoctrineAbilityType.java,41,R_drawable_variable,R.drawable.doctrine_ability_eye_for_an_eye,"EYE_FOR_AN_EYE(R.string.doctrine_ability_eye_for_an_eye_name, R.string.doctrine_ability_eye_for_an_eye_description, R.drawable.doctrine_ability_eye_fo"
+DoctrineAbilityType.java,42,R_drawable_variable,R.drawable.doctrine_ability_ragebound,"RAGEBOUND(R.string.doctrine_ability_ragebound_name, R.string.doctrine_ability_ragebound_description, R.drawable.doctrine_ability_ragebound, 4, 35, 2, "
+DoctrineAbilityType.java,43,R_drawable_variable,R.drawable.doctrine_ability_divine_intervention,"DIVINE_INTERVENTION(R.string.doctrine_ability_divine_intervention_name, R.string.doctrine_ability_divine_intervention_description, R.drawable.doctrine"
+DoctrineAbilityType.java,44,R_drawable_variable,R.drawable.doctrine_ability_selfless_spirit,"SELFLESS_SPIRIT(R.string.doctrine_ability_selfless_spirit_name, R.string.doctrine_ability_selfless_spirit_description, R.drawable.doctrine_ability_sel"
+DoctrineAbilityType.java,45,R_drawable_variable,R.drawable.doctrine_ability_overheal,"OVERHEAL(R.string.doctrine_ability_overheal_name, R.string.doctrine_ability_overheal_description, R.drawable.doctrine_ability_overheal, 3, 5, 2, 2, 3)"
+DoctrineAbilityType.java,46,R_drawable_variable,R.drawable.doctrine_ability_healing_nova,"HEALING_NOVA(R.string.doctrine_ability_healing_nova_name, R.string.doctrine_ability_healing_nova_description, R.drawable.doctrine_ability_healing_nova"
+Adept.java,19,R_drawable_variable,R.drawable.unit_adept,this.imageId = R.drawable.unit_adept;
+Alchemist.java,25,R_drawable_variable,R.drawable.unit_alchemist,this.imageId = R.drawable.unit_alchemist;
+AncientLich.java,21,R_drawable_variable,R.drawable.unit_ancient_lich,this.imageId = R.drawable.unit_ancient_lich;
+Angel.java,21,R_drawable_variable,R.drawable.unit_angel,this.imageId = R.drawable.unit_angel;
+AngelOfWar.java,22,R_drawable_variable,R.drawable.unit_angel_of_war,this.imageId = R.drawable.unit_angel_of_war;
+Apprentice.java,19,R_drawable_variable,R.drawable.unit_apprentice,this.imageId = R.drawable.unit_apprentice;
+Archangel.java,21,R_drawable_variable,R.drawable.unit_archangel,this.imageId = R.drawable.unit_archangel;
+Archer.java,19,R_drawable_variable,R.drawable.unit_archer,this.imageId = R.drawable.unit_archer;
+Assassin.java,21,R_drawable_variable,R.drawable.unit_assassin,this.imageId = R.drawable.unit_assassin;
+Balrog.java,19,R_drawable_variable,R.drawable.unit_balrog,this.imageId = R.drawable.unit_balrog;
+Bard.java,22,R_drawable_variable,R.drawable.unit_bard,this.imageId = R.drawable.unit_bard;
+BlackIdol.java,21,R_drawable_variable,R.drawable.unit_black_idol,this.imageId = R.drawable.unit_black_idol;
+BlackRegent.java,21,R_drawable_variable,R.drawable.unit_black_regent,this.imageId = R.drawable.unit_black_regent;
+Blight.java,23,R_drawable_variable,R.drawable.unit_blight,this.imageId = R.drawable.unit_blight;
+BoneHorror.java,20,R_drawable_variable,R.drawable.unit_bone_horror,this.imageId = R.drawable.unit_bone_horror;
+BoneHydra.java,20,R_drawable_variable,R.drawable.unit_bone_hydra,this.imageId = R.drawable.unit_bone_hydra;
+BoneNightmare.java,20,R_drawable_variable,R.drawable.unit_bone_nightmare,this.imageId = R.drawable.unit_bone_nightmare;
+CelestialRain.java,20,R_drawable_variable,R.drawable.unit_celestial_rain,this.imageId = R.drawable.unit_celestial_rain;
+Cleric.java,20,R_drawable_variable,R.drawable.unit_cleric,this.imageId = R.drawable.unit_cleric;
+CorrosiveWraith.java,25,R_drawable_variable,R.drawable.unit_corrosive_wraith,this.imageId = R.drawable.unit_corrosive_wraith;
+Cutthroat.java,20,R_drawable_variable,R.drawable.unit_cuttroath,this.imageId = R.drawable.unit_cuttroath;
+DarkKnight.java,20,R_drawable_variable,R.drawable.unit_dark_knight,this.imageId = R.drawable.unit_dark_knight;
+DarkSorcerer.java,20,R_drawable_variable,R.drawable.unit_dark_sorcerer,this.imageId = R.drawable.unit_dark_sorcerer;
+DeathKnight.java,20,R_drawable_variable,R.drawable.unit_death_knight,this.imageId = R.drawable.unit_death_knight;
+Demilich.java,20,R_drawable_variable,R.drawable.unit_demilich,this.imageId = R.drawable.unit_demilich;
+Demon.java,19,R_drawable_variable,R.drawable.unit_demon,this.imageId = R.drawable.unit_demon;
+DivineChampion.java,24,R_drawable_variable,R.drawable.unit_divine_champion,this.imageId = R.drawable.unit_divine_champion;
+DivineDuelist.java,24,R_drawable_variable,R.drawable.unit_divine_duelist,this.imageId = R.drawable.unit_divine_duelist;
+DrakeRider.java,21,R_drawable_variable,R.drawable.unit_drake_rider,this.imageId = R.drawable.unit_drake_rider;
+Eidolon.java,22,R_drawable_variable,R.drawable.unit_eidolon,this.imageId = R.drawable.unit_eidolon;
+EldritchAlchemist.java,28,R_drawable_variable,R.drawable.unit_eldritch_alchemist,this.imageId = R.drawable.unit_eldritch_alchemist;
+ElementalAlchemist.java,27,R_drawable_variable,R.drawable.unit_elemental_alchemist,this.imageId = R.drawable.unit_elemental_alchemist;
+EsotericAlchemist.java,28,R_drawable_variable,R.drawable.unit_esoteric_alchemist,this.imageId = R.drawable.unit_esoteric_alchemist;
+EternalFortress.java,20,R_drawable_variable,R.drawable.unit_eternal_fortress,this.imageId = R.drawable.unit_eternal_fortress;
+FireWizard.java,19,R_drawable_variable,R.drawable.unit_fire_wizard,this.imageId = R.drawable.unit_fire_wizard;
+Footman.java,19,R_drawable_variable,R.drawable.unit_footman,this.imageId = R.drawable.unit_footman;
+Fury.java,21,R_drawable_variable,R.drawable.unit_fury,this.imageId = R.drawable.unit_fury;
+GoldenRider.java,21,R_drawable_variable,R.drawable.unit_golden_rider,this.imageId = R.drawable.unit_golden_rider;
+Guard.java,20,R_drawable_variable,R.drawable.unit_guard,this.imageId = R.drawable.unit_guard;
+Hailstorm.java,20,R_drawable_variable,R.drawable.unit_hailstorm,this.imageId = R.drawable.unit_hailstorm;
+HeavenlyCantor.java,22,R_drawable_variable,R.drawable.unit_heavenly_cantor,this.imageId = R.drawable.unit_heavenly_cantor;
+HellishSculptor.java,24,R_drawable_variable,R.drawable.unit_hellish_sculptor,this.imageId = R.drawable.unit_hellish_sculptor;
+HolyKnight.java,21,R_drawable_variable,R.drawable.unit_holy_knight,this.imageId = R.drawable.unit_holy_knight;
+HorseRider.java,21,R_drawable_variable,R.drawable.unit_horse_rider,this.imageId = R.drawable.unit_horse_rider;
+Huntress.java,19,R_drawable_variable,R.drawable.unit_huntress,this.imageId = R.drawable.unit_huntress;
+Hurricane.java,20,R_drawable_variable,R.drawable.unit_hurricane,this.imageId = R.drawable.unit_hurricane;
+InfernalLord.java,19,R_drawable_variable,R.drawable.unit_infernal_lord,this.imageId = R.drawable.unit_infernal_lord;
+InfernalPrince.java,19,R_drawable_variable,R.drawable.unit_infernal_prince,this.imageId = R.drawable.unit_infernal_prince;
+Inferno.java,26,R_drawable_variable,R.drawable.unit_inferno,this.imageId = R.drawable.unit_inferno;
+Inquisitor.java,21,R_drawable_variable,R.drawable.unit_inquisitor,this.imageId = R.drawable.unit_inquisitor;
+IronDefender.java,20,R_drawable_variable,R.drawable.unit_iron_defender,this.imageId = R.drawable.unit_iron_defender;
+IronWarden.java,20,R_drawable_variable,R.drawable.unit_iron_warden,this.imageId = R.drawable.unit_iron_warden;
+Juggernaut.java,20,R_drawable_variable,R.drawable.unit_juggernaut,this.imageId = R.drawable.unit_juggernaut;
+Justiciar.java,21,R_drawable_variable,R.drawable.unit_justiciar,this.imageId = R.drawable.unit_justiciar;
+KingsHand.java,21,R_drawable_variable,R.drawable.unit_kings_hand,this.imageId = R.drawable.unit_kings_hand;
+Knight.java,20,R_drawable_variable,R.drawable.unit_knight,this.imageId = R.drawable.unit_knight;
+Lich.java,21,R_drawable_variable,R.drawable.unit_lich,this.imageId = R.drawable.unit_lich;
+LightDisciple.java,20,R_drawable_variable,R.drawable.unit_light_disciple,this.imageId = R.drawable.unit_light_disciple;
+Lorekeeper.java,22,R_drawable_variable,R.drawable.unit_lorekeeper,this.imageId = R.drawable.unit_lorekeeper;
+LorfOfDecay.java,21,R_drawable_variable,R.drawable.unit_lord_of_decay,this.imageId = R.drawable.unit_lord_of_decay;
+Marksman.java,20,R_drawable_variable,R.drawable.unit_marksman,this.imageId = R.drawable.unit_marksman;
+MeatCarver.java,24,R_drawable_variable,R.drawable.unit_meat_carver,this.imageId = R.drawable.unit_meat_carver;
+MeltingElder.java,24,R_drawable_variable,R.drawable.unit_melting_elder,this.imageId = R.drawable.unit_melting_elder;
+Minstrel.java,23,R_drawable_variable,R.drawable.unit_minstrel,this.imageId = R.drawable.unit_minstrel;
+Necromancer.java,20,R_drawable_variable,R.drawable.unit_necromancer,this.imageId = R.drawable.unit_necromancer;
+NightBlade.java,23,R_drawable_variable,R.drawable.unit_night_blade,this.imageId = R.drawable.unit_night_blade;
+NightLament.java,22,R_drawable_variable,R.drawable.unit_night_lament,this.imageId = R.drawable.unit_night_lament;
+NightSpecter.java,22,R_drawable_variable,R.drawable.unit_night_specter,this.imageId = R.drawable.unit_night_specter;
+NightTerror.java,22,R_drawable_variable,R.drawable.unit_night_terror,this.imageId = R.drawable.unit_night_terror;
+NightVeil.java,22,R_drawable_variable,R.drawable.unit_night_veil,this.imageId = R.drawable.unit_night_veil;
+Overlord.java,21,R_drawable_variable,R.drawable.unit_overlord,this.imageId = R.drawable.unit_overlord;
+Paladin.java,21,R_drawable_variable,R.drawable.unit_paladin,this.imageId = R.drawable.unit_paladin;
+PlagueSpreader.java,23,R_drawable_variable,R.drawable.unit_plague_spreader,this.imageId = R.drawable.unit_plague_spreader;
+PoisonBow.java,23,R_drawable_variable,R.drawable.unit_poison_bow,this.imageId = R.drawable.unit_poison_bow;
+RadiantElder.java,21,R_drawable_variable,R.drawable.unit_radiant_elder,this.imageId = R.drawable.unit_radiant_elder;
+RedArchmage.java,22,R_drawable_variable,R.drawable.unit_red_archmage,this.imageId = R.drawable.unit_red_archmage;
+RedElder.java,22,R_drawable_variable,R.drawable.unit_red_elder,this.imageId = R.drawable.unit_red_elder;
+RedMage.java,19,R_drawable_variable,R.drawable.unit_red_mage,this.imageId = R.drawable.unit_red_mage;
+RedStalker.java,22,R_drawable_variable,R.drawable.unit_red_stalker,this.imageId = R.drawable.unit_red_stalker;
+Rogue.java,19,R_drawable_variable,R.drawable.unit_rogue,this.imageId = R.drawable.unit_rogue;
+RoyalCaptain.java,21,R_drawable_variable,R.drawable.unit_royal_captain,this.imageId = R.drawable.unit_royal_captain;
+RoyalGuard.java,21,R_drawable_variable,R.drawable.unit_royal_guard,this.imageId = R.drawable.unit_royal_guard;
+RoyalSwordsman.java,21,R_drawable_variable,R.drawable.unit_royal_swordman,this.imageId = R.drawable.unit_royal_swordman;
+ScorchingElder.java,22,R_drawable_variable,R.drawable.unit_scorching_elder,this.imageId = R.drawable.unit_scorching_elder;
+Scourge.java,20,R_drawable_variable,R.drawable.unit_scourge,this.imageId = R.drawable.unit_scourge;
+ShadowCrawler.java,21,R_drawable_variable,R.drawable.unit_shadow_crawler,this.imageId = R.drawable.unit_shadow_crawler;
+ShadowDancer.java,22,R_drawable_variable,R.drawable.unit_shadow_dancer,this.imageId = R.drawable.unit_shadow_dancer;
+SilverTongue.java,22,R_drawable_variable,R.drawable.unit_silver_tongue,this.imageId = R.drawable.unit_silver_tongue;
+Skeleton.java,20,R_drawable_variable,R.drawable.unit_skeleton,this.imageId = R.drawable.unit_skeleton;
+SpireAcolyte.java,21,R_drawable_variable,R.drawable.unit_spire_acolyte,this.imageId = R.drawable.unit_spire_acolyte;
+SpireInitiate.java,22,R_drawable_variable,R.drawable.unit_spire_initiate,this.imageId = R.drawable.unit_spire_initiate;
+SpireLeader.java,21,R_drawable_variable,R.drawable.unit_spire_leader,this.imageId = R.drawable.unit_spire_leader;
+SpireSage.java,21,R_drawable_variable,R.drawable.unit_spire_sage,this.imageId = R.drawable.unit_spire_sage;
+SpiritEngraver.java,24,R_drawable_variable,R.drawable.unit_spirit_engraver,this.imageId = R.drawable.unit_spirit_engraver;
+SpitfangRider.java,21,R_drawable_variable,R.drawable.unit_spitfang_rider,this.imageId = R.drawable.unit_spitfang_rider;
+Sureshot.java,20,R_drawable_variable,R.drawable.unit_sureshot,this.imageId = R.drawable.unit_sureshot;
+Tempest.java,20,R_drawable_variable,R.drawable.unit_tempest,this.imageId = R.drawable.unit_tempest;
+Templar.java,21,R_drawable_variable,R.drawable.unit_templar,this.imageId = R.drawable.unit_templar;
+Thief.java,20,R_drawable_variable,R.drawable.unit_thief,this.imageId = R.drawable.unit_thief;
+Titan.java,20,R_drawable_variable,R.drawable.unit_titan,this.imageId = R.drawable.unit_titan;
+ToxicStalker.java,24,R_drawable_variable,R.drawable.unit_toxic_stalker,this.imageId = R.drawable.unit_toxic_stalker;
+Trickster.java,20,R_drawable_variable,R.drawable.unit_trickster,this.imageId = R.drawable.unit_trickster;
+Tyrant.java,20,R_drawable_variable,R.drawable.unit_tyrant,this.imageId = R.drawable.unit_tyrant;
+Unchained.java,19,R_drawable_variable,R.drawable.unit_unchained,this.imageId = R.drawable.unit_unchained;
+UndyingBastion.java,20,R_drawable_variable,R.drawable.unit_undying_bastion,this.imageId = R.drawable.unit_undying_bastion;
+Warrior.java,20,R_drawable_variable,R.drawable.unit_warrior,this.imageId = R.drawable.unit_warrior;
+Whisper.java,21,R_drawable_variable,R.drawable.unit_whisper,this.imageId = R.drawable.unit_whisper;
+WhiteArchmage.java,21,R_drawable_variable,R.drawable.unit_white_archmage,this.imageId = R.drawable.unit_white_archmage;
+WhiteElder.java,21,R_drawable_variable,R.drawable.unit_white_elder,this.imageId = R.drawable.unit_white_elder;
+WhiteMage.java,20,R_drawable_variable,R.drawable.unit_white_mage,this.imageId = R.drawable.unit_white_mage;
+WolfRider.java,21,R_drawable_variable,R.drawable.unit_wolf_rider,this.imageId = R.drawable.unit_wolf_rider;
+WorgRider.java,22,R_drawable_variable,R.drawable.unit_worg_rider,this.imageId = R.drawable.unit_worg_rider;
+WoundsWeaver.java,24,R_drawable_variable,R.drawable.unit_wound_weaver,this.imageId = R.drawable.unit_wound_weaver;
+Wraith.java,24,R_drawable_variable,R.drawable.unit_wraith,this.imageId = R.drawable.unit_wraith;
+WyrmRider.java,21,R_drawable_variable,R.drawable.unit_wyrm_rider,this.imageId = R.drawable.unit_wyrm_rider;
+Zombie.java,19,R_drawable_variable,R.drawable.unit_zombie,this.imageId = R.drawable.unit_zombie;
+DoctrineOfAffliction.java,17,R_drawable_variable,R.drawable.doctrine_of_affliction,this.idImage = R.drawable.doctrine_of_affliction;
+DoctrineOfControl.java,17,R_drawable_variable,R.drawable.doctrine_of_control,this.idImage = R.drawable.doctrine_of_control;
+DoctrineOfFortitude.java,17,R_drawable_variable,R.drawable.doctrine_of_fortitude,this.idImage = R.drawable.doctrine_of_fortitude;
+DoctrineOfGrace.java,17,R_drawable_variable,R.drawable.doctrine_of_grace,this.idImage = R.drawable.doctrine_of_grace;
+DoctrineOfIllusion.java,17,R_drawable_variable,R.drawable.doctrine_of_illusion,this.idImage = R.drawable.doctrine_of_illusion;
+DoctrineOfKnowledge.java,17,R_drawable_variable,R.drawable.doctrine_of_knowlegde,this.idImage = R.drawable.doctrine_of_knowlegde;
+DoctrineOfRuin.java,17,R_drawable_variable,R.drawable.doctrine_of_ruin,this.idImage = R.drawable.doctrine_of_ruin;
+DoctrineOfWar.java,17,R_drawable_variable,R.drawable.doctrine_of_war,this.idImage = R.drawable.doctrine_of_war;
+EmptyDoctrine.java,21,R_drawable_variable,R.drawable.sign_plus_white,this.idImage = R.drawable.sign_plus_white;

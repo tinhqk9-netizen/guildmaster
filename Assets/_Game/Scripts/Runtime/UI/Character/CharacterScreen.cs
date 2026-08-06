@@ -197,10 +197,19 @@ namespace GuildMaster.Runtime.UI.Character
             
             if (_dismissButton != null)
             {
-                if (hasSelected && _characterService.CanDismissCharacter(selected.InstanceId, out string _))
-                    _dismissButton.interactable = true;
-                else
-                    _dismissButton.interactable = false;
+                string dismissReason = null;
+                bool canDismiss = hasSelected && _characterService.CanDismissCharacter(selected.InstanceId, out dismissReason);
+                _dismissButton.interactable = canDismiss;
+                var dismissText = _dismissButton.GetComponentInChildren<Text>();
+                if (dismissText != null)
+                {
+                    if (!hasSelected)
+                        dismissText.text = "Dismiss";
+                    else if (canDismiss)
+                        dismissText.text = "Dismiss ❌";
+                    else
+                        dismissText.text = $"⚠ {dismissReason}";
+                }
             }
 
             if (_equipButton != null)

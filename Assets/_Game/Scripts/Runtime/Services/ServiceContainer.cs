@@ -81,10 +81,10 @@ namespace GuildMaster.Runtime.Services
             Party = new PartyService(Save);
             // Dungeon drives the run loop, so it needs combat, loot, characters, inventory and quest.
             Dungeon = new DungeonService(Save, Database, Combat, Loot, Character, Inventory, Quest);
-            Tavern = new TavernService(Save, Formula, Character, Database);
+            Tavern = new TavernService(Save, Formula, Character, Inventory, Database);
             Settings = new SettingsService(Save);
             OfflineProgress = new OfflineProgressService(Save, Craft, Merchant);
-            GameLoop = new GameLoopService(Save, Tavern, Merchant, Craft, Dungeon);
+            GameLoop = new GameLoopService(Save, Tavern, Merchant, Craft, Dungeon, Quest);
         }
     }
 }

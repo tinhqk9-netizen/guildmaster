@@ -1,0 +1,2079 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ace1e4a822b98f34fa657521007636b8, type: 3}
+  m_Name: LegacySpriteCatalog
+  m_EditorClassIdentifier: GuildMaster.Runtime::GuildMaster.Runtime.UI.Legacy.LegacySpriteCatalog
+  entries:
+  - key: abherrant_fabric
+    sprite: {fileID: 21300000, guid: d01112e0b6ccefa48ab2240b937f0dbe, type: 3}
+  - key: abiotic_core
+    sprite: {fileID: 21300000, guid: 2ff69503e12b26341b9052353dcfafdb, type: 3}
+  - key: absolute_zero
+    sprite: {fileID: 21300000, guid: ed78cab8fa3662d4d97a1b15ebdac23d, type: 3}
+  - key: abyssal_compendium
+    sprite: {fileID: 21300000, guid: 51566a5de5d6e6c4faa9999f6459dfe7, type: 3}
+  - key: abyssal_cutlass
+    sprite: {fileID: 21300000, guid: f05256e85e66ecd41967de064c1ac0c9, type: 3}
+  - key: abyssal_goo
+    sprite: {fileID: 21300000, guid: 272c170919c9fc649b2069951d0fdb97, type: 3}
+  - key: abyssal_ingot
+    sprite: {fileID: 21300000, guid: 98e3e2ba23856c740ac5faf617114402, type: 3}
+  - key: abyssal_seashell
+    sprite: {fileID: 21300000, guid: a90cc2af349133e4e97dcfa9efa78ff2, type: 3}
+  - key: advertisement
+    sprite: {fileID: 21300000, guid: d8cb3a358e1f5d94cb5883825570b79f, type: 3}
+  - key: aegis
+    sprite: {fileID: 21300000, guid: 56702ec40f9134a4a8a6b2be94510e56, type: 3}
+  - key: aegis_mechanica
+    sprite: {fileID: 21300000, guid: 4ed78c5aa4c089f4d8ae7caf40663965, type: 3}
+  - key: aether_ignis
+    sprite: {fileID: 21300000, guid: 67b4f7eba7b428b4b9d065c0b1db0802, type: 3}
+  - key: alchemic_powder
+    sprite: {fileID: 21300000, guid: 0eefe60811fe16f46bdfd2837d03d7c9, type: 3}
+  - key: algae
+    sprite: {fileID: 21300000, guid: 25678a61c2b12064bb954450a240993b, type: 3}
+  - key: alpha_wolf_fang
+    sprite: {fileID: 21300000, guid: 878895a4c45610d40a163e1c7ad01557, type: 3}
+  - key: ambrosia
+    sprite: {fileID: 21300000, guid: 3e5a07bea494ae246b12c3c8a84f355f, type: 3}
+  - key: amulet_of_resurrection
+    sprite: {fileID: 21300000, guid: 8415c32700a22534ebed919fa9c4a26f, type: 3}
+  - key: amulet_of_the_swordsman
+    sprite: {fileID: 21300000, guid: 6c674d65e085d1449a2f7c1931408759, type: 3}
+  - key: ancestral_blood
+    sprite: {fileID: 21300000, guid: 96faef456d8230c4bb17f5154c43f171, type: 3}
+  - key: ancient_armor
+    sprite: {fileID: 21300000, guid: 42b71388565607b46974e12564eb20e9, type: 3}
+  - key: ancient_boots
+    sprite: {fileID: 21300000, guid: 7611c15f404a87043904e116f284952e, type: 3}
+  - key: ancient_eye
+    sprite: {fileID: 21300000, guid: 427ed52d0c5677c4c80d46c73beec9e9, type: 3}
+  - key: ancient_gloves
+    sprite: {fileID: 21300000, guid: 2c39438ad14f64046ab20cdedc404578, type: 3}
+  - key: ancient_hide
+    sprite: {fileID: 21300000, guid: d802a39b316070b42b2753a82396fba8, type: 3}
+  - key: ancient_jacket
+    sprite: {fileID: 21300000, guid: afc9155b47269ca498446f8dcef6522e, type: 3}
+  - key: ancient_membrane
+    sprite: {fileID: 21300000, guid: 94ce8608e5e540a47870382f468fa4fb, type: 3}
+  - key: ancient_robe
+    sprite: {fileID: 21300000, guid: 49616b9d78ea33045a7fba401654dd9c, type: 3}
+  - key: ancient_seed
+    sprite: {fileID: 21300000, guid: 76cd770937057f54290450a0e83c997f, type: 3}
+  - key: animated_bow
+    sprite: {fileID: 21300000, guid: 7c3a544c16fd83347836aa987c0812dc, type: 3}
+  - key: animated_buckler
+    sprite: {fileID: 21300000, guid: aa65d6e8ed5b5664d9faaefea9be7bde, type: 3}
+  - key: animated_cuirass
+    sprite: {fileID: 21300000, guid: 7175e378b96556142922b725f7a2fab5, type: 3}
+  - key: animated_dagger
+    sprite: {fileID: 21300000, guid: 463637d66feb44c488b1ba3846c0e0d6, type: 3}
+  - key: animated_helm
+    sprite: {fileID: 21300000, guid: e92dfacd55d94694e991be39ddbb3947, type: 3}
+  - key: animated_icon_damaged
+    sprite: {fileID: 21300000, guid: 717f9fc93ac7d5045acd74d49026dd9f, type: 3}
+  - key: animated_ingot
+    sprite: {fileID: 21300000, guid: 0820d330d52a6c6409176b3a98ca5126, type: 3}
+  - key: animated_scraps
+    sprite: {fileID: 21300000, guid: aca5561858bb2d245a53897fb4669434, type: 3}
+  - key: animated_staff
+    sprite: {fileID: 21300000, guid: c1b1c3b3af0bf444da9349906ac10928, type: 3}
+  - key: animated_sword
+    sprite: {fileID: 21300000, guid: c8408282c076a8b4aa61545831164fa1, type: 3}
+  - key: apple
+    sprite: {fileID: 21300000, guid: d0ca500f2e94bd946b48eb87e919b42a, type: 3}
+  - key: apple_pie
+    sprite: {fileID: 21300000, guid: 879aa98a3817ec449b77ba65e5de142e, type: 3}
+  - key: arcane_dagger
+    sprite: {fileID: 21300000, guid: 6acc75fe3324cdd49bad7dc1ea86f4ee, type: 3}
+  - key: archaic_amulet
+    sprite: {fileID: 21300000, guid: 7353f0d1b48694049946d0fc426472b2, type: 3}
+  - key: archmage_hat
+    sprite: {fileID: 21300000, guid: 928f4a3492b13f3409019fd2603e2879, type: 3}
+  - key: area_ancient_grave_digging
+    sprite: {fileID: 21300000, guid: 4bfbe3ad38b313441b9a4a07396418df, type: 3}
+  - key: area_barren_wastelands
+    sprite: {fileID: 21300000, guid: 1481484535187ad4ba6439002000f16f, type: 3}
+  - key: area_blackwater_port
+    sprite: {fileID: 21300000, guid: f170f5c4e379a584ba4769c9c6318692, type: 3}
+  - key: area_celestial_mothership
+    sprite: {fileID: 21300000, guid: 8bb30aed1f7605a40bd0b4458ee18c31, type: 3}
+  - key: area_divine_archeology
+    sprite: {fileID: 21300000, guid: b30ed1878936ded43ac40a380796c407, type: 3}
+  - key: area_enchanted_forest
+    sprite: {fileID: 21300000, guid: 299773e76c553eb44b475e8eac346e1b, type: 3}
+  - key: area_eternal_battlefield
+    sprite: {fileID: 21300000, guid: bdc5834337447af4fb7bb15269f6533a, type: 3}
+  - key: area_frostbite_peaks
+    sprite: {fileID: 21300000, guid: 7a14621db338bca4e9939208a4a3bc5c, type: 3}
+  - key: area_hidden_city_of_larox
+    sprite: {fileID: 21300000, guid: 473dd156d0ae0d34d8450104f12f36d8, type: 3}
+  - key: area_imperial_rescue
+    sprite: {fileID: 21300000, guid: d9814b92e0edc8943a17fdae6d2ce62f, type: 3}
+  - key: area_kaunis
+    sprite: {fileID: 21300000, guid: bf2282c2eb9e3e74ba1cc64d9f692eae, type: 3}
+  - key: area_lost_lands
+    sprite: {fileID: 21300000, guid: bb4f50012d5d79a4f8aca8f524d706e1, type: 3}
+  - key: area_obsidian_mines
+    sprite: {fileID: 21300000, guid: 59e84d67ad95d634b8994aac1369e3c0, type: 3}
+  - key: area_sleeping_planet
+    sprite: {fileID: 21300000, guid: 367fcba5477c2144ca497d87d5c3ed17, type: 3}
+  - key: area_the_cultist_rebels
+    sprite: {fileID: 21300000, guid: 63e2510a3d5b8104495f65ef4287b0af, type: 3}
+  - key: area_the_desert
+    sprite: {fileID: 21300000, guid: bccaa0a91a5cdeb439b344fb7c15f0fe, type: 3}
+  - key: area_the_dire_descent
+    sprite: {fileID: 21300000, guid: 3d02fc7b7786e574e9c853dc3ef912ce, type: 3}
+  - key: area_the_dreadful_ascent
+    sprite: {fileID: 21300000, guid: 1a19e24bf14cf18468830e48b0779ff6, type: 3}
+  - key: area_the_golden_city
+    sprite: {fileID: 21300000, guid: e1bfccc564f3c8d41b284c3499fcb5d2, type: 3}
+  - key: area_the_lost_expedition
+    sprite: {fileID: 21300000, guid: 920849cefde517d44afdf54a2b8c9cec, type: 3}
+  - key: area_the_slime_pond
+    sprite: {fileID: 21300000, guid: ac0671e01bc6fe94aaf213754697da56, type: 3}
+  - key: area_the_southern_grove
+    sprite: {fileID: 21300000, guid: a57a500d0c71b29439afba39849bf047, type: 3}
+  - key: area_the_tower
+    sprite: {fileID: 21300000, guid: af5eba73095779e4eb2d190e809f4dff, type: 3}
+  - key: armor_of_the_dryad
+    sprite: {fileID: 21300000, guid: 61b58d6f46a33df49b94548a753fcc0f, type: 3}
+  - key: armor_of_the_undying
+    sprite: {fileID: 21300000, guid: dea90b9a7134a2c448eff4e252149251, type: 3}
+  - key: arrow_up_brass_multiple
+    sprite: {fileID: 21300000, guid: 6ab2ac28fd6bbef4f95fc31a02d4c264, type: 3}
+  - key: ascended_bow
+    sprite: {fileID: 21300000, guid: c393b26af97f04f47a41838b8f28c9b3, type: 3}
+  - key: astral_goo
+    sprite: {fileID: 21300000, guid: 394557399f6dfdf449c2bee94f043e8b, type: 3}
+  - key: avocado
+    sprite: {fileID: 21300000, guid: 6c88c239c8a00fd42895fe11eb406f7a, type: 3}
+  - key: bag_of_choking_powder
+    sprite: {fileID: 21300000, guid: af073c8dd08e29848982b92d1e53e492, type: 3}
+  - key: banana
+    sprite: {fileID: 21300000, guid: 3fb43a702c93efb428758da20939b787, type: 3}
+  - key: banshee_bow
+    sprite: {fileID: 21300000, guid: f9afe2583ed623149919c8f24c0b6730, type: 3}
+  - key: banshee_claw
+    sprite: {fileID: 21300000, guid: cf411a8511184c443aa74db66cc7f9af, type: 3}
+  - key: banshee_dagger
+    sprite: {fileID: 21300000, guid: 80013297aa1914d46adb39e082cf2dcc, type: 3}
+  - key: banshee_gloves
+    sprite: {fileID: 21300000, guid: 4a83710dcd9ce734b8a76ce5dba86525, type: 3}
+  - key: banshee_horn
+    sprite: {fileID: 21300000, guid: 738b84e8b2384c04a855b81265ed1de3, type: 3}
+  - key: banshee_jacket
+    sprite: {fileID: 21300000, guid: 78e9f678719854d49bddc957e30dac4c, type: 3}
+  - key: banshee_scale
+    sprite: {fileID: 21300000, guid: 969b4c51250c2164ca0e9b056f5b2fcb, type: 3}
+  - key: banshee_scream
+    sprite: {fileID: 21300000, guid: b0bf14be97cfe17469f2b6397b95f358, type: 3}
+  - key: bat_tooth
+    sprite: {fileID: 21300000, guid: 1833a0325e156a240a936f455d80cada, type: 3}
+  - key: bat_wing
+    sprite: {fileID: 21300000, guid: 8afe8abf2fe8bf54fa77331508d8be1a, type: 3}
+  - key: beast_pelt
+    sprite: {fileID: 21300000, guid: a44cde9d41c99154c83368f525985226, type: 3}
+  - key: beastmaster_jacket
+    sprite: {fileID: 21300000, guid: b5341b6913f180f46b82457b5fa33294, type: 3}
+  - key: belt_jacket
+    sprite: {fileID: 21300000, guid: c1876af05be53404bb7ef4923d00cd52, type: 3}
+  - key: black_hide
+    sprite: {fileID: 21300000, guid: 54b0f237fba7a0e4086a92ae6b2fd03e, type: 3}
+  - key: black_iron_armor
+    sprite: {fileID: 21300000, guid: bbcb7885fd7a02742a6b5b77cc4ef85a, type: 3}
+  - key: black_iron_cutlass
+    sprite: {fileID: 21300000, guid: d7ea45973b12bf74383f60d8f8e929ef, type: 3}
+  - key: black_iron_dagger
+    sprite: {fileID: 21300000, guid: 478e84fdbd7fd1c4498752718d09f812, type: 3}
+  - key: black_iron_gauntlets
+    sprite: {fileID: 21300000, guid: 9956c5649966de8439a96b295aa069c4, type: 3}
+  - key: black_iron_helm
+    sprite: {fileID: 21300000, guid: f7337d77b76df2c4597a90a6e4fca1c8, type: 3}
+  - key: black_iron_ingot
+    sprite: {fileID: 21300000, guid: 44437d0d2476f274db8fcd2caf13f6bc, type: 3}
+  - key: black_iron_scepter
+    sprite: {fileID: 21300000, guid: ba9c186150e79e644a886727284dc546, type: 3}
+  - key: black_iron_scraps
+    sprite: {fileID: 21300000, guid: 9d976be5991c0a04f8450b7f43d4f4d4, type: 3}
+  - key: black_ooze
+    sprite: {fileID: 21300000, guid: ec7d7539c907c2c4c957799e1c5f1bb1, type: 3}
+  - key: bleak_boots
+    sprite: {fileID: 21300000, guid: 6413e400c98769c4f8fca839b393d2c0, type: 3}
+  - key: bleak_gloves
+    sprite: {fileID: 21300000, guid: 72fc8585e8afcb84fa19aa0dd8d46f96, type: 3}
+  - key: blueberry
+    sprite: {fileID: 21300000, guid: 9ee6322c636a1df4f9e571ebdacda44e, type: 3}
+  - key: blueberry_pancake
+    sprite: {fileID: 21300000, guid: 6077c99915535654b84ff5ca8e7f3fe1, type: 3}
+  - key: blueberry_smoothie
+    sprite: {fileID: 21300000, guid: 1cc292365860a094bb45e152c79b263f, type: 3}
+  - key: boar_tusk
+    sprite: {fileID: 21300000, guid: faba16587cbc89e4096e394dbdf31cfb, type: 3}
+  - key: bone_fragment
+    sprite: {fileID: 21300000, guid: 5b6bc59b33f0bfb498dd8e79789a1645, type: 3}
+  - key: bottled_sand_spirit
+    sprite: {fileID: 21300000, guid: ad3bcfcce3f72ae4b9660057a6219aaf, type: 3}
+  - key: bottom_nav_adventurers
+    sprite: {fileID: 21300000, guid: db22ec7a324acd3499420f00ba208afa, type: 3}
+  - key: bottom_nav_dungeons
+    sprite: {fileID: 21300000, guid: bde2c95eba4a6334bad3a2f588d63a98, type: 3}
+  - key: bottom_nav_raids
+    sprite: {fileID: 21300000, guid: bc5e9f58087420a4da01a7d4eb4ba25b, type: 3}
+  - key: bread
+    sprite: {fileID: 21300000, guid: 9cdfd23767c1d6046b33e0420dd51d0c, type: 3}
+  - key: breathtaking_robe
+    sprite: {fileID: 21300000, guid: 9b3fffc7aea5e0d4e997355fc4a4a8fb, type: 3}
+  - key: burning_censer
+    sprite: {fileID: 21300000, guid: 98f53e950cecfcc46a2e98547fd6cfc4, type: 3}
+  - key: burning_effigy
+    sprite: {fileID: 21300000, guid: 4841996fcab1d284b99b1be8c3788264, type: 3}
+  - key: butter
+    sprite: {fileID: 21300000, guid: 544c28d8f3c220f44b781210418a0c22, type: 3}
+  - key: cane
+    sprite: {fileID: 21300000, guid: 8996da6fb8b34cc428cd049cf15a46fa, type: 3}
+  - key: celestial_armor
+    sprite: {fileID: 21300000, guid: debcb67585d5a404285f68a7785a1ce9, type: 3}
+  - key: celestial_helmet
+    sprite: {fileID: 21300000, guid: 32ec2f444a5ae264798f68cad22c282f, type: 3}
+  - key: celestial_metal
+    sprite: {fileID: 21300000, guid: 21cea23b6d0d6eb49853f5f406dd775d, type: 3}
+  - key: celestial_scraps
+    sprite: {fileID: 21300000, guid: 31787b87e3f939c4284f785b6e593562, type: 3}
+  - key: celestial_shield
+    sprite: {fileID: 21300000, guid: 66fcc4d1cdbf8bc4f82d6e820485cbea, type: 3}
+  - key: celestial_sword
+    sprite: {fileID: 21300000, guid: ec37165b8bf3df948a13d93c3fd039d5, type: 3}
+  - key: celestials_mercy
+    sprite: {fileID: 21300000, guid: 39b2aca9d48638e408d591b71075eb09, type: 3}
+  - key: ceremonial_cake
+    sprite: {fileID: 21300000, guid: 950dd5fa6db756d48a06f3c321cad8e6, type: 3}
+  - key: ceremonial_dagger
+    sprite: {fileID: 21300000, guid: 61ed45d4d155f924fb00e41f01f37d6f, type: 3}
+  - key: chain_link
+    sprite: {fileID: 21300000, guid: 9c0e312a6dfae194194fe85cbad35b57, type: 3}
+  - key: chain_of_redemption
+    sprite: {fileID: 21300000, guid: 90fff1c5575fac44ab4b7d89bc9fe364, type: 3}
+  - key: champion_armor
+    sprite: {fileID: 21300000, guid: 8caa557e7deecce458109a9f0016f278, type: 3}
+  - key: charred_heart
+    sprite: {fileID: 21300000, guid: 08909273709648848aea0bf4696fe29a, type: 3}
+  - key: cheese
+    sprite: {fileID: 21300000, guid: 1f2c5a2382c298f46b0673c5b4e9dd50, type: 3}
+  - key: cheese_risotto
+    sprite: {fileID: 21300000, guid: def882a7194de1e4d9d3cc3727532b71, type: 3}
+  - key: cheesecake
+    sprite: {fileID: 21300000, guid: 11c9f88592f13274dbfd6b2e8d91b161, type: 3}
+  - key: chief_scientist_coat
+    sprite: {fileID: 21300000, guid: e1d2f3847c73d4b49aeef608156ddb34, type: 3}
+  - key: chocolate
+    sprite: {fileID: 21300000, guid: 69d6eb7095068ce4c9a95d1dbf92e2ff, type: 3}
+  - key: cleansing_potion
+    sprite: {fileID: 21300000, guid: 0f8c508af6f70874f9ad58309d252c79, type: 3}
+  - key: cloak_of_redemption
+    sprite: {fileID: 21300000, guid: 508f216956846c64597a76c7355c054f, type: 3}
+  - key: cloth
+    sprite: {fileID: 21300000, guid: 8acaf63bcf4226a4ab77edab9c72cae1, type: 3}
+  - key: cloth_robe
+    sprite: {fileID: 21300000, guid: 6b8a5fd9066982e4a9fb3e31523eb57b, type: 3}
+  - key: cobweb_bundle
+    sprite: {fileID: 21300000, guid: 7ffaaa68abd8e2f4ca92b90006428c78, type: 3}
+  - key: coffee
+    sprite: {fileID: 21300000, guid: 90dd5e02577c12147adbecff1001d9e9, type: 3}
+  - key: coin_copper
+    sprite: {fileID: 21300000, guid: 95e5425f0ff462e4b9635086848767d6, type: 3}
+  - key: coin_gold
+    sprite: {fileID: 21300000, guid: 8f005a5eaa399c74385d24426bd6afc6, type: 3}
+  - key: coin_platinum
+    sprite: {fileID: 21300000, guid: d251b7fe0d5bb2742a0dfa20118e5963, type: 3}
+  - key: coin_purse
+    sprite: {fileID: 21300000, guid: 16c624b15aa317541b8703d12c03b56a, type: 3}
+  - key: coin_silver
+    sprite: {fileID: 21300000, guid: 80717207e54df944ba351580e2249e7b, type: 3}
+  - key: colossal_sword
+    sprite: {fileID: 21300000, guid: fc44b34a9e237244a94d9b1f8c4a7466, type: 3}
+  - key: consume_egg
+    sprite: {fileID: 21300000, guid: 786f4accfc8628b4e96ef8e7a4de4d37, type: 3}
+  - key: consume_evo23_vial
+    sprite: {fileID: 21300000, guid: 9d0af9c8e13e2c741bec189033763b7e, type: 3}
+  - key: consume_food
+    sprite: {fileID: 21300000, guid: 0807bdbb2f8e1194aac98c4896a36541, type: 3}
+  - key: consume_geode
+    sprite: {fileID: 21300000, guid: f22f93ceb27f2a840834b5b5869b0091, type: 3}
+  - key: consume_intercession
+    sprite: {fileID: 21300000, guid: 3da80edb611e3e84691950cbc9c4a039, type: 3}
+  - key: consume_potion
+    sprite: {fileID: 21300000, guid: 9c6ada1bd2fb73b4d8715b4e2fbf2a35, type: 3}
+  - key: consume_potion_of_rejuvenation
+    sprite: {fileID: 21300000, guid: 584e6c56e8b2b8745b1cc73fcab0a9e0, type: 3}
+  - key: containment_orb
+    sprite: {fileID: 21300000, guid: 891028e642a477c43931db576c436ab1, type: 3}
+  - key: cookie
+    sprite: {fileID: 21300000, guid: 54e15e757ef5a6d40824bec6a8d3b38d, type: 3}
+  - key: copper_armor
+    sprite: {fileID: 21300000, guid: 123a0c7cf8d06d34b8496fa57d772b68, type: 3}
+  - key: copper_helmet
+    sprite: {fileID: 21300000, guid: e8e57cdc0256ff944956b68f2c510345, type: 3}
+  - key: copper_ingot
+    sprite: {fileID: 21300000, guid: 15af448ccbeae5742bdb8b9051d1e9a4, type: 3}
+  - key: copper_ore
+    sprite: {fileID: 21300000, guid: 8188cac3cc4e27047bdf67a9baebfd88, type: 3}
+  - key: copper_sword
+    sprite: {fileID: 21300000, guid: 35413e437051e0047896aac8bb6ff19f, type: 3}
+  - key: corrupted_dagger
+    sprite: {fileID: 21300000, guid: 7abd88a9c3fb4f04cbe08e3f3ec97a69, type: 3}
+  - key: corrupted_shield
+    sprite: {fileID: 21300000, guid: 60e1e02f79790834bafbd3f92c5168c8, type: 3}
+  - key: corrupted_staff
+    sprite: {fileID: 21300000, guid: be59c2b2620959b49bdb406e0b2a1f98, type: 3}
+  - key: corsair_leather
+    sprite: {fileID: 21300000, guid: 5353501154d614a4e99a6fdd87c3990e, type: 3}
+  - key: cosmic_violin
+    sprite: {fileID: 21300000, guid: 8c22bc48b94ea914ab1c31be606dd98c, type: 3}
+  - key: cottontail_fur
+    sprite: {fileID: 21300000, guid: 2c0c205301cc9b24e84e8182e5fc2694, type: 3}
+  - key: cottontail_jacket
+    sprite: {fileID: 21300000, guid: 0c153309b3d16e54e8b7e96bff3839bd, type: 3}
+  - key: crimson_brew
+    sprite: {fileID: 21300000, guid: aa6b87c518a9c13468115c6f7aba974f, type: 3}
+  - key: crimson_leech
+    sprite: {fileID: 21300000, guid: 6eb2328190b84e944b1eb871c0f3bd64, type: 3}
+  - key: crusader_insigna
+    sprite: {fileID: 21300000, guid: 8316cf5d5ef62074a8d36fc9531d8839, type: 3}
+  - key: crushing_depth
+    sprite: {fileID: 21300000, guid: 7979ddc93841e1c4487ac1e5164dbac2, type: 3}
+  - key: crystal_dagger
+    sprite: {fileID: 21300000, guid: f6e92f03afeed3a49bad0aabb2501eac, type: 3}
+  - key: crystal_staff
+    sprite: {fileID: 21300000, guid: 53d6b2142979b3649a196e6e4f0ee198, type: 3}
+  - key: cunning_demise
+    sprite: {fileID: 21300000, guid: 5fd5a7b24218c274c8a1fb6f1a9bd393, type: 3}
+  - key: cunning_downfall
+    sprite: {fileID: 21300000, guid: 77d3ac81409ba6a4db4600fefd070086, type: 3}
+  - key: cursed_bow
+    sprite: {fileID: 21300000, guid: d5716d8faa610a245b741e55aed49b1a, type: 3}
+  - key: cursed_claws
+    sprite: {fileID: 21300000, guid: e1a66b18fcd3db24e86d50a6e76f4846, type: 3}
+  - key: cursed_helm
+    sprite: {fileID: 21300000, guid: 4e1c52947f1d0de4c821a9bb88c30212, type: 3}
+  - key: cursed_jacket
+    sprite: {fileID: 21300000, guid: 57bfae32420d6284c9510b7849b9e9fc, type: 3}
+  - key: cursed_scepter
+    sprite: {fileID: 21300000, guid: a288de66432d12a4c9500b6c18cfa62a, type: 3}
+  - key: cursed_silver
+    sprite: {fileID: 21300000, guid: d427b09fb28427a4db7cdb937b917a66, type: 3}
+  - key: darkness_0
+    sprite: {fileID: 21300000, guid: bb2ba170859a4fa40a3784bea7e96dd5, type: 3}
+  - key: darkness_1
+    sprite: {fileID: 21300000, guid: 0a52e497c9a16e7449c986ad659f11b8, type: 3}
+  - key: darkness_2
+    sprite: {fileID: 21300000, guid: c41281a9fb93f7a478ea254527cc79a1, type: 3}
+  - key: darkness_3
+    sprite: {fileID: 21300000, guid: ef254e732d6d8f44faf179f46e7997b8, type: 3}
+  - key: darkness_4
+    sprite: {fileID: 21300000, guid: 23bb6d7c49a093145adc6d5ca6cd9b19, type: 3}
+  - key: darkness_5
+    sprite: {fileID: 21300000, guid: 75de7934f7ac7d541ad76b5029ba477d, type: 3}
+  - key: death_ray_scepter
+    sprite: {fileID: 21300000, guid: 082a994936e45a341bff0f7e40c1ecbb, type: 3}
+  - key: decomposed_limb
+    sprite: {fileID: 21300000, guid: 31c2e9a7b0962d74589a32dbb7e467f1, type: 3}
+  - key: deep_sea_jacket
+    sprite: {fileID: 21300000, guid: f724ad5710fa94f41aaac6d9a3d1dbd1, type: 3}
+  - key: deep_sea_robe
+    sprite: {fileID: 21300000, guid: 5686a92e5fc349d44b0f8f3e01ca6e17, type: 3}
+  - key: deep_sea_velvet
+    sprite: {fileID: 21300000, guid: 8543fee9cd47f01428c1e48ba65c85a3, type: 3}
+  - key: deviled_eggs
+    sprite: {fileID: 21300000, guid: 64c669bed285e784c9d34a50a437c44e, type: 3}
+  - key: diamond
+    sprite: {fileID: 21300000, guid: 19965c1b9713d794487f5758401b5aaa, type: 3}
+  - key: diamond_amulet
+    sprite: {fileID: 21300000, guid: 862b8eb59b43ec9429e2ecc13170eb9e, type: 3}
+  - key: dino_ribs
+    sprite: {fileID: 21300000, guid: cfcbe19e71f49ba47a3454db36bbe675, type: 3}
+  - key: divine_embryo
+    sprite: {fileID: 21300000, guid: 7b9813c4995d5d341aa6ebfd1f57a214, type: 3}
+  - key: divine_larvae
+    sprite: {fileID: 21300000, guid: 6cdcc93b925b1a942bc3576c8dd6130c, type: 3}
+  - key: divine_zygote
+    sprite: {fileID: 21300000, guid: 5596fe7ef625ac24ca635f1dfa7345f8, type: 3}
+  - key: djinn_tonic
+    sprite: {fileID: 21300000, guid: 4c6cbd6378c8387408f659f96a4d5205, type: 3}
+  - key: doctrine_ability_arcane_suppression
+    sprite: {fileID: 21300000, guid: c4e431a35e61b294eb8908a35895bf74, type: 3}
+  - key: doctrine_ability_beat_the_odds
+    sprite: {fileID: 21300000, guid: 68045d52ad8581d44af39909fdd1c069, type: 3}
+  - key: doctrine_ability_chilling_flow
+    sprite: {fileID: 21300000, guid: d61545dfb7c984c46ac326744685e2f4, type: 3}
+  - key: doctrine_ability_conditioned_reflexes
+    sprite: {fileID: 21300000, guid: c360a9f5155e94f498590848127a52e0, type: 3}
+  - key: doctrine_ability_divine_intervention
+    sprite: {fileID: 21300000, guid: 723765bcdadadc54eb9e508aa5c9d6ae, type: 3}
+  - key: doctrine_ability_ephemeral_presence
+    sprite: {fileID: 21300000, guid: b567908e5e0427047b9605d2bc7900ae, type: 3}
+  - key: doctrine_ability_exalted_constitution
+    sprite: {fileID: 21300000, guid: 9056d3c9a7a4fa048ba85312ea343d77, type: 3}
+  - key: doctrine_ability_exalted_dexterity
+    sprite: {fileID: 21300000, guid: 2174f69552b256a4aa6535c38b16fde8, type: 3}
+  - key: doctrine_ability_exalted_health
+    sprite: {fileID: 21300000, guid: cf1e0ae795a4f664d9340f3a827e023b, type: 3}
+  - key: doctrine_ability_exalted_intelligence
+    sprite: {fileID: 21300000, guid: ebf07a66c49cd9944b544e08214cc964, type: 3}
+  - key: doctrine_ability_exalted_mana
+    sprite: {fileID: 21300000, guid: 4ff43629c4c9c1048abee78f9195628f, type: 3}
+  - key: doctrine_ability_exploit_weakness
+    sprite: {fileID: 21300000, guid: c3f6ddb54c88c2040a37ba57b72e8353, type: 3}
+  - key: doctrine_ability_expose_weakness
+    sprite: {fileID: 21300000, guid: 5c04ea76838cd89449400f30b1554460, type: 3}
+  - key: doctrine_ability_eye_for_an_eye
+    sprite: {fileID: 21300000, guid: 60e74bbf152fdcb429cba95f922d008b, type: 3}
+  - key: doctrine_ability_false_life
+    sprite: {fileID: 21300000, guid: 22cc92e3d07cd4748bae64f30c59b460, type: 3}
+  - key: doctrine_ability_genus_vampyri
+    sprite: {fileID: 21300000, guid: 00058f9709e0dd846986956888ecef19, type: 3}
+  - key: doctrine_ability_healing_nova
+    sprite: {fileID: 21300000, guid: 753f0c797cdf61948bb54819129e87f1, type: 3}
+  - key: doctrine_ability_impenetrable_willpower
+    sprite: {fileID: 21300000, guid: e9336b1a7b4e69f4e846ad243d0cb4ea, type: 3}
+  - key: doctrine_ability_improved_constitution
+    sprite: {fileID: 21300000, guid: f28a12c79f742ee44bb775a7b03f4698, type: 3}
+  - key: doctrine_ability_improved_dexterity
+    sprite: {fileID: 21300000, guid: 74f9b4998635f534f90ce54716f97c34, type: 3}
+  - key: doctrine_ability_improved_health
+    sprite: {fileID: 21300000, guid: 539a004a4259f5b4481353aeed2c6e12, type: 3}
+  - key: doctrine_ability_improved_intelligence
+    sprite: {fileID: 21300000, guid: 0c171a602fb2f62479e735c91384ee5a, type: 3}
+  - key: doctrine_ability_lightning_speed
+    sprite: {fileID: 21300000, guid: f48be292aec151d4f8d6cd76d94b80ef, type: 3}
+  - key: doctrine_ability_lore_master
+    sprite: {fileID: 21300000, guid: 4dcc1f06926821646b859d0f7ba80a32, type: 3}
+  - key: doctrine_ability_manifest_danger
+    sprite: {fileID: 21300000, guid: 1c7acb46530b540418eb35d65e86d083, type: 3}
+  - key: doctrine_ability_mind_bender
+    sprite: {fileID: 21300000, guid: 433bd578733e97a45a2d41782e294c69, type: 3}
+  - key: doctrine_ability_mirror_of_anguish
+    sprite: {fileID: 21300000, guid: a6836413bf7385d49af02718f7ef1515, type: 3}
+  - key: doctrine_ability_necrosis_porphyrica
+    sprite: {fileID: 21300000, guid: 52c73ef61489b8d4685d5a377ee37f6f, type: 3}
+  - key: doctrine_ability_overheal
+    sprite: {fileID: 21300000, guid: 0ff5c2f2e17657949a3d63f08ae11791, type: 3}
+  - key: doctrine_ability_ragebound
+    sprite: {fileID: 21300000, guid: 11504e18be0357d42915857e97f1e665, type: 3}
+  - key: doctrine_ability_relentless_assault
+    sprite: {fileID: 21300000, guid: bb20689c701ef3344a6eccf0c7bb6ae1, type: 3}
+  - key: doctrine_ability_selfless_spirit
+    sprite: {fileID: 21300000, guid: 9986bc3bc7d6ecc4e9403133da48d17c, type: 3}
+  - key: doctrine_ability_servus_sanguinis
+    sprite: {fileID: 21300000, guid: 79e9a4eda7191454eade516afbbc10ab, type: 3}
+  - key: doctrine_ability_servus_umbrae
+    sprite: {fileID: 21300000, guid: 4a6e9222a4b001645b25199a0b917a78, type: 3}
+  - key: doctrine_ability_star_gaze
+    sprite: {fileID: 21300000, guid: 199f226e2b3b89240a2f51b6b4171e60, type: 3}
+  - key: doctrine_ability_tactical_knowledge
+    sprite: {fileID: 21300000, guid: 101b0b1928f34274d8bc39c43ea41534, type: 3}
+  - key: doctrine_ability_troll_resistance
+    sprite: {fileID: 21300000, guid: 1616dbecf61cdc94a86671539763cc8b, type: 3}
+  - key: doctrine_ability_true_agony
+    sprite: {fileID: 21300000, guid: d42ec4b65f4c58f4aa624816bd80726d, type: 3}
+  - key: doctrine_ability_warlock_resilience
+    sprite: {fileID: 21300000, guid: b106df78e78ec2f46a50e3016949c035, type: 3}
+  - key: doctrine_ability_weapon_master
+    sprite: {fileID: 21300000, guid: e24f1de14ba4d4a45a50664cdf2db145, type: 3}
+  - key: doctrine_of_affliction
+    sprite: {fileID: 21300000, guid: c7c0c759c7dc54048bd712b1049fc008, type: 3}
+  - key: doctrine_of_control
+    sprite: {fileID: 21300000, guid: 1d36c473c4b034f40b057465747d30bf, type: 3}
+  - key: doctrine_of_fortitude
+    sprite: {fileID: 21300000, guid: 48c26da9f368fcb48b1bd42f5503af23, type: 3}
+  - key: doctrine_of_grace
+    sprite: {fileID: 21300000, guid: aa5e3e114604d7644a67e8ffafb3b3a5, type: 3}
+  - key: doctrine_of_illusion
+    sprite: {fileID: 21300000, guid: b90c2e3336255244794e6e0660e3d153, type: 3}
+  - key: doctrine_of_knowlegde
+    sprite: {fileID: 21300000, guid: 3786277724446cb4786375bd28ba0065, type: 3}
+  - key: doctrine_of_ruin
+    sprite: {fileID: 21300000, guid: b0003e0e857b90942bb72f6cd7600c36, type: 3}
+  - key: doctrine_of_war
+    sprite: {fileID: 21300000, guid: 85536f70b710e254e9c10d4cce7dbd5a, type: 3}
+  - key: drawer_icon_achievements
+    sprite: {fileID: 21300000, guid: dc84f52dc5fe5b04f8530876f1a841d9, type: 3}
+  - key: drawer_icon_bestiary
+    sprite: {fileID: 21300000, guid: 296d2b0b9245d474e8608f5291417f18, type: 3}
+  - key: drawer_icon_cafe_naver
+    sprite: {fileID: 21300000, guid: 3ca41b625928cc546b24bcc6d43e1af4, type: 3}
+  - key: drawer_icon_faq
+    sprite: {fileID: 21300000, guid: 457690a9f5bae6b47b9c198083365178, type: 3}
+  - key: drawer_icon_king_message
+    sprite: {fileID: 21300000, guid: baf954b0b58d45c4b9313b7b02dd3d62, type: 3}
+  - key: drawer_icon_recall_adventurers
+    sprite: {fileID: 21300000, guid: 5f421151edf1e6b4eb43d0a32f721259, type: 3}
+  - key: drawer_icon_reddit
+    sprite: {fileID: 21300000, guid: 67fa3813592210a47afde520b96fd8a3, type: 3}
+  - key: dreadful_morningstar
+    sprite: {fileID: 21300000, guid: f209e961841ced149a8497319e8edeb1, type: 3}
+  - key: dreamcatcher
+    sprite: {fileID: 21300000, guid: b59cd5568ad01f34b9d2d2157ea19561, type: 3}
+  - key: dreamwrought_armor
+    sprite: {fileID: 21300000, guid: 1600a01b1d89a774381c70e0cc806bcf, type: 3}
+  - key: dreamwrought_boots
+    sprite: {fileID: 21300000, guid: 3686252a4d4c6564d996b464f27dc7b7, type: 3}
+  - key: dreamwrought_bow
+    sprite: {fileID: 21300000, guid: c05caf9ad9f77474b908937f2403b566, type: 3}
+  - key: dreamwrought_gloves
+    sprite: {fileID: 21300000, guid: 3d263fd4a7e39d94f8bce06ca23792ac, type: 3}
+  - key: dreamwrought_hide
+    sprite: {fileID: 21300000, guid: 21a5f440388bbaf4a9654aff319d85c2, type: 3}
+  - key: dreamwrought_jacket
+    sprite: {fileID: 21300000, guid: 310aa6384347a3545b620db0b8e437d7, type: 3}
+  - key: dreamwrought_larva
+    sprite: {fileID: 21300000, guid: ab3b01f1acf6454449f0e2e1f0ac312e, type: 3}
+  - key: dreamwrought_mane
+    sprite: {fileID: 21300000, guid: a4bafa078bed2db45a9a86cb99e93046, type: 3}
+  - key: dreamwrought_robe
+    sprite: {fileID: 21300000, guid: 9500239e4e061fa4c8cae07c461e1916, type: 3}
+  - key: dreamwrought_silk
+    sprite: {fileID: 21300000, guid: 226decdfe17f73245b2645a9c712c5bb, type: 3}
+  - key: dreamwrought_staff
+    sprite: {fileID: 21300000, guid: 7f40efece8769234e83b31d30f409f8f, type: 3}
+  - key: dreamwrought_steel
+    sprite: {fileID: 21300000, guid: e16b078785041344ca95e78c1478fdd0, type: 3}
+  - key: dryads_blessing
+    sprite: {fileID: 21300000, guid: 45c207ed7add7b64da4a0ddbdd5ba6cb, type: 3}
+  - key: dryads_curse
+    sprite: {fileID: 21300000, guid: f8c119a490177294aa19a2633e99f92d, type: 3}
+  - key: duelist_armor
+    sprite: {fileID: 21300000, guid: 52abe917352e554439418a8f9383f27b, type: 3}
+  - key: egg
+    sprite: {fileID: 21300000, guid: a3cf023a1765288448b5f1745bf87be4, type: 3}
+  - key: egg_avian
+    sprite: {fileID: 21300000, guid: 0fc24048fbf38234999eb44186c91588, type: 3}
+  - key: egg_construct
+    sprite: {fileID: 21300000, guid: eddc6ddf266936f48b44eeaa28d65b9d, type: 3}
+  - key: egg_esoteric
+    sprite: {fileID: 21300000, guid: 622617bf2b9aee444b3eb9ce2ef54025, type: 3}
+  - key: egg_insect
+    sprite: {fileID: 21300000, guid: af576cac98f17dc44b994ea8f7f0a733, type: 3}
+  - key: egg_reptile
+    sprite: {fileID: 21300000, guid: a4b04a4a0a3dc8d4ca0f2333d716bfe5, type: 3}
+  - key: egg_wild
+    sprite: {fileID: 21300000, guid: 3ada0e2e630ab51459f42c7d656ba48f, type: 3}
+  - key: egg_wooden
+    sprite: {fileID: 21300000, guid: 122be9184f3f4ac488e8e3e4258a2c6e, type: 3}
+  - key: elastic_boots
+    sprite: {fileID: 21300000, guid: e976f2b999ae5fb4f84e620260d03c2f, type: 3}
+  - key: elastic_membrane
+    sprite: {fileID: 21300000, guid: 140e9fc1380b133448394b6a4a45be1b, type: 3}
+  - key: elastic_robe
+    sprite: {fileID: 21300000, guid: c2936a881ba447b439f50487c11570d5, type: 3}
+  - key: eldritch_mitre
+    sprite: {fileID: 21300000, guid: 33627396a0b5bc74c89ae303e85c17c5, type: 3}
+  - key: eldritch_seal
+    sprite: {fileID: 21300000, guid: c066dca4c453f154ab01ce211c279a0f, type: 3}
+  - key: eldritch_shred
+    sprite: {fileID: 21300000, guid: 7a76a5012c49cbb4abc98c420e2204bb, type: 3}
+  - key: eldritch_tendril
+    sprite: {fileID: 21300000, guid: b86a3c76061c6d84f8bb8bdc7d2c55c1, type: 3}
+  - key: electric_catalyst
+    sprite: {fileID: 21300000, guid: 9dcc57a9161adda408821792c66eb400, type: 3}
+  - key: elixir_of_affinity
+    sprite: {fileID: 21300000, guid: 0812ceeadf5654d4d80edc927d7ec779, type: 3}
+  - key: elixir_of_learning
+    sprite: {fileID: 21300000, guid: 98d8c1c906a174d49b55638ed926a8f4, type: 3}
+  - key: elongated_bone
+    sprite: {fileID: 21300000, guid: 3d073e77b8c39014eb4693846889ad06, type: 3}
+  - key: elysian_wood
+    sprite: {fileID: 21300000, guid: 3d2875b0c6056e44fa14ce75149366d8, type: 3}
+  - key: emerald
+    sprite: {fileID: 21300000, guid: c606f988d0dbde4479b87d4354ed1de7, type: 3}
+  - key: emerald_ring
+    sprite: {fileID: 21300000, guid: bf4a6faa1dad6a840a713f51ffa43ac4, type: 3}
+  - key: empty_equipment
+    sprite: {fileID: 21300000, guid: f2633d3013907644bb8375b9eb38197e, type: 3}
+  - key: enchanted_staff
+    sprite: {fileID: 21300000, guid: 6b7675e5fe815df48affc372ae0fd54e, type: 3}
+  - key: enlighted_servant
+    sprite: {fileID: 21300000, guid: cbe0af4081aa4ff4aa8e3673f937675c, type: 3}
+  - key: epic_raid
+    sprite: {fileID: 21300000, guid: 95e2885c77968184f80772918b758c01, type: 3}
+  - key: essence_of_corruption
+    sprite: {fileID: 21300000, guid: c415407dd92971f4da6f6f53eb5b3201, type: 3}
+  - key: eternal_hunger
+    sprite: {fileID: 21300000, guid: 449331394a1750544b279df1c52f2ae9, type: 3}
+  - key: evo23_vial
+    sprite: {fileID: 21300000, guid: 80f0ae1eec0a026419129ca3ac37916b, type: 3}
+  - key: exalted_powder
+    sprite: {fileID: 21300000, guid: 9914089cf6c83e4498945d33df132ece, type: 3}
+  - key: exotic_boots
+    sprite: {fileID: 21300000, guid: 102d008552565704488d8cf646a734d1, type: 3}
+  - key: exotic_fruit_salad
+    sprite: {fileID: 21300000, guid: bc9793a7c117b6c4eb15d54294b8289e, type: 3}
+  - key: exotic_robe
+    sprite: {fileID: 21300000, guid: 97d6b66b6c022ac4893f90b8c567e133, type: 3}
+  - key: exotic_velvet
+    sprite: {fileID: 21300000, guid: 47ab5f40539307d4b9c3177fe06fbcd7, type: 3}
+  - key: eye_of_the_abyss
+    sprite: {fileID: 21300000, guid: c4d07ce45c41f43418947b586ba2bd9f, type: 3}
+  - key: eye_of_ur
+    sprite: {fileID: 21300000, guid: c342fa56977201e4da3fd0454ad2fd88, type: 3}
+  - key: eyes_of_the_swordsman
+    sprite: {fileID: 21300000, guid: 73dddda5d4b2369499762448bf126a32, type: 3}
+  - key: fang_dagger
+    sprite: {fileID: 21300000, guid: f9ca99c87e75b17459f2a02a30e0ead8, type: 3}
+  - key: feather
+    sprite: {fileID: 21300000, guid: 21975464a5f348c41a11dd3f513f5633, type: 3}
+  - key: feather_robe
+    sprite: {fileID: 21300000, guid: 9317690aa7137ea45a3e44803b31b555, type: 3}
+  - key: feeble_tether
+    sprite: {fileID: 21300000, guid: 05c722436f3f3f7458a273506f1dd39f, type: 3}
+  - key: fire_catalyst
+    sprite: {fileID: 21300000, guid: 36edbcdca8e5e1946b36bb90171cd88b, type: 3}
+  - key: fireproof_oil
+    sprite: {fileID: 21300000, guid: b246f516591240a4d92538848c352b40, type: 3}
+  - key: flake_of_infinity
+    sprite: {fileID: 21300000, guid: b8468cd789ab519429fcc62f59dc3f6d, type: 3}
+  - key: fleetfoot_armor
+    sprite: {fileID: 21300000, guid: 3c7c4503d0947a84a98230d045a49331, type: 3}
+  - key: fleetfoot_boots
+    sprite: {fileID: 21300000, guid: 25fcb128d05332047826c984baf60bbb, type: 3}
+  - key: fleetfoot_fabric
+    sprite: {fileID: 21300000, guid: 077612b9a66f5c84d87c2c2a7f712b98, type: 3}
+  - key: fleetfoot_gloves
+    sprite: {fileID: 21300000, guid: 7658f6c728c9d4744831b11715916e52, type: 3}
+  - key: fleetfoot_jacket
+    sprite: {fileID: 21300000, guid: eb9e10064780e304e80b2c338cf708fb, type: 3}
+  - key: fleetfoot_robe
+    sprite: {fileID: 21300000, guid: a4f1132ab9a2b404987a17a42cff02da, type: 3}
+  - key: flute
+    sprite: {fileID: 21300000, guid: 021d7099625a2ff498938ce0082ba2c4, type: 3}
+  - key: flux_limiter
+    sprite: {fileID: 21300000, guid: b05e7ad1f40942c45b0945e6bd7a31b9, type: 3}
+  - key: flying_reaper
+    sprite: {fileID: 21300000, guid: f0cbdb597de67d74fa12d1b917d4a6d6, type: 3}
+  - key: focused_scepter
+    sprite: {fileID: 21300000, guid: 590e9ac2559059541956dcaeaed539ad, type: 3}
+  - key: fresh_salmon
+    sprite: {fileID: 21300000, guid: f2a31c6f2147ea34a997925ffa56a2d3, type: 3}
+  - key: fresh_tuna
+    sprite: {fileID: 21300000, guid: d27568ef70a898a4ca161b859e9a93ad, type: 3}
+  - key: frost_crystal
+    sprite: {fileID: 21300000, guid: e7f0ec4fe6e1675488510a57a3ecdc24, type: 3}
+  - key: frost_nucleus
+    sprite: {fileID: 21300000, guid: d1d4038ba55d6744ab6de629674e3518, type: 3}
+  - key: frostmetal_armor
+    sprite: {fileID: 21300000, guid: 97bd562dd4def7f4b97f1c5d13e41403, type: 3}
+  - key: frostmetal_dagger
+    sprite: {fileID: 21300000, guid: b549f93f0fba08d4c8efa2146b9652de, type: 3}
+  - key: frostmetal_ingot
+    sprite: {fileID: 21300000, guid: cd92edf271740ac4fb951bb6537c71db, type: 3}
+  - key: frostmetal_ore
+    sprite: {fileID: 21300000, guid: 59c593605558caf49825ab26ed0f5faf, type: 3}
+  - key: frostmetal_sword
+    sprite: {fileID: 21300000, guid: b789475bfe6c23d4699f13328deaee4c, type: 3}
+  - key: frozen_breath_broth
+    sprite: {fileID: 21300000, guid: e3034f452916f444d8090900a80a8117, type: 3}
+  - key: frozen_egg
+    sprite: {fileID: 21300000, guid: 2897f9bc9c3252142aa06cc5886c4d07, type: 3}
+  - key: frozen_egg_pendant
+    sprite: {fileID: 21300000, guid: ae57c19377e46d5418d5896e487c0b5f, type: 3}
+  - key: frozen_embrace
+    sprite: {fileID: 21300000, guid: 5a78e9f9459ec0f4aa4790df3bf15086, type: 3}
+  - key: frozen_scale
+    sprite: {fileID: 21300000, guid: 22987ce0b8a2a274aa8534cfaf8dac10, type: 3}
+  - key: fruit_salad
+    sprite: {fileID: 21300000, guid: 7a600a58da6170d478004dc9db2c3f3e, type: 3}
+  - key: fullmoon_dagger
+    sprite: {fileID: 21300000, guid: 30b02cd22f2d79f4b92d612f1722995c, type: 3}
+  - key: gem
+    sprite: {fileID: 21300000, guid: 02fdd6fa117b47c41b4344f7a715e2db, type: 3}
+  - key: gem_of_protection
+    sprite: {fileID: 21300000, guid: 90375a584f9bd5d4989b1d713de8d41e, type: 3}
+  - key: geode
+    sprite: {fileID: 21300000, guid: a9181ebefbe8f8b40a4ed1bc632ec786, type: 3}
+  - key: ghastly_cuirass
+    sprite: {fileID: 21300000, guid: fedc1977312ba9341802e2b283e3a514, type: 3}
+  - key: ghastly_scimitar
+    sprite: {fileID: 21300000, guid: 79b63149d4c4a054497a1d4a57efada4, type: 3}
+  - key: ghastly_shield
+    sprite: {fileID: 21300000, guid: 8103b39bfcba411468f90bd4de12a8b5, type: 3}
+  - key: ghost_rabbit_cloak
+    sprite: {fileID: 21300000, guid: a66ba62a63739604e874e9ddf1cd4af5, type: 3}
+  - key: ghostwood_board
+    sprite: {fileID: 21300000, guid: b5eb6689d39ebf345b6d6d82193c0fd5, type: 3}
+  - key: ghostwood_bow
+    sprite: {fileID: 21300000, guid: 9070fd7b9f1618340b1135ee38747af7, type: 3}
+  - key: ghostwood_shield
+    sprite: {fileID: 21300000, guid: 0717a1f6d84016d488c10eb87df0bd4a, type: 3}
+  - key: ghostwood_stump
+    sprite: {fileID: 21300000, guid: 85b1aeb417abe4447a26ed541aec4c9e, type: 3}
+  - key: giant_moth_wing
+    sprite: {fileID: 21300000, guid: 5bb17397de8cdfd458f0c637b9a96b13, type: 3}
+  - key: giant_shell_fragment
+    sprite: {fileID: 21300000, guid: f7b60f15655c014478f73d031ab35177, type: 3}
+  - key: gift_of_light
+    sprite: {fileID: 21300000, guid: 1749541a5545f18439e541670d632360, type: 3}
+  - key: glass
+    sprite: {fileID: 21300000, guid: 10f20e0f0fda67146ab20166f79fabaa, type: 3}
+  - key: glass_knife
+    sprite: {fileID: 21300000, guid: 25d04e160eca8d14bb4ee078d188c82c, type: 3}
+  - key: glazed_donut
+    sprite: {fileID: 21300000, guid: cbcd2dc543ed53d439b38b35c2c328f5, type: 3}
+  - key: gold_ingot
+    sprite: {fileID: 21300000, guid: ec6ac7c697be9d14895e9dc853bcaeec, type: 3}
+  - key: gold_scraps
+    sprite: {fileID: 21300000, guid: 958988b434b6dce4b812469fd32d6134, type: 3}
+  - key: golden_armor
+    sprite: {fileID: 21300000, guid: 991483506eb882f4b8ba485c22bf2eaf, type: 3}
+  - key: golden_boots
+    sprite: {fileID: 21300000, guid: b624421e2fe812346aef26f069daabd5, type: 3}
+  - key: golden_gauntlets
+    sprite: {fileID: 21300000, guid: 71d084cdd36a7b248af1ba75bd890467, type: 3}
+  - key: golden_helm
+    sprite: {fileID: 21300000, guid: 83c3e0d7d26e36446a02437c05a7aa76, type: 3}
+  - key: golden_shield
+    sprite: {fileID: 21300000, guid: a8d5414bacf3a364fafc9c81befb076b, type: 3}
+  - key: golden_sword
+    sprite: {fileID: 21300000, guid: 86036933b0f8bd545b1a7c7d1cbf826b, type: 3}
+  - key: gourmet_icecream
+    sprite: {fileID: 21300000, guid: 519c21e8cfcc2e94ba6839228eb62be9, type: 3}
+  - key: grains
+    sprite: {fileID: 21300000, guid: c7bb60db09f6e8d4a822efd93a48d07d, type: 3}
+  - key: green_slime
+    sprite: {fileID: 21300000, guid: 10dec81bd362b4a439e27f49d205c590, type: 3}
+  - key: grilled_cheese
+    sprite: {fileID: 21300000, guid: dcd1ec1ac9c40ff48981fab3b6693459, type: 3}
+  - key: hammer
+    sprite: {fileID: 21300000, guid: b977f157ae56aba4db9d9fe19dc136e5, type: 3}
+  - key: heart_of_darkness
+    sprite: {fileID: 21300000, guid: 74dc4f56463b20b4984086d604ce7ee7, type: 3}
+  - key: heaven_and_hell
+    sprite: {fileID: 21300000, guid: 33c0b1ed01a91f04e8365d8db560ebb4, type: 3}
+  - key: hellish_ration
+    sprite: {fileID: 21300000, guid: 777aa4dbd63c42f43b3a3057ce051c8a, type: 3}
+  - key: holy_water
+    sprite: {fileID: 21300000, guid: 75a9ec1d2506230499f83852df1f5102, type: 3}
+  - key: hourglass
+    sprite: {fileID: 21300000, guid: ac7d178eb3a8c6a4aa1eb4b889223f58, type: 3}
+  - key: ice_cage
+    sprite: {fileID: 21300000, guid: a01c9b0884cb4af47aeb041894694ba6, type: 3}
+  - key: ice_catalyst
+    sprite: {fileID: 21300000, guid: ce25ed00a09969f428fc89ec838d028d, type: 3}
+  - key: ice_fiber
+    sprite: {fileID: 21300000, guid: 0e3b65d9e82474a45bcc950bbd33ecd0, type: 3}
+  - key: icicle
+    sprite: {fileID: 21300000, guid: 4bbd64d51ee144c4585db2382fc56eaa, type: 3}
+  - key: icon_effect_ablaze
+    sprite: {fileID: 21300000, guid: 98097cb4d7d1aa143bd5e9cbd7060062, type: 3}
+  - key: icon_effect_anointed
+    sprite: {fileID: 21300000, guid: 89ef5e3872fc95d41b7a86a502e5dc67, type: 3}
+  - key: icon_effect_bleed
+    sprite: {fileID: 21300000, guid: 14420ba183becaa47bd240e3cccd5858, type: 3}
+  - key: icon_effect_curse
+    sprite: {fileID: 21300000, guid: 877f34e250eda80449b13a66abc02713, type: 3}
+  - key: icon_effect_defensive_stance
+    sprite: {fileID: 21300000, guid: a8c67a3b4c3ca3f48a431f777fba9f46, type: 3}
+  - key: icon_effect_delirium
+    sprite: {fileID: 21300000, guid: 01e28b0b90992974192d95402dd501bb, type: 3}
+  - key: icon_effect_exalt
+    sprite: {fileID: 21300000, guid: 28ea784f300547242be0bf51011b853e, type: 3}
+  - key: icon_effect_false_life
+    sprite: {fileID: 21300000, guid: 82418e711a925034eba02aa50067b512, type: 3}
+  - key: icon_effect_freeze
+    sprite: {fileID: 21300000, guid: baba794273e59f24f98431e77efe163c, type: 3}
+  - key: icon_effect_frenzy
+    sprite: {fileID: 21300000, guid: cec6ac833f38f4a4785bb4ea354611e2, type: 3}
+  - key: icon_effect_inspire
+    sprite: {fileID: 21300000, guid: 18ae9256c4e81204a901e8d91718c569, type: 3}
+  - key: icon_effect_petrify
+    sprite: {fileID: 21300000, guid: b2a3d6d8aab48944ca5a519273aa9f4d, type: 3}
+  - key: icon_effect_poison
+    sprite: {fileID: 21300000, guid: 3d12eb24290f89a49aa67904115bf2b6, type: 3}
+  - key: icon_effect_regeneration
+    sprite: {fileID: 21300000, guid: b187b38985ab8654ab504b0e54850da5, type: 3}
+  - key: icon_effect_silence
+    sprite: {fileID: 21300000, guid: f22be24715c0ccc4288309801cb97cbc, type: 3}
+  - key: icon_effect_stun
+    sprite: {fileID: 21300000, guid: fabc76158ee10ea49a729c8d2c732376, type: 3}
+  - key: icon_effect_taunt
+    sprite: {fileID: 21300000, guid: 932e1e11d5340f14192432ab8726ef48, type: 3}
+  - key: icon_effect_terrify
+    sprite: {fileID: 21300000, guid: da0132dce9ac4c243be3608efb770ea7, type: 3}
+  - key: ignition_orb
+    sprite: {fileID: 21300000, guid: 034b9c776c731904487377e219291900, type: 3}
+  - key: imperial_shield
+    sprite: {fileID: 21300000, guid: f1e55016db9de0f41a675a0b9fbffc62, type: 3}
+  - key: imperial_staff
+    sprite: {fileID: 21300000, guid: 88e7ef5ec50584d48a295bb1a0efdaec, type: 3}
+  - key: infected_blood
+    sprite: {fileID: 21300000, guid: 85d33d0da9c9193458407c341b73e3d4, type: 3}
+  - key: infernal_bow
+    sprite: {fileID: 21300000, guid: a872b0eaba534f249a5303abf27ee925, type: 3}
+  - key: infernal_chakram
+    sprite: {fileID: 21300000, guid: a1223a337ed82314c9df51ed928895b4, type: 3}
+  - key: infernite
+    sprite: {fileID: 21300000, guid: 238059428cce82644a6d43f840789dbb, type: 3}
+  - key: infinite_despair
+    sprite: {fileID: 21300000, guid: 4525cfbcfaf17bf47acf0f2b9b02027d, type: 3}
+  - key: infinity_hat
+    sprite: {fileID: 21300000, guid: a48171331342f6a4d8a69413873a898e, type: 3}
+  - key: infused_necklace
+    sprite: {fileID: 21300000, guid: 0f9b095f68618d0479a608cb154b303f, type: 3}
+  - key: infusion_of_wisdom
+    sprite: {fileID: 21300000, guid: aaf59ea1e08451a4f92b8fee6bcd6065, type: 3}
+  - key: intercession
+    sprite: {fileID: 21300000, guid: 508907e481344df4ba08c436b56c3037, type: 3}
+  - key: invisible_servant
+    sprite: {fileID: 21300000, guid: fe1f933a74ae7fd478e9273f76467fc0, type: 3}
+  - key: iron_chainmail
+    sprite: {fileID: 21300000, guid: 17af021c97a322b47ad5546b6096e0f0, type: 3}
+  - key: iron_helm
+    sprite: {fileID: 21300000, guid: ebc6a7124926de64f80dd24ac3ec65c5, type: 3}
+  - key: iron_ingot
+    sprite: {fileID: 21300000, guid: 3340370fc26383e42b925dfd6869f647, type: 3}
+  - key: ivory
+    sprite: {fileID: 21300000, guid: dce5463f2919f4b46aabe4a7b1bda5f9, type: 3}
+  - key: ivory_jacket
+    sprite: {fileID: 21300000, guid: 7002b03c3bfab6749b59d710968d069c, type: 3}
+  - key: jeweled_crown
+    sprite: {fileID: 21300000, guid: eebdc2219a176774d8225099de197544, type: 3}
+  - key: kabelian_armor
+    sprite: {fileID: 21300000, guid: b0572d05c85c26a44b1cbec6b9d52e23, type: 3}
+  - key: kabelian_claws
+    sprite: {fileID: 21300000, guid: dfd4f2552d06ff442b5436990c51b05b, type: 3}
+  - key: kabelian_metal
+    sprite: {fileID: 21300000, guid: 14142a49cd277ef408a422a380fe9213, type: 3}
+  - key: kaunian_fabric
+    sprite: {fileID: 21300000, guid: bf04e23f41c3f4a4294b8f26e7e13404, type: 3}
+  - key: kaunian_robe
+    sprite: {fileID: 21300000, guid: ce88ad4b896174547a3676519d65462b, type: 3}
+  - key: kindlequartz
+    sprite: {fileID: 21300000, guid: c75209c53ed8c0c49b055e48e3abea62, type: 3}
+  - key: king_message
+    sprite: {fileID: 21300000, guid: 6ded3cd7e7b11ba4ca4281801721b6c2, type: 3}
+  - key: large_iris
+    sprite: {fileID: 21300000, guid: 7c5b06b0c1c18924b8c2c94e665fc71a, type: 3}
+  - key: laroxian_boots
+    sprite: {fileID: 21300000, guid: 6292a8c4b429bc44da66929157122b39, type: 3}
+  - key: laroxian_fabric
+    sprite: {fileID: 21300000, guid: 0cdaede7219e8834183982618a5514fe, type: 3}
+  - key: laroxian_gloves
+    sprite: {fileID: 21300000, guid: 3994e82049f5e2049b4f2e1af562daf6, type: 3}
+  - key: laroxian_robe
+    sprite: {fileID: 21300000, guid: 3534258ce8a979649bd54f7d660643f0, type: 3}
+  - key: leather
+    sprite: {fileID: 21300000, guid: 24bf64ead75f23047b0ff92066e3fdab, type: 3}
+  - key: leather_boots
+    sprite: {fileID: 21300000, guid: ff71e12575171844b8e4adb76bdbc32f, type: 3}
+  - key: leather_gloves
+    sprite: {fileID: 21300000, guid: 4ab00691ec3d4254bb7231676cdfc273, type: 3}
+  - key: leather_jacket
+    sprite: {fileID: 21300000, guid: deabd654fb7b6df49a37aa60feadd55e, type: 3}
+  - key: leek
+    sprite: {fileID: 21300000, guid: fe61b8c040ddcd74ea2dc56e1f6de69a, type: 3}
+  - key: living_sap
+    sprite: {fileID: 21300000, guid: 667b6b68378df5442805d729f84bfa7a, type: 3}
+  - key: living_scimitar
+    sprite: {fileID: 21300000, guid: f01cbedfbff000d47b5ad494a834bbc3, type: 3}
+  - key: living_vine
+    sprite: {fileID: 21300000, guid: 71c580ec872e98a4eb9fbfda412a24d4, type: 3}
+  - key: living_whip
+    sprite: {fileID: 21300000, guid: 4067adb6e9fb51c4aa490df87c322f12, type: 3}
+  - key: long_serpent_fang
+    sprite: {fileID: 21300000, guid: 4bd5b3a3e72872342b267b57077cd863, type: 3}
+  - key: loot_chest
+    sprite: {fileID: 21300000, guid: 7d18eaaeebb95cc44a78976b5c7f17a3, type: 3}
+  - key: loot_chest_full
+    sprite: {fileID: 21300000, guid: d29e7e150ef078d48b1761f4a8ea938e, type: 3}
+  - key: mascarpone_cheese
+    sprite: {fileID: 21300000, guid: 6b2a87dd8225e3449b5ac85121da4354, type: 3}
+  - key: maxxiburger
+    sprite: {fileID: 21300000, guid: b7f215ea871d43f4292dd030805a5db0, type: 3}
+  - key: meat_chop
+    sprite: {fileID: 21300000, guid: 439655d78df230a4095f4acca4a8b441, type: 3}
+  - key: meat_pie
+    sprite: {fileID: 21300000, guid: 86dc5f5674e9b52479c0d4c81b90ae83, type: 3}
+  - key: meat_stew
+    sprite: {fileID: 21300000, guid: 2c230db3b5282f343af195ffc0a966c8, type: 3}
+  - key: meaty_mushroom
+    sprite: {fileID: 21300000, guid: 109d7b8fdbe0912479f68645bcc5343b, type: 3}
+  - key: merchant
+    sprite: {fileID: 21300000, guid: 053f915972638bf47861b7a310a30624, type: 3}
+  - key: metamorphic_armor
+    sprite: {fileID: 21300000, guid: e930a0b17269655498c969d0b9cb67a3, type: 3}
+  - key: metamorphic_sand
+    sprite: {fileID: 21300000, guid: a9a8561ee9b88444a952d36262b9560f, type: 3}
+  - key: metamorphic_shield
+    sprite: {fileID: 21300000, guid: bc4b5a16c25943246b05f4580529e317, type: 3}
+  - key: milk
+    sprite: {fileID: 21300000, guid: 4c8eb60b80512354bab605f4a5f8d49f, type: 3}
+  - key: missing_page
+    sprite: {fileID: 21300000, guid: 8196e1a05ccae6547bf9f510fe2250be, type: 3}
+  - key: mithril
+    sprite: {fileID: 21300000, guid: e3490fb5460bf274db6d7e8b64591194, type: 3}
+  - key: mithril_bow
+    sprite: {fileID: 21300000, guid: 28475638c91238445bfd0769d7d7f034, type: 3}
+  - key: mithril_dagger
+    sprite: {fileID: 21300000, guid: b963d0dd14bdb024f9cbad2c2d57f4d5, type: 3}
+  - key: mithril_helm
+    sprite: {fileID: 21300000, guid: a6aae29f34b03d14788f96dfc274c6e1, type: 3}
+  - key: mithril_shield
+    sprite: {fileID: 21300000, guid: 7d5946fbf16e0114886ace50d33fbe8b, type: 3}
+  - key: mithril_sword
+    sprite: {fileID: 21300000, guid: 22f7e510db97f334bac7c7ec8b886584, type: 3}
+  - key: mitre_hat
+    sprite: {fileID: 21300000, guid: b1b20db63871e5e449ccc969ef0344be, type: 3}
+  - key: molten_staff
+    sprite: {fileID: 21300000, guid: 9988434bac7093c4383b430ad624c8a1, type: 3}
+  - key: monkey_hide
+    sprite: {fileID: 21300000, guid: b0f29524f87fc85499b241ea0116c553, type: 3}
+  - key: monkey_hide_jacket
+    sprite: {fileID: 21300000, guid: d0e33feb361ef8c4b802c1d8b59d86e1, type: 3}
+  - key: moth_robe
+    sprite: {fileID: 21300000, guid: d406c348d66aa2a4fa4741a18c79c6f8, type: 3}
+  - key: mottiphobia
+    sprite: {fileID: 21300000, guid: 030107d206dddbf4a921aac135495eb2, type: 3}
+  - key: mushroom_omelette
+    sprite: {fileID: 21300000, guid: 477efefef74775144b84e07ed817b11f, type: 3}
+  - key: mushroom_risotto
+    sprite: {fileID: 21300000, guid: 54746672bc1b9064580b8760c0c8c444, type: 3}
+  - key: mushroom_stew
+    sprite: {fileID: 21300000, guid: 90c3e84de8563b14eaa5964c669c9a32, type: 3}
+  - key: mutant_hide
+    sprite: {fileID: 21300000, guid: e5906fc5f964bfb4f99b137abd9b581f, type: 3}
+  - key: mutant_jacket
+    sprite: {fileID: 21300000, guid: a6e70fac24ebe184ea0dab0fddc9e19c, type: 3}
+  - key: mutual_despair
+    sprite: {fileID: 21300000, guid: ed2876b664bfc444ebc776b8eda83a0b, type: 3}
+  - key: mysterious_appendage
+    sprite: {fileID: 21300000, guid: 0d32d177c2964d240bd467149ad08d40, type: 3}
+  - key: mysterious_cog
+    sprite: {fileID: 21300000, guid: 0a7c2cdc05686f442842ae228038cd4f, type: 3}
+  - key: nightwing_jacket
+    sprite: {fileID: 21300000, guid: 97df8fa185bd6854ca634068659d5db1, type: 3}
+  - key: nightwing_leather
+    sprite: {fileID: 21300000, guid: a29a49572e1d5204ab54ab1b492355c0, type: 3}
+  - key: nil_armor
+    sprite: {fileID: 21300000, guid: e7b7332910aa89a4f905c0940fd3574e, type: 3}
+  - key: nil_pendant
+    sprite: {fileID: 21300000, guid: 3d22da17e50b4264ab60554711bf6af2, type: 3}
+  - key: no_ads
+    sprite: {fileID: 21300000, guid: 59b19582977e44b4b89278b904495996, type: 3}
+  - key: oblivion
+    sprite: {fileID: 21300000, guid: 6158d8f7477866f4a81e3c0f78c611aa, type: 3}
+  - key: obsidian_bow
+    sprite: {fileID: 21300000, guid: 32db9e347d856fd4986f06c1158ec1c0, type: 3}
+  - key: obsidian_chunk
+    sprite: {fileID: 21300000, guid: 499e32e157f00a540a81fff73c2efc9e, type: 3}
+  - key: obsidian_cuirass
+    sprite: {fileID: 21300000, guid: 084e5411f6932744c9efb7c7ca653cee, type: 3}
+  - key: obsidian_dagger
+    sprite: {fileID: 21300000, guid: 02f68fb6f2c82264687c204ed6407dd6, type: 3}
+  - key: obsidian_helm
+    sprite: {fileID: 21300000, guid: a820056ac9b8edc40a6958583fa69819, type: 3}
+  - key: obsidian_scepter
+    sprite: {fileID: 21300000, guid: 47fc6407f3b98b6409d68ba4012e06ee, type: 3}
+  - key: obsidian_shield
+    sprite: {fileID: 21300000, guid: 7355b90f99fb51c409e3c1e746de27aa, type: 3}
+  - key: obsidian_sword
+    sprite: {fileID: 21300000, guid: 165ca4b592bd6364c9bc927914dfd17e, type: 3}
+  - key: orb_of_ectoplasm
+    sprite: {fileID: 21300000, guid: d648ff75394863242807c18d4d6437b2, type: 3}
+  - key: orichalcum_armor
+    sprite: {fileID: 21300000, guid: 753a9d021730d30449402d995742ea15, type: 3}
+  - key: orichalcum_dagger
+    sprite: {fileID: 21300000, guid: 515c9baabfb086a41a12594ce547504f, type: 3}
+  - key: orichalcum_helm
+    sprite: {fileID: 21300000, guid: 2158f03eead8ef14d955acbcbff5144c, type: 3}
+  - key: orichalcum_ingot
+    sprite: {fileID: 21300000, guid: 7273b4251dc93f049a82739a48593753, type: 3}
+  - key: orichalcum_scraps
+    sprite: {fileID: 21300000, guid: 23b3d4644c97ff448999310fee09d810, type: 3}
+  - key: orichalcum_shield
+    sprite: {fileID: 21300000, guid: 72ccc79fdf605494d91950f5ce222ea5, type: 3}
+  - key: orichalcum_sword
+    sprite: {fileID: 21300000, guid: 045c8a3ebbb0bfe4383aae27c5c0e04f, type: 3}
+  - key: panopticon_staff
+    sprite: {fileID: 21300000, guid: 5e65f6c88bcba8a448929f1e534bf586, type: 3}
+  - key: pasta
+    sprite: {fileID: 21300000, guid: 358619f75228f14419e58887acd13bd0, type: 3}
+  - key: pasta_with_sauce
+    sprite: {fileID: 21300000, guid: 4186666cb3218a443b71b487e7d0ef10, type: 3}
+  - key: patrician_armor
+    sprite: {fileID: 21300000, guid: 05c4c17c7bd50d94da9523b03b688db3, type: 3}
+  - key: pear
+    sprite: {fileID: 21300000, guid: 6b576860574d96a449f3e5f896761e85, type: 3}
+  - key: pear_pie
+    sprite: {fileID: 21300000, guid: 30ea30d66f02a6b4faa25df39e697d90, type: 3}
+  - key: pearl
+    sprite: {fileID: 21300000, guid: 478613f2ca8dfb3458119c14f4e7a1f4, type: 3}
+  - key: permafrost_core
+    sprite: {fileID: 21300000, guid: 35164344c25b6024d8f2181da69a8e0a, type: 3}
+  - key: permafrost_essence
+    sprite: {fileID: 21300000, guid: 81857d986fa2710478b97cd367af536e, type: 3}
+  - key: pet_beetle
+    sprite: {fileID: 21300000, guid: 285fa08d8bcd6ba499d042ff44367731, type: 3}
+  - key: pet_crocodile
+    sprite: {fileID: 21300000, guid: 5012b80d28a1d9f42afeccde4004ef0d, type: 3}
+  - key: pet_dove
+    sprite: {fileID: 21300000, guid: dac664dabc5c8e04a84f39caaf479c19, type: 3}
+  - key: pet_eagle
+    sprite: {fileID: 21300000, guid: 89f73ecc708a6c84aae88fdcff445c39, type: 3}
+  - key: pet_floating_eye
+    sprite: {fileID: 21300000, guid: 7e5c730395d07ce44be88ab97e7d3b27, type: 3}
+  - key: pet_floating_seed
+    sprite: {fileID: 21300000, guid: 545021cbde9e2ee4c8cece66d7ab0dbf, type: 3}
+  - key: pet_golem
+    sprite: {fileID: 21300000, guid: d390ddd225ab0904c815307b52dd1f4c, type: 3}
+  - key: pet_holy_tree
+    sprite: {fileID: 21300000, guid: c2718beb7c070da438856f88bea87fcb, type: 3}
+  - key: pet_lizard
+    sprite: {fileID: 21300000, guid: 45e30cd27914a4e4c9ab7185d553e8eb, type: 3}
+  - key: pet_mosquito
+    sprite: {fileID: 21300000, guid: 01d5cc503a01e98409fd154db9bd7444, type: 3}
+  - key: pet_owl
+    sprite: {fileID: 21300000, guid: e3e9fe39f8cd7404e91a2b953f8bdaf5, type: 3}
+  - key: pet_rat
+    sprite: {fileID: 21300000, guid: 5eb5c2b6f7b12f447ad77fb73907e171, type: 3}
+  - key: pet_red_wolf
+    sprite: {fileID: 21300000, guid: 5fff7eff56e896c4f8efb065cb16e923, type: 3}
+  - key: pet_rockling
+    sprite: {fileID: 21300000, guid: c78d9fcc74ac4d6459b26c1d039304a9, type: 3}
+  - key: pet_squirrel
+    sprite: {fileID: 21300000, guid: 0d270beccea9cb549b9f58797fbecfb0, type: 3}
+  - key: pet_tarantula
+    sprite: {fileID: 21300000, guid: 59027a833ac049640af67fef159c342b, type: 3}
+  - key: pet_tentacle_tangle
+    sprite: {fileID: 21300000, guid: b7108e5da4c78504aa09ef11f4faee53, type: 3}
+  - key: pet_tesseract
+    sprite: {fileID: 21300000, guid: 2a8d0b64dad33104c8556774a2640cf6, type: 3}
+  - key: pet_thing_from_the_abyss
+    sprite: {fileID: 21300000, guid: 305449816e3caca42954cb3d05f32427, type: 3}
+  - key: pet_tree_frog
+    sprite: {fileID: 21300000, guid: d9f510ce8a63c9148893e6ea6e48a27f, type: 3}
+  - key: pet_walking_bush
+    sprite: {fileID: 21300000, guid: a1b0741fe8a839f48bf648912575aa9f, type: 3}
+  - key: phoenix_feather
+    sprite: {fileID: 21300000, guid: eeeb0b79505b67d47b130b8bf24b14ce, type: 3}
+  - key: phylactery
+    sprite: {fileID: 21300000, guid: c35657eebbeae174db9d28ce3b95540c, type: 3}
+  - key: phylactery_fragment
+    sprite: {fileID: 21300000, guid: 8ec424404cf500541b17e8c7c121a68b, type: 3}
+  - key: pineapple
+    sprite: {fileID: 21300000, guid: 72150bbc178ad65439f4501499768cb9, type: 3}
+  - key: pirate_king_tricorn
+    sprite: {fileID: 21300000, guid: f20571b49a729e2489475e1681a1f0f8, type: 3}
+  - key: plant_fiber
+    sprite: {fileID: 21300000, guid: 304a098ba18e74944a6e8488f5cc2ae0, type: 3}
+  - key: poisonous_flesh
+    sprite: {fileID: 21300000, guid: 69d8c84d68a83b84fab5be6440bc2cf0, type: 3}
+  - key: potato
+    sprite: {fileID: 21300000, guid: 273509083a76ac84a9dfd87cbb42ea72, type: 3}
+  - key: potato_mash
+    sprite: {fileID: 21300000, guid: 01f3c178ed3f5004d847ebe9b585b3de, type: 3}
+  - key: potion_of_agility
+    sprite: {fileID: 21300000, guid: 0051b66675e68354b8783fa52518c574, type: 3}
+  - key: potion_of_clumsiness
+    sprite: {fileID: 21300000, guid: 0594619467af9604bb46b89e1ee2a365, type: 3}
+  - key: potion_of_constitution
+    sprite: {fileID: 21300000, guid: 0d0607888fabc584586711ca1d9d0c5d, type: 3}
+  - key: potion_of_darkness
+    sprite: {fileID: 21300000, guid: d0b54864695e25e42888e1a51f705732, type: 3}
+  - key: potion_of_defense
+    sprite: {fileID: 21300000, guid: d374e99e362f24a4097fa4c5dc286605, type: 3}
+  - key: potion_of_dexterity
+    sprite: {fileID: 21300000, guid: acad9ea4ac009d94eade1987d9d79a7d, type: 3}
+  - key: potion_of_health
+    sprite: {fileID: 21300000, guid: 81056dfcd1637194a8fa7d6793675495, type: 3}
+  - key: potion_of_immunity
+    sprite: {fileID: 21300000, guid: 6b18722191675a64494a9b0bdda53aea, type: 3}
+  - key: potion_of_intelligence
+    sprite: {fileID: 21300000, guid: 2139235d7867cd1438f558ffa55809ce, type: 3}
+  - key: potion_of_magic_defense
+    sprite: {fileID: 21300000, guid: cc383256df241ac4f981badb3e3180d3, type: 3}
+  - key: potion_of_precision
+    sprite: {fileID: 21300000, guid: 15500b6970360504f95e5dcbe068f610, type: 3}
+  - key: potion_of_rejuvenation
+    sprite: {fileID: 21300000, guid: d494fe9485db8c244a81f3f22fe5b721, type: 3}
+  - key: potion_of_viciousness
+    sprite: {fileID: 21300000, guid: d57ec8ebe29fe3540a43d30debbb694f, type: 3}
+  - key: prehistoric_mixture
+    sprite: {fileID: 21300000, guid: 61a6f965434d39645af620d10ff5bd79, type: 3}
+  - key: primeval_armor
+    sprite: {fileID: 21300000, guid: 4dc8557859eb8a346bba1852f71eeeea, type: 3}
+  - key: primeval_helm
+    sprite: {fileID: 21300000, guid: ed22da6178d2eb54cbf667164602d27d, type: 3}
+  - key: primeval_scale
+    sprite: {fileID: 21300000, guid: fc2ad39ff9b5aef4993f2865b79b134e, type: 3}
+  - key: primeval_shield
+    sprite: {fileID: 21300000, guid: 8e4801dd611a9c04abc53e7e8f2e40b0, type: 3}
+  - key: primordial_essence
+    sprite: {fileID: 21300000, guid: 98af0651ba8d61a4ebd1e54b79115291, type: 3}
+  - key: prismatic_armor
+    sprite: {fileID: 21300000, guid: fb38edee39be7354aae7b7e1e915b07c, type: 3}
+  - key: prismatic_essence
+    sprite: {fileID: 21300000, guid: 51f52de5377206a44a5aec55611f76f7, type: 3}
+  - key: prismatic_pendant
+    sprite: {fileID: 21300000, guid: cb93d17aa46c2ea4c967f956dcb3241d, type: 3}
+  - key: pterodactyl_claw
+    sprite: {fileID: 21300000, guid: d2f2a9bb6f989104b800f2bd88f750f4, type: 3}
+  - key: pumpkin
+    sprite: {fileID: 21300000, guid: 6cfafc6b8ede2e3448888fac66bbce67, type: 3}
+  - key: quartz
+    sprite: {fileID: 21300000, guid: 13e7c4e925e8509439eec69f955ec643, type: 3}
+  - key: quest_marker
+    sprite: {fileID: 21300000, guid: 624f929889da2d646a434c9fd52d25b1, type: 3}
+  - key: radiating_nucleus
+    sprite: {fileID: 21300000, guid: ea544980d8251ff47913e3a472cfb9b9, type: 3}
+  - key: raid_try_available
+    sprite: {fileID: 21300000, guid: f00601b87674e3543a1e7f0725089bed, type: 3}
+  - key: raid_try_unavailable
+    sprite: {fileID: 21300000, guid: 82084c29d7b07eb428d4c1c38a0b0a9d, type: 3}
+  - key: reassembling_jacket
+    sprite: {fileID: 21300000, guid: 6562a5be1cf645e4c875e1e42bd18d2b, type: 3}
+  - key: recurve_blade
+    sprite: {fileID: 21300000, guid: 14b60f6583b102c4e9e30f802a2f1f49, type: 3}
+  - key: red_reaper
+    sprite: {fileID: 21300000, guid: 00ef35547491bd544a4f4cdfc78019ef, type: 3}
+  - key: red_reaper_sauce
+    sprite: {fileID: 21300000, guid: 02a8ed9518efd8c429292629b480722f, type: 3}
+  - key: redwood
+    sprite: {fileID: 21300000, guid: 4ebc87f94a58ad04e9b1ef065cea7fb3, type: 3}
+  - key: redwood_bow
+    sprite: {fileID: 21300000, guid: 3d9afa7c45ee25a4f9c2b33fdae5f611, type: 3}
+  - key: rice
+    sprite: {fileID: 21300000, guid: b826363a20952c946ae803f3b4bd1785, type: 3}
+  - key: ritual_blade
+    sprite: {fileID: 21300000, guid: 43672960186d96c4b9871da98f4c6a12, type: 3}
+  - key: robe_of_the_archmage
+    sprite: {fileID: 21300000, guid: 6386d0ced73b81a439ffa284a806c47a, type: 3}
+  - key: robe_of_the_lich
+    sprite: {fileID: 21300000, guid: c2771cf0790e96548a8c6a3ecd186419, type: 3}
+  - key: ruby
+    sprite: {fileID: 21300000, guid: 08af5bf77ccc92f468ff567217b6ecaa, type: 3}
+  - key: ruby_ring
+    sprite: {fileID: 21300000, guid: a3576732afcce4e45b0f6f7fcd0262e3, type: 3}
+  - key: rune_of_power
+    sprite: {fileID: 21300000, guid: 1d114bbd81781c649a1b3a6c64d02601, type: 3}
+  - key: sage_armor
+    sprite: {fileID: 21300000, guid: 1f433d0ef707ae645bfcd80ea711b0fc, type: 3}
+  - key: sage_cloak
+    sprite: {fileID: 21300000, guid: 34a19534192f88e44abd263329ec0742, type: 3}
+  - key: sage_jacket
+    sprite: {fileID: 21300000, guid: 55b98b78cb511b54c9630362de46f7ca, type: 3}
+  - key: salad
+    sprite: {fileID: 21300000, guid: a52db30d917be5d428a0c733db59085b, type: 3}
+  - key: salmon_nigiri
+    sprite: {fileID: 21300000, guid: dd82f9fa7a31013489b88b5d950ef475, type: 3}
+  - key: salmon_roll
+    sprite: {fileID: 21300000, guid: a3283021fa49b6f49ac4bf119d67e9ed, type: 3}
+  - key: salt
+    sprite: {fileID: 21300000, guid: 6338b2c58ba05a94999e3a3f3b61f437, type: 3}
+  - key: sandstone
+    sprite: {fileID: 21300000, guid: 4e8c13d1d4f47e84f80abfd34cd14643, type: 3}
+  - key: sauce
+    sprite: {fileID: 21300000, guid: 718b7901715f24542b86a02b62a04afe, type: 3}
+  - key: scanner
+    sprite: {fileID: 21300000, guid: 8d77cb6635aa9954fb64f8aa8a8886a2, type: 3}
+  - key: scarlet_shroud
+    sprite: {fileID: 21300000, guid: 41684166b1b5da245ac486a0cc7ca395, type: 3}
+  - key: scarlet_strand
+    sprite: {fileID: 21300000, guid: c26656b6d36c5ad41beba3c3ecbd2929, type: 3}
+  - key: scarlet_veil
+    sprite: {fileID: 21300000, guid: c1273788647edb74b9a6160f7c7eba57, type: 3}
+  - key: scimitar
+    sprite: {fileID: 21300000, guid: c4c3f533466f08c408ad1346347ba9ee, type: 3}
+  - key: scrap_metal
+    sprite: {fileID: 21300000, guid: 3148190a594a4be428217037d6eaaec1, type: 3}
+  - key: seal_of_claris
+    sprite: {fileID: 21300000, guid: c318af1c6fb68e749b2f29f0fb142ce2, type: 3}
+  - key: seeking_glass
+    sprite: {fileID: 21300000, guid: f9317ec293cc6854bb07e5551df1a412, type: 3}
+  - key: sentient_slab
+    sprite: {fileID: 21300000, guid: 99f50dcc3990c514fb120781f01d9ca2, type: 3}
+  - key: serpent_bite
+    sprite: {fileID: 21300000, guid: e8cfde0235e5c434db73a67986a19097, type: 3}
+  - key: serpent_jaws
+    sprite: {fileID: 21300000, guid: 25715b365ad71664fa64dc524d42a1e5, type: 3}
+  - key: serpent_lunge
+    sprite: {fileID: 21300000, guid: ad2b4543627b7e5409bec517be3b7623, type: 3}
+  - key: serpent_staff
+    sprite: {fileID: 21300000, guid: 060b5c6c44e1755438ae3f9883574fa0, type: 3}
+  - key: serpent_sting
+    sprite: {fileID: 21300000, guid: 67029c2d29108c94f80e9533b5d2f02c, type: 3}
+  - key: sha
+    sprite: {fileID: 21300000, guid: 8894448423977544595a8fd9c0ce3c4a, type: 3}
+  - key: shadow_bow
+    sprite: {fileID: 21300000, guid: b3683a3f937087b43a49aea6e4c016f6, type: 3}
+  - key: shadow_dagger
+    sprite: {fileID: 21300000, guid: f62c30c8e65c70c429d7a25e7c7c5f59, type: 3}
+  - key: shadow_gem
+    sprite: {fileID: 21300000, guid: d4c8701acbe75394aab565e9ab253c75, type: 3}
+  - key: shadow_potion
+    sprite: {fileID: 21300000, guid: 160ecb80d5b841c4fa894ece1137cea1, type: 3}
+  - key: shadow_ring
+    sprite: {fileID: 21300000, guid: a8113236f7db51a4dba8b683292e9c4a, type: 3}
+  - key: shahuri_bow
+    sprite: {fileID: 21300000, guid: cd5a1092068b91b479213a561d8dca5f, type: 3}
+  - key: shahuri_bow_frame
+    sprite: {fileID: 21300000, guid: d509e39cb362ca445b20f7d08e2ea00a, type: 3}
+  - key: sharp_rib
+    sprite: {fileID: 21300000, guid: 59f47409f47a6a149bee2be94f1eaa79, type: 3}
+  - key: shield_of_the_martyr
+    sprite: {fileID: 21300000, guid: 68f2acd144d2d8d4899d242312f410b9, type: 3}
+  - key: shield_of_the_titan
+    sprite: {fileID: 21300000, guid: de23cb7e66ef79b48a19d0e764f1ae0c, type: 3}
+  - key: shielding_cuirass
+    sprite: {fileID: 21300000, guid: 1894d6aca52f0cf48baf13c971f83056, type: 3}
+  - key: shielding_helm
+    sprite: {fileID: 21300000, guid: 8db955249cd403c46a1063bb0a8738d9, type: 3}
+  - key: shielding_jacket
+    sprite: {fileID: 21300000, guid: cbbbf5a73537ca548bb7ddd166944d73, type: 3}
+  - key: shop
+    sprite: {fileID: 21300000, guid: d3eb10b59cdd61545953e1842b8a8b66, type: 3}
+  - key: shop_1
+    sprite: {fileID: 21300000, guid: 07db7a805b0f9674ea50b2684cafd56b, type: 3}
+  - key: shop_2
+    sprite: {fileID: 21300000, guid: d50d81ebd7f72734cb00e49efcac8223, type: 3}
+  - key: shop_4
+    sprite: {fileID: 21300000, guid: cadebcc4ac1dd864aa696a5ea08b8314, type: 3}
+  - key: short_circuit
+    sprite: {fileID: 21300000, guid: 873786dcf43397847b4e437f6224ce6b, type: 3}
+  - key: sickle
+    sprite: {fileID: 21300000, guid: dd0db8a3b527d1d4e886733798061b41, type: 3}
+  - key: sign_market
+    sprite: {fileID: 21300000, guid: f921d3bb0a84df2478bebdbc1e47c121, type: 3}
+  - key: sign_quarters
+    sprite: {fileID: 21300000, guid: df304ff39a86d234ba0a6a77e3a8248c, type: 3}
+  - key: sign_shelter
+    sprite: {fileID: 21300000, guid: 796cb6203e94d2e49a444dab1bfce4b9, type: 3}
+  - key: sign_storage
+    sprite: {fileID: 21300000, guid: b162c6b337557ca4dba169fbe9bc6971, type: 3}
+  - key: sign_tavern
+    sprite: {fileID: 21300000, guid: 2c410a1f905f0e14983b60e3eae3eb34, type: 3}
+  - key: sign_workshop
+    sprite: {fileID: 21300000, guid: 9b2b585d18d1616428095ab971ab1464, type: 3}
+  - key: silk_fabric
+    sprite: {fileID: 21300000, guid: 26b1470adbf489b42a053e7c68e7ff0b, type: 3}
+  - key: silk_robe
+    sprite: {fileID: 21300000, guid: 995c63ef1306ce44793df8696defa3a2, type: 3}
+  - key: silk_thread
+    sprite: {fileID: 21300000, guid: e5228ee8ba5cbcb4e991741664c4b813, type: 3}
+  - key: silver_ring
+    sprite: {fileID: 21300000, guid: 315235d05fee36a44b3857dba71d6072, type: 3}
+  - key: sinister_stabilizer
+    sprite: {fileID: 21300000, guid: d3dfcd8e6d92adf42af24fdf2d442014, type: 3}
+  - key: skeleton_key
+    sprite: {fileID: 21300000, guid: 4264dcaa69d69c14aa47f62dd5ea10c9, type: 3}
+  - key: skin_blender
+    sprite: {fileID: 21300000, guid: facc0b3f80e49f24ead2dc19db697f23, type: 3}
+  - key: skull_candle
+    sprite: {fileID: 21300000, guid: cce9bd0ff91c5d64fb89b316c85fcad1, type: 3}
+  - key: slime_armor
+    sprite: {fileID: 21300000, guid: e321557d872689a4181dee78a9d064fa, type: 3}
+  - key: slime_jacket
+    sprite: {fileID: 21300000, guid: 190a8561147854f44bb3f7b266c36abd, type: 3}
+  - key: slime_kings_crown
+    sprite: {fileID: 21300000, guid: 49d013ca9f29f7841a65250ddf365c09, type: 3}
+  - key: slime_robe
+    sprite: {fileID: 21300000, guid: 489e8d959356cc44392b6f01e82300cc, type: 3}
+  - key: soul_shard
+    sprite: {fileID: 21300000, guid: 42a03c84483dd314bbce5de47c7079a3, type: 3}
+  - key: spade
+    sprite: {fileID: 21300000, guid: ac76ce51427c2ac4eae49e2bdf0d9397, type: 3}
+  - key: spectral_cloth
+    sprite: {fileID: 21300000, guid: c5de206e474b8aa478cb1c81d8faaeef, type: 3}
+  - key: spectral_robe
+    sprite: {fileID: 21300000, guid: 6437162eb0eb66240a921a1a560023db, type: 3}
+  - key: spell_compendium
+    sprite: {fileID: 21300000, guid: 297bc4c4d8703df42bc6a962542efc29, type: 3}
+  - key: spellwoven_hide
+    sprite: {fileID: 21300000, guid: 78fd997acc88a3f4fb335b25c317288a, type: 3}
+  - key: spellwoven_jacket
+    sprite: {fileID: 21300000, guid: efcaa4f0b74f97446a7f00e87f0a25d2, type: 3}
+  - key: spellwoven_leather
+    sprite: {fileID: 21300000, guid: b9cbba5bd023b4048a1161c470d14611, type: 3}
+  - key: spices
+    sprite: {fileID: 21300000, guid: 1c931bdc605cfbd4ea73d857636cb2d3, type: 3}
+  - key: spider
+    sprite: {fileID: 21300000, guid: 2fabe012a4625b544a40eec5396b9b38, type: 3}
+  - key: spider_boots
+    sprite: {fileID: 21300000, guid: a6ca2362b09fe934296beaee2852e218, type: 3}
+  - key: spider_gloves
+    sprite: {fileID: 21300000, guid: 52411365f35b27a4a821b70f3fef5b83, type: 3}
+  - key: spider_leg
+    sprite: {fileID: 21300000, guid: 2c33944dc6903d14e9f161bce77fc7d4, type: 3}
+  - key: spider_robe
+    sprite: {fileID: 21300000, guid: 86c317f117480404d9c488c342fc177b, type: 3}
+  - key: spider_silk
+    sprite: {fileID: 21300000, guid: 4a841aa0f77dea94c8a82d76bde4ab2f, type: 3}
+  - key: spiked_primeval_shield
+    sprite: {fileID: 21300000, guid: b204acc28426fd042b2af4c813f12699, type: 3}
+  - key: spiked_skeleton
+    sprite: {fileID: 21300000, guid: d00066618afa3ca46822ad8feed8196a, type: 3}
+  - key: spiked_tortoise_shield
+    sprite: {fileID: 21300000, guid: 61f01fdf231f29b469a1687ed646197b, type: 3}
+  - key: spirit_candle
+    sprite: {fileID: 21300000, guid: 842206ffe15a8f34385ac2af8758bf55, type: 3}
+  - key: spirit_tome
+    sprite: {fileID: 21300000, guid: 525c5c0a4a8b98e4890b3790a6ad6203, type: 3}
+  - key: spitfang_jacket
+    sprite: {fileID: 21300000, guid: 2be37ad6f28aec247a06fdeeff08f4e4, type: 3}
+  - key: spitfang_scale
+    sprite: {fileID: 21300000, guid: 48bd7e58c30ecc845a0f296b85772cdd, type: 3}
+  - key: staff_of_the_archmage
+    sprite: {fileID: 21300000, guid: 6befed477c3360c4d99efc2fc9c01981, type: 3}
+  - key: star_fragment
+    sprite: {fileID: 21300000, guid: 8c4f28068257c9746a1cfd4ee3d38aae, type: 3}
+  - key: starvation
+    sprite: {fileID: 21300000, guid: 4a733104f02cf5e43a321912bc91b731, type: 3}
+  - key: static_core
+    sprite: {fileID: 21300000, guid: 0aa837546778f154da309ed5a16d07b3, type: 3}
+  - key: static_essence
+    sprite: {fileID: 21300000, guid: 9c9f1b047b49e40468e78261c3505615, type: 3}
+  - key: steak_braise
+    sprite: {fileID: 21300000, guid: cca99bb336aa2e8449e4c1ba99deb79c, type: 3}
+  - key: stellar_flare
+    sprite: {fileID: 21300000, guid: 6d730a8fa32bb6a43a276089a93efc0d, type: 3}
+  - key: stellar_staff
+    sprite: {fileID: 21300000, guid: fe51501c48ffe5843b46839b2a519577, type: 3}
+  - key: stew
+    sprite: {fileID: 21300000, guid: eca50a1fc96f3cb48bcb66a791b3cf60, type: 3}
+  - key: strawberry
+    sprite: {fileID: 21300000, guid: 8def44d8fa966bc4789d46612f20ff78, type: 3}
+  - key: strawberry_pancake
+    sprite: {fileID: 21300000, guid: 026b86a1a15cae84bbf6fdeffbc3955b, type: 3}
+  - key: strawberry_smoothie
+    sprite: {fileID: 21300000, guid: 0268dc7e63c38eb42bb61eb23b38c90e, type: 3}
+  - key: summary_ancient_grave_digging
+    sprite: {fileID: 21300000, guid: b295ee9a041c47145818f6f5b51d37b5, type: 3}
+  - key: summary_barren_wastelands
+    sprite: {fileID: 21300000, guid: d3314369ec2c6d3499dd55b78a44f443, type: 3}
+  - key: summary_blackwater_port
+    sprite: {fileID: 21300000, guid: 77766d4e8d1798b44b47fa588da33a63, type: 3}
+  - key: summary_celestial_mothership
+    sprite: {fileID: 21300000, guid: 95da1cbe82e67c64b8ed4aac9c71a8f2, type: 3}
+  - key: summary_divine_archeology
+    sprite: {fileID: 21300000, guid: 95c31f742c9c92e478bfbe0fbe6b75d0, type: 3}
+  - key: summary_enchanted_forest
+    sprite: {fileID: 21300000, guid: 2d1f3baf5f5668c49ac8560d8634087e, type: 3}
+  - key: summary_eternal_battlefield
+    sprite: {fileID: 21300000, guid: 004cbc8039ea9e9498ea53f2e4ddc7a0, type: 3}
+  - key: summary_frostbite_peaks
+    sprite: {fileID: 21300000, guid: deb56f1b16e27864aacdd8ad36b0ba34, type: 3}
+  - key: summary_hidden_city_of_larox
+    sprite: {fileID: 21300000, guid: 3d3643d62d2f37c408d498796dc59e41, type: 3}
+  - key: summary_imperial_rescue
+    sprite: {fileID: 21300000, guid: 57a84a35abd08d14db1868dbac847837, type: 3}
+  - key: summary_kaunis
+    sprite: {fileID: 21300000, guid: 03dcce2b2dae0bb49a9f177bc264b974, type: 3}
+  - key: summary_lost_lands
+    sprite: {fileID: 21300000, guid: f1ada597dea9a134988276d4ff0392ed, type: 3}
+  - key: summary_obsidian_mines
+    sprite: {fileID: 21300000, guid: 15c5c7686bbf8a642bd3781ab940256d, type: 3}
+  - key: summary_sleeping_planet
+    sprite: {fileID: 21300000, guid: 22800190ca7cbf34ab02dbef559a9348, type: 3}
+  - key: summary_the_cultist_rebels
+    sprite: {fileID: 21300000, guid: 398e2064981ef4d4cb265daeee1758fd, type: 3}
+  - key: summary_the_desert
+    sprite: {fileID: 21300000, guid: 5a461f19d5320214d983cfb7ef7dd1d1, type: 3}
+  - key: summary_the_dire_descent
+    sprite: {fileID: 21300000, guid: dc61698b161ec384a9a88deda763dbde, type: 3}
+  - key: summary_the_dreadful_ascent
+    sprite: {fileID: 21300000, guid: d77b380f65979324fab8442bf1aa8e6f, type: 3}
+  - key: summary_the_golden_city
+    sprite: {fileID: 21300000, guid: 9268ff42022f6b34ca238fff313bf6ef, type: 3}
+  - key: summary_the_lost_expedition
+    sprite: {fileID: 21300000, guid: 5d1686862f5869a42b7f4f35e9af2b45, type: 3}
+  - key: summary_the_slime_pond
+    sprite: {fileID: 21300000, guid: 8173a4f9ba0c11a43b9ee94cf973ca43, type: 3}
+  - key: summary_the_southern_grove
+    sprite: {fileID: 21300000, guid: 3316c6d31b61df146b1bee4dabf541c7, type: 3}
+  - key: summary_the_tower
+    sprite: {fileID: 21300000, guid: 34948d212eca10547862eaa1e4cfa671, type: 3}
+  - key: sun_staff
+    sprite: {fileID: 21300000, guid: aa8c1254ea32bc6479f1436c0b778691, type: 3}
+  - key: sunfire_core
+    sprite: {fileID: 21300000, guid: 4aeedcc9714cad9419256ace6f56cc06, type: 3}
+  - key: sunfire_essence
+    sprite: {fileID: 21300000, guid: 117115ce4f97b6f42bed9fb8929529df, type: 3}
+  - key: swarmkeeper_armor
+    sprite: {fileID: 21300000, guid: d8dc580e1b6c01f4bac0d876caa79713, type: 3}
+  - key: sweet_and_sour_meat
+    sprite: {fileID: 21300000, guid: a278576d813fe1345b4b771f934080dc, type: 3}
+  - key: sylvan_blessing
+    sprite: {fileID: 21300000, guid: 58bc89c71e0f6e64ca62317a9b210e6c, type: 3}
+  - key: sylvan_flute
+    sprite: {fileID: 21300000, guid: 9474e37fde51f3b4bb51980c33686c49, type: 3}
+  - key: sylvan_mandate
+    sprite: {fileID: 21300000, guid: a4339981c99909942b406a4196c3b9fa, type: 3}
+  - key: synapse
+    sprite: {fileID: 21300000, guid: ceeb37bc517d4fd47869e84993983ba4, type: 3}
+  - key: taco
+    sprite: {fileID: 21300000, guid: 48aa1e6eb5073c243ba3244c366c8d4e, type: 3}
+  - key: tactical_helmet
+    sprite: {fileID: 21300000, guid: d22b5f111082f204da196d3d47381781, type: 3}
+  - key: tattered_hide
+    sprite: {fileID: 21300000, guid: 5780348923eb8c44a8b4a3ed96c9e76a, type: 3}
+  - key: terrorsaurus_fang
+    sprite: {fileID: 21300000, guid: 1ecd1719f20af9e4aa533b6a0a0fcb55, type: 3}
+  - key: thaumaturgic_blood
+    sprite: {fileID: 21300000, guid: e6b4aecd9b4ad7f4aa29831d41ffd31d, type: 3}
+  - key: tiramisu
+    sprite: {fileID: 21300000, guid: 024b4a2994fdef149ad0354f3fb2f9e0, type: 3}
+  - key: titanic_might
+    sprite: {fileID: 21300000, guid: 3c1ba294571cbfb4e83b2f6fc58c2f53, type: 3}
+  - key: tomato
+    sprite: {fileID: 21300000, guid: 22f879dc166973b46b239afdf740a333, type: 3}
+  - key: tombstone
+    sprite: {fileID: 21300000, guid: d6096c974e3feb346bee110705542855, type: 3}
+  - key: tortoise_armor
+    sprite: {fileID: 21300000, guid: 090f6e3dc3f975b4eb7b1a2c1538b995, type: 3}
+  - key: tortoise_shield
+    sprite: {fileID: 21300000, guid: 7a586a0102d8ec74ebe703cac74c0ea9, type: 3}
+  - key: tortoise_thorn
+    sprite: {fileID: 21300000, guid: 39fad215c54a4e0498849c78212c638a, type: 3}
+  - key: toxin_pouch
+    sprite: {fileID: 21300000, guid: 8ee0b88ff0d60c7429dd32f8d0320229, type: 3}
+  - key: training_bow
+    sprite: {fileID: 21300000, guid: fa3b148ab837725418aa9ae1ea57fb28, type: 3}
+  - key: troll_hide
+    sprite: {fileID: 21300000, guid: 0f0749c01dc951747980dbc0ab7097a0, type: 3}
+  - key: trollskin_jacket
+    sprite: {fileID: 21300000, guid: 7b666450aa9d5e1479ff57ed995853fd, type: 3}
+  - key: tuna_nigiri
+    sprite: {fileID: 21300000, guid: 5782e5d068f861341a069492fe4b1911, type: 3}
+  - key: tuna_roll
+    sprite: {fileID: 21300000, guid: ec9cb16766ffd884a9c5269f7fe57272, type: 3}
+  - key: tunica_ignis
+    sprite: {fileID: 21300000, guid: 8ef57b7fddf2e3c47852968fe54de077, type: 3}
+  - key: tunica_infernalis
+    sprite: {fileID: 21300000, guid: 4b4be70b17900e5498cdc63b769ba86f, type: 3}
+  - key: tusk_necklace
+    sprite: {fileID: 21300000, guid: 92a772cbb360bdf4daefeb31e392ea1a, type: 3}
+  - key: tutorial_icon
+    sprite: {fileID: 21300000, guid: 7ba5b0a517eb7604fb919a2c1b5ce0c6, type: 3}
+  - key: undead_cuirass
+    sprite: {fileID: 21300000, guid: 297fcc26c11387f4eb4835d902a2031d, type: 3}
+  - key: undead_gloves
+    sprite: {fileID: 21300000, guid: 9d47ea085032413478d56c206399ba50, type: 3}
+  - key: undead_greaves
+    sprite: {fileID: 21300000, guid: 160835a491759da4ea00a3e983db69bf, type: 3}
+  - key: undead_helm
+    sprite: {fileID: 21300000, guid: 9021be8d3e4676b45a793c8c85de8d04, type: 3}
+  - key: undead_jacket
+    sprite: {fileID: 21300000, guid: a81c687ad2c3d0f44b57939af9c21e9a, type: 3}
+  - key: undead_knife
+    sprite: {fileID: 21300000, guid: a1bdaeab472d6eb479fcb1493da0dcbd, type: 3}
+  - key: undead_shield
+    sprite: {fileID: 21300000, guid: 45f3543211f78d247bec0b3336e7ac28, type: 3}
+  - key: undead_staff
+    sprite: {fileID: 21300000, guid: fa2a7ede285ee71408c4718dc7596436, type: 3}
+  - key: undead_sword
+    sprite: {fileID: 21300000, guid: 913651ece7076f5489b1b0148947b5d8, type: 3}
+  - key: unholy_cuirass
+    sprite: {fileID: 21300000, guid: 3b71169c686576742a6ceb3f2b6fad80, type: 3}
+  - key: unholy_potion
+    sprite: {fileID: 21300000, guid: 917f42ce567102440b5d054bd3113191, type: 3}
+  - key: unholy_spellcage
+    sprite: {fileID: 21300000, guid: 3a240989519331d4498504d0f36fb7e9, type: 3}
+  - key: unholy_sword
+    sprite: {fileID: 21300000, guid: 686afcbe70472a445bc77a3d9ff31f1d, type: 3}
+  - key: unit_abomination
+    sprite: {fileID: 21300000, guid: 9178eff31e997ac48b26d8c12363ca74, type: 3}
+  - key: unit_adept
+    sprite: {fileID: 21300000, guid: 4142eff55ab29df48978bf3cc3f1363a, type: 3}
+  - key: unit_alchemist
+    sprite: {fileID: 21300000, guid: 522268a49888c2844943ddd93ea22165, type: 3}
+  - key: unit_amanita_obscura
+    sprite: {fileID: 21300000, guid: af94f2f3f02f02d448bdc80bdab4db11, type: 3}
+  - key: unit_ancient_ent
+    sprite: {fileID: 21300000, guid: 2a916ff16c900ee47a87a67b975bdc58, type: 3}
+  - key: unit_ancient_lich
+    sprite: {fileID: 21300000, guid: b3963bf6d51b6fa40b384e58ed91b614, type: 3}
+  - key: unit_angel
+    sprite: {fileID: 21300000, guid: a5ddbbf5f2aca9c4d9cc367ba802fd5c, type: 3}
+  - key: unit_angel_of_war
+    sprite: {fileID: 21300000, guid: ecf038d840ed5774b89ea5526e3b3164, type: 3}
+  - key: unit_apprentice
+    sprite: {fileID: 21300000, guid: d6da24e49860ff44f92687e5bdc9a2bb, type: 3}
+  - key: unit_arcane_assassin
+    sprite: {fileID: 21300000, guid: b3d30bc1da209114a841f51b0b184a97, type: 3}
+  - key: unit_archangel
+    sprite: {fileID: 21300000, guid: 0220ad6c5dbfdaa488210cde15bf4184, type: 3}
+  - key: unit_archer
+    sprite: {fileID: 21300000, guid: b264e8181ab5cd747a076f868826a608, type: 3}
+  - key: unit_archmage_of_larox
+    sprite: {fileID: 21300000, guid: 489f16ad393243543a14e9c06cc59734, type: 3}
+  - key: unit_assassin
+    sprite: {fileID: 21300000, guid: fc01b452fa5226b408cc111899be864a, type: 3}
+  - key: unit_avatar_of_the_ancient
+    sprite: {fileID: 21300000, guid: d0eab0a2fb1fb5d4b9a09315f92a9bdf, type: 3}
+  - key: unit_balrog
+    sprite: {fileID: 21300000, guid: 2fdc82670e72c424ebf8a5a5dbd62800, type: 3}
+  - key: unit_banshee
+    sprite: {fileID: 21300000, guid: d31bcfd7d7ea532468d63370b8fbd3d6, type: 3}
+  - key: unit_bard
+    sprite: {fileID: 21300000, guid: 22c6b0e6ac08f1644860d95eae546fbc, type: 3}
+  - key: unit_beholder
+    sprite: {fileID: 21300000, guid: 778a4248a04c3e043820f7ccece5be06, type: 3}
+  - key: unit_berserker
+    sprite: {fileID: 21300000, guid: 31ffbf321c1421f4dac5ecfe4a4f82e9, type: 3}
+  - key: unit_black_idol
+    sprite: {fileID: 21300000, guid: fa45dc2348da55e459f110d63187b46f, type: 3}
+  - key: unit_black_regent
+    sprite: {fileID: 21300000, guid: c3abc4f7ddf76aa41b7157a9fc36a922, type: 3}
+  - key: unit_bleak_deacon
+    sprite: {fileID: 21300000, guid: 5b2a3666e97b26445a6ea081adfdd441, type: 3}
+  - key: unit_bleak_disciple
+    sprite: {fileID: 21300000, guid: e5ca5dbd9da37574793297803d68c845, type: 3}
+  - key: unit_blight
+    sprite: {fileID: 21300000, guid: ca7bf4d3b6ee9e446b68856e4665a6b1, type: 3}
+  - key: unit_boar
+    sprite: {fileID: 21300000, guid: 453070f1c0d082743a379c0d50b29867, type: 3}
+  - key: unit_bone_horror
+    sprite: {fileID: 21300000, guid: 420657166f32eeb41933ffdc39b9233d, type: 3}
+  - key: unit_bone_hydra
+    sprite: {fileID: 21300000, guid: 143f3878c2adb5047ad6c96f7205c566, type: 3}
+  - key: unit_bone_nightmare
+    sprite: {fileID: 21300000, guid: 24a41ea94719e674aa43622b068cdbf4, type: 3}
+  - key: unit_celestial_destroyer
+    sprite: {fileID: 21300000, guid: ddde803e95551e045a093f8254f4494b, type: 3}
+  - key: unit_celestial_lancer
+    sprite: {fileID: 21300000, guid: 8245f36327b244941b43cd25a833cea9, type: 3}
+  - key: unit_celestial_rain
+    sprite: {fileID: 21300000, guid: c5828459e353db14e9ba5df32e901a4d, type: 3}
+  - key: unit_centaur
+    sprite: {fileID: 21300000, guid: 18abc3682828c4a45b1449be526c6670, type: 3}
+  - key: unit_cerebrum
+    sprite: {fileID: 21300000, guid: de2c63eef397b844487f63526ab590fe, type: 3}
+  - key: unit_chief_scientist_ava
+    sprite: {fileID: 21300000, guid: 4c4e863f5dd081b479f199d1afab7873, type: 3}
+  - key: unit_city_warden
+    sprite: {fileID: 21300000, guid: 93e1d2fe42f99aa408a9864c351a8d20, type: 3}
+  - key: unit_claris
+    sprite: {fileID: 21300000, guid: 433f5c6233fd6bc45820dc6714c672b0, type: 3}
+  - key: unit_cleric
+    sprite: {fileID: 21300000, guid: b5dbb0794426c5a418a551508afff495, type: 3}
+  - key: unit_corrosive_wraith
+    sprite: {fileID: 21300000, guid: f0ca52aecb326044cabd6cf0d0614eb8, type: 3}
+  - key: unit_crusader
+    sprite: {fileID: 21300000, guid: 18c54967fe25bc54d99a9ce430f75e14, type: 3}
+  - key: unit_cuttroath
+    sprite: {fileID: 21300000, guid: f18aad2d546869545b3642d6befa3136, type: 3}
+  - key: unit_dark_knight
+    sprite: {fileID: 21300000, guid: 2ac3017cfd796844a99f5142ad2690c6, type: 3}
+  - key: unit_dark_sorcerer
+    sprite: {fileID: 21300000, guid: 80985f1972dad1346ba60e8f55015e47, type: 3}
+  - key: unit_death_hound
+    sprite: {fileID: 21300000, guid: 1f17199ff7d93cf4eba33717700bc7a6, type: 3}
+  - key: unit_death_knight
+    sprite: {fileID: 21300000, guid: 8502bb5fe493d53488fc5ff75b778915, type: 3}
+  - key: unit_deckhand
+    sprite: {fileID: 21300000, guid: 32c43795e7a7d234e9a6a3fa9411775a, type: 3}
+  - key: unit_demilich
+    sprite: {fileID: 21300000, guid: e5779a3cca8c0544a89cb3748ddfcf70, type: 3}
+  - key: unit_demon
+    sprite: {fileID: 21300000, guid: 62b741d51af1385438fbcd0653143f94, type: 3}
+  - key: unit_divine_champion
+    sprite: {fileID: 21300000, guid: b79753f9856d213489d77e7aa17a917c, type: 3}
+  - key: unit_divine_duelist
+    sprite: {fileID: 21300000, guid: 73fbe92c25e6e0949a88b79410db7daa, type: 3}
+  - key: unit_djinn
+    sprite: {fileID: 21300000, guid: 5effc86d77f468346b09f4baf802ba97, type: 3}
+  - key: unit_drake_rider
+    sprite: {fileID: 21300000, guid: b1c9c760af8b00244b891dca34d3f17e, type: 3}
+  - key: unit_dreamwrought_beast
+    sprite: {fileID: 21300000, guid: 4fb5a38d9f3f1f34fb4b427cbc6cfd70, type: 3}
+  - key: unit_dreamwrought_dragon
+    sprite: {fileID: 21300000, guid: 600dcc33546687648b66fd318d13fb7a, type: 3}
+  - key: unit_dreamwrought_forge
+    sprite: {fileID: 21300000, guid: 6b6c686d3d2cce840accfb4bd28e0c6b, type: 3}
+  - key: unit_dreamwrought_swarm
+    sprite: {fileID: 21300000, guid: db58bc7126ab87e41b6136db0b9c28c9, type: 3}
+  - key: unit_dryad
+    sprite: {fileID: 21300000, guid: a53d37e21e925e848b759a9ad5decfb5, type: 3}
+  - key: unit_eidolon
+    sprite: {fileID: 21300000, guid: 9ae0c85058c25f549a5667b00af14050, type: 3}
+  - key: unit_eldritch_alchemist
+    sprite: {fileID: 21300000, guid: 4358e5a363487094badea50c9a6fecd6, type: 3}
+  - key: unit_eldritch_hound
+    sprite: {fileID: 21300000, guid: d1cb0f3dee72e9f4b9b3e376ce795d85, type: 3}
+  - key: unit_electric_slime
+    sprite: {fileID: 21300000, guid: 73f9e6af25fe61f46bb4220479ff3021, type: 3}
+  - key: unit_elemental_alchemist
+    sprite: {fileID: 21300000, guid: bd2f467ed84e78d42b95fc21940220a7, type: 3}
+  - key: unit_emperor_clovis_xxviii
+    sprite: {fileID: 21300000, guid: f43beed7609496846b97182e15000e7f, type: 3}
+  - key: unit_enforcer
+    sprite: {fileID: 21300000, guid: b51142e8bb5e4d648bec159dd7671f0b, type: 3}
+  - key: unit_ent
+    sprite: {fileID: 21300000, guid: 422bd5023aec7404cba351627a5242f4, type: 3}
+  - key: unit_esoteric_alchemist
+    sprite: {fileID: 21300000, guid: 2d0916033c4a0834db6037d02423cb76, type: 3}
+  - key: unit_eternal_fortress
+    sprite: {fileID: 21300000, guid: 5ec98e35b7d4c4145ae6d8d86d46711c, type: 3}
+  - key: unit_ethereal_soul
+    sprite: {fileID: 21300000, guid: 1eecd0f468884fb46b4d620c59e582de, type: 3}
+  - key: unit_fire_slime
+    sprite: {fileID: 21300000, guid: 9f48f7ca58278944bbb349d3e419a02a, type: 3}
+  - key: unit_fire_wizard
+    sprite: {fileID: 21300000, guid: dc05707f68e4463418e4ea6ecbdeb56e, type: 3}
+  - key: unit_first_minister_atos
+    sprite: {fileID: 21300000, guid: 4089cba64b453e149af130f411b1ab9f, type: 3}
+  - key: unit_footman
+    sprite: {fileID: 21300000, guid: 25d48dc8ee3db6a47945641328586538, type: 3}
+  - key: unit_forest_spirit
+    sprite: {fileID: 21300000, guid: 92e815f6431b1b84e820ce1b12501174, type: 3}
+  - key: unit_frozen_slime
+    sprite: {fileID: 21300000, guid: 186fa2770057cc241a16529862aafd0b, type: 3}
+  - key: unit_fury
+    sprite: {fileID: 21300000, guid: ba9b47de16caa01478fe7833c9938115, type: 3}
+  - key: unit_gcss
+    sprite: {fileID: 21300000, guid: e9d6484e876d6474183b6c551121bb20, type: 3}
+  - key: unit_ghoul
+    sprite: {fileID: 21300000, guid: 9eeaacfe99ba86441b3d9850a48d380a, type: 3}
+  - key: unit_giant_moth
+    sprite: {fileID: 21300000, guid: d460f1ab960a53646915ea2a5159acd9, type: 3}
+  - key: unit_giant_spider
+    sprite: {fileID: 21300000, guid: 3bb7c0d33e3ddfe419ab0f66489a7c46, type: 3}
+  - key: unit_giant_tortoise
+    sprite: {fileID: 21300000, guid: 0528290c8b33e3b4a964f2116ba17ed0, type: 3}
+  - key: unit_golden_rabbit
+    sprite: {fileID: 21300000, guid: f06657e600b9ebc469ed8a9dee4c5c46, type: 3}
+  - key: unit_golden_rider
+    sprite: {fileID: 21300000, guid: b713e8a3b99bf0c4587acee0edb85b0d, type: 3}
+  - key: unit_green_spitfang
+    sprite: {fileID: 21300000, guid: 9ace3238a007dcd47a879c5fcfa4b866, type: 3}
+  - key: unit_guard
+    sprite: {fileID: 21300000, guid: 4c56bde1e98c44c4ea38edfe1a954859, type: 3}
+  - key: unit_hailstorm
+    sprite: {fileID: 21300000, guid: 6606baa37ebcc80469d57ad3719587da, type: 3}
+  - key: unit_headless_knight
+    sprite: {fileID: 21300000, guid: c89b0678161fb5e4da0b0fb0e48de414, type: 3}
+  - key: unit_heavenly_cantor
+    sprite: {fileID: 21300000, guid: e19b62ea6b08b9f45bd63e1b3eade602, type: 3}
+  - key: unit_hellish_sculptor
+    sprite: {fileID: 21300000, guid: 8fea933832c43674f8ffc9c77a5333e0, type: 3}
+  - key: unit_herald_kali
+    sprite: {fileID: 21300000, guid: 3b226c2e2a32e174bbb738bab4e3fc2e, type: 3}
+  - key: unit_herald_maya
+    sprite: {fileID: 21300000, guid: 50efd0e77ed7c1b408e90cbd22a886d3, type: 3}
+  - key: unit_herald_shoran
+    sprite: {fileID: 21300000, guid: 86ec51f62e29d0f4bad27f8546556b29, type: 3}
+  - key: unit_herald_xavi
+    sprite: {fileID: 21300000, guid: f1dbd7b2d95f9ef43ba3f291909eb8ef, type: 3}
+  - key: unit_holy_knight
+    sprite: {fileID: 21300000, guid: 2d2e3a8891489d946b6ae433d7493fa0, type: 3}
+  - key: unit_horse_rider
+    sprite: {fileID: 21300000, guid: 09c0d59e93a201b4d8e97a6aa9bbb38c, type: 3}
+  - key: unit_huntress
+    sprite: {fileID: 21300000, guid: de31f995baab05442994c0f03f197768, type: 3}
+  - key: unit_hurricane
+    sprite: {fileID: 21300000, guid: aae874c85b0f0cb4f83f94f8801357ea, type: 3}
+  - key: unit_ice_elemental
+    sprite: {fileID: 21300000, guid: abbea210b2711ba41a99db61300a8d91, type: 3}
+  - key: unit_iconoclast
+    sprite: {fileID: 21300000, guid: f7f1c00786992824c9352a87851233be, type: 3}
+  - key: unit_imp
+    sprite: {fileID: 21300000, guid: 3dcabd78f7df06c43bbfefe2cc716dcb, type: 3}
+  - key: unit_imperial_guard
+    sprite: {fileID: 21300000, guid: e02a1bf08a5d5f44e838745ed492f5b3, type: 3}
+  - key: unit_imperial_mage
+    sprite: {fileID: 21300000, guid: 6eb970cfc48e4b141a44e23959548725, type: 3}
+  - key: unit_infernal_lord
+    sprite: {fileID: 21300000, guid: 86592c3df4d49d94da5dfbcda9d76c29, type: 3}
+  - key: unit_infernal_prince
+    sprite: {fileID: 21300000, guid: 79e43258b37cfdf43a1635ab4edeebae, type: 3}
+  - key: unit_inferno
+    sprite: {fileID: 21300000, guid: 511385b8ac711f148ac4b66db3dcc799, type: 3}
+  - key: unit_inquisitor
+    sprite: {fileID: 21300000, guid: 673929f7d8470ce44b02a1a7a2e35d9a, type: 3}
+  - key: unit_insane_citizen
+    sprite: {fileID: 21300000, guid: 3248f6672ffd0644f81733366f69e0fb, type: 3}
+  - key: unit_insane_merchant
+    sprite: {fileID: 21300000, guid: 005cc069ebbc11749b51de1d40ee5b5e, type: 3}
+  - key: unit_insane_priest
+    sprite: {fileID: 21300000, guid: 8c7aab822cf44aa4cbe53b1f500d02ce, type: 3}
+  - key: unit_iron_defender
+    sprite: {fileID: 21300000, guid: c86d022995916a344b113462da073496, type: 3}
+  - key: unit_iron_warden
+    sprite: {fileID: 21300000, guid: 2d67867f2da39814b83561b20c0aec7f, type: 3}
+  - key: unit_juggernaut
+    sprite: {fileID: 21300000, guid: 383119e6d32b43c43b7ab75e53e1929d, type: 3}
+  - key: unit_justiciar
+    sprite: {fileID: 21300000, guid: b390802fe90bf084a9a0162701c3a78c, type: 3}
+  - key: unit_kabar_the_rotten
+    sprite: {fileID: 21300000, guid: 2cf70aad7a3734243a295ae0d4e43518, type: 3}
+  - key: unit_kasimir_the_seer
+    sprite: {fileID: 21300000, guid: 3899dc732c38fb642a1b584d54ba4771, type: 3}
+  - key: unit_king_aino
+    sprite: {fileID: 21300000, guid: 14851dbcd31aabc4a8e22258ad867769, type: 3}
+  - key: unit_kings_hand
+    sprite: {fileID: 21300000, guid: 35658bb49cb39b9498539ef976c7e824, type: 3}
+  - key: unit_knight
+    sprite: {fileID: 21300000, guid: 53e9a9ea43076e947940f98c587a9513, type: 3}
+  - key: unit_lazarus
+    sprite: {fileID: 21300000, guid: 528b56430b9c0aa4cbc1c4399e6bc583, type: 3}
+  - key: unit_legate_hadrian
+    sprite: {fileID: 21300000, guid: a6dbe4444ad99f14987b5ab497db0503, type: 3}
+  - key: unit_lesser_titan
+    sprite: {fileID: 21300000, guid: 82122ce3f0ec0894c80a220a87fc539a, type: 3}
+  - key: unit_lich
+    sprite: {fileID: 21300000, guid: c919c4156afdd114f863038f10055d04, type: 3}
+  - key: unit_light_disciple
+    sprite: {fileID: 21300000, guid: 864ac3df29781ea408ceb80046e8ec81, type: 3}
+  - key: unit_lord_of_decay
+    sprite: {fileID: 21300000, guid: 1bcb566b986c4264888d4b9bc36386d7, type: 3}
+  - key: unit_lorekeeper
+    sprite: {fileID: 21300000, guid: ea4c362c708e11e4d82b7ee37a96edc7, type: 3}
+  - key: unit_lost_miner
+    sprite: {fileID: 21300000, guid: 67c46372a54214b45a0a6e701221f26f, type: 3}
+  - key: unit_magic_armor
+    sprite: {fileID: 21300000, guid: 8aac1858340e1184f8cd8ca810c8f4df, type: 3}
+  - key: unit_marksman
+    sprite: {fileID: 21300000, guid: 66857d88279b31a48ba1beb908bc4447, type: 3}
+  - key: unit_meat_carver
+    sprite: {fileID: 21300000, guid: 5b4f6f0000d88da4dbdd7c29d3457fe4, type: 3}
+  - key: unit_melting_elder
+    sprite: {fileID: 21300000, guid: 62c79a1094cdee24e9f98f2debbef890, type: 3}
+  - key: unit_mimic
+    sprite: {fileID: 21300000, guid: 126ffa9e8184c4545ac9a3c548c54918, type: 3}
+  - key: unit_minstrel
+    sprite: {fileID: 21300000, guid: 6cfd75fca1edbd342abad77c3d5868c5, type: 3}
+  - key: unit_mysterious_tentacle
+    sprite: {fileID: 21300000, guid: ec06cb8390dd67a4db492ba3cef33286, type: 3}
+  - key: unit_necrobot
+    sprite: {fileID: 21300000, guid: 7d0cb4f3b19960f4595ebb01027ea5d1, type: 3}
+  - key: unit_necrolith
+    sprite: {fileID: 21300000, guid: bd576b4766d71bd47b95ffc1a20eeed5, type: 3}
+  - key: unit_necromancer
+    sprite: {fileID: 21300000, guid: 66abc246b7cfe9c4ba10258a8c956e2f, type: 3}
+  - key: unit_nexus_researcher
+    sprite: {fileID: 21300000, guid: 2aa42388e660c854b84defa4f3854cd2, type: 3}
+  - key: unit_night_blade
+    sprite: {fileID: 21300000, guid: e56e8300bc0e81647ad97a102ac0ed3b, type: 3}
+  - key: unit_night_lament
+    sprite: {fileID: 21300000, guid: 3bf451af3f328c74d96c42f243103173, type: 3}
+  - key: unit_night_specter
+    sprite: {fileID: 21300000, guid: d5ea26d79e857694bbd35ece97763d08, type: 3}
+  - key: unit_night_terror
+    sprite: {fileID: 21300000, guid: f1b050437c53e6b45919bf32efe7559f, type: 3}
+  - key: unit_night_veil
+    sprite: {fileID: 21300000, guid: 32f6bf69b7dfce94f8e665a3f7784cd6, type: 3}
+  - key: unit_obsidian_golem
+    sprite: {fileID: 21300000, guid: c806fad16b97b174c827fbe3dd515dfc, type: 3}
+  - key: unit_oculus
+    sprite: {fileID: 21300000, guid: 9bd400509f2b6d1478591e277d80bc6d, type: 3}
+  - key: unit_overlord
+    sprite: {fileID: 21300000, guid: dc9468cc60810014bbf95398f71dcacb, type: 3}
+  - key: unit_paladin
+    sprite: {fileID: 21300000, guid: e4e58673956379a4ab7c81ab3d7cc81e, type: 3}
+  - key: unit_pale_hermit
+    sprite: {fileID: 21300000, guid: eba625e45b005214c98db79659e1a4ff, type: 3}
+  - key: unit_phantasm
+    sprite: {fileID: 21300000, guid: 6c8c381275cf34c42ad3c6216591f29e, type: 3}
+  - key: unit_phoenix
+    sprite: {fileID: 21300000, guid: 1171df38e0042e44788e2070b43ea919, type: 3}
+  - key: unit_pirate
+    sprite: {fileID: 21300000, guid: 18cd1e9e329a71947904bbae20626433, type: 3}
+  - key: unit_pirate_captain
+    sprite: {fileID: 21300000, guid: f69cee70ad463e64baa28e31fa6df7fa, type: 3}
+  - key: unit_pirate_lieutenant
+    sprite: {fileID: 21300000, guid: 434fcbddeb3c4084a84fc16e35785de7, type: 3}
+  - key: unit_plague_spreader
+    sprite: {fileID: 21300000, guid: a102a68c40483064391f03fbaf6ad3cd, type: 3}
+  - key: unit_poison_bow
+    sprite: {fileID: 21300000, guid: 78de473374d414a41b21d21a8d3545d0, type: 3}
+  - key: unit_primeval_wurm
+    sprite: {fileID: 21300000, guid: 6b33533bedc76624da6744bd61a9fa3d, type: 3}
+  - key: unit_primordial_titan
+    sprite: {fileID: 21300000, guid: 8e00b8c99e2f3514a83b236d5c94c23f, type: 3}
+  - key: unit_pterodactyl
+    sprite: {fileID: 21300000, guid: 253c26187a7d4fe4f8dde67ddb7b09c7, type: 3}
+  - key: unit_radiant_elder
+    sprite: {fileID: 21300000, guid: 8a789197d03d99048845aaf61605d71e, type: 3}
+  - key: unit_red_archmage
+    sprite: {fileID: 21300000, guid: 088a881bcbcb20746b461d0a85439c17, type: 3}
+  - key: unit_red_elder
+    sprite: {fileID: 21300000, guid: a77038c682170304b92dc2862b7a7216, type: 3}
+  - key: unit_red_mage
+    sprite: {fileID: 21300000, guid: 658d21ac3e6184041ac1ddaf041910b0, type: 3}
+  - key: unit_red_stalker
+    sprite: {fileID: 21300000, guid: 2de55f1db2f658e48b40d016b8b7be62, type: 3}
+  - key: unit_reinforced_door
+    sprite: {fileID: 21300000, guid: abc0c820455e68c4893f05a7ec65a27b, type: 3}
+  - key: unit_rogue
+    sprite: {fileID: 21300000, guid: 16a4ae9bd6969f847a7c4f5be0fd2d16, type: 3}
+  - key: unit_royal_captain
+    sprite: {fileID: 21300000, guid: cd6a1a54565bb2442aaa43e259f0852c, type: 3}
+  - key: unit_royal_guard
+    sprite: {fileID: 21300000, guid: 47e3a3cca3608fd4ea9d0d6303e162c6, type: 3}
+  - key: unit_royal_swordman
+    sprite: {fileID: 21300000, guid: bd2c2536387a0824295891cd1f0e948a, type: 3}
+  - key: unit_sand_demon
+    sprite: {fileID: 21300000, guid: c0141bcda1c168c4ca3d89963b64d88b, type: 3}
+  - key: unit_sand_statue
+    sprite: {fileID: 21300000, guid: 1058493e4f37c8d479810f633dcda655, type: 3}
+  - key: unit_sand_vulture
+    sprite: {fileID: 21300000, guid: 303789458f469c24d863399fdbbba86c, type: 3}
+  - key: unit_scorching_elder
+    sprite: {fileID: 21300000, guid: 8175f2b84a9b64146b4cb65355ee6576, type: 3}
+  - key: unit_scourge
+    sprite: {fileID: 21300000, guid: d8bbbbf7bd693784a9f43edbf290557c, type: 3}
+  - key: unit_sha_kire_first_swordsman
+    sprite: {fileID: 21300000, guid: c8fae9fc75177c94fa225a7675b63dff, type: 3}
+  - key: unit_sha_the_hidden_god
+    sprite: {fileID: 21300000, guid: 790e89b6fb04dbc4e87a7e54db3efe7f, type: 3}
+  - key: unit_shadow_crawler
+    sprite: {fileID: 21300000, guid: f87f6f43d9f696141b2d47c02c45baad, type: 3}
+  - key: unit_shadow_dancer
+    sprite: {fileID: 21300000, guid: 96b6d7971818bb94cad602aaea126e3c, type: 3}
+  - key: unit_shahuri_archer
+    sprite: {fileID: 21300000, guid: 6e074fe5e5a98644aa1a88d72b8ce198, type: 3}
+  - key: unit_shahuri_mage
+    sprite: {fileID: 21300000, guid: 2af426dacd751c6439fc7dcb63e44348, type: 3}
+  - key: unit_shahuri_warrior
+    sprite: {fileID: 21300000, guid: e9cf33a31e0b10346ba3b8f487e7cc9e, type: 3}
+  - key: unit_silver_tongue
+    sprite: {fileID: 21300000, guid: a0d57451245b5b74ca762f898509c92a, type: 3}
+  - key: unit_singularity
+    sprite: {fileID: 21300000, guid: d0c055a33027cd64483cf1594211c4f0, type: 3}
+  - key: unit_skeleton
+    sprite: {fileID: 21300000, guid: 97aa536a12501ea42ab7fe9a2cc6c54b, type: 3}
+  - key: unit_slime
+    sprite: {fileID: 21300000, guid: 8cf8d5dded0f2844ab5218788274fc21, type: 3}
+  - key: unit_slime_king
+    sprite: {fileID: 21300000, guid: f09ce546a7c537d478510dd69cfe2808, type: 3}
+  - key: unit_smoldering_titan
+    sprite: {fileID: 21300000, guid: ef0eb2e2e55402c489721d1fbc270096, type: 3}
+  - key: unit_snow_wyvern
+    sprite: {fileID: 21300000, guid: e6ed75191a79073459f54240bf7fc492, type: 3}
+  - key: unit_spire_acolyte
+    sprite: {fileID: 21300000, guid: 7ecec00e72313b643a32426f055348a5, type: 3}
+  - key: unit_spire_initiate
+    sprite: {fileID: 21300000, guid: 067fe8c43a7875e48944cae1a188c2aa, type: 3}
+  - key: unit_spire_leader
+    sprite: {fileID: 21300000, guid: 47d62e564fc9b8d4ea0f8be7f5c9a22f, type: 3}
+  - key: unit_spire_sage
+    sprite: {fileID: 21300000, guid: ac9ee8e6b35164c4f8fc6c2c18a3275b, type: 3}
+  - key: unit_spirit_engraver
+    sprite: {fileID: 21300000, guid: 33154290b0735b04fa1af32095c896c3, type: 3}
+  - key: unit_spitfang_rider
+    sprite: {fileID: 21300000, guid: 59a912182601caf42b89a407eb62ea2c, type: 3}
+  - key: unit_stone_shaman
+    sprite: {fileID: 21300000, guid: 665cb09ffa735fa48bafd92cef591880, type: 3}
+  - key: unit_sureshot
+    sprite: {fileID: 21300000, guid: 698cf00801f2d4146b54614b5a3fb0f9, type: 3}
+  - key: unit_tekeli_li_first_apostle
+    sprite: {fileID: 21300000, guid: 50f4dbae90c46c14a8852a3472aba0d5, type: 3}
+  - key: unit_tempest
+    sprite: {fileID: 21300000, guid: 6d3fee539025ac54da7530cbc1b48697, type: 3}
+  - key: unit_templar
+    sprite: {fileID: 21300000, guid: c3d60b3dd72a61c4095da68de355493d, type: 3}
+  - key: unit_terrorsaurus
+    sprite: {fileID: 21300000, guid: 9186b368851d1bb49a796d4df1226c46, type: 3}
+  - key: unit_the_ancient
+    sprite: {fileID: 21300000, guid: fd200f628a8e79446bbcbbb754cfa8bc, type: 3}
+  - key: unit_the_exiled
+    sprite: {fileID: 21300000, guid: e4677eaaf0813d040b68dd20a8c28223, type: 3}
+  - key: unit_the_machine
+    sprite: {fileID: 21300000, guid: 22211aa76678c0d4297c4aca5fb74deb, type: 3}
+  - key: unit_thief
+    sprite: {fileID: 21300000, guid: 4ea5fdc0e47e5a24091f0968c6650ab3, type: 3}
+  - key: unit_thorvus
+    sprite: {fileID: 21300000, guid: d989d5df5d22ceb4993ae184931f6741, type: 3}
+  - key: unit_titan
+    sprite: {fileID: 21300000, guid: f15d9c721ab73c7498fc89b4a1c8a258, type: 3}
+  - key: unit_toxic_stalker
+    sprite: {fileID: 21300000, guid: 6b3f26e385069e54182f99883dbf6e8e, type: 3}
+  - key: unit_treant
+    sprite: {fileID: 21300000, guid: 1ee0e086fafe5834a908ce0dd1926f03, type: 3}
+  - key: unit_trickster
+    sprite: {fileID: 21300000, guid: 08ba32ab709fc3f4ebbb50ec9dbd59ab, type: 3}
+  - key: unit_troll
+    sprite: {fileID: 21300000, guid: 46e877b012dadd44f9da84bcf9b9ae3d, type: 3}
+  - key: unit_troll_shaman
+    sprite: {fileID: 21300000, guid: 969bc6d1820888f46bcbaf5c806c3916, type: 3}
+  - key: unit_troll_warrior
+    sprite: {fileID: 21300000, guid: 26b106dbf87292e43a6788e93c798d67, type: 3}
+  - key: unit_troll_whelp
+    sprite: {fileID: 21300000, guid: 220dc2a944be0834a8547733b4409dd8, type: 3}
+  - key: unit_tyrant
+    sprite: {fileID: 21300000, guid: 369d1505c82339140a9ab1893b32600d, type: 3}
+  - key: unit_ultraslime
+    sprite: {fileID: 21300000, guid: a964784b3fc06864682896c611ca15ef, type: 3}
+  - key: unit_unchained
+    sprite: {fileID: 21300000, guid: 5c83f2491d774a14aaf04d51a1690cdf, type: 3}
+  - key: unit_undead
+    sprite: {fileID: 21300000, guid: 7c529209c8b66d747a202053bd846516, type: 3}
+  - key: unit_undead_archer
+    sprite: {fileID: 21300000, guid: 209018bfba17c0a44be87d47d6324487, type: 3}
+  - key: unit_undead_general
+    sprite: {fileID: 21300000, guid: a45854935c001134d86048d42ac165df, type: 3}
+  - key: unit_undead_warlord
+    sprite: {fileID: 21300000, guid: b959a091323c3b841b0b94c8ee782321, type: 3}
+  - key: unit_undying_bastion
+    sprite: {fileID: 21300000, guid: 4672b4ad0f4a3d44a92eb2cda145f8fc, type: 3}
+  - key: unit_vampire_bat
+    sprite: {fileID: 21300000, guid: c44bb745c97ae754ab8aedf3d0f5b546, type: 3}
+  - key: unit_void_slime
+    sprite: {fileID: 21300000, guid: 13d996d95c927a24d9fc1b6221655108, type: 3}
+  - key: unit_warrior
+    sprite: {fileID: 21300000, guid: 58dd404f7a1e3b44f940e024e9fad442, type: 3}
+  - key: unit_whisper
+    sprite: {fileID: 21300000, guid: 6c5ae3586b6c24c4aa1f27c4cafc3f8b, type: 3}
+  - key: unit_white_archmage
+    sprite: {fileID: 21300000, guid: 1168cf18c6da4e84e92d2f0b4df4027c, type: 3}
+  - key: unit_white_elder
+    sprite: {fileID: 21300000, guid: 1ddb0321346c64a4aa153ef7047c758d, type: 3}
+  - key: unit_white_mage
+    sprite: {fileID: 21300000, guid: 8bd288d64bc321042ac6f66321eeddd8, type: 3}
+  - key: unit_wicked_tribute
+    sprite: {fileID: 21300000, guid: 1313f55d9f370ab42bd292c11a674352, type: 3}
+  - key: unit_will_o_wisp
+    sprite: {fileID: 21300000, guid: 10e0ade31b6168645ad9adc48c4890db, type: 3}
+  - key: unit_wizard_of_larox
+    sprite: {fileID: 21300000, guid: 1b0363270b0f7e640802f3ef9f9a30d1, type: 3}
+  - key: unit_wolf
+    sprite: {fileID: 21300000, guid: 7695c61c5109f984e8507982b037c3fd, type: 3}
+  - key: unit_wolf_rider
+    sprite: {fileID: 21300000, guid: 32f1da2e2e38aff40b613114a438eab6, type: 3}
+  - key: unit_worg_rider
+    sprite: {fileID: 21300000, guid: b623b42d26e10ce4caf4814351aeaedd, type: 3}
+  - key: unit_wound_weaver
+    sprite: {fileID: 21300000, guid: 557ff44a2bdb5ac4992d2e8d2ce2862f, type: 3}
+  - key: unit_wraith
+    sprite: {fileID: 21300000, guid: bf285848f566c2b43aec980d67020994, type: 3}
+  - key: unit_wurm
+    sprite: {fileID: 21300000, guid: 660c05020e74c0c4ebd53f1145503a02, type: 3}
+  - key: unit_wyrm_rider
+    sprite: {fileID: 21300000, guid: aa533e44bc723e74f8f8e7988e8a9d2f, type: 3}
+  - key: unit_zombie
+    sprite: {fileID: 21300000, guid: 2e23cf05ae01843469b437b1ce0f60ea, type: 3}
+  - key: unknown
+    sprite: {fileID: 21300000, guid: 5385423a24d18eb42862b667db12f2d8, type: 3}
+  - key: unstable_gem
+    sprite: {fileID: 21300000, guid: 3f15cf80c8aea2a47ae59b1652d4a647, type: 3}
+  - key: unstable_staff
+    sprite: {fileID: 21300000, guid: 0c55ed510a38bc4479a837c93dc8f694, type: 3}
+  - key: upgrade_market_queue
+    sprite: {fileID: 21300000, guid: 70fdc2ea665e2394e8ffb9a25eddc51a, type: 3}
+  - key: upgrade_market_time
+    sprite: {fileID: 21300000, guid: 4eaddab1114963a468fa3e17ec2a2015, type: 3}
+  - key: upgrade_quarters
+    sprite: {fileID: 21300000, guid: 412cc178989f9bd45ac087162fcaa374, type: 3}
+  - key: upgrade_shelter
+    sprite: {fileID: 21300000, guid: 8452a7a2401d6a14fb926f3d21548ad6, type: 3}
+  - key: upgrade_storage
+    sprite: {fileID: 21300000, guid: dee5de621e7d4584b95869ef3e1c84b1, type: 3}
+  - key: upgrade_tavern_capacity
+    sprite: {fileID: 21300000, guid: 3765b3df869a8b146be411089e0186d8, type: 3}
+  - key: upgrade_tavern_time
+    sprite: {fileID: 21300000, guid: 8d011990240a4674da3c9750c83feb3f, type: 3}
+  - key: upgrade_workshop_queue
+    sprite: {fileID: 21300000, guid: 6a3d572cb60120043b38b876e370cb68, type: 3}
+  - key: upgrade_workshop_time
+    sprite: {fileID: 21300000, guid: 4325b1a836da4804393de2847bd5f6ad, type: 3}
+  - key: vampire_bow
+    sprite: {fileID: 21300000, guid: 5e561c0bad668a14398ab433585b5752, type: 3}
+  - key: vampire_dagger
+    sprite: {fileID: 21300000, guid: b54801a56e890ee4391c917585e668b7, type: 3}
+  - key: vampire_scepter
+    sprite: {fileID: 21300000, guid: f5ed116240e6a854487b2517afd8b9e8, type: 3}
+  - key: vampire_sword
+    sprite: {fileID: 21300000, guid: 6581caf6434ffaa4290f580e05953416, type: 3}
+  - key: veil_breaker
+    sprite: {fileID: 21300000, guid: b220ba4fd1f3e014fbc3640f95f7dd65, type: 3}
+  - key: veil_shatterer
+    sprite: {fileID: 21300000, guid: badbac118e4dd404ab4c9a6d28769b32, type: 3}
+  - key: verdant_blade
+    sprite: {fileID: 21300000, guid: b9e7884bfc64b9e44901893b15528e48, type: 3}
+  - key: verdant_boots
+    sprite: {fileID: 21300000, guid: 09c32c8444521f54ca46dbfb365fdd87, type: 3}
+  - key: verdant_bow
+    sprite: {fileID: 21300000, guid: 0fa41f2f68f66e440b3e4d43d2b04e7d, type: 3}
+  - key: verdant_gloves
+    sprite: {fileID: 21300000, guid: 8fbffaaa8851673439ee5f3fdbb9004f, type: 3}
+  - key: verdant_helm
+    sprite: {fileID: 21300000, guid: cb1bbaba59971a34abd6e11746047d63, type: 3}
+  - key: vinegar
+    sprite: {fileID: 21300000, guid: 2b0089a9ef6474f40848db68988e97d8, type: 3}
+  - key: void_armor
+    sprite: {fileID: 21300000, guid: f8787bbd20ebc144fbb67fb8fa831956, type: 3}
+  - key: void_core
+    sprite: {fileID: 21300000, guid: e2601fb8f180a72458e7e75809afe994, type: 3}
+  - key: void_crusher
+    sprite: {fileID: 21300000, guid: 0188297cb6bc1ae4398079ae1db775ea, type: 3}
+  - key: void_pendant
+    sprite: {fileID: 21300000, guid: 67f7649733f87724b8232874a3599996, type: 3}
+  - key: voltaic_shock
+    sprite: {fileID: 21300000, guid: 12e2219aada6b66488acf06089c971f2, type: 3}
+  - key: voodoo_doll
+    sprite: {fileID: 21300000, guid: c1e409de674eceb4599be0a5d58412d5, type: 3}
+  - key: warden_belt
+    sprite: {fileID: 21300000, guid: 903bcc0cb5f50b34591639e3ac6d03fd, type: 3}
+  - key: warlord_skull
+    sprite: {fileID: 21300000, guid: 41b8348e63fecff4281b4738730122aa, type: 3}
+  - key: werewolf_fang
+    sprite: {fileID: 21300000, guid: 983dfc0f293b0ec469099b30654ced54, type: 3}
+  - key: white_hair
+    sprite: {fileID: 21300000, guid: ebd7c66d497bc92458f881b7966b1b60, type: 3}
+  - key: white_slime
+    sprite: {fileID: 21300000, guid: 058bbc0355027db4fb4b1d7fec259f57, type: 3}
+  - key: wicked_scepter
+    sprite: {fileID: 21300000, guid: 60f3502cd91baf347a35d780e79a3833, type: 3}
+  - key: wicked_seal
+    sprite: {fileID: 21300000, guid: c53e926631f1266409e69cc793cb3335, type: 3}
+  - key: wing_fabric
+    sprite: {fileID: 21300000, guid: f2b77ede509cf5045840632ecf646939, type: 3}
+  - key: winter_boots
+    sprite: {fileID: 21300000, guid: 5b6f15949a58b1944b42c264b778eb11, type: 3}
+  - key: winter_cape
+    sprite: {fileID: 21300000, guid: 298247259a232604483931889175b142, type: 3}
+  - key: winter_gloves
+    sprite: {fileID: 21300000, guid: 947d32f7961bbcc4880ce0b4dc1ab64d, type: 3}
+  - key: winter_helm
+    sprite: {fileID: 21300000, guid: 22a19955ff9b54b44882b215a8259716, type: 3}
+  - key: winter_shield
+    sprite: {fileID: 21300000, guid: 88fa136082eee8046849726fa886b3c9, type: 3}
+  - key: wintercloth
+    sprite: {fileID: 21300000, guid: c9d0232330ce19842a957d913830c8e4, type: 3}
+  - key: winterwood
+    sprite: {fileID: 21300000, guid: e1e3cac9f53733149985e366e1df07cf, type: 3}
+  - key: winterwood_bow
+    sprite: {fileID: 21300000, guid: 28fae3804c8be8f46a3b84c4df8cf155, type: 3}
+  - key: winterwood_staff
+    sprite: {fileID: 21300000, guid: 201b35d2e5a9f1d42b6074bf2674d08d, type: 3}
+  - key: wood
+    sprite: {fileID: 21300000, guid: 469ad8a692ac61f48948e3fdb69f8f0d, type: 3}
+  - key: wooden_bow
+    sprite: {fileID: 21300000, guid: 82c6345924f8ec74399d7f4d497d20d4, type: 3}
+  - key: wooden_buckler
+    sprite: {fileID: 21300000, guid: d31fabc6a8c1e46498eefd5497991630, type: 3}
+  - key: wurm_blood
+    sprite: {fileID: 21300000, guid: 733473730d541de46a06c5cb214d696b, type: 3}
+  - key: wurm_scale
+    sprite: {fileID: 21300000, guid: 55ca624da3aca8f42aedca14ebefdf93, type: 3}
+  - key: wurmscales_boots
+    sprite: {fileID: 21300000, guid: bbcb65b009e849847832b69d943e1384, type: 3}
+  - key: wurmscales_gloves
+    sprite: {fileID: 21300000, guid: 5ee8c22eec71f14448223f81eaa9bac0, type: 3}
+  - key: wurmscales_jacket
+    sprite: {fileID: 21300000, guid: 91b619d2125f98e4883bf01990eefc64, type: 3}
+  - key: wurmscales_shield
+    sprite: {fileID: 21300000, guid: 049efff4898317f44bd9d680dc1cb1d8, type: 3}
+  - key: wyvern_cape
+    sprite: {fileID: 21300000, guid: ef287aac0cdc3eb4583b6cd8c358d3f0, type: 3}
+  - key: wyvern_chop
+    sprite: {fileID: 21300000, guid: ff2affd0785cbb44aa8ce8298195adbc, type: 3}
+  - key: yoghurt
+    sprite: {fileID: 21300000, guid: d0b99349166a6094f8660c10433d8181, type: 3}

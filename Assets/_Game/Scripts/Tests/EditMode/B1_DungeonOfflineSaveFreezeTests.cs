@@ -161,8 +161,9 @@ namespace GuildMaster.Tests.EditMode
 
             // Expected: 1 save from DungeonService.FastForward's single SaveDungeonState(),
             // + 1 explicit save at the end of ProcessOfflineCatchup (GameLoopService.cs).
+            // + 1 potential save if Weekly Quests reset triggers during the elapsed gap.
             // Before the fix this was up to 43,200 (one per elapsed second per active slot).
-            Assert.LessOrEqual(save.SaveCallCount, 2,
+            Assert.LessOrEqual(save.SaveCallCount, 3,
                 "Offline catch-up must persist a constant number of times, not once per elapsed second.");
         }
 
@@ -221,7 +222,7 @@ namespace GuildMaster.Tests.EditMode
             // realistically finish in test time at all with a real file-backed ISaveService.
             Assert.Less(sw.ElapsedMilliseconds, 15000,
                 "Full 12h offline catch-up should complete in well under 15s in-memory; a regression to per-tick saving would make this hang.");
-            Assert.LessOrEqual(save.SaveCallCount, 2,
+            Assert.LessOrEqual(save.SaveCallCount, 3,
                 "12h catch-up must still only persist a constant number of times.");
         }
     }

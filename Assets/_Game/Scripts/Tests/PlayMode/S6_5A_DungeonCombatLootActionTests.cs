@@ -220,7 +220,10 @@ namespace GuildMaster.Tests.PlayMode
                 .Where(i => i.DefinitionId == lootedId)
                 .Sum(i => i.StackCount);
 
-            int progressAfterReload = services.Save.CurrentData.ActiveDungeon?.Progress ?? -1;
+            // SaveDungeonState() writes to ActiveExpeditions and sets ActiveDungeon=null.
+            // Read from the correct new-format field.
+            int progressAfterReload = services.Save.CurrentData.ActiveExpeditions
+                ?.FirstOrDefault(e => e?.Dungeon != null)?.Dungeon.Progress ?? -1;
 
             Row("Save/reload inventory", $"looted item still present ({lootedId})",
                 $"{inventoryAfterReload}", inventoryAfterReload > 0);

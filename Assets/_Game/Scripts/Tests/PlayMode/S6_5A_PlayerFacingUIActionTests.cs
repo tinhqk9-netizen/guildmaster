@@ -231,9 +231,12 @@ namespace GuildMaster.Tests.PlayMode
             if (activeQuests.Count > 0)
             {
                 var quest = activeQuests[0];
-                if (quest.Definition != null)
+                // Use quest.TargetProgress (runtime field, set by QuestService.GetTargetProgress()).
+                // quest.Definition.TargetProgress is the JSON field and is often 0 in data files —
+                // causing IncrementToValue's 'newValue <= 0' guard to silently skip.
+                if (quest.TargetProgress > 0)
                 {
-                    services.Quest.IncrementToValue(quest.InstanceId, quest.Definition.TargetProgress);
+                    services.Quest.IncrementToValue(quest.InstanceId, quest.TargetProgress);
                 }
                 questUI.OnClickClaimSelected();
                 Assert.AreEqual(GuildMaster.Runtime.Models.QuestState.RewardClaimed, quest.State,

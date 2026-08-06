@@ -78,9 +78,11 @@ namespace GuildMaster.Editor.UI
             if (legacy != null) Object.DestroyImmediate(legacy);
 
 #if ENABLE_INPUT_SYSTEM
-            if (es.GetComponent<UnityEngine.InputSystem.UI.InputSystemUIInputModule>() == null)
+            // Use reflection to add InputSystemUIInputModule to avoid asmdef reference issues.
+            var inputModuleType = System.Type.GetType("UnityEngine.InputSystem.UI.InputSystemUIInputModule, Unity.InputSystem");
+            if (inputModuleType != null && es.GetComponent(inputModuleType) == null)
             {
-                es.gameObject.AddComponent<UnityEngine.InputSystem.UI.InputSystemUIInputModule>();
+                es.gameObject.AddComponent(inputModuleType);
             }
 #else
             if (es.GetComponent<StandaloneInputModule>() == null)

@@ -13,6 +13,7 @@ namespace GuildMaster.Runtime.Services
         private readonly IMerchantService _merchantService;
         private readonly ICraftService _craftService;
         private readonly IDungeonService _dungeonService;
+        private readonly IQuestService _questService;
 
         private const long Cap12Hours = 12 * 3600;
         private int _checks = 0;
@@ -22,13 +23,15 @@ namespace GuildMaster.Runtime.Services
             ITavernService tavernService, 
             IMerchantService merchantService, 
             ICraftService craftService, 
-            IDungeonService dungeonService)
+            IDungeonService dungeonService,
+            IQuestService questService)
         {
             _saveService = saveService ?? throw new ArgumentNullException(nameof(saveService));
             _tavernService = tavernService ?? throw new ArgumentNullException(nameof(tavernService));
             _merchantService = merchantService ?? throw new ArgumentNullException(nameof(merchantService));
             _craftService = craftService ?? throw new ArgumentNullException(nameof(craftService));
             _dungeonService = dungeonService ?? throw new ArgumentNullException(nameof(dungeonService));
+            _questService = questService ?? throw new ArgumentNullException(nameof(questService));
         }
 
         public void Initialize()
@@ -60,6 +63,8 @@ namespace GuildMaster.Runtime.Services
             // dungeon state exactly once at the end instead of once per elapsed second (B1 fix).
             _dungeonService.FastForward(jMax);
 
+            _questService.CheckAndTriggerWeeklyQuests(currentUnix);
+
             data.LastAccess = currentUnix;
             _saveService.Save(out _);
         }
@@ -87,7 +92,8 @@ namespace GuildMaster.Runtime.Services
             if (_checks >= 60)
             {
                 _checks = 0;
-                // Hourly/Daily resets would go here
+                long currentUnix = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+                _questService.CheckAndTriggerWeeklyQuests(currentUnix);
             }
         }
     }

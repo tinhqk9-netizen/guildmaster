@@ -100,7 +100,29 @@
       "Bash(timeout 90 dotnet build GuildMaster.Runtime.csproj)",
       "Read(//d/UnityGame/UnityEditer/6000.3.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/**)",
       "Read(//d/UnityGame/UnityEditer/6000.3.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/**)",
-      "Bash(ls \"/d/UnityGame/UnityEditer/6000.3.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/platforms\" 2>&1)"
+      "Bash(ls \"/d/UnityGame/UnityEditer/6000.3.17f1/Editor/Data/PlaybackEngines/AndroidPlayer/SDK/platforms\" 2>&1)",
+      "Bash(cp 'D:\\\\Tinh\\\\Rebuild_GuildMaster\\\\Assets\\\\_Game\\\\Scripts\\\\Runtime\\\\Services\\\\DungeonService.cs' 'D:\\\\Tinh\\\\Backups/B1_DungeonOfflineFix_20260801_022419/DungeonService.cs.bak')",
+      "Bash(cp 'D:\\\\Tinh\\\\Rebuild_GuildMaster\\\\Assets\\\\_Game\\\\Scripts\\\\Runtime\\\\Services\\\\IDungeonService.cs' 'D:\\\\Tinh\\\\Backups/B1_DungeonOfflineFix_20260801_022419/IDungeonService.cs.bak')",
+      "Bash(cp 'D:\\\\Tinh\\\\Rebuild_GuildMaster\\\\Assets\\\\_Game\\\\Scripts\\\\Runtime\\\\Services\\\\GameLoopService.cs' 'D:\\\\Tinh\\\\Backups/B1_DungeonOfflineFix_20260801_022419/GameLoopService.cs.bak')",
+      "Read(//d/Tinh/Backups/B1_DungeonOfflineFix_20260801_022419/**)",
+      "Bash(dotnet build *)",
+      "Bash(winget search *)",
+      "Bash(winget show *)",
+      "Read(//c/Users/gifft/**)",
+      "Read(//c/Users/gifft/.claude/**)",
+      "Bash(echo \"=== resources \\(top level\\) ===\"; ls \"D:\\\\Tinh\\\\Guild Master - Idle Dungeons\\\\resources\" 2>&1 | head -50 *)",
+      "Bash(grep -c \"\\\\.xml$\")",
+      "Bash(awk -F, 'NR>1{print $8}' D:/Tinh/Rebuild_GuildMaster/Docs/Legacy_Audit/legacy_asset_inventory_v2.csv)",
+      "Bash(awk -F, 'NR>1{print $3}' D:/Tinh/Rebuild_GuildMaster/Docs/Legacy_Audit/legacy_asset_inventory_v2.csv)",
+      "Bash(mkdir -p \"D:/Tinh/Backups/Legacy_UI_Phase_1_Asset_Import\")",
+      "Bash(git status *)",
+      "Bash(git rev-parse *)",
+      "Read(//d/Tinh/Backups/**)",
+      "Bash(awk -F, 'NR>1 && $2 ~ /^unit_/{print $8}' D:/Tinh/Rebuild_GuildMaster/Docs/Legacy_Audit/legacy_asset_inventory_v2.csv)",
+      "Bash(python \"C:\\\\Users\\\\gifft\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\D--Tinh-Rebuild-GuildMaster\\\\01399442-663d-46c9-bcc8-78bb59626a0f\\\\scratchpad\\\\import_legacy_assets.py\")",
+      "mcp__mcp-unity__get_gameobject",
+      "mcp__mcp-unity__save_scene",
+      "mcp__mcp-unity__set_play_mode_status"
     ]
   }
 }

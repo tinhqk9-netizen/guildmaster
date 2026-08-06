@@ -42,6 +42,11 @@ namespace GuildMaster.Runtime.Boot
         public static event Action<string> OnBootFailed;
         private bool _isInitializing;
         
+#if UNITY_EDITOR || UNITY_INCLUDE_TESTS
+        // Test hook
+        public Action TestInjectionHook;
+#endif
+        
         [SerializeField] private ErrorPopup _errorPopup;
 
         private void Start()
@@ -64,6 +69,10 @@ namespace GuildMaster.Runtime.Boot
             {
                 if (_errorPopup != null) _errorPopup.Hide();
                 
+#if UNITY_EDITOR || UNITY_INCLUDE_TESTS
+                TestInjectionHook?.Invoke();
+#endif
+
                 // --- backend composition ---
 #if UNITY_EDITOR
                 IGameDataProvider provider = new EditorExternalGameDataProvider();
@@ -76,6 +85,29 @@ namespace GuildMaster.Runtime.Boot
 
                 Services = new ServiceContainer(db);
                 _save = Services.Save;
+
+                if (Services.Save.CurrentData != null &&
+                    Services.Save.CurrentData.Characters.Count == 0 &&
+                    Services.Save.CurrentData.TavernGuests.Count == 0)
+                {
+                    // Fresh game: generate + recruit one hero at a time (tavern cap = 1 at level 1)
+                    // Temporarily bump quarters to ensure capacity for 4 heroes
+                    var saveData = Services.Save.CurrentData;
+                    int origQuarters = saveData.LevelQuarters;
+                    saveData.LevelQuarters = 10; // Temporary: ensure enough capacity
+                    
+                    for (int i = 0; i < 4; i++)
+                    {
+                        Services.Tavern.GenerateVisitor();
+                        if (Services.Tavern.RecruitGuest(0, out var recruited) && recruited != null)
+                        {
+                            Services.Party.AddToParty(recruited.InstanceId);
+                        }
+                    }
+                    
+                    saveData.LevelQuarters = origQuarters; // Restore original
+                    Debug.Log($"[BOOT] Fresh game: recruited {saveData.Characters.Count} starter heroes into party.");
+                }
 
                 var gameLoopRunner = gameObject.AddComponent<GameLoopRunner>();
                 
@@ -136,6 +168,18 @@ namespace GuildMaster.Runtime.Boot
 
                 _ui.ShowScreen(UIScreenId.MainHUD);
                 Debug.Log($"[UIRuntimeBootstrap] Wired {screens.Length} screen(s); MainHUD shown.");
+
+                // Phase 3 (App Shell): if the new shell exists in the scene, it becomes the entry
+                // UI. The legacy flat HUD stays wired above (so Back-button / screen-stack code
+                // paths keep working) but its GameObject is hidden — kept in the scene, not
+                // deleted, so Phase 3 can be rolled back by simply re-enabling it.
+                var appShell = FindFirstObjectByType<GuildMaster.Runtime.UI.Shell.AppShellController>(FindObjectsInactive.Include);
+                if (appShell != null)
+                {
+                    appShell.Initialize(Services);
+                    if (hud != null) hud.gameObject.SetActive(false);
+                    Debug.Log("[UIRuntimeBootstrap] Phase 3 App Shell found — set as entry UI, legacy HUD hidden (not deleted).");
+                }
             }
             catch (Exception ex)
             {

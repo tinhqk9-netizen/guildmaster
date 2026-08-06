@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testrun name="EditMode" total="171" passed="171" failed="0" skipped="0" duration="4.8533435">
+  <testcase name="B2_GenerateVisitor_AddsStarterWeaponToInventoryRuntime" status="Passed" duration="0.0461601">
+  </testcase>
+  <testcase name="B2_RecruitGuest_WeaponStillInInventory" status="Passed" duration="0.0206838">
+  </testcase>
+  <testcase name="B2_TavernCapacityExceeded_DeletesWeaponFromInventory" status="Passed" duration="0.0189666">
+  </testcase>
+  <testcase name="B3_BootFailure_ShowsErrorPopup" status="Passed" duration="0.0049198">
+  </testcase>
+  <testcase name="B3_ResetData_DeletesSaveAndRetries" status="Passed" duration="0.0372498">
+  </testcase>
+  <testcase name="B3_RetryBoot_CleansUpServicesAndRetries" status="Passed" duration="0.0290168">
+  </testcase>
+  <testcase name="OfflineSummaryBuilder_CalculatesDiffCorrectly" status="Passed" duration="0.0017125">
+  </testcase>
+  <testcase name="SaveService_Load_NoSave_ReturnsFreshNewGame" status="Passed" duration="0.0008214">
+  </testcase>
+  <testcase name="SaveService_Save_FiresEvents" status="Passed" duration="0.0009865">
+  </testcase>
+  <testcase name="FastForward_MatchesTickAllLoop_ForTheExtractedTickLogic" status="Passed" duration="0.0226261">
+  </testcase>
+  <testcase name="FastForward_PersistsExactlyOnce_RegardlessOfElapsedSeconds" status="Passed" duration="0.0191265">
+  </testcase>
+  <testcase name="ProcessOfflineCatchup_FullTwelveHourGap_CompletesInBoundedTime" status="Passed" duration="0.0241837">
+  </testcase>
+  <testcase name="ProcessOfflineCatchup_PersistsAtMostTwice_NotProportionalToElapsedSeconds" status="Passed" duration="0.0207058">
+  </testcase>
+  <testcase name="TickAllLoop_BeforeFixPattern_StillSavesOncePerCall_ProvingFastForwardIsTheRealFix" status="Passed" duration="0.017743">
+  </testcase>
+  <testcase name="B4_BatchSize_And_ClearOldQuests" status="Passed" duration="0.0014831">
+  </testcase>
+  <testcase name="B4_NoSpam_OfflineCatchup" status="Passed" duration="0.0005013">
+  </testcase>
+  <testcase name="B4_SafePool_And_RarityRolled" status="Passed" duration="0.0009505">
+  </testcase>
+  <testcase name="DatabaseBuilder_MissingFile_GeneratesError" status="Passed" duration="0.0003166">
+  </testcase>
+  <testcase name="DatabaseBuilder_UnsupportedCategory_DoesNotCrash" status="Passed" duration="0.0008544">
+  </testcase>
+  <testcase name="DefinitionFile_Deserialize_SuccessfullyMapsMetadataAndData" status="Passed" duration="0.0001712">
+  </testcase>
+  <testcase name="GameDatabase_DuplicateIds_LogsWarningButKeepsFirst" status="Passed" duration="0.0006785">
+  </testcase>
+  <testcase name="Manifest_Deserialize_SuccessfullyMapsFiles" status="Passed" duration="0.0001646">
+  </testcase>
+  <testcase name="DismissGuard_CharacterOnExpedition_CannotBeDismissed" status="Passed" duration="0.0230004">
+  </testcase>
+  <testcase name="LegacyApi_IsDungeonActive_IgnoresOtherSlots" status="Passed" duration="0.0434302">
+  </testcase>
+  <testcase name="LegacyApi_StrictlyMapsToSlot0" status="Passed" duration="0.0687685">
+  </testcase>
+  <testcase name="Migration_Idempotent_DoesNotDuplicateOnSecondLoad" status="Passed" duration="0.0184226">
+  </testcase>
+  <testcase name="Migration_OldActiveDungeon_MigratesToActiveExpeditionsSlot0" status="Passed" duration="0.0187013">
+  </testcase>
+  <testcase name="SaveLoad_MultiExpeditionRoundtrip_RestoresAllSlots" status="Passed" duration="0.0326337">
+  </testcase>
+  <testcase name="StartExpedition_CharacterExclusivity_RejectsAlreadyAssignedCharacter" status="Passed" duration="0.0315038">
+  </testcase>
+  <testcase name="StartExpedition_RejectsDuplicateWithinTeam" status="Passed" duration="0.0191508">
+  </testcase>
+  <testcase name="StartExpedition_RejectsEmptyParty" status="Passed" duration="0.0187805">
+  </testcase>
+  <testcase name="StartExpedition_ThreeParallelExpeditions_RunIndependently" status="Passed" duration="0.0336254">
+  </testcase>
+  <testcase name="StopExpedition_ClearsOnlyTargetSlot" status="Passed" duration="0.0510648">
+  </testcase>
+  <testcase name="S2_001_ItemSystem_LoadedCorrectly" status="Passed" duration="0.018414">
+  </testcase>
+  <testcase name="S2_002_InventorySystem_CapacityAndStacking" status="Passed" duration="0.0177101">
+  </testcase>
+  <testcase name="S2_003_EquipmentSystem_SlotRestrictions" status="Passed" duration="0.0191989">
+  </testcase>
+  <testcase name="S2_004_CharacterSystem_StatAggregationAndLevelUp" status="Passed" duration="0.0182409">
+  </testcase>
+  <testcase name="AtLeastOneDungeon_HasAnEnemyWithADropTable" status="Passed" duration="0.01859">
+  </testcase>
+  <testcase name="DropTableItemIds_ResolveToItemDefinitions" status="Passed" duration="0.0189979">
+  </testcase>
+  <testcase name="DungeonEnemyIds_AllResolveToDefinitions" status="Passed" duration="0.017981">
+  </testcase>
+  <testcase name="Dungeons_HaveEnemyLists" status="Passed" duration="0.0182649">
+  </testcase>
+  <testcase name="Enemies_HaveAttackDamageRange" status="Passed" duration="0.0181925">
+  </testcase>
+  <testcase name="Enemies_HaveDropTables" status="Passed" duration="0.0180694">
+  </testcase>
+  <testcase name="Enemies_HaveRealStats" status="Passed" duration="0.035657">
+  </testcase>
+  <testcase name="F01_TotalStarsToNextLp" status="Passed" duration="0.000203">
+  </testcase>
+  <testcase name="F02_QuartersPrice_BeyondTableIsUnaffordable" status="Passed" duration="0.0001634">
+  </testcase>
+  <testcase name="F02_QuartersPrice_MatchesLookupTable" status="Passed" duration="0.0001189">
+  </testcase>
+  <testcase name="F03_TavernCapacityPrice" status="Passed" duration="0.0001067">
+  </testcase>
+  <testcase name="F04_TavernTimePrice" status="Passed" duration="7.8E-05">
+  </testcase>
+  <testcase name="F05_StorageCapacityPrice_IsCumulativeAndNotTruncated" status="Passed" duration="0.000167">
+  </testcase>
+  <testcase name="F05_StorageCapacityPrice_StopsAtEighty" status="Passed" duration="7.92E-05">
+  </testcase>
+  <testcase name="F06_F08_MarketAndWorkshopQueuePricesShareShape" status="Passed" duration="0.0001444">
+  </testcase>
+  <testcase name="F07_F09_MarketAndWorkshopTimePricesShareShape" status="Passed" duration="0.0001431">
+  </testcase>
+  <testcase name="F10_ShelterPrice" status="Passed" duration="0.0001308">
+  </testcase>
+  <testcase name="F11_ShelterAutofeedIsAOneOffPurchase" status="Passed" duration="9.75E-05">
+  </testcase>
+  <testcase name="F12_QuartersCapacity_AppliesPurchaseBonuses" status="Passed" duration="0.0001126">
+  </testcase>
+  <testcase name="F13_TavernVisitorInterval_IsMillisecondsAndShrinksPerLevel" status="Passed" duration="0.0001066">
+  </testcase>
+  <testcase name="F14_TavernCapacity" status="Passed" duration="0.0001071">
+  </testcase>
+  <testcase name="F15_F16_MarketAndWorkshopSlots" status="Passed" duration="0.000161">
+  </testcase>
+  <testcase name="F17_StorageSpaces_UsesLargePackBonuses" status="Passed" duration="0.0001475">
+  </testcase>
+  <testcase name="F18_ShelterCapacityHasNoPurchaseBonus" status="Passed" duration="6.31E-05">
+  </testcase>
+  <testcase name="F19_ExperienceToNextLevel_FlooringBuckets" status="Passed" duration="0.0001777">
+  </testcase>
+  <testcase name="F19_ExperienceToNextLevel_StepsDownByMagnitude" status="Passed" duration="7.75E-05">
+  </testcase>
+  <testcase name="F20_FoodToNextLevel" status="Passed" duration="7.82E-05">
+  </testcase>
+  <testcase name="InventoryCapacity_FormulaMatchesStorageSpaces" status="Passed" duration="9.58E-05">
+  </testcase>
+  <testcase name="RollFromWeightedMap_HandlesNullAndEmpty" status="Passed" duration="0.0144232">
+  </testcase>
+  <testcase name="RollFromWeightedMap_ReturnsDefaultWhenWeightsUnderfillTheScale" status="Passed" duration="0.0004551">
+  </testcase>
+  <testcase name="RollFromWeightedMap_SelectsByCumulativePerMilleWeight" status="Passed" duration="0.0003367">
+  </testcase>
+  <testcase name="Round_EpsilonRescuesFloatingPointUndershoot" status="Passed" duration="0.0001178">
+  </testcase>
+  <testcase name="Round_HandlesZeroAndExactIntegers" status="Passed" duration="7.58E-05">
+  </testcase>
+  <testcase name="Round_TruncatesRatherThanRounding" status="Passed" duration="0.0001084">
+  </testcase>
+  <testcase name="SaveData_GetPurchaseFlags_MirrorsStoredFlags" status="Passed" duration="0.0001024">
+  </testcase>
+  <testcase name="SaveData_NewFieldsDefaultToFreshGameValues" status="Passed" duration="0.0001468">
+  </testcase>
+  <testcase name="SaveData_NormalizeAfterLoad_FixesCharacterStatusEffectLists" status="Passed" duration="0.0001963">
+  </testcase>
+  <testcase name="SaveData_NormalizeAfterLoad_PreservesExistingValues" status="Passed" duration="0.0002118">
+  </testcase>
+  <testcase name="SaveData_NormalizeAfterLoad_ReplacesNullCollections" status="Passed" duration="0.0002098">
+  </testcase>
+  <testcase name="SaveData_OldSaveWithoutNewFieldsStillLoads" status="Passed" duration="0.0003025">
+  </testcase>
+  <testcase name="SaveData_SerializationRoundTripKeepsNewFields" status="Passed" duration="0.0007018">
+  </testcase>
+  <testcase name="TruncatePrice_DropsLastFourDigitsAboveOneMillion" status="Passed" duration="0.0001296">
+  </testcase>
+  <testcase name="TruncatePrice_DropsLastTwoDigitsInMidRange" status="Passed" duration="0.000112">
+  </testcase>
+  <testcase name="TruncatePrice_LeavesSmallPricesUntouched" status="Passed" duration="9.33E-05">
+  </testcase>
+  <testcase name="SettingsService_ResetToDefault_RestoresDefaults" status="Passed" duration="0.0603087">
+  </testcase>
+  <testcase name="SettingsService_SetAndGetToggle_UpdatesSaveData" status="Passed" duration="0.0607441">
+  </testcase>
+  <testcase name="OfflineProgressService_ApplyOfflineProgress_SimulatesCraftAndMarketAndUpdatesSaveTime" status="Passed" duration="0.0564713">
+  </testcase>
+  <testcase name="OfflineProgressService_CalculateOfflineDeltaSeconds_CapsAt12Hours" status="Passed" duration="0.0607772">
+  </testcase>
+  <testcase name="DoctrineService_ProgressAndLevelUp_WorksCorrectly" status="Passed" duration="0.0711856">
+  </testcase>
+  <testcase name="ServiceContainer_Initialization_AllServicesNotNull" status="Passed" duration="0.053489">
+  </testcase>
+  <testcase name="ServiceContainer_SharedSaveService_MutationsReflectedAcrossServices" status="Passed" duration="0.0180766">
+  </testcase>
+  <testcase name="SettingsService_TogglesAndLanguage_PersistedInSave" status="Passed" duration="0.0178455">
+  </testcase>
+  <testcase name="TavernService_Capacities_CalculatedFromSaveAndFormula" status="Passed" duration="0.0176939">
+  </testcase>
+  <testcase name="TavernService_ProgressVisitorTime_TriggersVisitorOnTimerExpiry" status="Passed" duration="0.0177302">
+  </testcase>
+  <testcase name="TavernService_RecruitGuest_TransfersGuestToCharacterAndIsFree" status="Passed" duration="0.0186966">
+  </testcase>
+  <testcase name="TavernService_Upgrades_DeductMoneyAndIncreaseLevel" status="Passed" duration="0.0188495">
+  </testcase>
+  <testcase name="TavernService_VisitorGeneration_InsertsAtFrontAndTrims" status="Passed" duration="0.019552">
+  </testcase>
+  <testcase name="CalculateTotalStat_AscendedMultiplier_AppliesToConIntDexHpNotDefMdef" status="Passed" duration="0.019118">
+  </testcase>
+  <testcase name="CalculateTotalStat_PotionMapping_UsesCorrectPotionIndices" status="Passed" duration="0.0183696">
+  </testcase>
+  <testcase name="CalculateTotalStat_TraitMultiplier_AppliesTraitTableWithDecodeMathRound" status="Passed" duration="0.0179549">
+  </testcase>
+  <testcase name="DatabaseBuilder_ItemFields_PopulatesEquipmentStats" status="Passed" duration="0.0182592">
+  </testcase>
+  <testcase name="InventoryService_CategoryFiltering_ReturnsMatchingCategoryOnly" status="Passed" duration="0.0180606">
+  </testcase>
+  <testcase name="InventoryService_ToggleLockItem_TogglesAndPersistsInSave" status="Passed" duration="0.0180192">
+  </testcase>
+  <testcase name="InventoryService_UseConsumable_ConsumesItemAndHealsTarget" status="Passed" duration="0.0183099">
+  </testcase>
+  <testcase name="CraftService_GetMaxCraftable_CalculatesBasedOnIngredients" status="Passed" duration="0.0191222">
+  </testcase>
+  <testcase name="CraftService_TryStartCraftAndProgressAndClaim_FlowWorks" status="Passed" duration="0.0200408">
+  </testcase>
+  <testcase name="MerchantService_BuyOfferGems_DeductsGems" status="Passed" duration="0.0189528">
+  </testcase>
+  <testcase name="MerchantService_BuyOfferGold_DeductsMoneyAndGrantsItem" status="Passed" duration="0.0186768">
+  </testcase>
+  <testcase name="MerchantService_BuyOfferGold_FailsWhenInsufficientMoneyAndNoMutation" status="Passed" duration="0.0320353">
+  </testcase>
+  <testcase name="MerchantService_SellMarketProgressAndClaim_FlowWorks" status="Passed" duration="0.0401532">
+  </testcase>
+  <testcase name="CombatService_ApplyDamage_CalculatesDefenseAndShieldAbsorption" status="Passed" duration="0.0186731">
+  </testcase>
+  <testcase name="DungeonService_StateMachineTick_TransitionsStateAndResetsProgressOnDefeat" status="Passed" duration="0.0517939">
+  </testcase>
+  <testcase name="QuestService_ClaimReward_AwardsProgressToDoctrineAndCompletesQuest" status="Passed" duration="0.0199166">
+  </testcase>
+  <testcase name="QuestService_RewardFromRarity_ReturnsExactRecoveredValues" status="Passed" duration="0.0183318">
+  </testcase>
+  <testcase name="Validate_DataImport_FromConverter" status="Passed" duration="0.0199199">
+  </testcase>
+  <testcase name="BatchExecuteTool_HasCorrectName" status="Passed" duration="0.0003596">
+  </testcase>
+  <testcase name="BatchExecuteTool_HasDescription" status="Passed" duration="0.0001163">
+  </testcase>
+  <testcase name="BatchExecuteTool_IsAsync" status="Passed" duration="6.13E-05">
+  </testcase>
+  <testcase name="BatchExecuteTool_OperationResultsHaveCorrectFormat" status="Passed" duration="0.0052154">
+  </testcase>
+  <testcase name="BatchExecuteTool_ResponseContainsRequiredFields" status="Passed" duration="0.0007442">
+  </testcase>
+  <testcase name="BatchExecuteTool_StopOnErrorFalse_ContinuesAfterError" status="Passed" duration="0.0010538">
+  </testcase>
+  <testcase name="BatchExecuteTool_StopOnErrorTrue_StopsAtFirstError" status="Passed" duration="0.0008354">
+  </testcase>
+  <testcase name="BatchExecuteTool_WithEmptyOperations_ReturnsError" status="Passed" duration="0.0007852">
+  </testcase>
+  <testcase name="BatchExecuteTool_WithMultipleOperations_Succeeds" status="Passed" duration="0.0009005">
+  </testcase>
+  <testcase name="BatchExecuteTool_WithNestedBatchExecute_ReturnsError" status="Passed" duration="0.0006448">
+  </testcase>
+  <testcase name="BatchExecuteTool_WithNullOperations_ReturnsError" status="Passed" duration="0.0004735">
+  </testcase>
+  <testcase name="BatchExecuteTool_WithSingleOperation_Succeeds" status="Passed" duration="0.0007803">
+  </testcase>
+  <testcase name="BatchExecuteTool_WithTooManyOperations_ReturnsError" status="Passed" duration="0.000704">
+  </testcase>
+  <testcase name="BatchExecuteTool_WithUnknownTool_ReturnsError" status="Passed" duration="0.0008463">
+  </testcase>
+  <testcase name="GameObjectToJObject_WithCollider_SkipsDetailedPropertiesForSafety" status="Passed" duration="0.0021871">
+  </testcase>
+  <testcase name="GameObjectToJObject_WithIncludeComponentPropertiesFalse_OmitsProperties" status="Passed" duration="0.0003483">
+  </testcase>
+  <testcase name="GameObjectToJObject_WithIncludeComponentsFalse_OmitsComponents" status="Passed" duration="0.0001674">
+  </testcase>
+  <testcase name="GameObjectToJObject_WithMaxDepthOne_StopsAtGrandchildren" status="Passed" duration="0.0008669">
+  </testcase>
+  <testcase name="GameObjectToJObject_WithMaxDepthZero_HasNoChildrenAndIsTruncated" status="Passed" duration="0.0005853">
+  </testcase>
+  <testcase name="AssignMaterialTool_WithGameObjectWithoutRenderer_ReturnsError" status="Passed" duration="0.1754511">
+  </testcase>
+  <testcase name="AssignMaterialTool_WithInvalidSlot_ReturnsError" status="Passed" duration="0.122441">
+  </testcase>
+  <testcase name="AssignMaterialTool_WithMissingGameObjectIdentifier_ReturnsError" status="Passed" duration="0.0622757">
+  </testcase>
+  <testcase name="AssignMaterialTool_WithMissingMaterialPath_ReturnsError" status="Passed" duration="0.0626162">
+  </testcase>
+  <testcase name="AssignMaterialTool_WithNonExistentGameObject_ReturnsError" status="Passed" duration="0.1217428">
+  </testcase>
+  <testcase name="AssignMaterialTool_WithNonExistentMaterial_ReturnsError" status="Passed" duration="0.0647032">
+  </testcase>
+  <testcase name="AssignMaterialTool_WithValidParameters_AssignsMaterial" status="Passed" duration="0.1256174">
+  </testcase>
+  <testcase name="CreateMaterialTool_WithDefaultShader_UsesAutoDetectedShader" status="Passed" duration="0.1714331">
+  </testcase>
+  <testcase name="CreateMaterialTool_WithInvalidShader_ReturnsError" status="Passed" duration="0.0616147">
+  </testcase>
+  <testcase name="CreateMaterialTool_WithMissingName_ReturnsError" status="Passed" duration="0.0631527">
+  </testcase>
+  <testcase name="CreateMaterialTool_WithMissingSavePath_ReturnsError" status="Passed" duration="0.062094">
+  </testcase>
+  <testcase name="CreateMaterialTool_WithProperties_AppliesProperties" status="Passed" duration="0.1408116">
+  </testcase>
+  <testcase name="CreateMaterialTool_WithValidParameters_CreatesMaterial" status="Passed" duration="0.1352729">
+  </testcase>
+  <testcase name="FindShader_WithNonExistentShader_ReturnsNull" status="Passed" duration="0.0681136">
+  </testcase>
+  <testcase name="FindShader_WithStandardShader_ReturnsShader" status="Passed" duration="0.0688264">
+  </testcase>
+  <testcase name="FindShader_WithUnlitColor_ReturnsShader" status="Passed" duration="0.0706829">
+  </testcase>
+  <testcase name="GetMaterialInfoTool_ReturnsCorrectPropertyTypes" status="Passed" duration="0.1329993">
+  </testcase>
+  <testcase name="GetMaterialInfoTool_WithMissingMaterialPath_ReturnsError" status="Passed" duration="0.0678821">
+  </testcase>
+  <testcase name="GetMaterialInfoTool_WithNonExistentMaterial_ReturnsError" status="Passed" duration="0.0627187">
+  </testcase>
+  <testcase name="GetMaterialInfoTool_WithValidMaterial_ReturnsInfo" status="Passed" duration="0.1226315">
+  </testcase>
+  <testcase name="LoadMaterial_WithEmptyPath_ReturnsNull" status="Passed" duration="0.0614353">
+  </testcase>
+  <testcase name="LoadMaterial_WithNonExistentPath_ReturnsNull" status="Passed" duration="0.0630776">
+  </testcase>
+  <testcase name="LoadMaterial_WithNullPath_ReturnsNull" status="Passed" duration="0.0620327">
+  </testcase>
+  <testcase name="ModifyMaterialTool_WithEmptyProperties_ReturnsError" status="Passed" duration="0.061493">
+  </testcase>
+  <testcase name="ModifyMaterialTool_WithMissingMaterialPath_ReturnsError" status="Passed" duration="0.0635362">
+  </testcase>
+  <testcase name="ModifyMaterialTool_WithUnknownProperty_ReportsUnknown" status="Passed" duration="0.1705222">
+  </testcase>
+  <testcase name="ModifyMaterialTool_WithValidProperties_ModifiesMaterial" status="Passed" duration="0.182048">
+  </testcase>
+  <testcase name="DelayedStartRetryDelayUsesBoundedBackoff" status="Passed" duration="0.0004704">
+  </testcase>
+  <testcase name="EncodePathForFileUrl_WithMultipleSpaces_EncodesAll" status="Passed" duration="0.0004614">
+  </testcase>
+  <testcase name="EncodePathForFileUrl_WithoutSpaces_ReturnsUnchanged" status="Passed" duration="0.0001562">
+  </testcase>
+  <testcase name="EncodePathForFileUrl_WithSpaces_EncodesCorrectly" status="Passed" duration="0.0001523">
+  </testcase>
+  <testcase name="ValidateServerPath_WithEmptyPath_ReturnsFalse" status="Passed" duration="0.0007269">
+  </testcase>
+  <testcase name="ValidateServerPath_WithMissingPackageJson_ReturnsFalse" status="Passed" duration="0.0029521">
+  </testcase>
+  <testcase name="ValidateServerPath_WithNonExistentPath_ReturnsFalse" status="Passed" duration="0.0007856">
+  </testcase>
+  <testcase name="ValidateServerPath_WithNullPath_ReturnsFalse" status="Passed" duration="0.0005285">
+  </testcase>
+  <testcase name="ValidateServerPath_WithSpacesInPath_ReturnsTrue" status="Passed" duration="0.0011229">
+  </testcase>
+  <testcase name="ValidateServerPath_WithValidPath_ReturnsTrue" status="Passed" duration="0.0008827">
+  </testcase>
+  <testcase name="Execute_WithMissingObjectReferencePath_ReturnsUpdateError" status="Passed" duration="0.114105">
+  </testcase>
+  <testcase name="Execute_WithNestedObjectReferencePath_UpdatesReference" status="Passed" duration="0.0966796">
+  </testcase>
+  <testcase name="Execute_WithPrivateSerializedFieldInBaseClass_UpdatesValue" status="Passed" duration="0.0940666">
+  </testcase>
+</testrun>

@@ -15,6 +15,7 @@ namespace GuildMaster.Runtime.Services
         private readonly ISaveService _saveService;
         private readonly IFormulaService _formulaService;
         private readonly ICharacterService _characterService;
+        private readonly IInventoryService _inventoryService;
         private readonly GameDatabase _database;
         private readonly Random _random = new Random();
 
@@ -22,11 +23,13 @@ namespace GuildMaster.Runtime.Services
             ISaveService saveService, 
             IFormulaService formulaService, 
             ICharacterService characterService, 
+            IInventoryService inventoryService,
             GameDatabase database)
         {
             _saveService = saveService ?? throw new ArgumentNullException(nameof(saveService));
             _formulaService = formulaService ?? throw new ArgumentNullException(nameof(formulaService));
             _characterService = characterService ?? throw new ArgumentNullException(nameof(characterService));
+            _inventoryService = inventoryService;
             _database = database ?? throw new ArgumentNullException(nameof(database));
         }
 
@@ -83,7 +86,7 @@ namespace GuildMaster.Runtime.Services
         private string RollClass()
         {
             double rand = _random.NextDouble();
-            return rand < 0.25d ? "Footman" : rand < 0.5d ? "Rogue" : rand < 0.75d ? "Archer" : "Apprentice";
+            return rand < 0.25d ? "footman" : rand < 0.5d ? "rogue" : rand < 0.75d ? "archer" : "apprentice";
         }
 
         private string RollCommonTrait()
@@ -113,21 +116,21 @@ namespace GuildMaster.Runtime.Services
         public void GenerateVisitor()
         {
             var data = _saveService.CurrentData;
-            string classId = "Footman";
+            string classId = "footman";
             string trait = null;
 
             if (data.TutorialStep <= 1)
             {
-                classId = "Footman";
+                classId = "footman";
             }
             else if (data.TutorialStep == 6)
             {
-                classId = "LightDisciple";
+                classId = "light_disciple";
                 trait = "BOOKWORM";
             }
             else if (data.TutorialStep == 7)
             {
-                classId = "Archer";
+                classId = "archer";
                 trait = "FERAL";
                 data.TutorialStep = 8;
                 // AchievementsUtils.unlock(AchievementsUtils.ACHIEVEMENT_GUILD_MANAGEMENT_101);
@@ -158,17 +161,20 @@ namespace GuildMaster.Runtime.Services
             };
 
             string defaultWeapon = def.StarterWeaponId;
-            if (!string.IsNullOrEmpty(defaultWeapon))
+            if (!string.IsNullOrEmpty(defaultWeapon) && _inventoryService != null)
             {
-                var weaponItem = new ItemSaveData
+                if (_database.TryGet<ItemDefinition>(defaultWeapon, out var itemDef))
                 {
-                    InstanceId = Guid.NewGuid().ToString(),
-                    DefinitionId = defaultWeapon,
-                    StackCount = 1,
-                    IsLocked = true
-                };
-                data.Items.Add(weaponItem);
-                guestData.WeaponInstanceId = weaponItem.InstanceId;
+                    if (_inventoryService.CanAddItem(defaultWeapon))
+                    {
+                        var weaponItem = new ItemRuntime(Guid.NewGuid().ToString(), itemDef, 1)
+                        {
+                            IsLocked = true
+                        };
+                        _inventoryService.AddItem(weaponItem);
+                        guestData.WeaponInstanceId = weaponItem.InstanceId;
+                    }
+                }
             }
 
             // Insert at beginning (recovered rule TR-06)
@@ -179,9 +185,13 @@ namespace GuildMaster.Runtime.Services
             while (data.TavernGuests.Count > maxCap)
             {
                 var removedGuest = data.TavernGuests[data.TavernGuests.Count - 1];
-                if (!string.IsNullOrEmpty(removedGuest.WeaponInstanceId))
+                if (!string.IsNullOrEmpty(removedGuest.WeaponInstanceId) && _inventoryService != null)
                 {
-                    data.Items.RemoveAll(x => x.InstanceId == removedGuest.WeaponInstanceId);
+                    var item = _inventoryService.GetItem(removedGuest.WeaponInstanceId);
+                    if (item != null)
+                    {
+                        _inventoryService.RemoveItem(removedGuest.WeaponInstanceId, item.StackCount);
+                    }
                 }
                 data.TavernGuests.RemoveAt(data.TavernGuests.Count - 1);
             }

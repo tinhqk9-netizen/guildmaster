@@ -100,8 +100,9 @@ When auto-applying an agent, inform the user:
 When user's prompt is NOT in English:
 
 1. **Internally translate** for better comprehension
-2. **Respond in user's language** - match their communication
-3. **Code comments/variables** remain in English
+2. **Respond in user's language (Vietnamese)** - match their communication in chat
+3. **In-game UI text, button labels, and game strings MUST remain FULL ENGLISH**
+4. **Code comments/variables** remain in English
 
 ### 🧹 Clean Code (Global Mandatory)
 

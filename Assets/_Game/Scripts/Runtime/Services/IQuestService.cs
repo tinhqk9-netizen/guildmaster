@@ -11,5 +11,6 @@ namespace GuildMaster.Runtime.Services
         void IncrementDefinition(string definitionId, long amount);
         int GetRewardAmount(int rarity, bool isGems);
         IReadOnlyList<QuestRuntime> GetActiveQuests();
+        bool CheckAndTriggerWeeklyQuests(long currentUnix);
     }
 }

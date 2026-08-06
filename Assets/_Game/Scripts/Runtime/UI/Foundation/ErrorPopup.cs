@@ -18,11 +18,17 @@ namespace GuildMaster.Runtime.UI.Foundation
             _onRetry = onRetry;
             _onResetData = onResetData;
 
-            _retryButton.onClick.RemoveAllListeners();
-            _retryButton.onClick.AddListener(() => _onRetry?.Invoke());
+            if (_retryButton != null)
+            {
+                _retryButton.onClick.RemoveAllListeners();
+                _retryButton.onClick.AddListener(() => _onRetry?.Invoke());
+            }
 
-            _resetDataButton.onClick.RemoveAllListeners();
-            _resetDataButton.onClick.AddListener(OnResetDataClicked);
+            if (_resetDataButton != null)
+            {
+                _resetDataButton.onClick.RemoveAllListeners();
+                _resetDataButton.onClick.AddListener(OnResetDataClicked);
+            }
         }
 
         public void ShowError(string message)

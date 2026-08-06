@@ -32,6 +32,13 @@ namespace GuildMaster.Runtime.Services
         private readonly List<QuestRuntime> _activeQuests = new List<QuestRuntime>();
         private readonly Dictionary<string, QuestFlatMetadataEntry> _metadataMap = new Dictionary<string, QuestFlatMetadataEntry>(StringComparer.OrdinalIgnoreCase);
 
+        private static readonly string[] SAFE_GENERAL_QUESTS_POOL = new string[]
+        {
+            "annihilator", "critical_hit", "heavy_armor", "hit_or_miss", "its_a_trap",
+            "long_march", "lucky_roll", "medic", "protector", "smart_fighter",
+            "student", "the_end", "warrior"
+        };
+
         public QuestService(
             ISaveService saveService, 
             GameDatabase registry, 
@@ -89,6 +96,80 @@ namespace GuildMaster.Runtime.Services
         public IReadOnlyList<QuestRuntime> GetActiveQuests()
         {
             return _activeQuests.AsReadOnly();
+        }
+
+        public bool CheckAndTriggerWeeklyQuests(long currentUnix)
+        {
+            if (_saveService.CurrentData == null) return false;
+            
+            long lastTriggered = _saveService.CurrentData.LastWeekTriggered;
+            if (lastTriggered == 0 || currentUnix - lastTriggered >= 604800)
+            {
+                GenerateWeeklyQuestsInternal(currentUnix);
+                return true;
+            }
+            return false;
+        }
+
+        private void GenerateWeeklyQuestsInternal(long currentUnix)
+        {
+            var data = _saveService.CurrentData;
+            if (data == null) return;
+
+            var backupActiveQuests = new List<QuestRuntime>(_activeQuests);
+            var backupSaveQuests = new List<QuestSaveData>(data.Quests);
+            long backupTimestamp = data.LastWeekTriggered;
+
+            try
+            {
+                _activeQuests.Clear();
+
+                var rnd = new System.Random();
+                var availableIds = SAFE_GENERAL_QUESTS_POOL.OrderBy(x => rnd.Next()).ToList();
+                
+                int batchSize = 5;
+                int generatedCount = 0;
+
+                foreach (var questId in availableIds)
+                {
+                    if (generatedCount >= batchSize) break;
+                    if (!_registry.TryGet<QuestDefinition>(questId, out var def)) continue;
+                    
+                    double roll = rnd.NextDouble();
+                    int rolledRarity = 1;
+                    if (roll > 0.97) rolledRarity = 4;
+                    else if (roll > 0.90) rolledRarity = 3;
+                    else if (roll > 0.70) rolledRarity = 2;
+
+                    long targetProg = GetTargetProgress(questId, rolledRarity);
+                    
+                    var newQuest = new QuestRuntime(Guid.NewGuid().ToString(), def, rolledRarity, targetProg)
+                    {
+                        State = QuestState.InProgress,
+                        Progress = 0
+                    };
+                    
+                    _activeQuests.Add(newQuest);
+                    generatedCount++;
+                }
+
+                data.LastWeekTriggered = currentUnix;
+                SaveQuests();
+                
+                bool saved = _saveService.Save(out _);
+                if (!saved)
+                {
+                    throw new Exception("SaveService.Save returned false");
+                }
+            }
+            catch (Exception ex)
+            {
+                UnityEngine.Debug.LogError($"[QuestService] Weekly Quest generation failed: {ex.Message}. Rolling back.");
+                _activeQuests.Clear();
+                _activeQuests.AddRange(backupActiveQuests);
+                data.Quests = backupSaveQuests;
+                data.LastWeekTriggered = backupTimestamp;
+            }
         }
 
         private void LoadQuests()
@@ -195,6 +276,7 @@ namespace GuildMaster.Runtime.Services
                 _doctrineService.AddProgress(targetDoctrineName, rewardAmount);
             }
 
+            quest.State = QuestState.RewardClaimed;
             _activeQuests.Remove(quest);
             data.QuestsCompleted++;
             SaveQuests();

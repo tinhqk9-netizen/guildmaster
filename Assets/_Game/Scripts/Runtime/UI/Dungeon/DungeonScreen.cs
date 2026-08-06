@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Collections;
 using System.Linq;
@@ -117,10 +118,46 @@ namespace GuildMaster.Runtime.UI.Dungeon
 
         // ── Core refresh ──────────────────────────────────────────────────────────
 
-        private List<DungeonDefinition> GetDungeons() =>
-            _database != null
-                ? new List<DungeonDefinition>(_database.GetAll<DungeonDefinition>())
-                : new List<DungeonDefinition>();
+        private static readonly string[] CANONICAL_DUNGEON_ORDER = new string[]
+        {
+            "enchanted_forest",
+            "the_desert",
+            "eternal_battlefield",
+            "the_golden_city",
+            "blackwater_port",
+            "frostbite_peaks",
+            "obsidian_mines",
+            "the_southern_grove",
+            "barren_wastelands",
+            "hidden_city_of_larox",
+            "lost_lands"
+        };
+
+        private List<DungeonDefinition> GetDungeons()
+        {
+            if (_database == null) return new List<DungeonDefinition>();
+
+            var all = _database.GetAll<DungeonDefinition>();
+            var sorted = new List<DungeonDefinition>();
+
+            foreach (var id in CANONICAL_DUNGEON_ORDER)
+            {
+                var match = all.FirstOrDefault(d => d.id.Equals(id, StringComparison.OrdinalIgnoreCase));
+                if (match != null) sorted.Add(match);
+            }
+
+            foreach (var d in all)
+            {
+                if (!sorted.Contains(d)) sorted.Add(d);
+            }
+
+            if (_dungeonService != null)
+            {
+                return sorted.Where(d => _dungeonService.IsDungeonUnlocked(d.id)).ToList();
+            }
+
+            return sorted.Where(d => string.IsNullOrEmpty(d.RequiredClearDungeonId)).ToList();
+        }
 
         public void SelectSlotIndex(int slotIndex)
         {
@@ -256,30 +293,22 @@ namespace GuildMaster.Runtime.UI.Dungeon
                 }
                 else
                 {
-                    UICardFactory.CreateDivider(_dungeonCardContainer, "DUNGEON LIST");
+                    UICardFactory.CreateDivider(_dungeonCardContainer, "UNLOCKED DUNGEONS");
                     for (int i = 0; i < dungeons.Count; i++)
                     {
                         int captured = i;
                         string dungeonId = dungeons[i].id;
-                        bool isUnlocked = _dungeonService == null || _dungeonService.IsDungeonUnlocked(dungeonId);
-
-                        string displayName = isUnlocked 
-                            ? FormatDungeonName(dungeonId) 
-                            : $"🔒 {FormatDungeonName(dungeonId)} (Locked)";
+                        string displayName = FormatDungeonName(dungeonId);
 
                         int enemyCount = dungeons[i].EnemyIds != null ? dungeons[i].EnemyIds.Count : 0;
-                        string sub = isUnlocked
-                            ? (enemyCount > 0 ? $"Enemies: {enemyCount} types" : "Mysterious Area")
-                            : (!string.IsNullOrEmpty(dungeons[i].RequiredClearDungeonId)
-                                ? $"Requires: {FormatDungeonName(dungeons[i].RequiredClearDungeonId)}"
-                                : "Locked");
+                        string sub = enemyCount > 0 ? $"Enemies: {enemyCount} types" : "Mysterious Area";
 
                         UICardFactory.CreateCard(
                             _dungeonCardContainer,
                             displayName, sub,
                             i == _selectedDungeonIndex,
-                            isUnlocked,
-                            isUnlocked ? (UnityEngine.Events.UnityAction)(() => SelectDungeonIndex(captured)) : null,
+                            true,
+                            () => SelectDungeonIndex(captured),
                             preferredHeight: 70);
                     }
                 }

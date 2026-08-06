@@ -295,25 +295,10 @@ namespace GuildMaster.Runtime.Save
 
             data.NormalizeAfterLoad();
 
-            string charInstId = "inst_footman_starter_1";
-
-            // Starter character (Naked Footman)
-            data.Characters.Add(new CharacterSaveData
-            {
-                DefinitionId = "footman",
-                InstanceId = charInstId,
-                Level = 1,
-                Exp = 0,
-                CurrentHp = 40f,
-                IsHpInitialized = true,
-                WeaponInstanceId = "" // Empty weapon
-            });
-
-            data.CurrentParty.Add(charInstId);
-            if (data.ExpeditionParties.Count > 0)
-            {
-                data.ExpeditionParties[0].Add(charInstId);
-            }
+            // Fresh save: No naked starter character in Characters.
+            // NextTavernVisit = 0 so the starter Footman (equipped with starter weapon)
+            // is generated immediately in the Tavern at boot!
+            data.NextTavernVisit = 0;
 
             return data;
         }

@@ -45,7 +45,12 @@ Desktop.ini
 # Temporary files
 /scratch/
 verify-result.txt
- 
+*.rar
+*.log
+/APK/
+.utmp/
+temp_old_*.cs
+
 Backups/
 RecoveryBackup/
 UserSaveBeforeTest/

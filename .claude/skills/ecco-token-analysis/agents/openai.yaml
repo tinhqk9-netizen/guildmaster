@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ecco Token Analysis"
+  short_description: "Inspect model tokens, saliency, and activations"
+  default_prompt: "Use $ecco-token-analysis to inspect token predictions and model attribution."

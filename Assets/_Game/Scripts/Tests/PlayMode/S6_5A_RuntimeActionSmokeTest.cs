@@ -129,12 +129,14 @@ namespace GuildMaster.Tests.PlayMode
             }
 
             // TASK 5: DUNGEON ACTION TEST
-            var dungeonDef = db.GetAll<DungeonDefinition>().FirstOrDefault();
+            // Must use an UNLOCKED dungeon (only enchanted_forest on fresh save)
+            var dungeonDef = db.GetAll<DungeonDefinition>().FirstOrDefault(d => services.Dungeon.IsDungeonUnlocked(d.id));
             if (dungeonDef != null && charId != null)
             {
-                services.Dungeon.StartDungeon(dungeonDef.id, new System.Collections.Generic.List<string> { charId });
-                int stateBefore = (int)services.Dungeon.GetActiveDungeon().State;
-                int typeBefore = services.Dungeon.GetActiveDungeon().ActionType;
+                bool startOk = services.Dungeon.StartExpedition(0, dungeonDef.id, new System.Collections.Generic.List<string> { charId }, out _);
+                var expedition = services.Dungeon.GetExpedition(0);
+                int stateBefore = expedition?.Dungeon != null ? (int)expedition.Dungeon.State : -1;
+                int typeBefore  = expedition?.Dungeon?.ActionType ?? -1;
                 
                 // Tick 15 times to ensure the state machine moves beyond the initial ENTER_DUNGEON state (actionChanged target)
                 for (int i = 0; i < 15; i++)
@@ -142,16 +144,17 @@ namespace GuildMaster.Tests.PlayMode
                     services.Dungeon.Tick();
                 }
                 
-                int stateAfter = (int)services.Dungeon.GetActiveDungeon().State;
-                int typeAfter = services.Dungeon.GetActiveDungeon().ActionType;
+                expedition = services.Dungeon.GetExpedition(0);
+                int stateAfter = expedition?.Dungeon != null ? (int)expedition.Dungeon.State : -1;
+                int typeAfter  = expedition?.Dungeon?.ActionType ?? -1;
                 saveService.Save(out _);
                 
                 bool actionChanged = typeBefore != typeAfter;
-                AppendRow("TASK 5: DUNGEON", "Start & Tick", $"Type: {typeBefore}", $"Type: {typeAfter}", true, true, actionChanged ? "PASS" : "FAIL_NEEDS_FIX");
+                AppendRow("TASK 5: DUNGEON", "StartExpedition & Tick", $"Type: {typeBefore}", $"Type: {typeAfter}", true, true, actionChanged ? "PASS" : "FAIL_NEEDS_FIX");
             }
             else
             {
-                AppendRow("TASK 5: DUNGEON", "Start & Tick", "No Char/Dungeon", "No Char/Dungeon", false, false, "FAIL_NEEDS_FIX");
+                AppendRow("TASK 5: DUNGEON", "StartExpedition & Tick", "No Char/Unlocked Dungeon", "No Char/Unlocked Dungeon", false, false, "FAIL_NEEDS_FIX");
             }
 
             // TASK 6: QUEST ACTION TEST
