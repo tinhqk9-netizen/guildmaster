@@ -8,106 +8,135 @@ using UnityEngine;
 
 namespace GuildMaster.Runtime.Services
 {
+    /// <summary>
+    /// Restores the real Legacy promotion/ascension flow (Docs/Backend_Audit/phase1_audit_report.md).
+    ///
+    /// Java ground truth (DialogEntityDetail.dialogAdventurerPromotion/promote/ascend,
+    /// DialogPromotionChoices.java):
+    ///   - A hero can promote once character.Level reaches its CURRENT class's MaxLevel.
+    ///   - Promotion choices are exactly AdventurerDefinition.NextClasses (declarative per class,
+    ///     e.g. Apprentice -> LightDisciple or Adept). No item is required.
+    ///   - Promoting changes the class (DefinitionId) outright and resets Level=1, Experience=0
+    ///     (Adventurer.getInstance(newClass, id, 1, 0, ...)). Weapon/Armor/Accessory/traits/
+    ///     potions/doctrine carry over unchanged.
+    ///   - A class with an EMPTY NextClasses list (e.g. Balrog, MaxLevel 45) is a final tier.
+    ///     Reaching MaxLevel there triggers "ascend" instead of "promote": the hero resets back
+    ///     to its BASE class (Utils.getBaseClass — derived from weapon type: bow->Archer,
+    ///     dagger->Rogue, staff->Apprentice, else->Footman), Level=1, Experience=0, and gains the
+    ///     permanent `ascended` flag (IsAscended) which grants a recovered +50% CON/INT/DEX/HP
+    ///     stat bonus (see CharacterService.GetTotalStat) and unlocks Doctrine
+    ///     (Adventurer.canPickDoctrine()). Ascension is repeatable (the hero can climb the tree
+    ///     and ascend again; the flag simply stays true).
+    /// </summary>
     public interface IPromotionService
     {
-        IReadOnlyList<PromotionDefinition> GetAvailablePromotions(CharacterSaveData character);
-        bool CanPromote(CharacterSaveData character, string promotionId);
-        bool Promote(CharacterSaveData character, string promotionId);
-        int GetPromotionCount(string characterInstanceId);
+        /// <summary>Real promotion choices (full next-class definitions) for this character, or empty if not eligible.</summary>
+        IReadOnlyList<AdventurerDefinition> GetPromotionChoices(CharacterSaveData character);
+        bool CanPromote(CharacterSaveData character);
+        bool CanPromoteTo(CharacterSaveData character, string targetDefinitionId);
+        bool Promote(CharacterSaveData character, string targetDefinitionId);
+
+        /// <summary>True once the character is at a final-tier class (no NextClasses) at MaxLevel.</summary>
+        bool CanAscend(CharacterSaveData character);
+        bool Ascend(CharacterSaveData character);
     }
 
     public class PromotionService : IPromotionService
     {
         private readonly ISaveService _saveService;
         private readonly GameDatabase _database;
-        private readonly IInventoryService _inventoryService;
         private readonly ICharacterService _characterService;
 
         public PromotionService(ISaveService saveService, GameDatabase database, IInventoryService inventoryService, ICharacterService characterService)
         {
             _saveService = saveService ?? throw new ArgumentNullException(nameof(saveService));
             _database = database ?? throw new ArgumentNullException(nameof(database));
-            _inventoryService = inventoryService ?? throw new ArgumentNullException(nameof(inventoryService));
+            // inventoryService is intentionally unused: Legacy's standard promotion tree consumes
+            // no item (see class doc). Kept as a constructor parameter for DI-container compatibility.
             _characterService = characterService ?? throw new ArgumentNullException(nameof(characterService));
         }
 
-        public IReadOnlyList<PromotionDefinition> GetAvailablePromotions(CharacterSaveData character)
+        private AdventurerDefinition GetCurrentDefinition(CharacterSaveData character)
         {
-            if (character == null) return Array.Empty<PromotionDefinition>();
-
-            var allPromotions = _database.GetAll<PromotionDefinition>();
-            var available = new List<PromotionDefinition>();
-
-            // Find promotions that are >= current promotion count (e.g., 0→1, 1→2)
-            int currentCount = character.AscensionLevel; // Reuse AscensionLevel as promotion count
-            foreach (var promo in allPromotions)
-            {
-                if (promo.TierIndex == currentCount + 1 && character.Level >= promo.RequiredLevel)
-                {
-                    available.Add(promo);
-                }
-            }
-            return available.AsReadOnly();
+            if (character == null) return null;
+            _database.TryGet<AdventurerDefinition>(character.DefinitionId, out var def);
+            return def;
         }
 
-        public bool CanPromote(CharacterSaveData character, string promotionId)
+        public IReadOnlyList<AdventurerDefinition> GetPromotionChoices(CharacterSaveData character)
         {
-            if (character == null || string.IsNullOrEmpty(promotionId)) return false;
+            var current = GetCurrentDefinition(character);
+            if (current == null) return Array.Empty<AdventurerDefinition>();
+            if (character.Level < current.MaxLevel) return Array.Empty<AdventurerDefinition>();
+            if (current.NextClasses == null || current.NextClasses.Length == 0) return Array.Empty<AdventurerDefinition>();
 
-            var promo = _database.GetRequired<PromotionDefinition>(promotionId);
-            if (promo == null) return false;
-
-            int currentCount = character.AscensionLevel;
-            if (promo.TierIndex != currentCount + 1) return false;
-            if (character.Level < promo.RequiredLevel) return false;
-
-            // Check item requirement
-            if (!string.IsNullOrEmpty(promo.RequiredItemId))
+            var all = _database.GetAll<AdventurerDefinition>();
+            var choices = new List<AdventurerDefinition>();
+            foreach (var nextClassName in current.NextClasses)
             {
-                var item = _inventoryService.GetAllItems().FirstOrDefault(i => i.Definition.id == promo.RequiredItemId);
-                if (item == null || item.StackCount < promo.RequiredItemCount) return false;
+                // NextClasses stores the raw Java class name (e.g. "LightDisciple"), matching
+                // DefinitionBase.className exactly — see phase1 extraction in adventurers.json.
+                var match = all.FirstOrDefault(d => d.className == nextClassName);
+                if (match != null) choices.Add(match);
             }
-
-            return true;
+            return choices.AsReadOnly();
         }
 
-        public bool Promote(CharacterSaveData character, string promotionId)
+        public bool CanPromote(CharacterSaveData character) => GetPromotionChoices(character).Count > 0;
+
+        public bool CanPromoteTo(CharacterSaveData character, string targetDefinitionId)
         {
-            if (!CanPromote(character, promotionId)) return false;
+            if (string.IsNullOrEmpty(targetDefinitionId)) return false;
+            return GetPromotionChoices(character).Any(d => d.id == targetDefinitionId);
+        }
 
-            var promo = _database.GetRequired<PromotionDefinition>(promotionId);
+        public bool Promote(CharacterSaveData character, string targetDefinitionId)
+        {
+            if (character == null || !CanPromoteTo(character, targetDefinitionId)) return false;
 
-            // Consume required item
-            if (!string.IsNullOrEmpty(promo.RequiredItemId))
-            {
-                var item = _inventoryService.GetAllItems().FirstOrDefault(i => i.Definition.id == promo.RequiredItemId);
-                if (item != null)
-                    _inventoryService.RemoveItem(item.InstanceId, promo.RequiredItemCount);
-            }
-
-            character.AscensionLevel++;
-            character.Level = 1;
-            character.Exp = 0;
-
-            // Sync to runtime character in memory if exists
-            var runtime = _characterService.GetAllCharacters().FirstOrDefault(c => c.InstanceId == character.InstanceId);
-            if (runtime != null)
-            {
-                runtime.Level = 1;
-                runtime.Experience = 0;
-                runtime.AscensionLevel = character.AscensionLevel;
-                runtime.IsAscended = true;
-            }
+            bool ok = _characterService.ChangeClass(character.InstanceId, targetDefinitionId, setAscended: false);
+            if (!ok) return false;
 
             _saveService.Save(out _);
-            Debug.Log($"[PromotionService] Character '{character.InstanceId}' promoted to tier {character.AscensionLevel}");
+            Debug.Log($"[PromotionService] Character '{character.InstanceId}' promoted to '{targetDefinitionId}'.");
             return true;
         }
 
-        public int GetPromotionCount(string characterInstanceId)
+        public bool CanAscend(CharacterSaveData character)
         {
-            var character = _saveService.CurrentData.Characters?.FirstOrDefault(c => c.InstanceId == characterInstanceId);
-            return character?.AscensionLevel ?? 0;
+            var current = GetCurrentDefinition(character);
+            if (current == null) return false;
+            bool isFinalTier = current.NextClasses == null || current.NextClasses.Length == 0;
+            return isFinalTier && character.Level >= current.MaxLevel;
+        }
+
+        public bool Ascend(CharacterSaveData character)
+        {
+            if (character == null || !CanAscend(character)) return false;
+
+            var current = GetCurrentDefinition(character);
+            string baseClassName = GetBaseClassName(current.WeaponType);
+            var baseDef = _database.GetAll<AdventurerDefinition>().FirstOrDefault(d => d.className == baseClassName);
+            if (baseDef == null) return false;
+
+            bool ok = _characterService.ChangeClass(character.InstanceId, baseDef.id, setAscended: true);
+            if (!ok) return false;
+
+            _saveService.Save(out _);
+            Debug.Log($"[PromotionService] Character '{character.InstanceId}' ascended, reset to base class '{baseDef.id}'.");
+            return true;
+        }
+
+        // Java: Utils.getBaseClass(Adventurer) — it.paranoidsquirrels.idleguildmaster.Utils.java.
+        private static string GetBaseClassName(string weaponType)
+        {
+            switch (weaponType)
+            {
+                case "Bow": return "Archer";
+                case "Dagger": return "Rogue";
+                case "Staff": return "Apprentice";
+                default: return "Footman";
+            }
         }
     }
 }

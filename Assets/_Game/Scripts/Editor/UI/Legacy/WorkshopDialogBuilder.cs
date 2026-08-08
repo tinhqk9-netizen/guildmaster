@@ -59,6 +59,8 @@ namespace GuildMaster.Editor.UI.Headquarters
             // right under the header instead of trailing after a large flexible empty scroll box).
             Text empty = AddText(dialog.transform, "EmptyState", "Workshop queue is empty. Craft something from Recipes.", 26, LegacyUITheme.DimWhite, FontStyle.Normal, TextAnchor.MiddleCenter, 90f);
             empty.gameObject.SetActive(false);
+            BuildUpgradeRow(dialog.transform, "QueueUpgrade", "Queue capacity", out var queueUpgradeInfo, out var queueUpgradeButton);
+            BuildUpgradeRow(dialog.transform, "SpeedUpgrade", "Craft speed", out var speedUpgradeInfo, out var speedUpgradeButton);
 
             // ── Queue + completed list (vertical rows, not a grid — matches legacy dialog_workshop) ──
             var scroll = new GameObject("ListScroll", typeof(RectTransform), typeof(Image), typeof(ScrollRect), typeof(LayoutElement));
@@ -117,6 +119,10 @@ namespace GuildMaster.Editor.UI.Headquarters
             var serialized = new SerializedObject(component);
             serialized.FindProperty("_titleText").objectReferenceValue = title;
             serialized.FindProperty("_queueCountText").objectReferenceValue = queueCount;
+            serialized.FindProperty("_queueUpgradeInfoText").objectReferenceValue = queueUpgradeInfo;
+            serialized.FindProperty("_queueUpgradeButton").objectReferenceValue = queueUpgradeButton;
+            serialized.FindProperty("_speedUpgradeInfoText").objectReferenceValue = speedUpgradeInfo;
+            serialized.FindProperty("_speedUpgradeButton").objectReferenceValue = speedUpgradeButton;
             serialized.FindProperty("_closeButton").objectReferenceValue = close.GetComponent<Button>();
             serialized.FindProperty("_recipesButton").objectReferenceValue = recipesBtn.GetComponent<Button>();
             serialized.FindProperty("_listContent").objectReferenceValue = contentRect;
@@ -270,6 +276,25 @@ namespace GuildMaster.Editor.UI.Headquarters
             text.text = value;
             go.GetComponent<LayoutElement>().preferredHeight = height;
             return text;
+        }
+
+        private static void BuildUpgradeRow(Transform parent, string name, string label, out Text info, out Button button)
+        {
+            var row = new GameObject(name, typeof(RectTransform), typeof(HorizontalLayoutGroup), typeof(LayoutElement));
+            row.transform.SetParent(parent, false);
+            row.GetComponent<LayoutElement>().preferredHeight = 74f;
+            var group = row.GetComponent<HorizontalLayoutGroup>();
+            group.spacing = 14f;
+            group.childAlignment = TextAnchor.MiddleCenter;
+            group.childControlWidth = true;
+            group.childControlHeight = true;
+            group.childForceExpandWidth = false;
+            group.childForceExpandHeight = true;
+
+            info = AddText(row.transform, "Info", label, 24, LegacyUITheme.DimWhite, FontStyle.Normal, TextAnchor.MiddleLeft, 74f);
+            info.GetComponent<LayoutElement>().flexibleWidth = 1f;
+            var buttonGo = CreateButton(row.transform, "UpgradeButton", "Upgrade", 280f, 66f);
+            button = buttonGo.GetComponent<Button>();
         }
 
         private static GameObject CreateButton(Transform parent, string name, string label, float width, float height)

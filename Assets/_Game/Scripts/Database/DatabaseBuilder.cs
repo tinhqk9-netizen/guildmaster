@@ -112,7 +112,108 @@ namespace GuildMaster.Database
                 }
             }
 
+            // Phase 2A: Doctrine catalog has no JSON source (no doctrines.json anywhere in the
+            // decoded data — see Docs/Backend_Audit/phase2a_audit_report.md). Registered directly
+            // from the hand-transcribed DoctrineCatalog (real Java DoctrineAbilityType /
+            // DoctrineOf* data, not fabricated) so DoctrineDefinition flows through GameDatabase
+            // exactly like every JSON-sourced category.
+            RegisterDoctrineCatalog(report);
+
+            var raidDefinitions = new List<RaidDefinition>(_database.GetAll<RaidDefinition>() ?? Array.Empty<RaidDefinition>());
+            RaidContentCatalog.Apply(raidDefinitions, _database.GetAll<EnemyDefinition>());
+            int raidRoomsRestored = 0;
+            foreach (var raid in raidDefinitions) raidRoomsRestored += raid.Rooms?.Count ?? 0;
+            report.loadedRecordsByCategory["raid_rooms_restored"] = raidRoomsRestored;
+
+            ResolveRecipeItemIds(report);
+
             return report;
+        }
+
+        private void ResolveRecipeItemIds(DatabaseBuildReport report)
+        {
+            var items = _database.GetAll<ItemDefinition>();
+            var recipes = new List<RecipeDefinition>(_database.GetAll<RecipeDefinition>());
+            var resolver = new CanonicalItemIdResolver(items);
+            int outputResolved = 0;
+            int ingredientResolved = 0;
+            int invalidRecipes = 0;
+
+            report.loadedRecordsByCategory["recipes_before_item_id_resolution"] = recipes.Count;
+
+            foreach (var recipe in recipes)
+            {
+                bool valid = true;
+
+                if (!resolver.TryResolve(recipe.OutputItemId, out var canonicalOutput, out var outputFailure))
+                {
+                    valid = false;
+                    string message =
+                        $"Recipe '{recipe.id}' has unresolved output id '{recipe.OutputItemId}': {outputFailure}.";
+                    report.errors.Add(message);
+                    UnityEngine.Debug.LogError($"[DatabaseBuilder] {message}");
+                }
+                else
+                {
+                    if (!string.Equals(recipe.OutputItemId, canonicalOutput, StringComparison.Ordinal))
+                    {
+                        recipe.OutputItemId = canonicalOutput;
+                    }
+                    outputResolved++;
+                }
+
+                if (recipe.Ingredients != null)
+                {
+                    foreach (var ingredient in recipe.Ingredients)
+                    {
+                        if (ingredient == null) continue;
+
+                        if (!resolver.TryResolve(ingredient.ItemId, out var canonicalIngredient, out var ingredientFailure))
+                        {
+                            valid = false;
+                            string message =
+                                $"Recipe '{recipe.id}' has unresolved ingredient id '{ingredient.ItemId}': {ingredientFailure}.";
+                            report.errors.Add(message);
+                            UnityEngine.Debug.LogError($"[DatabaseBuilder] {message}");
+                            continue;
+                        }
+
+                        if (!string.Equals(ingredient.ItemId, canonicalIngredient, StringComparison.Ordinal))
+                            ingredient.ItemId = canonicalIngredient;
+                        ingredientResolved++;
+                    }
+                }
+
+                if (!valid)
+                {
+                    invalidRecipes++;
+                    recipe.OutputItemId = null;
+                }
+            }
+
+            // Re-register the same recipe objects after canonicalization. Invalid records are
+            // excluded from the runtime registry so UI/services cannot execute them.
+            recipes.RemoveAll(recipe => string.IsNullOrEmpty(recipe.OutputItemId));
+            _database.RegisterCollection(recipes);
+
+            report.loadedRecordsByCategory["recipes"] = recipes.Count;
+            report.loadedRecordsByCategory["recipe_outputs_resolved"] = outputResolved;
+            report.loadedRecordsByCategory["recipe_ingredients_resolved"] = ingredientResolved;
+            report.loadedRecordsByCategory["recipe_invalid_removed"] = invalidRecipes;
+        }
+
+        private void RegisterDoctrineCatalog(DatabaseBuildReport report)
+        {
+            try
+            {
+                var doctrines = DoctrineCatalog.BuildDefinitions();
+                _database.RegisterCollection(doctrines);
+                report.loadedFiles++;
+            }
+            catch (Exception ex)
+            {
+                report.errors.Add($"Failed to register DoctrineCatalog: {ex.Message}");
+            }
         }
 
         private void LoadCategory<T>(string jsonContent, ManifestFileEntry fileEntry, DatabaseBuildReport report) where T : DefinitionBase
@@ -190,6 +291,17 @@ namespace GuildMaster.Database
             // are not present in the JSON. We map them from parentClass + id here.
             if (typeof(T) == typeof(AdventurerDefinition))
             {
+                // Phase 1 audit finding: the DecodeConverter's regex parser walks the whole
+                // "entities/adventurers" package tree, so adventurers.json also picked up 13
+                // non-hero records that merely live under that Java package: the abstract
+                // Adventurer base class itself, PotionsDrank, and the 11 Doctrine classes
+                // (Doctrine + 8 DoctrineOf* + DoctrineAbility + EmptyDoctrine). Every real
+                // playable hero class extends Adventurer directly, so parentClass == "Adventurer"
+                // is an exact, verified filter — 129 raw records -> 116 real hero classes
+                // (confirmed against the 116 *.java files under
+                // storage/data/entities/adventurers/units in the Legacy source).
+                list.RemoveAll(raw => ((AdventurerDefinition)(object)raw).parentClass != "Adventurer");
+
                 foreach (var raw in list)
                 {
                     var def = (AdventurerDefinition)(object)raw;
@@ -197,8 +309,96 @@ namespace GuildMaster.Database
                 }
             }
 
+            // ── Quest metadata enrichment ────────────────────────────────────────────
+            // quests.json (manifest-driven "quests" category) only carries id/className.
+            // quest_metadata.json has the real defaultRarity/targetProgressValues but isn't
+            // listed in manifest.json, so it's read directly here. See phase0_schema_mapping.md §8.
+            if (typeof(T) == typeof(QuestDefinition))
+            {
+                var quests = new List<QuestDefinition>(list.Count);
+                foreach (var item in list) quests.Add((QuestDefinition)(object)item);
+
+                int withMetadata = QuestMetadataLoader.Apply(_dataProvider, quests);
+                report.loadedRecordsByCategory["quest_metadata"] = withMetadata;
+                EnrichQuestPoolMembership(quests);
+            }
+
+            if (typeof(T) == typeof(PetDefinition))
+            {
+                var pets = new List<PetDefinition>(list.Count);
+                foreach (var item in list) pets.Add((PetDefinition)(object)item);
+                EnrichPetDefinitions(pets);
+            }
+
             _database.RegisterCollection(list);
             report.loadedRecordsByCategory[fileEntry.category] = list.Count;
+        }
+
+        /// <summary>
+        /// Restores QuestsManager's nine static lists. The decoded JSON contains only the
+        /// record identity, so this mapping is deliberately kept at the data boundary and is
+        /// transcribed from QuestsManager.setupAccessibleQuests().
+        /// </summary>
+        private static void EnrichQuestPoolMembership(List<QuestDefinition> quests)
+        {
+            var doctrinePools = new Dictionary<string, string[]>(StringComparer.OrdinalIgnoreCase)
+            {
+                { "affliction", new[] { "vampiric_thirst", "falling_apart", "the_end", "innocence", "soft_and_fluffy", "tormentor", "delirious" } },
+                { "control", new[] { "smoking_hot", "shocking", "slow_burn", "ice_breaker", "regicide", "crystal_clear", "laroxian_power" } },
+                { "fortitude", new[] { "heavy_armor", "spiky", "protector", "speedy_hare", "clash_of_titans", "unscathed", "god_feared" } },
+                { "grace", new[] { "medic", "light_bringer", "soothing_remedy", "psychiatrist", "and_stay_dead", "miracle", "darkness_within" } },
+                { "illusion", new[] { "hit_or_miss", "lucky_roll", "its_a_trap", "nice_try", "eldritch_horror", "active_deterrent", "marathon" } },
+                { "knowledge", new[] { "student", "myopia", "paleontologist", "master_crafter", "from_hell", "fast_learner", "exorcism" } },
+                { "ruin", new[] { "annihilator", "smart_fighter", "critical_hit", "coup_d_etat", "botched_ritual", "pulverization", "thalassophobia" } },
+                { "war", new[] { "expert_duelist", "warrior", "long_march", "conqueror", "endless_agony", "tabula_rasa", "raging_volcano" } }
+            };
+
+            var poolById = new Dictionary<string, (string Pool, string Doctrine)>(StringComparer.OrdinalIgnoreCase);
+            foreach (var pool in doctrinePools)
+                foreach (var id in pool.Value)
+                    poolById[id] = ("Doctrine", pool.Key);
+
+            foreach (var quest in quests)
+            {
+                if (quest == null) continue;
+                if (poolById.TryGetValue(quest.id ?? string.Empty, out var membership))
+                {
+                    quest.PoolType = membership.Pool;
+                    quest.DoctrineId = membership.Doctrine;
+                }
+                else
+                {
+                    // QuestsManager.accessibleQuests is the Kings/general pool. This also
+                    // covers the six decoded records that are not in a doctrine list.
+                    quest.PoolType = "Kings";
+                    quest.DoctrineId = string.Empty;
+                }
+            }
+        }
+
+        /// <summary>Maps the 21 Java pet classes to family, tier and guaranteed ability.</summary>
+        private static void EnrichPetDefinitions(List<PetDefinition> pets)
+        {
+            var families = new Dictionary<string, (string Family, int Tier, string Ability)>(StringComparer.OrdinalIgnoreCase)
+            {
+                { "dove", ("avian", 1, "DECOY") }, { "owl", ("avian", 2, "DECOY") }, { "eagle", ("avian", 3, "DECOY") },
+                { "rockling", ("construct", 1, "MAGIC") }, { "golem", ("construct", 2, "MAGIC") }, { "tesseract", ("construct", 3, "MAGIC") },
+                { "floating_eye", ("esoteric", 1, "EXPERIENCE") }, { "tentacle_tangle", ("esoteric", 2, "EXPERIENCE") }, { "thing_from_the_abyss", ("esoteric", 3, "EXPERIENCE") },
+                { "mosquito", ("insect", 1, "FIGHTER") }, { "beetle", ("insect", 2, "FIGHTER") }, { "tarantula", ("insect", 3, "FIGHTER") },
+                { "lizard", ("reptile", 1, "SAVAGE") }, { "tree_frog", ("reptile", 2, "SAVAGE") }, { "crocodile", ("reptile", 3, "SAVAGE") },
+                { "rat", ("wild", 1, "LIFESTEAL") }, { "squirrel", ("wild", 2, "LIFESTEAL") }, { "red_wolf", ("wild", 3, "LIFESTEAL") },
+                { "floating_seed", ("wooden", 1, "REGENERATION") }, { "walking_bush", ("wooden", 2, "REGENERATION") }, { "holy_tree", ("wooden", 3, "REGENERATION") }
+            };
+            foreach (var pet in pets)
+            {
+                if (pet == null || !families.TryGetValue(pet.id ?? string.Empty, out var data)) continue;
+                pet.PetFamily = data.Family;
+                pet.PetTier = data.Tier;
+                pet.IdName = "pet_" + pet.id + "_name";
+                pet.IdImage = "pet_" + pet.id;
+                pet.GuaranteedFirstAbility = data.Ability;
+                pet.AbilityNumber = data.Tier + 1;
+            }
         }
 
         // ── Item enrichment helper ───────────────────────────────────────────────────

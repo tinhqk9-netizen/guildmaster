@@ -45,7 +45,175 @@
    ],
    "SourceClass": "BarrenWastelands",
    "RequiredClearDungeonId": "the_southern_grove",
-   "RequiredClearProgress": 60
+   "RequiredClearProgress": 60,
+   "EncounterGroups": [
+    {
+     "EnemyIds": [
+      "banshee"
+     ],
+     "Weight": 100.0
+    },
+    {
+     "EnemyIds": [
+      "celestial_lancer",
+      "banshee"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "celestial_lancer",
+      "iconoclast",
+      "oculus",
+      "banshee"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "iconoclast",
+      "oculus",
+      "iconoclast",
+      "banshee"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "celestial_lancer",
+      "banshee",
+      "celestial_lancer",
+      "oculus",
+      "oculus"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "oculus",
+      "oculus",
+      "banshee",
+      "iconoclast",
+      "iconoclast"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "iconoclast"
+     ],
+     "Weight": 17.0
+    },
+    {
+     "EnemyIds": [
+      "oculus"
+     ],
+     "Weight": 17.0
+    },
+    {
+     "EnemyIds": [
+      "celestial_destroyer"
+     ],
+     "Weight": 17.0
+    },
+    {
+     "EnemyIds": [
+      "celestial_lancer",
+      "iconoclast"
+     ],
+     "Weight": 17.0
+    },
+    {
+     "EnemyIds": [
+      "iconoclast",
+      "iconoclast"
+     ],
+     "Weight": 17.0
+    },
+    {
+     "EnemyIds": [
+      "iconoclast",
+      "oculus"
+     ],
+     "Weight": 17.0
+    },
+    {
+     "EnemyIds": [
+      "oculus",
+      "oculus"
+     ],
+     "Weight": 17.0
+    },
+    {
+     "EnemyIds": [
+      "iconoclast",
+      "oculus",
+      "iconoclast"
+     ],
+     "Weight": 17.0
+    },
+    {
+     "EnemyIds": [
+      "oculus",
+      "celestial_lancer",
+      "oculus"
+     ],
+     "Weight": 17.0
+    },
+    {
+     "EnemyIds": [
+      "iconoclast",
+      "celestial_lancer",
+      "oculus"
+     ],
+     "Weight": 17.0
+    },
+    {
+     "EnemyIds": [
+      "celestial_lancer",
+      "iconoclast",
+      "celestial_lancer"
+     ],
+     "Weight": 17.0
+    },
+    {
+     "EnemyIds": [
+      "oculus",
+      "iconoclast",
+      "iconoclast",
+      "oculus"
+     ],
+     "Weight": 17.0
+    },
+    {
+     "EnemyIds": [
+      "oculus",
+      "iconoclast",
+      "celestial_lancer",
+      "oculus"
+     ],
+     "Weight": 17.0
+    },
+    {
+     "EnemyIds": [
+      "iconoclast",
+      "celestial_lancer",
+      "oculus",
+      "iconoclast"
+     ],
+     "Weight": 17.0
+    },
+    {
+     "EnemyIds": [
+      "iconoclast",
+      "celestial_destroyer",
+      "oculus"
+     ],
+     "Weight": 7.0
+    }
+   ],
+   "EmptyRoomWeight": 505.0,
+   "SearchRoomDrops": []
   },
   {
    "RegularMerchantOffers": [
@@ -165,7 +333,194 @@
    ],
    "SourceClass": "BlackwaterPort",
    "RequiredClearDungeonId": "the_golden_city",
-   "RequiredClearProgress": 100
+   "RequiredClearProgress": 100,
+   "EncounterGroups": [
+    {
+     "EnemyIds": [
+      "mimic"
+     ],
+     "Weight": 1.0
+    },
+    {
+     "EnemyIds": [
+      "mysterious_tentacle"
+     ],
+     "Weight": 10.0
+    },
+    {
+     "EnemyIds": [
+      "deckhand"
+     ],
+     "Weight": 39.0
+    },
+    {
+     "EnemyIds": [
+      "pirate"
+     ],
+     "Weight": 40.0
+    },
+    {
+     "EnemyIds": [
+      "deckhand",
+      "pirate"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "deckhand",
+      "deckhand"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "pirate",
+      "pirate"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "deckhand",
+      "pirate_lieutenant"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "pirate",
+      "pirate_lieutenant"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "deckhand",
+      "pirate",
+      "deckhand"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "pirate",
+      "deckhand",
+      "pirate"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "pirate",
+      "pirate",
+      "pirate"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "pirate",
+      "pirate_lieutenant",
+      "pirate"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "pirate",
+      "pirate_lieutenant",
+      "deckhand"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "pirate",
+      "pirate_captain",
+      "pirate"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "pirate",
+      "pirate_captain",
+      "deckhand"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "pirate",
+      "pirate",
+      "pirate",
+      "pirate"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "deckhand",
+      "pirate",
+      "pirate",
+      "deckhand"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "pirate",
+      "pirate_lieutenant",
+      "deckhand",
+      "pirate"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "pirate",
+      "pirate",
+      "pirate",
+      "pirate",
+      "pirate"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "deckhand",
+      "pirate",
+      "pirate",
+      "deckhand",
+      "deckhand"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "deckhand",
+      "pirate",
+      "pirate_lieutenant",
+      "deckhand",
+      "deckhand"
+     ],
+     "Weight": 15.0
+    }
+   ],
+   "EmptyRoomWeight": 615.0,
+   "SearchRoomDrops": [
+    {
+     "ItemId": "ghostwood_stump",
+     "StackCount": 1,
+     "Weight": 60.0
+    },
+    {
+     "ItemId": "missing_page",
+     "StackCount": 1,
+     "Weight": 50.0
+    }
+   ]
   },
   {
    "RegularMerchantOffers": [
@@ -282,7 +637,178 @@
    ],
    "SourceClass": "EnchantedForest",
    "RequiredClearDungeonId": "",
-   "RequiredClearProgress": 0
+   "RequiredClearProgress": 0,
+   "EncounterGroups": [
+    {
+     "EnemyIds": [
+      "wolf"
+     ],
+     "Weight": 100.0
+    },
+    {
+     "EnemyIds": [
+      "boar"
+     ],
+     "Weight": 100.0
+    },
+    {
+     "EnemyIds": [
+      "treant"
+     ],
+     "Weight": 100.0
+    },
+    {
+     "EnemyIds": [
+      "centaur"
+     ],
+     "Weight": 100.0
+    },
+    {
+     "EnemyIds": [
+      "wolf",
+      "wolf"
+     ],
+     "Weight": 100.0
+    },
+    {
+     "EnemyIds": [
+      "golden_rabbit"
+     ],
+     "Weight": 10.0
+    },
+    {
+     "EnemyIds": [
+      "ent"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "wolf"
+     ],
+     "Weight": 50.0
+    },
+    {
+     "EnemyIds": [
+      "boar"
+     ],
+     "Weight": 50.0
+    },
+    {
+     "EnemyIds": [
+      "treant"
+     ],
+     "Weight": 50.0
+    },
+    {
+     "EnemyIds": [
+      "centaur"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "wolf",
+      "wolf"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "boar",
+      "wolf"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "boar",
+      "boar"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "wolf",
+      "treant"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "boar",
+      "treant"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "treant",
+      "treant"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "centaur",
+      "centaur"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "wolf",
+      "wolf",
+      "wolf"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "wolf",
+      "boar",
+      "wolf"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "treant",
+      "boar",
+      "wolf"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "wolf",
+      "centaur",
+      "wolf"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "treant",
+      "centaur",
+      "boar"
+     ],
+     "Weight": 20.0
+    }
+   ],
+   "EmptyRoomWeight": 500.0,
+   "SearchRoomDrops": [
+    {
+     "ItemId": "copper_ore",
+     "StackCount": 1,
+     "Weight": 50.0
+    },
+    {
+     "ItemId": "wood",
+     "StackCount": 1,
+     "Weight": 100.0
+    }
+   ]
   },
   {
    "RegularMerchantOffers": [
@@ -399,7 +925,218 @@
    ],
    "SourceClass": "EternalBattlefield",
    "RequiredClearDungeonId": "the_desert",
-   "RequiredClearProgress": 100
+   "RequiredClearProgress": 100,
+   "EncounterGroups": [
+    {
+     "EnemyIds": [
+      "death_hound"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "undead"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "undead_archer"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "undead",
+      "undead"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "undead",
+      "death_hound"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "undead",
+      "undead_archer"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "undead_archer",
+      "undead_archer"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "abomination",
+      "undead_warlord"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "ghoul",
+      "will_o_wisp"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "undead",
+      "undead",
+      "undead"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "undead",
+      "undead_archer",
+      "undead"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "undead_archer",
+      "undead_warlord",
+      "undead_archer"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "undead",
+      "undead_warlord",
+      "undead"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "undead_archer",
+      "abomination",
+      "undead_archer"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "death_hound",
+      "undead_warlord",
+      "death_hound"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "undead",
+      "will_o_wisp",
+      "undead"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "undead",
+      "ghoul",
+      "undead_archer"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "death_hound",
+      "ghoul",
+      "death_hound"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "undead",
+      "undead",
+      "undead",
+      "undead"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "undead",
+      "undead_archer",
+      "undead_archer",
+      "undead"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "undead",
+      "undead_archer",
+      "ghoul",
+      "undead"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "undead",
+      "undead_archer",
+      "death_hound",
+      "undead"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "undead",
+      "undead_warlord",
+      "undead_archer",
+      "undead_archer"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "undead",
+      "undead_archer",
+      "death_hound",
+      "undead_archer",
+      "undead"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "undead",
+      "undead",
+      "undead_warlord",
+      "undead",
+      "undead"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "undead",
+      "will_o_wisp",
+      "undead_archer",
+      "death_hound",
+      "undead"
+     ],
+     "Weight": 20.0
+    }
+   ],
+   "EmptyRoomWeight": 420.0,
+   "SearchRoomDrops": []
   },
   {
    "RegularMerchantOffers": [
@@ -514,7 +1251,155 @@
    ],
    "SourceClass": "FrostbitePeaks",
    "RequiredClearDungeonId": "blackwater_port",
-   "RequiredClearProgress": 100
+   "RequiredClearProgress": 100,
+   "EncounterGroups": [
+    {
+     "EnemyIds": [
+      "troll_whelp",
+      "troll_whelp"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "troll_whelp",
+      "troll"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "troll",
+      "troll_warrior"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "ice_elemental",
+      "ice_elemental"
+     ],
+     "Weight": 5.0
+    },
+    {
+     "EnemyIds": [
+      "troll_whelp",
+      "troll",
+      "troll_whelp"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "troll",
+      "troll_whelp",
+      "troll"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "troll",
+      "troll",
+      "troll"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "troll",
+      "troll_warrior",
+      "troll"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "troll",
+      "troll_shaman",
+      "troll"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "troll_warrior",
+      "troll",
+      "troll_warrior"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "troll",
+      "troll_shaman",
+      "troll_warrior"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "ice_elemental",
+      "snow_wyvern",
+      "ice_elemental"
+     ],
+     "Weight": 5.0
+    },
+    {
+     "EnemyIds": [
+      "troll_whelp",
+      "troll",
+      "troll",
+      "troll_whelp"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "troll_whelp",
+      "troll",
+      "troll_warrior",
+      "troll"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "troll",
+      "troll_warrior",
+      "troll_shaman",
+      "troll"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "troll_warrior",
+      "troll",
+      "troll_shaman",
+      "troll_warrior"
+     ],
+     "Weight": 20.0
+    }
+   ],
+   "EmptyRoomWeight": 710.0,
+   "SearchRoomDrops": [
+    {
+     "ItemId": "winterwood",
+     "StackCount": 1,
+     "Weight": 30.0
+    },
+    {
+     "ItemId": "ice_fiber",
+     "StackCount": 1,
+     "Weight": 20.0
+    },
+    {
+     "ItemId": "frostmetal_ore",
+     "StackCount": 1,
+     "Weight": 10.0
+    }
+   ]
   },
   {
    "RegularMerchantOffers": [
@@ -629,7 +1514,166 @@
    ],
    "SourceClass": "HiddenCityOfLarox",
    "RequiredClearDungeonId": "barren_wastelands",
-   "RequiredClearProgress": 100
+   "RequiredClearProgress": 100,
+   "EncounterGroups": [
+    {
+     "EnemyIds": [
+      "imp"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "magic_armor"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "imp",
+      "imp"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "magic_armor",
+      "magic_armor"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "imp",
+      "nexus_researcher"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "imp",
+      "magic_armor"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "nexus_researcher",
+      "magic_armor"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "magic_armor",
+      "wizard_of_larox"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "imp",
+      "imp",
+      "imp"
+     ],
+     "Weight": 22.0
+    },
+    {
+     "EnemyIds": [
+      "magic_armor",
+      "nexus_researcher",
+      "magic_armor"
+     ],
+     "Weight": 22.0
+    },
+    {
+     "EnemyIds": [
+      "imp",
+      "nexus_researcher",
+      "magic_armor"
+     ],
+     "Weight": 22.0
+    },
+    {
+     "EnemyIds": [
+      "magic_armor",
+      "nexus_researcher",
+      "wizard_of_larox"
+     ],
+     "Weight": 22.0
+    },
+    {
+     "EnemyIds": [
+      "wizard_of_larox",
+      "magic_armor",
+      "wizard_of_larox"
+     ],
+     "Weight": 22.0
+    },
+    {
+     "EnemyIds": [
+      "imp",
+      "magic_armor",
+      "wizard_of_larox"
+     ],
+     "Weight": 22.0
+    },
+    {
+     "EnemyIds": [
+      "magic_armor",
+      "wizard_of_larox",
+      "magic_armor"
+     ],
+     "Weight": 22.0
+    },
+    {
+     "EnemyIds": [
+      "magic_armor",
+      "wizard_of_larox",
+      "nexus_researcher",
+      "magic_armor"
+     ],
+     "Weight": 22.0
+    },
+    {
+     "EnemyIds": [
+      "magic_armor",
+      "wizard_of_larox",
+      "archmage_of_larox",
+      "magic_armor"
+     ],
+     "Weight": 22.0
+    },
+    {
+     "EnemyIds": [
+      "magic_armor",
+      "wizard_of_larox",
+      "nexus_researcher",
+      "imp"
+     ],
+     "Weight": 22.0
+    },
+    {
+     "EnemyIds": [
+      "imp",
+      "nexus_researcher",
+      "wizard_of_larox",
+      "imp"
+     ],
+     "Weight": 22.0
+    },
+    {
+     "EnemyIds": [
+      "magic_armor",
+      "wicked_tribute",
+      "nexus_researcher",
+      "magic_armor"
+     ],
+     "Weight": 22.0
+    }
+   ],
+   "EmptyRoomWeight": 536.0,
+   "SearchRoomDrops": []
   },
   {
    "RegularMerchantOffers": [
@@ -744,7 +1788,98 @@
    ],
    "SourceClass": "LostLands",
    "RequiredClearDungeonId": "hidden_city_of_larox",
-   "RequiredClearProgress": 100
+   "RequiredClearProgress": 100,
+   "EncounterGroups": [
+    {
+     "EnemyIds": [
+      "berserker"
+     ],
+     "Weight": 26.0
+    },
+    {
+     "EnemyIds": [
+      "pterodactyl"
+     ],
+     "Weight": 26.0
+    },
+    {
+     "EnemyIds": [
+      "terrorsaurus"
+     ],
+     "Weight": 26.0
+    },
+    {
+     "EnemyIds": [
+      "amanita_obscura",
+      "berserker"
+     ],
+     "Weight": 26.0
+    },
+    {
+     "EnemyIds": [
+      "berserker",
+      "berserker"
+     ],
+     "Weight": 26.0
+    },
+    {
+     "EnemyIds": [
+      "stone_shaman",
+      "pterodactyl"
+     ],
+     "Weight": 26.0
+    },
+    {
+     "EnemyIds": [
+      "berserker",
+      "amanita_obscura",
+      "berserker"
+     ],
+     "Weight": 26.0
+    },
+    {
+     "EnemyIds": [
+      "terrorsaurus",
+      "stone_shaman",
+      "pterodactyl"
+     ],
+     "Weight": 26.0
+    },
+    {
+     "EnemyIds": [
+      "terrorsaurus",
+      "stone_shaman",
+      "terrorsaurus"
+     ],
+     "Weight": 26.0
+    },
+    {
+     "EnemyIds": [
+      "pterodactyl",
+      "stone_shaman",
+      "pterodactyl"
+     ],
+     "Weight": 26.0
+    },
+    {
+     "EnemyIds": [
+      "berserker",
+      "stone_shaman",
+      "terrorsaurus"
+     ],
+     "Weight": 26.0
+    },
+    {
+     "EnemyIds": [
+      "amanita_obscura",
+      "stone_shaman",
+      "pterodactyl"
+     ],
+     "Weight": 26.0
+    }
+   ],
+   "EmptyRoomWeight": 688.0,
+   "SearchRoomDrops": []
   },
   {
    "RegularMerchantOffers": [
@@ -864,7 +1999,155 @@
    ],
    "SourceClass": "ObsidianMines",
    "RequiredClearDungeonId": "frostbite_peaks",
-   "RequiredClearProgress": 100
+   "RequiredClearProgress": 100,
+   "EncounterGroups": [
+    {
+     "EnemyIds": [
+      "giant_spider"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "vampire_bat"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "obsidian_golem"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "lost_miner"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "giant_spider",
+      "giant_spider"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "vampire_bat",
+      "vampire_bat"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "giant_spider",
+      "vampire_bat"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "lost_miner",
+      "obsidian_golem"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "giant_spider",
+      "vampire_bat",
+      "giant_spider"
+     ],
+     "Weight": 40.0
+    },
+    {
+     "EnemyIds": [
+      "giant_spider",
+      "obsidian_golem",
+      "giant_spider"
+     ],
+     "Weight": 40.0
+    },
+    {
+     "EnemyIds": [
+      "giant_spider",
+      "obsidian_golem",
+      "vampire_bat"
+     ],
+     "Weight": 40.0
+    },
+    {
+     "EnemyIds": [
+      "giant_spider",
+      "beholder",
+      "giant_spider"
+     ],
+     "Weight": 40.0
+    },
+    {
+     "EnemyIds": [
+      "giant_spider",
+      "beholder",
+      "vampire_bat"
+     ],
+     "Weight": 40.0
+    },
+    {
+     "EnemyIds": [
+      "giant_spider",
+      "beholder",
+      "obsidian_golem"
+     ],
+     "Weight": 40.0
+    },
+    {
+     "EnemyIds": [
+      "vampire_bat",
+      "beholder",
+      "obsidian_golem"
+     ],
+     "Weight": 40.0
+    },
+    {
+     "EnemyIds": [
+      "giant_spider",
+      "vampire_bat",
+      "vampire_bat",
+      "giant_spider"
+     ],
+     "Weight": 40.0
+    },
+    {
+     "EnemyIds": [
+      "giant_spider",
+      "giant_spider",
+      "vampire_bat",
+      "giant_spider"
+     ],
+     "Weight": 40.0
+    },
+    {
+     "EnemyIds": [
+      "giant_spider",
+      "vampire_bat",
+      "obsidian_golem",
+      "giant_spider"
+     ],
+     "Weight": 40.0
+    },
+    {
+     "EnemyIds": [
+      "obsidian_golem",
+      "vampire_bat",
+      "beholder",
+      "giant_spider"
+     ],
+     "Weight": 40.0
+    }
+   ],
+   "EmptyRoomWeight": 400.0,
+   "SearchRoomDrops": []
   },
   {
    "RegularMerchantOffers": [
@@ -976,7 +2259,188 @@
    ],
    "SourceClass": "TheDesert",
    "RequiredClearDungeonId": "enchanted_forest",
-   "RequiredClearProgress": 80
+   "RequiredClearProgress": 80,
+   "EncounterGroups": [
+    {
+     "EnemyIds": [
+      "shahuri_warrior"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "shahuri_archer"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "wurm"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "sand_vulture"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "wurm",
+      "sand_vulture"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "wurm",
+      "wurm"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "sand_vulture",
+      "sand_vulture"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "shahuri_warrior",
+      "shahuri_warrior"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "shahuri_archer",
+      "shahuri_archer"
+     ],
+     "Weight": 25.0
+    },
+    {
+     "EnemyIds": [
+      "wurm",
+      "sand_vulture",
+      "wurm"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "shahuri_archer",
+      "shahuri_warrior",
+      "shahuri_archer"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "shahuri_warrior",
+      "shahuri_archer",
+      "shahuri_warrior"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "shahuri_warrior",
+      "shahuri_archer",
+      "shahuri_mage"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "shahuri_warrior",
+      "shahuri_mage",
+      "shahuri_warrior"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "shahuri_mage",
+      "shahuri_archer",
+      "shahuri_mage"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "shahuri_mage",
+      "shahuri_warrior",
+      "shahuri_mage"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "shahuri_warrior",
+      "shahuri_archer",
+      "shahuri_mage",
+      "shahuri_warrior"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "shahuri_warrior",
+      "shahuri_archer",
+      "shahuri_mage",
+      "shahuri_warrior"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "shahuri_archer",
+      "shahuri_warrior",
+      "shahuri_mage",
+      "shahuri_archer"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "shahuri_mage",
+      "shahuri_archer",
+      "shahuri_warrior",
+      "shahuri_mage"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "shahuri_warrior",
+      "shahuri_archer",
+      "shahuri_archer",
+      "shahuri_warrior"
+     ],
+     "Weight": 15.0
+    },
+    {
+     "EnemyIds": [
+      "djinn"
+     ],
+     "Weight": 15.0
+    }
+   ],
+   "EmptyRoomWeight": 550.0,
+   "SearchRoomDrops": [
+    {
+     "ItemId": "quartz",
+     "StackCount": 1,
+     "Weight": 10.0
+    },
+    {
+     "ItemId": "sandstone",
+     "StackCount": 1,
+     "Weight": 25.0
+    }
+   ]
   },
   {
    "RegularMerchantOffers": [
@@ -1083,7 +2547,281 @@
    ],
    "SourceClass": "TheGoldenCity",
    "RequiredClearDungeonId": "eternal_battlefield",
-   "RequiredClearProgress": 100
+   "RequiredClearProgress": 100,
+   "EncounterGroups": [
+    {
+     "EnemyIds": [
+      "insane_citizen"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "insane_citizen",
+      "insane_citizen"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "insane_citizen",
+      "city_warden"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "city_warden"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "imperial_guard"
+     ],
+     "Weight": 10.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "insane_priest"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "insane_citizen",
+      "insane_citizen",
+      "insane_citizen"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "insane_citizen",
+      "city_warden",
+      "insane_citizen"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "insane_citizen",
+      "city_warden"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "insane_merchant",
+      "city_warden"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "imperial_guard",
+      "city_warden"
+     ],
+     "Weight": 10.0
+    },
+    {
+     "EnemyIds": [
+      "insane_citizen",
+      "arcane_assassin",
+      "insane_citizen"
+     ],
+     "Weight": 10.0
+    },
+    {
+     "EnemyIds": [
+      "insane_citizen",
+      "arcane_assassin",
+      "city_warden"
+     ],
+     "Weight": 10.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "imperial_mage",
+      "city_warden"
+     ],
+     "Weight": 10.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "imperial_mage",
+      "imperial_guard"
+     ],
+     "Weight": 10.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "insane_priest",
+      "city_warden"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "insane_citizen",
+      "insane_priest",
+      "insane_citizen"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "insane_citizen",
+      "insane_citizen",
+      "city_warden"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "insane_citizen",
+      "insane_citizen",
+      "insane_citizen",
+      "insane_citizen"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "imperial_guard",
+      "arcane_assassin",
+      "city_warden"
+     ],
+     "Weight": 10.0
+    },
+    {
+     "EnemyIds": [
+      "insane_citizen",
+      "insane_citizen",
+      "imperial_mage",
+      "insane_citizen"
+     ],
+     "Weight": 10.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "imperial_mage",
+      "arcane_assassin",
+      "insane_priest"
+     ],
+     "Weight": 10.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "insane_priest",
+      "insane_priest",
+      "imperial_guard"
+     ],
+     "Weight": 10.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "imperial_guard",
+      "imperial_mage",
+      "arcane_assassin",
+      "city_warden"
+     ],
+     "Weight": 10.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "insane_citizen",
+      "imperial_mage",
+      "insane_citizen",
+      "city_warden"
+     ],
+     "Weight": 10.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "insane_citizen",
+      "imperial_guard",
+      "insane_citizen",
+      "city_warden"
+     ],
+     "Weight": 10.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "insane_citizen",
+      "arcane_assassin",
+      "insane_citizen",
+      "city_warden"
+     ],
+     "Weight": 10.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "insane_citizen",
+      "insane_priest",
+      "insane_citizen",
+      "city_warden"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "city_warden",
+      "imperial_mage",
+      "insane_priest",
+      "arcane_assassin",
+      "city_warden"
+     ],
+     "Weight": 10.0
+    }
+   ],
+   "EmptyRoomWeight": 530.0,
+   "SearchRoomDrops": [
+    {
+     "ItemId": "silk_thread",
+     "StackCount": 1,
+     "Weight": 100.0
+    },
+    {
+     "ItemId": "redwood",
+     "StackCount": 1,
+     "Weight": 10.0
+    },
+    {
+     "ItemId": "ivory",
+     "StackCount": 1,
+     "Weight": 5.0
+    },
+    {
+     "ItemId": "gold_scraps",
+     "StackCount": 1,
+     "Weight": 2.0
+    }
+   ]
   },
   {
    "RegularMerchantOffers": [
@@ -1147,7 +2885,146 @@
    ],
    "SourceClass": "TheSouthernGrove",
    "RequiredClearDungeonId": "the_dreadful_ascent",
-   "RequiredClearProgress": 13
+   "RequiredClearProgress": 13,
+   "EncounterGroups": [
+    {
+     "EnemyIds": [
+      "giant_tortoise"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "giant_moth"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "green_spitfang"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "giant_tortoise",
+      "giant_moth"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "giant_tortoise",
+      "green_spitfang"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "giant_moth",
+      "green_spitfang"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "dryad",
+      "green_spitfang"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "ancient_ent",
+      "dryad"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "giant_moth",
+      "ancient_ent",
+      "giant_moth"
+     ],
+     "Weight": 30.0
+    },
+    {
+     "EnemyIds": [
+      "giant_tortoise",
+      "green_spitfang",
+      "giant_moth"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "green_spitfang",
+      "giant_tortoise",
+      "green_spitfang"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "giant_moth",
+      "green_spitfang",
+      "giant_moth"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "green_spitfang",
+      "giant_tortoise",
+      "dryad"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "green_spitfang",
+      "dryad",
+      "giant_tortoise",
+      "giant_moth"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "green_spitfang",
+      "ancient_ent",
+      "dryad",
+      "green_spitfang"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "giant_moth",
+      "giant_tortoise",
+      "dryad",
+      "green_spitfang"
+     ],
+     "Weight": 20.0
+    },
+    {
+     "EnemyIds": [
+      "giant_tortoise",
+      "giant_moth",
+      "green_spitfang",
+      "giant_tortoise"
+     ],
+     "Weight": 20.0
+    }
+   ],
+   "EmptyRoomWeight": 600.0,
+   "SearchRoomDrops": [
+    {
+     "ItemId": "elysian_wood",
+     "StackCount": 1,
+     "Weight": 60.0
+    }
+   ]
   }
  ],
  "metadata": {

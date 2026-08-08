@@ -32,13 +32,6 @@ namespace GuildMaster.Runtime.Services
         private readonly List<QuestRuntime> _activeQuests = new List<QuestRuntime>();
         private readonly Dictionary<string, QuestFlatMetadataEntry> _metadataMap = new Dictionary<string, QuestFlatMetadataEntry>(StringComparer.OrdinalIgnoreCase);
 
-        private static readonly string[] SAFE_GENERAL_QUESTS_POOL = new string[]
-        {
-            "annihilator", "critical_hit", "heavy_armor", "hit_or_miss", "its_a_trap",
-            "long_march", "lucky_roll", "medic", "protector", "smart_fighter",
-            "student", "the_end", "warrior"
-        };
-
         public QuestService(
             ISaveService saveService, 
             GameDatabase registry, 
@@ -125,32 +118,18 @@ namespace GuildMaster.Runtime.Services
                 _activeQuests.Clear();
 
                 var rnd = new System.Random();
-                var availableIds = SAFE_GENERAL_QUESTS_POOL.OrderBy(x => rnd.Next()).ToList();
-                
-                int batchSize = 5;
-                int generatedCount = 0;
+                var allDefinitions = _registry.GetAll<QuestDefinition>()?.ToList() ?? new List<QuestDefinition>();
+                var selectedIds = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
-                foreach (var questId in availableIds)
+                // Legacy extracts five general/Kings quests from the shared accessible list.
+                // QuestDefinition.PoolType is doctrine membership, not a mutually-exclusive
+                // reward pool, so the selected pool is written onto QuestRuntime below.
+                AddQuestBatch(allDefinitions, 5, selectedIds, rnd, "Kings", null);
+
+                foreach (string doctrineId in new[] { "affliction", "control", "fortitude", "grace", "illusion", "knowledge", "ruin", "war" })
                 {
-                    if (generatedCount >= batchSize) break;
-                    if (!_registry.TryGet<QuestDefinition>(questId, out var def)) continue;
-                    
-                    double roll = rnd.NextDouble();
-                    int rolledRarity = 1;
-                    if (roll > 0.97) rolledRarity = 4;
-                    else if (roll > 0.90) rolledRarity = 3;
-                    else if (roll > 0.70) rolledRarity = 2;
-
-                    long targetProg = GetTargetProgress(questId, rolledRarity);
-                    
-                    var newQuest = new QuestRuntime(Guid.NewGuid().ToString(), def, rolledRarity, targetProg)
-                    {
-                        State = QuestState.InProgress,
-                        Progress = 0
-                    };
-                    
-                    _activeQuests.Add(newQuest);
-                    generatedCount++;
+                    int amount = GetDoctrineQuestAmount(doctrineId);
+                    AddQuestBatch(allDefinitions.Where(q => string.Equals(q.PoolType, "Doctrine", StringComparison.OrdinalIgnoreCase) && string.Equals(q.DoctrineId, doctrineId, StringComparison.OrdinalIgnoreCase)), amount, selectedIds, rnd, "Doctrine", doctrineId);
                 }
 
                 data.LastWeekTriggered = currentUnix;
@@ -172,6 +151,42 @@ namespace GuildMaster.Runtime.Services
             }
         }
 
+        private int GetDoctrineQuestAmount(string doctrineId)
+        {
+            // QuestsManager computes this from Adventurer.doctrine. CharacterSaveData does not
+            // carry that Legacy field yet, so returning zero is the only truthful behavior until
+            // that data boundary is restored. The pool itself is still registered and tested.
+            return 0;
+        }
+
+        private void AddQuestBatch(IEnumerable<QuestDefinition> source, int amount, HashSet<string> selectedIds, System.Random rnd, string rewardPoolType, string rewardDoctrineId)
+        {
+            if (amount <= 0) return;
+            var candidates = source.Where(q => q != null && !string.IsNullOrEmpty(q.id) && !selectedIds.Contains(q.id))
+                .OrderBy(_ => rnd.Next()).ToList();
+            foreach (var def in candidates.Take(amount))
+            {
+                int rarity = RollRarity(rnd);
+                var runtime = new QuestRuntime(Guid.NewGuid().ToString(), def, rarity, GetTargetProgress(def.id, rarity))
+                {
+                    State = QuestState.InProgress,
+                    Progress = 0
+                };
+                runtime.RewardPoolType = rewardPoolType;
+                runtime.RewardDoctrineId = rewardDoctrineId;
+                _activeQuests.Add(runtime);
+                selectedIds.Add(def.id);
+            }
+        }
+
+        private static int RollRarity(System.Random rnd)
+        {
+            double roll = rnd.NextDouble();
+            if (roll < 0.70d) return 1;
+            if (roll < 0.90d) return 2;
+            return roll < 0.97d ? 3 : 4;
+        }
+
         private void LoadQuests()
         {
             _activeQuests.Clear();
@@ -186,7 +201,9 @@ namespace GuildMaster.Runtime.Services
                     var runtime = new QuestRuntime(qData.InstanceId, def, rarity, targetProg)
                     {
                         State = qData.State,
-                        Progress = qData.Progress
+                        Progress = qData.Progress,
+                        RewardPoolType = string.IsNullOrEmpty(qData.RewardPoolType) ? def.PoolType : qData.RewardPoolType,
+                        RewardDoctrineId = string.IsNullOrEmpty(qData.RewardDoctrineId) ? def.DoctrineId : qData.RewardDoctrineId
                     };
                     _activeQuests.Add(runtime);
                 }
@@ -204,7 +221,9 @@ namespace GuildMaster.Runtime.Services
                 State = q.State,
                 Progress = q.Progress,
                 Rarity = q.Rarity,
-                TargetProgress = q.TargetProgress
+                TargetProgress = q.TargetProgress,
+                RewardPoolType = q.RewardPoolType,
+                RewardDoctrineId = q.RewardDoctrineId
             }).ToList();
         }
 
@@ -262,7 +281,10 @@ namespace GuildMaster.Runtime.Services
             if (quest == null || quest.State != QuestState.Completed) return false;
 
             int rarity = quest.Rarity;
-            bool isGems = (rarity >= 4);
+            bool hasSelectionContext = !string.IsNullOrEmpty(quest.RewardPoolType);
+            bool isGems = hasSelectionContext
+                ? string.Equals(quest.RewardPoolType, "Kings", StringComparison.OrdinalIgnoreCase)
+                : string.Equals(quest.Definition?.PoolType, "Kings", StringComparison.OrdinalIgnoreCase);
 
             int rewardAmount = GetRewardAmount(rarity, isGems);
 
@@ -273,13 +295,20 @@ namespace GuildMaster.Runtime.Services
             }
             else
             {
-                _doctrineService.AddProgress(targetDoctrineName, rewardAmount);
+                string doctrineId = hasSelectionContext ? quest.RewardDoctrineId : quest.Definition?.DoctrineId;
+                // Compatibility for programmatically-created definitions from older callers and
+                // tests. Real decoded definitions always carry selection context and never use
+                // a caller-selected doctrine.
+                if (string.IsNullOrEmpty(doctrineId)) doctrineId = targetDoctrineName;
+                if (string.IsNullOrEmpty(doctrineId)) return false;
+                _doctrineService.AddProgress(doctrineId, rewardAmount);
             }
 
             quest.State = QuestState.RewardClaimed;
             _activeQuests.Remove(quest);
             data.QuestsCompleted++;
             SaveQuests();
+            _saveService.Save(out _);
             return true;
         }
 

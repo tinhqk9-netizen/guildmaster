@@ -132,11 +132,50 @@ namespace GuildMaster.Runtime.UI.Legacy
         /// <summary>Convenience: character/enemy portrait — legacy filename pattern "unit_&lt;id&gt;".</summary>
         public static Sprite GetUnitSprite(string id) => GetSprite($"unit_{id}");
 
+        /// <summary>
+        /// Convenience: pet portrait. PetSaveData stores the canonical definition id (for
+        /// example "beetle"), while the legacy drawable/catalog key is "pet_beetle". Accepts
+        /// either form so callers do not have to duplicate the prefix rule.
+        /// </summary>
+        public static Sprite GetPetSprite(string idOrImageId)
+        {
+            if (string.IsNullOrEmpty(idOrImageId)) return null;
+            string key = idOrImageId.StartsWith("pet_", System.StringComparison.OrdinalIgnoreCase)
+                ? idOrImageId
+                : "pet_" + idOrImageId;
+            Sprite sprite = GetSprite(key);
+            return sprite ?? (string.Equals(key, idOrImageId, System.StringComparison.Ordinal) ? null : GetSprite(idOrImageId));
+        }
+
         /// <summary>Convenience: doctrine icon — legacy filename pattern "doctrine_&lt;id&gt;" (callers pass the raw id, without the "doctrine_" prefix).</summary>
         public static Sprite GetDoctrineSprite(string id) => GetSprite($"doctrine_{id}");
 
         /// <summary>Convenience: item sprite — legacy item sprite names are used as-is (from item.getIdImage()).</summary>
         public static Sprite GetItemSprite(string itemSpriteName) => GetSprite(itemSpriteName);
+
+        /// <summary>
+        /// Resolves a Legacy pet egg icon from either the item's image key (for example
+        /// "egg_avian") or the canonical item definition id ("avian_egg"). Legacy resource
+        /// names put the family before the suffix in the item id but after the prefix in the
+        /// drawable key, so this keeps that naming rule in one generic resolver.
+        /// </summary>
+        public static Sprite GetEggSprite(string itemIdOrImageId)
+        {
+            if (string.IsNullOrEmpty(itemIdOrImageId)) return null;
+
+            string legacyKey = itemIdOrImageId;
+            const string suffix = "_egg";
+            if (itemIdOrImageId.EndsWith(suffix, System.StringComparison.OrdinalIgnoreCase))
+            {
+                string family = itemIdOrImageId.Substring(0, itemIdOrImageId.Length - suffix.Length);
+                legacyKey = "egg_" + family;
+            }
+
+            Sprite sprite = GetSprite(legacyKey);
+            return sprite ?? (string.Equals(legacyKey, itemIdOrImageId, System.StringComparison.Ordinal)
+                ? null
+                : GetSprite(itemIdOrImageId));
+        }
 
         /// <summary>Convenience: enemy sprite — legacy enemy sprite names are used as-is (from Enemy.getImageId()).</summary>
         public static Sprite GetEnemySprite(string enemySpriteName) => GetSprite(enemySpriteName);

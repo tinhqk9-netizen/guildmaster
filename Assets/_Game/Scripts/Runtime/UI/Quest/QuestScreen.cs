@@ -9,7 +9,7 @@ namespace GuildMaster.Runtime.UI.Quest
 {
     /// <summary>
     /// Quest screen — shows all active quests with title, progress bar, reward, and completion state.
-    /// Supports selecting a Doctrine category (WAR, ECONOMY, GROWTH) before claiming rewards.
+    /// Reward destination is determined by the Legacy quest pool; the player does not choose it.
     /// </summary>
     public class QuestScreen : UIScreen
     {
@@ -24,11 +24,6 @@ namespace GuildMaster.Runtime.UI.Quest
         [SerializeField] private Text          _feedbackText;
 
         private int _selectedIndex;
-
-        // Doctrine selections
-        private readonly string[] _doctrines = new string[] { "war", "economy", "growth" };
-        private int _doctrineIndex = 0;
-        private string _selectedDoctrine => _doctrines[_doctrineIndex];
 
         public void Initialize(ServiceContainer services)
         {
@@ -50,7 +45,7 @@ namespace GuildMaster.Runtime.UI.Quest
             if (_summaryText != null)
                 _summaryText.text = $"Active quests: {quests?.Count ?? 0}";
 
-            RefreshCycleDoctrineButton();
+            if (_cycleDoctrineButton != null) _cycleDoctrineButton.gameObject.SetActive(false);
 
             if (quests == null || quests.Count == 0)
             {
@@ -68,21 +63,7 @@ namespace GuildMaster.Runtime.UI.Quest
                 _claimButton.interactable = quests[_selectedIndex].State == QuestState.Completed;
         }
 
-        private void RefreshCycleDoctrineButton()
-        {
-            if (_cycleDoctrineButton == null) return;
-            var text = _cycleDoctrineButton.GetComponentInChildren<Text>();
-            if (text != null)
-            {
-                text.text = $"Doctrine: {_selectedDoctrine.ToUpper()}";
-            }
-        }
-
-        public void OnClickCycleDoctrine()
-        {
-            _doctrineIndex = (_doctrineIndex + 1) % _doctrines.Length;
-            RefreshCycleDoctrineButton();
-        }
+        public void OnClickCycleDoctrine() { }
 
         private void BuildQuestCards(IReadOnlyList<QuestRuntime> quests)
         {
@@ -93,7 +74,7 @@ namespace GuildMaster.Runtime.UI.Quest
                 int captured = i;
                 var q        = quests[i];
                 string defId = q.Definition?.id ?? "Quest";
-                long target   = q.Definition?.TargetProgress ?? 1L;
+                long target   = q.TargetProgress > 0 ? q.TargetProgress : (q.Definition?.TargetProgress ?? 1L);
                 long progress = q.Progress;
                 string sub   = $"{q.Progress}/{target}  [{q.State}]";
                 if (q.State == QuestState.Completed) sub += " ✓";
@@ -106,7 +87,7 @@ namespace GuildMaster.Runtime.UI.Quest
         private void RefreshDetail(QuestRuntime q)
         {
             if (_detailText == null || q == null) return;
-            long target   = q.Definition?.TargetProgress ?? 1L;
+            long target   = q.TargetProgress > 0 ? q.TargetProgress : (q.Definition?.TargetProgress ?? 1L);
             long progress = q.Progress;
             float pct    = target > 0 ? (float)progress / target : 0f;
 
@@ -115,7 +96,7 @@ namespace GuildMaster.Runtime.UI.Quest
                 $"Progress: {progress}/{target}  ({pct * 100f:F0}%)\n" +
                 $"State: {q.State}\n" +
                 $"Instance: {q.InstanceId}\n" +
-                $"\n(Selected Reward Doctrine: {_selectedDoctrine.ToUpper()})";
+                $"\nReward pool: {(string.Equals(q.RewardPoolType, "Kings", System.StringComparison.OrdinalIgnoreCase) ? "Kings / Gems" : q.RewardDoctrineId ?? q.Definition?.DoctrineId ?? "Legacy pool")}";
 
             if (q.State == QuestState.Completed)
                 text += "\n✓ Quest complete! Press 'Claim Reward'.";
@@ -151,8 +132,8 @@ namespace GuildMaster.Runtime.UI.Quest
             var q = quests[_selectedIndex];
             if (q.State == QuestState.Completed)
             {
-                _questService.ClaimReward(q.InstanceId, _selectedDoctrine);
-                ShowFeedback($"Reward claimed for {q.Definition?.id ?? q.InstanceId} ({_selectedDoctrine.ToUpper()})!", true);
+                _questService.ClaimReward(q.InstanceId);
+                ShowFeedback($"Reward claimed for {q.Definition?.id ?? q.InstanceId}!", true);
             }
             else
             {

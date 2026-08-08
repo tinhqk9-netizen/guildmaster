@@ -7,8 +7,17 @@ namespace GuildMaster.Runtime.Services
     public interface IInventoryService
     {
         int GetCapacity();
+        int GetStorageLevel();
+        long GetUpgradeStorageCapacityPrice();
+        bool UpgradeStorageCapacity();
         bool CanAddItem(string definitionId);
         void AddItem(ItemRuntime item);
+        /// <summary>
+        /// Registers an item that is already owned by a character. The item remains
+        /// persisted so save/load can reconstruct the equipment, but is not counted
+        /// or returned as an inventory item.
+        /// </summary>
+        void AddEquippedItem(ItemRuntime item);
         bool RemoveItem(string instanceId, int amount);
         bool HasItem(string instanceId);
         ItemRuntime GetItem(string instanceId);

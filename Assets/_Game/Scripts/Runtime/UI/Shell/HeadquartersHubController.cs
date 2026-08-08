@@ -162,6 +162,7 @@ namespace GuildMaster.Runtime.UI.Shell
                     {
                         RefreshCards();
                         _shell.RefreshHud();
+                        _shell.RefreshAdventurersTab();
                     });
             }
             else if (featureId == "storage" && _storageDialogPrefab != null)

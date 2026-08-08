@@ -22,8 +22,15 @@ namespace GuildMaster.Runtime.Models
         public List<StatusEffectRuntime> PositiveStatusEffects { get; set; } = new List<StatusEffectRuntime>();
         public List<StatusEffectRuntime> NegativeStatusEffects { get; set; } = new List<StatusEffectRuntime>();
 
+        // Java: Adventurer.ascended. See CharacterSaveData.IsAscended for the full explanation of
+        // what this does and doesn't mean. Phase 1 removed the fabricated AscensionLevel counter
+        // that used to stand in for real class promotion (see PromotionService.cs).
         public bool IsAscended { get; set; }
-        public int AscensionLevel { get; set; } = 0;
+
+        // Java: Adventurer.traitCommon / traitRare — two independent slots a hero can hold at
+        // once (Phase 1). Trait is kept only as a legacy display alias for old callers.
+        public string TraitCommon { get; set; } = string.Empty;
+        public string TraitRare { get; set; } = string.Empty;
         public string Trait { get; set; } = string.Empty;
         public int[] PotionsDrank { get; set; } = new int[6];
 

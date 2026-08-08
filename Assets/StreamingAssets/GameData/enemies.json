@@ -569,10 +569,14 @@
    "IsRanged": false,
    "SourceClass": "Centaur",
    "Drops": {
-    "plant_fiber": 25
+    "plant_fiber": 450,
+    "copper_ore": 450,
+    "cheese": 25
    },
    "DropStacks": {
-    "plant_fiber": 1
+    "plant_fiber": 1,
+    "copper_ore": 1,
+    "cheese": 1
    }
   },
   {
@@ -678,10 +682,12 @@
    "IsRanged": false,
    "SourceClass": "CityWarden",
    "Drops": {
-    "warden_belt": 50
+    "warden_belt": 50,
+    "silk_thread": 200
    },
    "DropStacks": {
-    "warden_belt": 1
+    "warden_belt": 1,
+    "silk_thread": 1
    }
   },
   {
@@ -2677,10 +2683,14 @@
    "IsRanged": false,
    "SourceClass": "NexusResearcher",
    "Drops": {
-    "pumpkin": 25
+    "pumpkin": 25,
+    "veil_breaker": 3,
+    "unstable_gem": 3
    },
    "DropStacks": {
-    "pumpkin": 1
+    "pumpkin": 1,
+    "veil_breaker": 1,
+    "unstable_gem": 1
    }
   },
   {
@@ -3886,10 +3896,14 @@
    "IsRanged": false,
    "SourceClass": "Thorvus",
    "Drops": {
-    "eternal_hunger": 20
+    "eternal_hunger": 100,
+    "elixir_of_learning": 20,
+    "potion_of_magic_defense": 100
    },
    "DropStacks": {
-    "eternal_hunger": 1
+    "eternal_hunger": 1,
+    "elixir_of_learning": 1,
+    "potion_of_magic_defense": 1
    }
   },
   {
@@ -3964,10 +3978,16 @@
    "IsRanged": false,
    "SourceClass": "Troll",
    "Drops": {
-    "troll_hide": 25
+    "troll_hide": 200,
+    "winterwood": 200,
+    "ice_fiber": 200,
+    "blueberry": 25
    },
    "DropStacks": {
-    "troll_hide": 1
+    "troll_hide": 1,
+    "winterwood": 1,
+    "ice_fiber": 1,
+    "blueberry": 1
    }
   },
   {
@@ -4038,10 +4058,14 @@
    "IsRanged": false,
    "SourceClass": "TrollWarrior",
    "Drops": {
-    "troll_hide": 30
+    "troll_hide": 200,
+    "frostmetal_ore": 200,
+    "blueberry": 30
    },
    "DropStacks": {
-    "troll_hide": 1
+    "troll_hide": 1,
+    "frostmetal_ore": 1,
+    "blueberry": 1
    }
   },
   {
@@ -4578,10 +4602,14 @@
    "IsRanged": false,
    "SourceClass": "Wurm",
    "Drops": {
-    "wurm_scale": 1
+    "wurm_scale": 300,
+    "wurm_blood": 300,
+    "insect_egg": 1
    },
    "DropStacks": {
-    "wurm_scale": 1
+    "wurm_scale": 1,
+    "wurm_blood": 1,
+    "insect_egg": 1
    }
   }
  ],

@@ -181,6 +181,17 @@ namespace GuildMaster.Runtime.UI.Shell
             if (_copperText != null) _copperText.text = coins.Copper.ToString();
         }
 
+        /// <summary>
+        /// Refreshes the live Adventurers tab after a roster-changing action performed by a
+        /// Headquarters dialog. The tab is kept instantiated while hidden, so refreshing it here
+        /// keeps its data source and visible state aligned when the player switches tabs later.
+        /// </summary>
+        public void RefreshAdventurersTab()
+        {
+            if (_tabPanels == null || _tabPanels.Length <= 1 || _tabPanels[1] == null) return;
+            _tabPanels[1].GetComponent<GuildMaster.Runtime.UI.Character.AdventurersTabController>()?.Refresh();
+        }
+
         // ─── Tabs ────────────────────────────────────────────────────────────
 
         public void SwitchTab(int index)

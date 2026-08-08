@@ -14,8 +14,8 @@ namespace GuildMaster.Runtime.Services
         private readonly ICraftService _craftService;
         private readonly IDungeonService _dungeonService;
         private readonly IQuestService _questService;
+        private readonly IOfflineProgressService _offlineProgressService;
 
-        private const long Cap12Hours = 12 * 3600;
         private int _checks = 0;
 
         public GameLoopService(
@@ -24,7 +24,8 @@ namespace GuildMaster.Runtime.Services
             IMerchantService merchantService, 
             ICraftService craftService, 
             IDungeonService dungeonService,
-            IQuestService questService)
+            IQuestService questService,
+            IOfflineProgressService offlineProgressService = null)
         {
             _saveService = saveService ?? throw new ArgumentNullException(nameof(saveService));
             _tavernService = tavernService ?? throw new ArgumentNullException(nameof(tavernService));
@@ -32,6 +33,7 @@ namespace GuildMaster.Runtime.Services
             _craftService = craftService ?? throw new ArgumentNullException(nameof(craftService));
             _dungeonService = dungeonService ?? throw new ArgumentNullException(nameof(dungeonService));
             _questService = questService ?? throw new ArgumentNullException(nameof(questService));
+            _offlineProgressService = offlineProgressService ?? new OfflineProgressService(saveService, craftService, merchantService, dungeonService);
         }
 
         public void Initialize()
@@ -45,27 +47,14 @@ namespace GuildMaster.Runtime.Services
             if (data == null) return;
 
             long currentUnix = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
-            long lastAccess = data.LastAccess;
-            
-            long elapsedSeconds = 1;
-            if (lastAccess > 0 && currentUnix > lastAccess)
-            {
-                elapsedSeconds = currentUnix - lastAccess;
-            }
+            var offlineResult = _offlineProgressService.ApplyOfflineProgress(currentUnix);
+            if (!offlineResult.Success) return;
 
-            long jMax = Math.Max(1L, Math.Min(Cap12Hours, elapsedSeconds));
-
-            _tavernService.ProgressVisitorTime(jMax);
-            _merchantService.ProgressMarket(jMax);
-            _craftService.ProgressWorkshop(jMax);
-
-            // Runs the same per-second tick logic as calling TickAll() jMax times, but persists
-            // dungeon state exactly once at the end instead of once per elapsed second (B1 fix).
-            _dungeonService.FastForward(jMax);
+            _tavernService.ProgressVisitorTime(offlineResult.DeltaSeconds);
 
             _questService.CheckAndTriggerWeeklyQuests(currentUnix);
 
-            data.LastAccess = currentUnix;
+            _merchantService.ProcessScheduledRefreshes(currentUnix);
             _saveService.Save(out _);
         }
 
@@ -84,6 +73,7 @@ namespace GuildMaster.Runtime.Services
             Tick60();
 
             _dungeonService.TickAll();
+            _merchantService.ProcessScheduledRefreshes(DateTimeOffset.UtcNow.ToUnixTimeSeconds());
         }
 
         private void Tick60()

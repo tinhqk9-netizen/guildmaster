@@ -53,6 +53,8 @@ namespace GuildMaster.Editor.UI.Headquarters
             rootLayout.childForceExpandHeight = false;
 
             Text title = AddText(dialog.transform, "Title", "Market", 42, LegacyUITheme.DimWhite, FontStyle.Bold, TextAnchor.MiddleCenter, 58f);
+            BuildUpgradeRow(dialog.transform, "ListingUpgrade", "Listing capacity", out var listingUpgradeInfo, out var listingUpgradeButton);
+            BuildUpgradeRow(dialog.transform, "SpeedUpgrade", "Market speed", out var speedUpgradeInfo, out var speedUpgradeButton);
             Text empty = AddText(dialog.transform, "EmptyState", "The market is quiet right now.", 26, LegacyUITheme.DimWhite, FontStyle.Normal, TextAnchor.MiddleCenter, 90f);
             empty.gameObject.SetActive(false);
 
@@ -106,6 +108,10 @@ namespace GuildMaster.Editor.UI.Headquarters
             var component = dialog.AddComponent<MarketDialog>();
             var serialized = new SerializedObject(component);
             serialized.FindProperty("_titleText").objectReferenceValue = title;
+            serialized.FindProperty("_listingUpgradeInfoText").objectReferenceValue = listingUpgradeInfo;
+            serialized.FindProperty("_listingUpgradeButton").objectReferenceValue = listingUpgradeButton;
+            serialized.FindProperty("_speedUpgradeInfoText").objectReferenceValue = speedUpgradeInfo;
+            serialized.FindProperty("_speedUpgradeButton").objectReferenceValue = speedUpgradeButton;
             serialized.FindProperty("_closeButton").objectReferenceValue = close.GetComponent<Button>();
             serialized.FindProperty("_listContent").objectReferenceValue = contentRect;
             serialized.FindProperty("_emptyState").objectReferenceValue = empty.gameObject;
@@ -166,6 +172,25 @@ namespace GuildMaster.Editor.UI.Headquarters
             text.text = value;
             go.GetComponent<LayoutElement>().preferredHeight = height;
             return text;
+        }
+
+        private static void BuildUpgradeRow(Transform parent, string name, string label, out Text info, out Button button)
+        {
+            var row = new GameObject(name, typeof(RectTransform), typeof(HorizontalLayoutGroup), typeof(LayoutElement));
+            row.transform.SetParent(parent, false);
+            row.GetComponent<LayoutElement>().preferredHeight = 74f;
+            var group = row.GetComponent<HorizontalLayoutGroup>();
+            group.spacing = 14f;
+            group.childAlignment = TextAnchor.MiddleCenter;
+            group.childControlWidth = true;
+            group.childControlHeight = true;
+            group.childForceExpandWidth = false;
+            group.childForceExpandHeight = true;
+
+            info = AddText(row.transform, "Info", label, 24, LegacyUITheme.DimWhite, FontStyle.Normal, TextAnchor.MiddleLeft, 74f);
+            info.GetComponent<LayoutElement>().flexibleWidth = 1f;
+            var buttonGo = CreateButton(row.transform, "UpgradeButton", "Upgrade", 280f, 66f);
+            button = buttonGo.GetComponent<Button>();
         }
 
         private static GameObject CreateButton(Transform parent, string name, string label, float width, float height)

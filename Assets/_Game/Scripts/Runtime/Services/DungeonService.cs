@@ -26,6 +26,8 @@ namespace GuildMaster.Runtime.Services
         private readonly ICharacterService _characterService;
         private readonly IInventoryService _inventoryService;
         private readonly IQuestService _questService;
+        private readonly IBestiaryService _bestiaryService;
+        private readonly IPetService _petService;
         private readonly System.Random _random;
         private int _tickCounter;
 
@@ -35,7 +37,9 @@ namespace GuildMaster.Runtime.Services
                               ICharacterService characterService = null,
                               IInventoryService inventoryService = null,
                               IQuestService questService = null,
-                              System.Random random = null)
+                              System.Random random = null,
+                              IBestiaryService bestiaryService = null,
+                              IPetService petService = null)
         {
             _saveService = saveService ?? throw new ArgumentNullException(nameof(saveService));
             _registry = registry ?? throw new ArgumentNullException(nameof(registry));
@@ -44,6 +48,8 @@ namespace GuildMaster.Runtime.Services
             _characterService = characterService;
             _inventoryService = inventoryService;
             _questService = questService;
+            _bestiaryService = bestiaryService;
+            _petService = petService;
             _random = random ?? new System.Random();
 
             LoadDungeonState();
@@ -59,7 +65,7 @@ namespace GuildMaster.Runtime.Services
 
         public void StartDungeon(string dungeonId, List<string> adventurerIds)
         {
-            StartExpedition(0, dungeonId, adventurerIds, out _);
+            StartExpedition(0, dungeonId, adventurerIds, petInstanceId: null, out _);
         }
 
         public void StopDungeon()
@@ -126,6 +132,17 @@ namespace GuildMaster.Runtime.Services
         }
 
         public bool StartExpedition(int slotIndex, string dungeonId, List<string> adventurerIds, out string error)
+        {
+            return StartExpedition(slotIndex, dungeonId, adventurerIds, petInstanceId: null, out error);
+        }
+
+        /// <summary>
+        /// Starts one expedition with an optional Legacy pet companion. Legacy's Area stores
+        /// one selected pet per active expedition; the pet is not permanently equipped to a
+        /// character and no longer comes from PetSaveData.AssignedDungeonId.
+        /// </summary>
+        public bool StartExpedition(int slotIndex, string dungeonId, List<string> adventurerIds,
+                                    string petInstanceId, out string error)
         {
             error = string.Empty;
 
@@ -197,6 +214,21 @@ namespace GuildMaster.Runtime.Services
                 return false;
             }
 
+            if (!string.IsNullOrEmpty(petInstanceId))
+            {
+                if (_petService == null || !_petService.GetAllPets().Any(p => p != null && p.InstanceId == petInstanceId))
+                {
+                    error = $"Pet '{petInstanceId}' not found.";
+                    return false;
+                }
+
+                if (IsPetOnExpedition(petInstanceId))
+                {
+                    error = $"Pet '{petInstanceId}' is already assigned to another expedition.";
+                    return false;
+                }
+            }
+
             // Get historical max progress
             int historicalMax = 0;
             var persistentData = _saveService.CurrentData?.Dungeons?.FirstOrDefault(d => d.DefinitionId == dungeonId);
@@ -211,7 +243,8 @@ namespace GuildMaster.Runtime.Services
                 State = DungeonState.Unlocked,
                 Progress = 0,
                 MaxProgress = historicalMax,
-                AdventurerInstanceIds = new List<string>(adventurerIds)
+                AdventurerInstanceIds = new List<string>(adventurerIds),
+                PetInstanceId = petInstanceId
             };
 
             var expedition = new ExpeditionRuntime
@@ -247,6 +280,12 @@ namespace GuildMaster.Runtime.Services
         public IReadOnlyList<ExpeditionRuntime> GetAllExpeditions()
         {
             return _expeditions.Where(e => e != null).ToList().AsReadOnly();
+        }
+
+        public bool IsPetOnExpedition(string petInstanceId)
+        {
+            if (string.IsNullOrEmpty(petInstanceId)) return false;
+            return _expeditions.Any(exp => string.Equals(exp?.Dungeon?.PetInstanceId, petInstanceId, StringComparison.Ordinal));
         }
 
         public void TickAll()
@@ -374,13 +413,14 @@ namespace GuildMaster.Runtime.Services
                     break;
 
                 case 3: // LOOT
-                    RunLoot(exp);
+                    RunLoot(exp, _petService?.GetDropBonus(dungeon.PetInstanceId) ?? 0d);
                     dungeon.ActionType = 4;
                     break;
 
                 case 4: // SEARCH_ROOM
                     if (AdventurersAliveOrNoParty(exp))
                     {
+                        RunSearchRoomReward(exp);
                         dungeon.Progress++;
                         if (dungeon.Progress > dungeon.MaxProgress)
                         {
@@ -438,7 +478,81 @@ namespace GuildMaster.Runtime.Services
             exp.Dungeon.ActionType = exp.Dungeon.Enemies.Count > 0 ? 2 : 4;
         }
 
-        private List<EnemyRuntime> RollEnemies(DungeonRuntime dungeon)
+        /// <summary>
+        /// Real encounter roll, following Java's <c>rollEnemies()</c>: a weighted pick among the
+        /// area's <see cref="DungeonDefinition.EncounterGroups"/> (each 0-6 enemies) plus a
+        /// weighted "empty room" outcome (<see cref="DungeonDefinition.EmptyRoomWeight"/>), all on
+        /// a shared 0-1000 per-mille scale (<see cref="DecodeMath.RollFromWeightedMap"/>).
+        /// Falls back to the legacy flat single-enemy roll for any area that still has no
+        /// EncounterGroups data (kept only as a safety net — every restored dungeon in Phase 2B
+        /// has real groups; see Docs/Backend_Audit/phase2b_completion_report.md).
+        /// </summary>
+        internal List<EnemyRuntime> RollEnemies(DungeonRuntime dungeon)
+        {
+            DungeonDefinition def = dungeon.Definition;
+            if (def?.EncounterGroups != null && def.EncounterGroups.Count > 0)
+            {
+                return RollWeightedEncounterGroups(dungeon, def.EncounterGroups, def.EmptyRoomWeight);
+            }
+
+            return RollLegacyFlatEnemy(dungeon);
+        }
+
+        internal List<EnemyRuntime> RollWeightedEncounterGroups(DungeonRuntime dungeon, List<EncounterGroupData> groups, double emptyRoomWeight)
+        {
+            var spawned = new List<EnemyRuntime>();
+
+            var weighted = new List<KeyValuePair<EncounterGroupData, int>>();
+            foreach (EncounterGroupData group in groups)
+            {
+                if (group?.EnemyIds == null || group.EnemyIds.Count == 0) continue;
+                int weight = DecodeMath.Round(group.Weight);
+                if (weight <= 0) continue;
+                weighted.Add(new KeyValuePair<EncounterGroupData, int>(group, weight));
+            }
+
+            int emptyWeight = DecodeMath.Round(emptyRoomWeight);
+            if (emptyWeight > 0)
+            {
+                weighted.Add(new KeyValuePair<EncounterGroupData, int>(null, emptyWeight));
+            }
+
+            EncounterGroupData picked = DecodeMath.RollFromWeightedMap(weighted, _random.NextDouble());
+            if (picked == null)
+            {
+                dungeon.LastRoomEvent = "Empty room";
+                dungeon.AddLog(dungeon.LastRoomEvent);
+                return spawned;
+            }
+
+            foreach (string enemyId in picked.EnemyIds)
+            {
+                if (string.IsNullOrEmpty(enemyId)) continue;
+                if (!_registry.TryGet<EnemyDefinition>(enemyId, out EnemyDefinition edef)) continue;
+                _bestiaryService?.MarkSeen(edef.id);
+
+                spawned.Add(new EnemyRuntime(Guid.NewGuid().ToString(), edef)
+                {
+                    CurrentHp = edef.BaseMaxHp,
+                    CurrentMana = 0,
+                    CurrentShield = 0
+                });
+            }
+
+            dungeon.LastRoomEvent = spawned.Count > 1
+                ? $"Encounter: {spawned.Count}x enemies ({string.Join(", ", picked.EnemyIds)})"
+                : spawned.Count == 1
+                    ? $"Encounter: {picked.EnemyIds[0]}"
+                    : "Empty room";
+            dungeon.AddLog(dungeon.LastRoomEvent);
+
+            return spawned;
+        }
+
+        /// <summary>Pre-Phase-2B behaviour: one random enemy from the flattened EnemyIds pool, no
+        /// weighting or empty-room chance. Retained as a fallback for any area definition that
+        /// hasn't been migrated to <see cref="DungeonDefinition.EncounterGroups"/> yet.</summary>
+        private List<EnemyRuntime> RollLegacyFlatEnemy(DungeonRuntime dungeon)
         {
             var spawned = new List<EnemyRuntime>();
             List<string> pool = dungeon.Definition?.EnemyIds;
@@ -454,6 +568,8 @@ namespace GuildMaster.Runtime.Services
                 CurrentShield = 0
             });
 
+            dungeon.LastRoomEvent = $"Encounter: {enemyId}";
+            dungeon.AddLog(dungeon.LastRoomEvent);
             return spawned;
         }
 
@@ -509,6 +625,7 @@ namespace GuildMaster.Runtime.Services
             {
                 dungeon.Enemies.Remove(corpse);
                 dungeon.Corpses.Add(corpse);
+                dungeon.AddLog($"Defeated {corpse.Definition?.id ?? "enemy"}");
 
                 if (_questService != null)
                 {
@@ -537,16 +654,28 @@ namespace GuildMaster.Runtime.Services
             double totalExp = dead.Sum(c => c.Definition != null ? c.Definition.ExpGiven : 0);
             if (totalExp <= 0) return;
 
-            int perHead = DecodeMath.Round(totalExp / alive);
+            double expMultiplier = 1d + (_petService?.GetExperienceBonus(dungeon.PetInstanceId) ?? 0d);
+            int perHead = DecodeMath.Round((totalExp * expMultiplier) / alive);
             if (perHead <= 0) return;
 
             foreach (CharacterRuntime member in exp.Party.Where(c => c.CurrentHp > 0))
             {
                 _characterService.GainExperience(member, perHead);
             }
+            dungeon.AddLog($"Party gained {perHead} exp each");
         }
 
-        private void RunLoot(ExpeditionRuntime exp)
+        /// <summary>
+        /// Rolls one drop per corpse from its weighted drop table, following <c>Area.loot()</c>.
+        /// </summary>
+        /// <param name="petDropBonusChance01">
+        /// Extension hook for a future pet loot-bonus multiplier (Java's
+        /// <c>petExploring.getDrops()</c> double-roll — see loot_rewards_audit.md §4). Not wired
+        /// up to anything yet: passing a value &gt; 0 here rolls an additional drop attempt per
+        /// corpse with that probability, exactly mirroring the Java double-roll shape, but no
+        /// caller currently supplies a non-zero value since Pets are out of Phase 2B's scope.
+        /// </param>
+        private void RunLoot(ExpeditionRuntime exp, double petDropBonusChance01 = 0.0)
         {
             var dungeon = exp.Dungeon;
             if (_lootService == null || dungeon.Corpses.Count == 0) return;
@@ -556,26 +685,67 @@ namespace GuildMaster.Runtime.Services
 
             foreach (EnemyRuntime corpse in dungeon.Corpses)
             {
-                List<DropTableEntry> table = BuildDropTable(corpse);
+                List<DropTableEntry> table = BuildDropTable(corpse.Definition?.DropTable);
                 if (table.Count == 0) continue;
 
                 ItemRuntime drop = _lootService.RollSingleDrop(table);
-                if (drop == null) continue;
+                if (drop != null)
+                {
+                    _lootService.CollectPendingLoot(dungeon.PendingDrops, new List<ItemRuntime> { drop }, merchantPack);
+                    dungeon.AddLog($"Loot: {drop.Definition.id} x{drop.StackCount} ({corpse.Definition?.id})");
+                }
 
-                _lootService.CollectPendingLoot(dungeon.PendingDrops,
-                                                new List<ItemRuntime> { drop },
-                                                merchantPack);
+                // Pet double-roll hook (currently always skipped — see param doc above).
+                if (petDropBonusChance01 > 0.0 && _random.NextDouble() < petDropBonusChance01)
+                {
+                    ItemRuntime bonusDrop = _lootService.RollSingleDrop(table);
+                    if (bonusDrop != null)
+                    {
+                        _lootService.CollectPendingLoot(dungeon.PendingDrops, new List<ItemRuntime> { bonusDrop }, merchantPack);
+                        dungeon.AddLog($"Bonus loot: {bonusDrop.Definition.id} x{bonusDrop.StackCount}");
+                    }
+                }
             }
 
             dungeon.Corpses.Clear();
         }
 
-        private List<DropTableEntry> BuildDropTable(EnemyRuntime enemy)
+        /// <summary>
+        /// Runs the empty-room reward roll (Java's <c>searchRoom()</c> material-collection path)
+        /// against <see cref="DungeonDefinition.SearchRoomDrops"/>. Trap / heal branches from the
+        /// Java method are not modeled — see phase2b_completion_report.md known limitations.
+        /// </summary>
+        internal void RunSearchRoomReward(ExpeditionRuntime exp)
+        {
+            var dungeon = exp.Dungeon;
+            var entries = dungeon.Definition?.SearchRoomDrops;
+            if (_lootService == null || entries == null || entries.Count == 0) return;
+
+            bool merchantPack = _saveService.CurrentData != null && _saveService.CurrentData.MerchantPackPurchased;
+            if (_lootService.IsChestFull(dungeon.PendingDrops, merchantPack)) return;
+
+            List<DropTableEntry> table = BuildDropTable(entries);
+            if (table.Count == 0) return;
+
+            ItemRuntime drop = _lootService.RollSingleDrop(table);
+            if (drop == null)
+            {
+                dungeon.LastRoomEvent = "Search room: found nothing";
+                dungeon.AddLog(dungeon.LastRoomEvent);
+                return;
+            }
+
+            _lootService.CollectPendingLoot(dungeon.PendingDrops, new List<ItemRuntime> { drop }, merchantPack);
+            dungeon.LastRoomEvent = $"Search room: found {drop.Definition.id} x{drop.StackCount}";
+            dungeon.AddLog(dungeon.LastRoomEvent);
+        }
+
+        private List<DropTableEntry> BuildDropTable(List<EnemyDropEntry> entries)
         {
             var table = new List<DropTableEntry>();
-            if (enemy == null || enemy.Definition == null || enemy.Definition.DropTable == null) return table;
+            if (entries == null) return table;
 
-            foreach (EnemyDropEntry entry in enemy.Definition.DropTable)
+            foreach (EnemyDropEntry entry in entries)
             {
                 if (entry == null || string.IsNullOrEmpty(entry.ItemId)) continue;
 
@@ -641,6 +811,7 @@ namespace GuildMaster.Runtime.Services
                     MaxProgress = dungeon.MaxProgress,
                     LocalDarkness = dungeon.LocalDarkness,
                     AdventurerInstanceIds = new List<string>(dungeon.AdventurerInstanceIds),
+                    PetInstanceId = dungeon.PetInstanceId,
                     PendingDrops = dungeon.PendingDrops.Select(drop => new ItemSaveData
                     {
                         DefinitionId = drop.Definition.id,
@@ -670,6 +841,7 @@ namespace GuildMaster.Runtime.Services
             }
 
             var backupActiveDungeon = data.ActiveDungeon;
+            var backupActiveExpeditions = data.ActiveExpeditions;
             data.ActiveExpeditions = newExpeditions;
             data.ActiveDungeon = null; // Tentatively clear legacy field
 
@@ -677,9 +849,11 @@ namespace GuildMaster.Runtime.Services
 
             if (!saveSuccess)
             {
-                // ROLLBACK if save failed
+                // ROLLBACK both active-dungeon representations if save failed. Keeping only
+                // the legacy field would leave ActiveExpeditions pointing at unsaved state.
                 data.ActiveDungeon = backupActiveDungeon;
-                UnityEngine.Debug.LogError($"[DungeonService] SaveDungeonState failed, restored legacy ActiveDungeon. Error: {saveError?.Message ?? "unknown"}");
+                data.ActiveExpeditions = backupActiveExpeditions;
+                UnityEngine.Debug.LogError($"[DungeonService] SaveDungeonState failed, restored active dungeon state. Error: {saveError?.Message ?? "unknown"}");
             }
         }
 
@@ -695,6 +869,7 @@ namespace GuildMaster.Runtime.Services
 
             var seenSlots = new HashSet<int>();
             var seenCharacters = new HashSet<string>();
+            var seenPets = new HashSet<string>(StringComparer.Ordinal);
 
             foreach (var saved in savedList)
             {
@@ -764,6 +939,23 @@ namespace GuildMaster.Runtime.Services
 
                 if (!isPartyValid) continue;
 
+                string savedPetId = saved.Dungeon.PetInstanceId;
+                if (!string.IsNullOrEmpty(savedPetId))
+                {
+                    bool petExists = _petService != null &&
+                                     _petService.GetAllPets().Any(p => p != null && p.InstanceId == savedPetId);
+                    if (!petExists)
+                    {
+                        UnityEngine.Debug.LogWarning($"[DungeonService] LoadDungeonState: Clearing missing pet '{savedPetId}' from slot {saved.SlotIndex}");
+                        savedPetId = null;
+                    }
+                    else if (!seenPets.Add(savedPetId))
+                    {
+                        UnityEngine.Debug.LogWarning($"[DungeonService] LoadDungeonState: Clearing duplicate pet '{savedPetId}' from slot {saved.SlotIndex}");
+                        savedPetId = null;
+                    }
+                }
+
                 // ⑤ ALL validation passed → COMMIT slot & characters transactionally
                 seenSlots.Add(saved.SlotIndex);
                 foreach (string cid in localTeamSet)
@@ -780,6 +972,7 @@ namespace GuildMaster.Runtime.Services
                     MaxProgress = activeData.MaxProgress,
                     LocalDarkness = activeData.LocalDarkness,
                     AdventurerInstanceIds = activeData.AdventurerInstanceIds != null ? new List<string>(activeData.AdventurerInstanceIds) : new List<string>(),
+                    PetInstanceId = savedPetId,
                     PendingDrops = new List<ItemRuntime>(),
                     ActionType = activeData.ActionState?.Type ?? 0,
                     ActionTurnsPassed = activeData.ActionState?.TurnsPassed ?? 0,

@@ -56,6 +56,7 @@ namespace GuildMaster.Editor.UI.Headquarters
 
             Text title = AddText(dialog.transform, "Title", "Storage", 42, LegacyUITheme.DimWhite, FontStyle.Bold, TextAnchor.MiddleCenter, 58f);
             Text capacity = AddText(dialog.transform, "CapacityText", "0 / 0", 26, LegacyUITheme.BrassBorder, FontStyle.Bold, TextAnchor.MiddleCenter, 44f);
+            BuildUpgradeRow(dialog.transform, "StorageUpgrade", "Capacity upgrade", out var upgradeInfo, out var upgradeButton);
 
             // ── Grid scroll area (fills the bulk of the dialog — no filter/sort rows above it) ──
             var scroll = new GameObject("ItemScroll", typeof(RectTransform), typeof(Image), typeof(ScrollRect), typeof(LayoutElement));
@@ -182,6 +183,8 @@ namespace GuildMaster.Editor.UI.Headquarters
             var serialized = new SerializedObject(component);
             serialized.FindProperty("_titleText").objectReferenceValue = title;
             serialized.FindProperty("_capacityText").objectReferenceValue = capacity;
+            serialized.FindProperty("_upgradeInfoText").objectReferenceValue = upgradeInfo;
+            serialized.FindProperty("_upgradeButton").objectReferenceValue = upgradeButton;
             serialized.FindProperty("_closeButton").objectReferenceValue = close.GetComponent<Button>();
 
             serialized.FindProperty("_gridContent").objectReferenceValue = contentRect;
@@ -244,6 +247,26 @@ namespace GuildMaster.Editor.UI.Headquarters
             text.text = value;
             go.GetComponent<LayoutElement>().preferredHeight = height;
             return text;
+        }
+
+        private static void BuildUpgradeRow(Transform parent, string name, string label, out Text info, out Button button)
+        {
+            var row = new GameObject(name, typeof(RectTransform), typeof(HorizontalLayoutGroup), typeof(LayoutElement));
+            row.transform.SetParent(parent, false);
+            var rowLayout = row.GetComponent<LayoutElement>();
+            rowLayout.preferredHeight = 74f;
+            var group = row.GetComponent<HorizontalLayoutGroup>();
+            group.spacing = 14f;
+            group.childAlignment = TextAnchor.MiddleCenter;
+            group.childControlWidth = true;
+            group.childControlHeight = true;
+            group.childForceExpandWidth = false;
+            group.childForceExpandHeight = true;
+
+            info = AddText(row.transform, "Info", label, 24, LegacyUITheme.DimWhite, FontStyle.Normal, TextAnchor.MiddleLeft, 74f);
+            info.GetComponent<LayoutElement>().flexibleWidth = 1f;
+            var buttonGo = CreateButton(row.transform, "UpgradeButton", "Upgrade", 280f, 66f);
+            button = buttonGo.GetComponent<Button>();
         }
 
         private static GameObject CreateButton(Transform parent, string name, string label, float width, float height)

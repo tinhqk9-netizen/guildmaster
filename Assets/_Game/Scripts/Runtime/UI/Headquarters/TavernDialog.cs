@@ -18,6 +18,10 @@ namespace GuildMaster.Runtime.UI.Headquarters
         [SerializeField] private Text _guestCountText;
         [SerializeField] private Text _quartersText;
         [SerializeField] private Text _timerText;
+        [SerializeField] private Text _capacityUpgradeText;
+        [SerializeField] private Button _capacityUpgradeButton;
+        [SerializeField] private Text _speedUpgradeText;
+        [SerializeField] private Button _speedUpgradeButton;
         [SerializeField] private RectTransform _guestContent;
         [SerializeField] private GameObject _emptyState;
         [SerializeField] private Button _closeButton;
@@ -38,6 +42,18 @@ namespace GuildMaster.Runtime.UI.Headquarters
             {
                 _closeButton.onClick.RemoveAllListeners();
                 _closeButton.onClick.AddListener(() => _onClose?.Invoke());
+            }
+
+            if (_capacityUpgradeButton != null)
+            {
+                _capacityUpgradeButton.onClick.RemoveAllListeners();
+                _capacityUpgradeButton.onClick.AddListener(OnUpgradeCapacityClicked);
+            }
+
+            if (_speedUpgradeButton != null)
+            {
+                _speedUpgradeButton.onClick.RemoveAllListeners();
+                _speedUpgradeButton.onClick.AddListener(OnUpgradeSpeedClicked);
             }
 
             Refresh();
@@ -64,6 +80,8 @@ namespace GuildMaster.Runtime.UI.Headquarters
                     : seconds > 0 ? $"Next visitor in {FormatTimer(seconds)}" : "Visitor arriving soon";
             }
 
+            RefreshUpgradeControls();
+
             ClearGuestCards();
             bool hasGuests = guests.Count > 0;
             if (_emptyState != null) _emptyState.SetActive(!hasGuests);
@@ -77,6 +95,62 @@ namespace GuildMaster.Runtime.UI.Headquarters
             // portrait/details/button instead of waiting for a later canvas update.
             Canvas.ForceUpdateCanvases();
             LayoutRebuilder.ForceRebuildLayoutImmediate(_guestContent);
+        }
+
+        private void RefreshUpgradeControls()
+        {
+            if (_services?.Tavern == null) return;
+
+            long money = _services.Save?.CurrentData?.Money ?? 0;
+            long capacityCost = _services.Tavern.GetUpgradeTavernCapacityPrice();
+            long speedCost = _services.Tavern.GetUpgradeTavernTimePrice();
+            bool capacityMax = IsMaxUpgradePrice(capacityCost);
+            bool speedMax = IsMaxUpgradePrice(speedCost);
+
+            if (_capacityUpgradeText != null)
+            {
+                _capacityUpgradeText.text = capacityMax
+                    ? "Guest Capacity\nMAX LEVEL"
+                    : $"Guest Capacity\nLevel {_services.Tavern.GetTavernCapacityLevel()}  •  Next cost {capacityCost} gold";
+            }
+
+            if (_speedUpgradeText != null)
+            {
+                _speedUpgradeText.text = speedMax
+                    ? "Visitor Speed\nMAX LEVEL"
+                    : $"Visitor Speed\nLevel {_services.Tavern.GetTavernTimeLevel()}  •  Next cost {speedCost} gold";
+            }
+
+            SetUpgradeButtonState(_capacityUpgradeButton, capacityMax, money >= capacityCost);
+            SetUpgradeButtonState(_speedUpgradeButton, speedMax, money >= speedCost);
+        }
+
+        private void OnUpgradeCapacityClicked()
+        {
+            if (_services?.Tavern == null || !_services.Tavern.UpgradeTavernCapacity()) return;
+            Refresh();
+            _onStateChanged?.Invoke();
+        }
+
+        private void OnUpgradeSpeedClicked()
+        {
+            if (_services?.Tavern == null || !_services.Tavern.UpgradeTavernTime()) return;
+            Refresh();
+            _onStateChanged?.Invoke();
+        }
+
+        private static bool IsMaxUpgradePrice(long price) => price >= 99999999999999L;
+
+        private static void SetUpgradeButtonState(Button button, bool isMax, bool canAfford)
+        {
+            if (button == null) return;
+            button.interactable = !isMax && canAfford;
+            var label = button.GetComponentInChildren<Text>();
+            if (label != null)
+            {
+                label.text = isMax ? "MAX" : "UPGRADE";
+                label.color = !isMax && !canAfford ? LegacyUITheme.Failure : LegacyUITheme.DimWhite;
+            }
         }
 
         private void CreateGuestCard(CharacterSaveData guest, int index, bool canRecruit)
@@ -130,7 +204,15 @@ namespace GuildMaster.Runtime.UI.Headquarters
             AddLabel(details.transform, "Name", displayName, 30, LegacyUITheme.DimWhite, FontStyle.Bold, 40);
             AddLabel(details.transform, "Class", $"Class: {displayName}", 22, LegacyUITheme.BrassBorder, FontStyle.Normal, 32);
             AddLabel(details.transform, "Level", $"Level {guest.Level}", 22, LegacyUITheme.DimWhite, FontStyle.Normal, 32);
-            AddLabel(details.transform, "Traits", $"Traits: {FormatTraits(guest.Trait)}", 20, LegacyUITheme.DimWhite, FontStyle.Normal, 32);
+            AddLabel(details.transform, "Traits", $"Traits: {FormatTraits(guest)}", 20, LegacyUITheme.DimWhite, FontStyle.Normal, 32);
+            string starterWeapon = "None";
+            if (!string.IsNullOrEmpty(guest.WeaponInstanceId))
+            {
+                var weapon = _services.Inventory?.GetItem(guest.WeaponInstanceId);
+                starterWeapon = weapon?.Definition?.id ?? "Assigned";
+            }
+            AddLabel(details.transform, "Equipment", $"Starting weapon: {FormatId(starterWeapon)}", 18, LegacyUITheme.DimWhite, FontStyle.Normal, 30);
+            // Legacy visitors have no recruitment currency cost; the only gate is Quarters.
             AddLabel(details.transform, "Cost", "Recruit: Free", 20, LegacyUITheme.DimWhite, FontStyle.Normal, 32);
 
             var recruit = CreateButton(card.transform, "RecruitButton", "RECRUIT", 180f, 64f);
@@ -229,10 +311,14 @@ namespace GuildMaster.Runtime.UI.Headquarters
                 .Select(part => part.Length == 1 ? part.ToUpperInvariant() : char.ToUpperInvariant(part[0]) + part.Substring(1).ToLowerInvariant()));
         }
 
-        private static string FormatTraits(string traits)
+        private static string FormatTraits(CharacterSaveData guest)
         {
-            if (string.IsNullOrEmpty(traits)) return "None";
-            return FormatId(traits);
+            if (guest == null) return "None";
+            var traits = new List<string>();
+            if (!string.IsNullOrEmpty(guest.TraitCommon)) traits.Add(FormatId(guest.TraitCommon));
+            if (!string.IsNullOrEmpty(guest.TraitRare)) traits.Add(FormatId(guest.TraitRare));
+            if (traits.Count == 0 && !string.IsNullOrEmpty(guest.Trait)) traits.Add(FormatId(guest.Trait));
+            return traits.Count == 0 ? "None" : string.Join(", ", traits);
         }
 
         private static string FormatTimer(long seconds)

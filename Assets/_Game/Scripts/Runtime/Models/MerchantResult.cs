@@ -6,7 +6,11 @@ namespace GuildMaster.Runtime.Models
         InvalidDungeonId,
         DungeonNotFound,
         NoOffersAvailable,
-        DeferredPriceOrCurrencyRule
+        DeferredPriceOrCurrencyRule,
+        MarketFull,
+        InvalidItem,
+        ItemLocked,
+        NotSellable
     }
 
     public class MerchantResult

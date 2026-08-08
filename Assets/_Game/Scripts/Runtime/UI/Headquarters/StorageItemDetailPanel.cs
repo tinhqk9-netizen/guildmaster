@@ -3,6 +3,7 @@ using System.Linq;
 using GuildMaster.Definitions;
 using GuildMaster.Runtime.Models;
 using GuildMaster.Runtime.Services;
+using GuildMaster.Runtime.UI.Inventory;
 using GuildMaster.Runtime.UI.Legacy;
 using UnityEngine;
 using UnityEngine.UI;
@@ -95,7 +96,11 @@ namespace GuildMaster.Runtime.UI.Headquarters
             var owner = FindEquippedOwner(_item);
             bool isEquippable = def.Category == ItemCategory.Weapon || def.Category == ItemCategory.Armor || def.Category == ItemCategory.Accessory;
 
-            _infoText.text = BuildInfoText(_item, owner);
+            var ownership = InventoryOwnershipPresentation.ForDefinition(
+                def.id,
+                _services.Inventory?.GetAllItems(),
+                _services.Character?.GetAllCharacters());
+            _infoText.text = BuildInfoText(_item, owner, ownership.Available, ownership.Equipped);
 
             // ── Unequip (only real, unambiguous equip action available without a character picker) ──
             if (_unequipButton != null)
@@ -124,7 +129,11 @@ namespace GuildMaster.Runtime.UI.Headquarters
             if (_hintText != null) _hintText.text = BuildHintText(_item, owner, isEquippable);
         }
 
-        private static string BuildInfoText(ItemRuntime item, (CharacterRuntime owner, EquipmentSlot slot)? equipped)
+        private static string BuildInfoText(
+            ItemRuntime item,
+            (CharacterRuntime owner, EquipmentSlot slot)? equipped,
+            int availableCount,
+            int equippedCount)
         {
             var def = item.Definition;
             string typeLine = string.IsNullOrEmpty(def.ItemType) ? def.Category.ToString() : $"{def.Category} • {def.ItemType}";
@@ -132,7 +141,10 @@ namespace GuildMaster.Runtime.UI.Headquarters
             var lines = new System.Collections.Generic.List<string>
             {
                 typeLine,
-                $"Quantity: x{item.StackCount}"
+                $"Quantity: x{item.StackCount}",
+                $"Available item: {availableCount > 0}",
+                $"Available count: {availableCount}",
+                $"Equipped count: {equippedCount}"
             };
 
             string stats = def.GetStatSummary();
@@ -152,8 +164,8 @@ namespace GuildMaster.Runtime.UI.Headquarters
             if (isEquippable)
             {
                 lines.Add(equipped.HasValue
-                    ? $"Equipped by {FormatId(equipped.Value.owner.DefinitionId)} ({equipped.Value.slot})"
-                    : "Not equipped");
+                    ? $"Equipped owner: {FormatId(equipped.Value.owner.DefinitionId)} ({equipped.Value.slot})"
+                    : "Equipped owner: None");
             }
 
             if (item.IsLocked && !equipped.HasValue) lines.Add("🔒 Locked");

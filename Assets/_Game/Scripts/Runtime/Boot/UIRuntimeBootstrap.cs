@@ -86,6 +86,15 @@ namespace GuildMaster.Runtime.Boot
                 Services = new ServiceContainer(db);
                 _save = Services.Save;
 
+                if (Services.Save.LastLoadStatus == SaveLoadResult.FreshNewGame)
+                {
+                    if (!NewPlayerStateInitializer.TryInitialize(Services, out var initializationError))
+                    {
+                        throw new InvalidOperationException(
+                            $"Fresh player initialization failed: {initializationError}");
+                    }
+                }
+                /*
                 if (Services.Save.CurrentData != null &&
                     Services.Save.CurrentData.Characters.Count == 0 &&
                     Services.Save.CurrentData.TavernGuests.Count == 0)
@@ -108,6 +117,7 @@ namespace GuildMaster.Runtime.Boot
                     saveData.LevelQuarters = origQuarters; // Restore original
                     Debug.Log($"[BOOT] Fresh game: recruited {saveData.Characters.Count} starter heroes into party.");
                 }
+                */
 
                 var gameLoopRunner = gameObject.AddComponent<GameLoopRunner>();
                 

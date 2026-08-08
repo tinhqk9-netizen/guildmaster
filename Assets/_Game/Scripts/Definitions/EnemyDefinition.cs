@@ -30,7 +30,7 @@ namespace GuildMaster.Definitions
     [Serializable]
     public class EnemyDefinition : DefinitionBase
     {
-        public string nameKey;
+        // nameKey now inherited from DefinitionBase (Phase 0).
         public string TrueClass;
         public string SourceClass;
 

@@ -378,7 +378,7 @@ namespace GuildMaster.Runtime.UI.Auxiliary
         private void BuildQuestCard(Transform parent, QuestRuntime quest)
         {
             bool claimable = quest.State == QuestState.Completed;
-            bool isGems = quest.Rarity >= 4;
+            bool isGems = string.Equals(quest.RewardPoolType, "Kings", StringComparison.OrdinalIgnoreCase);
             int reward = _services.Quest.GetRewardAmount(quest.Rarity, isGems);
 
             // Density fix: the original 108dp card (plus a dead-weight zero-height "ClaimRow"
@@ -404,7 +404,8 @@ namespace GuildMaster.Runtime.UI.Auxiliary
             AddText(card.transform, "Progress", "Progress: " + quest.Progress + " / " + quest.TargetProgress, 12, LegacyUITheme.DimWhite, 18, TextAnchor.MiddleLeft, true);
             AddProgressBar(card.transform, (float)quest.Progress, Math.Max(1, quest.TargetProgress));
 
-            string rewardText = "Reward: " + (isGems ? reward + " Gems" : reward + " War Doctrine Progress");
+            string doctrineLabel = quest.RewardDoctrineId ?? quest.Definition?.DoctrineId ?? "Doctrine";
+            string rewardText = "Reward: " + (isGems ? reward + " Gems" : reward + " " + doctrineLabel + " Progress");
             AddText(card.transform, "Reward", rewardText, 11, LegacyUITheme.BrassBorder, 18, TextAnchor.MiddleLeft, true);
 
             // A CLAIM button only appears when the quest is actually claimable — non-claimable
@@ -427,32 +428,54 @@ namespace GuildMaster.Runtime.UI.Auxiliary
         }
 
         // ================================================================
-        // 9C — Bestiary (real: EnemyDefinition catalog; no "discovered" concept in the backend,
-        // so the full catalog is shown — a deliberate, documented deviation from legacy
-        // fog-of-war, see phase_9_full_report.md Section 8)
+        // 9C — Bestiary. Legacy groups enemies by Dungeon/Raid and hides unseen entries.
         // ================================================================
         private void OpenBestiaryHub()
         {
             if (_shell.IsPopupOpen) _shell.ClosePopup();
             var content = BuildPopup("BESTIARY");
-            var enemies = _services.Database?.GetAll<EnemyDefinition>()?.OrderBy(e => e.id, StringComparer.OrdinalIgnoreCase).ToList()
-                          ?? new List<EnemyDefinition>();
-
-            if (enemies.Count == 0)
+            var seen = new HashSet<string>(_services.Bestiary?.GetSeenEnemyIds() ?? Array.Empty<string>(), StringComparer.OrdinalIgnoreCase);
+            var allEnemies = _services.Database?.GetAll<EnemyDefinition>()?.ToDictionary(e => e.id, StringComparer.OrdinalIgnoreCase)
+                             ?? new Dictionary<string, EnemyDefinition>(StringComparer.OrdinalIgnoreCase);
+            int shown = 0;
+            foreach (var dungeon in _services.Database?.GetAll<DungeonDefinition>() ?? Array.Empty<DungeonDefinition>())
             {
-                AddText(content, "Empty", "Bestiary records are not available yet.", 16, LegacyUITheme.DimWhite, 60, TextAnchor.MiddleCenter);
+                AddBestiaryGroup(content, "DUNGEON: " + Format(dungeon.id), dungeon.EnemyIds, dungeon.EncounterGroups, allEnemies, seen, ref shown);
             }
-            else
+            foreach (var raid in _services.Database?.GetAll<RaidDefinition>() ?? Array.Empty<RaidDefinition>())
             {
-                AddText(content, "Sub", enemies.Count + " known enemies", 13, LegacyUITheme.DimWhite, 26, TextAnchor.MiddleLeft, true);
-                foreach (var enemy in enemies)
-                {
-                    var e = enemy;
-                    AddAction(content, "Enemy_" + e.id, Format(e.id), e.Rarity > 0 ? "Rarity " + e.Rarity : "Standard enemy",
-                        "object_border_dim_white", () => OpenBestiaryDetail(e));
-                }
+                AddBestiaryGroup(content, "RAID: " + Format(raid.id), raid.EnemyIds, raid.EncounterGroups, allEnemies, seen, ref shown);
             }
+            if (shown == 0)
+                AddText(content, "Empty", "No discovered enemies yet.", 16, LegacyUITheme.DimWhite, 60, TextAnchor.MiddleCenter);
             AddAction(content, "Close", "CLOSE", "", "object_border_dim_white", ClosePopup);
+        }
+
+        private void AddBestiaryGroup(Transform parent, string title, List<string> flatIds,
+            List<EncounterGroupData> encounterGroups, Dictionary<string, EnemyDefinition> allEnemies,
+            HashSet<string> seen, ref int shown)
+        {
+            var ids = new List<string>();
+            if (flatIds != null) ids.AddRange(flatIds);
+            if (encounterGroups != null)
+                foreach (var group in encounterGroups)
+                    if (group?.EnemyIds != null) ids.AddRange(group.EnemyIds);
+            ids = ids.Where(id => !string.IsNullOrEmpty(id)).Distinct(StringComparer.OrdinalIgnoreCase).OrderBy(id => id, StringComparer.OrdinalIgnoreCase).ToList();
+            if (ids.Count == 0) return;
+
+            AddText(parent, title, title, 13, LegacyUITheme.BrassBorder, 24, TextAnchor.MiddleLeft, true);
+            foreach (string id in ids)
+            {
+                if (!allEnemies.TryGetValue(id, out var enemy)) continue;
+                bool discovered = seen.Contains(id);
+                var captured = enemy;
+                AddAction(parent, "Enemy_" + title + "_" + id,
+                    discovered ? Format(id) : "?",
+                    discovered ? (enemy.Rarity > 0 ? "Rarity " + enemy.Rarity : "Discovered enemy") : "Undiscovered enemy",
+                    discovered ? "object_border_dim_white" : "object_border_no_background",
+                    discovered ? () => OpenBestiaryDetail(captured) : (System.Action)null);
+                shown++;
+            }
         }
 
         private void OpenBestiaryDetail(EnemyDefinition enemy)

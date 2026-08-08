@@ -25,7 +25,7 @@ namespace GuildMaster.Runtime.UI.Dungeon
     /// </summary>
     public sealed class DungeonsTabController : MonoBehaviour
     {
-        private enum Screen { Hub, Detail, Team, Active, Report, Loot }
+        private enum Screen { Hub, Detail, Team, PetPicker, Active, Report, Loot }
 
         private static readonly string[] DungeonOrder =
         {
@@ -39,8 +39,11 @@ namespace GuildMaster.Runtime.UI.Dungeon
         private RectTransform _content;
         private Screen _screen;
         private DungeonDefinition _selectedDungeon;
+        private string _selectedPetInstanceId;
+        private string _petPickerDungeonId;
         private int _partyIndex;
         private bool _initialized;
+        private float _nextActiveRefresh;
 
         public void Setup(ServiceContainer services)
         {
@@ -62,11 +65,22 @@ namespace GuildMaster.Runtime.UI.Dungeon
             {
                 case Screen.Detail: ShowDetail(_selectedDungeon); break;
                 case Screen.Team: ShowTeam(_selectedDungeon); break;
+                case Screen.PetPicker: ShowPetPicker(_selectedDungeon); break;
                 case Screen.Active: ShowActive(); break;
                 case Screen.Report: ShowReport(); break;
                 case Screen.Loot: ShowLoot(); break;
                 default: ShowHub(); break;
             }
+        }
+
+        private void Update()
+        {
+            // DungeonService is an idle runtime service. Refresh only the live screen at a
+            // modest cadence so party/enemy HP, room events and the runtime combat log remain
+            // visible without rebuilding the entire UI every frame.
+            if (!_initialized || _screen != Screen.Active || Time.unscaledTime < _nextActiveRefresh) return;
+            _nextActiveRefresh = Time.unscaledTime + 0.5f;
+            ShowActive();
         }
 
         private void BuildRoot()
@@ -370,6 +384,11 @@ namespace GuildMaster.Runtime.UI.Dungeon
         private void ShowTeam(DungeonDefinition dungeon)
         {
             if (dungeon == null) { ShowHub(); return; }
+            if (!string.Equals(_petPickerDungeonId, dungeon.id, StringComparison.OrdinalIgnoreCase))
+            {
+                _petPickerDungeonId = dungeon.id;
+                _selectedPetInstanceId = null;
+            }
             _selectedDungeon = dungeon; _screen = Screen.Team; ClearContent();
             AddText(_content, "Header", "TEAM SETUP", 24, LegacyUITheme.BrassBorder, 48, TextAnchor.MiddleLeft, true);
             AddText(_content, "Dungeon", "Dungeon: " + Format(dungeon.id), 15, LegacyUITheme.DimWhite, 34, TextAnchor.MiddleLeft, true);
@@ -390,6 +409,24 @@ namespace GuildMaster.Runtime.UI.Dungeon
                     AddPortrait(row.transform, character);
                 }
             }
+
+            AddText(_content, "PetHeader", "PET COMPANION", 16, LegacyUITheme.BrassBorder, 36, TextAnchor.MiddleLeft, true);
+            var selectedPet = GetOwnedPet(_selectedPetInstanceId);
+            if (selectedPet == null)
+            {
+                AddAction(_content, "PetSlot", "EMPTY PET SLOT", "Choose one companion for this expedition", "object_border_no_background", () => ShowPetPicker(dungeon));
+            }
+            else
+            {
+                var petRow = AddAction(_content, "PetSlot", FormatPet(selectedPet), GetPetBonusSummary(selectedPet), "object_border_brass", () => ShowPetPicker(dungeon));
+                AddPetPortrait(petRow.transform, selectedPet);
+                AddAction(_content, "RemovePet", "REMOVE PET", "Run this expedition without a pet companion", "object_border_dim_white", () =>
+                {
+                    _selectedPetInstanceId = null;
+                    ShowTeam(dungeon);
+                });
+            }
+
             AddText(_content, "Available", "AVAILABLE ADVENTURERS", 16, LegacyUITheme.BrassBorder, 36, TextAnchor.MiddleLeft, true);
             foreach (var character in _services.Character.GetAllCharacters())
             {
@@ -412,6 +449,49 @@ namespace GuildMaster.Runtime.UI.Dungeon
             AddAction(_content, "Back", "BACK TO DETAIL", "", "object_border_dim_white", () => ShowDetail(_selectedDungeon));
         }
 
+        private void ShowPetPicker(DungeonDefinition dungeon)
+        {
+            if (dungeon == null) { ShowTeam(_selectedDungeon); return; }
+            _selectedDungeon = dungeon;
+            _petPickerDungeonId = dungeon.id;
+            _screen = Screen.PetPicker;
+            ClearContent();
+            AddText(_content, "Header", "PET COMPANIONS", 24, LegacyUITheme.BrassBorder, 48, TextAnchor.MiddleLeft, true);
+            AddText(_content, "Subheader", "Choose one pet to accompany this expedition.", 14, LegacyUITheme.DimWhite, 32, TextAnchor.MiddleLeft, true);
+
+            var pets = _services.Pet?.GetAllPets()?.Where(p => p != null).ToList() ?? new List<GuildMaster.Runtime.Save.PetSaveData>();
+            if (pets.Count == 0)
+            {
+                AddText(_content, "Empty", "No owned pets are available.", 15, LegacyUITheme.DimWhite, 48, TextAnchor.MiddleCenter, true);
+            }
+            else
+            {
+                foreach (var pet in pets)
+                {
+                    bool busy = _services.Dungeon.IsPetOnExpedition(pet.InstanceId);
+                    bool selected = string.Equals(_selectedPetInstanceId, pet.InstanceId, StringComparison.Ordinal);
+                    string subtitle = busy ? "Already assigned to another expedition"
+                        : selected ? GetPetBonusSummary(pet)
+                        : GetPetBonusSummary(pet);
+                    var row = AddAction(_content, "Pet_" + pet.InstanceId, FormatPet(pet), subtitle,
+                        selected ? "object_border_brass" : busy ? "object_border_dim_white_unavailable" : "object_border_dim_white",
+                        busy ? null : () =>
+                        {
+                            _selectedPetInstanceId = pet.InstanceId;
+                            ShowTeam(dungeon);
+                        }, !busy);
+                    AddPetPortrait(row.transform, pet);
+                }
+            }
+
+            AddAction(_content, "NoPet", "NO PET", "Continue without a companion", "object_border_no_background", () =>
+            {
+                _selectedPetInstanceId = null;
+                ShowTeam(dungeon);
+            });
+            AddAction(_content, "Back", "BACK TO TEAM SETUP", "", "object_border_dim_white", () => ShowTeam(dungeon));
+        }
+
         // ================================================================
         // 7D — Active Run
         // ================================================================
@@ -427,16 +507,10 @@ namespace GuildMaster.Runtime.UI.Dungeon
             AddProgressBar(_content, dungeon.Progress, Math.Max(1, dungeon.MaxProgress));
             AddText(_content, "Action", "Current action: " + FormatAction(dungeon.ActionType), 15, LegacyUITheme.DimWhite, 34, TextAnchor.MiddleLeft, true);
 
-            // Party strip: portrait avatars instead of a plain comma-joined name list.
-            var strip = new GameObject("PartyStrip", typeof(RectTransform), typeof(HorizontalLayoutGroup), typeof(LayoutElement));
-            strip.transform.SetParent(_content, false);
-            strip.GetComponent<LayoutElement>().preferredHeight = LegacyUITheme.DP(48);
-            var stripLayout = strip.GetComponent<HorizontalLayoutGroup>();
-            stripLayout.spacing = LegacyUITheme.DP(6); stripLayout.childControlWidth = false; stripLayout.childControlHeight = true;
-            stripLayout.childForceExpandWidth = false; stripLayout.childForceExpandHeight = true;
-            foreach (var member in exp.Party) AddPortrait(strip.transform, member);
-
-            AddText(_content, "Encounter", "Enemies in encounter: " + (dungeon.Enemies?.Count ?? 0), 14, LegacyUITheme.DimWhite, 32, TextAnchor.MiddleLeft, true);
+            BuildPartyPanel(_content, exp);
+            BuildEnemyFormationPanel(_content, dungeon);
+            BuildDungeonEventPanel(_content, dungeon);
+            BuildCombatLogPanel(_content, dungeon);
 
             // One clear primary action: loot takes priority over recall when drops are waiting.
             if (dungeon.PendingDrops?.Count > 0)
@@ -505,46 +579,9 @@ namespace GuildMaster.Runtime.UI.Dungeon
             }
             else
             {
-                var grid = new GameObject("LootGrid", typeof(RectTransform), typeof(GridLayoutGroup), typeof(LayoutElement));
-                grid.transform.SetParent(_content, false);
-                int rows = Mathf.CeilToInt(dungeon.PendingDrops.Count / 5f);
-                int cellSize = LegacyUITheme.DP(66);
-                grid.GetComponent<LayoutElement>().preferredHeight = rows * (cellSize + LegacyUITheme.DP(4));
-                var gl = grid.GetComponent<GridLayoutGroup>();
-                gl.cellSize = new Vector2(cellSize, cellSize);
-                gl.spacing = new Vector2(LegacyUITheme.DP(4), LegacyUITheme.DP(4));
-                gl.childAlignment = TextAnchor.UpperLeft;
-                foreach (var item in dungeon.PendingDrops)
-                {
-                    var cell = new GameObject("Loot_" + item.InstanceId, typeof(RectTransform), typeof(Image));
-                    cell.transform.SetParent(grid.transform, false);
-                    var cellImage = cell.GetComponent<Image>();
-                    cellImage.sprite = BorderSprite("object_border_dim_white");
-                    cellImage.type = cellImage.sprite != null ? Image.Type.Sliced : Image.Type.Simple;
-                    cellImage.color = cellImage.sprite != null ? Color.white : LegacyUITheme.StandardBackground;
-
-                    var icon = new GameObject("Icon", typeof(RectTransform), typeof(Image));
-                    icon.transform.SetParent(cell.transform, false);
-                    var iconRt = icon.GetComponent<RectTransform>();
-                    int iconInset = LegacyUITheme.DP(10);
-                    iconRt.anchorMin = Vector2.zero; iconRt.anchorMax = new Vector2(1, 1);
-                    iconRt.offsetMin = new Vector2(iconInset, iconInset * 1.6f); iconRt.offsetMax = new Vector2(-iconInset, -iconInset);
-                    var iconImg = icon.GetComponent<Image>();
-                    iconImg.sprite = LegacySpriteRegistry.GetItemSprite(item.Definition?.id);
-                    iconImg.preserveAspect = true; iconImg.raycastTarget = false;
-                    iconImg.color = iconImg.sprite != null ? Color.white : new Color(1f, 1f, 1f, 0.25f);
-
-                    var qty = new GameObject("Qty", typeof(RectTransform), typeof(Text));
-                    qty.transform.SetParent(cell.transform, false);
-                    var qtyRt = qty.GetComponent<RectTransform>();
-                    qtyRt.anchorMin = new Vector2(0, 0); qtyRt.anchorMax = new Vector2(1, 0); qtyRt.pivot = new Vector2(0.5f, 0);
-                    qtyRt.sizeDelta = new Vector2(0, LegacyUITheme.DP(16));
-                    qtyRt.anchoredPosition = new Vector2(0, LegacyUITheme.DP(3));
-                    var qtyText = qty.GetComponent<Text>();
-                    qtyText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
-                    qtyText.fontSize = 11; qtyText.fontStyle = FontStyle.Bold; qtyText.color = LegacyUITheme.BrassBorder;
-                    qtyText.text = "x" + item.StackCount; qtyText.alignment = TextAnchor.MiddleCenter; qtyText.raycastTarget = false;
-                }
+                var lootPanel = CreateSection(_content, "LootItems", "REWARD CHEST",
+                    LegacyUITheme.DP(42 + dungeon.PendingDrops.Count * 72));
+                foreach (var item in dungeon.PendingDrops) AddLootRow(lootPanel.transform, item);
                 AddAction(_content, "Collect", "COLLECT LOOT", "Use DungeonService.CollectDrops", "object_border_brass", CollectLoot);
             }
             AddAction(_content, "Back", "BACK", "", "object_border_dim_white", BackFromSubscreen);
@@ -559,7 +596,7 @@ namespace GuildMaster.Runtime.UI.Dungeon
         private void StartDungeon()
         {
             var ids = _services.Party.GetPartyMembers(_partyIndex).ToList();
-            bool ok = _services.Dungeon.StartExpedition(_partyIndex, _selectedDungeon.id, ids, out string error);
+            bool ok = _services.Dungeon.StartExpedition(_partyIndex, _selectedDungeon.id, ids, _selectedPetInstanceId, out string error);
             if (!ok) Debug.LogWarning("[Phase7] Start dungeon rejected: " + error);
             ShowActive();
         }
@@ -569,6 +606,241 @@ namespace GuildMaster.Runtime.UI.Dungeon
         private void BackFromSubscreen() { if (_selectedDungeon != null) ShowDetail(_selectedDungeon); else ShowHub(); }
         private void AddMember(string id) { _services.Party.AddToParty(id, _partyIndex); ShowTeam(_selectedDungeon); }
         private void RemoveMember(string id) { _services.Party.RemoveFromParty(id, _partyIndex); ShowTeam(_selectedDungeon); }
+
+        private void BuildPartyPanel(Transform parent, ExpeditionRuntime expedition)
+        {
+            int count = expedition?.Party?.Count ?? 0;
+            var pet = GetOwnedPet(expedition?.Dungeon?.PetInstanceId);
+            int petRows = pet != null ? 1 : 0;
+            var panel = CreateSection(parent, "PartyPanel", "EXPEDITION PARTY",
+                LegacyUITheme.DP(42 + Math.Max(1, count) * 78 + petRows * 78));
+            if (count == 0)
+            {
+                AddText(panel.transform, "Empty", "No party members are assigned to this expedition.", 13,
+                    LegacyUITheme.DimWhite, LegacyUITheme.DP(36), TextAnchor.MiddleLeft, true);
+            }
+            else
+            {
+                foreach (var member in expedition.Party) AddCharacterCombatRow(panel.transform, member);
+            }
+
+            if (pet != null)
+            {
+                var row = CreateEntityRow(panel.transform, "Pet_" + pet.InstanceId,
+                    GetPetSprite(pet), FormatPet(pet), "Companion", GetPetBonusSummary(pet), LegacyUITheme.BrassBorder);
+                row.Root.GetComponent<LayoutElement>().preferredHeight = LegacyUITheme.DP(64);
+            }
+        }
+
+        private void BuildEnemyFormationPanel(Transform parent, DungeonRuntime dungeon)
+        {
+            var enemies = GetVisibleEnemies(dungeon);
+            var panel = CreateSection(parent, "EnemyFormation", "ENEMY FORMATION",
+                LegacyUITheme.DP(42 + Math.Max(1, enemies.Count) * 78));
+            if (enemies.Count == 0)
+            {
+                AddText(panel.transform, "Empty", "Room cleared — awaiting the next room.", 13,
+                    LegacyUITheme.DimWhite, LegacyUITheme.DP(36), TextAnchor.MiddleLeft, true);
+                return;
+            }
+
+            foreach (var enemy in enemies) AddEnemyCombatRow(panel.transform, enemy);
+        }
+
+        private static void BuildDungeonEventPanel(Transform parent, DungeonRuntime dungeon)
+        {
+            string roomEvent = string.IsNullOrWhiteSpace(dungeon?.LastRoomEvent)
+                ? "No room event reported by the dungeon runtime."
+                : dungeon.LastRoomEvent;
+            var panel = CreateSection(parent, "DungeonEvent", "ROOM EVENT", LegacyUITheme.DP(78));
+            AddText(panel.transform, "Event", roomEvent, 13, LegacyUITheme.DimWhite,
+                LegacyUITheme.DP(34), TextAnchor.MiddleLeft, true);
+        }
+
+        private static void BuildCombatLogPanel(Transform parent, DungeonRuntime dungeon)
+        {
+            var entries = dungeon?.CombatLog ?? new List<string>();
+            int visibleCount = Math.Min(8, entries.Count);
+            int start = Math.Max(0, entries.Count - visibleCount);
+            var panel = CreateSection(parent, "CombatLog", "COMBAT LOG",
+                LegacyUITheme.DP(42 + Math.Max(1, visibleCount) * 22));
+            if (visibleCount == 0)
+            {
+                AddText(panel.transform, "Empty", "No combat events have been recorded yet.", 13,
+                    LegacyUITheme.GreyBorder, LegacyUITheme.DP(34), TextAnchor.MiddleLeft, true);
+                return;
+            }
+
+            for (int i = start; i < entries.Count; i++)
+            {
+                AddText(panel.transform, "Entry_" + i, "• " + entries[i], 12,
+                    LegacyUITheme.DimWhite, LegacyUITheme.DP(18), TextAnchor.MiddleLeft, true);
+            }
+        }
+
+        private static List<EnemyRuntime> GetVisibleEnemies(DungeonRuntime dungeon)
+        {
+            var result = new List<EnemyRuntime>();
+            var seen = new HashSet<string>();
+            if (dungeon?.Enemies != null)
+            {
+                foreach (var enemy in dungeon.Enemies)
+                {
+                    if (enemy == null) continue;
+                    result.Add(enemy);
+                    if (!string.IsNullOrEmpty(enemy.InstanceId)) seen.Add(enemy.InstanceId);
+                }
+            }
+            if (dungeon?.Corpses != null)
+            {
+                foreach (var corpse in dungeon.Corpses)
+                {
+                    if (corpse == null || (!string.IsNullOrEmpty(corpse.InstanceId) && seen.Contains(corpse.InstanceId))) continue;
+                    result.Add(corpse);
+                }
+            }
+            return result;
+        }
+
+        private void AddCharacterCombatRow(Transform parent, CharacterRuntime character)
+        {
+            int maxHp = GetCharacterMaxHp(character);
+            int currentHp = Math.Max(0, character?.CurrentHp ?? 0);
+            bool dead = character == null || currentHp <= 0;
+            string name = FormatCharacter(character);
+            var row = CreateEntityRow(parent, "Hero_" + (character?.InstanceId ?? "missing"),
+                GetCharacterSprite(character),
+                name, character?.Definition?.id != null ? Format(character.Definition.id) : "Unknown class",
+                dead ? "DEAD" : $"HP {currentHp}/{maxHp}", dead ? LegacyUITheme.Failure : LegacyUITheme.DimWhite);
+            AddProgressBar(row.Body, currentHp, maxHp, dead ? LegacyUITheme.Failure : LegacyUITheme.BrassBorder);
+            AddText(row.Body, "Mana", $"Mana {Math.Max(0, character?.CurrentMana ?? 0)}", 11,
+                LegacyUITheme.DimWhite, LegacyUITheme.DP(16), TextAnchor.MiddleLeft, true);
+            AddText(row.Body, "Status", "Status: " + FormatStatusEffects(character?.PositiveStatusEffects, character?.NegativeStatusEffects),
+                11, LegacyUITheme.DimWhite, LegacyUITheme.DP(17), TextAnchor.MiddleLeft, true);
+        }
+
+        private static void AddEnemyCombatRow(Transform parent, EnemyRuntime enemy)
+        {
+            int maxHp = Math.Max(1, enemy?.Definition?.BaseMaxHp ?? 1);
+            int currentHp = Math.Max(0, enemy?.CurrentHp ?? 0);
+            bool dead = enemy == null || currentHp <= 0;
+            string enemyId = enemy?.Definition?.id ?? enemy?.DefinitionId ?? "enemy";
+            string enemyClass = enemy?.Definition?.TrueClass ?? enemy?.Definition?.SourceClass ?? "Enemy";
+            Sprite icon = enemy?.Definition == null ? null
+                : LegacySpriteRegistry.GetEnemySprite(enemy.Definition.iconKey) ??
+                  LegacySpriteRegistry.GetEnemySprite("enemy_" + enemyId) ??
+                  LegacySpriteRegistry.GetUnitSprite(enemyId);
+            var row = CreateEntityRow(parent, "Enemy_" + (enemy?.InstanceId ?? enemyId), icon,
+                Format(enemyId), Format(enemyClass), dead ? "DEAD" : $"HP {currentHp}/{maxHp}",
+                dead ? LegacyUITheme.Failure : LegacyUITheme.DimWhite);
+            AddProgressBar(row.Body, currentHp, maxHp, dead ? LegacyUITheme.Failure : LegacyUITheme.BrassBorder);
+            AddText(row.Body, "Status", "Status: " + FormatStatusEffects(enemy?.PositiveStatusEffects, enemy?.NegativeStatusEffects),
+                11, LegacyUITheme.DimWhite, LegacyUITheme.DP(17), TextAnchor.MiddleLeft, true);
+        }
+
+        private static void AddLootRow(Transform parent, ItemRuntime item)
+        {
+            string itemId = item?.Definition?.id ?? item?.InstanceId ?? "item";
+            string spriteId = !string.IsNullOrEmpty(item?.Definition?.IdImage) ? item.Definition.IdImage : itemId;
+            var row = CreateEntityRow(parent, "Loot_" + itemId,
+                LegacySpriteRegistry.GetItemSprite(spriteId), Format(itemId), "Reward item",
+                "Quantity x" + Math.Max(0, item?.StackCount ?? 0), LegacyUITheme.BrassBorder);
+            if (item?.Definition != null && !string.IsNullOrEmpty(item.Definition.GetStatSummary()))
+                AddText(row.Body, "Details", item.Definition.GetStatSummary(), 10, LegacyUITheme.DimWhite,
+                    LegacyUITheme.DP(16), TextAnchor.MiddleLeft, true);
+        }
+
+        private static GameObject CreateSection(Transform parent, string name, string title, float preferredHeight)
+        {
+            var go = new GameObject(name, typeof(RectTransform), typeof(Image), typeof(LayoutElement), typeof(VerticalLayoutGroup));
+            go.transform.SetParent(parent, false);
+            var layout = go.GetComponent<LayoutElement>();
+            layout.preferredHeight = preferredHeight; layout.flexibleWidth = 1;
+            var image = go.GetComponent<Image>();
+            image.sprite = BorderSprite("object_border_no_background");
+            image.type = image.sprite != null ? Image.Type.Sliced : Image.Type.Simple;
+            image.color = image.sprite != null ? Color.white : LegacyUITheme.CardviewDarkBackground;
+            var group = go.GetComponent<VerticalLayoutGroup>();
+            int pad = LegacyUITheme.DP(6);
+            group.padding = new RectOffset(pad, pad, pad, pad);
+            group.spacing = LegacyUITheme.DP(2);
+            group.childControlWidth = true; group.childControlHeight = true;
+            group.childForceExpandWidth = true; group.childForceExpandHeight = false;
+            AddText(go.transform, "Title", title, 15, LegacyUITheme.BrassBorder,
+                LegacyUITheme.DP(26), TextAnchor.MiddleLeft, true).fontStyle = FontStyle.Bold;
+            return go;
+        }
+
+        private sealed class EntityRow
+        {
+            public GameObject Root;
+            public Transform Body;
+        }
+
+        private static EntityRow CreateEntityRow(Transform parent, string name, Sprite sprite,
+            string title, string subtitle, string state, Color stateColor)
+        {
+            var row = new GameObject(name, typeof(RectTransform), typeof(Image), typeof(LayoutElement), typeof(HorizontalLayoutGroup));
+            row.transform.SetParent(parent, false);
+            row.GetComponent<LayoutElement>().preferredHeight = LegacyUITheme.DP(72);
+            var image = row.GetComponent<Image>();
+            image.sprite = BorderSprite("object_border_dim_white");
+            image.type = image.sprite != null ? Image.Type.Sliced : Image.Type.Simple;
+            image.color = image.sprite != null ? Color.white : LegacyUITheme.StandardBackground;
+            var group = row.GetComponent<HorizontalLayoutGroup>();
+            int pad = LegacyUITheme.DP(5);
+            group.padding = new RectOffset(pad, pad, pad, pad); group.spacing = LegacyUITheme.DP(6);
+            group.childControlWidth = true; group.childControlHeight = true;
+            group.childForceExpandWidth = false; group.childForceExpandHeight = true;
+
+            var portrait = new GameObject("Icon", typeof(RectTransform), typeof(Image), typeof(LayoutElement));
+            portrait.transform.SetParent(row.transform, false);
+            var portraitLayout = portrait.GetComponent<LayoutElement>();
+            portraitLayout.preferredWidth = LegacyUITheme.DP(48); portraitLayout.preferredHeight = LegacyUITheme.DP(56);
+            var portraitImage = portrait.GetComponent<Image>(); portraitImage.sprite = sprite;
+            portraitImage.preserveAspect = true; portraitImage.color = sprite != null ? Color.white : LegacyUITheme.GreyBorder;
+            portraitImage.raycastTarget = false;
+
+            var body = new GameObject("Body", typeof(RectTransform), typeof(VerticalLayoutGroup), typeof(LayoutElement));
+            body.transform.SetParent(row.transform, false);
+            var bodyLayout = body.GetComponent<LayoutElement>(); bodyLayout.flexibleWidth = 1;
+            var bodyGroup = body.GetComponent<VerticalLayoutGroup>();
+            bodyGroup.spacing = 0; bodyGroup.childControlWidth = true; bodyGroup.childControlHeight = true;
+            bodyGroup.childForceExpandWidth = true; bodyGroup.childForceExpandHeight = false;
+            AddText(body.transform, "Title", title, 14, LegacyUITheme.DimWhite, LegacyUITheme.DP(18), TextAnchor.MiddleLeft, true).fontStyle = FontStyle.Bold;
+            AddText(body.transform, "Subtitle", subtitle, 11, LegacyUITheme.GreyBorder, LegacyUITheme.DP(15), TextAnchor.MiddleLeft, true);
+            AddText(body.transform, "State", state, 11, stateColor, LegacyUITheme.DP(16), TextAnchor.MiddleLeft, true);
+            return new EntityRow { Root = row, Body = body.transform };
+        }
+
+        private static void AddProgressBar(Transform parent, int value, int max, Color fillColor)
+        {
+            var track = new GameObject("HpBar", typeof(RectTransform), typeof(Image), typeof(LayoutElement));
+            track.transform.SetParent(parent, false);
+            track.GetComponent<LayoutElement>().preferredHeight = LegacyUITheme.DP(4);
+            track.GetComponent<Image>().color = LegacyUITheme.GreyBorder;
+            var fill = new GameObject("Fill", typeof(RectTransform), typeof(Image));
+            fill.transform.SetParent(track.transform, false);
+            var rt = fill.GetComponent<RectTransform>();
+            rt.anchorMin = Vector2.zero; rt.anchorMax = new Vector2(Mathf.Clamp01((float)value / Math.Max(1, max)), 1);
+            rt.offsetMin = Vector2.zero; rt.offsetMax = Vector2.zero;
+            fill.GetComponent<Image>().color = fillColor;
+        }
+
+        private int GetCharacterMaxHp(CharacterRuntime character)
+        {
+            if (character == null) return 1;
+            try { return Math.Max(1, _services.Character.GetTotalStat(character, StatType.MaxHp)); }
+            catch { return Math.Max(1, character.Definition?.BaseMaxHp ?? 1); }
+        }
+
+        private static string FormatStatusEffects(IEnumerable<StatusEffectRuntime> positive, IEnumerable<StatusEffectRuntime> negative)
+        {
+            var all = new List<string>();
+            if (positive != null) all.AddRange(positive.Where(x => x != null).Select(x => Format(x.Type.ToString()) + "(" + x.TurnsLeft + ")"));
+            if (negative != null) all.AddRange(negative.Where(x => x != null).Select(x => Format(x.Type.ToString()) + "(" + x.TurnsLeft + ")"));
+            return all.Count == 0 ? "Clear" : string.Join(", ", all.Take(3));
+        }
 
         private string GetDetailStatus(DungeonDefinition dungeon)
         {
@@ -619,6 +891,31 @@ namespace GuildMaster.Runtime.UI.Dungeon
         private static string FormatCharacter(CharacterRuntime c)
         {
             return c == null ? "Unknown adventurer" : Format(c.Definition?.id ?? c.DefinitionId) + "  Lv." + c.Level;
+        }
+
+        private GuildMaster.Runtime.Save.PetSaveData GetOwnedPet(string instanceId)
+        {
+            if (string.IsNullOrEmpty(instanceId) || _services?.Pet == null) return null;
+            return _services.Pet.GetAllPets().FirstOrDefault(p => p != null && p.InstanceId == instanceId);
+        }
+
+        private string FormatPet(GuildMaster.Runtime.Save.PetSaveData pet)
+        {
+            if (pet == null) return "Unknown pet";
+            var definition = _services.Database.TryGet<PetDefinition>(pet.DefinitionId, out var resolved) ? resolved : null;
+            string tier = definition != null ? "Tier " + definition.PetTier : "Tier ?";
+            return Format(pet.DefinitionId) + "  Lv." + pet.Level + "  " + tier;
+        }
+
+        private string GetPetBonusSummary(GuildMaster.Runtime.Save.PetSaveData pet)
+        {
+            if (pet == null || _services?.Pet == null) return "No companion bonus";
+            var parts = new List<string>();
+            double exp = _services.Pet.GetExperienceBonus(pet.InstanceId) * 100d;
+            double drops = _services.Pet.GetDropBonus(pet.InstanceId) * 100d;
+            if (exp > 0d) parts.Add("EXP +" + exp.ToString("0.##") + "%");
+            if (drops > 0d) parts.Add("DROP +" + drops.ToString("0.##") + "%");
+            return parts.Count == 0 ? "No EXP/drop bonus exposed" : string.Join("  •  ", parts);
         }
 
         private static Sprite BorderSprite(string key) => LegacyThemeSprites.Get(key);
@@ -674,7 +971,48 @@ namespace GuildMaster.Runtime.UI.Dungeon
         private static void AddPortrait(Transform parent, CharacterRuntime character)
         {
             var image = CreateImage(parent, "Portrait", LegacyUITheme.DP(44));
-            image.sprite = LegacySpriteRegistry.GetUnitSprite(character?.Definition?.id); image.preserveAspect = true;
+            image.sprite = GetCharacterSprite(character); image.preserveAspect = true;
+        }
+
+        private void AddPetPortrait(Transform parent, GuildMaster.Runtime.Save.PetSaveData pet)
+        {
+            var image = CreateImage(parent, "PetPortrait", LegacyUITheme.DP(44));
+            string imageId = pet?.DefinitionId;
+            if (pet != null && _services.Database.TryGet<PetDefinition>(pet.DefinitionId, out var definition) &&
+                !string.IsNullOrEmpty(definition.IdImage))
+                imageId = definition.IdImage;
+            image.sprite = LegacySpriteRegistry.GetPetSprite(imageId);
+            image.preserveAspect = true;
+            image.color = image.sprite != null ? Color.white : LegacyUITheme.GreyBorder;
+        }
+
+        private Sprite GetPetSprite(GuildMaster.Runtime.Save.PetSaveData pet)
+        {
+            if (pet == null) return null;
+            string imageId = pet.DefinitionId;
+            if (_services.Database.TryGet<PetDefinition>(pet.DefinitionId, out var definition) &&
+                !string.IsNullOrEmpty(definition.IdImage))
+                imageId = definition.IdImage;
+            return LegacySpriteRegistry.GetPetSprite(imageId);
+        }
+
+        private static Sprite GetCharacterSprite(CharacterRuntime character)
+        {
+            if (character?.Definition == null) return null;
+            string imageId = character.Definition.ImageId;
+            if (!string.IsNullOrEmpty(imageId))
+            {
+                // ImageId is already the legacy catalog key in adventurers.json
+                // (e.g. "unit_footman"). GetUnitSprite expects the raw id and adds
+                // "unit_", so use an exact lookup when the prefix is already present.
+                var imageSprite = imageId.StartsWith("unit_", StringComparison.OrdinalIgnoreCase)
+                    ? LegacySpriteRegistry.GetSprite(imageId)
+                    : LegacySpriteRegistry.GetUnitSprite(imageId);
+                if (imageSprite != null) return imageSprite;
+            }
+
+            // Definition.id is the stable raw fallback used by Adventurers/CharacterDetail.
+            return LegacySpriteRegistry.GetUnitSprite(character.Definition.id);
         }
 
         private static void AddProgressBar(Transform parent, int value, int max)

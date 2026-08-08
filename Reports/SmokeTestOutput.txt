@@ -1,17 +1,23 @@
 SMOKE TEST RESULT
 Manifest Loaded: True
-Files Loaded: 10
+Files Loaded: 11
 Fatal Errors: False
 Records:
-- adventurers: 129
+- adventurers: 116
 - dungeons: 11
 - enemy_drop_tables: 116
 - enemies: 122
-- item_fields: 306
+- item_fields: 607
 - items: 607
 - pets: 21
+- quest_metadata: 56
 - quests: 56
 - raids: 12
 - recipes: 321
 - skills: 227
 - status_effects: 25
+- raid_rooms_restored: 76
+- recipes_before_item_id_resolution: 321
+- recipe_outputs_resolved: 321
+- recipe_ingredients_resolved: 78
+- recipe_invalid_removed: 0

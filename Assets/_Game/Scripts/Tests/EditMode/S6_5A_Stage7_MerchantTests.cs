@@ -114,7 +114,7 @@ namespace GuildMaster.Tests.EditMode
             var save = _container.Save;
             var inv = _container.Inventory;
 
-            var matDef = new ItemDefinition { id = "mat_stone", Category = ItemCategory.Material, SellPrice = 15 };
+            var matDef = new ItemDefinition { id = "mat_stone", Category = ItemCategory.Material, Price = 15 };
             _database.Add(matDef);
 
             inv.AddItem(new ItemRuntime("inst_stone", matDef, 10));
@@ -127,10 +127,10 @@ namespace GuildMaster.Tests.EditMode
 
             // Exact boundary testing based on runtime merchant settings
             var data = save.CurrentData;
-            long timeToSell = 20; // Matches runtime merchant DEFAULT_SELL_TIME_SECONDS constraint
+            long timeToSell = merchant.GetSellDurationSeconds(data.MarketListings[0]);
             
             // Progress duration - 1 -> listing chưa hoàn thành
-            merchant.ProgressMarket(timeToSell - 1);
+            merchant.ProgressMarket(timeToSell);
             Assert.AreEqual(1, save.CurrentData.MarketListings.Count);
             Assert.AreEqual(0, save.CurrentData.SoldMarketItems.Count);
 

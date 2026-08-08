@@ -15,6 +15,19 @@ namespace GuildMaster.Runtime.Services
         bool RecruitGuest(int index, out CharacterRuntime newCharacter);
         void ProgressVisitorTime(long deltaSeconds);
         void GenerateVisitor();
+
+        /// <summary>
+        /// Creates the production first-run Footman through the normal visitor/recruitment
+        /// pipeline. This is called only by new-save initialization, not normal Tavern refresh.
+        /// </summary>
+        bool CreateInitialStartingHero(out CharacterRuntime newCharacter);
+
+        /// <summary>
+        /// Creates the production first-run visitor from the normal class pool excluding
+        /// Footman. Subsequent visitors use GenerateVisitor().
+        /// </summary>
+        void GenerateInitialVisitor();
+
         bool UpgradeQuarters();
         bool UpgradeTavernCapacity();
         bool UpgradeTavernTime();

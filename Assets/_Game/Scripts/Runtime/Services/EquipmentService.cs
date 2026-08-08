@@ -56,11 +56,12 @@ namespace GuildMaster.Runtime.Services
             // TODO: manualRuleRequired for class restriction check fully
             if (!CanEquip(character, item, slot)) return false;
 
-            // Unequip current item in that slot if exists (which doesn't add to inventory since it was never removed)
+            // Unequip the previous item first. It becomes visible in inventory again.
             Unequip(character, slot);
 
-            // TODO: manualRuleRequired. Did not find evidence of removing from inventory upon equip. 
-            // So we just hold the reference and lock it.
+            // The InventoryService keeps the persisted item record, while its public
+            // inventory view excludes items referenced by a character. This gives one
+            // owner without losing the item on save/load.
             item.IsLocked = true;
             
             switch (slot)
@@ -103,8 +104,8 @@ namespace GuildMaster.Runtime.Services
 
             if (currentItem != null)
             {
-                // TODO: manualRuleRequired. We did not remove it from inventory on equip, so we don't add it back.
-                // Just unlock it.
+                // The item remains persisted, but is no longer referenced by the
+                // character, so InventoryService exposes it again.
                 currentItem.IsLocked = false;
                 SyncSave(character);
                 return true;

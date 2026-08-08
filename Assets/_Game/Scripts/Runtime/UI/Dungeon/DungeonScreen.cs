@@ -10,6 +10,7 @@ using GuildMaster.Runtime.Services;
 using GuildMaster.Definitions;
 using GuildMaster.Database;
 using GuildMaster.Runtime.Models;
+using GuildMaster.Runtime.UI.Legacy;
 
 namespace GuildMaster.Runtime.UI.Dungeon
 {
@@ -411,8 +412,37 @@ namespace GuildMaster.Runtime.UI.Dungeon
                 UICardFactory.CreateDivider(_combatCardContainer, "EXPEDITION PARTY");
                 var partyIds = run.AdventurerInstanceIds ?? new List<string>();
                 foreach (var id in partyIds)
-                    UICardFactory.CreateCard(_combatCardContainer, $"🛡️ {FormatCharacterName(id)}", "Exploring...", false, false, null, preferredHeight: 60);
+                {
+                    var character = _characterService?.GetAllCharacters()?.FirstOrDefault(c => c.InstanceId == id);
+                    var card = UICardFactory.CreateCard(_combatCardContainer, $"🛡️ {FormatCharacterName(id)}", "Exploring...", false, false, null, preferredHeight: 60);
+                    ApplyCharacterPortrait(card, character);
+                }
             }
+        }
+
+        private static void ApplyCharacterPortrait(Button card, CharacterRuntime character)
+        {
+            if (card == null) return;
+            var icon = card.transform.Find("Icon")?.GetComponent<Image>();
+            if (icon == null) return;
+
+            if (character?.Definition != null)
+            {
+                string imageId = character.Definition.ImageId;
+                if (!string.IsNullOrEmpty(imageId))
+                {
+                    icon.sprite = imageId.StartsWith("unit_", StringComparison.OrdinalIgnoreCase)
+                        ? LegacySpriteRegistry.GetSprite(imageId)
+                        : LegacySpriteRegistry.GetUnitSprite(imageId);
+                }
+
+                if (icon.sprite == null)
+                    icon.sprite = LegacySpriteRegistry.GetUnitSprite(character.Definition.id);
+            }
+
+            icon.preserveAspect = true;
+            icon.raycastTarget = false;
+            if (icon.sprite != null) icon.color = Color.white;
         }
 
         // ── C) Loot panel ─────────────────────────────────────────────────────────

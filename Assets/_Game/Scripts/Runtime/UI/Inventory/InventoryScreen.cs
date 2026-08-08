@@ -21,6 +21,7 @@ namespace GuildMaster.Runtime.UI.Inventory
     public class InventoryScreen : UIScreen
     {
         private IInventoryService _inventoryService;
+        private ICharacterService _characterService;
         private CharacterScreen   _characterScreen;
 
         // ── Serialized references (wired by Apply tool) ──────────────────────────
@@ -48,6 +49,7 @@ namespace GuildMaster.Runtime.UI.Inventory
         public void Initialize(ServiceContainer services, CharacterScreen characterScreen = null)
         {
             _inventoryService = services.Inventory;
+            _characterService = services.Character;
             _characterScreen  = characterScreen;
 
             if (_tabAllBtn         != null) _tabAllBtn.onClick.AddListener(OnClickTabAll);
@@ -90,12 +92,14 @@ namespace GuildMaster.Runtime.UI.Inventory
             var allItems      = _inventoryService.GetAllItems();
             int capacity      = _inventoryService.GetCapacity();
             var filteredItems = GetFilteredItems();
+            var characters    = _characterService?.GetAllCharacters();
+            int equippedCount = InventoryOwnershipPresentation.CountEquippedInstances(characters);
 
             // Summary: "Items: 5 / 20  •  Equipped: 2"
             if (_summaryText != null)
-                _summaryText.text = $"Items: {allItems.Count} / {capacity}";
+                _summaryText.text = $"Available: {allItems.Count} / {capacity} • Equipped: {equippedCount}";
 
-            BuildCards(filteredItems);
+            BuildCards(filteredItems, allItems, characters);
 
             if (filteredItems.Count == 0)
             {
@@ -159,7 +163,10 @@ namespace GuildMaster.Runtime.UI.Inventory
 
         // ── Card list ────────────────────────────────────────────────────────────
 
-        private void BuildCards(IReadOnlyList<ItemRuntime> items)
+        private void BuildCards(
+            IReadOnlyList<ItemRuntime> items,
+            IReadOnlyList<ItemRuntime> allAvailableItems,
+            IReadOnlyList<CharacterRuntime> characters)
         {
             if (_cardContainer == null) return;
             UICardFactory.ClearContainer(_cardContainer);
@@ -186,13 +193,13 @@ namespace GuildMaster.Runtime.UI.Inventory
                 int captured = i;
                 var item     = items[i];
                 string defId = item.Definition != null ? item.Definition.id : "Unknown";
+                var ownership = InventoryOwnershipPresentation.ForDefinition(defId, allAvailableItems, characters);
 
-                // Build subtitle: quantity + lock + equipped status
-                string sub = "";
+                // Keep ownership counts explicit when several instances share one definition.
+                string sub = $"Available {ownership.Available} • Equipped {ownership.Equipped}";
                 if (item.StackCount > 1) sub += $"x{item.StackCount}  ";
                 if (item.IsLocked) sub += "🔒 Locked  ";
                 if (IsEquipped(item)) sub += "⚔️ Equipped";
-                if (string.IsNullOrWhiteSpace(sub)) sub = GetCategoryLabel(item);
 
                 UICardFactory.CreateCard(_cardContainer, defId, sub.Trim(),
                     i == _selectedIndex, true, () => SelectIndex(captured),
@@ -220,7 +227,14 @@ namespace GuildMaster.Runtime.UI.Inventory
 
         private bool IsEquipped(ItemRuntime item)
         {
-            // Future: query equipment service. For now, no-op.
+            if (item == null || _characterService == null) return false;
+            foreach (var character in _characterService.GetAllCharacters())
+            {
+                if (character?.Weapon?.InstanceId == item.InstanceId ||
+                    character?.Armor?.InstanceId == item.InstanceId ||
+                    character?.Accessory?.InstanceId == item.InstanceId)
+                    return true;
+            }
             return false;
         }
 
@@ -234,6 +248,10 @@ namespace GuildMaster.Runtime.UI.Inventory
             bool isConsumable  = item.Definition is ItemDefinition id && id.Consumable;
             string typeLabel   = GetCategoryLabel(item);
             string lockStatus  = item.IsLocked ? "🔒 Locked (cannot sell)" : "🔓 Unlocked";
+            var ownership = InventoryOwnershipPresentation.ForDefinition(
+                defId,
+                _inventoryService.GetAllItems(),
+                _characterService?.GetAllCharacters());
             bool hasCharacter  = _characterScreen?.GetSelectedCharacter() != null;
             string useHint     = isConsumable
                 ? (hasCharacter ? "→ Select 'Use' to consume on selected hero." : "→ Go to Characters tab and select a hero first.")
@@ -243,6 +261,9 @@ namespace GuildMaster.Runtime.UI.Inventory
                 $"📦 {defId}\n" +
                 $"Type: {typeLabel}\n" +
                 $"Quantity: x{item.StackCount}\n" +
+                $"Ownership: {(IsEquipped(item) ? "Equipped" : "Available item")}\n" +
+                $"Available count: {ownership.Available}\n" +
+                $"Equipped count: {ownership.Equipped}\n" +
                 $"Status: {lockStatus}\n" +
                 $"\n{useHint}";
         }

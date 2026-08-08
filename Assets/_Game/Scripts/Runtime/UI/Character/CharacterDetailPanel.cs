@@ -55,11 +55,15 @@ namespace GuildMaster.Runtime.UI.Character
             portrait.sprite = LegacySpriteRegistry.GetUnitSprite(c.Definition?.id);
             portrait.preserveAspect = true;
             portrait.color = portrait.sprite == null ? UITemporaryTheme.PlaceholderIcon : Color.white;
-            AddText(identity.transform, "Name", Format(c.Definition?.id ?? c.InstanceId) + $"\nLv.{c.Level}  Rank {c.AscensionLevel}", 20, UITemporaryTheme.TextPrimary, 72, true);
+            string ascendedTag = c.IsAscended ? "  [ASCENDED]" : "";
+            AddText(identity.transform, "Name", Format(c.Definition?.id ?? c.InstanceId) + $"\nLv.{c.Level}/{c.Definition?.MaxLevel ?? 0}{ascendedTag}", 20, c.IsAscended ? UITemporaryTheme.TextHighlight : UITemporaryTheme.TextPrimary, 72, true);
 
             AddText(_body, "Progress", $"EXP: {c.Experience}    HP: {c.CurrentHp}/{SafeStat(c, StatType.MaxHp)}", 17, LegacyUITheme.DimWhite, 32);
             CreateProgressBar(_body, "HP", c.CurrentHp, Math.Max(1, SafeStat(c, StatType.MaxHp)), new Color(1f, .35f, .35f, 1f));
-            AddText(_body, "Class", $"Class/Job: {Format(c.Definition?.id)}    Trait: {Format(c.Trait)}", 17, UITemporaryTheme.TextSecondary, 32);
+            AddText(_body, "Class", $"Class/Job: {Format(c.Definition?.id)}", 17, UITemporaryTheme.TextSecondary, 32);
+
+            AddText(_body, "TraitsHeader", "TRAITS", 19, UITemporaryTheme.TextHighlight, 34);
+            AddText(_body, "Traits", $"Common: {Format(c.TraitCommon)}\nRare: {Format(c.TraitRare)}", 16, UITemporaryTheme.TextSecondary, 44);
 
             AddText(_body, "StatsHeader", "COMBAT STATS", 19, UITemporaryTheme.TextHighlight, 34);
             AddStat("Constitution", SafeStat(c, StatType.Constitution));
@@ -69,8 +73,15 @@ namespace GuildMaster.Runtime.UI.Character
             AddStat("Magic Defense", SafeStat(c, StatType.MagicDefense));
             AddStat("Immunity", SafeStat(c, StatType.ImmunityToStatus));
 
-            AddText(_body, "SkillsHeader", "SKILLS / EQUIPMENT", 19, UITemporaryTheme.TextHighlight, 34);
-            AddText(_body, "Skills", $"Active: {Format(c.Definition?.ActiveSkill)}\nPassive: {Format(c.Definition?.PassiveSkill)}", 16, UITemporaryTheme.TextSecondary, 44);
+            AddText(_body, "SkillsHeader", "SKILLS", 19, UITemporaryTheme.TextHighlight, 34);
+            var activeSkillDef = _services.Skill?.GetByEnumConstant(c.Definition?.ActiveSkill);
+            var passiveSkillDef = _services.Skill?.GetByEnumConstant(c.Definition?.PassiveSkill);
+            AddText(_body, "Skills",
+                $"Active: {(activeSkillDef != null ? Format(activeSkillDef.id) : Format(c.Definition?.ActiveSkill))}\n" +
+                $"Passive: {(passiveSkillDef != null ? Format(passiveSkillDef.id) : Format(c.Definition?.PassiveSkill))}",
+                16, UITemporaryTheme.TextSecondary, 44);
+
+            AddText(_body, "EquipmentHeader", "EQUIPMENT", 19, UITemporaryTheme.TextHighlight, 34);
             AddEquipmentSummary(c);
             var pets = _services.Pet?.GetCharacterPets(c.InstanceId);
             AddText(_body, "Pet", $"Pet: {(pets != null && pets.Count > 0 ? string.Join(", ", pets.Select(p => Format(p.DefinitionId))) : "None equipped")}", 16, UITemporaryTheme.TextSecondary, 30);
@@ -78,7 +89,44 @@ namespace GuildMaster.Runtime.UI.Character
             AddButton(_body, "Equipment", "Equipment", () => ShowEquipment(), true);
             AddButton(_body, "Promotion", "Promotion", () => ShowPromotion(), true);
             AddButton(_body, "Doctrine", "Doctrine", () => ShowDoctrine(), true);
+            
+            string dismissReason = string.Empty;
+            bool canDismiss = _services.Character != null && _services.Character.CanDismissCharacter(c.InstanceId, out dismissReason);
+            string dismissLabel = canDismiss ? "Dismiss Hero" : "Dismiss (" + (string.IsNullOrEmpty(dismissReason) ? "Unavailable" : dismissReason) + ")";
+            AddButton(_body, "Dismiss", dismissLabel, () => ConfirmDismiss(c), canDismiss);
+
             AddButton(_body, "Back", "Back to Adventurers", () => _roster?.ReturnToRoster(), true);
+        }
+
+        private void ConfirmDismiss(CharacterRuntime character)
+        {
+            if (character == null) return;
+            string name = Format(character.Definition?.id ?? character.InstanceId);
+
+            var overlay = CreateOverlay("ConfirmDismissOverlay");
+            var body = CreateScrollBody(overlay.transform);
+            AddText(body, "Title", "DISMISS HERO", 28, LegacyUITheme.Failure, 52);
+            AddText(body, "Message", $"Are you sure you want to dismiss {name} (Lv.{character.Level})?\n\nEquipped items will be unlocked and returned to inventory.", 16, LegacyUITheme.DimWhite, 80, true);
+
+            AddButton(body, "ConfirmDismiss", "YES, DISMISS HERO", () =>
+            {
+                if (_services.Character.DismissCharacter(character.InstanceId, out string errorReason))
+                {
+                    _services.Save.Save(out _);
+                    Destroy(overlay);
+                    Close();
+                    _roster?.Refresh();
+                }
+                else
+                {
+                    Debug.LogWarning("[CharacterDetailPanel] Dismiss failed: " + errorReason);
+                }
+            }, true);
+
+            AddButton(body, "CancelDismiss", "CANCEL", () =>
+            {
+                Destroy(overlay);
+            }, true);
         }
 
         private void ShowEquipment()
@@ -145,34 +193,44 @@ namespace GuildMaster.Runtime.UI.Character
             _overlay = CreateOverlay("PromotionOverlay");
             _body = CreateScrollBody(_overlay.transform);
             AddText(_body, "Title", "PROMOTION", 28, UITemporaryTheme.TextHighlight, 52);
-            AddText(_body, "Current", $"Current rank: {Mathf.Max(0, _character.AscensionLevel)}    Level: {_character.Level}", 18, UITemporaryTheme.TextPrimary, 36);
+            AddText(_body, "Current", $"Level: {_character.Level}/{_character.Definition?.MaxLevel ?? 0}    {(_character.IsAscended ? "Ascended" : "Not ascended")}", 18, UITemporaryTheme.TextPrimary, 36);
 
             var saveCharacter = _services.Save.CurrentData?.Characters?.FirstOrDefault(x => x.InstanceId == _character.InstanceId);
-            var promotions = saveCharacter == null ? Array.Empty<PromotionDefinition>() : _services.Promotion.GetAvailablePromotions(saveCharacter).ToArray();
-            if (promotions.Length == 0)
+            var choices = saveCharacter == null ? Array.Empty<AdventurerDefinition>() : _services.Promotion.GetPromotionChoices(saveCharacter).ToArray();
+            bool canAscend = saveCharacter != null && _services.Promotion.CanAscend(saveCharacter);
+
+            if (choices.Length == 0 && !canAscend)
             {
-                AddText(_body, "Locked", "No eligible promotion returned by PromotionService.", 16, UITemporaryTheme.TextSecondary, 40);
+                int required = _character.Definition?.MaxLevel ?? 0;
+                AddText(_body, "Locked", $"Reach level {required} to unlock promotion.", 16, UITemporaryTheme.TextSecondary, 40);
                 AddButton(_body, "PromotionUnavailable", "Promotion unavailable", null, false);
+            }
+            else if (canAscend)
+            {
+                // Java: a final-tier class (no NextClasses) at MaxLevel resets to the hero's base
+                // class with the permanent Ascended flag instead of offering more choices.
+                AddText(_body, "AscendInfo", "This class has no further promotions. Ascending resets the hero to its base class, permanently, with a stat bonus and Doctrine unlocked.", 15, LegacyUITheme.DimWhite, 60, true);
+                AddButton(_body, "Ascend", "Ascend", () =>
+                {
+                    if (_services.Promotion.Ascend(saveCharacter))
+                    {
+                        _character = _services.Character.GetAllCharacters().FirstOrDefault(x => x.InstanceId == _character.InstanceId) ?? _character;
+                        _roster.Refresh();
+                        ShowPromotion();
+                    }
+                }, true);
             }
             else
             {
-                foreach (var promo in promotions)
+                foreach (var choice in choices)
                 {
-                    var captured = promo;
-                    bool can = _services.Promotion.CanPromote(saveCharacter, promo.id);
-                    int owned = string.IsNullOrEmpty(promo.RequiredItemId) ? 0 : _services.Inventory.GetQuantityByDefinitionId(promo.RequiredItemId);
-                    string req = string.IsNullOrEmpty(promo.RequiredItemId) ? "No item requirement" : $"{Format(promo.RequiredItemId)}: {owned}/{promo.RequiredItemCount}";
-                    AddText(_body, "Next_" + promo.id, $"Next: {Format(promo.TierName)} (Tier {promo.TierIndex})\nRequired level: {promo.RequiredLevel}", 17, LegacyUITheme.DimWhite, 52);
-                    if (!string.IsNullOrEmpty(promo.RequiredItemId))
-                    {
-                        var requirement = AddRow(_body, "Requirement_" + promo.id, 54);
-                        var requirementIcon = CreateImage(requirement.transform, "Icon", 42);
-                        requirementIcon.sprite = LegacySpriteRegistry.GetItemSprite(promo.RequiredItemId);
-                        requirementIcon.preserveAspect = true;
-                        AddText(requirement.transform, "Text", req, 15, can ? LegacyUITheme.DimWhite : LegacyUITheme.Failure, 42, true);
-                    }
-                    else AddText(_body, "Requirement_" + promo.id, req, 15, LegacyUITheme.DimWhite, 28);
-                    AddButton(_body, "Promote_" + promo.id, can ? "Promote" : "Promotion unavailable", () =>
+                    var captured = choice;
+                    var row = AddRow(_body, "Choice_" + choice.id, 66);
+                    var icon = CreateImage(row.transform, "Icon", 52);
+                    icon.sprite = LegacySpriteRegistry.GetUnitSprite(choice.id);
+                    icon.preserveAspect = true;
+                    AddText(row.transform, "Name", Format(choice.id) + $" (MaxLv.{choice.MaxLevel})", 17, LegacyUITheme.DimWhite, 52, true);
+                    AddButton(_body, "Promote_" + choice.id, "Promote to " + Format(choice.id), () =>
                     {
                         if (_services.Promotion.Promote(saveCharacter, captured.id))
                         {
@@ -180,7 +238,7 @@ namespace GuildMaster.Runtime.UI.Character
                             _roster.Refresh();
                             ShowPromotion();
                         }
-                    }, can);
+                    }, true);
                 }
             }
             AddButton(_body, "Back", "Back to Detail", () => Open(_character), true);

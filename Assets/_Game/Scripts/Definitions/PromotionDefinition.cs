@@ -2,20 +2,21 @@ using System;
 
 namespace GuildMaster.Definitions
 {
+    /// <summary>
+    /// Phase 1 audit finding: Java has NO data table for promotion at all (no promotions.json
+    /// ever existed in this project either — GetAll&lt;PromotionDefinition&gt;() always returned an
+    /// empty list). A "promotion" in Legacy is just picking one of the current
+    /// AdventurerDefinition's own <see cref="AdventurerDefinition.NextClasses"/> once
+    /// <see cref="AdventurerDefinition.MaxLevel"/> is reached (DialogEntityDetail.
+    /// dialogAdventurerPromotion/promote/ascend, DialogPromotionChoices.java) — no item is
+    /// consumed and no separate "tier" record exists. RequiredItemId/RequiredItemCount/
+    /// StatMultiplier/TierName/TierIndex (removed here) were fabricated; see
+    /// Docs/Backend_Audit/phase1_audit_report.md. This class is kept as an unused, empty shell
+    /// (rather than deleted) purely to avoid touching anything that might still reference the
+    /// type name; PromotionService.cs no longer reads from it.
+    /// </summary>
     [Serializable]
     public class PromotionDefinition : DefinitionBase
     {
-        /// <summary>Stat requirement to qualify for this promotion tier.</summary>
-        public int RequiredLevel;
-        /// <summary>Item ID consumed on promotion.</summary>
-        public string RequiredItemId;
-        /// <summary>How many of the required item are consumed.</summary>
-        public int RequiredItemCount = 1;
-        /// <summary>Stat multiplier applied to this character after promotion.</summary>
-        public float StatMultiplier = 1.1f;
-        /// <summary>Display name of this tier (e.g. "Bronze", "Silver", "Gold").</summary>
-        public string TierName = "Promotion";
-        /// <summary>Visual index for tier badge/sprites.</summary>
-        public int TierIndex;
     }
 }

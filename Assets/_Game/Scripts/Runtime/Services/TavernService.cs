@@ -17,20 +17,25 @@ namespace GuildMaster.Runtime.Services
         private readonly ICharacterService _characterService;
         private readonly IInventoryService _inventoryService;
         private readonly GameDatabase _database;
+        private readonly ITraitService _traitService;
         private readonly Random _random = new Random();
+        private const string StartingHeroClassId = "footman";
+        private static readonly string[] VisitorClassPool = { "footman", "rogue", "archer", "apprentice" };
 
         public TavernService(
-            ISaveService saveService, 
-            IFormulaService formulaService, 
-            ICharacterService characterService, 
+            ISaveService saveService,
+            IFormulaService formulaService,
+            ICharacterService characterService,
             IInventoryService inventoryService,
-            GameDatabase database)
+            GameDatabase database,
+            ITraitService traitService = null)
         {
             _saveService = saveService ?? throw new ArgumentNullException(nameof(saveService));
             _formulaService = formulaService ?? throw new ArgumentNullException(nameof(formulaService));
             _characterService = characterService ?? throw new ArgumentNullException(nameof(characterService));
             _inventoryService = inventoryService;
             _database = database ?? throw new ArgumentNullException(nameof(database));
+            _traitService = traitService ?? new TraitService(database);
         }
 
         public int GetTavernCapacity()
@@ -77,70 +82,94 @@ namespace GuildMaster.Runtime.Services
             if (!CanRecruit()) return false;
 
             var guestData = guests[index];
+            if (guestData == null || !_database.TryGet<AdventurerDefinition>(guestData.DefinitionId, out _)) return false;
             guests.RemoveAt(index);
 
-            newCharacter = _characterService.RecruitCharacter(guestData);
-            return true;
+            try
+            {
+                newCharacter = _characterService.RecruitCharacter(guestData);
+                if (newCharacter == null)
+                {
+                    guests.Insert(index, guestData);
+                    return false;
+                }
+
+                // Recruitment is a real save boundary in Legacy. The visitor and the new
+                // character must survive closing the dialog or a subsequent reload.
+                _saveService.Save(out _);
+                return true;
+            }
+            catch
+            {
+                // Do not silently lose a visitor if CharacterService rejects malformed data.
+                guests.Insert(index, guestData);
+                throw;
+            }
         }
 
         private string RollClass()
         {
-            double rand = _random.NextDouble();
-            return rand < 0.25d ? "footman" : rand < 0.5d ? "rogue" : rand < 0.75d ? "archer" : "apprentice";
+            return VisitorClassPool[_random.Next(VisitorClassPool.Length)];
         }
 
-        private string RollCommonTrait()
-        {
-            double rand = _random.NextDouble();
-            if (rand < 0.13333333333333333d) return "BOOKWORM";
-            if (rand < 0.26666666666666666d) return "BRUTE";
-            if (rand < 0.4d) return "FERAL";
-            return null;
-        }
-
-        private string RollRareTrait()
-        {
-            double rand = _random.NextDouble();
-            if (rand < 0.014285714285714285d) return "EMPATHETIC";
-            if (rand < 0.028571428571428574d) return "GIFTED";
-            if (rand < 0.04285714285714286d) return "INTIMIDATING";
-            if (rand < 0.05714285714285715d) return "FOCUSED";
-            if (rand < 0.07142857142857144d) return "DRAGON_BLOOD";
-            if (rand < 0.08571428571428572d) return "CURSED";
-            if (rand < 0.1d) return "REACTIVE";
-            return null;
-        }
-
-
+        // Phase 1: trait rolling moved to TraitService (Docs/Backend_Audit/phase1_audit_report.md).
+        // Java's Utils.generateVisitor() rolls traitCommon AND traitRare INDEPENDENTLY for every
+        // randomly-generated guest (Adventurer.getInstance(..., rollCommonTrait(), rollRareTrait(),
+        // ...)) — a guest can have both at once, or either, or neither. The old code here treated
+        // them as mutually exclusive (one Trait field, common OR rare) which was wrong.
 
         public void GenerateVisitor()
         {
-            var data = _saveService.CurrentData;
-            string classId = "footman";
-            string trait = null;
+            GenerateVisitorInternal(null);
+        }
 
-            if (data.TutorialStep <= 1)
-            {
-                classId = "footman";
-            }
-            else if (data.TutorialStep == 6)
-            {
-                classId = "light_disciple";
-                trait = "BOOKWORM";
-            }
-            else if (data.TutorialStep == 7)
-            {
-                classId = "archer";
-                trait = "FERAL";
-                data.TutorialStep = 8;
-                // AchievementsUtils.unlock(AchievementsUtils.ACHIEVEMENT_GUILD_MANAGEMENT_101);
-            }
-            else
-            {
-                classId = RollClass();
-                trait = RollCommonTrait();
-                if (trait == null) trait = RollRareTrait();
-            }
+        public bool CreateInitialStartingHero(out CharacterRuntime newCharacter)
+        {
+            newCharacter = null;
+            GenerateVisitorInternal(StartingHeroClassId);
+            return RecruitGuest(0, out newCharacter) && newCharacter != null;
+        }
+
+        public void GenerateInitialVisitor()
+        {
+            var eligibleClasses = VisitorClassPool
+                .Where(id => !string.Equals(id, StartingHeroClassId, StringComparison.OrdinalIgnoreCase))
+                .ToArray();
+            if (eligibleClasses.Length == 0)
+                throw new InvalidOperationException("No eligible non-Footman Tavern class exists for the first visitor.");
+
+            // One uniform roll across Rogue, Archer and Apprentice. This method is only used
+            // during fresh-save initialization; normal refreshes remain unchanged.
+            GenerateVisitorInternal(eligibleClasses[_random.Next(eligibleClasses.Length)]);
+        }
+
+#if UNITY_EDITOR
+        /// <summary>
+        /// Developer-only deterministic class override. It still uses the normal visitor
+        /// trait, starter-weapon identity, capacity and save flow. Production Tavern generation
+        /// never calls this method.
+        /// </summary>
+        public void GenerateVisitorForDeveloper(string classId)
+        {
+            if (string.IsNullOrEmpty(classId) ||
+                !VisitorClassPool.Contains(classId, StringComparer.OrdinalIgnoreCase))
+                throw new ArgumentException($"Developer visitor class '{classId}' is not in the normal Tavern class pool.", nameof(classId));
+
+            GenerateVisitorInternal(classId);
+        }
+
+        public IReadOnlyList<string> GetDeveloperVisitorClassPool()
+        {
+            return Array.AsReadOnly(VisitorClassPool);
+        }
+#endif
+
+        private void GenerateVisitorInternal(string forcedClassId)
+        {
+            var data = _saveService.CurrentData;
+            string classId = string.IsNullOrEmpty(forcedClassId) ? RollClass() : forcedClassId;
+            string traitCommon = _traitService.RollCommonTrait();
+            string traitRare = _traitService.RollRareTrait();
 
             if (!_database.TryGet<AdventurerDefinition>(classId, out var def))
             {
@@ -157,24 +186,19 @@ namespace GuildMaster.Runtime.Services
                 Level = 1,
                 Exp = 0,
                 CurrentHp = def.BaseMaxHp,
-                Trait = trait ?? string.Empty
+                TraitCommon = traitCommon ?? string.Empty,
+                TraitRare = traitRare ?? string.Empty,
+                Trait = traitCommon ?? string.Empty
             };
 
             string defaultWeapon = def.StarterWeaponId;
-            if (!string.IsNullOrEmpty(defaultWeapon) && _inventoryService != null)
+            if (!string.IsNullOrEmpty(defaultWeapon) && _database.TryGet<ItemDefinition>(defaultWeapon, out _))
             {
-                if (_database.TryGet<ItemDefinition>(defaultWeapon, out var itemDef))
-                {
-                    if (_inventoryService.CanAddItem(defaultWeapon))
-                    {
-                        var weaponItem = new ItemRuntime(Guid.NewGuid().ToString(), itemDef, 1)
-                        {
-                            IsLocked = true
-                        };
-                        _inventoryService.AddItem(weaponItem);
-                        guestData.WeaponInstanceId = weaponItem.InstanceId;
-                    }
-                }
+                // Legacy visitors carry the starter-weapon identity, but the item is
+                // not owned by the player until recruitment. Creating an ItemRuntime
+                // or touching InventoryService here leaks equipment for un-recruited
+                // and expired visitors.
+                guestData.WeaponInstanceId = Guid.NewGuid().ToString();
             }
 
             // Insert at beginning (recovered rule TR-06)
@@ -188,7 +212,9 @@ namespace GuildMaster.Runtime.Services
                 if (!string.IsNullOrEmpty(removedGuest.WeaponInstanceId) && _inventoryService != null)
                 {
                     var item = _inventoryService.GetItem(removedGuest.WeaponInstanceId);
-                    if (item != null)
+                    // Clean up only pre-fix leaked visitor items. A current visitor has
+                    // no runtime item until recruitment, so this branch is normally a no-op.
+                    if (item != null && _inventoryService.GetAllItems().Any(i => i.InstanceId == item.InstanceId))
                     {
                         _inventoryService.RemoveItem(removedGuest.WeaponInstanceId, item.StackCount);
                     }

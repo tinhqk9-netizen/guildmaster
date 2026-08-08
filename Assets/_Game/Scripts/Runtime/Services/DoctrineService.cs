@@ -1,4 +1,7 @@
 using System;
+using System.Linq;
+using GuildMaster.Database;
+using GuildMaster.Definitions;
 using GuildMaster.Runtime.Formulas;
 using GuildMaster.Runtime.Save;
 
@@ -8,11 +11,13 @@ namespace GuildMaster.Runtime.Services
     {
         private readonly ISaveService _saveService;
         private readonly IFormulaService _formulaService;
+        private readonly GameDatabase _database;
 
-        public DoctrineService(ISaveService saveService, IFormulaService formulaService)
+        public DoctrineService(ISaveService saveService, IFormulaService formulaService, GameDatabase database = null)
         {
             _saveService = saveService ?? throw new ArgumentNullException(nameof(saveService));
             _formulaService = formulaService ?? throw new ArgumentNullException(nameof(formulaService));
+            _database = database;
         }
 
         public int GetLevel(string doctrineName)
@@ -109,6 +114,88 @@ namespace GuildMaster.Runtime.Services
         public bool IsMaxed()
         {
             return _saveService.CurrentData.DoctrineMaxed;
+        }
+
+        // ---------------------------------------------------------------------------------
+        // Phase 2A: per-node progression (Java: Doctrine.l1..l6).
+        // ---------------------------------------------------------------------------------
+
+        private DoctrineNodeDefinition FindNodeDef(string doctrineId, string nodeId)
+        {
+            if (_database == null || string.IsNullOrEmpty(doctrineId) || string.IsNullOrEmpty(nodeId)) return null;
+            if (!_database.TryGet<DoctrineDefinition>(doctrineId.ToLowerInvariant(), out var doctrineDef)) return null;
+            return doctrineDef.Nodes?.FirstOrDefault(n => n.NodeId == nodeId);
+        }
+
+        private DoctrineNodeSaveData FindOrCreateNodeSave(string doctrineId, string nodeId)
+        {
+            var data = _saveService.CurrentData;
+            if (data.DoctrineNodes == null) data.DoctrineNodes = new System.Collections.Generic.List<DoctrineNodeSaveData>();
+
+            var node = data.DoctrineNodes.FirstOrDefault(n =>
+                string.Equals(n.DoctrineId, doctrineId, StringComparison.OrdinalIgnoreCase) &&
+                string.Equals(n.NodeId, nodeId, StringComparison.OrdinalIgnoreCase));
+
+            if (node == null)
+            {
+                node = new DoctrineNodeSaveData { DoctrineId = doctrineId, NodeId = nodeId, Level = 0 };
+                data.DoctrineNodes.Add(node);
+            }
+            return node;
+        }
+
+        public int GetNodeLevel(string doctrineId, string nodeId)
+        {
+            if (string.IsNullOrEmpty(doctrineId) || string.IsNullOrEmpty(nodeId)) return 0;
+            var data = _saveService.CurrentData;
+            if (data.DoctrineNodes == null) return 0;
+
+            var node = data.DoctrineNodes.FirstOrDefault(n =>
+                string.Equals(n.DoctrineId, doctrineId, StringComparison.OrdinalIgnoreCase) &&
+                string.Equals(n.NodeId, nodeId, StringComparison.OrdinalIgnoreCase));
+            return node?.Level ?? 0;
+        }
+
+        public bool CanUpgradeNode(string doctrineId, string nodeId)
+        {
+            var def = FindNodeDef(doctrineId, nodeId);
+            if (def == null) return false;
+            int current = GetNodeLevel(doctrineId, nodeId);
+            return current < def.MaxLevel;
+        }
+
+        public bool UpgradeNode(string doctrineId, string nodeId)
+        {
+            if (!CanUpgradeNode(doctrineId, nodeId)) return false;
+            var node = FindOrCreateNodeSave(doctrineId, nodeId);
+            node.Level++;
+            return true;
+        }
+
+        public int GetNodeEffectValue(string doctrineId, string nodeId)
+        {
+            var def = FindNodeDef(doctrineId, nodeId);
+            if (def == null) return 0;
+            int level = GetNodeLevel(doctrineId, nodeId);
+            return (int)(level * def.IncreasePerLevel);
+        }
+
+        public int GetAggregateAbilityValue(string abilityTypeId)
+        {
+            if (_database == null || string.IsNullOrEmpty(abilityTypeId)) return 0;
+            int total = 0;
+            foreach (var doctrineDef in _database.GetAll<DoctrineDefinition>())
+            {
+                if (doctrineDef.Nodes == null) continue;
+                foreach (var node in doctrineDef.Nodes)
+                {
+                    if (node.AbilityType == abilityTypeId)
+                    {
+                        total += GetNodeEffectValue(doctrineDef.id, node.NodeId);
+                    }
+                }
+            }
+            return total;
         }
     }
 }

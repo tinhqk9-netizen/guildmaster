@@ -9,14 +9,20 @@ namespace GuildMaster.Runtime.Services
         private readonly ISaveService _saveService;
         private readonly ICraftService _craftService;
         private readonly IMerchantService _merchantService;
+        private readonly IDungeonService _dungeonService;
 
         private const long Cap12Hours = 12 * 3600;
 
-        public OfflineProgressService(ISaveService saveService, ICraftService craftService, IMerchantService merchantService)
+        public OfflineProgressService(
+            ISaveService saveService,
+            ICraftService craftService,
+            IMerchantService merchantService,
+            IDungeonService dungeonService = null)
         {
             _saveService = saveService ?? throw new ArgumentNullException(nameof(saveService));
             _craftService = craftService ?? throw new ArgumentNullException(nameof(craftService));
             _merchantService = merchantService ?? throw new ArgumentNullException(nameof(merchantService));
+            _dungeonService = dungeonService;
         }
 
         public long CalculateOfflineDeltaSeconds(long lastSaveUnix, long currentUnix)
@@ -30,35 +36,31 @@ namespace GuildMaster.Runtime.Services
 
         public OfflineProgressResult ApplyOfflineProgress(long currentUnix)
         {
-            var metadata = _saveService.CurrentData?.Metadata;
-            if (metadata == null) 
+            var data = _saveService.CurrentData;
+            var metadata = data?.Metadata;
+            if (data == null || metadata == null)
             {
                 return new OfflineProgressResult { Success = false, DeltaSeconds = 0, DispatchDeferred = false };
             }
 
-            long delta = CalculateOfflineDeltaSeconds(metadata.SaveTimeUnix, currentUnix);
-            
-            // Save new last access time
-            metadata.SaveTimeUnix = currentUnix;
+            // LastAccess is the Java runtime marker. Metadata.SaveTimeUnix is kept as a
+            // compatibility fallback for older saves that predate LastAccess.
+            long lastTimestamp = data.LastAccess > 0 ? data.LastAccess : metadata.SaveTimeUnix;
+            long delta = CalculateOfflineDeltaSeconds(lastTimestamp, currentUnix);
 
             if (delta > 0)
             {
-                // Dispatch to safe services (Craft and Merchant queues)
                 _craftService.ProgressWorkshop(delta);
                 _merchantService.ProgressMarket(delta);
-
-                // Dungeon tick deferred: No safe background dungeon loop implemented yet.
-                // Combat / Quest offline logic deferred.
-                
-                return new OfflineProgressResult 
-                { 
-                    Success = true, 
-                    DeltaSeconds = delta, 
-                    DispatchDeferred = true 
-                };
+                _dungeonService?.FastForward(delta);
             }
 
-            return new OfflineProgressResult { Success = true, DeltaSeconds = 0, DispatchDeferred = false };
+            // Advance timestamps only after all simulations have run. GameLoopService owns
+            // the single final Save call; this service deliberately does not write to disk.
+            data.LastAccess = currentUnix;
+            metadata.SaveTimeUnix = currentUnix;
+
+            return new OfflineProgressResult { Success = true, DeltaSeconds = delta, DispatchDeferred = false };
         }
     }
 }

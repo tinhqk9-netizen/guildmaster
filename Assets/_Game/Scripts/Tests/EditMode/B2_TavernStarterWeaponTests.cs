@@ -80,35 +80,27 @@ namespace GuildMaster.Tests
         }
 
         [Test]
-        public void B2_GenerateVisitor_AddsStarterWeaponToInventoryRuntime()
+        public void B2_GenerateVisitor_DoesNotAddStarterWeaponToInventory()
         {
             var container = BuildContainer();
-            
             Assert.AreEqual(0, container.Inventory.GetAllItems().Count, "Inventory should be empty initially");
             
-            container.Tavern.GenerateVisitor();
+            ((TavernService)container.Tavern).GenerateVisitorForDeveloper("archer");
 
             var guests = container.Tavern.GetGuests();
             Assert.AreEqual(1, guests.Count, "Guest should be generated");
             var guest = guests[0];
 
-            if (string.IsNullOrEmpty(guest.WeaponInstanceId))
-            {
-                Assert.Inconclusive("Generated guest has no starter weapon. Run test again or mock the definition.");
-            }
-
-            Assert.IsTrue(container.Inventory.HasItem(guest.WeaponInstanceId), "Inventory should have the guest's starter weapon at runtime");
-            
-            var item = container.Inventory.GetItem(guest.WeaponInstanceId);
-            Assert.IsNotNull(item);
-            Assert.IsTrue(item.IsLocked, "Starter weapon should be locked");
+            Assert.IsFalse(string.IsNullOrEmpty(guest.WeaponInstanceId), "Visitor should carry a starter weapon instance id");
+            Assert.IsFalse(container.Inventory.GetAllItems().Any(i => i.InstanceId == guest.WeaponInstanceId),
+                "A visitor's starter weapon must not be visible in inventory before recruitment");
         }
 
         [Test]
         public void B2_RecruitGuest_WeaponStillInInventory()
         {
             var container = BuildContainer();
-            container.Tavern.GenerateVisitor();
+            ((TavernService)container.Tavern).GenerateVisitorForDeveloper("archer");
 
             var guest = container.Tavern.GetGuests()[0];
             string weaponId = guest.WeaponInstanceId;
@@ -122,47 +114,24 @@ namespace GuildMaster.Tests
             Assert.IsNotNull(character, "Character should not be null");
             Assert.AreEqual(weaponId, character.Weapon?.InstanceId, "Character should retain the weapon instance ID");
             
-            Assert.IsTrue(container.Inventory.HasItem(weaponId), "Weapon should still exist in InventoryService runtime after recruitment");
+            Assert.IsNotNull(container.Inventory.GetItem(weaponId), "Weapon ownership record should exist after recruitment");
+            Assert.IsFalse(container.Inventory.GetAllItems().Any(i => i.InstanceId == weaponId),
+                "Equipped starter weapon must not remain in the visible inventory");
         }
 
         [Test]
-        public void B2_TavernCapacityExceeded_DeletesWeaponFromInventory()
+        public void B2_TavernCapacityExceeded_DoesNotLeakVisitorWeapons()
         {
             var container = BuildContainer();
             var tavernService = container.Tavern;
             int maxCap = tavernService.GetTavernCapacity();
-            
-            List<string> weaponIds = new List<string>();
 
-            // Generate enough visitors to exceed capacity
             for (int i = 0; i < maxCap + 1; i++)
-            {
                 tavernService.GenerateVisitor();
-                if (tavernService.GetGuests().Count > 0)
-                {
-                    var newestGuest = tavernService.GetGuests()[0]; // Inserted at 0
-                    if (!string.IsNullOrEmpty(newestGuest.WeaponInstanceId))
-                    {
-                        weaponIds.Insert(0, newestGuest.WeaponInstanceId);
-                    }
-                }
-            }
 
             Assert.AreEqual(maxCap, tavernService.GetGuests().Count, "Guests should be trimmed to max capacity");
-            
-            // Verify all current guests' weapons are in the inventory.
-            foreach (var guest in tavernService.GetGuests())
-            {
-                if (!string.IsNullOrEmpty(guest.WeaponInstanceId))
-                {
-                    Assert.IsTrue(container.Inventory.HasItem(guest.WeaponInstanceId), "Retained guest weapon should be in inventory");
-                }
-            }
-
-            // Verify there are no orphaned items in the inventory.
-            var allItemsCount = container.Inventory.GetAllItems().Count;
-            var expectedItemsCount = tavernService.GetGuests().Count(g => !string.IsNullOrEmpty(g.WeaponInstanceId));
-            Assert.AreEqual(expectedItemsCount, allItemsCount, "Inventory items count should strictly match the number of retained guest weapons.");
+            Assert.AreEqual(0, container.Inventory.GetAllItems().Count,
+                "Inventory must not contain starter weapons for un-recruited visitors.");
         }
     }
 }

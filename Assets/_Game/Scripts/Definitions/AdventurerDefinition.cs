@@ -30,6 +30,21 @@ namespace GuildMaster.Definitions
         public string PassiveSkill;
         public string ActiveSkill;
 
+        // Portrait sprite id (Java: imageId, e.g. "unit_apprentice" from R.drawable.unit_apprentice).
+        // Restored in Phase 1 via a narrow regex extraction of all 116
+        // adventurers/units/*.java configureStatistics() bodies (Docs/Backend_Audit/phase1_audit_report.md).
+        public string ImageId;
+
+        // Java: idDescription (R.string.*). Raw resource key, not translated text — same
+        // convention as SkillDefinition.NameKey/DescriptionKey (no localization table exists
+        // in this project yet). "nameKey" itself lives on DefinitionBase.
+        public string descriptionKey;
+
+        // Java: potionDrinkerType (a real, simple enum field — not a complex mechanic).
+        // Restored as its own field per Phase 0; the old field below is left in place
+        // unreferenced elsewhere so nothing else needs to change.
+        public string PotionDrinkerType;
+
         // Complex field from Java that has no port yet.
         public string ManualRuleRequired_PotionDrinkerType;
     }

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using GuildMaster.Runtime.Models;
 using GuildMaster.Runtime.Services;
+using GuildMaster.Runtime.UI.Inventory;
 using GuildMaster.Runtime.UI.Legacy;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,13 +15,15 @@ namespace GuildMaster.Runtime.UI.Headquarters
     /// delegates every mutation to the real backend services). Shows the full GetAllItems() list
     /// in a 5-column grid. No storage-upgrade action exists here: IInventoryService exposes no
     /// upgrade method and no cost formula was found in FormulaService, so this dialog is
-    /// capacity-display-only (see phase_5c report, "Known limitations").
+    /// Capacity upgrades are delegated to IInventoryService and use the legacy formula.
     /// </summary>
     public sealed class StorageDialog : MonoBehaviour
     {
         [Header("Header")]
         [SerializeField] private Text _titleText;
         [SerializeField] private Text _capacityText;
+        [SerializeField] private Text _upgradeInfoText;
+        [SerializeField] private Button _upgradeButton;
         [SerializeField] private Button _closeButton;
 
         [Header("Grid")]
@@ -48,6 +51,12 @@ namespace GuildMaster.Runtime.UI.Headquarters
                 _closeButton.onClick.AddListener(() => _onClose?.Invoke());
             }
 
+            if (_upgradeButton != null)
+            {
+                _upgradeButton.onClick.RemoveAllListeners();
+                _upgradeButton.onClick.AddListener(OnUpgradeClicked);
+            }
+
             if (_itemDetailPanel != null)
             {
                 _itemDetailPanel.Setup(_services, onClose: CloseItemDetail, onItemChanged: OnItemChanged);
@@ -63,9 +72,44 @@ namespace GuildMaster.Runtime.UI.Headquarters
 
             var allItems = _services.Inventory.GetAllItems();
             int capacity = _services.Inventory.GetCapacity();
-            if (_capacityText != null) _capacityText.text = $"{allItems.Count} / {capacity}";
+            var characters = _services.Character?.GetAllCharacters();
+            int equippedCount = InventoryOwnershipPresentation.CountEquippedInstances(characters);
+            if (_capacityText != null)
+                _capacityText.text = $"Available: {allItems.Count} / {capacity} • Equipped: {equippedCount}";
 
-            BuildGrid(allItems);
+            RefreshUpgrade();
+
+            BuildGrid(allItems, characters);
+        }
+
+        private void RefreshUpgrade()
+        {
+            if (_upgradeButton == null) return;
+
+            int level = _services.Inventory.GetStorageLevel();
+            long price = _services.Inventory.GetUpgradeStorageCapacityPrice();
+            bool isMax = level >= 80;
+            bool canAfford = _services.Save.CurrentData.Money >= price;
+            _upgradeButton.interactable = !isMax && canAfford;
+
+            if (_upgradeInfoText != null)
+            {
+                _upgradeInfoText.text = isMax
+                    ? $"Capacity upgrade\nLevel {level} • MAX"
+                    : $"Capacity upgrade\nLevel {level} • Next cost: {price}g";
+            }
+
+            var label = _upgradeButton.GetComponentInChildren<Text>();
+            if (label != null) label.text = isMax ? "Max Capacity" : "Upgrade";
+        }
+
+        private void OnUpgradeClicked()
+        {
+            if (_services?.Inventory == null) return;
+            if (_services.Inventory.UpgradeStorageCapacity())
+                OnItemChanged();
+            else
+                RefreshUpgrade();
         }
 
         /// <summary>Called by the Item Detail panel after a successful Equip/Use/Sell action.</summary>
@@ -77,7 +121,7 @@ namespace GuildMaster.Runtime.UI.Headquarters
 
         // ── Grid ─────────────────────────────────────────────────────────────────
 
-        private void BuildGrid(IReadOnlyList<ItemRuntime> items)
+        private void BuildGrid(IReadOnlyList<ItemRuntime> items, IReadOnlyList<CharacterRuntime> characters)
         {
             if (_gridContent == null) return;
             for (int i = _gridContent.childCount - 1; i >= 0; i--)
@@ -85,11 +129,12 @@ namespace GuildMaster.Runtime.UI.Headquarters
 
             foreach (var item in items)
             {
-                CreateSlot(item);
+                var counts = InventoryOwnershipPresentation.ForDefinition(item?.Definition?.id, items, characters);
+                CreateSlot(item, counts.Available, counts.Equipped);
             }
         }
 
-        private void CreateSlot(ItemRuntime item)
+        private void CreateSlot(ItemRuntime item, int availableCount, int equippedCount)
         {
             var slot = new GameObject($"Slot_{item.Definition?.id ?? "unknown"}",
                 typeof(RectTransform), typeof(Image), typeof(Button));
@@ -132,6 +177,21 @@ namespace GuildMaster.Runtime.UI.Headquarters
                 qtyText.text = $"x{item.StackCount}";
                 qtyText.raycastTarget = false;
             }
+
+            var ownershipLabel = new GameObject("Ownership", typeof(RectTransform), typeof(Text));
+            ownershipLabel.transform.SetParent(slot.transform, false);
+            var ownershipRect = (RectTransform)ownershipLabel.transform;
+            ownershipRect.anchorMin = new Vector2(0.02f, 0.72f);
+            ownershipRect.anchorMax = new Vector2(0.98f, 0.98f);
+            ownershipRect.offsetMin = Vector2.zero;
+            ownershipRect.offsetMax = Vector2.zero;
+            var ownershipText = ownershipLabel.GetComponent<Text>();
+            ownershipText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+            ownershipText.fontSize = 13;
+            ownershipText.color = LegacyUITheme.DimWhite;
+            ownershipText.alignment = TextAnchor.UpperCenter;
+            ownershipText.text = $"A:{availableCount}  E:{equippedCount}";
+            ownershipText.raycastTarget = false;
 
             var button = slot.GetComponent<Button>();
             button.targetGraphic = border;

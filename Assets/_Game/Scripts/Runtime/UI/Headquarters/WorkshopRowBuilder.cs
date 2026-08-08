@@ -105,6 +105,8 @@ namespace GuildMaster.Runtime.UI.Headquarters
             image.color = LegacyUITheme.BrassBorder;
             var button = go.GetComponent<Button>();
             button.targetGraphic = image;
+            button.interactable = true;
+            button.onClick.RemoveAllListeners();
             button.onClick.AddListener(() => onClick());
 
             var textGo = new GameObject("Text", typeof(RectTransform), typeof(Text));
@@ -121,6 +123,9 @@ namespace GuildMaster.Runtime.UI.Headquarters
             text.color = LegacyUITheme.CardviewDarkBackground;
             text.alignment = TextAnchor.MiddleCenter;
             text.text = label;
+            // The Button owns the hit target. Keeping the child label out of the raycast
+            // prevents the generated Text graphic from swallowing pointer clicks on mobile.
+            text.raycastTarget = false;
             return go;
         }
 

@@ -114,7 +114,9 @@ namespace GuildMaster.Tests.EditMode
             {
                 IsAscended = false,
                 Level = 1,
-                Trait = "BRUTE" // 1.15 for CON
+                // Phase 1: trait multiplier now reads TraitCommon (Java has independent
+                // traitCommon/traitRare fields; only the common trait affects base stats).
+                TraitCommon = "BRUTE" // 1.15 for CON
             };
 
             // CON: DecodeMath.Round(10 * 1.15) = DecodeMath.Round(11.5) = (int)(11.5 + 0.0001) = 11

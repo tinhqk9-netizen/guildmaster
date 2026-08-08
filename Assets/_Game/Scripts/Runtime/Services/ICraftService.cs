@@ -9,6 +9,8 @@ namespace GuildMaster.Runtime.Services
         CraftResult CanCraft(string recipeId);
         CraftResult TryStartCraft(string recipeId);
         void ProgressWorkshop(long deltaSeconds);
+        long GetCraftDurationSeconds(ItemActionSaveData item);
+        bool CancelCraft(string instanceId);
         int GetMaxCraftable(string recipeId);
         bool ClaimCompletedCraft(string instanceId);
         int GetQueueCapacity();
@@ -19,5 +21,8 @@ namespace GuildMaster.Runtime.Services
         bool UpgradeQueueCapacity();
         long GetUpgradeQueueCapacityPrice();
         int GetQueueCapacityLevel();
+        bool UpgradeCraftSpeed();
+        long GetUpgradeCraftSpeedPrice();
+        int GetCraftSpeedLevel();
     }
 }

@@ -1,0 +1,327 @@
+DEV_TEST Craftable Recipe Report
+Generated: 2026-08-07T01:12:31.2504870+07:00
+
+AVAILABLE RECIPES
+✓ recipe_absolutezero -> absolutezero
+✓ recipe_abyssalcutlass -> abyssalcutlass
+✓ recipe_abyssalgoo -> abyssalgoo
+✓ recipe_abyssalingot -> abyssalingot
+✓ recipe_aegismechanica -> aegismechanica
+✓ recipe_amuletoftheswordsman -> amuletoftheswordsman
+✓ recipe_ancientarmor -> ancientarmor
+✓ recipe_ancientboots -> ancientboots
+✓ recipe_ancientgloves -> ancientgloves
+✓ recipe_ancientjacket -> ancientjacket
+✓ recipe_animatedbow -> animatedbow
+✓ recipe_animatedhelm -> animatedhelm
+✓ recipe_arcanedagger -> arcanedagger
+✓ recipe_archaicamulet -> archaicamulet
+✓ recipe_armorofthedryad -> armorofthedryad
+✓ recipe_armoroftheundying -> armoroftheundying
+✓ recipe_ascendedbow -> ascendedbow
+✓ recipe_bansheebow -> bansheebow
+✓ recipe_bansheedagger -> bansheedagger
+✓ recipe_bansheescream -> bansheescream
+✓ recipe_beastmasterjacket -> beastmasterjacket
+✓ recipe_beltjacket -> beltjacket
+✓ recipe_blackironarmor -> blackironarmor
+✓ recipe_blackironcutlass -> blackironcutlass
+✓ recipe_blackirondagger -> blackirondagger
+✓ recipe_blackirongauntlets -> blackirongauntlets
+✓ recipe_blackironhelm -> blackironhelm
+✓ recipe_bleakboots -> bleakboots
+✓ recipe_bleakgloves -> bleakgloves
+✓ recipe_breathtakingrobe -> breathtakingrobe
+✓ recipe_burningcenser -> burningcenser
+✓ recipe_burningeffigy -> burningeffigy
+✓ recipe_celestialarmor -> celestialarmor
+✓ recipe_celestialhelmet -> celestialhelmet
+✓ recipe_celestialmercy -> celestialmercy
+✓ recipe_ceremonialdagger -> ceremonialdagger
+✓ recipe_championarmor -> championarmor
+✓ recipe_cleansingpotion -> cleansingpotion
+✓ recipe_cloakofredemption -> cloakofredemption
+✓ recipe_containmentorb -> containmentorb
+✓ recipe_copperarmor -> copperarmor
+✓ recipe_copperhelmet -> copperhelmet
+✓ recipe_coppersword -> coppersword
+✓ recipe_cottontailjacket -> cottontailjacket
+✓ recipe_crimsonbrew -> crimsonbrew
+✓ recipe_crimsonleech -> crimsonleech
+✓ recipe_crushingdepth -> crushingdepth
+✓ recipe_crystaldagger -> crystaldagger
+✓ recipe_crystalstaff -> crystalstaff
+✓ recipe_cunningdemise -> cunningdemise
+✓ recipe_cursedbow -> cursedbow
+✓ recipe_cursedscepter -> cursedscepter
+✓ recipe_deathrayscepter -> deathrayscepter
+✓ recipe_deepseajacket -> deepseajacket
+✓ recipe_deepseavelvet -> deepseavelvet
+✓ recipe_diamondamulet -> diamondamulet
+✓ recipe_divineembryo -> divineembryo
+✓ recipe_divinelarvae -> divinelarvae
+✓ recipe_djinntonic -> djinntonic
+✓ recipe_dreamwroughtarmor -> dreamwroughtarmor
+✓ recipe_dreamwroughtboots -> dreamwroughtboots
+✓ recipe_dreamwroughtbow -> dreamwroughtbow
+✓ recipe_dreamwroughtgloves -> dreamwroughtgloves
+✓ recipe_dreamwroughtjacket -> dreamwroughtjacket
+✓ recipe_dryadsblessing -> dryadsblessing
+✓ recipe_dryadscurse -> dryadscurse
+✓ recipe_duelistarmor -> duelistarmor
+✓ recipe_eldritchmitre -> eldritchmitre
+✓ recipe_electriccatalyst -> electriccatalyst
+✓ recipe_elixirofaffinity -> elixirofaffinity
+✓ recipe_emeraldring -> emeraldring
+✓ recipe_enchantedstaff -> enchantedstaff
+✓ recipe_enlightedservant -> enlightedservant
+✓ recipe_essenceofcorruption -> essenceofcorruption
+✓ recipe_exoticboots -> exoticboots
+✓ recipe_fangdagger -> fangdagger
+✓ recipe_firecatalyst -> firecatalyst
+✓ recipe_fleetfootarmor -> fleetfootarmor
+✓ recipe_fleetfootboots -> fleetfootboots
+✓ recipe_fleetfootgloves -> fleetfootgloves
+✓ recipe_fleetfootjacket -> fleetfootjacket
+✓ recipe_fleetfootrobe -> fleetfootrobe
+✓ recipe_focusedscepter -> focusedscepter
+✓ recipe_frostmetalarmor -> frostmetalarmor
+✓ recipe_frostmetaldagger -> frostmetaldagger
+✓ recipe_frostmetalsword -> frostmetalsword
+✓ recipe_frozeneggpendant -> frozeneggpendant
+✓ recipe_frozenembrace -> frozenembrace
+✓ recipe_fullmoondagger -> fullmoondagger
+✓ recipe_gemofprotection -> gemofprotection
+✓ recipe_ghastlycuirass -> ghastlycuirass
+✓ recipe_ghastlyscimitar -> ghastlyscimitar
+✓ recipe_ghastlyshield -> ghastlyshield
+✓ recipe_ghostrabbitcloak -> ghostrabbitcloak
+✓ recipe_ghostwoodbow -> ghostwoodbow
+✓ recipe_ghostwoodshield -> ghostwoodshield
+✓ recipe_glassknife -> glassknife
+✓ recipe_goldenboots -> goldenboots
+✓ recipe_goldengauntlets -> goldengauntlets
+✓ recipe_goldenhelm -> goldenhelm
+✓ recipe_icecage -> icecage
+✓ recipe_icecatalyst -> icecatalyst
+✓ recipe_icicle -> icicle
+✓ recipe_ignitionorb -> ignitionorb
+✓ recipe_imperialshield -> imperialshield
+✓ recipe_imperialstaff -> imperialstaff
+✓ recipe_infernalbow -> infernalbow
+✓ recipe_infinitedespair -> infinitedespair
+✓ recipe_infusednecklace -> infusednecklace
+✓ recipe_infusionofwisdom -> infusionofwisdom
+✓ recipe_invisibleservant -> invisibleservant
+✓ recipe_ironchainmail -> ironchainmail
+✓ recipe_ironhelm -> ironhelm
+✓ recipe_ivoryjacket -> ivoryjacket
+✓ recipe_jeweledcrown -> jeweledcrown
+✓ recipe_kabelianarmor -> kabelianarmor
+✓ recipe_kabelianclaws -> kabelianclaws
+✓ recipe_laroxianboots -> laroxianboots
+✓ recipe_laroxiangloves -> laroxiangloves
+✓ recipe_leatherboots -> leatherboots
+✓ recipe_leathergloves -> leathergloves
+✓ recipe_leatherjacket -> leatherjacket
+✓ recipe_livingscimitar -> livingscimitar
+✓ recipe_livingwhip -> livingwhip
+✓ recipe_metamorphicarmor -> metamorphicarmor
+✓ recipe_metamorphicshield -> metamorphicshield
+✓ recipe_mithrilbow -> mithrilbow
+✓ recipe_mithrilhelm -> mithrilhelm
+✓ recipe_moltenstaff -> moltenstaff
+✓ recipe_monkeyhidejacket -> monkeyhidejacket
+✓ recipe_mottiphobia -> mottiphobia
+✓ recipe_mutantjacket -> mutantjacket
+✓ recipe_mutualdespair -> mutualdespair
+✓ recipe_nightwingjacket -> nightwingjacket
+✓ recipe_nilarmor -> nilarmor
+✓ recipe_nilpendant -> nilpendant
+✓ recipe_oblivion -> oblivion
+✓ recipe_obsidianbow -> obsidianbow
+✓ recipe_obsidiancuirass -> obsidiancuirass
+✓ recipe_obsidianhelm -> obsidianhelm
+✓ recipe_orichalcumarmor -> orichalcumarmor
+✓ recipe_orichalcumhelm -> orichalcumhelm
+✓ recipe_panopticonstaff -> panopticonstaff
+✓ recipe_patricianarmor -> patricianarmor
+✓ recipe_permafrostessence -> permafrostessence
+✓ recipe_phylactery -> phylactery
+✓ recipe_piratekingtricorn -> piratekingtricorn
+✓ recipe_potionofrejuvenation -> potionofrejuvenation
+✓ recipe_prehistoricmixture -> prehistoricmixture
+✓ recipe_primevalarmor -> primevalarmor
+✓ recipe_primevalhelm -> primevalhelm
+✓ recipe_prismaticarmor -> prismaticarmor
+✓ recipe_prismaticessence -> prismaticessence
+✓ recipe_prismaticpendant -> prismaticpendant
+✓ recipe_reassemblingjacket -> reassemblingjacket
+✓ recipe_redwoodbow -> redwoodbow
+✓ recipe_ritualblade -> ritualblade
+✓ recipe_robeofthearchmage -> robeofthearchmage
+✓ recipe_rubyring -> rubyring
+✓ recipe_sagearmor -> sagearmor
+✓ recipe_sagecloak -> sagecloak
+✓ recipe_sagejacket -> sagejacket
+✓ recipe_scarletshroud -> scarletshroud
+✓ recipe_scimitar -> scimitar
+✓ recipe_sha -> sha
+✓ recipe_shadowbow -> shadowbow
+✓ recipe_shadowdagger -> shadowdagger
+✓ recipe_shadowpotion -> shadowpotion
+✓ recipe_shadowring -> shadowring
+✓ recipe_shahuribow -> shahuribow
+✓ recipe_shieldingcuirass -> shieldingcuirass
+✓ recipe_shieldinghelm -> shieldinghelm
+✓ recipe_shieldingjacket -> shieldingjacket
+✓ recipe_shieldofthemartyr -> shieldofthemartyr
+✓ recipe_shortcircuit -> shortcircuit
+✓ recipe_sinisterstabilizer -> sinisterstabilizer
+✓ recipe_skinblender -> skinblender
+✓ recipe_skullcandle -> skullcandle
+✓ recipe_spellwovenjacket -> spellwovenjacket
+✓ recipe_spiderboots -> spiderboots
+✓ recipe_spidergloves -> spidergloves
+✓ recipe_spikedprimevalshield -> spikedprimevalshield
+✓ recipe_spikedtortoiseshield -> spikedtortoiseshield
+✓ recipe_spitfangjacket -> spitfangjacket
+✓ recipe_staffofthearchmage -> staffofthearchmage
+✓ recipe_starvation -> starvation
+✓ recipe_staticessence -> staticessence
+✓ recipe_stellarflare -> stellarflare
+✓ recipe_stellarstaff -> stellarstaff
+✓ recipe_sunfireessence -> sunfireessence
+✓ recipe_sunstaff -> sunstaff
+✓ recipe_swarmkeeperarmor -> swarmkeeperarmor
+✓ recipe_sylvanblessing -> sylvanblessing
+✓ recipe_sylvanmandate -> sylvanmandate
+✓ recipe_tacticalhelmet -> tacticalhelmet
+✓ recipe_thaumaturgicblood -> thaumaturgicblood
+✓ recipe_titanicmight -> titanicmight
+✓ recipe_tortoisearmor -> tortoisearmor
+✓ recipe_toxinpouch -> toxinpouch
+✓ recipe_trollskinjacket -> trollskinjacket
+✓ recipe_tunicaignis -> tunicaignis
+✓ recipe_tunicainfernalis -> tunicainfernalis
+✓ recipe_tusknecklace -> tusknecklace
+✓ recipe_undeadcuirass -> undeadcuirass
+✓ recipe_undeadgloves -> undeadgloves
+✓ recipe_undeadgreaves -> undeadgreaves
+✓ recipe_undeadhelm -> undeadhelm
+✓ recipe_undeadjacket -> undeadjacket
+✓ recipe_undeadknife -> undeadknife
+✓ recipe_undeadshield -> undeadshield
+✓ recipe_undeadstaff -> undeadstaff
+✓ recipe_undeadsword -> undeadsword
+✓ recipe_unholycuirass -> unholycuirass
+✓ recipe_unholypotion -> unholypotion
+✓ recipe_unholyspellcage -> unholyspellcage
+✓ recipe_unholysword -> unholysword
+✓ recipe_unstablestaff -> unstablestaff
+✓ recipe_vampirebow -> vampirebow
+✓ recipe_vampiredagger -> vampiredagger
+✓ recipe_vampirescepter -> vampirescepter
+✓ recipe_vampiresword -> vampiresword
+✓ recipe_veilshatterer -> veilshatterer
+✓ recipe_verdantblade -> verdantblade
+✓ recipe_verdantboots -> verdantboots
+✓ recipe_verdantgloves -> verdantgloves
+✓ recipe_verdanthelm -> verdanthelm
+✓ recipe_voidarmor -> voidarmor
+✓ recipe_voidcrusher -> voidcrusher
+✓ recipe_voidpendant -> voidpendant
+✓ recipe_voltaicshock -> voltaicshock
+✓ recipe_wickedscepter -> wickedscepter
+✓ recipe_winterboots -> winterboots
+✓ recipe_wintergloves -> wintergloves
+✓ recipe_winterhelm -> winterhelm
+✓ recipe_wintershield -> wintershield
+✓ recipe_winterwoodbow -> winterwoodbow
+✓ recipe_winterwoodstaff -> winterwoodstaff
+✓ recipe_woodenbow -> woodenbow
+✓ recipe_wurmscalesboots -> wurmscalesboots
+✓ recipe_wurmscalesgloves -> wurmscalesgloves
+✓ recipe_wurmscalesjacket -> wurmscalesjacket
+✓ recipe_wurmscalesshield -> wurmscalesshield
+✓ recipe_wyverncape -> wyverncape
+
+UNAVAILABLE RECIPES
+- recipe_abyssalcompendium -> abyssalcompendium | Missing: missingpage 0/50
+- recipe_amuletofresurrection -> amuletofresurrection | Missing: phoenixfeather 0/6
+- recipe_ancientrobe -> ancientrobe | Missing: ancientmembrane 0/200
+- recipe_animatedbuckler -> animatedbuckler | Missing: animatedingot 0/37
+- recipe_animatedcuirass -> animatedcuirass | Missing: animatedingot 0/56
+- recipe_animateddagger -> animateddagger | Missing: animatedingot 0/45
+- recipe_animatedingot -> animatedingot | Missing: animatedscraps 0/3
+- recipe_animatedstaff -> animatedstaff | Missing: animatedingot 0/47
+- recipe_animatedsword -> animatedsword | Missing: animatedingot 0/47
+- recipe_bansheegloves -> bansheegloves | Missing: bansheescale 0/104
+- recipe_bansheejacket -> bansheejacket | Missing: bansheescale 0/148
+- recipe_blackironingot -> blackironingot | Missing: blackironscraps 0/3
+- recipe_blackironscepter -> blackironscepter | Missing: blackironingot 0/16
+- recipe_celestialmetal -> celestialmetal | Missing: celestialscraps 0/3
+- recipe_celestialshield -> celestialshield | Missing: celestialmetal 0/35
+- recipe_celestialsword -> celestialsword | Missing: celestialmetal 0/43
+- recipe_chainofredemption -> chainofredemption | Missing: chainlink 0/8
+- recipe_cloth -> cloth | Missing: plantfiber 0/4
+- recipe_cloth_robe -> cloth_robe | Missing: cloth 0/3
+- recipe_copperingot -> copperingot | Missing: copperore 0/3
+- recipe_corsairleather -> corsairleather | Missing: monkeyhide 0/2
+- recipe_cunningdownfall -> cunningdownfall | Missing: kabelianmetal 0/36
+- recipe_cursedclaws -> cursedclaws | Missing: cursedsilver 0/8
+- recipe_cursedhelm -> cursedhelm | Missing: cursedsilver 0/12
+- recipe_cursedjacket -> cursedjacket | Missing: cursedsilver 0/6
+- recipe_deepsearobe -> deepsearobe | Missing: deepseavelvet 0/2
+- recipe_dreamwroughtrobe -> dreamwroughtrobe | Missing: dreamwroughtsilk 0/20
+- recipe_dreamwroughtsilk -> dreamwroughtsilk | Missing: dreamwroughtmane 0/3
+- recipe_dreamwroughtstaff -> dreamwroughtstaff | Missing: dreamwroughtsteel 0/7
+- recipe_elasticboots -> elasticboots | Missing: elasticmembrane 0/104
+- recipe_elasticrobe -> elasticrobe | Missing: elasticmembrane 0/148
+- recipe_eldritchseal -> eldritchseal | Missing: eldritchshred 0/7
+- recipe_exoticrobe -> exoticrobe | Missing: exoticvelvet 0/30
+- recipe_featherrobe -> featherrobe | Missing: feather 0/24
+- recipe_flyingreaper -> flyingreaper | Missing: kabelianmetal 0/20
+- recipe_frostmetalingot -> frostmetalingot | Missing: frostmetalore 0/3
+- recipe_ghostwoodboard -> ghostwoodboard | Missing: ghostwoodstump 0/3
+- recipe_glass -> glass | Missing: sandstone 0/5
+- recipe_goldenarmor -> goldenarmor | Missing: goldingot 0/16
+- recipe_goldenshield -> goldenshield | Missing: goldingot 0/12
+- recipe_goldensword -> goldensword | Missing: goldingot 0/14
+- recipe_goldingot -> goldingot | Missing: goldscraps 0/3
+- recipe_infernalchakram -> infernalchakram | Missing: infernite 0/14
+- recipe_ironingot -> ironingot | Missing: scrapmetal 0/3
+- recipe_kaunianrobe -> kaunianrobe | Missing: kaunianfabric 0/24
+- recipe_laroxianrobe -> laroxianrobe | Missing: laroxianfabric 0/168
+- recipe_leather -> leather | Missing: beastpelt 0/2
+- recipe_mithrildagger -> mithrildagger | Missing: mithril 0/166
+- recipe_mithrilshield -> mithrilshield | Missing: mithril 0/135
+- recipe_mithrilsword -> mithrilsword | Missing: mithril 0/170
+- recipe_mothrobe -> mothrobe | Missing: wingfabric 0/29
+- recipe_nightwingleather -> nightwingleather | Missing: batwing 0/2
+- recipe_obsidiandagger -> obsidiandagger | Missing: obsidianchunk 0/68
+- recipe_obsidianscepter -> obsidianscepter | Missing: obsidianchunk 0/72
+- recipe_obsidianshield -> obsidianshield | Missing: obsidianchunk 0/56
+- recipe_obsidiansword -> obsidiansword | Missing: obsidianchunk 0/72
+- recipe_orichalcumdagger -> orichalcumdagger | Missing: orichalcumingot 0/28
+- recipe_orichalcumingot -> orichalcumingot | Missing: orichalcumscraps 0/4
+- recipe_orichalcumshield -> orichalcumshield | Missing: orichalcumingot 0/32
+- recipe_orichalcumsword -> orichalcumsword | Missing: orichalcumingot 0/32
+- recipe_primevalshield -> primevalshield | Missing: primevalscale 0/5
+- recipe_scarletveil -> scarletveil | Missing: scarletstrand 0/4
+- recipe_shieldofthetitan -> shieldofthetitan | Missing: sentientslab 0/12
+- recipe_silkfabric -> silkfabric | Missing: silkthread 0/4
+- recipe_silkrobe -> silkrobe | Missing: silkfabric 0/12
+- recipe_slimearmor -> slimearmor | Missing: greenslime 0/140
+- recipe_slimejacket -> slimejacket | Missing: greenslime 0/140
+- recipe_slimerobe -> slimerobe | Missing: greenslime 0/140
+- recipe_spectralrobe -> spectralrobe | Missing: spectralcloth 0/15
+- recipe_spellwovenleather -> spellwovenleather | Missing: spellwovenhide 0/2
+- recipe_spiderrobe -> spiderrobe | Missing: spidersilk 0/20
+- recipe_spidersilk -> spidersilk | Missing: cobwebbundle 0/4
+- recipe_tortoiseshield -> tortoiseshield | Missing: giantshellfragment 0/80
+- recipe_verdantbow -> verdantbow | Missing: elysianwood 0/200
+- recipe_wingfabric -> wingfabric | Missing: giantmothwing 0/4
+- recipe_wintercape -> wintercape | Missing: wintercloth 0/18
+- recipe_wintercloth -> wintercloth | Missing: icefiber 0/4
+- recipe_woodenbuckler -> woodenbuckler | Missing: wood 0/6

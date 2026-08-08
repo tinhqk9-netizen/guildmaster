@@ -70,6 +70,22 @@ namespace GuildMaster.Editor.UI.Headquarters
 
             Text timer = AddText(dialog.transform, "Timer", "Visitor arriving soon", 22, LegacyUITheme.DimWhite, FontStyle.Normal, TextAnchor.MiddleCenter, 44f);
 
+            var upgrades = new GameObject("TavernUpgrades", typeof(RectTransform), typeof(VerticalLayoutGroup), typeof(LayoutElement));
+            upgrades.transform.SetParent(dialog.transform, false);
+            var upgradesLayout = upgrades.GetComponent<LayoutElement>();
+            upgradesLayout.preferredHeight = 150f;
+            upgradesLayout.minHeight = 150f;
+            var upgradesGroup = upgrades.GetComponent<VerticalLayoutGroup>();
+            upgradesGroup.spacing = 8f;
+            upgradesGroup.childAlignment = TextAnchor.MiddleCenter;
+            upgradesGroup.childControlWidth = true;
+            upgradesGroup.childControlHeight = true;
+            upgradesGroup.childForceExpandWidth = true;
+            upgradesGroup.childForceExpandHeight = false;
+
+            Text capacityUpgrade = AddUpgradeRow(upgrades.transform, "CapacityUpgrade", "Guest Capacity\nLevel 1  •  Next cost 0 gold", out GameObject capacityButton);
+            Text speedUpgrade = AddUpgradeRow(upgrades.transform, "SpeedUpgrade", "Visitor Speed\nLevel 1  •  Next cost 0 gold", out GameObject speedButton);
+
             var scroll = new GameObject("GuestScroll", typeof(RectTransform), typeof(Image), typeof(ScrollRect), typeof(LayoutElement));
             scroll.transform.SetParent(dialog.transform, false);
             scroll.GetComponent<Image>().color = new Color(0f, 0f, 0f, 0.12f);
@@ -125,6 +141,10 @@ namespace GuildMaster.Editor.UI.Headquarters
             serialized.FindProperty("_guestCountText").objectReferenceValue = guestCount;
             serialized.FindProperty("_quartersText").objectReferenceValue = quarters;
             serialized.FindProperty("_timerText").objectReferenceValue = timer;
+            serialized.FindProperty("_capacityUpgradeText").objectReferenceValue = capacityUpgrade;
+            serialized.FindProperty("_capacityUpgradeButton").objectReferenceValue = capacityButton.GetComponent<Button>();
+            serialized.FindProperty("_speedUpgradeText").objectReferenceValue = speedUpgrade;
+            serialized.FindProperty("_speedUpgradeButton").objectReferenceValue = speedButton.GetComponent<Button>();
             serialized.FindProperty("_guestContent").objectReferenceValue = contentRect;
             serialized.FindProperty("_emptyState").objectReferenceValue = empty.gameObject;
             serialized.FindProperty("_closeButton").objectReferenceValue = close.GetComponent<Button>();
@@ -217,6 +237,28 @@ namespace GuildMaster.Editor.UI.Headquarters
             text.alignment = TextAnchor.MiddleCenter;
             text.text = label;
             return button;
+        }
+
+        private static Text AddUpgradeRow(Transform parent, string name, string label, out GameObject button)
+        {
+            var row = new GameObject(name, typeof(RectTransform), typeof(HorizontalLayoutGroup), typeof(LayoutElement));
+            row.transform.SetParent(parent, false);
+            var rowLayout = row.GetComponent<LayoutElement>();
+            rowLayout.preferredHeight = 68f;
+            rowLayout.minHeight = 68f;
+            var group = row.GetComponent<HorizontalLayoutGroup>();
+            group.spacing = 16f;
+            group.padding = new RectOffset(12, 12, 4, 4);
+            group.childAlignment = TextAnchor.MiddleCenter;
+            group.childControlWidth = true;
+            group.childControlHeight = true;
+            group.childForceExpandWidth = false;
+            group.childForceExpandHeight = false;
+
+            var text = AddText(row.transform, "Label", label, 20, LegacyUITheme.DimWhite, FontStyle.Normal, TextAnchor.MiddleLeft, 60f);
+            text.GetComponent<LayoutElement>().flexibleWidth = 1f;
+            button = CreateButton(row.transform, "UpgradeButton", "UPGRADE", 190f, 58f);
+            return text;
         }
     }
 }

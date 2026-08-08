@@ -54,6 +54,7 @@ namespace GuildMaster.Runtime.Formulas
         // --- Timing ---
         /// <summary>Tavern visitor interval in MILLISECONDS — the original returns ms.</summary>
         long GetTavernVisitorInterval(int levelTavernTime, int upgradeTavernTime);
+        long GetSecondsToCraft(long itemPrice, int itemStack, int levelWorkshopTime, int upgradeWorkshopTime, PurchaseFlags flags);
         long GetSecondsToSell(long itemPrice, int itemStack, int levelMarketTime, int upgradeMarketTime, PurchaseFlags flags);
     }
 }

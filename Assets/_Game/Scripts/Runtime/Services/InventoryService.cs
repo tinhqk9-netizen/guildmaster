@@ -12,6 +12,7 @@ namespace GuildMaster.Runtime.Services
 {
     public class InventoryService : IInventoryService
     {
+        private const int MaxStorageLevel = 80;
         private readonly ISaveService _saveService;
         private readonly IFormulaService _formulaService;
         private readonly IItemService _itemService;
@@ -67,6 +68,40 @@ namespace GuildMaster.Runtime.Services
             return _formulaService.StorageSpaces(data.LevelStorage, data.UpgradeStorage, data.GetPurchaseFlags());
         }
 
+        private bool IsEquipped(string instanceId)
+        {
+            if (string.IsNullOrEmpty(instanceId)) return false;
+            return _saveService.CurrentData.Characters != null &&
+                _saveService.CurrentData.Characters.Any(c => c != null &&
+                    (c.WeaponInstanceId == instanceId ||
+                     c.ArmorInstanceId == instanceId ||
+                     c.AccessoryInstanceId == instanceId));
+        }
+
+        private IEnumerable<ItemRuntime> GetOwnedInventoryItems()
+        {
+            return _items.Where(item => item != null && !IsEquipped(item.InstanceId));
+        }
+
+        public int GetStorageLevel() => _saveService.CurrentData.LevelStorage;
+
+        public long GetUpgradeStorageCapacityPrice() =>
+            _formulaService.GetStorageCapacityPrice(_saveService.CurrentData.LevelStorage);
+
+        public bool UpgradeStorageCapacity()
+        {
+            var data = _saveService.CurrentData;
+            if (data.LevelStorage >= MaxStorageLevel) return false;
+
+            long price = GetUpgradeStorageCapacityPrice();
+            if (data.Money < price) return false;
+
+            data.Money -= price;
+            data.LevelStorage++;
+            _saveService.Save(out _);
+            return true;
+        }
+
         public bool CanAddItem(string definitionId)
         {
             if (!_registry.TryGet<ItemDefinition>(definitionId, out var def)) return false;
@@ -74,13 +109,13 @@ namespace GuildMaster.Runtime.Services
             bool canStack = (def.Category == ItemCategory.Material || def.Category == ItemCategory.Consumable);
             
             // If we already have an item of this definition, and it can stack, we can add it
-            if (canStack && _items.Any(i => i.Definition.id == definitionId))
+            if (canStack && GetOwnedInventoryItems().Any(i => i.Definition.id == definitionId))
             {
                 return true;
             }
 
             // Otherwise, we need a free slot
-            return _items.Count < GetCapacity();
+            return GetOwnedInventoryItems().Count() < GetCapacity();
         }
 
         public void AddItem(ItemRuntime item)
@@ -100,12 +135,29 @@ namespace GuildMaster.Runtime.Services
                 }
             }
             
-            if (_items.Count >= GetCapacity())
+            if (!item.IsLocked && GetOwnedInventoryItems().Count() >= GetCapacity())
             {
                 throw new InvalidOperationException("Inventory is full");
             }
             _items.Add(item);
             
+            SyncToSave();
+        }
+
+        public void AddEquippedItem(ItemRuntime item)
+        {
+            if (item == null) throw new ArgumentNullException(nameof(item));
+
+            var existing = _items.FirstOrDefault(i => i.InstanceId == item.InstanceId);
+            if (existing != null)
+            {
+                existing.IsLocked = true;
+                SyncToSave();
+                return;
+            }
+
+            item.IsLocked = true;
+            _items.Add(item);
             SyncToSave();
         }
 
@@ -115,6 +167,10 @@ namespace GuildMaster.Runtime.Services
 
             var item = _items.FirstOrDefault(i => i.InstanceId == instanceId);
             if (item == null) return false;
+
+            // Equipped ownership must be changed through EquipmentService.Unequip;
+            // removing it directly would leave a character pointing at a missing item.
+            if (IsEquipped(instanceId)) return false;
 
             if (item.StackCount < amount) return false;
 
@@ -153,12 +209,14 @@ namespace GuildMaster.Runtime.Services
 
         public IReadOnlyList<ItemRuntime> GetAllItems()
         {
-            return _items.AsReadOnly();
+            return GetOwnedInventoryItems().ToList().AsReadOnly();
         }
 
         public IReadOnlyList<ItemRuntime> GetItemsByCategory(ItemCategory category)
         {
-            return _items.Where(i => i.Definition != null && i.Definition.Category == category).ToList().AsReadOnly();
+            return GetOwnedInventoryItems()
+                .Where(i => i.Definition != null && i.Definition.Category == category)
+                .ToList().AsReadOnly();
         }
 
         public bool ToggleLockItem(string instanceId)

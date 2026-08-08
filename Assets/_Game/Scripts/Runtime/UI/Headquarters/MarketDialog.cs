@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using GuildMaster.Definitions;
 using GuildMaster.Runtime.Save;
@@ -10,20 +11,17 @@ namespace GuildMaster.Runtime.UI.Headquarters
 {
     /// <summary>
     /// Phase 5F Market dialog. Reads IMerchantService only; never mutates SaveData itself.
-    /// Sell timer duration mirrors MerchantService.DEFAULT_SELL_TIME_SECONDS (private, 20s — not
-    /// exposed on IMerchantService), the same "hard-coded, not exposed" situation already
-    /// documented for Workshop's craft duration. Buy/Merchant Stock section reads the real
-    /// GetRegularStock()/GetSpecialStock() APIs, but nothing in the runtime ever calls
-    /// RollRegularOffer/RollSpecialOffer to populate them (verified — no caller exists anywhere),
-    /// so the section is real but will show its empty state until a dungeon-completion flow wires
-    /// that in a later phase. No stock is fabricated here.
+    /// Sell duration, payout, and stock rotation are delegated to IMerchantService. No economy
+    /// values are duplicated in this view.
     /// </summary>
     public sealed class MarketDialog : MonoBehaviour
     {
-        public const long SellDurationSeconds = 20; // Mirrors MerchantService.DEFAULT_SELL_TIME_SECONDS (private, not exposed).
-
         [Header("Header")]
         [SerializeField] private Text _titleText;
+        [SerializeField] private Text _listingUpgradeInfoText;
+        [SerializeField] private Button _listingUpgradeButton;
+        [SerializeField] private Text _speedUpgradeInfoText;
+        [SerializeField] private Button _speedUpgradeButton;
         [SerializeField] private Button _closeButton;
 
         [Header("List")]
@@ -34,6 +32,7 @@ namespace GuildMaster.Runtime.UI.Headquarters
         private ServiceContainer _services;
         private System.Action _onClose;
         private System.Action _onStateChanged;
+        private Coroutine _refreshCoroutine;
 
         public void Setup(ServiceContainer services, System.Action onClose, System.Action onStateChanged)
         {
@@ -49,7 +48,50 @@ namespace GuildMaster.Runtime.UI.Headquarters
                 _closeButton.onClick.AddListener(() => _onClose?.Invoke());
             }
 
+            if (_listingUpgradeButton != null)
+            {
+                _listingUpgradeButton.onClick.RemoveAllListeners();
+                _listingUpgradeButton.onClick.AddListener(OnListingUpgradeClicked);
+            }
+
+            if (_speedUpgradeButton != null)
+            {
+                _speedUpgradeButton.onClick.RemoveAllListeners();
+                _speedUpgradeButton.onClick.AddListener(OnSpeedUpgradeClicked);
+            }
+
             Refresh();
+            StartAutoRefresh();
+        }
+
+        private void OnEnable()
+        {
+            StartAutoRefresh();
+        }
+
+        private void OnDisable()
+        {
+            if (_refreshCoroutine != null)
+            {
+                StopCoroutine(_refreshCoroutine);
+                _refreshCoroutine = null;
+            }
+        }
+
+        private void StartAutoRefresh()
+        {
+            if (_refreshCoroutine == null && _services?.Merchant != null)
+                _refreshCoroutine = StartCoroutine(AutoRefreshLoop());
+        }
+
+        private IEnumerator AutoRefreshLoop()
+        {
+            var wait = new WaitForSecondsRealtime(1f);
+            while (isActiveAndEnabled)
+            {
+                yield return wait;
+                if (_services?.Merchant != null) Refresh();
+            }
         }
 
         public void Refresh()
@@ -60,6 +102,8 @@ namespace GuildMaster.Runtime.UI.Headquarters
             var sold = _services.Merchant.GetSoldMarketItems();
             var regularStock = _services.Merchant.GetRegularStock();
             var specialStock = _services.Merchant.GetSpecialStock();
+
+            RefreshUpgradeControls();
 
             for (int i = _listContent.childCount - 1; i >= 0; i--)
                 Destroy(_listContent.GetChild(i).gameObject);
@@ -75,14 +119,17 @@ namespace GuildMaster.Runtime.UI.Headquarters
                 {
                     var item = selling[i];
                     bool isActive = i == 0;
-                    long remaining = isActive ? System.Math.Max(0, SellDurationSeconds - item.SecondsPassed) : -1;
-                    float progress = isActive ? Mathf.Clamp01((float)item.SecondsPassed / SellDurationSeconds) : 0f;
+                    long duration = _services.Merchant.GetSellDurationSeconds(item);
+                    long remaining = isActive ? System.Math.Max(0, duration - item.SecondsPassed) : -1;
+                    float progress = isActive && duration > 0 ? Mathf.Clamp01((float)item.SecondsPassed / duration) : 0f;
                     long payout = ComputeExpectedPayout(item.DefinitionId, item.StackCount);
                     string status = isActive
                         ? $"Selling... {remaining}s (est. {payout}g)"
                         : $"Waiting... (est. {payout}g)";
+                    string instanceId = item.InstanceId;
                     WorkshopRowBuilder.CreateRow(_listContent, _rowBorderSprite, item.DefinitionId, item.StackCount,
-                        status, showProgress: isActive, progress: progress, actionLabel: null, onAction: null);
+                        status, showProgress: isActive, progress: progress, actionLabel: "Cancel",
+                        onAction: () => OnCancelClicked(instanceId));
                 }
             }
 
@@ -105,6 +152,52 @@ namespace GuildMaster.Runtime.UI.Headquarters
                 foreach (var offer in regularStock) CreateStockRow(offer, isSpecial: false);
                 foreach (var offer in specialStock) CreateStockRow(offer, isSpecial: true);
             }
+        }
+
+        private void RefreshUpgradeControls()
+        {
+            long money = _services.Save.CurrentData.Money;
+            int listingLevel = _services.Merchant.GetMarketListingsLevel();
+            long listingPrice = _services.Merchant.GetUpgradeMarketListingsPrice();
+            bool listingMax = listingLevel >= 10;
+            if (_listingUpgradeInfoText != null)
+                _listingUpgradeInfoText.text = listingMax
+                    ? $"Listing capacity • Level {listingLevel} • MAX"
+                    : $"Listing capacity • Level {listingLevel} • Next: {listingPrice}g";
+            if (_listingUpgradeButton != null)
+            {
+                _listingUpgradeButton.interactable = !listingMax && money >= listingPrice;
+                var label = _listingUpgradeButton.GetComponentInChildren<Text>();
+                if (label != null) label.text = listingMax ? "Max Listings" : "Upgrade Listings";
+            }
+
+            int speedLevel = _services.Merchant.GetMarketTimeLevel();
+            long speedPrice = _services.Merchant.GetUpgradeMarketTimePrice();
+            bool speedMax = speedLevel >= 25;
+            if (_speedUpgradeInfoText != null)
+                _speedUpgradeInfoText.text = speedMax
+                    ? $"Market speed • Level {speedLevel} • MAX"
+                    : $"Market speed • Level {speedLevel} • Next: {speedPrice}g";
+            if (_speedUpgradeButton != null)
+            {
+                _speedUpgradeButton.interactable = !speedMax && money >= speedPrice;
+                var label = _speedUpgradeButton.GetComponentInChildren<Text>();
+                if (label != null) label.text = speedMax ? "Max Speed" : "Upgrade Speed";
+            }
+        }
+
+        private void OnListingUpgradeClicked()
+        {
+            if (_services?.Merchant == null) return;
+            if (_services.Merchant.UpgradeMarketListings()) OnStateChangedInternal();
+            else RefreshUpgradeControls();
+        }
+
+        private void OnSpeedUpgradeClicked()
+        {
+            if (_services?.Merchant == null) return;
+            if (_services.Merchant.UpgradeMarketTime()) OnStateChangedInternal();
+            else RefreshUpgradeControls();
         }
 
         private void CreateStockRow(MerchantOfferSaveData offer, bool isSpecial)
@@ -130,6 +223,12 @@ namespace GuildMaster.Runtime.UI.Headquarters
             if (success) OnStateChangedInternal();
         }
 
+        private void OnCancelClicked(string instanceId)
+        {
+            if (_services?.Merchant == null) return;
+            if (_services.Merchant.CancelListing(instanceId)) OnStateChangedInternal();
+        }
+
         private void OnBuyClicked(MerchantOfferSaveData offer, bool isSpecial)
         {
             if (_services?.Merchant == null) return;
@@ -144,15 +243,13 @@ namespace GuildMaster.Runtime.UI.Headquarters
         }
 
         /// <summary>
-        /// Precomputes the same payout MerchantService.ClaimSoldItem will actually pay — mirrors
-        /// its real fallback (ItemDefinition.SellPrice if &gt; 0, else 100) rather than inventing a
-        /// new formula. Shown for information only; never used to credit currency itself.
+        /// Precomputes the same base item price MerchantService.ClaimSoldItem pays.
         /// </summary>
         private long ComputeExpectedPayout(string definitionId, int stackCount)
         {
-            long unitPrice = 100;
-            if (_services.Database.TryGet<ItemDefinition>(definitionId, out var def) && def.SellPrice > 0)
-                unitPrice = def.SellPrice;
+            long unitPrice = 0;
+            if (_services.Database.TryGet<ItemDefinition>(definitionId, out var def))
+                unitPrice = GuildMaster.Runtime.Formulas.DecodeMath.TruncatePrice(def.Price);
             return unitPrice * stackCount;
         }
 

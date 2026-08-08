@@ -109,7 +109,12 @@ namespace GuildMaster.Tests.EditMode
         [Test]
         public void S2_003_EquipmentSystem_SlotRestrictions()
         {
-            var character = _characterService.CreateCharacter("adventurer");
+            // Phase 1: "adventurer" is Java's abstract Adventurer base class (never instantiable —
+            // Adventurer.getInstance() only reflects into concrete units/*.java subclasses) and is
+            // now correctly filtered out of the AdventurerDefinition table (DatabaseBuilder.cs,
+            // parentClass == "Adventurer" filter — see Docs/Backend_Audit/phase1_audit_report.md).
+            // "footman" is a real playable class (confirmed against the 116 Legacy hero units).
+            var character = _characterService.CreateCharacter("footman");
             
             var swordDef = _database.GetAll<ItemDefinition>().First(i => i.Category == ItemCategory.Weapon);
             var sword = new ItemRuntime("inst_sword_1", swordDef, 1);
@@ -125,7 +130,12 @@ namespace GuildMaster.Tests.EditMode
         [Test]
         public void S2_004_CharacterSystem_StatAggregationAndLevelUp()
         {
-            var character = _characterService.CreateCharacter("adventurer");
+            // Phase 1: "adventurer" is Java's abstract Adventurer base class (never instantiable —
+            // Adventurer.getInstance() only reflects into concrete units/*.java subclasses) and is
+            // now correctly filtered out of the AdventurerDefinition table (DatabaseBuilder.cs,
+            // parentClass == "Adventurer" filter — see Docs/Backend_Audit/phase1_audit_report.md).
+            // "footman" is a real playable class (confirmed against the 116 Legacy hero units).
+            var character = _characterService.CreateCharacter("footman");
             Assert.AreEqual(1, character.Level);
             
             int initialHp = _characterService.GetTotalStat(character, StatType.MaxHp);

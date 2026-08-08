@@ -12,6 +12,7 @@ namespace GuildMaster.Runtime.Save
         public int LocalDarkness;
         
         public List<string> AdventurerInstanceIds = new List<string>();
+        public string PetInstanceId;
         public List<ItemSaveData> PendingDrops = new List<ItemSaveData>();
         
         public CombatEncounterSaveData EncounterState = new CombatEncounterSaveData();

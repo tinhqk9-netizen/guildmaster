@@ -26,9 +26,11 @@ namespace GuildMaster.Runtime.Services
         // ─── Multi-Expedition API ──────────────────────────────────────────
         int MaxExpeditions { get; }
         bool StartExpedition(int slotIndex, string dungeonId, List<string> adventurerIds, out string error);
+        bool StartExpedition(int slotIndex, string dungeonId, List<string> adventurerIds, string petInstanceId, out string error);
         void StopExpedition(int slotIndex);
         ExpeditionRuntime GetExpedition(int slotIndex);
         IReadOnlyList<ExpeditionRuntime> GetAllExpeditions();
+        bool IsPetOnExpedition(string petInstanceId);
         void TickAll();
 
         /// <summary>

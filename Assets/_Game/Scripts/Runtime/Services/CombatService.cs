@@ -43,7 +43,7 @@ namespace GuildMaster.Runtime.Services
 
                 // Resolve status (Regen)
                 acting.CurrentHp = Math.Min(acting.MaxHp, acting.CurrentHp + acting.Regeneration);
-                
+
                 // Increase mana
                 if (!string.IsNullOrEmpty(acting.ActiveSkillId))
                 {
@@ -71,14 +71,37 @@ namespace GuildMaster.Runtime.Services
                             weightedPool.Add(p);
                         }
                     }
-                    
+
                     target = weightedPool[_random.Next(weightedPool.Count)];
                 }
 
                 if (target != null)
                 {
-                    double rawDamage = RollAttackDamage(acting);
-                    ApplyDamage(target, rawDamage, acting.IsMagic, 0, 0.0);
+                    // Java: Entity.calculateTotalFlatDodgeChance() — target may fully evade the hit.
+                    bool dodged = !acting.AlwaysHits && _random.NextDouble() < target.FlatDodgeChance;
+                    if (!dodged)
+                    {
+                        double rawDamage = RollAttackDamage(acting);
+
+                        // Java: Adventurer.calculateCriticalChance()/calculateCriticalDamage() —
+                        // rolled independently of the base damage roll, multiplies raw damage
+                        // BEFORE armor/flat reduction is applied in applyDamage().
+                        bool isCrit = _random.NextDouble() < acting.CriticalChance;
+                        if (isCrit)
+                        {
+                            rawDamage *= acting.CriticalDamage;
+                        }
+
+                        int dealt = ApplyDamage(target, rawDamage, acting.IsMagic, 0, acting.ArmorIgnored);
+
+                        // Java: Adventurer.calculateTotalLifesteal() — heals the attacker for a
+                        // percentage of the FINAL (post-reduction) damage dealt, capped at MaxHp.
+                        if (acting.Lifesteal > 0 && dealt > 0)
+                        {
+                            int heal = DecodeMath.Round(dealt * (acting.Lifesteal * 0.01));
+                            acting.CurrentHp = Math.Min(acting.MaxHp, acting.CurrentHp + heal);
+                        }
+                    }
                 }
 
                 // Early termination if combat is decided
@@ -163,7 +186,7 @@ namespace GuildMaster.Runtime.Services
         int MagicDefense { get; }
         bool IsInitiative { get; }
         string ActiveSkillId { get; }
-        
+
         int FlatDamageReduction { get; }
 
         /// <summary>Attack range feeding <c>rollAttackDamage()</c>.</summary>
@@ -176,6 +199,20 @@ namespace GuildMaster.Runtime.Services
         int ExpGiven { get; }
 
         int Threat { get; }
+
+        // --- Phase 2A: Equipment/Doctrine-driven combat modifiers (Task 2.2/2.3). ---
+        /// <summary>Java: Adventurer.calculateCriticalChance() (0.0-1.0 roll probability).</summary>
+        double CriticalChance { get; }
+        /// <summary>Java: Adventurer.calculateCriticalDamage() (multiplier, e.g. 1.5 = +50%).</summary>
+        double CriticalDamage { get; }
+        /// <summary>Java: Adventurer.calculateTotalFlatDodgeChance() (0.0-1.0 roll probability).</summary>
+        double FlatDodgeChance { get; }
+        /// <summary>Java: Adventurer.calculateTotalLifesteal() (integer percentage, e.g. 20 = 20%).</summary>
+        int Lifesteal { get; }
+        /// <summary>Java: Entity.isAlwaysHits() — bypasses target's dodge chance entirely.</summary>
+        bool AlwaysHits { get; }
+        /// <summary>Java: Adventurer.getArmorIgnored() (0.0-1.0, fed into applyDamage's armorIgnored param).</summary>
+        double ArmorIgnored { get; }
     }
 
     public class AdventurerWrapper : ICombatEntityWrapper
@@ -189,15 +226,19 @@ namespace GuildMaster.Runtime.Services
             _charService = charService;
             _petService = petService;
         }
-        
+
         public string Id => _character.InstanceId;
         public bool IsAdventurer => true;
         public int CurrentHp { get => _character.CurrentHp; set => _character.CurrentHp = value; }
         public int CurrentMana { get => _character.CurrentMana; set => _character.CurrentMana = value; }
         public int CurrentShield { get => _character.CurrentShield; set => _character.CurrentShield = value; }
-        
+
         public int MaxHp => _charService != null ? _charService.GetTotalStat(_character, GuildMaster.Definitions.StatType.MaxHp) : _character.Definition.BaseMaxHp;
-        public int Regeneration => 1;
+
+        // Java: Adventurer.calculateTotalRegeneration() = base(0) + weapon/armor/accessory.getRegeneration()
+        // (+ TROLL_BLOOD rare-trait bonus, not modeled — deferred with the rest of rare-trait combat
+        // hooks per phase1_completion_report.md).
+        public int Regeneration => _charService != null ? _charService.GetTotalStat(_character, GuildMaster.Definitions.StatType.Regeneration) : 0;
         public int ManaRegen => 10;
         public int Dexterity => _charService != null ? _charService.GetTotalStat(_character, GuildMaster.Definitions.StatType.Dexterity) : _character.Definition.BaseDexterity;
         public int Constitution => _charService != null ? _charService.GetTotalStat(_character, GuildMaster.Definitions.StatType.Constitution) : _character.Definition.BaseConstitution;
@@ -219,48 +260,76 @@ namespace GuildMaster.Runtime.Services
             }
         }
 
+        /// <summary>
+        /// Java: Weapon.getDamageModifier(con, int, dex) — EXACT per-weapon-type mapping restored
+        /// from Sword.java/Staff.java/Dagger.java/Bow.java (Phase 2A; the previous C# hallucinated
+        /// its own con*1.2+dex*0.4 style formulas — see Docs/Backend_Audit/equipment_audit.md §2.2).
+        ///   Sword:  con
+        ///   Staff:  intelligence
+        ///   Dagger: con + dex
+        ///   Bow:    dex
+        /// SerpentBite (unique weapon, id "serpent_bite") multiplies the modifier by Threat exactly
+        /// like Adventurer.calculateMinAttackDamage()/calculateMaxAttackDamage().
+        /// </summary>
+        private double GetWeaponDamageModifier(out double delta)
+        {
+            var weapon = _character.Weapon;
+            delta = 0.2;
+            if (weapon == null || weapon.Definition == null) return 0;
+
+            double con = Constitution;
+            double dex = Dexterity;
+            double intel = _charService != null ? _charService.GetTotalStat(_character, GuildMaster.Definitions.StatType.Intelligence) : _character.Definition.BaseIntelligence;
+
+            double mod;
+            string parentClass = weapon.Definition.parentClass ?? "";
+
+            switch (parentClass.ToLowerInvariant())
+            {
+                case "sword":
+                    mod = con;
+                    delta = 0.15; // Sword.damageDelta()
+                    break;
+                case "staff":
+                    mod = intel;
+                    delta = 0.05; // Staff.damageDelta()
+                    break;
+                case "dagger":
+                    mod = con + dex;
+                    delta = 0.25; // Dagger.damageDelta()
+                    break;
+                case "bow":
+                    mod = dex;
+                    delta = 0.10; // Bow.damageDelta()
+                    break;
+                default:
+                    // No unarmed/unknown weapon type exists in Java's Weapon hierarchy — every
+                    // Weapon subclass is one of the 4 above. This branch only guards against
+                    // unmapped/placeholder item data and is NOT a Java-sourced formula.
+                    mod = (con + dex + intel) / 2.0;
+                    delta = 0.2;
+                    break;
+            }
+
+            if (weapon.Definition.id == "serpent_bite")
+            {
+                mod *= Threat;
+            }
+
+            return mod;
+        }
+
         public int MinAttackDamage
         {
             get
             {
-                var weapon = _character.Weapon;
-                if (weapon == null || weapon.Definition == null) return 1;
-
-                double con = Constitution;
-                double dex = Dexterity;
-                double intel = _charService != null ? _charService.GetTotalStat(_character, GuildMaster.Definitions.StatType.Intelligence) : _character.Definition.BaseIntelligence;
-
-                double mod = 0;
-                string parentClass = weapon.Definition.parentClass ?? "";
-
-                switch (parentClass.ToLowerInvariant())
-                {
-                    case "sword":
-                        mod = con * 1.2 + dex * 0.4;
-                        break;
-                    case "staff":
-                        mod = intel * 1.5;
-                        break;
-                    case "dagger":
-                        mod = dex * 1.2 + con * 0.3;
-                        break;
-                    case "bow":
-                        mod = dex * 1.5;
-                        break;
-                    default:
-                        mod = (con + dex + intel) / 2.0;
-                        break;
-                }
-
-                if (weapon.Definition.id == "serpent_bite")
-                {
-                    mod *= Threat;
-                }
-
-                double delta = 0.2; // 20% default delta
-                int minDmg = (int)Math.Round(mod * (1.0 - delta));
+                if (_character.Weapon?.Definition == null) return 1;
+                double mod = GetWeaponDamageModifier(out double delta);
+                int minDmg = DecodeMath.Round(mod * (1.0 - delta));
                 if (_petService != null)
                 {
+                    // Phase 4 extension point: Pet system attack bonus, restored in Phase 1's
+                    // service wiring, kept here unmodified. Do not add further Pet logic in Phase 2A.
                     minDmg += (int)_petService.GetAttackBonus(_character.InstanceId);
                 }
                 return Math.Max(1, minDmg);
@@ -271,54 +340,31 @@ namespace GuildMaster.Runtime.Services
         {
             get
             {
-                var weapon = _character.Weapon;
-                if (weapon == null || weapon.Definition == null) return 1;
-
-                double con = Constitution;
-                double dex = Dexterity;
-                double intel = _charService != null ? _charService.GetTotalStat(_character, GuildMaster.Definitions.StatType.Intelligence) : _character.Definition.BaseIntelligence;
-
-                double mod = 0;
-                string parentClass = weapon.Definition.parentClass ?? "";
-
-                switch (parentClass.ToLowerInvariant())
-                {
-                    case "sword":
-                        mod = con * 1.2 + dex * 0.4;
-                        break;
-                    case "staff":
-                        mod = intel * 1.5;
-                        break;
-                    case "dagger":
-                        mod = dex * 1.2 + con * 0.3;
-                        break;
-                    case "bow":
-                        mod = dex * 1.5;
-                        break;
-                    default:
-                        mod = (con + dex + intel) / 2.0;
-                        break;
-                }
-
-                if (weapon.Definition.id == "serpent_bite")
-                {
-                    mod *= Threat;
-                }
-
-                double delta = 0.2;
-                int maxDmg = (int)Math.Round(mod * (1.0 + delta));
+                if (_character.Weapon?.Definition == null) return 1;
+                double mod = GetWeaponDamageModifier(out double delta);
+                int maxDmg = DecodeMath.Round(mod * (1.0 + delta));
                 if (_petService != null)
                 {
+                    // Phase 4 extension point: see MinAttackDamage above.
                     maxDmg += (int)_petService.GetAttackBonus(_character.InstanceId);
                 }
                 return Math.Max(1, maxDmg);
             }
         }
 
-        public bool IsMagic => false;
-        public bool RollsDamageThreeTimes => false;
+        public bool IsMagic => _character.Weapon?.Definition?.parentClass?.ToLowerInvariant() == "staff";
+        public bool RollsDamageThreeTimes => false; // Java: Doctrine.rollDamageThreeTimes() (Illusion/BEAT_THE_ODDS) — no per-character doctrine assignment yet, see IDoctrineService docs.
         public int ExpGiven => 0;
-        public int Threat => 5; // Base adventurer threat (from Java Adventurer.java:292)
+
+        // Java: Adventurer.getThreat() = max(1, base(1) + weapon+armor+accessory.getThreat() + doctrine.bonusThreat())
+        public int Threat => _charService != null ? _charService.GetTotalStat(_character, GuildMaster.Definitions.StatType.Threat) : 1;
+
+        public double CriticalChance => _charService != null ? _charService.GetCombatModifier(_character, GuildMaster.Definitions.StatType.CriticalChance) : 0.0;
+        public double CriticalDamage => _charService != null ? _charService.GetCombatModifier(_character, GuildMaster.Definitions.StatType.CriticalDamage) : 1.5;
+        public double FlatDodgeChance => _charService != null ? _charService.GetCombatModifier(_character, GuildMaster.Definitions.StatType.FlatDodgeChance) : 0.0;
+        public int Lifesteal => _charService != null ? _charService.GetTotalStat(_character, GuildMaster.Definitions.StatType.Lifesteal) : 0;
+        public bool AlwaysHits => _character.Weapon?.Definition?.AlwaysHits == true || _character.Armor?.Definition?.AlwaysHits == true || _character.Accessory?.Definition?.AlwaysHits == true;
+        public double ArmorIgnored => 0.0; // Java: Adventurer.getArmorIgnored() includes doctrine.ignoreArmorPercentage() (War/TACTICAL_KNOWLEDGE) — not wired in Phase 2A pending per-character doctrine assignment.
     }
 
     public class EnemyWrapper : ICombatEntityWrapper
@@ -360,5 +406,12 @@ namespace GuildMaster.Runtime.Services
         public bool RollsDamageThreeTimes => false;
         public int ExpGiven => _enemy.Definition.ExpGiven;
         public int Threat => 1; // Default enemy threat
+
+        public double CriticalChance => 0.0; // Enemies have no equipment-driven crit in this data model.
+        public double CriticalDamage => 1.5;
+        public double FlatDodgeChance => 0.0;
+        public int Lifesteal => 0;
+        public bool AlwaysHits => false;
+        public double ArmorIgnored => 0.0;
     }
 }

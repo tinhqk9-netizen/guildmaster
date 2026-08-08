@@ -134,7 +134,7 @@ namespace GuildMaster.Runtime.UI.Raid
         {
             _screen = Screen.Hub; ClearContent();
             AddText(_content, "Header", "RAIDS", 26, LegacyUITheme.BrassBorder, 52, TextAnchor.MiddleLeft, true);
-            AddText(_content, "Subheader", "Raid unlock progress is real; raid combat itself is not available yet.", 13, LegacyUITheme.DimWhite, 40, TextAnchor.MiddleLeft, true);
+            AddText(_content, "Subheader", "Select a raid to inspect its room sequence and start a run.", 13, LegacyUITheme.DimWhite, 40, TextAnchor.MiddleLeft, true);
 
             var raids = GetAllRaids();
             if (raids.Count == 0)
@@ -297,11 +297,57 @@ namespace GuildMaster.Runtime.UI.Raid
             ffImage.color = ffImage.sprite != null ? Color.white : Color.clear;
             var note = AddText(fallbackFrame.transform, "Note",
                 unlocked
-                    ? "This raid is unlocked, but raid operations are not available yet."
-                    : "Raid operations are not available yet.",
+                    ? "Start the restored Legacy room sequence with the current party."
+                    : "Raid is locked until the requirement is met.",
                 14, LegacyUITheme.DimWhite, LegacyUITheme.DP(64), TextAnchor.MiddleCenter, true);
             note.fontStyle = FontStyle.Italic;
             note.horizontalOverflow = HorizontalWrapMode.Wrap;
+
+            var active = _services.Raid?.ActiveRaid;
+            bool activeForThisRaid = active != null &&
+                string.Equals(active.Definition.id, raid.id, StringComparison.OrdinalIgnoreCase);
+            if (activeForThisRaid)
+            {
+                bool boss = active.Definition.LegacyEncounters?.Any(e =>
+                    e.LegacyProgress == active.LegacyProgress && e.IsBossRoom) == true;
+                string runText = active.IsComplete
+                    ? "RAID COMPLETE"
+                    : active.IsFailed ? "RAID FAILED" : "ROOM " + active.LegacyProgress + "/" + active.Definition.LegacyMaxProgress;
+                string eventText = active.HasActiveEvent
+                    ? "EVENT " + Format(active.EventKey) + " / " + active.EventProgress
+                    : "EVENT NONE";
+                AddText(_content, "RunState", runText + "  •  " + (boss ? "BOSS ROOM" : "ENCOUNTER ROOM"),
+                    14, LegacyUITheme.BrassBorder, 30, TextAnchor.MiddleLeft, true);
+                AddText(_content, "EventState", eventText + "  •  DARKNESS " + _services.Raid.CurrentDarkness,
+                    12, LegacyUITheme.DimWhite, 24, TextAnchor.MiddleLeft, true);
+                AddText(_content, "Rewards", "PENDING REWARDS " + active.PendingRewards.Count +
+                    (string.IsNullOrEmpty(active.EventOutcome) ? string.Empty : "  •  " + active.EventOutcome),
+                    11, LegacyUITheme.DimWhite, 42, TextAnchor.MiddleLeft, true);
+            }
+
+            if (unlocked && _services.Raid != null)
+            {
+                if (_services.Raid.ActiveRaid == null)
+                {
+                    AddAction(_content, "StartRaid", "START RAID", "Use current party", "object_border_brass",
+                        () => { if (_services.Raid.StartRaid(raid.id, null, out _)) ShowDetail(raid); });
+                }
+                else if (string.Equals(_services.Raid.ActiveRaid.Definition.id, raid.id, StringComparison.OrdinalIgnoreCase))
+                {
+                    if (_services.Raid.ActiveRaid.IsComplete)
+                    {
+                        AddAction(_content, "CollectRaid", "COLLECT REWARDS", "Move raid drops into Storage", "object_border_brass",
+                            () => { _services.Raid.CollectRewards(out _); ShowDetail(raid); });
+                    }
+                    else
+                    {
+                        AddAction(_content, "FightRaid", "FIGHT CURRENT ROOM", "Resolve the current encounter", "object_border_brass",
+                            () => { _services.Raid.FightCurrentRoom(out _); ShowDetail(raid); });
+                        AddAction(_content, "AbandonRaid", "ABANDON RAID", "End this in-session run", "object_border_dim_white",
+                            () => { _services.Raid.AbandonRaid(); ShowDetail(raid); });
+                    }
+                }
+            }
 
             AddAction(_content, "Back", "BACK TO RAIDS", "", "object_border_dim_white", ShowHub);
         }

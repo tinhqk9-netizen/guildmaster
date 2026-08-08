@@ -35,7 +35,7 @@
    },
    "className": "Adept",
    "id": "adept",
-   "nameKey": null,
+   "nameKey": "adventurer_adept_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -47,7 +47,17 @@
    "BaseDexterity": 5,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "FireWizard",
+    "DarkSorcerer"
+   ],
+   "ActiveSkill": "ACTIVE_ENERGY_BURST_II",
+   "PassiveSkill": "PASSIVE_NONE",
+   "ImageId": "unit_adept",
+   "descriptionKey": "adventurer_adept_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 10
   },
   {
    "baseStats": {
@@ -112,7 +122,7 @@
    },
    "className": "Alchemist",
    "id": "alchemist",
-   "nameKey": null,
+   "nameKey": "adventurer_alchemist_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -124,7 +134,16 @@
    "BaseDexterity": 26,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "ElementalAlchemist"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_II",
+   "PassiveSkill": "PASSIVE_THAUMATURGY_I",
+   "ImageId": "unit_alchemist",
+   "descriptionKey": "adventurer_alchemist_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 30
   },
   {
    "baseStats": {
@@ -166,7 +185,7 @@
    },
    "className": "AncientLich",
    "id": "ancient_lich",
-   "nameKey": null,
+   "nameKey": "adventurer_ancient_lich_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -178,7 +197,16 @@
    "BaseDexterity": 10,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "LorfOfDecay"
+   ],
+   "ActiveSkill": "ACTIVE_CURSE_III",
+   "PassiveSkill": "PASSIVE_WITHERING_LINK",
+   "ImageId": "unit_ancient_lich",
+   "descriptionKey": "adventurer_ancient_lich_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 35
   },
   {
    "baseStats": {
@@ -215,7 +243,7 @@
    },
    "className": "Angel",
    "id": "angel",
-   "nameKey": null,
+   "nameKey": "adventurer_angel_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -227,7 +255,16 @@
    "BaseDexterity": 11,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Archangel"
+   ],
+   "ActiveSkill": "ACTIVE_RESTORATION_I",
+   "PassiveSkill": "PASSIVE_HEALER_II",
+   "ImageId": "unit_angel",
+   "descriptionKey": "adventurer_angel_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 40
   },
   {
    "baseStats": {
@@ -269,7 +306,7 @@
    },
    "className": "AngelOfWar",
    "id": "angel_of_war",
-   "nameKey": null,
+   "nameKey": "adventurer_angel_of_war_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -281,7 +318,14 @@
    "BaseDexterity": 12,
    "BaseDefense": 20,
    "BaseMagicDefense": 40,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_CONDEMN_ALL_II",
+   "PassiveSkill": "PASSIVE_SEARING",
+   "ImageId": "unit_angel_of_war",
+   "descriptionKey": "adventurer_angel_of_war_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 45
   },
   {
    "baseStats": {
@@ -318,7 +362,7 @@
    },
    "className": "Apprentice",
    "id": "apprentice",
-   "nameKey": null,
+   "nameKey": "adventurer_apprentice_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -330,7 +374,17 @@
    "BaseDexterity": 4,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": "apprentice_staff"
+   "StarterWeaponId": "apprentice_staff",
+   "NextClasses": [
+    "LightDisciple",
+    "Adept"
+   ],
+   "ActiveSkill": "ACTIVE_ENERGY_BURST_I",
+   "PassiveSkill": "PASSIVE_NONE",
+   "ImageId": "unit_apprentice",
+   "descriptionKey": "adventurer_apprentice_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 5
   },
   {
    "baseStats": {
@@ -367,7 +421,7 @@
    },
    "className": "Archangel",
    "id": "archangel",
-   "nameKey": null,
+   "nameKey": "adventurer_archangel_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -379,7 +433,14 @@
    "BaseDexterity": 12,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_RESTORATION_II",
+   "PassiveSkill": "PASSIVE_HEALER_II",
+   "ImageId": "unit_archangel",
+   "descriptionKey": "adventurer_archangel_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 45
   },
   {
    "baseStats": {
@@ -416,7 +477,7 @@
    },
    "className": "Archer",
    "id": "archer",
-   "nameKey": null,
+   "nameKey": "adventurer_archer_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -428,7 +489,16 @@
    "BaseDexterity": 8,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": "wooden_bow"
+   "StarterWeaponId": "wooden_bow",
+   "NextClasses": [
+    "Huntress"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_I",
+   "PassiveSkill": "PASSIVE_NONE",
+   "ImageId": "unit_archer",
+   "descriptionKey": "adventurer_archer_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 5
   },
   {
    "baseStats": {
@@ -465,7 +535,7 @@
    },
    "className": "Assassin",
    "id": "assassin",
-   "nameKey": null,
+   "nameKey": "adventurer_assassin_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -477,7 +547,17 @@
    "BaseDexterity": 15,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "SpireInitiate",
+    "RedStalker"
+   ],
+   "ActiveSkill": "ACTIVE_BACKSTAB_III",
+   "PassiveSkill": "PASSIVE_INFILTRATOR",
+   "ImageId": "unit_assassin",
+   "descriptionKey": "adventurer_assassin_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 20
   },
   {
    "baseStats": {
@@ -514,7 +594,7 @@
    },
    "className": "Balrog",
    "id": "balrog",
-   "nameKey": null,
+   "nameKey": "adventurer_balrog_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -526,7 +606,14 @@
    "BaseDexterity": 36,
    "BaseDefense": 36,
    "BaseMagicDefense": 36,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_WHIP_AND_TEAR",
+   "PassiveSkill": "PASSIVE_CHAOTIC",
+   "ImageId": "unit_balrog",
+   "descriptionKey": "adventurer_balrog_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 45
   },
   {
    "baseStats": {
@@ -563,7 +650,7 @@
    },
    "className": "Bard",
    "id": "bard",
-   "nameKey": null,
+   "nameKey": "adventurer_bard_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -575,7 +662,16 @@
    "BaseDexterity": 17,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Lorekeeper"
+   ],
+   "ActiveSkill": "ACTIVE_FEINT",
+   "PassiveSkill": "PASSIVE_INSPIRING_III",
+   "ImageId": "unit_bard",
+   "descriptionKey": "adventurer_bard_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 30
   },
   {
    "baseStats": {
@@ -617,7 +713,7 @@
    },
    "className": "BlackIdol",
    "id": "black_idol",
-   "nameKey": null,
+   "nameKey": "adventurer_black_idol_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -629,7 +725,14 @@
    "BaseDexterity": 12,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_CURSE_V",
+   "PassiveSkill": "PASSIVE_WITHERING_LINK",
+   "ImageId": "unit_black_idol",
+   "descriptionKey": "adventurer_black_idol_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 45
   },
   {
    "baseStats": {
@@ -666,7 +769,7 @@
    },
    "className": "BlackRegent",
    "id": "black_regent",
-   "nameKey": null,
+   "nameKey": "adventurer_black_regent_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -678,7 +781,14 @@
    "BaseDexterity": 18,
    "BaseDefense": 20,
    "BaseMagicDefense": 20,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_DECIMATE_III",
+   "PassiveSkill": "PASSIVE_SUBJUGATE_II",
+   "ImageId": "unit_black_regent",
+   "descriptionKey": "adventurer_black_regent_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 45
   },
   {
    "baseStats": {
@@ -715,7 +825,7 @@
    },
    "className": "Blight",
    "id": "blight",
-   "nameKey": null,
+   "nameKey": "adventurer_blight_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -727,7 +837,16 @@
    "BaseDexterity": 32,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Wraith"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_III",
+   "PassiveSkill": "PASSIVE_POISONOUS_ARROWS_III",
+   "ImageId": "unit_blight",
+   "descriptionKey": "adventurer_blight_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 35
   },
   {
    "baseStats": {
@@ -764,7 +883,7 @@
    },
    "className": "BoneHorror",
    "id": "bone_horror",
-   "nameKey": null,
+   "nameKey": "summoned_bone_horror_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -776,7 +895,14 @@
    "BaseDexterity": 17,
    "BaseDefense": 50,
    "BaseMagicDefense": 0,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_NONE",
+   "PassiveSkill": "PASSIVE_THREATENING_II",
+   "ImageId": "unit_bone_horror",
+   "descriptionKey": "summoned_bone_horror_description",
+   "PotionDrinkerType": "NONE",
+   "MaxLevel": 15
   },
   {
    "baseStats": {
@@ -813,7 +939,7 @@
    },
    "className": "BoneHydra",
    "id": "bone_hydra",
-   "nameKey": null,
+   "nameKey": "summoned_bone_hydra_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -825,7 +951,14 @@
    "BaseDexterity": 24,
    "BaseDefense": 50,
    "BaseMagicDefense": 0,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_NONE",
+   "PassiveSkill": "PASSIVE_THREATENING_II",
+   "ImageId": "unit_bone_hydra",
+   "descriptionKey": "summoned_bone_hydra_description",
+   "PotionDrinkerType": "NONE",
+   "MaxLevel": 15
   },
   {
    "baseStats": {
@@ -862,7 +995,7 @@
    },
    "className": "BoneNightmare",
    "id": "bone_nightmare",
-   "nameKey": null,
+   "nameKey": "summoned_bone_nightmare_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -874,7 +1007,14 @@
    "BaseDexterity": 20,
    "BaseDefense": 50,
    "BaseMagicDefense": 0,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_NONE",
+   "PassiveSkill": "PASSIVE_THREATENING_II",
+   "ImageId": "unit_bone_nightmare",
+   "descriptionKey": "summoned_bone_nightmare_description",
+   "PotionDrinkerType": "NONE",
+   "MaxLevel": 15
   },
   {
    "baseStats": {
@@ -911,7 +1051,7 @@
    },
    "className": "CelestialRain",
    "id": "celestial_rain",
-   "nameKey": null,
+   "nameKey": "adventurer_celestial_rain_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -923,7 +1063,14 @@
    "BaseDexterity": 40,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_BARRAGE_VIII",
+   "PassiveSkill": "PASSIVE_KEEN_VISION",
+   "ImageId": "unit_celestial_rain",
+   "descriptionKey": "adventurer_celestial_rain_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 45
   },
   {
    "baseStats": {
@@ -960,7 +1107,7 @@
    },
    "className": "Cleric",
    "id": "cleric",
-   "nameKey": null,
+   "nameKey": "adventurer_cleric_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -972,7 +1119,16 @@
    "BaseDexterity": 6,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "WhiteMage"
+   ],
+   "ActiveSkill": "ACTIVE_HEAL",
+   "PassiveSkill": "PASSIVE_HEALER_I",
+   "ImageId": "unit_cleric",
+   "descriptionKey": "adventurer_cleric_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 15
   },
   {
    "baseStats": {
@@ -1009,7 +1165,7 @@
    },
    "className": "CorrosiveWraith",
    "id": "corrosive_wraith",
-   "nameKey": null,
+   "nameKey": "adventurer_corrosive_wraith_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -1021,7 +1177,14 @@
    "BaseDexterity": 40,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_FOCUSED_BARRAGE",
+   "PassiveSkill": "PASSIVE_CORROSIVE_BLOOD",
+   "ImageId": "unit_corrosive_wraith",
+   "descriptionKey": "adventurer_corrosive_wraith_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 45
   },
   {
    "baseStats": {
@@ -1058,7 +1221,7 @@
    },
    "className": "Cutthroat",
    "id": "cutthroat",
-   "nameKey": null,
+   "nameKey": "adventurer_cutthroat_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -1070,7 +1233,16 @@
    "BaseDexterity": 12,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Assassin"
+   ],
+   "ActiveSkill": "ACTIVE_BACKSTAB_II",
+   "PassiveSkill": "PASSIVE_SABOTEUR",
+   "ImageId": "unit_cuttroath",
+   "descriptionKey": "adventurer_cutthroat_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 15
   },
   {
    "baseStats": {
@@ -1107,7 +1279,7 @@
    },
    "className": "DarkKnight",
    "id": "dark_knight",
-   "nameKey": null,
+   "nameKey": "adventurer_dark_knight_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -1119,7 +1291,16 @@
    "BaseDexterity": 8,
    "BaseDefense": 20,
    "BaseMagicDefense": 20,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "DeathKnight"
+   ],
+   "ActiveSkill": "ACTIVE_OVERWHELM",
+   "PassiveSkill": "PASSIVE_THREATENING_I",
+   "ImageId": "unit_dark_knight",
+   "descriptionKey": "adventurer_dark_knight_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 20
   },
   {
    "baseStats": {
@@ -1161,7 +1342,7 @@
    },
    "className": "DarkSorcerer",
    "id": "dark_sorcerer",
-   "nameKey": null,
+   "nameKey": "adventurer_dark_sorcerer_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -1173,7 +1354,16 @@
    "BaseDexterity": 6,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Necromancer"
+   ],
+   "ActiveSkill": "ACTIVE_ENERGY_BURST_II",
+   "PassiveSkill": "PASSIVE_WITHERING_TOUCH",
+   "ImageId": "unit_dark_sorcerer",
+   "descriptionKey": "adventurer_dark_sorcerer_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 15
   },
   {
    "baseStats": {
@@ -1210,7 +1400,7 @@
    },
    "className": "DeathKnight",
    "id": "death_knight",
-   "nameKey": null,
+   "nameKey": "adventurer_death_knight_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -1222,7 +1412,16 @@
    "BaseDexterity": 10,
    "BaseDefense": 20,
    "BaseMagicDefense": 20,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Scourge"
+   ],
+   "ActiveSkill": "ACTIVE_DECIMATE_I",
+   "PassiveSkill": "PASSIVE_THREATENING_I",
+   "ImageId": "unit_death_knight",
+   "descriptionKey": "adventurer_death_knight_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 25
   },
   {
    "baseStats": {
@@ -1264,7 +1463,7 @@
    },
    "className": "Demilich",
    "id": "demilich",
-   "nameKey": null,
+   "nameKey": "adventurer_demilich_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -1276,7 +1475,16 @@
    "BaseDexterity": 8,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Lich"
+   ],
+   "ActiveSkill": "ACTIVE_CURSE_II",
+   "PassiveSkill": "PASSIVE_WITHERING_TOUCH",
+   "ImageId": "unit_demilich",
+   "descriptionKey": "adventurer_demilich_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 25
   },
   {
    "baseStats": {
@@ -1313,7 +1521,7 @@
    },
    "className": "Demon",
    "id": "demon",
-   "nameKey": null,
+   "nameKey": "adventurer_demon_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -1325,7 +1533,16 @@
    "BaseDexterity": 24,
    "BaseDefense": 24,
    "BaseMagicDefense": 24,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "InfernalLord"
+   ],
+   "ActiveSkill": "ACTIVE_ANNIHILATE",
+   "PassiveSkill": "PASSIVE_CHAOTIC",
+   "ImageId": "unit_demon",
+   "descriptionKey": "adventurer_demon_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 30
   },
   {
    "baseStats": {
@@ -1362,7 +1579,7 @@
    },
    "className": "DivineChampion",
    "id": "divine_champion",
-   "nameKey": null,
+   "nameKey": "adventurer_divine_champion_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -1374,7 +1591,14 @@
    "BaseDexterity": 18,
    "BaseDefense": 20,
    "BaseMagicDefense": 20,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_EN_GARDE",
+   "PassiveSkill": "PASSIVE_SWORD_EXPERTISE_II",
+   "ImageId": "unit_divine_champion",
+   "descriptionKey": "adventurer_divine_champion_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 45
   },
   {
    "baseStats": {
@@ -1411,7 +1635,7 @@
    },
    "className": "DivineDuelist",
    "id": "divine_duelist",
-   "nameKey": null,
+   "nameKey": "adventurer_divine_duelist_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -1423,7 +1647,16 @@
    "BaseDexterity": 16,
    "BaseDefense": 20,
    "BaseMagicDefense": 20,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "DivineChampion"
+   ],
+   "ActiveSkill": "ACTIVE_EN_GARDE",
+   "PassiveSkill": "PASSIVE_SWORD_EXPERTISE_I",
+   "ImageId": "unit_divine_duelist",
+   "descriptionKey": "adventurer_divine_duelist_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 40
   },
   {
    "baseStats": {},
@@ -1580,7 +1813,7 @@
    },
    "className": "DrakeRider",
    "id": "drake_rider",
-   "nameKey": null,
+   "nameKey": "adventurer_drake_rider_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -1592,7 +1825,16 @@
    "BaseDexterity": 32,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "GoldenRider"
+   ],
+   "ActiveSkill": "ACTIVE_INCINERATE",
+   "PassiveSkill": "PASSIVE_RIDER_V",
+   "ImageId": "unit_drake_rider",
+   "descriptionKey": "adventurer_drake_rider_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 35
   },
   {
    "baseStats": {
@@ -1629,7 +1871,7 @@
    },
    "className": "Eidolon",
    "id": "eidolon",
-   "nameKey": null,
+   "nameKey": "adventurer_eidolon_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -1641,7 +1883,14 @@
    "BaseDexterity": 23,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_PETRIFYING_MELODY",
+   "PassiveSkill": "PASSIVE_EXALTING_II",
+   "ImageId": "unit_eidolon",
+   "descriptionKey": "adventurer_eidolon_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 45
   },
   {
    "baseStats": {
@@ -1678,7 +1927,7 @@
    },
    "className": "EldritchAlchemist",
    "id": "eldritch_alchemist",
-   "nameKey": null,
+   "nameKey": "adventurer_eldritch_alchemist_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -1690,7 +1939,14 @@
    "BaseDexterity": 32,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_BARRAGE_II",
+   "PassiveSkill": "PASSIVE_THAUMATURGY_IV",
+   "ImageId": "unit_eldritch_alchemist",
+   "descriptionKey": "adventurer_eldritch_alchemist_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 45
   },
   {
    "baseStats": {
@@ -1727,7 +1983,7 @@
    },
    "className": "ElementalAlchemist",
    "id": "elemental_alchemist",
-   "nameKey": null,
+   "nameKey": "adventurer_elemental_alchemist_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -1739,7 +1995,16 @@
    "BaseDexterity": 28,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "EsotericAlchemist"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_II",
+   "PassiveSkill": "PASSIVE_THAUMATURGY_II",
+   "ImageId": "unit_elemental_alchemist",
+   "descriptionKey": "adventurer_elemental_alchemist_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 35
   },
   {
    "baseStats": {},
@@ -1788,7 +2053,7 @@
    },
    "className": "EsotericAlchemist",
    "id": "esoteric_alchemist",
-   "nameKey": null,
+   "nameKey": "adventurer_esoteric_alchemist_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -1800,7 +2065,16 @@
    "BaseDexterity": 30,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "EldritchAlchemist"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_II",
+   "PassiveSkill": "PASSIVE_THAUMATURGY_III",
+   "ImageId": "unit_esoteric_alchemist",
+   "descriptionKey": "adventurer_esoteric_alchemist_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 40
   },
   {
    "baseStats": {
@@ -1837,7 +2111,7 @@
    },
    "className": "EternalFortress",
    "id": "eternal_fortress",
-   "nameKey": null,
+   "nameKey": "adventurer_eternal_fortress_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -1849,7 +2123,14 @@
    "BaseDexterity": 12,
    "BaseDefense": 30,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_TAUNT_IV",
+   "PassiveSkill": "PASSIVE_THREATENING_IV",
+   "ImageId": "unit_eternal_fortress",
+   "descriptionKey": "adventurer_eternal_fortress_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 45
   },
   {
    "baseStats": {
@@ -1886,7 +2167,7 @@
    },
    "className": "FireWizard",
    "id": "fire_wizard",
-   "nameKey": null,
+   "nameKey": "adventurer_fire_wizard_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -1898,7 +2179,16 @@
    "BaseDexterity": 6,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "RedMage"
+   ],
+   "ActiveSkill": "ACTIVE_FIRE_BURST",
+   "PassiveSkill": "PASSIVE_NONE",
+   "ImageId": "unit_fire_wizard",
+   "descriptionKey": "adventurer_fire_wizard_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 15
   },
   {
    "baseStats": {
@@ -1935,7 +2225,7 @@
    },
    "className": "Footman",
    "id": "footman",
-   "nameKey": null,
+   "nameKey": "adventurer_footman_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -1947,7 +2237,16 @@
    "BaseDexterity": 4,
    "BaseDefense": 20,
    "BaseMagicDefense": 20,
-   "StarterWeaponId": "copper_sword"
+   "StarterWeaponId": "copper_sword",
+   "NextClasses": [
+    "Warrior"
+   ],
+   "ActiveSkill": "ACTIVE_MIGHTY_STRIKE",
+   "PassiveSkill": "PASSIVE_NONE",
+   "ImageId": "unit_footman",
+   "descriptionKey": "adventurer_footman_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 5
   },
   {
    "baseStats": {
@@ -1988,7 +2287,7 @@
    },
    "className": "Fury",
    "id": "fury",
-   "nameKey": null,
+   "nameKey": "adventurer_fury_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2000,7 +2299,16 @@
    "BaseDexterity": 24,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Hailstorm"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_IV",
+   "PassiveSkill": "PASSIVE_KEEN_VISION",
+   "ImageId": "unit_fury",
+   "descriptionKey": "adventurer_fury_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 25
   },
   {
    "baseStats": {
@@ -2037,7 +2345,7 @@
    },
    "className": "GoldenRider",
    "id": "golden_rider",
-   "nameKey": null,
+   "nameKey": "adventurer_golden_rider_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2049,7 +2357,16 @@
    "BaseDexterity": 36,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "WyrmRider"
+   ],
+   "ActiveSkill": "ACTIVE_INCINERATE_II",
+   "PassiveSkill": "PASSIVE_RIDER_VI",
+   "ImageId": "unit_golden_rider",
+   "descriptionKey": "adventurer_golden_rider_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 40
   },
   {
    "baseStats": {
@@ -2086,7 +2403,7 @@
    },
    "className": "Guard",
    "id": "guard",
-   "nameKey": null,
+   "nameKey": "adventurer_guard_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2098,7 +2415,17 @@
    "BaseDexterity": 6,
    "BaseDefense": 20,
    "BaseMagicDefense": 20,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "IronWarden",
+    "RoyalGuard"
+   ],
+   "ActiveSkill": "ACTIVE_MIGHTY_STRIKE",
+   "PassiveSkill": "PASSIVE_THREATENING_II",
+   "ImageId": "unit_guard",
+   "descriptionKey": "adventurer_guard_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 15
   },
   {
    "baseStats": {
@@ -2135,7 +2462,7 @@
    },
    "className": "Hailstorm",
    "id": "hailstorm",
-   "nameKey": null,
+   "nameKey": "adventurer_hailstorm_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2147,7 +2474,16 @@
    "BaseDexterity": 28,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Tempest"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_V",
+   "PassiveSkill": "PASSIVE_KEEN_VISION",
+   "ImageId": "unit_hailstorm",
+   "descriptionKey": "adventurer_hailstorm_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 30
   },
   {
    "baseStats": {
@@ -2184,7 +2520,7 @@
    },
    "className": "HeavenlyCantor",
    "id": "heavenly_cantor",
-   "nameKey": null,
+   "nameKey": "adventurer_heavenly_cantor_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2196,7 +2532,16 @@
    "BaseDexterity": 21,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Eidolon"
+   ],
+   "ActiveSkill": "ACTIVE_PETRIFYING_MELODY",
+   "PassiveSkill": "PASSIVE_EXALTING_I",
+   "ImageId": "unit_heavenly_cantor",
+   "descriptionKey": "adventurer_heavenly_cantor_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 40
   },
   {
    "baseStats": {
@@ -2233,7 +2578,7 @@
    },
    "className": "HellishSculptor",
    "id": "hellish_sculptor",
-   "nameKey": null,
+   "nameKey": "adventurer_hellish_sculptor_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2245,7 +2590,16 @@
    "BaseDexterity": 27,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "SpiritEngraver"
+   ],
+   "ActiveSkill": "ACTIVE_THOUSAND_CUTS",
+   "PassiveSkill": "PASSIVE_DEADLY_FINESSE_III",
+   "ImageId": "unit_hellish_sculptor",
+   "descriptionKey": "adventurer_hellish_sculptor_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 40
   },
   {
    "baseStats": {
@@ -2282,7 +2636,7 @@
    },
    "className": "HolyKnight",
    "id": "holy_knight",
-   "nameKey": null,
+   "nameKey": "adventurer_holy_knight_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2294,7 +2648,16 @@
    "BaseDexterity": 7,
    "BaseDefense": 20,
    "BaseMagicDefense": 23,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Paladin"
+   ],
+   "ActiveSkill": "ACTIVE_CONDEMN",
+   "PassiveSkill": "PASSIVE_BLINDING_I",
+   "ImageId": "unit_holy_knight",
+   "descriptionKey": "adventurer_holy_knight_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 20
   },
   {
    "baseStats": {
@@ -2331,7 +2694,7 @@
    },
    "className": "HorseRider",
    "id": "horse_rider",
-   "nameKey": null,
+   "nameKey": "adventurer_horse_rider_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2343,7 +2706,16 @@
    "BaseDexterity": 16,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "WolfRider"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_II",
+   "PassiveSkill": "PASSIVE_RIDER_I",
+   "ImageId": "unit_horse_rider",
+   "descriptionKey": "adventurer_horse_rider_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 15
   },
   {
    "baseStats": {
@@ -2380,7 +2752,7 @@
    },
    "className": "Huntress",
    "id": "huntress",
-   "nameKey": null,
+   "nameKey": "adventurer_huntress_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2392,7 +2764,17 @@
    "BaseDexterity": 12,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "HorseRider",
+    "Marksman"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_II",
+   "PassiveSkill": "PASSIVE_NONE",
+   "ImageId": "unit_huntress",
+   "descriptionKey": "adventurer_huntress_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 10
   },
   {
    "baseStats": {
@@ -2429,7 +2811,7 @@
    },
    "className": "Hurricane",
    "id": "hurricane",
-   "nameKey": null,
+   "nameKey": "adventurer_hurricane_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2441,7 +2823,16 @@
    "BaseDexterity": 36,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "CelestialRain"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_VII",
+   "PassiveSkill": "PASSIVE_KEEN_VISION",
+   "ImageId": "unit_hurricane",
+   "descriptionKey": "adventurer_hurricane_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 40
   },
   {
    "baseStats": {
@@ -2478,7 +2869,7 @@
    },
    "className": "InfernalLord",
    "id": "infernal_lord",
-   "nameKey": null,
+   "nameKey": "adventurer_infernal_lord_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2490,7 +2881,16 @@
    "BaseDexterity": 28,
    "BaseDefense": 28,
    "BaseMagicDefense": 28,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "InfernalPrince"
+   ],
+   "ActiveSkill": "ACTIVE_OBLITERATE",
+   "PassiveSkill": "PASSIVE_CHAOTIC",
+   "ImageId": "unit_infernal_lord",
+   "descriptionKey": "adventurer_infernal_lord_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 35
   },
   {
    "baseStats": {
@@ -2527,7 +2927,7 @@
    },
    "className": "InfernalPrince",
    "id": "infernal_prince",
-   "nameKey": null,
+   "nameKey": "adventurer_infernal_prince_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2539,7 +2939,16 @@
    "BaseDexterity": 32,
    "BaseDefense": 32,
    "BaseMagicDefense": 32,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Balrog"
+   ],
+   "ActiveSkill": "ACTIVE_EXTIRPATE",
+   "PassiveSkill": "PASSIVE_CHAOTIC",
+   "ImageId": "unit_infernal_prince",
+   "descriptionKey": "adventurer_infernal_prince_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 40
   },
   {
    "baseStats": {
@@ -2576,7 +2985,7 @@
    },
    "className": "Inferno",
    "id": "inferno",
-   "nameKey": null,
+   "nameKey": "adventurer_inferno_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2588,7 +2997,14 @@
    "BaseDexterity": 12,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_METEOR_II",
+   "PassiveSkill": "PASSIVE_PYROMANCY_II",
+   "ImageId": "unit_inferno",
+   "descriptionKey": "adventurer_inferno_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 45
   },
   {
    "baseStats": {
@@ -2625,7 +3041,7 @@
    },
    "className": "Inquisitor",
    "id": "inquisitor",
-   "nameKey": null,
+   "nameKey": "adventurer_inquisitor_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2637,7 +3053,16 @@
    "BaseDexterity": 10,
    "BaseDefense": 20,
    "BaseMagicDefense": 33,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Justiciar"
+   ],
+   "ActiveSkill": "ACTIVE_CONDEMN_ALL_II",
+   "PassiveSkill": "PASSIVE_BLINDING_IV",
+   "ImageId": "unit_inquisitor",
+   "descriptionKey": "adventurer_inquisitor_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 35
   },
   {
    "baseStats": {
@@ -2674,7 +3099,7 @@
    },
    "className": "IronDefender",
    "id": "iron_defender",
-   "nameKey": null,
+   "nameKey": "adventurer_iron_defender_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2686,7 +3111,16 @@
    "BaseDexterity": 8,
    "BaseDefense": 24,
    "BaseMagicDefense": 24,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Juggernaut"
+   ],
+   "ActiveSkill": "ACTIVE_TAUNT_II",
+   "PassiveSkill": "PASSIVE_THREATENING_II",
+   "ImageId": "unit_iron_defender",
+   "descriptionKey": "adventurer_iron_defender_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 25
   },
   {
    "baseStats": {
@@ -2723,7 +3157,7 @@
    },
    "className": "IronWarden",
    "id": "iron_warden",
-   "nameKey": null,
+   "nameKey": "adventurer_iron_warden_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2735,7 +3169,16 @@
    "BaseDexterity": 7,
    "BaseDefense": 22,
    "BaseMagicDefense": 22,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "IronDefender"
+   ],
+   "ActiveSkill": "ACTIVE_TAUNT_I",
+   "PassiveSkill": "PASSIVE_THREATENING_II",
+   "ImageId": "unit_iron_warden",
+   "descriptionKey": "adventurer_iron_warden_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 20
   },
   {
    "baseStats": {
@@ -2772,7 +3215,7 @@
    },
    "className": "Juggernaut",
    "id": "juggernaut",
-   "nameKey": null,
+   "nameKey": "adventurer_juggernaut_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2784,7 +3227,16 @@
    "BaseDexterity": 9,
    "BaseDefense": 25,
    "BaseMagicDefense": 25,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Titan"
+   ],
+   "ActiveSkill": "ACTIVE_TAUNT_II",
+   "PassiveSkill": "PASSIVE_THREATENING_III",
+   "ImageId": "unit_juggernaut",
+   "descriptionKey": "adventurer_juggernaut_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 30
   },
   {
    "baseStats": {
@@ -2821,7 +3273,7 @@
    },
    "className": "Justiciar",
    "id": "justiciar",
-   "nameKey": null,
+   "nameKey": "adventurer_justiciar_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2833,7 +3285,16 @@
    "BaseDexterity": 11,
    "BaseDefense": 20,
    "BaseMagicDefense": 36,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "AngelOfWar"
+   ],
+   "ActiveSkill": "ACTIVE_CONDEMN_ALL_II",
+   "PassiveSkill": "PASSIVE_BLINDING_V",
+   "ImageId": "unit_justiciar",
+   "descriptionKey": "adventurer_justiciar_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 40
   },
   {
    "baseStats": {
@@ -2870,7 +3331,7 @@
    },
    "className": "KingsHand",
    "id": "kings_hand",
-   "nameKey": null,
+   "nameKey": "adventurer_kings_hand_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2882,7 +3343,16 @@
    "BaseDexterity": 14,
    "BaseDefense": 20,
    "BaseMagicDefense": 20,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "DivineDuelist"
+   ],
+   "ActiveSkill": "ACTIVE_EN_GARDE",
+   "PassiveSkill": "PASSIVE_SWORD_MASTERY_III",
+   "ImageId": "unit_kings_hand",
+   "descriptionKey": "adventurer_kings_hand_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 35
   },
   {
    "baseStats": {
@@ -2919,7 +3389,7 @@
    },
    "className": "Knight",
    "id": "knight",
-   "nameKey": null,
+   "nameKey": "adventurer_knight_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2931,7 +3401,17 @@
    "BaseDexterity": 6,
    "BaseDefense": 20,
    "BaseMagicDefense": 20,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "DarkKnight",
+    "HolyKnight"
+   ],
+   "ActiveSkill": "ACTIVE_CRUSHING_STRIKE",
+   "PassiveSkill": "PASSIVE_THREATENING_I",
+   "ImageId": "unit_knight",
+   "descriptionKey": "adventurer_knight_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 15
   },
   {
    "baseStats": {
@@ -2973,7 +3453,7 @@
    },
    "className": "Lich",
    "id": "lich",
-   "nameKey": null,
+   "nameKey": "adventurer_lich_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -2985,7 +3465,16 @@
    "BaseDexterity": 9,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "AncientLich"
+   ],
+   "ActiveSkill": "ACTIVE_CURSE_II",
+   "PassiveSkill": "PASSIVE_WITHERING_LINK",
+   "ImageId": "unit_lich",
+   "descriptionKey": "adventurer_lich_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 30
   },
   {
    "baseStats": {
@@ -3022,7 +3511,7 @@
    },
    "className": "LightDisciple",
    "id": "light_disciple",
-   "nameKey": null,
+   "nameKey": "adventurer_light_disciple_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3034,7 +3523,16 @@
    "BaseDexterity": 5,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Cleric"
+   ],
+   "ActiveSkill": "ACTIVE_ENERGY_BURST_I",
+   "PassiveSkill": "PASSIVE_HEALER_I",
+   "ImageId": "unit_light_disciple",
+   "descriptionKey": "adventurer_light_disciple_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 10
   },
   {
    "baseStats": {
@@ -3071,7 +3569,7 @@
    },
    "className": "Lorekeeper",
    "id": "lorekeeper",
-   "nameKey": null,
+   "nameKey": "adventurer_lorekeeper_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3083,7 +3581,16 @@
    "BaseDexterity": 19,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "HeavenlyCantor"
+   ],
+   "ActiveSkill": "ACTIVE_PETRIFYING_MELODY",
+   "PassiveSkill": "PASSIVE_INSPIRING_III",
+   "ImageId": "unit_lorekeeper",
+   "descriptionKey": "adventurer_lorekeeper_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 35
   },
   {
    "baseStats": {
@@ -3125,7 +3632,7 @@
    },
    "className": "LorfOfDecay",
    "id": "lorf_of_decay",
-   "nameKey": null,
+   "nameKey": "adventurer_lord_of_decay_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3137,7 +3644,16 @@
    "BaseDexterity": 11,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "BlackIdol"
+   ],
+   "ActiveSkill": "ACTIVE_CURSE_IV",
+   "PassiveSkill": "PASSIVE_WITHERING_LINK",
+   "ImageId": "unit_lord_of_decay",
+   "descriptionKey": "adventurer_lord_of_decay_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 40
   },
   {
    "baseStats": {
@@ -3174,7 +3690,7 @@
    },
    "className": "Marksman",
    "id": "marksman",
-   "nameKey": null,
+   "nameKey": "adventurer_marksman_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3186,7 +3702,17 @@
    "BaseDexterity": 16,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Sureshot",
+    "PoisonBow"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_II",
+   "PassiveSkill": "PASSIVE_KEEN_VISION",
+   "ImageId": "unit_marksman",
+   "descriptionKey": "adventurer_marksman_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 15
   },
   {
    "baseStats": {
@@ -3223,7 +3749,7 @@
    },
    "className": "MeatCarver",
    "id": "meat_carver",
-   "nameKey": null,
+   "nameKey": "adventurer_meat_carver_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3235,7 +3761,16 @@
    "BaseDexterity": 21,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "WoundsWeaver"
+   ],
+   "ActiveSkill": "ACTIVE_THOUSAND_CUTS",
+   "PassiveSkill": "PASSIVE_DEADLY_FINESSE_I",
+   "ImageId": "unit_meat_carver",
+   "descriptionKey": "adventurer_meat_carver_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 30
   },
   {
    "baseStats": {
@@ -3272,7 +3807,7 @@
    },
    "className": "MeltingElder",
    "id": "melting_elder",
-   "nameKey": null,
+   "nameKey": "adventurer_melting_elder_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3284,7 +3819,16 @@
    "BaseDexterity": 11,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Inferno"
+   ],
+   "ActiveSkill": "ACTIVE_METEOR_II",
+   "PassiveSkill": "PASSIVE_PYROMANCY_I",
+   "ImageId": "unit_melting_elder",
+   "descriptionKey": "adventurer_melting_elder_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 40
   },
   {
    "baseStats": {
@@ -3325,7 +3869,7 @@
    },
    "className": "Minstrel",
    "id": "minstrel",
-   "nameKey": null,
+   "nameKey": "adventurer_minstrel_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3337,7 +3881,16 @@
    "BaseDexterity": 15,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Bard"
+   ],
+   "ActiveSkill": "ACTIVE_FEINT",
+   "PassiveSkill": "PASSIVE_INSPIRING_II",
+   "ImageId": "unit_minstrel",
+   "descriptionKey": "adventurer_minstrel_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 25
   },
   {
    "baseStats": {
@@ -3379,7 +3932,7 @@
    },
    "className": "Necromancer",
    "id": "necromancer",
-   "nameKey": null,
+   "nameKey": "adventurer_necromancer_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3391,7 +3944,17 @@
    "BaseDexterity": 7,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Demilich",
+    "Unchained"
+   ],
+   "ActiveSkill": "ACTIVE_CURSE_I",
+   "PassiveSkill": "PASSIVE_WITHERING_TOUCH",
+   "ImageId": "unit_necromancer",
+   "descriptionKey": "adventurer_necromancer_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 20
   },
   {
    "baseStats": {
@@ -3432,7 +3995,7 @@
    },
    "className": "NightBlade",
    "id": "night_blade",
-   "nameKey": null,
+   "nameKey": "adventurer_night_blade_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3444,7 +4007,16 @@
    "BaseDexterity": 18,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "NightSpecter"
+   ],
+   "ActiveSkill": "ACTIVE_UMBRAL_STRIKE_I",
+   "PassiveSkill": "PASSIVE_NIGHT_VISION_II",
+   "ImageId": "unit_night_blade",
+   "descriptionKey": "adventurer_night_blade_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 25
   },
   {
    "baseStats": {
@@ -3481,7 +4053,7 @@
    },
    "className": "NightLament",
    "id": "night_lament",
-   "nameKey": null,
+   "nameKey": "adventurer_night_lament_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3493,7 +4065,14 @@
    "BaseDexterity": 30,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_UMBRAL_STRIKE_III",
+   "PassiveSkill": "PASSIVE_NIGHT_VISION_IV",
+   "ImageId": "unit_night_lament",
+   "descriptionKey": "adventurer_night_lament_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 45
   },
   {
    "baseStats": {
@@ -3530,7 +4109,7 @@
    },
    "className": "NightSpecter",
    "id": "night_specter",
-   "nameKey": null,
+   "nameKey": "adventurer_night_specter_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3542,7 +4121,16 @@
    "BaseDexterity": 21,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "NightTerror"
+   ],
+   "ActiveSkill": "ACTIVE_UMBRAL_STRIKE_I",
+   "PassiveSkill": "PASSIVE_NIGHT_VISION_III",
+   "ImageId": "unit_night_specter",
+   "descriptionKey": "adventurer_night_specter_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 30
   },
   {
    "baseStats": {
@@ -3579,7 +4167,7 @@
    },
    "className": "NightTerror",
    "id": "night_terror",
-   "nameKey": null,
+   "nameKey": "adventurer_night_terror_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3591,7 +4179,16 @@
    "BaseDexterity": 24,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "NightVeil"
+   ],
+   "ActiveSkill": "ACTIVE_UMBRAL_STRIKE_II",
+   "PassiveSkill": "PASSIVE_NIGHT_VISION_III",
+   "ImageId": "unit_night_terror",
+   "descriptionKey": "adventurer_night_terror_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 35
   },
   {
    "baseStats": {
@@ -3628,7 +4225,7 @@
    },
    "className": "NightVeil",
    "id": "night_veil",
-   "nameKey": null,
+   "nameKey": "adventurer_night_veil_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3640,7 +4237,16 @@
    "BaseDexterity": 27,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "NightLament"
+   ],
+   "ActiveSkill": "ACTIVE_UMBRAL_STRIKE_II",
+   "PassiveSkill": "PASSIVE_NIGHT_VISION_IV",
+   "ImageId": "unit_night_veil",
+   "descriptionKey": "adventurer_night_veil_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 40
   },
   {
    "baseStats": {
@@ -3677,7 +4283,7 @@
    },
    "className": "Overlord",
    "id": "overlord",
-   "nameKey": null,
+   "nameKey": "adventurer_overlord_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3689,7 +4295,16 @@
    "BaseDexterity": 16,
    "BaseDefense": 20,
    "BaseMagicDefense": 20,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "BlackRegent"
+   ],
+   "ActiveSkill": "ACTIVE_DECIMATE_III",
+   "PassiveSkill": "PASSIVE_SUBJUGATE_I",
+   "ImageId": "unit_overlord",
+   "descriptionKey": "adventurer_overlord_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 40
   },
   {
    "baseStats": {
@@ -3726,7 +4341,7 @@
    },
    "className": "Paladin",
    "id": "paladin",
-   "nameKey": null,
+   "nameKey": "adventurer_paladin_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3738,7 +4353,16 @@
    "BaseDexterity": 8,
    "BaseDefense": 20,
    "BaseMagicDefense": 26,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Templar"
+   ],
+   "ActiveSkill": "ACTIVE_CONDEMN",
+   "PassiveSkill": "PASSIVE_BLINDING_II",
+   "ImageId": "unit_paladin",
+   "descriptionKey": "adventurer_paladin_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 25
   },
   {
    "baseStats": {
@@ -3775,7 +4399,7 @@
    },
    "className": "PlagueSpreader",
    "id": "plague_spreader",
-   "nameKey": null,
+   "nameKey": "adventurer_plague_spreader_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3787,7 +4411,16 @@
    "BaseDexterity": 28,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Blight"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_II",
+   "PassiveSkill": "PASSIVE_POISONOUS_ARROWS_III",
+   "ImageId": "unit_plague_spreader",
+   "descriptionKey": "adventurer_plague_spreader_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 30
   },
   {
    "baseStats": {
@@ -3824,7 +4457,7 @@
    },
    "className": "PoisonBow",
    "id": "poison_bow",
-   "nameKey": null,
+   "nameKey": "adventurer_poison_bow_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3836,7 +4469,16 @@
    "BaseDexterity": 20,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "ToxicStalker"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_II",
+   "PassiveSkill": "PASSIVE_POISONOUS_ARROWS_I",
+   "ImageId": "unit_poison_bow",
+   "descriptionKey": "adventurer_poison_bow_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 20
   },
   {
    "baseStats": {},
@@ -3885,7 +4527,7 @@
    },
    "className": "RadiantElder",
    "id": "radiant_elder",
-   "nameKey": null,
+   "nameKey": "adventurer_radiant_elder_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3897,7 +4539,16 @@
    "BaseDexterity": 10,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Angel"
+   ],
+   "ActiveSkill": "ACTIVE_MASS_HEAL_III",
+   "PassiveSkill": "PASSIVE_HEALER_II",
+   "ImageId": "unit_radiant_elder",
+   "descriptionKey": "adventurer_radiant_elder_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 35
   },
   {
    "baseStats": {
@@ -3934,7 +4585,7 @@
    },
    "className": "RedArchmage",
    "id": "red_archmage",
-   "nameKey": null,
+   "nameKey": "adventurer_red_archmage_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3946,7 +4597,16 @@
    "BaseDexterity": 8,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "RedElder"
+   ],
+   "ActiveSkill": "ACTIVE_FIREBALL",
+   "PassiveSkill": "PASSIVE_FIRE_MAGIC_I",
+   "ImageId": "unit_red_archmage",
+   "descriptionKey": "adventurer_red_archmage_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 25
   },
   {
    "baseStats": {
@@ -3983,7 +4643,7 @@
    },
    "className": "RedElder",
    "id": "red_elder",
-   "nameKey": null,
+   "nameKey": "adventurer_red_elder_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -3995,7 +4655,16 @@
    "BaseDexterity": 9,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "ScorchingElder"
+   ],
+   "ActiveSkill": "ACTIVE_METEOR_I",
+   "PassiveSkill": "PASSIVE_FIRE_MAGIC_I",
+   "ImageId": "unit_red_elder",
+   "descriptionKey": "adventurer_red_elder_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 30
   },
   {
    "baseStats": {
@@ -4032,7 +4701,7 @@
    },
    "className": "RedMage",
    "id": "red_mage",
-   "nameKey": null,
+   "nameKey": "adventurer_red_mage_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4044,7 +4713,16 @@
    "BaseDexterity": 7,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "RedArchmage"
+   ],
+   "ActiveSkill": "ACTIVE_FIREBALL",
+   "PassiveSkill": "PASSIVE_NONE",
+   "ImageId": "unit_red_mage",
+   "descriptionKey": "adventurer_red_mage_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 20
   },
   {
    "baseStats": {
@@ -4085,7 +4763,7 @@
    },
    "className": "RedStalker",
    "id": "red_stalker",
-   "nameKey": null,
+   "nameKey": "adventurer_red_stalker_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4097,7 +4775,16 @@
    "BaseDexterity": 18,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "MeatCarver"
+   ],
+   "ActiveSkill": "ACTIVE_THOUSAND_CUTS",
+   "PassiveSkill": "PASSIVE_INFILTRATOR",
+   "ImageId": "unit_red_stalker",
+   "descriptionKey": "adventurer_red_stalker_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 25
   },
   {
    "baseStats": {
@@ -4134,7 +4821,7 @@
    },
    "className": "Rogue",
    "id": "rogue",
-   "nameKey": null,
+   "nameKey": "adventurer_rogue_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4146,7 +4833,16 @@
    "BaseDexterity": 6,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": "wooden_dagger"
+   "StarterWeaponId": "wooden_dagger",
+   "NextClasses": [
+    "Thief"
+   ],
+   "ActiveSkill": "ACTIVE_BACKSTAB_I",
+   "PassiveSkill": "PASSIVE_NONE",
+   "ImageId": "unit_rogue",
+   "descriptionKey": "adventurer_rogue_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 5
   },
   {
    "baseStats": {
@@ -4183,7 +4879,7 @@
    },
    "className": "RoyalCaptain",
    "id": "royal_captain",
-   "nameKey": null,
+   "nameKey": "adventurer_royal_captain_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4195,7 +4891,16 @@
    "BaseDexterity": 12,
    "BaseDefense": 20,
    "BaseMagicDefense": 20,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "KingsHand"
+   ],
+   "ActiveSkill": "ACTIVE_EN_GARDE",
+   "PassiveSkill": "PASSIVE_SWORD_MASTERY_II",
+   "ImageId": "unit_royal_captain",
+   "descriptionKey": "adventurer_royal_captain_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 30
   },
   {
    "baseStats": {
@@ -4232,7 +4937,7 @@
    },
    "className": "RoyalGuard",
    "id": "royal_guard",
-   "nameKey": null,
+   "nameKey": "adventurer_royal_guard_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4244,7 +4949,16 @@
    "BaseDexterity": 8,
    "BaseDefense": 20,
    "BaseMagicDefense": 20,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "RoyalSwordsman"
+   ],
+   "ActiveSkill": "ACTIVE_MIGHTY_STRIKE",
+   "PassiveSkill": "PASSIVE_SWORD_MASTERY_I",
+   "ImageId": "unit_royal_guard",
+   "descriptionKey": "adventurer_royal_guard_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 20
   },
   {
    "baseStats": {
@@ -4281,7 +4995,7 @@
    },
    "className": "RoyalSwordsman",
    "id": "royal_swordsman",
-   "nameKey": null,
+   "nameKey": "adventurer_royal_swordsman_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4293,7 +5007,16 @@
    "BaseDexterity": 10,
    "BaseDefense": 20,
    "BaseMagicDefense": 20,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "RoyalCaptain"
+   ],
+   "ActiveSkill": "ACTIVE_EN_GARDE",
+   "PassiveSkill": "PASSIVE_SWORD_MASTERY_I",
+   "ImageId": "unit_royal_swordman",
+   "descriptionKey": "adventurer_royal_swordsman_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 25
   },
   {
    "baseStats": {
@@ -4330,7 +5053,7 @@
    },
    "className": "ScorchingElder",
    "id": "scorching_elder",
-   "nameKey": null,
+   "nameKey": "adventurer_scorching_elder_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4342,7 +5065,16 @@
    "BaseDexterity": 10,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "MeltingElder"
+   ],
+   "ActiveSkill": "ACTIVE_METEOR_II",
+   "PassiveSkill": "PASSIVE_FIRE_MAGIC_II",
+   "ImageId": "unit_scorching_elder",
+   "descriptionKey": "adventurer_scorching_elder_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 35
   },
   {
    "baseStats": {
@@ -4379,7 +5111,7 @@
    },
    "className": "Scourge",
    "id": "scourge",
-   "nameKey": null,
+   "nameKey": "adventurer_scourge_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4391,7 +5123,16 @@
    "BaseDexterity": 12,
    "BaseDefense": 20,
    "BaseMagicDefense": 20,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Tyrant"
+   ],
+   "ActiveSkill": "ACTIVE_DECIMATE_II",
+   "PassiveSkill": "PASSIVE_THREATENING_I",
+   "ImageId": "unit_scourge",
+   "descriptionKey": "adventurer_scourge_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 30
   },
   {
    "baseStats": {
@@ -4428,7 +5169,7 @@
    },
    "className": "ShadowCrawler",
    "id": "shadow_crawler",
-   "nameKey": null,
+   "nameKey": "adventurer_shadow_crawler_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4440,7 +5181,16 @@
    "BaseDexterity": 12,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "ShadowDancer"
+   ],
+   "ActiveSkill": "ACTIVE_BACKSTAB_I",
+   "PassiveSkill": "PASSIVE_NIGHT_VISION_I",
+   "ImageId": "unit_shadow_crawler",
+   "descriptionKey": "adventurer_shadow_crawler_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 15
   },
   {
    "baseStats": {
@@ -4477,7 +5227,7 @@
    },
    "className": "ShadowDancer",
    "id": "shadow_dancer",
-   "nameKey": null,
+   "nameKey": "adventurer_shadow_dancer_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4489,7 +5239,16 @@
    "BaseDexterity": 15,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "NightBlade"
+   ],
+   "ActiveSkill": "ACTIVE_BACKSTAB_I",
+   "PassiveSkill": "PASSIVE_NIGHT_VISION_II",
+   "ImageId": "unit_shadow_dancer",
+   "descriptionKey": "adventurer_shadow_dancer_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 20
   },
   {
    "baseStats": {
@@ -4526,7 +5285,7 @@
    },
    "className": "SilverTongue",
    "id": "silver_tongue",
-   "nameKey": null,
+   "nameKey": "adventurer_silver_tongue_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4538,7 +5297,16 @@
    "BaseDexterity": 13,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Minstrel"
+   ],
+   "ActiveSkill": "ACTIVE_FEINT",
+   "PassiveSkill": "PASSIVE_INSPIRING_I",
+   "ImageId": "unit_silver_tongue",
+   "descriptionKey": "adventurer_silver_tongue_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 20
   },
   {
    "baseStats": {
@@ -4575,7 +5343,7 @@
    },
    "className": "Skeleton",
    "id": "skeleton",
-   "nameKey": null,
+   "nameKey": "summoned_skeleton_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4587,7 +5355,14 @@
    "BaseDexterity": 14,
    "BaseDefense": 50,
    "BaseMagicDefense": 0,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_NONE",
+   "PassiveSkill": "PASSIVE_THREATENING_I",
+   "ImageId": "unit_skeleton",
+   "descriptionKey": "summoned_skeleton_description",
+   "PotionDrinkerType": "NONE",
+   "MaxLevel": 15
   },
   {
    "baseStats": {
@@ -4624,7 +5399,7 @@
    },
    "className": "SpireAcolyte",
    "id": "spire_acolyte",
-   "nameKey": null,
+   "nameKey": "adventurer_spire_acolyte_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4636,7 +5411,16 @@
    "BaseDexterity": 21,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "SpireLeader"
+   ],
+   "ActiveSkill": "ACTIVE_ECLIPSE_II",
+   "PassiveSkill": "PASSIVE_INFILTRATOR",
+   "ImageId": "unit_spire_acolyte",
+   "descriptionKey": "adventurer_spire_acolyte_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 30
   },
   {
    "baseStats": {
@@ -4677,7 +5461,7 @@
    },
    "className": "SpireInitiate",
    "id": "spire_initiate",
-   "nameKey": null,
+   "nameKey": "adventurer_spire_initiate_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4689,7 +5473,16 @@
    "BaseDexterity": 18,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "SpireAcolyte"
+   ],
+   "ActiveSkill": "ACTIVE_ECLIPSE_I",
+   "PassiveSkill": "PASSIVE_INFILTRATOR",
+   "ImageId": "unit_spire_initiate",
+   "descriptionKey": "adventurer_spire_initiate_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 25
   },
   {
    "baseStats": {
@@ -4726,7 +5519,7 @@
    },
    "className": "SpireLeader",
    "id": "spire_leader",
-   "nameKey": null,
+   "nameKey": "adventurer_spire_leader_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4738,7 +5531,16 @@
    "BaseDexterity": 24,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "SpireSage"
+   ],
+   "ActiveSkill": "ACTIVE_ECLIPSE_III",
+   "PassiveSkill": "PASSIVE_INFILTRATOR",
+   "ImageId": "unit_spire_leader",
+   "descriptionKey": "adventurer_spire_leader_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 35
   },
   {
    "baseStats": {
@@ -4775,7 +5577,7 @@
    },
    "className": "SpireSage",
    "id": "spire_sage",
-   "nameKey": null,
+   "nameKey": "adventurer_spire_sage_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4787,7 +5589,16 @@
    "BaseDexterity": 27,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Whisper"
+   ],
+   "ActiveSkill": "ACTIVE_ECLIPSE_III",
+   "PassiveSkill": "PASSIVE_DESPISE_WEAKNESS",
+   "ImageId": "unit_spire_sage",
+   "descriptionKey": "adventurer_spire_sage_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 40
   },
   {
    "baseStats": {
@@ -4824,7 +5635,7 @@
    },
    "className": "SpiritEngraver",
    "id": "spirit_engraver",
-   "nameKey": null,
+   "nameKey": "adventurer_spirit_engraver_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4836,7 +5647,14 @@
    "BaseDexterity": 30,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_THOUSAND_CUTS_II",
+   "PassiveSkill": "PASSIVE_DEADLY_FINESSE_III",
+   "ImageId": "unit_spirit_engraver",
+   "descriptionKey": "adventurer_spirit_engraver_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 45
   },
   {
    "baseStats": {
@@ -4873,7 +5691,7 @@
    },
    "className": "SpitfangRider",
    "id": "spitfang_rider",
-   "nameKey": null,
+   "nameKey": "adventurer_spitfang_rider_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4885,7 +5703,16 @@
    "BaseDexterity": 28,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "DrakeRider"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_II",
+   "PassiveSkill": "PASSIVE_RIDER_IV",
+   "ImageId": "unit_spitfang_rider",
+   "descriptionKey": "adventurer_spitfang_rider_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 30
   },
   {
    "baseStats": {
@@ -4922,7 +5749,7 @@
    },
    "className": "Sureshot",
    "id": "sureshot",
-   "nameKey": null,
+   "nameKey": "adventurer_sureshot_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4934,7 +5761,16 @@
    "BaseDexterity": 20,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Fury"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_III",
+   "PassiveSkill": "PASSIVE_KEEN_VISION",
+   "ImageId": "unit_sureshot",
+   "descriptionKey": "adventurer_sureshot_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 20
   },
   {
    "baseStats": {
@@ -4971,7 +5807,7 @@
    },
    "className": "Tempest",
    "id": "tempest",
-   "nameKey": null,
+   "nameKey": "adventurer_tempest_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -4983,7 +5819,16 @@
    "BaseDexterity": 32,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Hurricane"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_VI",
+   "PassiveSkill": "PASSIVE_KEEN_VISION",
+   "ImageId": "unit_tempest",
+   "descriptionKey": "adventurer_tempest_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 35
   },
   {
    "baseStats": {
@@ -5020,7 +5865,7 @@
    },
    "className": "Templar",
    "id": "templar",
-   "nameKey": null,
+   "nameKey": "adventurer_templar_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5032,7 +5877,16 @@
    "BaseDexterity": 9,
    "BaseDefense": 20,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Inquisitor"
+   ],
+   "ActiveSkill": "ACTIVE_CONDEMN_ALL_I",
+   "PassiveSkill": "PASSIVE_BLINDING_III",
+   "ImageId": "unit_templar",
+   "descriptionKey": "adventurer_templar_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 30
   },
   {
    "baseStats": {
@@ -5069,7 +5923,7 @@
    },
    "className": "Thief",
    "id": "thief",
-   "nameKey": null,
+   "nameKey": "adventurer_thief_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5081,7 +5935,18 @@
    "BaseDexterity": 9,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "ShadowCrawler",
+    "Cutthroat",
+    "Trickster"
+   ],
+   "ActiveSkill": "ACTIVE_BACKSTAB_I",
+   "PassiveSkill": "PASSIVE_SABOTEUR",
+   "ImageId": "unit_thief",
+   "descriptionKey": "adventurer_thief_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 10
   },
   {
    "baseStats": {
@@ -5118,7 +5983,7 @@
    },
    "className": "Titan",
    "id": "titan",
-   "nameKey": null,
+   "nameKey": "adventurer_titan_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5130,7 +5995,16 @@
    "BaseDexterity": 10,
    "BaseDefense": 27,
    "BaseMagicDefense": 27,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "UndyingBastion"
+   ],
+   "ActiveSkill": "ACTIVE_TAUNT_III",
+   "PassiveSkill": "PASSIVE_THREATENING_III",
+   "ImageId": "unit_titan",
+   "descriptionKey": "adventurer_titan_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 35
   },
   {
    "baseStats": {
@@ -5171,7 +6045,7 @@
    },
    "className": "ToxicStalker",
    "id": "toxic_stalker",
-   "nameKey": null,
+   "nameKey": "adventurer_toxic_stalker_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5183,7 +6057,17 @@
    "BaseDexterity": 24,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "PlagueSpreader",
+    "Alchemist"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_II",
+   "PassiveSkill": "PASSIVE_POISONOUS_ARROWS_II",
+   "ImageId": "unit_toxic_stalker",
+   "descriptionKey": "adventurer_toxic_stalker_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 25
   },
   {
    "baseStats": {
@@ -5220,7 +6104,7 @@
    },
    "className": "Trickster",
    "id": "trickster",
-   "nameKey": null,
+   "nameKey": "adventurer_trickster_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5232,7 +6116,16 @@
    "BaseDexterity": 11,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "SilverTongue"
+   ],
+   "ActiveSkill": "ACTIVE_FEINT",
+   "PassiveSkill": "PASSIVE_SABOTEUR",
+   "ImageId": "unit_trickster",
+   "descriptionKey": "adventurer_trickster_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 15
   },
   {
    "baseStats": {
@@ -5269,7 +6162,7 @@
    },
    "className": "Tyrant",
    "id": "tyrant",
-   "nameKey": null,
+   "nameKey": "adventurer_tyrant_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5281,7 +6174,16 @@
    "BaseDexterity": 14,
    "BaseDefense": 20,
    "BaseMagicDefense": 20,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Overlord"
+   ],
+   "ActiveSkill": "ACTIVE_DECIMATE_III",
+   "PassiveSkill": "PASSIVE_THREATENING_I",
+   "ImageId": "unit_tyrant",
+   "descriptionKey": "adventurer_tyrant_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 35
   },
   {
    "baseStats": {
@@ -5318,7 +6220,7 @@
    },
    "className": "Unchained",
    "id": "unchained",
-   "nameKey": null,
+   "nameKey": "adventurer_unchained_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5330,7 +6232,16 @@
    "BaseDexterity": 20,
    "BaseDefense": 20,
    "BaseMagicDefense": 20,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Demon"
+   ],
+   "ActiveSkill": "ACTIVE_FLAY",
+   "PassiveSkill": "PASSIVE_CHAOTIC",
+   "ImageId": "unit_unchained",
+   "descriptionKey": "adventurer_unchained_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 25
   },
   {
    "baseStats": {
@@ -5367,7 +6278,7 @@
    },
    "className": "UndyingBastion",
    "id": "undying_bastion",
-   "nameKey": null,
+   "nameKey": "adventurer_undying_bastion_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5379,7 +6290,16 @@
    "BaseDexterity": 11,
    "BaseDefense": 29,
    "BaseMagicDefense": 29,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "EternalFortress"
+   ],
+   "ActiveSkill": "ACTIVE_TAUNT_IV",
+   "PassiveSkill": "PASSIVE_THREATENING_III",
+   "ImageId": "unit_undying_bastion",
+   "descriptionKey": "adventurer_undying_bastion_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 40
   },
   {
    "baseStats": {
@@ -5416,7 +6336,7 @@
    },
    "className": "Warrior",
    "id": "warrior",
-   "nameKey": null,
+   "nameKey": "adventurer_warrior_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5428,7 +6348,17 @@
    "BaseDexterity": 5,
    "BaseDefense": 20,
    "BaseMagicDefense": 20,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "Guard",
+    "Knight"
+   ],
+   "ActiveSkill": "ACTIVE_MIGHTY_STRIKE",
+   "PassiveSkill": "PASSIVE_THREATENING_I",
+   "ImageId": "unit_warrior",
+   "descriptionKey": "adventurer_warrior_description",
+   "PotionDrinkerType": "WARRIOR",
+   "MaxLevel": 10
   },
   {
    "baseStats": {
@@ -5465,7 +6395,7 @@
    },
    "className": "Whisper",
    "id": "whisper",
-   "nameKey": null,
+   "nameKey": "adventurer_whisper_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5477,7 +6407,14 @@
    "BaseDexterity": 30,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_ECLIPSE_IV",
+   "PassiveSkill": "PASSIVE_DESPISE_WEAKNESS",
+   "ImageId": "unit_whisper",
+   "descriptionKey": "adventurer_whisper_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 45
   },
   {
    "baseStats": {
@@ -5514,7 +6451,7 @@
    },
    "className": "WhiteArchmage",
    "id": "white_archmage",
-   "nameKey": null,
+   "nameKey": "adventurer_white_archmage_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5526,7 +6463,16 @@
    "BaseDexterity": 8,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "WhiteElder"
+   ],
+   "ActiveSkill": "ACTIVE_MASS_HEAL_I",
+   "PassiveSkill": "PASSIVE_HEALER_II",
+   "ImageId": "unit_white_archmage",
+   "descriptionKey": "adventurer_white_archmage_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 25
   },
   {
    "baseStats": {
@@ -5563,7 +6509,7 @@
    },
    "className": "WhiteElder",
    "id": "white_elder",
-   "nameKey": null,
+   "nameKey": "adventurer_white_elder_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5575,7 +6521,16 @@
    "BaseDexterity": 9,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "RadiantElder"
+   ],
+   "ActiveSkill": "ACTIVE_MASS_HEAL_II",
+   "PassiveSkill": "PASSIVE_HEALER_II",
+   "ImageId": "unit_white_elder",
+   "descriptionKey": "adventurer_white_elder_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 30
   },
   {
    "baseStats": {
@@ -5612,7 +6567,7 @@
    },
    "className": "WhiteMage",
    "id": "white_mage",
-   "nameKey": null,
+   "nameKey": "adventurer_white_mage_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5624,7 +6579,16 @@
    "BaseDexterity": 7,
    "BaseDefense": 0,
    "BaseMagicDefense": 30,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "WhiteArchmage"
+   ],
+   "ActiveSkill": "ACTIVE_MASS_HEAL_I",
+   "PassiveSkill": "PASSIVE_HEALER_I",
+   "ImageId": "unit_white_mage",
+   "descriptionKey": "adventurer_white_mage_description",
+   "PotionDrinkerType": "MAGE",
+   "MaxLevel": 20
   },
   {
    "baseStats": {
@@ -5661,7 +6625,7 @@
    },
    "className": "WolfRider",
    "id": "wolf_rider",
-   "nameKey": null,
+   "nameKey": "adventurer_wolf_rider_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5673,7 +6637,16 @@
    "BaseDexterity": 20,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "WorgRider"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_II",
+   "PassiveSkill": "PASSIVE_RIDER_II",
+   "ImageId": "unit_wolf_rider",
+   "descriptionKey": "adventurer_wolf_rider_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 20
   },
   {
    "baseStats": {
@@ -5714,7 +6687,7 @@
    },
    "className": "WorgRider",
    "id": "worg_rider",
-   "nameKey": null,
+   "nameKey": "adventurer_worg_rider_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5726,7 +6699,16 @@
    "BaseDexterity": 24,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "SpitfangRider"
+   ],
+   "ActiveSkill": "ACTIVE_BARRAGE_II",
+   "PassiveSkill": "PASSIVE_RIDER_III",
+   "ImageId": "unit_worg_rider",
+   "descriptionKey": "adventurer_worg_rider_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 25
   },
   {
    "baseStats": {
@@ -5763,7 +6745,7 @@
    },
    "className": "WoundsWeaver",
    "id": "wounds_weaver",
-   "nameKey": null,
+   "nameKey": "adventurer_wounds_weaver_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5775,7 +6757,16 @@
    "BaseDexterity": 24,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "HellishSculptor"
+   ],
+   "ActiveSkill": "ACTIVE_THOUSAND_CUTS",
+   "PassiveSkill": "PASSIVE_DEADLY_FINESSE_II",
+   "ImageId": "unit_wound_weaver",
+   "descriptionKey": "adventurer_wounds_weaver_description",
+   "PotionDrinkerType": "THIEF",
+   "MaxLevel": 35
   },
   {
    "baseStats": {
@@ -5812,7 +6803,7 @@
    },
    "className": "Wraith",
    "id": "wraith",
-   "nameKey": null,
+   "nameKey": "adventurer_wraith_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5824,7 +6815,16 @@
    "BaseDexterity": 36,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [
+    "CorrosiveWraith"
+   ],
+   "ActiveSkill": "ACTIVE_FOCUSED_BARRAGE",
+   "PassiveSkill": "PASSIVE_POISONOUS_BLOOD",
+   "ImageId": "unit_wraith",
+   "descriptionKey": "adventurer_wraith_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 40
   },
   {
    "baseStats": {
@@ -5861,7 +6861,7 @@
    },
    "className": "WyrmRider",
    "id": "wyrm_rider",
-   "nameKey": null,
+   "nameKey": "adventurer_wyrm_rider_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5873,7 +6873,14 @@
    "BaseDexterity": 40,
    "BaseDefense": 10,
    "BaseMagicDefense": 10,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_SUBLIMATE",
+   "PassiveSkill": "PASSIVE_RIDER_VII",
+   "ImageId": "unit_wyrm_rider",
+   "descriptionKey": "adventurer_wyrm_rider_description",
+   "PotionDrinkerType": "ARCHER",
+   "MaxLevel": 45
   },
   {
    "baseStats": {
@@ -5910,7 +6917,7 @@
    },
    "className": "Zombie",
    "id": "zombie",
-   "nameKey": null,
+   "nameKey": "summoned_zombie_name",
    "parentClass": "Adventurer",
    "parseReasons": [],
    "parseStatus": "full",
@@ -5922,7 +6929,14 @@
    "BaseDexterity": 11,
    "BaseDefense": 50,
    "BaseMagicDefense": 0,
-   "StarterWeaponId": ""
+   "StarterWeaponId": "",
+   "NextClasses": [],
+   "ActiveSkill": "ACTIVE_NONE",
+   "PassiveSkill": "PASSIVE_NONE",
+   "ImageId": "unit_zombie",
+   "descriptionKey": "summoned_zombie_description",
+   "PotionDrinkerType": "NONE",
+   "MaxLevel": 15
   }
  ],
  "metadata": {

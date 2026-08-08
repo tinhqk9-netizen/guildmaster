@@ -59,3 +59,5 @@ UserSaveBeforeTest/
 /Backups/
 /_backups/
 /RecoveryBackup/
+/Backup/
+/TestResults/
